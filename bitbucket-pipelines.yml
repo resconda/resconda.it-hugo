@@ -12,4 +12,11 @@ pipelines:
         script:
         - |
           hugo -D
-    
+          cd public; zip -r ../release.zip .; cd -
+        artifacts:
+            - release.zip
+    - step:
+        name: Deploy to server
+        script:
+        - |
+          rsync -vru --delete public/ ${DEPLOY_SSH_USER}@${DEPLOY_HOST}:${DEPLOY_ROOT_FOLDER}/
