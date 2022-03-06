@@ -12,9 +12,8 @@ pipelines:
         script:
         - |
           hugo -D
-          cd public; zip -r ../release.zip .; cd -
         artifacts:
-            - release.zip
+          - public/**
     - step:
         name: Deploy to server
         script:
