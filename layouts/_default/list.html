@@ -1,0 +1,7 @@
+{{ define "main" }}
+	<!-- list template -->
+	{{.Content}}
+	{{ range .RegularPages }}
+	<div><a href="{{.Permalink}}">{{.Title}}</a></div>
+	{{ end }}
+{{ end }}

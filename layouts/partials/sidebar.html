@@ -1,0 +1,36 @@
+<!-- Sidebar Container -->
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    <!-- Featured Tags -->
+    {{ if .Site.Params.featured_tags }}
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>Tag frequenti</h5>
+        <div class="tags">
+            {{ $featured_condition_size := .Site.Params.featured_condition_size }}
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+               {{ if gt (len $taxonomy.Pages) $featured_condition_size }}
+                    <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" title="{{ $name }}">
+                        {{ $name }}
+                    </a>
+               {{ end }}
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+    <!-- Latest posts -->
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>Ultimi post</h5>
+        <ul>
+        {{ range .Site.RegularPages }}
+        <li><a href="{{.Permalink}}">{{ .Title }}</a></li>
+        {{ end }}
+        </ul>
+    </section>
+</div>
