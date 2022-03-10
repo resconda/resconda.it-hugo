@@ -1,4 +1,0 @@
-baseURL = 'http://resconda.it/'
-languageCode = 'it-it'
-title = 'ResConDA'
-theme = 'hugo-theme-cleanwhite'

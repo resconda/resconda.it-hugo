@@ -1,7 +1,0 @@
-mymain:
-- name: Chi siamo
-  url: "/about"
-- name: Blog
-  url: "/blog"
-- name: Contatti 
-  url: "/contacts"
