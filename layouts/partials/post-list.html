@@ -1,6 +1,6 @@
 <!-- post-list.html -->
 <ul class="posts">
-    {{ range where (where site.RegularPages "Section" "articles") ".File.Ext" "md" | first 20  }}
+    {{ range where (where site.RegularPages "Section" "articles") ".File.Ext" "md" | first ( default 5 ( .Scratch.Get "limit"))  }}
     <li class="post">
       <a href="{{ .Permalink }}">
         <span {{ if .Draft }}style="color: darkgray;"{{ end }}>{{ .Title }}</span>
