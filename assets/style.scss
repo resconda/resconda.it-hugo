@@ -13,16 +13,19 @@ html {
   font: 100%/1.5 sans-serif;
   word-wrap: break-word;
   margin: 0 auto;
-  padding: 1.5em;
+  // padding: 1.5em;
 }
 
 body {
   font-family: "Work Sans", sans-serif !important;
 }
 @media (min-width: 768px) {
-  html {
+  .container, .container-fluid {
     font-size: 125%;
-    max-width: 42em;
+    max-width: 50em;
+    .container-full {
+      max-width: unset;
+    }
   }
 }
 
