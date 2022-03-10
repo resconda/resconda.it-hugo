@@ -1,7 +1,9 @@
 {{ define "main" }}
-	<!-- list template -->
-	{{.Content}}
-	{{ range .RegularPages }}
-	<div><a href="{{.Permalink}}">{{.Title}}</a></div>
-	{{ end }}
+<div class="container-fluid">
+  <!-- list template -->
+  <h3>{{.Title}}</h3>
+  {{ range .RegularPages }}
+  <div><a href="{{.Permalink}}">{{.Title}}</a></div>
+  {{ end }}
+</div>
 {{ end }}

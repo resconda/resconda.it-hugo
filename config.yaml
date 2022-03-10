@@ -1,0 +1,22 @@
+baseURL: /
+languageCode: it-it
+title: ResConDA
+
+params:
+    logo: "/images/resconda_logo.png"
+    header_image: "/images/limits.jpg"
+    home_title: "Azione consapevole"
+    slogan: |
+      RESCONDA – Associazione per la  
+      REStituzione CONsapevole del  
+      Debito Ambientale
+
+
+menus:
+  main:
+  - name: Chi siamo
+    url: "/about"
+  - name: Blog
+    url: "/articles"
+  - name: Contatti 
+    url: "/contacts"

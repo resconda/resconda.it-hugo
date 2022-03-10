@@ -1,9 +1,10 @@
 ---
-title: "Universo 25"
-date: 2022-03-06T17:34:01+01:00
-draft: false
-categories:
-  - reviews
+## Important: If this is a draft, next line should NOT begin with #
+# draft: true
+title: Universo 25
+date: 2022-03-09
+## below are user-defined parameters (lower case keys recommended)
+subtitle:
 tags:
   - ecologia
   - eden
@@ -14,3 +15,7 @@ tags:
 Si potrebbe ritenere che una popolazione di individui inseriti in un habitat ‘ideale’ finisca sistematicamente col degenerare ed estinguersi. Un limite alla idea di un mondo ideale, di un eden di benessere e prosperità a cui probabilmente toccherà rassegnarsi.
 
 Un interessante [post di Marco Pierfranceschi](https://mammiferobipede.wordpress.com/2022/02/04/siamo-nei-guai/?fbclid=IwAR32begkLMcwmufAEDzADF0zIIgTL52-t-7IoGYr5PfGUbEpQM-_X3xN6Q0)
+
+<!--
+  created 2022-03-09 21:37:01.544184 +0100 CET m=+0.043655380
+-->
