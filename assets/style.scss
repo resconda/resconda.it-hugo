@@ -181,18 +181,18 @@ figure {
 header {
   display: flex;
   justify-content: space-between;
-  nav {
+  a + a {
+    margin-left: 1rem;
+  }
+  margin-bottom: 5em;
+}
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
   }
-  a + a {
-    margin-left: 1rem;
-  }
-  margin-bottom: 5em;
-}
 .site-heading {
   // background-image: url(images/limits.jpg);
   position: relative;
