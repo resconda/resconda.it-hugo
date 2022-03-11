@@ -3,6 +3,8 @@
 # draft: true
 title: Universo 25
 date: 2022-03-09
+images:
+  - assets/post-img/universo-25-cover
 ## below are user-defined parameters (lower case keys recommended)
 subtitle:
 tags:
