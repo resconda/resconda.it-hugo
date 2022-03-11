@@ -30,6 +30,10 @@
     {{ partial "header.html" }}
     {{ end }}
     {{ block "main" . }}{{ end }}
+    {{ block "footer" . }}
+    {{ partial "footer.html" }}
+    {{ end }}
+    
     {{ block "footer_scripts" . }}
     <!-- Jquery -->
     <script src="{{ "js/jquery.min.js" | absLangURL }}"></script>

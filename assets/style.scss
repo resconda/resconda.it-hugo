@@ -1,5 +1,6 @@
 $highlight: rgb(250, 100, 50);
-$grey: rgba(200,200,200,0.2);
+$grey: rgba(200,200,200,1.0);
+$lightgrey: rgba(200,200,200,0.2);
 
 * {
   box-sizing: border-box;
@@ -89,7 +90,7 @@ table {
     table-layout: fixed;
     width: 100%;
   }
-  tr:nth-child(even) { background-color: $grey; }
+  tr:nth-child(even) { background-color: $lightgrey; }
   tbody {
     display: block;
     max-height: 70vh;
@@ -144,7 +145,7 @@ figure {
     margin: 1em 0;
     padding: 0 1em;
     border:1px dashed transparentize($highlight, 0.7);
-    background-color: $grey;
+    background-color: $lightgrey;
     p:only-child { margin: 0.2em 0; }
   }
 }
@@ -160,7 +161,7 @@ figure {
       color: black;
         text-decoration: none;
       &:hover, &:focus, &:active {
-        background: $grey;
+        background: $lightgrey;
       }
     }
     date {
@@ -187,6 +188,9 @@ figure {
 .col-center {
   text-align: center;
 }
+.light {
+  color: $grey;
+}
 
 /* Site header stuff*/
 header {
@@ -211,4 +215,21 @@ nav {
     position: absolute;
     top: 50px;
   }
+}
+/* Site footer stuff*/
+footer {
+  font-size: smaller;
+  .list-group li {
+    border: none;
+    padding: 0.5rem 0.5rem;
+    // a {
+    //   color: inherit;
+    // }
+  }
+}
+
+
+/* Bootstrap overrides */
+.card.no-border {
+  border: unset;
 }
