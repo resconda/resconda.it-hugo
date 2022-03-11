@@ -3,7 +3,7 @@ languageCode: it-it
 title: ResConDA
 
 params:
-    logo: "/images/resconda_logo.png"
+    logo: "https://res.cloudinary.com/resconda-it/image/upload/v1646949774/assets/img/logo/favicon.png"
     header_image: "/images/limits.jpg"
     home_title: "Azione consapevole"
     slogan: |
