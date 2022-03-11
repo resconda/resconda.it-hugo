@@ -3,14 +3,14 @@
 # draft: true
 title: In Viaggio Verso Abilene Texas
 date: 2022-03-09
+images:
+  - assets/post-img/abilene-cover
 ## below are user-defined parameters (lower case keys recommended)
 subtitle:
 tags:
   - energia
 
 ---
-
-# In viaggio verso Abilene, Texas
 
 *“Energy is central. Any movement, activity or event in nature requires energy”*
 
