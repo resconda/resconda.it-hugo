@@ -1,9 +1,19 @@
 {{ define "main" }}
 <div class="container-fluid">
+  <h2>{{.Title}}</h2>
   <!-- list template -->
-  <h3>{{.Title}}</h3>
   {{ range .RegularPages }}
-  <div><a href="{{.Permalink}}">{{.Title}}</a></div>
+  <div class="card page-card" >
+    {{ with .Params.cover_image }}
+      {{$alt := (path.Split .)}}
+      {{ partial "cloudinary_image.html" (dict "image_name" . "alt" $alt.File ) "class" "card-img-top"}}
+    {{end}}
+    <div class="card-body">
+      <h3 class="card-title">{{.Title}}</h5>
+      <div class="card-text">{{.Summary}}</div>
+      <a href="{{.Permalink}}" class="btn btn-primary">Leggi tutto</a>
+    </div>
+  </div>
   {{ end }}
 </div>
 {{ end }}

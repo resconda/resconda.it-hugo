@@ -1,14 +1,14 @@
 {{/* REQUIRED */}}
 {{$image_name := .image_name }}
+{{$alt := .alt }}
 {{$width := .width }}
+{{$class := .class }}
 
 {{/* OPTIONAL */}}
 {{$quality := or (.quality) ("auto") }}
 
 {{$id := .Scratch.Get "id" or "" }}
-{{$class := .Scratch.Get "class" or "" }}
 {{$style := .Scratch.Get "style" or "" }}
-{{$alt := .Scratch.Get "alt" or "" }}
 <img
 width="{{ $width }}"
 id="{{ $id }}"
@@ -20,4 +20,6 @@ https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_{{ $quality }},w_76
 https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_{{ $quality }},w_1024/{{ $image_name }} 1024w,
 https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_{{ $quality }},w_1280/{{ $image_name }} 1280w"
 src="https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_{{ $quality }},w_512/{{ $image_name }}"
-alt="{{ $alt }}" />
+{{with $class}}class="{{.}}"{{end}} 
+{{with $alt}}alt="{{.}}"{{else}}alt="post-image"{{end}} 
+/>
