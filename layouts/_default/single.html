@@ -9,8 +9,8 @@
     <li><a class="post-tag" href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a> </li>
     {{ end }}
   </ul>
-  {{ with .Params.images}}
-  {{ partial "cloudinary_image.html" (dict "image_name" (index . 0) )}}
+  {{ with .Params.cover_image}}
+  {{ partial "cloudinary_image.html" (dict "image_name" . )}}
   {{end}}
   {{ .Content }}
 </div>

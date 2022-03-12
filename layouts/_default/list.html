@@ -9,7 +9,8 @@
       {{ partial "cloudinary_image.html" (dict "image_name" . "alt" $alt.File ) "class" "card-img-top"}}
     {{end}}
     <div class="card-body">
-      <h3 class="card-title">{{.Title}}</h5>
+      <h3 class="card-title">{{.Title}}</h3>
+      {{with .Params.subtitle}}<h5 class="card-subtitle">{{.}}</h5>{{end}}
       <div class="card-text">{{.Summary}}</div>
       <a href="{{.Permalink}}" class="btn btn-primary">Leggi tutto</a>
     </div>
