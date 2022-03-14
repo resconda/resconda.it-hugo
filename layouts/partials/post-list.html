@@ -1,6 +1,7 @@
 <!-- post-list.html -->
 <ul class="posts">
-    {{ range where (where site.RegularPages "Section" "articles") ".File.Ext" "md" | first ( default 5 ( .Scratch.Get "limit"))  }}
+    {{ $page := . }}
+    {{ range where (where (where site.RegularPages "Section" "articles") ".File.Ext" "md") ".Permalink" "!=" $page.Permalink | first ( default 5 ( .Scratch.Get "limit"))  }}
     <li class="post">
       <a href="{{ .Permalink }}">
         <span {{ if .Draft }}style="color: darkgray;"{{ end }}>{{ .Title }}</span>
