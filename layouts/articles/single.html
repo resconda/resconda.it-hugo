@@ -1,0 +1,41 @@
+{{ define "main" }}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-8">
+      <section id="main">
+        <h1 id="title">{{ .Title }}</h1>
+        <h4 id="date"> {{ dateFormat "2 January 2006" .Date.Local }} 
+          <span class="wordcount">{{ .WordCount }} parole</span> 
+        </h4>
+        <div class="taglist">
+          {{ with .Params.tags }}
+            {{ range . }}
+            <a href="/tags/{{ . | urlize }}"><span class="badge rounded-pill bg-light text-dark">
+                    {{.}}
+                  </span></a>
+            {{ end }}
+          {{ end }}
+        </div>
+        <div>
+          <article id="content">
+             {{ .Content }}
+            </article>
+        </div>
+      </section>
+    </div>
+    <div class="col-4">
+      <aside id="meta">
+        <div>
+          <h5>Tags</h5>
+          {{ partial "tag-cloud.html" }}
+        </div>
+        <div>
+          <h5>Articoli recenti</h5>
+          {{ .Scratch.Set "limit" 5 }}
+          {{ partial "post-list.html" . }}
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+{{ end }}

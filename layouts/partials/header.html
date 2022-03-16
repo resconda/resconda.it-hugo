@@ -1,0 +1,27 @@
+<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="{{ site.Params.BaseURL | absURL }}">
+      	{{ partial "cloudinary_image.html" (dict "context" . "image_name" "assets/img/logo/logo_scritta_trasparente" "width" 80) }}
+    </a>
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+	    <div class="navbar-nav">
+	    	{{ $pageUrl := .Permalink }}
+			{{ range site.Menus.main }}
+	        <a class="nav-link {{if in $pageUrl .URL}}active{{end}}" aria-current="page" href="{{.URL}}">{{.Name}}</a>
+			{{ end}}
+		</div>
+    </div>
+</nav>
+<header id="masthead" class="site-header" style="">
+	<div class="container-fluid">
+		<div class="site-heading">
+			<img src="{{ site.Params.header_image }}" />
+            <div class="header-image-overlay">
+            	<h1>{{ site.Params.home_title }} </h1>
+        		<span class="subheading">{{ site.Params.slogan | markdownify }}</span>
+        	</div>
+        </div>
+	</div>
+</header>

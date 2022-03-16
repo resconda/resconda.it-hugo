@@ -1,0 +1,37 @@
+baseURL: /
+languageCode: it-it
+title: ResConDA
+
+params:
+    logo: "https://res.cloudinary.com/resconda-it/image/upload/v1646949774/assets/img/logo/favicon.png"
+    header_image: "/images/limits.jpg"
+    home_title: "Azione consapevole"
+    slogan: |
+      RESCONDA – Associazione per la  
+      REStituzione CONsapevole del  
+      Debito Ambientale
+    socials:
+    - link: "https://facebook.com"
+      name: facebook
+      icon_tag: "<i class=\"fa-brands fa-facebook fa-2x\"></i>"
+    - link: "https://twitter.com"
+      name: twitter
+      icon_tag: "<i class=\"fa-brands fa-twitter fa-2x\"></i>"
+    - link: "https://linkedin.com"
+      name: linkedin
+      icon_tag: "<i class=\"fa-brands fa-linkedin fa-2x\"></i>"
+    - link: "https://instagram.com"
+      name: instagram
+      icon_tag: "<i class=\"fa-brands fa-instagram fa-2x\"></i>"
+
+menus:
+  main:
+  - name: Chi siamo
+    identifier: "about"
+    url: "/about"
+  - name: Blog
+    identifier: "articles"
+    url: "/articles"
+  - name: Contatti 
+    identifier: "contacts"
+    url: "/contacts"

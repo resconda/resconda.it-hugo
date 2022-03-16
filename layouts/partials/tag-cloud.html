@@ -1,0 +1,5 @@
+<ul class="cloud" role="navigation" aria-label="Webdev tag cloud" data-show-value="true">
+	{{ range (site.Taxonomies.tags) }}
+	<li><a href="{{ .Page.Permalink }}" data-weight="{{.Count}}">{{ .Page.Title }}</a></li>
+	{{ end }}
+</ul>

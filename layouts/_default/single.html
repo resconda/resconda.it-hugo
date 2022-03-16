@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="container">
+  <h1 class="title">{{ .Title }}
+    <br>
+    <span class="subtitle">{{ .Params.Subtitle }}</span>
+  </h1>
+  {{ with .Params.cover_image}}
+  {{ partial "cloudinary_image.html" (dict "image_name" . )}}
+  {{end}}
+  {{ .Content }}
+</div>
+{{ end }}

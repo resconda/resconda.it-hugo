@@ -1,0 +1,12 @@
+<!-- post-list.html -->
+<ul class="posts">
+    {{ $page := . }}
+    {{ range where (where (where site.RegularPages "Section" "articles") ".File.Ext" "md") ".Permalink" "!=" $page.Permalink | first ( default 5 ( .Scratch.Get "limit"))  }}
+    <li class="post">
+      <a href="{{ .Permalink }}">
+        <span {{ if .Draft }}style="color: darkgray;"{{ end }}>{{ .Title }}</span>
+        <date>{{ .Date.Format "02.01.2006" }}</date>
+      </a>
+    </li>
+    {{ end }}
+</ul>

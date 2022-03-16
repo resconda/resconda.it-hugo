@@ -3,11 +3,11 @@
 #  This template allows you to validate your Go (Golang) code.
 #  The workflow allows running tests, build and code linting on the default branch.
 
-image: jguyomard/hugo-builder
 
 pipelines:
   default:
     - step:
+        image: trenton/hugo-extended
         name: Build Hugo
         script:
         - |
@@ -18,6 +18,7 @@ pipelines:
         artifacts:
           - public/**
     - step:
+        image: instrumentisto/rsync-ssh
         name: Deploy to server
         script:
         - |
