@@ -16,9 +16,13 @@ html {
 body {
     font-family: "Work Sans", sans-serif !important;
 }
+section {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
 @media (min-width: 768px) {
     .container, .container-fluid {
-        font-size: 125%;
+        /*font-size: 125%; non l'ho capita*/
         max-width: 50em;
         .container-full {
             max-width: unset;
@@ -239,9 +243,12 @@ ul.cloud {
     border: none;
     border-radius: unset; ///
     border-bottom: 1px solid rgba(0, 0, 0, .125);
+    &:last-child {
+      border-bottom: none;
+    }
     .card-text {
         font-size: smaller;
-        font-style: italic;
+        /*font-style: italic;*/
     }
 }
 /* Site header stuff*/
@@ -260,6 +267,12 @@ nav {
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
+}
+.nav-link{
+  &.active{
+    background-color: $lightgrey;
+    border-radius: 10px;
+  }
 }
 .site-heading {
     // background-image: url(images/limits.jpg);
