@@ -269,9 +269,13 @@ nav {
     padding-right: 10px;
 }
 .nav-link{
+  border-radius: 10px;
   &.active{
     background-color: $lightgrey;
-    border-radius: 10px;
+  }
+  &:hover{
+    background-color: darkgray;  
+    text-decoration: none;
   }
 }
 .site-heading {
