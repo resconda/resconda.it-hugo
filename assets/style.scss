@@ -17,8 +17,8 @@ body {
     font-family: "Work Sans", sans-serif !important;
 }
 section {
-  margin-bottom: 1em;
-  margin-top: 1em;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 @media (min-width: 768px) {
     .container, .container-fluid {
@@ -30,7 +30,8 @@ section {
     }
 }
 h1, h2, h3, h4 {
-    margin: 2.5rem 0 1.5rem 0;
+    margin-top: 0;
+    margin-bottom:  1.5rem;
     line-height: 1.25;
     color: #333;
 }
@@ -289,13 +290,17 @@ nav {
 /* Site footer stuff*/
 
 footer {
-    font-size: smaller;
-    .list-group li {
-        border: none;
-        padding: 0.5rem 0.5rem; // a {
-        //   color: inherit;
-        // }
-    }
+  padding-top: 1.5rem;
+  font-size: smaller;
+  .list-group li {
+      border: none;
+      padding: 0.5rem 0.5rem; // a {
+      //   color: inherit;
+      // }
+  }
+  .list-group-item {
+    background-color: transparent;
+  }
 }
 /* Bootstrap overrides */
 

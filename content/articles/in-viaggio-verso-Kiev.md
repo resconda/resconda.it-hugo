@@ -27,7 +27,7 @@ militari **lungo 65km**, composto principalmente da camion e mezzi corazzati.
 Il convoy è partito dal confine bielorusso, diretto verso
 Kiev, per una **distanza di circa 200km**.
 
-![Il percorso del convoy, pi&ugrave; o meno](assets/post-img/ua_convoy_path)
+![Il percorso del convoy, pi&ugrave; o meno](assets/post-img/ua_convoy_path_satellite)
 
 Come esercizio di consapevolezza proviamo a stimare l'ordine di
 grandezza in termini energetici di questa manovra.
