@@ -11,7 +11,10 @@ pipelines:
         name: Build Hugo
         script:
         - |
-          hugo -D
+          if [[ "${BITBUCKET_BRANCH}" != "master" ]]; then
+            DEBUG="-D"
+          fi
+          hugo $DEBUG
         artifacts:
           - public/**
     - step:
