@@ -1,10 +1,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {{ $styles := resources.Get "style.scss" | toCSS  }}
     <link rel="shortcut icon" href="{{ .Site.Params.logo | absLangURL }}">
 
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" type="text/css" />
     <title>{{ .Title }}</title>
 
     <!-- Bootstrap Core CSS -->
@@ -16,5 +14,7 @@
     <!-- Fontawesome Kit -->
     <script src="https://kit.fontawesome.com/4106bab399.js" crossorigin="anonymous"></script>
 
+    {{ $styles := resources.Get "style.scss" | toCSS  }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" type="text/css" />
     {{ if .Params.math }}{{ partial "helpers/katex.html"}}{{ end }}
 </head>

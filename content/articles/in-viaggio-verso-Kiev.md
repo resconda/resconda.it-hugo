@@ -11,13 +11,15 @@ tags:
   - energia
   - fossile
 math: true
+summary: |
+  Un'energia sufficiente ad alimentare circa 3700 abitazioni in  un intero anno,
+  divorata in una sola mattina.
 ---
 
 Il giorno 1 Marzo l'esercito Russo ha intensificato le manovre in
 Ucraina mandando (tra le numerose operazioni) un _convoy_ che ha
 fatto notizia per la sua impressionante mole.
 
-<!--more-->
 
 Le notizie parlano di un _convoy_ di mezzi
 militari **lungo 65km**, composto principalmente da camion e mezzi corazzati.

@@ -12,7 +12,9 @@ tags:
   - eden
 ---
 
-## Siamo nei guai
+Siamo nei guai
+
+<!--more-->
 
 Si potrebbe ritenere che una popolazione di individui inseriti in un habitat ‘ideale’ finisca sistematicamente col degenerare ed estinguersi. Un limite alla idea di un mondo ideale, di un eden di benessere e prosperità a cui probabilmente toccherà rassegnarsi.
 
