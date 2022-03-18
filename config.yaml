@@ -32,6 +32,6 @@ menus:
   - name: Blog
     identifier: "articles"
     url: "/articles"
-  - name: Contatti 
-    identifier: "contacts"
-    url: "/contacts"
+  # - name: Contatti 
+  #   identifier: "contacts"
+  #   url: "/contacts"
