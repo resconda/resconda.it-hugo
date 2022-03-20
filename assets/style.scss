@@ -327,9 +327,11 @@ nav {
 .site-heading {
     // background-image: url(images/limits.jpg);
     position: relative;
-    .header-image-overlay {
-        position: absolute;
-        top: 50px;
+    @include media-breakpoint-up(sm) {
+      .header-image-overlay {
+          position: absolute;
+          top: 65px;
+      }
     }
 }
 /* Site footer stuff*/
