@@ -1,4 +1,48 @@
-@import "scss/color.scss";
+// 0. Site's logo colors
+$logo-color-lightgrey: rgb(182, 189, 205);
+$logo-color-lightblue: rgb(33, 159, 198);
+$logo-color-orange: rgb(244, 147, 47);
+$logo-color-blue: rgb(102, 118, 141);
+$highlight: rgb(250, 100, 50);
+$grey: rgba(200, 200, 200, 1.0);
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "./bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+$primary: $logo-color-lightblue;
+$secondary: $logo-color-lightgrey;
+$tertiary: $logo-color-blue;
+$quaternary: $logo-color-orange;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "./bootstrap/scss/variables";
+@import "./bootstrap/scss/mixins";
+@import "./bootstrap/scss/root";
+
+// 4. Include any optional Bootstrap CSS as needed
+// --> these surely needed
+@import "./bootstrap/scss/navbar";
+@import "./bootstrap/scss/nav";
+@import "./bootstrap/scss/list-group";
+@import "./bootstrap/scss/card";
+@import "./bootstrap/scss/buttons";
+@import "./bootstrap/scss/transitions";
+// <--
+@import "./bootstrap/scss/utilities";
+@import "./bootstrap/scss/reboot";
+@import "./bootstrap/scss/type";
+@import "./bootstrap/scss/images";
+@import "./bootstrap/scss/containers";
+@import "./bootstrap/scss/grid";
+@import "./bootstrap/scss/helpers";
+
+// 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "./bootstrap/scss/utilities/api";
+
+// 6. Add additional custom code here
+//  @import "scss/color.scss";
 * {
     box-sizing: border-box;
     margin: 0;
@@ -34,7 +78,6 @@ h1, h2, h3, h4 {
     color: #333;
 }
 a {
-    color: $link-color !important;
     text-decoration: none;
     &:hover, &:focus, &:active {
         text-decoration: underline;
@@ -94,7 +137,7 @@ table {
         width: 100%;
     }
     tr:nth-child(even) {
-        background-color: $lightgrey;
+        background-color: $logo-color-lightgrey;
     }
     tbody {
         display: block;
@@ -139,6 +182,10 @@ figure {
         color: grey;
     }
 }
+// fontawesome icons
+i.fa, i.fa-solid {
+  color:  $tertiary;
+}
 .footnote-definition {
     sup {
         margin-left: -1.5em;
@@ -148,7 +195,7 @@ figure {
         margin: 1em 0;
         padding: 0 1em;
         border: 1px dashed transparentize($highlight, 0.7);
-        background-color: $lightgrey;
+        background-color: $logo-color-lightgrey;
         p:only-child {
             margin: 0.2em 0;
         }
@@ -193,7 +240,7 @@ figure {
     text-align: center;
 }
 .light {
-    color: $grey;
+    //color: $grey;
 }
 .wordcount {
   font-size: smaller;
@@ -270,10 +317,10 @@ nav {
 .nav-link{
   border-radius: 10px;
   &.active{
-    background-color: $lightgrey;
+    background-color: $logo-color-lightgrey;
   }
   &:hover{
-    background-color: darkgray;  
+    background-color: lighten($logo-color-lightgrey, 15%);  
     text-decoration: none;
   }
 }
