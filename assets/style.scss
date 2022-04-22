@@ -63,11 +63,13 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     /*font-weight: 300;*/
+    color: $logo-color-blue;
+    overflow: hidden;
 }
-section {
-  margin-bottom: 2em;
-  margin-top: 2em;
-}
+// section {
+//   margin-bottom: 2em;
+//   margin-top: 2em;
+// }
 @media (min-width: 768px) {
     .container, .container-fluid {
         /*font-size: 125%; non l'ho capita*/
@@ -81,7 +83,7 @@ h1, h2, h3, h4 {
     margin-top: 0;
     margin-bottom:  1.5rem;
     line-height: 1.25;
-    color: #333;
+    // color: #333;
 }
 a {
     text-decoration: none;
@@ -169,7 +171,7 @@ table, .highlight>pre, pre.example {
 .subtitle {
     font-weight: normal;
     font-size: 0.75em;
-    color: #666;
+    // color: #666;
 }
 .tags {
     // margin-top: -1.5rem;
@@ -180,18 +182,24 @@ table, .highlight>pre, pre.example {
     }
 }
 #our-numbers{
-  color: $logo-color-blue;
   p{
     text-transform: uppercase;
   }
 }
 .promo{
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  @include media-breakpoint-up(sm) {
+    font-size: 3rem;
+  }
 }
 .fullwidth-section{
   padding-left: 10%;
   padding-right: 10%;
+  @include media-breakpoint-up(lg) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
   padding-top: 2em;
   padding-bottom: 2em;
 }
@@ -367,23 +375,38 @@ nav {
 .fullwidth{
   width: 100%;
 }
+.overflow {
+  max-width: unset;
+  &.overflow-25{
+    width: 125%;
+    transform: translateX(-12.5%);
+  }
+  &.overflow-40 {
+    width: 140%;
+    transform: translateX(-20%);
+  }
+  &.overflow-50 {
+    width: 150%;
+    transform: translateX(-25%);
+  }
+}
 .overlay {
   position: absolute;
-  top: 0px;
+  top: 10px;
   left: 20px;
   @include media-breakpoint-up(sm) {
-    top: 100px;
-    left: 20%;
+    top: 120px;
+    left: 10%;
   }
 }
 .site-title {
   font-weight: bold;
   color: $quaternary;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
   line-height: 1;
   @include media-breakpoint-up(sm) {
-    font-size: 5rem;
+    font-size: 5.5rem;
   }
 }
 .site-subtitle{
@@ -391,7 +414,7 @@ nav {
   @include media-breakpoint-up(sm) {
     font-size: 2rem;
   }
-  color: #666666;
+  // color: #666666;
 }
 .site-heading {
     // background-image: url(images/limits.jpg);
@@ -401,9 +424,13 @@ nav {
       font-size: larger;
       color: #666666;
     }
+    .header-image-overlay {
+      position: absolute;
+      top: 10px;
+      opacity: 0.7;
+    }
     @include media-breakpoint-up(sm) {
       .header-image-overlay {
-          position: absolute;
           top: 65px;
       }
       h1.title {
