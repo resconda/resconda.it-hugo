@@ -6,6 +6,10 @@ $logo-color-blue: #66768D; // rgb(102, 118, 141);
 
 $highlight: rgb(250, 100, 50);
 $grey: rgba(200, 200, 200, 1.0);
+$background1: rgb(98, 111, 125);
+$background2: rgb(219, 219, 219);
+$background3: $logo-color-lightblue;
+$background4: rgb(186, 218, 85);
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "./bootstrap/scss/functions";
@@ -57,7 +61,8 @@ html {
     margin: 0 auto; // padding: 1.5em;
 }
 body {
-    font-family: "Work Sans", sans-serif !important;
+    font-family: 'Open Sans', sans-serif;
+    /*font-weight: 300;*/
 }
 section {
   margin-bottom: 2em;
@@ -173,6 +178,31 @@ table, .highlight>pre, pre.example {
         display: inline;
         margin-right: 0.5em;
     }
+}
+#our-numbers{
+  color: $logo-color-blue;
+  p{
+    text-transform: uppercase;
+  }
+}
+.promo{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.fullwidth-section{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+#prologue{
+  background-color: $background1;
+}
+#consapevolezza-amore{
+  background-color: $background2;
+  .site-title{
+    color: white;
+  }
 }
 figure {
     margin: 1em 0;
@@ -331,13 +361,53 @@ nav {
 #masthead {
   justify-content: center;
 }
+.fullwidth-container{
+  position: relative;
+}
+.fullwidth{
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  @include media-breakpoint-up(sm) {
+    top: 100px;
+    left: 20%;
+  }
+}
+.site-title {
+  font-weight: bold;
+  color: $quaternary;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  @include media-breakpoint-up(sm) {
+    font-size: 5rem;
+  }
+}
+.site-subtitle{
+  font-size: 1.1rem;
+  @include media-breakpoint-up(sm) {
+    font-size: 2rem;
+  }
+  color: #666666;
+}
 .site-heading {
     // background-image: url(images/limits.jpg);
     position: relative;
+    
+    .subheading {
+      font-size: larger;
+      color: #666666;
+    }
     @include media-breakpoint-up(sm) {
       .header-image-overlay {
           position: absolute;
           top: 65px;
+      }
+      h1.title {
+          font-size: 4rem;
       }
     }
 }

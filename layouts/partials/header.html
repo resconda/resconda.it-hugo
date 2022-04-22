@@ -14,14 +14,10 @@
 		</div>
     </div>
 </nav>
-<header id="masthead" class="site-header" style="">
-	<!-- <div class="container-fluid"> -->
-		<div class="site-heading">
-            <div class="container-fluid header-image-overlay">
-            	<h1>{{ site.Params.home_title }} </h1>
-        		<span class="subheading">{{ site.Params.slogan | markdownify }}</span>
-        	</div>
-			<img src="{{ site.Params.header_image }}" />
-        </div>
-	<!-- </div> -->
-</header>
+<div class="fullwidth-container">
+	<img src="{{ site.Params.header_image }}" class="img-fluid fullwidth"/>
+	<div class="overlay">
+		<h1 class="site-title">{{ site.Params.home_title | markdownify }} </h1>
+		<h2 class="site-subtitle">{{ site.Params.slogan | markdownify }}</h2>
+	</div>
+</div>

@@ -5,11 +5,13 @@ title: ResConDA
 params:
     logo: "https://res.cloudinary.com/resconda-it/image/upload/v1646949774/assets/img/logo/favicon.png"
     header_image: "/images/limits.jpg"
-    home_title: "Azione consapevole"
+    home_title: |
+      Azione  
+      consapevole
     slogan: |
-      RESCONDA – Associazione per la  
-      REStituzione CONsapevole del  
-      Debito Ambientale
+      Associazione per la  
+      **RES**tituzione **CON**sapevole   
+      del **D**ebito **A**mbientale
     socials:
     - link: "https://facebook.com"
       name: facebook
