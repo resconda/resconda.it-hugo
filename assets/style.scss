@@ -12,6 +12,9 @@ $background3: $logo-color-lightblue;
 $background4: rgb(186, 218, 85);
 $background5: #BADB55;
 
+$colordarkblue: #281A39;
+$colormildgrey: #626262;
+
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "./bootstrap/scss/functions";
 
@@ -79,6 +82,12 @@ body {
         .container-full {
             max-width: unset;
         }
+    }
+    div.narrow {
+      width: 80%;
+      &.right {
+        margin-left: auto;
+      }
     }
 }
 h1, h2, h3, h4 {
@@ -209,8 +218,11 @@ table, .highlight>pre, pre.example {
 #prologue{
   background-color: $background1;
 }
-#consapevolezza-amore{
+#perche{
   background-color: $background2;
+}
+#contare{
+  background-color: $background5;
 }
 figure {
     margin: 1em 0;
@@ -375,6 +387,16 @@ span.unit {
 }
 .orange {
   color: $quaternary;
+}
+.darkblue {
+  color: $colordarkblue;
+}
+.mildgrey {
+  color: $colormildgrey;
+}
+.importanttext {
+  font-size: x-large;
+  font-weight: bold;
 }
 #masthead {
   justify-content: center;
