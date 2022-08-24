@@ -1,15 +1,16 @@
 // 0. Site's logo colors
 $logo-color-lightgrey: #B6BDCD; // rgb(182, 189, 205);
-$logo-color-lightblue: #219FC6; // rgb(33, 159, 198);
-$logo-color-orange: #F4932F; // rgb(244, 147, 47);
+$logo-color-lightblue: #40C0F2; // rgb(33, 159, 198);
+$logo-color-orange: #F77E04; // rgb(244, 147, 47);
 $logo-color-blue: #66768D; // rgb(102, 118, 141);
 
 $highlight: rgb(250, 100, 50);
 $grey: rgba(200, 200, 200, 1.0);
-$background1: rgb(98, 111, 125);
-$background2: rgb(219, 219, 219);
+$background1: #154051;
+$background2: #47B4D1;
 $background3: $logo-color-lightblue;
 $background4: rgb(186, 218, 85);
+$background5: #BADB55;
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "./bootstrap/scss/functions";
@@ -66,10 +67,11 @@ body {
     color: $logo-color-blue;
     overflow: hidden;
 }
-// section {
-//   margin-bottom: 2em;
-//   margin-top: 2em;
-// }
+@media (max-width: 576px) {
+  .navbar .navbar-brand img {
+    max-width: 200px;
+  }
+}
 @media (min-width: 768px) {
     .container, .container-fluid {
         /*font-size: 125%; non l'ho capita*/
@@ -182,6 +184,7 @@ table, .highlight>pre, pre.example {
     }
 }
 #our-numbers{
+  color: $logo-color-orange;
   p.promo-description{
     text-transform: uppercase;
   }
@@ -190,7 +193,7 @@ table, .highlight>pre, pre.example {
   font-size: 1.5rem;
   font-weight: bold;
   @include media-breakpoint-up(sm) {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 .fullwidth-section{
@@ -208,9 +211,6 @@ table, .highlight>pre, pre.example {
 }
 #consapevolezza-amore{
   background-color: $background2;
-  .site-title{
-    color: white;
-  }
 }
 figure {
     margin: 1em 0;
@@ -357,6 +357,7 @@ nav {
     padding-right: 10px;
 }
 .nav-link{
+  font-size: 1.3rem;
   border-radius: 10px;
   &.active{
     background-color: $logo-color-lightgrey;
@@ -365,6 +366,15 @@ nav {
     background-color: lighten($logo-color-lightgrey, 15%);  
     text-decoration: none;
   }
+}
+span.unit {
+  font-size: 0.5em;
+}
+.white {
+  color: white;
+}
+.orange {
+  color: $quaternary;
 }
 #masthead {
   justify-content: center;
@@ -401,12 +411,11 @@ nav {
 }
 .site-title {
   font-weight: bold;
-  color: $quaternary;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-bottom: 0.5rem;
   line-height: 1;
   @include media-breakpoint-up(sm) {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
   }
 }
 .site-subtitle{
