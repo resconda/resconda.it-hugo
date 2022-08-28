@@ -10,10 +10,12 @@ $background1: #154051;
 $background2: #47B4D1;
 $background3: $logo-color-lightblue;
 $background4: rgb(186, 218, 85);
-$background5: #BADB55;
+$green01: #BADB55;
+$background6: #395D70;
 
 $colordarkblue: #281A39;
 $colormildgrey: #626262;
+$colorpink: #9C6ACE;
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "./bootstrap/scss/functions";
@@ -135,7 +137,14 @@ img {
     max-width: 100%;
     display: block;
     margin: 0 auto;
-    padding: 0.5em;
+    // padding: 0.5em;
+}
+.img-label {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-weight: bold;
 }
 blockquote {
     padding-left: 1em;
@@ -221,8 +230,35 @@ table, .highlight>pre, pre.example {
 #perche{
   background-color: $background2;
 }
-#contare, #la-faccia{
-  background-color: $background5;
+#contare, #la-faccia, #team{
+  background-color: $green01;
+}
+#animated {
+
+}
+#shorttermgoal {
+  background-color: $background6;
+  color: $green01;
+}
+#shortermgoalinvert {
+  color: $background6;
+  background-color: $green01;
+}
+#samples {
+  background-color: $background6;
+  color: $logo-color-orange;
+  @include media-breakpoint-up(lg) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+#joinus {
+  background-color: $green01;
+  color: $background6;
+}
+#contactus {
+  background-color: $background2;
+  color: white;
 }
 figure {
     margin: 1em 0;
@@ -393,6 +429,18 @@ span.unit {
 }
 .mildgrey {
   color: $colormildgrey;
+}
+form.pink {
+  & .form-control {
+    color: white;
+    background-color: $colorpink;
+  }
+  & button {
+    color: black;
+    background-color: white;
+    border-color: $colorpink;
+    border-width: 5px;
+  }
 }
 .importanttext {
   font-size: x-large;
