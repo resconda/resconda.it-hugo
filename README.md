@@ -29,3 +29,7 @@ cover_image: /path-to-image # opzionale
 
 Si e' scelto di non versionare le immagini del sito qui sul repository Git, ma di utilizzare invece [Cloudinary](https://cloudinary.com/).  
 Per inserire immagini negli articoli o nelle pagine del sito, occorre quindi prima caricarle su cloudinary, copiare il percorso relativo e usarlo come riferimento nel codice dell'articolo.
+
+## Heroku deploy
+
+istruzioni qui
