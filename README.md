@@ -37,3 +37,4 @@ Provo con Heroku-Hugo-buildpack di Joantolos
 torno a ropherz
 https://github.com/roperzh/heroku-buildpack-hugo#v0.23
 https://github.com/paolomarr/paolomarr-hugo-heroku-buildpack.git#v1.0 fatta release
+https://github.com/paolomarr/paolomarr-hugo-heroku-buildpack.git#environment non funzionera'
