@@ -141,9 +141,17 @@ img {
 }
 .img-label {
   position: absolute;
-  bottom: 20px;
+  &.top {
+    top: 20px;
+  }
+  &.bottom {
+    bottom: 20px;
+  }
   left: 20px;
   color: white;
+  &.dark {
+    color: $background6;
+  }
   font-weight: bold;
 }
 blockquote {
@@ -230,11 +238,16 @@ table, .highlight>pre, pre.example {
 #perche{
   background-color: $background2;
 }
-#contare, #la-faccia, #team{
+#contare, #la-faccia {
   background-color: $green01;
 }
-#animated {
-
+#team {
+  background-color: $green01;
+  padding: 0 5% 2em;
+}
+#animated p.overlay {
+    position: absolute;
+    bottom: 0px;
 }
 #shorttermgoal {
   background-color: $background6;
@@ -247,9 +260,13 @@ table, .highlight>pre, pre.example {
 #samples {
   background-color: $background6;
   color: $logo-color-orange;
+  padding-bottom: 2em;
   @include media-breakpoint-up(lg) {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  img {
+    max-height: 463;
   }
 }
 #joinus {
@@ -520,16 +537,14 @@ form.pink {
 /* Site footer stuff*/
 
 footer {
-  padding-top: 1.5rem;
+  background-color: $logo-color-orange;
+  color: white;
+  text-align: center;
   font-size: smaller;
-  .list-group li {
-      border: none;
-      padding: 0.5rem 0.5rem; // a {
-      //   color: inherit;
-      // }
-  }
-  .list-group-item {
-    background-color: transparent;
+  padding: 1em 0;
+  p {
+    padding: 0;
+    margin: 0;
   }
 }
 /* Bootstrap overrides */

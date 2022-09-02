@@ -1,0 +1,19 @@
+{{/* REQUIRED */}}
+{{$video_name := .video_name }}
+{{$video_type := .video_type }}
+{{$alt := .alt }}
+{{$class := .class }}
+
+{{/* OPTIONAL */}}
+{{$quality := or (.quality) ("auto") }}
+
+{{$id := .Scratch.Get "id" or "" }}
+{{$style := .Scratch.Get "style" or "" }}
+<video autoplay muted loop>
+    <source 
+id="{{ $id }}"
+{{with $class}}class="{{.}}"{{end}} 
+{{with $alt}}alt="{{.}}"{{else}}alt="post-image"{{end}} 
+style="{{ $style }}"
+src="https://res.cloudinary.com/resconda-it/video/upload/{{ $video_name }}" type="{{ $video_type }}" />
+</video>

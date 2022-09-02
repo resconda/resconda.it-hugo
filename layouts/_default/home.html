@@ -89,12 +89,12 @@
             </p>
         </div>
     </section>
-    <section id="team" style="padding: 0 5%;">
+    <section id="team">
         <div class="row" style="margin-left: auto; margin-right: auto;">
             <div class="col col-12 col-md-6 col-xl-3">
                 <div style="position: relative;">
                     {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/marcello_corongiu_ceox1d") }}
-                    <div class="img-label">Marcello</div>
+                    <div class="img-label bottom">Marcello</div>
                 </div>
             </div>
             <!-- <div class="col col-12 col-md-6 col-xl-3 ">
@@ -109,26 +109,30 @@
             </div> -->
             <div class="col col-12 col-md-6 col-xl-3 ">
                 <div style="position: relative;">
+                    
                     {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/paolo_marchetti_jokqkx") }}
-                    <div class="img-label">Paolo</div>
+                    <div class="img-label bottom">Paolo</div>
                 </div>
             </div>
             <div class="col col-12 col-md-6 col-xl-3 ">
                 <div style="position: relative;">
                     {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/marco_marzot_ccsvww") }}
-                    <div class="img-label">Marco</div>
+                    <div class="img-label bottom">Marco</div>
                 </div>
             </div>
             <div class="col col-12 col-md-6 col-xl-3 ">
                 <div style="position: relative;">
                     {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/stefano_serra_p55e8b") }}
-                    <div class="img-label">Stefano</div>
+                    <div class="img-label bottom">Stefano</div>
                 </div>
             </div>
         </div>
     </section>
     <section id="animated">
-        <p class="site-title white">Ogni giorno, ognuno di noi decide il futuro dei propri nipoti</p>
+        <div style="position: relative;">
+            {{ partial "cloudinary_video.html" (dict "video_name" "assets/video/people_walking_hcfxq9" "video_type" "video/mp4" )}}
+            <p class="site-title white overlay">Ogni giorno, ognuno di noi decide il futuro dei propri nipoti</p>
+        </div>
     </section>
     <section class="fullwidth-section" id="shorttermgoal">
         <p class="site-title">
@@ -145,12 +149,13 @@
         </div>
     </section>
     <section id="samples">
-        <div class="row" style="margin-left: auto; margin-right: auto;">
+        <div class="row justify-content-center">
             <div class="col col-12 col-md-6 col-xl-3">
                 <p class="promo">10<span class="unit"> milioni di kWh</span></p>
                 <div style="position: relative;">
-                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/paolo_marchetti_jokqkx" "alt" "Russian convoy") }}
-                    <div class="img-label">
+                    <img
+                        src="https://res.cloudinary.com/resconda-it/image/upload/c_fill,h_667,w_500/v1662098870/assets/img/russian_convoy_utqvuj" />
+                    <div class="img-label top dark">
                         L'energia dissipata nel Marzo 2022 per portare dalla Russia in Ucraina un convoglio militare lungo 65 kilometri
                     </div>
                 </div>
@@ -158,8 +163,9 @@
             <div class="col col-12 col-md-6 col-xl-3">
                 <p class="promo">300<span class="unit"> kWh</span></p>
                 <div style="position: relative;">
-                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/plane_wing_thumb" "alt" "plane wing") }}
-                    <div class="img-label">
+                    <img
+                        src="https://res.cloudinary.com/resconda-it/image/upload/c_fill,h_667,w_500/v1662098870/assets/img/PA030373_mini_n1yir9" />
+                    <div class="img-label bottom">
                         L'energia media dissipata in carburante per portare un passeggero in aereo da Torino a Roma
                     </div>
                 </div>
@@ -167,8 +173,10 @@
             <div class="col col-12 col-md-6 col-xl-3">
                 <p class="promo">2<span class="unit"> kWh</span></p>
                 <div style="position: relative;">
-                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/glass_thumb" "alt" "a glass of water") }}
-                    <div class="img-label">
+                    <img
+                    src="https://res.cloudinary.com/resconda-it/image/upload/c_fill,h_667,w_500/v1662098870/assets/img/glass_thumb_lhsf64"
+                    />
+                    <div class="img-label top dark">
                         L'energia media incorporata in un bicchiere di vetro
                     </div>
                 </div>
@@ -176,8 +184,10 @@
             <div class="col col-12 col-md-6 col-xl-3">
                 <p class="promo">0.8<span class="unit"> kWh</span></p>
                 <div style="position: relative;">
-                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/cola_can_thumb" "alt" "a cola can") }}
-                    <div class="img-label">
+                    <img
+                    src="https://res.cloudinary.com/resconda-it/image/upload/c_fill,h_667,w_500/v1662098870/assets/img/cola_can_treonh"
+                    />
+                    <div class="img-label bottom dark">
                         L'energia media incorporata in una
                         lattina da 33 cl
                     </div>
@@ -211,7 +221,7 @@
             </div>
             <div class="col-12 col-md-8">
                 <!-- contact form -->
-                <form class="row pink justify-content-center">
+                <form class="row gy-2 pink justify-content-center">
                     <div class="col-12">
                         <input type="text" class="form-control" placeholder="Nome e cognome" aria-label="Nome e cognome">
                     </div>
