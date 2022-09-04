@@ -28,27 +28,30 @@ params:
 
 menus:
   main:
-  - title: Home
-    identifier: "home"
-    url: "/"
-    weight: 1
+  # - title: Home
+  #   identifier: "home"
+  #   url: "/"
+  #   weight: 1
   - title: Blog
     identifier: "articles"
     url: "/articles"
     weight: 20
   - title: Chi siamo
-    parent: home
     identifier: "contare"
     url: "/#contare"
     weight: 10
+    params:
+      class: "in-page-item"
   - title: Numeri
-    parent: home
     identifier: "numeri"
     url: "/#shorttermgoal"
     weight: 11
+    params:
+      class: "in-page-item"
   - title: Contatti
-    parent: home
     identifier: "contatti"
     url: "/#contactus"
     weight: 15
+    params:
+      class: "in-page-item"
   
