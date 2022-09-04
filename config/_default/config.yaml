@@ -28,12 +28,27 @@ params:
 
 menus:
   main:
-  - name: Chi siamo
-    identifier: "about"
-    url: "/about"
-  - name: Blog
+  - title: Home
+    identifier: "home"
+    url: "/"
+    weight: 1
+  - title: Blog
     identifier: "articles"
     url: "/articles"
-  # - name: Contatti 
-  #   identifier: "contacts"
-  #   url: "/contacts"
+    weight: 20
+  - title: Chi siamo
+    parent: home
+    identifier: "contare"
+    url: "/#contare"
+    weight: 10
+  - title: Numeri
+    parent: home
+    identifier: "numeri"
+    url: "/#shorttermgoal"
+    weight: 11
+  - title: Contatti
+    parent: home
+    identifier: "contatti"
+    url: "/#contactus"
+    weight: 15
+  

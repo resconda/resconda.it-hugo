@@ -1,4 +1,4 @@
-<nav class="navbar navbar-fixed-top navbar-custom navbar-expand-xl fixed-top sps--abv justify-content-end">
+<nav class="navbar navbar-light navbar-fixed-top navbar-custom navbar-expand-xl fixed-top sps--abv justify-content-end">
     <a class="navbar-nav flex-grow-1" href="{{ site.Params.BaseURL | absURL }}">
         <div class="logo-navbar float-end">
             {{ partial "cloudinary_image.html" (dict "context" . "image_name" "assets/img/logo/logo_scritta_orizzontale"
@@ -10,11 +10,24 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <div class="nav navbar-nav">
+        <ul class="navbar-nav">
             {{ $pageUrl := .Permalink }}
             {{ range site.Menus.main }}
-            <a class="nav-link {{if in $pageUrl .URL}}active{{end}}" aria-current="page" href="{{.URL}}">{{.Name}}</a>
+            <li class="nav-item {{ if .HasChildren }}dropdown{{ end }}">
+                <a class="nav-link {{if in $pageUrl .URL}}active{{end}} {{if .HasChildren}}dropdown-toggle{{end}}" 
+                {{ if .HasChildren }}data-bs-toggle="dropdown"{{end}}
+                aria-current="page" href="{{.URL}}" role="button">{{.Title}}</a>
+                {{ if .HasChildren }}
+                <ul class="dropdown-menu">
+                    {{ range .Children }}
+                    <li>
+                        <a class="dropdown-item" href="{{.URL}}">{{.Title}}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+            </li>
             {{ end}}
-        </div>
+        </ul>
     </div>
 </nav>
