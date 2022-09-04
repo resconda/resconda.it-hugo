@@ -9,11 +9,11 @@
 
 {{$id := .Scratch.Get "id" or "" }}
 {{$style := .Scratch.Get "style" or "" }}
-<video autoplay muted loop>
+<video autoplay muted
+    id="{{ $id }}"
+    {{with $class}}class="{{.}}"{{end}} 
+    {{with $alt}}alt="{{.}}"{{else}}alt="post-image"{{end}} 
+    style="{{ $style }}">
     <source 
-id="{{ $id }}"
-{{with $class}}class="{{.}}"{{end}} 
-{{with $alt}}alt="{{.}}"{{else}}alt="post-image"{{end}} 
-style="{{ $style }}"
 src="https://res.cloudinary.com/resconda-it/video/upload/{{ $video_name }}" type="{{ $video_type }}" />
 </video>
