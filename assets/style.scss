@@ -567,7 +567,6 @@ form.pink {
   // color: #666666;
 }
 .site-heading {
-    // background-image: url(images/limits.jpg);
     position: relative;
     
     .subheading {
@@ -587,6 +586,10 @@ form.pink {
           font-size: 4rem;
       }
     }
+}
+
+a>button {
+  width: 100%;
 }
 /* Site footer stuff*/
 
