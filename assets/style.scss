@@ -73,7 +73,7 @@ body {
     overflow: hidden;
 }
 @media (max-width: 576px) {
-  .navbar .navbar-brand img {
+  .navbar img {
     max-width: 200px;
   }
 }
@@ -91,6 +91,13 @@ body {
         margin-left: auto;
       }
     }
+}
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.2s;
+  &.background {
+    background-color: transparentize($color: $logo-color-lightblue, $amount: 0.1);
+  }
 }
 h1, h2, h3, h4 {
     margin-top: 0;
@@ -147,10 +154,13 @@ img {
   &.bottom {
     bottom: 20px;
   }
-  left: 20px;
+  left: 10px;
   color: white;
   &.dark {
     color: $background6;
+    &.contrast {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
   }
   font-weight: bold;
 }
@@ -262,8 +272,8 @@ table, .highlight>pre, pre.example {
   color: $logo-color-orange;
   padding-bottom: 2em;
   @include media-breakpoint-up(lg) {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
   }
   img {
     max-height: 463;
@@ -276,6 +286,29 @@ table, .highlight>pre, pre.example {
 #contactus {
   background-color: $background2;
   color: white;
+}
+$fadein_delay: 0.3s;
+.fadein-scroll, .fadein-onload {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  &.top {
+    transform: translate(0, -10vh);
+  }
+  transition: all 1s;
+  transition-delay: $fadein_delay;
+  &.delay2x {
+    transition-delay: $fadein_delay * 2;
+  }
+  &.delay3x {
+    transition-delay: $fadein_delay * 3;
+  }
+  &.delay4x {
+    transition-delay: $fadein_delay * 4;
+  }
+  &.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 figure {
     margin: 1em 0;
@@ -440,6 +473,10 @@ span.unit {
 }
 .orange {
   color: $quaternary;
+  &.invert {
+    color: white;
+    background-color: $quaternary;
+  }
 }
 .darkblue {
   color: $colordarkblue;
@@ -493,7 +530,24 @@ form.pink {
   left: 20px;
   @include media-breakpoint-up(sm) {
     top: 120px;
-    left: 10%;
+    left: 25%;
+  }
+}
+.cover {
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  &.cover-70 {
+    height: 70vh;
+  }
+  &.cover-50 {
+    height: 50vh;
+  }
+  &.cover-40 {
+    height: 40vh;
+  }
+  &.cover-30 {
+  height: 30vh;
   }
 }
 .site-title {
