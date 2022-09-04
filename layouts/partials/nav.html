@@ -1,0 +1,20 @@
+<nav class="navbar navbar-fixed-top navbar-custom navbar-expand-xl fixed-top sps--abv justify-content-end">
+    <a class="navbar-nav flex-grow-1" href="{{ site.Params.BaseURL | absURL }}">
+        <div class="logo-navbar float-end">
+            {{ partial "cloudinary_image.html" (dict "context" . "image_name" "assets/img/logo/logo_scritta_orizzontale"
+            "width" 300) }}
+        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="nav navbar-nav">
+            {{ $pageUrl := .Permalink }}
+            {{ range site.Menus.main }}
+            <a class="nav-link {{if in $pageUrl .URL}}active{{end}}" aria-current="page" href="{{.URL}}">{{.Name}}</a>
+            {{ end}}
+        </div>
+    </div>
+</nav>
