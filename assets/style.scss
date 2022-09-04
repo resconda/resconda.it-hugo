@@ -72,6 +72,10 @@ body {
     color: $logo-color-blue;
     overflow: hidden;
 }
+#pageContent {
+  top: 91px;
+  position: relative;
+}
 @media (max-width: 576px) {
   .navbar img {
     max-width: 200px;
@@ -98,6 +102,9 @@ body {
   &.background {
     background-color: transparentize($color: $logo-color-lightblue, $amount: 0.9);
   }
+}
+.navbar-logo {
+  max-height: 91px;
 }
 h1, h2, h3, h4 {
     margin-top: 0;

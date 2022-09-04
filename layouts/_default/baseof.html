@@ -5,13 +5,15 @@
     {{ block "nav" . }}
     {{ partial "nav.html" . }}
     {{ end }}
-    {{ block "header" . }}
-    {{ partial "header.html" . }}
-    {{ end }}
-    {{ block "main" . }}{{ end }}
-    {{ block "footer" . }}
-    {{ partial "footer.html" }}
-    {{ end }}
+    <div id="pageContent">
+      {{ block "header" . }}
+      {{ partial "header.html" . }}
+      {{ end }}
+      {{ block "main" . }}{{ end }}
+      {{ block "footer" . }}
+      {{ partial "footer.html" }}
+      {{ end }}
+    </div>
     
     {{ block "footer_scripts" . }}
     <!-- Jquery -->

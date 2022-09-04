@@ -22,9 +22,9 @@ $(document).on("scroll", function () {
     setTimeout(() => {
         $('.fadein-onload').addClass("visible");
     }, 500);
-    var navheight = $("nav.navbar").height();
-    $("nav.navbar").siblings().each((id, el) => {
-        var baseoffset = $(el).offset();
-        $(el).offset({top: navheight + baseoffset.top});
-    });
+    // var navheight = $("nav.navbar").height();
+    // $("nav.navbar").siblings().each((id, el) => {
+    //     var baseoffset = $(el).offset();
+    //     $(el).offset({top: navheight + baseoffset.top});
+    // });
 });
