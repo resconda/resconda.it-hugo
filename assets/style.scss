@@ -96,7 +96,7 @@ body {
   background-color: transparent;
   transition: background-color 0.2s;
   &.background {
-    background-color: transparentize($color: $logo-color-lightblue, $amount: 0.1);
+    background-color: transparentize($color: $logo-color-lightblue, $amount: 0.9);
   }
 }
 h1, h2, h3, h4 {
