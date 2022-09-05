@@ -71,11 +71,12 @@ body {
     /*font-weight: 300;*/
     color: $logo-color-blue;
     overflow: hidden;
+    padding-top: 91px;
 }
-#pageContent {
-  top: 91px;
-  position: relative;
-}
+// #pageContent {
+//   top: 91px;
+//   position: relative;
+// }
 @media (max-width: 576px) {
   .navbar img {
     max-width: 200px;
@@ -606,7 +607,7 @@ a>button {
 }
 /* Site footer stuff*/
 
-footer {
+.footer {
   background-color: $logo-color-orange;
   color: white;
   text-align: center;
