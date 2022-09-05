@@ -7,10 +7,9 @@
 {{/* OPTIONAL */}}
 {{$quality := or (.quality) ("auto") }}
 
-{{$id := .Scratch.Get "id" or "" }}
 {{$style := .Scratch.Get "style" or "" }}
-<video autoplay muted
-    id="{{ $id }}"
+<video muted
+    {{with .id}}id="{{ . }}"{{end}}
     {{with $class}}class="{{.}}"{{end}} 
     {{with $alt}}alt="{{.}}"{{else}}alt="post-image"{{end}} 
     style="{{ $style }}">
