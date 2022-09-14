@@ -1,0 +1,32 @@
+{{ define "header" }}
+<div></div>
+{{ end }}
+{{ define "main" }}
+<section class="fullwidth-section" id="assunti">
+    <p class="site-title lightblue">
+        assunti di base
+    </p>
+    <div class="fancy-list" style="margin-top: 2em;">
+        {{ range $itemIndex, $item := $.Site.Data.assunti_di_base.assunti }}
+        <div class="row align-items-center">
+            {{ if eq (mod $itemIndex 2) 0 }}
+            <div class="col-2 colindex">
+                {{ add $itemIndex 1 }}
+            </div>
+            <div class="col-10 coltext">
+                {{ $item }}
+            </div>
+            {{ else }}
+            <div class="col-10 coltext">
+                {{ $item }}
+            </div>
+            <div class="col-2 colindex">
+                {{ add $itemIndex 1 }}
+            </div>
+            {{ end }}
+        </div>
+        {{ end}}
+    </div>
+</section>
+{{ .Content }}
+{{ end }}

@@ -1,8 +1,15 @@
+{{ define "header" }}
+<div></div>
+{{ end }}
 {{ define "main" }}
-<div class="container">
+<div class="fullwidth-container">
+  {{with .Title}}
   <h1 class="title">{{ .Title }}
     <br>
+  {{end}}
+  {{with .Params.Subtitle}}
     <span class="subtitle">{{ .Params.Subtitle }}</span>
+    {{end}}
   </h1>
   {{ with .Params.cover_image}}
   {{ partial "cloudinary_image.html" (dict "image_name" . )}}
