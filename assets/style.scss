@@ -104,6 +104,13 @@ body {
     background-color: transparentize($color: $logo-color-lightblue, $amount: 0.9);
   }
 }
+@include media-breakpoint-down(lg) {
+  .navbar-collapse.collapse {
+    visibility: unset;
+    background-color: transparentize($color: $logo-color-lightgrey, $amount: 0.2);
+    text-align: right;
+  }
+}
 .navbar-logo {
   max-height: 91px;
 }
