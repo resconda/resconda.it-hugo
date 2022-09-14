@@ -37,14 +37,14 @@ menus:
     url: "/articles"
     weight: 20
   - title: Chi siamo
-    identifier: "contare"
-    url: "/#contare"
+    identifier: "about"
+    url: "/about"
     weight: 10
     params:
       class: "in-page-item"
-  - title: Numeri
-    identifier: "numeri"
-    url: "/#shorttermgoal"
+  - title: Le basi
+    identifier: "assunti_di_base"
+    url: "/assunti-di-base"
     weight: 11
     params:
       class: "in-page-item"

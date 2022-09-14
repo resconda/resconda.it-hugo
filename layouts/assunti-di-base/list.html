@@ -10,25 +10,46 @@
         {{ range $itemIndex, $item := $.Site.Data.assunti_di_base.assunti }}
         <div class="row align-items-center my-2">
             {{ if eq $item.numberGravity "left" }}
-            <div class="col-2 colindex fadein-scroll top" style="text-align: right; transform: rotate({{ $item.tilt }}deg);">
+            <div class="col-2 colindex fadein-scroll top" 
+                style="text-align: right; transform: rotate({{ $item.tilt }}deg); overflow-wrap: normal;">
                 {{ add $itemIndex 1 }}
             </div>
-            <div class="col-8 coltext">
+            <div class="col-9 coltext">
                 {{ $item.body }}
             </div>
-            <div class="col-2"></div>
+            <div class="col-1"></div>
             {{ else }}
-            <div class="col-2"></div>
-            <div class="col-8 coltext">
+            <div class="col-1"></div>
+            <div class="col-9 coltext">
                 {{ $item.body }}
             </div>
-            <div class="col-2 colindex fadein-scroll top" style="text-align: left; transform: rotate({{ $item.tilt }}deg);">
+            <div class="col-2 colindex fadein-scroll top" 
+                style="text-align: left; transform: rotate({{ $item.tilt }}deg); overflow-wrap: normal;">
                 {{ add $itemIndex 1 }}
             </div>
             {{ end }}
         </div>
         {{ end}}
     </div>
+    <p class="white">
+        Per un approfondimento puoi scaricare il breve saggio "<a href="https://www.amazon.it/Crisi-Solo-radicale-cambiamento-prospettiva-ebook/dp/B086SDJG52/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1GF502PZN5JWG&keywords=la+crisi+marcello+corongiu&qid=1660294268&sprefix=la+crisi+marcello+corongiu%2Caps%2C247&sr=8-1">
+            La Crisi: Solo un radicale cambiamento di prospettiva
+        </a>"
+    </p>
+    <p class="site-title orange">
+        unisciti a noi
+    </p>
+    <div class="row my-2 justify-content-center">
+        <div class="col col-md-4">
+            <a href="/docs/resconda_modulo_adesione_socio.pdf" download="resconda_modulo_adesione_socio.pdf"><button
+                    type="button" class="btn btn-info text-white">Modulo di adesione</button></a>
+        </div>
+    </div>
+    <div class="row my-2 justify-content-center">
+        <div class="col col-md-4">
+            <a href="/docs/resconda_statuto.pdf" download="resconda_statuto.pdf"><button type="button"
+                    class="btn btn-info text-white">Lo statuto</button></a>
+        </div>
+    </div>
 </section>
-{{ .Content }}
 {{ end }}
