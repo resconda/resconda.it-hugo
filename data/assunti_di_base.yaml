@@ -24,14 +24,14 @@ assunti:
     body: |
       Tale circostanza può portare a scenari che occorre scongiurare.
   - numberGravity: "left"
-    tilt: -30
+    tilt: -25
     body: |
       La rilevanza di questa problematica è di ordine superiore ad ogni altra che la società si trova oggi e si sia mai trovata in passato ad affrontare, 
       sia essa sociale, economica o di altra natura: ogni altra considerazione deve cedere il passo alla soluzione 
       del problema ambientale – nei limiti delle capacità di una società di metabolizzare e gestire le conseguenze che da tale impostazione 
       necessariamente discendono - anche perché in molti casi è lo stesso problema ambientale la causa prima di problemi di altra natura (ad esempio le migrazioni).
   - numberGravity: "left"
-    tilt: 30
+    tilt: 25
     body: |
       La sostenibilità ambientale non può che discendere da una riduzione del consumo di risorse, 
       come illustrato 50 anni fa dal Club di Roma nel rapporto sui Limiti dello Sviluppo.

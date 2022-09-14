@@ -10,7 +10,7 @@
         {{ range $itemIndex, $item := $.Site.Data.assunti_di_base.assunti }}
         <div class="row align-items-center my-2">
             {{ if eq $item.numberGravity "left" }}
-            <div class="col-2 colindex" style="text-align: right; transform: rotate({{ $item.tilt }}deg);">
+            <div class="col-2 colindex fadein-scroll top" style="text-align: right; transform: rotate({{ $item.tilt }}deg);">
                 {{ add $itemIndex 1 }}
             </div>
             <div class="col-8 coltext">
@@ -22,7 +22,7 @@
             <div class="col-8 coltext">
                 {{ $item.body }}
             </div>
-            <div class="col-2 colindex" style="text-align: left; transform: rotate({{ $item.tilt }}deg);">
+            <div class="col-2 colindex fadein-scroll top" style="text-align: left; transform: rotate({{ $item.tilt }}deg);">
                 {{ add $itemIndex 1 }}
             </div>
             {{ end }}

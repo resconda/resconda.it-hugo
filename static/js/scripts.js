@@ -14,15 +14,16 @@ var scrollUtils = function () {
         if ($(tag).offset().top < pageBottom) {
             $(tag).addClass("visible");
         }
-        // else {
-        //     $(tag).removeClass("visible");
-        // }
     }
+    // home page only
     var peopleWalkingVideo = $('#peopleWalkingVideo');
-    if (peopleWalkingVideo.offset().top < pageBottom && peopleWalkingVideo.offset().top + peopleWalkingVideo.height() > pageTop) {
+    if (peopleWalkingVideo.length > 0 ){
+        if( 
+        peopleWalkingVideo.offset().top < pageBottom && peopleWalkingVideo.offset().top + peopleWalkingVideo.height() > pageTop) {
         peopleWalkingVideo[0].play();
-    } else {
-        peopleWalkingVideo[0].pause();
+        } else {
+            peopleWalkingVideo[0].pause();
+        }
     }
 };
 $(document)
@@ -31,9 +32,6 @@ $(document)
     setTimeout(() => {
         $('.fadein-onload').addClass("visible");
     }, 500);
-    // var navheight = $("nav.navbar").height();
-    // $("nav.navbar").siblings().each((id, el) => {
-    //     var baseoffset = $(el).offset();
-    //     $(el).offset({top: navheight + baseoffset.top});
-    // });
+    var navheight = $("nav.navbar").outerHeight(true);
+    $('body').css("padding-top", navheight);
 });
