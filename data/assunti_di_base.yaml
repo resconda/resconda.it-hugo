@@ -1,38 +1,60 @@
 assunti:
-  - |
-    L’uomo è parte integrante di un ecosistema più ampio, che comprende una pluralità di altri esseri viventi animali e vegetali 
-    oltre ad elementi inorganici (quali ad esempio la CO2) che "convivono" in un equilibrio complesso e per certi aspetti precario.
-  - |
-    Ogni uomo, donna, bambino, (così come ogni essere vivente) ha un impatto su questo ecosistema.
-  - |
-    Quando tale impatto è superiore alla capacità dell'ambiente di assorbirlo esso deve essere ridotto.
-  - |
-    In natura esistono meccanismi di retroazione che tendono a portare ad una situazione di equilibrio tra esseri viventi ed ecosistema: 
-    l’uomo è riuscito grazie al proprio ingegno ed alle proprie capacità a sfuggire a tali meccanismi, accrescendo la propria numerosità 
-    ed il proprio impatto sull’ambiente fino a modificare l’ecosistema in modo sostanziale, al punto da mettere in pericolo in prospettiva 
-    la sopravvivenza propria e di altre specie viventi.
-  - |
-    Tale circostanza può portare a scenari che occorre scongiurare.
-  - |
-    La rilevanza di questa problematica è di ordine superiore ad ogni altra che la società si trova oggi e si sia mai trovata in passato ad affrontare, 
-    sia essa sociale, economica o di altra natura: ogni altra considerazione deve cedere il passo alla soluzione 
-    del problema ambientale – nei limiti delle capacità di una società di metabolizzare e gestire le conseguenze che da tale impostazione 
-    necessariamente discendono - anche perché in molti casi è lo stesso problema ambientale la causa prima di problemi di altra natura (ad esempio le migrazioni).
-  - |
-    La sostenibilità ambientale non può che discendere da una riduzione del consumo di risorse, 
-    come illustrato 50 anni fa dal Club di Roma nel rapporto sui Limiti dello Sviluppo.
-  - |
-    Il perseguimento degli obiettivi di riequilibrio delle attività umane con l’ecosistema non è compatibile 
-    con la crescita infinita della produzione e dei consumi di beni e servizi e richiede quindi - inevitabilmente - un radicale mutamento 
-    dell’attuale sistema economico e di organizzazione sociale, indissolubilmente basati sull'assunto della crescita.
-  - |
-    Non è ragionevole confidare - con approccio fideistico - nell'innovazione e nella scienza quali deus ex machina in grado, 
-    in un futuro indefinito, di risolvere ogni problema al riguardo.
-  - |
-    Ove tale mutamento non fosse adeguatamente preparato e gestito, esso potrà produrre situazioni di scompenso e disordine sociale 
-    potenzialmente in grado di determinare il collasso dello Stato e delle altre organizzazioni 
-    tradizionalmente deputate alla conservazione dell’ordine sociale.
-  - |
-    Poiché tale collasso è probabilmente inevitabile - anche indipendentemente dalla crisi ambientale in ragione del progressivo 
-    depauperamento della ricchezza energetica disponibile (riduzione del cd. EROEI – Energy Return on Energy Invested”
-     medio delle fonti di energia attualmente disponibili) - è opportuno prepararlo e gestirlo anziché subirlo.
+  - numberGravity: "left"
+    tilt: 0
+    body: |
+      L’uomo è parte integrante di un ecosistema più ampio, che comprende una pluralità di altri esseri viventi animali e vegetali 
+      oltre ad elementi inorganici (quali ad esempio la CO2) che "convivono" in un equilibrio complesso e per certi aspetti precario.
+  - numberGravity: "left"
+    tilt: 0
+    body: |
+      Ogni uomo, donna, bambino, (così come ogni essere vivente) ha un impatto su questo ecosistema.
+  - numberGravity: "right"
+    tilt: 0
+    body: |
+      Quando tale impatto è superiore alla capacità dell'ambiente di assorbirlo esso deve essere ridotto.
+  - numberGravity: "left"
+    tilt: 0
+    body: |
+      In natura esistono meccanismi di retroazione che tendono a portare ad una situazione di equilibrio tra esseri viventi ed ecosistema: 
+      l’uomo è riuscito grazie al proprio ingegno ed alle proprie capacità a sfuggire a tali meccanismi, accrescendo la propria numerosità 
+      ed il proprio impatto sull’ambiente fino a modificare l’ecosistema in modo sostanziale, al punto da mettere in pericolo in prospettiva 
+      la sopravvivenza propria e di altre specie viventi.
+  - numberGravity: "right"
+    tilt: 0
+    body: |
+      Tale circostanza può portare a scenari che occorre scongiurare.
+  - numberGravity: "left"
+    tilt: -30
+    body: |
+      La rilevanza di questa problematica è di ordine superiore ad ogni altra che la società si trova oggi e si sia mai trovata in passato ad affrontare, 
+      sia essa sociale, economica o di altra natura: ogni altra considerazione deve cedere il passo alla soluzione 
+      del problema ambientale – nei limiti delle capacità di una società di metabolizzare e gestire le conseguenze che da tale impostazione 
+      necessariamente discendono - anche perché in molti casi è lo stesso problema ambientale la causa prima di problemi di altra natura (ad esempio le migrazioni).
+  - numberGravity: "left"
+    tilt: 30
+    body: |
+      La sostenibilità ambientale non può che discendere da una riduzione del consumo di risorse, 
+      come illustrato 50 anni fa dal Club di Roma nel rapporto sui Limiti dello Sviluppo.
+  - numberGravity: "left"
+    tilt: 0
+    body: |
+      Il perseguimento degli obiettivi di riequilibrio delle attività umane con l’ecosistema non è compatibile 
+      con la crescita infinita della produzione e dei consumi di beni e servizi e richiede quindi - inevitabilmente - un radicale mutamento 
+      dell’attuale sistema economico e di organizzazione sociale, indissolubilmente basati sull'assunto della crescita.
+  - numberGravity: "left"
+    tilt: 0
+    body: |
+      Non è ragionevole confidare - con approccio fideistico - nell'innovazione e nella scienza quali deus ex machina in grado, 
+      in un futuro indefinito, di risolvere ogni problema al riguardo.
+  - numberGravity: "left"
+    tilt: 0
+    body: |
+      Ove tale mutamento non fosse adeguatamente preparato e gestito, esso potrà produrre situazioni di scompenso e disordine sociale 
+      potenzialmente in grado di determinare il collasso dello Stato e delle altre organizzazioni 
+      tradizionalmente deputate alla conservazione dell’ordine sociale.
+  - numberGravity: "left"
+    tilt: 0
+    body: |
+      Poiché tale collasso è probabilmente inevitabile - anche indipendentemente dalla crisi ambientale in ragione del progressivo 
+      depauperamento della ricchezza energetica disponibile (riduzione del cd. EROEI – Energy Return on Energy Invested”
+      medio delle fonti di energia attualmente disponibili) - è opportuno prepararlo e gestirlo anziché subirlo.

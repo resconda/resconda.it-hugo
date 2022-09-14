@@ -8,19 +8,21 @@
     </p>
     <div class="fancy-list" style="margin-top: 2em;">
         {{ range $itemIndex, $item := $.Site.Data.assunti_di_base.assunti }}
-        <div class="row align-items-center">
-            {{ if eq (mod $itemIndex 2) 0 }}
-            <div class="col-2 colindex">
+        <div class="row align-items-center my-2">
+            {{ if eq $item.numberGravity "left" }}
+            <div class="col-2 colindex" style="text-align: right; transform: rotate({{ $item.tilt }}deg);">
                 {{ add $itemIndex 1 }}
             </div>
-            <div class="col-10 coltext">
-                {{ $item }}
+            <div class="col-8 coltext">
+                {{ $item.body }}
             </div>
+            <div class="col-2"></div>
             {{ else }}
-            <div class="col-10 coltext">
-                {{ $item }}
+            <div class="col-2"></div>
+            <div class="col-8 coltext">
+                {{ $item.body }}
             </div>
-            <div class="col-2 colindex">
+            <div class="col-2 colindex" style="text-align: left; transform: rotate({{ $item.tilt }}deg);">
                 {{ add $itemIndex 1 }}
             </div>
             {{ end }}
