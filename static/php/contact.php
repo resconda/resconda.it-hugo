@@ -19,7 +19,7 @@ $captchaKey = getenv("FRIENDLY_CAPTCHA_SITEKEY");
 error_log("Raw input: " . print_r($_POST, TRUE));
 $INPUT = array_intersect_key($_POST, array_keys($VALID_INPUT_FIELDS));
 // DEBUG
-error_log("Filtered: " print_r($INPUT, TRUE));
+error_log("Filtered: " . print_r($INPUT, TRUE));
 $missing = array_diff_key(array_filter($VALID_INPUT_FIELDS), $INPUT);
 if(count($missing) > 0){
     echo json_encode([
