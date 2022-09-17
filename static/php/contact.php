@@ -62,7 +62,6 @@ function captchaVerify($solution, $secret, $sitekey){
     $ch = curl_init("https://api.friendlycaptcha.com/api/v1/siteverify");
     curl_setopt($ch, CURLOPT_POST, TRUE);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-    curl_setopt($ch, CURLOPT_READDATA, TRUE);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
     $response = curl_exec($ch);
     if (curl_error($ch)) {
