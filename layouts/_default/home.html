@@ -78,11 +78,13 @@
                 azioni educative e formative
                 sugli aspetti quantitativi connessi all'impatto ambientale delle più comuni pratiche di consumo.
             </p>
-            <div style="text-align: center;">
-                <a href="/about">
-                    <button type="button" class="btn btn-info text-white">leggi il nostro
-                        manifesto</button>
-                </a>
+            <div class="row justify-content-center">
+                <div class="col col-md-6">
+                    <a href="/about">
+                        <button type="button" class="btn btn-info text-white">leggi il nostro
+                            manifesto</button>
+                    </a>
+                </div>
             </div>
         </div>
         <p class="site-title white fadein-scroll top">ci mettiamo la faccia</p>
@@ -251,26 +253,7 @@
                 </p>
             </div>
             <div class="col-12 col-md-8">
-                <!-- contact form -->
-                <form class="row gy-2 pink justify-content-center">
-                    <div class="col-12">
-                        <input type="text" class="form-control" placeholder="Nome e cognome"
-                            aria-label="Nome e cognome">
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <input type="email" class="form-control" placeholder="Email" aria-label="email">
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <input type="text" class="form-control" placeholder="Telefono" aria-label="telefono">
-                    </div>
-                    <div class="col-12">
-                        <textarea class="form-control" rows="10" placeholder="Messaggio"
-                            aria-label="messaggio"></textarea>
-                    </div>
-                    <div col-12 style="text-align: center;">
-                        <button type="button" class="btn">Invia</button>
-                    </div>
-                </form>
+                {{ partial "contactform.html" }}
             </div>
         </div>
     </section>

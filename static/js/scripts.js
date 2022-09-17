@@ -26,6 +26,37 @@ var scrollUtils = function () {
         }
     }
 };
+var friendlyCaptchaSetup = function() {
+    // Friendly Captcha observer
+    // Select the node that will be observed for mutations
+    targetNodes = $('.frc-container');
+
+    if(targetNodes.length == 0) return;
+    // Options for the observer (which mutations to observe)
+    const config = { attributes: true, childList: false, subtree: false };
+
+    // Callback function to execute when mutations are observed
+    const callback = (mutationList, observer) => {
+        for (const mutation of mutationList) {
+            if (mutation.type === 'attributes') {
+                if ($(mutation.target).hasClass('.frc-success')) {
+                    $(mutation.target).find('.contactformSubmit').removeAttr('disabled');
+                }
+            }
+        }
+    };
+
+    // Create an observer instance linked to the callback function
+    const observer = new MutationObserver(callback);
+
+    // Start observing the target node for configured mutations
+    targetNodes.each((index, targetNode) => {
+        observer.observe(targetNode, config);        
+    });
+}
+var friendlyCaptchaSolved = function(solution) {
+    $('#friendlyCaptchaFormSubmit').removeAttr('disabled');
+}
 $(document)
 .on("scroll", _.throttle(scrollUtils, 100))
 .on("ready", function () {
@@ -34,4 +65,5 @@ $(document)
     }, 500);
     var navheight = $("nav.navbar").outerHeight(true);
     $('body').css("padding-top", navheight);
+    // friendlyCaptchaSetup();
 });
