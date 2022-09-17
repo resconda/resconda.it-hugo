@@ -13,21 +13,25 @@
         <textarea name="message" class="form-control" rows="10" placeholder="Messaggio" aria-label="messaggio"></textarea>
     </div>
     <div col-12 style="text-align: center;">
-        <button type="button" class="btn" id="friendlyCaptchaFormSubmit" disabled>Invia</button>
+        <button type="button" class="btn" id="friendlyCaptchaFormSubmit" form="contactForm" disabled>Invia</button>
     </div>
     <div class="frc-captcha" data-sitekey="FCMNSLE4OU3RUFTK" data-callback="friendlyCaptchaSolved"></div>
 </form>
 
 <script>
-    $("#contactForm").submit(event => {
-        $.ajax({
-            type: "POST",
-            url: "/php/contact.php",
-            data: data,
-            success: function(data) {
-                console.log(JSON.stringify(data));
-            },
-        });
-        event.preventDefault();
+    window.addEventListener("load", function (document, event) {
+        $("#friendlyCaptchaFormSubmit").click(submitEvent => {
+            formid = $("#friendlyCaptchaFormSubmit").attr('form');
+            data = $(`#${formid}`).serialize();
+            $.ajax({
+                    type: "POST",
+                    url: "/php/contact.php",
+                    data: data,
+                    success: function (data) {
+                        console.log(JSON.stringify(data));
+                    },
+                });
+                submitEvent.preventDefault();
+            });
     });
 </script>
