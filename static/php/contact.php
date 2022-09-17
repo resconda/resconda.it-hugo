@@ -15,11 +15,15 @@ $VALID_INPUT_FIELDS = [
 $captchaSecret = getenv("FRIENDLY_CAPTCHA_SECRET");
 $captchaKey = getenv("FRIENDLY_CAPTCHA_SITEKEY");
 
+// DEBUG
+error_log("Raw input: $_POST");
 $INPUT = array_intersect_key($_POST, array_keys($VALID_INPUT_FIELDS));
+// DEBUG
+error_log("Filtered: $INPUT");
 $missing = array_diff_key(array_filter($VALID_INPUT_FIELDS), $INPUT);
 if(count($missing) > 0){
     echo json_encode([
-        "errors" => ["Missing input: " . join(", ", $missing)],
+        "errors" => ["Missing input: " . join(", ", array_keys($missing))],
     ]);
 }
 
