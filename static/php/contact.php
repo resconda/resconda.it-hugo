@@ -1,7 +1,7 @@
 <?php
 // echo "PHP working";
 
-include "config.php";
+require "config.php";
 
 // TRUE means REQUIRED
 $VALID_INPUT_FIELDS = [
@@ -18,7 +18,7 @@ $captchaKey = getenv("FRIENDLY_CAPTCHA_SITEKEY");
 $INPUT = array_intersect_key($_POST, array_keys($VALID_INPUT_FIELDS));
 $missing = array_diff_key(array_filter($VALID_INPUT_FIELDS), $INPUT);
 if(count($missing) > 0){
-    return json_encode([
+    echo json_encode([
         "errors" => ["Missing input: " . join(", ", $missing)],
     ]);
 }
@@ -40,12 +40,12 @@ EOF;
     if($enqueued != TRUE){
         $errors[] = "Error in PHP mail function. The notification email could not be sent to Site Master";
     }
-    return json_encode([
+    echo json_encode([
         "errors" => $errors,
         "name" => $INPUT['name']
     ]);
 }else{
-    return json_encode([
+    echo json_encode([
         "errors" => ["Captcha verification failed"],
     ]);
 }
