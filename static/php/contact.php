@@ -67,7 +67,7 @@ function captchaVerify($solution, $secret, $sitekey){
     if (curl_error($ch)) {
         error_log(curl_error($ch));
     }else{
-        $parsed = json_decode($response);
+        $parsed = json_decode($response, TRUE);
         if($parsed['success'] == "true"){
             $ret = TRUE;
         }else{
