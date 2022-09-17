@@ -16,15 +16,16 @@ $captchaSecret = getenv("FRIENDLY_CAPTCHA_SECRET");
 $captchaKey = getenv("FRIENDLY_CAPTCHA_SITEKEY");
 
 // DEBUG
-error_log("Raw input: $_POST");
+error_log("Raw input: " . print_r($_POST, TRUE));
 $INPUT = array_intersect_key($_POST, array_keys($VALID_INPUT_FIELDS));
 // DEBUG
-error_log("Filtered: $INPUT");
+error_log("Filtered: " print_r($INPUT, TRUE));
 $missing = array_diff_key(array_filter($VALID_INPUT_FIELDS), $INPUT);
 if(count($missing) > 0){
     echo json_encode([
         "errors" => ["Missing input: " . join(", ", array_keys($missing))],
     ]);
+    die();
 }
 
 $verified = captchaVerify($INPUT['frc-captcha-solutoin'], $captchaSecret, $captchaKey);
@@ -52,6 +53,7 @@ EOF;
     echo json_encode([
         "errors" => ["Captcha verification failed"],
     ]);
+    die();
 }
 // end of main
 
