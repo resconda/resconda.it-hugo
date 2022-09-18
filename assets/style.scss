@@ -109,6 +109,9 @@ body {
     visibility: unset;
     background-color: transparentize($color: $logo-color-lightgrey, $amount: 0.2);
     text-align: right;
+    & .nav-item .nav-link {
+      padding-right: 15px;
+    }
   }
 }
 .navbar-logo {
@@ -241,7 +244,8 @@ table, .highlight>pre, pre.example {
   }
 }
 .promo{
-  font-size: 1.5rem;
+  margin: 0;
+  font-size: 2.5rem;
   font-weight: bold;
   @include media-breakpoint-up(sm) {
     font-size: 2.5rem;
@@ -301,6 +305,13 @@ table, .highlight>pre, pre.example {
 #contactus {
   background-color: $background2;
   color: white;
+}
+#contactForm .showtransition {
+  transition: opacity 0.5s;
+  opacity: 1;
+  &.invisible {
+    opacity: 0;
+  }
 }
 $fadein_delay: 0.3s;
 .fadein-scroll, .fadein-onload {

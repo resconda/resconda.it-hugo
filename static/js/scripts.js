@@ -55,6 +55,7 @@ var friendlyCaptchaSetup = function() {
     });
 }
 var friendlyCaptchaSolved = function(solution) {
+    $('#contactForm .showtransition').removeClass("invisible");
     $('#friendlyCaptchaFormSubmit').removeAttr('disabled');
 }
 $(document)
