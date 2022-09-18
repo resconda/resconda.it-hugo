@@ -3,13 +3,14 @@
 
 require "config.php";
 
+$FRC_CAPTCHA_SOLUTION_KEY = "frc-captcha-solution";
 // TRUE means REQUIRED
 $VALID_INPUT_FIELDS = [
     "name" => FALSE,
     "email" => TRUE,
     "phone" => FALSE,
     "message" => TRUE,
-    "frc-captcha-solution" => TRUE,
+    $FRC_CAPTCHA_SOLUTION_KEY => TRUE,
 ];
 
 $captchaSecret = getenv("FRIENDLY_CAPTCHA_SECRET");
@@ -29,7 +30,7 @@ if(count($missing) > 0){
     die();
 }
 
-$verified = captchaVerify($INPUT['frc-captcha-solutoin'], $captchaSecret, $captchaKey);
+$verified = captchaVerify($INPUT[$FRC_CAPTCHA_SOLUTION_KEY], $captchaSecret, $captchaKey);
 if($verified === TRUE){
     // TODO: send email to site master
     $inputstr = "";
