@@ -14,10 +14,11 @@ $VALID_INPUT_FIELDS = [
 
 $captchaSecret = getenv("FRIENDLY_CAPTCHA_SECRET");
 $captchaKey = getenv("FRIENDLY_CAPTCHA_SITEKEY");
-
+// DEBUG
+error_log("Secret: $captchaSecret - Key: $captchaKey");
 // DEBUG
 error_log("Raw input: " . print_r($_POST, TRUE));
-$INPUT = array_intersect_key($_POST, array_keys($VALID_INPUT_FIELDS));
+$INPUT = array_intersect_key($_POST, $VALID_INPUT_FIELDS);
 // DEBUG
 error_log("Filtered: " . print_r($INPUT, TRUE));
 $missing = array_diff_key(array_filter($VALID_INPUT_FIELDS), $INPUT);
