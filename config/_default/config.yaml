@@ -12,6 +12,7 @@ params:
       Associazione per la  
       **RES**tituzione **CON**sapevole   
       del **D**ebito **A**mbientale
+    description: "Acquisire consapevolezza sui numeri in gioco quando si parla di sostenibilità e di risparmio energetico"
     socials:
     - link: "https://facebook.com"
       name: facebook
@@ -32,7 +33,7 @@ menus:
   #   identifier: "home"
   #   url: "/"
   #   weight: 1
-  - title: Blog
+  - title: News
     identifier: "articles"
     url: "/articles"
     weight: 20
@@ -40,18 +41,21 @@ menus:
     identifier: "about"
     url: "/about"
     weight: 10
-    params:
-      class: "in-page-item"
   - title: Le basi
     identifier: "assunti_di_base"
     url: "/assunti-di-base"
     weight: 11
-    params:
-      class: "in-page-item"
   - title: Contatti
     identifier: "contatti"
     url: "/#contactus"
     weight: 15
-    params:
-      class: "in-page-item"
   
+languages:
+  it:
+    languageName: Italian
+    weight: 1
+  en:
+    languageName: English
+    weight: 2
+
+DefaultContentLanguage: it
