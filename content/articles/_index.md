@@ -1,3 +1,3 @@
 ---
-title: Tutti gli articoli
+title: Le ultime notizie
 ---
