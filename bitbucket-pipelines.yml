@@ -22,4 +22,5 @@ pipelines:
         name: Deploy to server
         script:
         - |
-          rsync -vru --delete public/ ${DEPLOY_SSH_USER}@${DEPLOY_HOST}:${DEPLOY_ROOT_FOLDER}/
+          # rsync -vru --delete public/ ${DEPLOY_SSH_USER}@${DEPLOY_HOST}:${DEPLOY_ROOT_FOLDER}/ # old deploy server
+          rsync -e 'ssh -p 44367 -i ${BITBUCKET_SSH_KEY_FILE}' -vru --delete public/ ${HETZNER_SSH_USER}@${HETZNER_HOST}:${HETZNER_DEPLOY_ROOT}/
