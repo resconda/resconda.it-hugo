@@ -7,7 +7,11 @@
 pipelines:
   default:
     - step:
-        image: trenton/hugo-extended
-        name: Build Hugo
+        name: Test ssh
         script:
+        - |
+          mkdir -p ~/.ssh
+          cat <<EOF > ~/.ssh/known_hosts
+          95.217.20.37 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDGkgYbYaDhlbxsSx5lqzYXpt2PZEv7K+DgeoUoH+n0wyNH+Um8IP4vHpxz3ibCVzhZSdoVGh7QWrHnjn4hLRgrjUwQUu23cARznYNfaz5rf8Ou1iSDLfq6//deCscbq3hRx+54KPgEG3mMBy5k2GLdTm8FrmgY/Q/vRCQg+IU6YSX30hRbhuLM8jvLUdMycel+HVdSG/pcG+8XrIOq8pmJ0rXbvqY7Ojm1bw2DHdfhme8SlsuCIqEy/8ObcCHmv6QTetFZdGDtGGV7vGM15uKnY04aYhHXMj6b21Dnr7ytAzED9zXMvfuwSUG8pnuKMZ5SxPH1GZu2ec+eqXffnkbfdhd3+UMRLd8C0vv+VpE3alHMclKRm9bTxOXWecY6XHFGxfHsisOXHwJpJb4y84dQ+DhjHVz06yAHBXJ4UGjDY6XrXDwIwEPSHR3mRxMNvZdPoL6xu2Z4aVzULaDIMgpMSy+N64cMRxmVjC9yw06OvuMT9n8I16uvLju95yNGNf8=
+          EOF
         - ssh -p 44367 ${HETZNER_SSH_USER}@${HETZNER_HOST} date
