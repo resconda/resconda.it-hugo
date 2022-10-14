@@ -23,4 +23,4 @@ pipelines:
         script:
         - |
           # rsync -vru --delete public/ ${DEPLOY_SSH_USER}@${DEPLOY_HOST}:${DEPLOY_ROOT_FOLDER}/ # old deploy server
-          rsync -vru --delete public/ --port=44367 ${HETZNER_SSH_USERPW}@${HETZNER_HOST}:${HETZNER_DEPLOY_ROOT}/
+          rsync --port=44367 -vru --delete public/ ${HETZNER_SSH_USERPW}@${HETZNER_HOST}:${HETZNER_DEPLOY_ROOT}/
