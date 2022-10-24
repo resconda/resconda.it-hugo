@@ -1,25 +1,17 @@
-{{/* REQUIRED */}}
-{{$image_name := .image_name }}
-{{$alt := .alt }}
-{{$width := .width }}
-{{$class := .class }}
-
 {{/* OPTIONAL */}}
 {{$quality := or (.quality) ("auto") }}
-
-{{$id := .Scratch.Get "id" or "" }}
-{{$style := .Scratch.Get "style" or "" }}
 <img
-width="{{ $width }}"
-id="{{ $id }}"
-class="{{ $class }}"
-style="{{ $style }}"
-srcset="https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_{{ $quality }},w_256/{{ $image_name }} 256w,
-https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_{{ $quality }},w_512/{{ $image_name }} 512w,
-https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_{{ $quality }},w_768/{{ $image_name }} 768w,
-https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_{{ $quality }},w_1024/{{ $image_name }} 1024w,
-https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_{{ $quality }},w_1280/{{ $image_name }} 1280w"
-src="https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_{{ $quality }},w_512/{{ $image_name }}"
-{{with $class}}class="{{.}}"{{end}} 
-{{with $alt}}alt="{{.}}"{{else}}alt="post-image"{{end}} 
+{{ with .width }} width="{{ . }}"{{ end }}
+{{ with .id }} id="{{ . }}"{{ end }}
+{{ with .class }} class="{{ . }}"{{ end }}
+{{ with .style }} style="{{ . }}"{{ end }}
+{{ with .alt }} alt="{{ . }}"{{ else }}alt="post-image"{{ end }}
+{{ if $image_name := .image_name }}
+srcset="{{ range $size := slice "256" "512" "768" "1024" "1280" }}
+https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_auto,w_{{ $size }}/{{ $image_name }} {{ $size }}w,
+{{end}}"
+src="https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_{{ $quality }},w_512/{{ .image_name }}"
+{{ else }}
+{{ errorf "cloudinary_image partial needs the 'src' named attribute" }}
+{{ end }}
 />

@@ -568,6 +568,10 @@ form.pink {
     left: 25%;
   }
 }
+.fixed {
+  position: fixed;
+  z-index: -1;
+}
 .cover {
   object-fit: cover;
   height: 100vh;

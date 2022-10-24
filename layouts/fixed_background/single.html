@@ -1,0 +1,12 @@
+{{ define "header" }}
+<div></div>
+{{ end }}
+{{ define "main" }}
+
+<div class="fullwidth-container">
+    {{ $imgparams := dict "image_name" .Params.background "class" "cover fixed"}}
+    {{ partial "cloudinary_image.html" $imgparams }}
+    {{ .Content }}
+</div>
+
+{{ end }}
