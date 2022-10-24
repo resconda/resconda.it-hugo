@@ -64,7 +64,7 @@ $(document)
     setTimeout(() => {
         $('.fadein-onload').addClass("visible");
     }, 500);
-    var navheight = $("nav.navbar").outerHeight(true);
+    var navheight = $("nav.navbar").outerHeight(false);
     $('body').css("padding-top", navheight);
     // friendlyCaptchaSetup();
 });
