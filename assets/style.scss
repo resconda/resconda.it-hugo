@@ -54,6 +54,8 @@ $quaternary: $logo-color-orange;
 
 // 6. Add additional custom code here
 //  @import "scss/color.scss";
+
+// GLOBALS
 * {
     box-sizing: border-box;
     margin: 0;
@@ -72,6 +74,10 @@ body {
     color: $logo-color-blue;
     overflow: hidden;
     // padding-top: 91px;
+}
+// numbered lists
+ol>li {
+  margin-bottom: 1em;
 }
 // #pageContent {
 //   top: 91px;
@@ -104,16 +110,16 @@ body {
     background-color: transparentize($color: $logo-color-lightblue, $amount: 0.9);
   }
 }
-@include media-breakpoint-down(lg) {
-  .navbar-collapse.collapse {
-    visibility: unset;
-    background-color: transparentize($color: $logo-color-lightgrey, $amount: 0.2);
-    text-align: right;
-    & .nav-item .nav-link {
-      padding-right: 15px;
-    }
-  }
-}
+// @include media-breakpoint-down(lg) {
+//   .navbar-collapse.collapse {
+//     visibility: unset;
+//     background-color: transparentize($color: $logo-color-lightgrey, $amount: 0.2);
+//     text-align: right;
+//     & .nav-item .nav-link {
+//       padding-right: 15px;
+//     }
+//   }
+// }
 .navbar-logo {
   max-height: 91px;
 }
