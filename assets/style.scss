@@ -76,8 +76,18 @@ body {
     // padding-top: 91px;
 }
 // numbered lists
-ol>li {
+ol>li, ul>li {
   margin-bottom: 1em;
+}
+.numbered-headings {
+  h1 {
+      counter-reset: h2counter;
+    }
+  h2:before {
+    content: counter(h2counter) ".\0000a0\0000a0";
+    counter-increment: h2counter;
+    counter-reset: h3counter;
+  }
 }
 // #pageContent {
 //   top: 91px;
