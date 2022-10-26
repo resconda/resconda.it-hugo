@@ -12,10 +12,10 @@ summary: |
   300 kWh è l'energia media dissipata in carburante da un passeggero in volo da Torino a Roma.
 ---
 
-This is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more.
+Si sa che il volo aereo è uno dei comportamenti individuali più impattanti sull’ambiente, anche considerando esclusivamente il carburante bruciato nei motori: un aereo civile consuma migliaia di kilogrammi di kerosene in una manciata di secondi, in fase di decollo.
 
-
-Your collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. 
+Per avere un dato indicativo abbiamo preso in considerazione il Boeing 737-800, uno dei velivoli più diffusi ed efficienti per il traffico passeggeri. Su una tratta di circa 1.000 km (come può essere Milano-Londra oppure Torino-Berlino...) il costo energetico del carburante necessario per passeggero (a pieno carico) è di 254 kWh.  
+A questo valore occorre aggiungere i costi energetici indiretti dovuti alla realizzazione e manutenzione dell’aeroplano, delle strutture aereoportuali e dei servizi accessori (rifornimento, movimentazione bagagli e passeggeri, etc.). In attesa di quantificare anche questi costi energetici in modo più preciso e tenendo conto del fatto che la media di carico di passeggeri di un vettore come Ryanair è dell’86%, è ragionevole assumere che il “costo energetico” di un viaggio simile sia intorno a 300 kWh per passeggero.
 
 <!--
   created 2022-10-09 19:01:27.311651 +0200 CEST m=+0.023094376
