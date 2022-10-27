@@ -1,7 +1,7 @@
 ---
 ## Important: If this is a draft, next line should NOT begin with #
 draft: false
-title: L'energia media dissipata in carburante per portare un passeggero in aereo da Torino a Roma
+title: Quanto impatta un volo aereo?
 date: 2022-08-29
 ## below are user-defined parameters (lower case keys recommended)
 cover_image: /assets/post-img/Another_Airplane_21__284676723312_29_qsijjw
@@ -9,7 +9,7 @@ tags:
   - energia
   - fossile
 summary: |
-  300 kWh è l'energia media dissipata in carburante da un passeggero in volo da Torino a Roma.
+  300 kWh è l'energia media dissipata in carburante da un passeggero in volo da Milano a Londra...
 ---
 
 Si sa che il volo aereo è uno dei comportamenti individuali più impattanti sull’ambiente, anche considerando esclusivamente il carburante bruciato nei motori: un aereo civile consuma migliaia di kilogrammi di kerosene in una manciata di secondi, in fase di decollo.

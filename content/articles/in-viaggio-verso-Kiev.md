@@ -67,7 +67,7 @@ $$ 10.5 \cdot 1.000.000 = 10.500.000 kWh = 10.500 MWh = 10 GWh$$
 che &egrave; **l'energia totale spesa dalla carovana solo di carburante!!!**
 
 Per avere un confronto tangibile, un'**utenza media Italiana ha un consumo elettrico annuo
-di circa 2700kWh** **(ARERA? FONTEEEEE)**.
+di circa 2700kWh** (fonte: Autorità nazionale per l'Energia Elettrica e il Gas).
 
 Considerando quindi l'utenza media, parliamo di un'energia **sufficiente ad alimentare circa 3700 abitazioni in  un intero anno**.  
 Energia invece divorata **in una sola mattina** dal _convoy_ considerato.
