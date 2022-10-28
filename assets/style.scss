@@ -1,15 +1,21 @@
 // 0. Site's logo colors
 $logo-color-lightgrey: #B6BDCD; // rgb(182, 189, 205);
-$logo-color-lightblue: #219FC6; // rgb(33, 159, 198);
-$logo-color-orange: #F4932F; // rgb(244, 147, 47);
+$logo-color-lightblue: #40C0F2; // rgb(33, 159, 198);
+$logo-color-orange: #F77E04; // rgb(244, 147, 47);
 $logo-color-blue: #66768D; // rgb(102, 118, 141);
 
 $highlight: rgb(250, 100, 50);
 $grey: rgba(200, 200, 200, 1.0);
-$background1: rgb(98, 111, 125);
-$background2: rgb(219, 219, 219);
+$background1: #154051;
+$background2: #47B4D1;
 $background3: $logo-color-lightblue;
 $background4: rgb(186, 218, 85);
+$green01: #BADB55;
+$background6: #395D70;
+
+$colordarkblue: #281A39;
+$colormildgrey: #626262;
+$colorpink: #9C6ACE;
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "./bootstrap/scss/functions";
@@ -48,6 +54,8 @@ $quaternary: $logo-color-orange;
 
 // 6. Add additional custom code here
 //  @import "scss/color.scss";
+
+// GLOBALS
 * {
     box-sizing: border-box;
     margin: 0;
@@ -65,11 +73,31 @@ body {
     /*font-weight: 300;*/
     color: $logo-color-blue;
     overflow: hidden;
+    // padding-top: 91px;
 }
-// section {
-//   margin-bottom: 2em;
-//   margin-top: 2em;
+// numbered lists
+ol>li, ul>li {
+  margin-bottom: 1em;
+}
+.numbered-headings {
+  h1 {
+      counter-reset: h2counter;
+    }
+  h2:before {
+    content: counter(h2counter) ".\0000a0\0000a0";
+    counter-increment: h2counter;
+    counter-reset: h3counter;
+  }
+}
+// #pageContent {
+//   top: 91px;
+//   position: relative;
 // }
+@media (max-width: 576px) {
+  .navbar img {
+    max-width: 200px;
+  }
+}
 @media (min-width: 768px) {
     .container, .container-fluid {
         /*font-size: 125%; non l'ho capita*/
@@ -78,6 +106,40 @@ body {
             max-width: unset;
         }
     }
+    div.narrow {
+      width: 80%;
+      &.right {
+        margin-left: auto;
+      }
+    }
+}
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.2s;
+  &.background {
+    background-color: transparentize($color: $logo-color-lightblue, $amount: 0.7);
+  }
+  & ul {
+    margin: unset;
+    & li {
+      margin: unset;
+    }
+  }
+}
+@include media-breakpoint-down(lg) {
+  .navbar-collapse {
+    // background-color: transparentize($color: $logo-color-lightblue, $amount: 0.9);
+    font-weight: bold;
+    & .navbar-nav {
+      align-items: end;
+    }
+    & .nav-item .nav-link {
+      padding-right: 15px;
+    }
+  }
+}
+.navbar-logo {
+  max-height: 91px;
 }
 h1, h2, h3, h4 {
     margin-top: 0;
@@ -124,7 +186,25 @@ img {
     max-width: 100%;
     display: block;
     margin: 0 auto;
-    padding: 0.5em;
+    // padding: 0.5em;
+}
+.img-label {
+  position: absolute;
+  &.top {
+    top: 20px;
+  }
+  &.bottom {
+    bottom: 20px;
+  }
+  left: 10px;
+  color: white;
+  &.dark {
+    color: $background6;
+    &.contrast {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+  }
+  font-weight: bold;
 }
 blockquote {
     padding-left: 1em;
@@ -182,15 +262,17 @@ table, .highlight>pre, pre.example {
     }
 }
 #our-numbers{
+  color: $logo-color-orange;
   p.promo-description{
     text-transform: uppercase;
   }
 }
 .promo{
-  font-size: 1.5rem;
+  margin: 0;
+  font-size: 2.5rem;
   font-weight: bold;
   @include media-breakpoint-up(sm) {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 .fullwidth-section{
@@ -206,10 +288,76 @@ table, .highlight>pre, pre.example {
 #prologue{
   background-color: $background1;
 }
-#consapevolezza-amore{
+#perche{
   background-color: $background2;
-  .site-title{
-    color: white;
+}
+#contare, #la-faccia {
+  background-color: $green01;
+}
+#team {
+  background-color: $green01;
+  padding: 0 5% 2em;
+}
+#animated p.overlay {
+    position: absolute;
+    bottom: 0px;
+}
+#shorttermgoal {
+  background-color: $background6;
+  color: $green01;
+}
+#shortermgoalinvert {
+  color: $background6;
+  background-color: $green01;
+}
+#samples {
+  background-color: $background6;
+  color: $logo-color-orange;
+  padding-bottom: 2em;
+  @include media-breakpoint-up(lg) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  img {
+    max-height: 463;
+  }
+}
+#joinus {
+  background-color: $green01;
+  color: $background6;
+}
+#contactus {
+  background-color: $background2;
+  color: white;
+}
+#contactForm .showtransition {
+  transition: opacity 0.5s;
+  opacity: 1;
+  &.invisible {
+    opacity: 0;
+  }
+}
+$fadein_delay: 0.3s;
+.fadein-scroll, .fadein-onload {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  &.top {
+    transform: translate(0, -10vh);
+  }
+  transition: all 1s;
+  transition-delay: $fadein_delay;
+  &.delay2x {
+    transition-delay: $fadein_delay * 2;
+  }
+  &.delay3x {
+    transition-delay: $fadein_delay * 3;
+  }
+  &.delay4x {
+    transition-delay: $fadein_delay * 4;
+  }
+  &.visible {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }
 figure {
@@ -356,8 +504,11 @@ nav {
     padding-left: 10px;
     padding-right: 10px;
 }
-.nav-link{
+#siteNavbar .nav-link{
+  font-size: 1.3rem;
   border-radius: 10px;
+  color: $logo-color-orange;
+  // text-transform: uppercase;
   &.active{
     background-color: $logo-color-lightgrey;
   }
@@ -365,6 +516,51 @@ nav {
     background-color: lighten($logo-color-lightgrey, 15%);  
     text-decoration: none;
   }
+}
+#siteNavbar .in-page-item a{
+  text-transform: unset;
+  font-size: unset;
+}
+span.unit {
+  font-size: 0.5em;
+}
+.white {
+  color: white;
+}
+.orange {
+  color: $quaternary;
+  &.invert {
+    color: white;
+    background-color: $quaternary;
+  }
+}
+.darkblue {
+  color: $colordarkblue;
+}
+.lightblue {
+  color: $logo-color-lightblue;
+}
+.mildgrey {
+  color: $colormildgrey;
+}
+.bg-green {
+  background-color: $green01;
+}
+form.pink {
+  & .form-control {
+    color: white;
+    background-color: $colorpink;
+  }
+  & button {
+    color: black;
+    background-color: white;
+    border-color: $colorpink;
+    border-width: 5px;
+  }
+}
+.importanttext {
+  font-size: x-large;
+  font-weight: bold;
 }
 #masthead {
   justify-content: center;
@@ -396,17 +592,37 @@ nav {
   left: 20px;
   @include media-breakpoint-up(sm) {
     top: 120px;
-    left: 10%;
+    left: 25%;
+  }
+}
+.fixed {
+  position: fixed;
+  z-index: -1;
+}
+.cover {
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  &.cover-70 {
+    height: 70vh;
+  }
+  &.cover-50 {
+    height: 50vh;
+  }
+  &.cover-40 {
+    height: 40vh;
+  }
+  &.cover-30 {
+  height: 30vh;
   }
 }
 .site-title {
   font-weight: bold;
-  color: $quaternary;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-bottom: 0.5rem;
   line-height: 1;
   @include media-breakpoint-up(sm) {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
   }
 }
 .site-subtitle{
@@ -417,7 +633,6 @@ nav {
   // color: #666666;
 }
 .site-heading {
-    // background-image: url(images/limits.jpg);
     position: relative;
     
     .subheading {
@@ -438,23 +653,67 @@ nav {
       }
     }
 }
+
+a>button {
+  width: 100%;
+}
 /* Site footer stuff*/
 
-footer {
-  padding-top: 1.5rem;
+.footer {
+  background-color: $logo-color-orange;
+  color: white;
+  text-align: center;
   font-size: smaller;
-  .list-group li {
-      border: none;
-      padding: 0.5rem 0.5rem; // a {
-      //   color: inherit;
-      // }
-  }
-  .list-group-item {
-    background-color: transparent;
+  padding: 1em 0;
+  p {
+    padding: 0;
+    margin: 0;
   }
 }
 /* Bootstrap overrides */
 
 .card.no-border {
     border: unset;
+}
+
+// about page
+#about-contare {
+  background-color: $logo-color-lightblue;
+}
+
+// assunti di base page
+#assunti {
+  background-color: $background1;
+  & .fancy-list {
+    & .coltext {
+      color: white;
+    }
+    & .colindex {
+      color: $logo-color-orange;
+      font-size: 3em;
+      font-weight: bolder;
+    }
+  }
+}
+
+.fancy-list {
+  & ol {
+    list-style: none;
+    counter-reset: item;
+  }
+  & li {
+    counter-increment: item;
+    &:before {
+      margin-right: 10px;
+      content: counter(item);
+      color: $logo-color-orange;
+      text-align: center;
+      font-weight: bold;
+      font-size: xx-large;
+      &:nth-child(even) {
+        list-style-position: inside;
+        text-align: right;
+      }
+    }
+  }
 }

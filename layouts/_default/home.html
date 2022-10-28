@@ -1,176 +1,255 @@
 {{ define "main" }}
 <div class="container-fluid">
-    <section id="our-numbers"> <!--numbers-->
+    <section id="our-numbers">
+        <!--numbers-->
         <div class="row">
-            <div class="col col-xs-4 col-center">
-                <p class="promo">8640</p>
-                <p class="promo-description">Hours in a year</p>
+            <div class="col col-12 col-md-6 col-xl-3 col-center">
+                <p class="promo fadein-scroll">30.000<span class="unit"> kWh</span></p>
+                <p class="promo-description orange invert">Consumo medio annuo pro-capite di energia in Italia</p>
             </div>
-            <div class="col col-xs-4 col-center">
-                <p class="promo">e<sup>&pi;i</sup>= -1</p>
-                <p class="promo-description">Math porn</p>
+            <div class="col col-12 col-md-6 col-xl-3 col-center">
+                <p class="promo fadein-scroll">80<span class="unit"> kg</span></p>
+                <p class="promo-description orange invert">Consumo medio annuo pro-capite di plastica in Italia</p>
             </div>
-            <div class="col col-xs-4 col-center">
-                <p class="promo">7 &times; 10<sup>22</sup></p>
-                <p class="promo-description">the estimated number of stars in the universe</p>
+            <div class="col col-12 col-md-6 col-xl-3 col-center">
+                <p class="promo fadein-scroll">76.000<span class="unit"> kWh</span></p>
+                <p class="promo-description orange invert">Energia richiesta per realizzare un automobile</p>
+            </div>
+            <div class="col col-12 col-md-6 col-xl-3 col-center">
+                <p class="promo fadein-scroll">13<span class="unit"> kWh</span></p>
+                <p class="promo-description orange invert">Consumo di una TV LCD in stanby per un anno</p>
             </div>
         </div>
     </section>
 </div>
 <div class="fullwidth-container">
     <section class="fullwidth-section" id="prologue">
-        <p class="site-title">
-            Resconda nasce dall’incontro di persone diverse
+        <p class="site-title white fadein-scroll">
+            Quanto pesano le scelte individuali sugli obiettivi di sostenibilità?
         </p>
-        <p class="site-title">con due cose in comune:</p>
-        <p class="site-title" style="text-align: right;">consapevolezza e amore</p>
+        <p class="site-title orange fadein-scroll top" style="text-align: right;">Cosa significa 1 kg di CO2 nella vita
+            quotidiana di ognuno di noi?
+            <br>
+            A cosa corrisponde?
+        </p>
+        <p class="site-title white">Tutti o quasi sanno che occorre ridurre i consumi energetici ma pochi sanno che</p>
+        <div class="narrow right">
+            <p class="white fadein-scroll top">gran parte dell’energia consumata nel mondo <br>
+                non è quella elettrica utilizzata in casa per fare funzionare gli elettrodomestici<br>
+                 o quella bruciata nel motore della propria auto, ma è quella incorporata negli oggetti <br>
+                 e nei servizi che ogni giorno consumiamo …</p>
+        </div>
     </section>
-    <section class="fullwidth-section" id="consapevolezza-amore">
-        <p class="site-title">consapevolezza</p>
-        <p>
-            che la tutela dell’ambiente non è e deve essere una “sine cura”, di cui occuparsi nei ritagli di tempo o da
-            utilizzare come un gagliardetto da sventolare nelle occasioni giuste... bensì è - alle condizioni attuali -
-            un’impresa necessaria quanto enorme. Forse la più faticosa ed impegnativa che il genere umano si sia mai trovata ad
-            affrontare.
-        </p>
-        <p class="site-title">amore</p>
-        <p>
-            per la realtà. La realtà dei numeri e delle relazioni causali, troppo spesso obnubilata dal chiacchiericcio ed alla
-            superficialità che caratterizza gran parte di quanto oggi si dice e si scrive in materia di ambiente. La realtà
-            delle leggi fisiche e della natura che presiedono e sovrastano tutti i fenomeni naturali, compresi quelli umani, e
-            che troppo spesso l’economia, la politica, la morale ed altre sovrastrutture tendono ad ignorare, persino a
-            rinnegare.
-        </p>
+    <section class="fullwidth-section" id="perche">
+        <p class="site-title white fadein-scroll top">perch&eacute; ResConDA</p>
+        <div class="narrow right">
+            <p class="darkblue fadein-scroll top">
+                Resconda nasce per dare risposte a queste ed altre domande riguardo al nostro stile di vita, per offrire
+                a tutti la
+                possibilità di scegliere consapevolmente come e quanto modificarlo.
+            </p>
+            <p class="white importanttext fadein-scroll">Per limitare l'impatto ambientale dell'uomo sull'ecosistema
+                occorre ridurre il consumo di energia. Per farlo occorre
+                conoscere il costo energetico di ogni nostra scelta, allo stesso modo in cui valutiamo la nostra
+                capacità di spesa
+                quando acquistiamo qualcosa.</p>
+        </div>
     </section>
-</div>
-<!--
-    <section><div class="row">
-            <div class="col col-12 col-lg-8">
-                <h1>
-                    Una associazione finalizzata ad accrescere la consapevolezza collettiva
-                </h1>
-                <p>
-                    Per promuovere una transizione socialmente sostenibile verso un modello economico volto alla conservazione delle risorse naturali ed in equilibrio con la capacità dell’ecosistema di rigenerarsi.
-                </p>
-                <p>
-                    Per accrescere la consapevolezza in ordine all’impatto ambientale delle proprie scelte e dei comportamenti di consumo quale condizione necessaria per ripristinare l'equilibrio tra attività umane ed ambiente.
-                </p>
-            </div>
-            <div class="col col-12 col-lg-4">
-                <h5>
-                    Ultimi articoli
-                </h5>
-                {{ partial "post-list.html" . }}
-            </div>
-        </div></section>
-    <hr>
-    <section><div class="row">
-            <div class="col-12 col-center">
-                <h1>
-                    Abilitare le scelte
-                </h1>
-                <p>
-                    La tutela ambientale non può essere una “sine cura” dei giorni di festa.
-                </p>
-                <p>
-                    Occorre che ognuno, nei limiti delle proprie possibilità  acquisisca ed operi:
-                </p>
+    <section class="fullwidth-section" id="contare">
+        <p class="site-title white fadein-scroll top">abbiamo iniziato a contare</p>
+        <div class="mildgrey narrow right fadein-scroll">
+
+            <p>
+                Siamo un gruppo di persone consapevoli del fatto che difficilmente arriveranno soluzioni dall'alto.
+                Persone che,
+                come molti di noi, si sono interrogate su cosa sia necessario
+                ed opportuno fare per l'emergenza ambientale;
+            </p>
+            <p>
+                e che hanno avuto l'occasione di guardare più da vicino questo groviglio di questioni chiamato
+                <b><i>sostenibilità</i></b>, uscendone
+                con la convinzione che quantificare i fenomeni sia l'unica strada possibile per mettervi ordine e
+                praticare una scelta
+                quotidiana realmente consapevole.
+            </p>
+            <p>
+                Per questo la nostra attività si focalizza sui <i><b>numeri della sostenibilità</b></i>, promuovendo
+                azioni educative e formative
+                sugli aspetti quantitativi connessi all'impatto ambientale delle più comuni pratiche di consumo.
+            </p>
+            <div class="row justify-content-center">
+                <div class="col col-md-6">
+                    <a href="/about">
+                        <button type="button" class="btn btn-info text-white">leggi il nostro
+                            manifesto</button>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col col-xs-4 col-center">
-                <i class="fa-solid fa-bullhorn fa-3x">
-                </i>
-                <h4>
-                    Responsabilità
-                </h4>
-                <p>
-                    quale parte di uno sforzo collettivo finalizzato ad assicurare una vita dignitosa alle generazioni che verranno
-                </p>
-            </div>
-            <div class="col col-xs-4 col-center">
-                <i class="fa-solid fa-brain fa-3x">
-                </i>
-                <h4>
-                    Consapevolezza
-                </h4>
-                <p>
-                    conoscendo il contesto, le cause e le conseguenze dell'agire proprio e collettivo sull'ambiente
-                </p>
-            </div>
-            <div class="col col-xs-4 col-center">
-                <i class="fa-solid fa-bullseye fa-3x">
-                </i>
-                <h4>
-                    Risultati
-                </h4>
-                <p>
-                    Ponendosi obiettivi misurabili e raggiungibili di limitazione del proprio impatto ambientale, attraverso scelte di consumo consapevoli
-                </p>
-            </div>
-        </div></section>
-    <hr>
-    <section><div class="row">
-            <div class="col">
-                <h4 style="text-align: center;">Il nostro approccio</h4>
-                <ul>
-                    <li>
-                        <i>
-                            Occorre orientare le scelte individuali verso la riduzione del consumo di risorse: materie prime, suolo, aria, acqua, energia,...
-                        </i>
-                    </li>
-                    <li>
-                        <i>
-                            Una risorsa è comune ad ogni prodotto/servizio scambiato: l’ENERGIA
-                        </i>
-                    </li>
-                    <li>
-                        <i>
-                            Ognuno di noi ha un “budget energetico” che non dovrebbe essere superato
-                        </i>
-                    </li>
-                    <li>
-                        <i>
-                            Conoscere il proprio budget ed i propri consumi permette ad ognuno di scegliere la propria strada verso la sostenibilità
-                        </i>
-                    </li>
-                    <li>
-                        <i>
-                            La riduzione del consumo di energia costituisce una condizione necessaria ai fini della transizione energetica
-                        </i>
-                    </li>
-                </ul>
-            </div>
-        </div></section>
-    <hr>
-    <section>
-        <div class="card-group">
-            <div class="card no-border">
-                {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/supermarket_magdv1") }}
-                <div class="card-body">
-                    <p class="card-text">Questo prodotto è marchiato “bio” ma quanto impatta realmente sull’ambiente?</p>
+        <p class="site-title white fadein-scroll top">ci mettiamo la faccia</p>
+        <div class="darkblue narrow right fadein-scroll top">
+            <p>Resconda è il frutto dell'incontro di individui diversi con due cose in comune: consapevolezza e amore.
+            </p>
+            <p>Consapevolezza che la tutela dell'ambiente è oggi un'impresa necessaria quanto enorme.</p>
+            <p>
+                Amore per la realtà. La realtà dei numeri e delle relazioni causali. La realtà delle leggi fisiche della
+                natura
+                che
+                presiedono e determinano tutti i fenomeni, compresi quelli umani,
+                e che troppo spesso l'economia, la politica, la morale ed altre sovrastrutture tendono ad ignorare.
+            </p>
+            <p>
+                Resconda è il prodotto della consapevolezza della sfida ambientale: crediamo nella necessità che le
+                conoscenze
+                necessarie per poterla affrontare siano rese disponibili
+                a tutti.
+            </p>
+            <p>
+                Il Consiglio Direttivo di Resconda è al momento costituito da Marcello Corongiu (Presidente), Paolo
+                Marchetti
+                (Segretario) Marco Marzot e Stefano Serra (Consiglieri).
+            </p>
+        </div>
+    </section>
+    <section id="team">
+        <div class="row" style="margin-left: auto; margin-right: auto;">
+            <div class="col col-12 col-md-6 col-xl-3">
+                <div style="position: relative;">
+                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/marcello_corongiu_ceox1d" "class" "cover cover-50") }}
+                    <div class="img-label bottom">Marcello</div>
                 </div>
             </div>
-            <div class="card no-border">
-                {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/airplane_gdzans") }}
-                <div class="card-body">
-                    <p class="card-text">Il trasporto aereo ha un impatto notevole sull’ambiente. Più del treno, ma di quanto? E dell’auto? Sempre?</p>
+            <!-- <div class="col col-12 col-md-6 col-xl-3 ">
+                <p class="site-title white">eccoci</p>
+                <p class="darkblue">eccoci
+                    Resconda parte da noi, ma anche tu puoi fare la tua parte.
+                    <br>
+                    Il progetto è nato per essere di tutti e solo così potrà compiere davvero la sua missione.
+                    <br>
+                    L'augurio è che molti di voi, ognuno a suo modo, possano trovare risposte e anche soddisfazione,nel perseguire con chiarezza la difesadel bene comune più prezioso che abbiamo.
+                </p>
+            </div> -->
+            <div class="col col-12 col-md-6 col-xl-3 ">
+                <div style="position: relative;">
+
+                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/paolo_marchetti_jokqkx" "class" "cover cover-50") }}
+                    <div class="img-label bottom">Paolo</div>
                 </div>
             </div>
-            <div class="card no-border">
-                {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/bycicle_udbpah") }}
-                <div class="card-body">
-                    <p class="card-text">Non tutti possono usare la bicicletta quotidianamente. Alternative?</p>
+            <div class="col col-12 col-md-6 col-xl-3 ">
+                <div style="position: relative;">
+                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/marco_marzot_ccsvww" "class" "cover cover-50") }}
+                    <div class="img-label bottom">Marco</div>
                 </div>
             </div>
-            <div class="card no-border">
-                {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/driving_mgvzym") }}
-                <div class="card-body">
-                    <p class="card-text">Ho acquistato un’auto nuova. A basse emissioni. Quanto questo realmente impatta sull’ambiente?</p>
+            <div class="col col-12 col-md-6 col-xl-3 ">
+                <div style="position: relative;">
+                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/stefano_serra_p55e8b" "class" "cover cover-50") }}
+                    <div class="img-label bottom">Stefano</div>
                 </div>
             </div>
         </div>
     </section>
+    <section id="animated">
+        <div style="position: relative;">
+            {{ partial "cloudinary_video.html" (dict "video_name" "assets/video/people_walking_hcfxq9" "video_type" "video/mp4" "class" "cover cover-70" "id" "peopleWalkingVideo" )}}
+            <p class="site-title white overlay fadein-scroll" style="line-height: 1.35em;">Ogni giorno, <span class="bg-green">ognuno di noi decide</span> il futuro dei propri
+                nipoti</p>
+        </div>
+    </section>
+    <section class="fullwidth-section" id="shorttermgoal">
+        <p class="site-title fadein-scroll">
+            E’ ora di scendere nella realtà delle cose, delle soluzioni percorribili, dei numeri in gioco, delle
+            priorità, delle
+            scelte consapevoli.
+        </p>
+        <div class="narrow right">
+            <p class="importanttext white">
+                <span id="shortermgoalinvert">
+                    Il nostro obiettivo a breve termine:</span><br>
+                divulgare informazioni chiare e realizzare strumenti pratici che permettano in tempo reale
+                di effettuare scelte d'acquisto e di comportamento realmente sostenibili.
+            </p>
+        </div>
+    </section>
+    <section id="samples">
+        <div class="row gy-3 justify-content-center">
+            <div class="col col-12 col-md-6 col-xl-3">
+                <p class="promo fadein-scroll delay2x">10<span class="unit"> milioni di kWh</span></p>
+                <div style="position: relative;">
+                    <img class="cover cover-40"
+                        src="https://res.cloudinary.com/resconda-it/image/upload/c_fill,h_667,w_500/v1662098870/assets/img/russian_convoy_utqvuj" />
+                    <div class="img-label top dark">
+                        L'energia dissipata nel Marzo 2022 per portare dalla Russia in Ucraina un convoglio militare
+                        lungo 65 kilometri
+                    </div>
+                </div>
+            </div>
+            <div class="col col-12 col-md-6 col-xl-3">
+                <p class="promo fadein-scroll delay2x">300<span class="unit"> kWh</span></p>
+                <div style="position: relative;">
+                    <img class="cover cover-40"
+                        src="https://res.cloudinary.com/resconda-it/image/upload/c_fill,h_667,w_500/v1662098870/assets/img/PA030373_mini_n1yir9" />
+                    <div class="img-label bottom">
+                        L'energia media dissipata in carburante per portare un passeggero in aereo da Torino a Roma
+                    </div>
+                </div>
+            </div>
+            <div class="col col-12 col-md-6 col-xl-3">
+                <p class="promo fadein-scroll delay3x">2<span class="unit"> kWh</span></p>
+                <div style="position: relative;">
+                    <img class="cover cover-40"
+                        src="https://res.cloudinary.com/resconda-it/image/upload/c_fill,h_667,w_500/v1662098870/assets/img/glass_thumb_lhsf64" />
+                    <div class="img-label top dark">
+                        L'energia media incorporata in un bicchiere di vetro
+                    </div>
+                </div>
+            </div>
+            <div class="col col-12 col-md-6 col-xl-3">
+                <p class="promo fadein-scroll delay4x">0.8<span class="unit"> kWh</span></p>
+                <div style="position: relative;">
+                    <img class="cover cover-40"
+                        src="https://res.cloudinary.com/resconda-it/image/upload/c_fill,h_667,w_500/v1662098870/assets/img/cola_can_treonh" />
+                    <div class="img-label bottom dark contrast">
+                        L'energia media incorporata in una
+                        lattina da 33 cl
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="joinus" class="fullwidth-section">
+        <div class="row align-items-end">
+            <div class="col-12 col-md-8">
+                <p class="site-title">Unitevi a noi!</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="d-grid gap-2 col-12 mx-auto">
+                    <a href="/docs/resconda_modulo_adesione_socio.pdf"
+                        download="resconda_modulo_adesione_socio.pdf"><button type="button"
+                            class="btn btn-info text-white">Modulo di adesione</button></a>
+                    <a href="/statuto"><button type="button" class="btn btn-info text-white">Lo
+                            statuto</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactus" class="fullwidth-section">
+        <p class="site-title fadein-scroll">oppure scriveteci...</p>
+        <div class="row" style="margin-top: 2em;">
+            <div class="col-12 col-md-4">
+                <p>Email:<br>
+                    info [at] resconda.it</p>
+                <p>
+                    ResConDA<br>
+                    Strada dei Tetti Bertoglio 79<br>
+                    10132 Torino - Italia
+                </p>
+            </div>
+            <div class="col-12 col-md-8">
+                {{ partial "contactform.html" }}
+            </div>
+        </div>
+    </section>
 </div>
--->
 {{ end }}

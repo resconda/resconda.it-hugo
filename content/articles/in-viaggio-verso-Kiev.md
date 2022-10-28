@@ -1,19 +1,17 @@
 ---
 ## Important: If this is a draft, next line should NOT begin with #
 draft: false
-title: In Viaggio Verso Kiev
+title: Il costo energetico delle operazioni militari
 date: 2022-03-12
 ## below are user-defined parameters (lower case keys recommended)
 cover_image: /assets/post-img/ua_russian_convoy_satellite # optional
-subtitle: Non solo Guerra per l'energia ma l'Energia in Guerra
 tags:
   - ordini di grandezza
   - energia
   - fossile
 math: true
 summary: |
-  Un'energia sufficiente ad alimentare circa 3700 abitazioni in  un intero anno,
-  divorata in una sola mattina.
+  10 milioni di kWh (10 GWh) è l'energia dissipata nel Marzo 2022 per portare dalla Russia in Ucraina un convoglio militare lungo 65 km..
 ---
 
 Il giorno 1 Marzo l'esercito Russo ha intensificato le manovre in
@@ -69,7 +67,7 @@ $$ 10.5 \cdot 1.000.000 = 10.500.000 kWh = 10.500 MWh = 10 GWh$$
 che &egrave; **l'energia totale spesa dalla carovana solo di carburante!!!**
 
 Per avere un confronto tangibile, un'**utenza media Italiana ha un consumo elettrico annuo
-di circa 2700kWh** **(ARERA? FONTEEEEE)**.
+di circa 2700kWh** (fonte: Autorità nazionale per l'Energia Elettrica e il Gas).
 
 Considerando quindi l'utenza media, parliamo di un'energia **sufficiente ad alimentare circa 3700 abitazioni in  un intero anno**.  
 Energia invece divorata **in una sola mattina** dal _convoy_ considerato.

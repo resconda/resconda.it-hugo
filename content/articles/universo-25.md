@@ -1,6 +1,6 @@
 ---
 ## Important: If this is a draft, next line should NOT begin with #
-# draft: true
+draft: true
 title: Universo 25
 date: 2022-03-09
 images:

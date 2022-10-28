@@ -1,37 +1,7 @@
-<!-- footer.html -->
-<footer class="bg-light">
+<div class="footer">
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-12 col-lg-3">
-				<h4>RESCONDA</h4>
-				<p>REStituzione CONsapevole del Debito Ambientale</p>
-				<p>Associazione non riconosciuta</p>
-				<p>C.F. 97878370010</p>
-				<p class="light">@2022 Resconda. All rights reserved.</p>
-			</div>
-			<div class="col-12 col-lg-3">
-				<h4>Contatti</h4>
-				<p>Email: <a href="mailto:info@resconda.it">info@resconda.it</a></p>
-				<p>Indirizzo: Strada dei Tetti Bertoglio 79</p>
-			</div>
-			<div class="col-12 col-lg-3">
-				<h4>Quick links</h4>
-				{{ range site.Menus.main }}
-					{{ if  eq .Identifier "about" }}
-				<a href="{{ .URL }}">{{ .Name }}</a>
-					{{ end }}
-				{{ end }}
-				
-			</div>
-			<div class="col-12 col-lg-3">
-				<h4>Seguici</h4>
-				<ul class="list-group list-group-horizontal">
-					{{ range site.Params.socials }}
-					<li class="list-group-item"><a href="{{ .link | safeHTML }}">{{ .icon_tag | safeHTML }}</a></li>
-					{{ else }}
-					{{ end}}
-				</ul>
-			</div>
-		</div>		
+		<p>© 2022 ResConDA - Associazione per la REStituzione CONsapevole del Debito Ambientale</p>
+		<p>Strada dei Tetti Bertoglio 79 - 10132 TORINO C.F. 97878370010</p>
+		<p><a href="mailto:info@resconda.it">info@resconda.it</a> - <a href="/">www.resconda.it</a> - <a href="/privacy">Privacy</a></p>
 	</div>
-</footer>
+</div>

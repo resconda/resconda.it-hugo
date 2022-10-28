@@ -1,0 +1,61 @@
+baseURL: /
+languageCode: it-it
+title: ResConDA
+
+params:
+    logo: "https://res.cloudinary.com/resconda-it/image/upload/v1646949774/assets/img/logo/favicon.png"
+    header_image: "/images/limits.jpg"
+    home_title: |
+      Azione  
+      consapevole
+    slogan: |
+      Associazione per la  
+      **RES**tituzione **CON**sapevole   
+      del **D**ebito **A**mbientale
+    description: "Acquisire consapevolezza sui numeri in gioco quando si parla di sostenibilità e di risparmio energetico"
+    socials:
+    - link: "https://facebook.com"
+      name: facebook
+      icon_tag: "<i class=\"fa-brands fa-facebook fa-2x\"></i>"
+    - link: "https://twitter.com"
+      name: twitter
+      icon_tag: "<i class=\"fa-brands fa-twitter fa-2x\"></i>"
+    - link: "https://linkedin.com"
+      name: linkedin
+      icon_tag: "<i class=\"fa-brands fa-linkedin fa-2x\"></i>"
+    - link: "https://instagram.com"
+      name: instagram
+      icon_tag: "<i class=\"fa-brands fa-instagram fa-2x\"></i>"
+
+menus:
+  main:
+  # - title: Home
+  #   identifier: "home"
+  #   url: "/"
+  #   weight: 1
+  - title: News
+    identifier: "articles"
+    url: "/articles"
+    weight: 20
+  - title: Chi siamo
+    identifier: "about"
+    url: "/about"
+    weight: 10
+  - title: Le basi
+    identifier: "assunti_di_base"
+    url: "/assunti-di-base"
+    weight: 11
+  - title: Contatti
+    identifier: "contatti"
+    url: "/#contactus"
+    weight: 15
+  
+languages:
+  it:
+    languageName: Italian
+    weight: 1
+  en:
+    languageName: English
+    weight: 2
+
+DefaultContentLanguage: it
