@@ -64,7 +64,10 @@ $(document)
     setTimeout(() => {
         $('.fadein-onload').addClass("visible");
     }, 500);
-    var navheight = $("nav.navbar").outerHeight(false);
-    $('body').css("padding-top", navheight);
+    $("#navBrandLogo").on("load", function() {
+        var navheight = $("nav.navbar").outerHeight(false);
+        $('body').css("padding-top", navheight);    
+    });
+    
     // friendlyCaptchaSetup();
 });

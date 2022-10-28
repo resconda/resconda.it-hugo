@@ -117,19 +117,27 @@ ol>li, ul>li {
   background-color: transparent;
   transition: background-color 0.2s;
   &.background {
-    background-color: transparentize($color: $logo-color-lightblue, $amount: 0.9);
+    background-color: transparentize($color: $logo-color-lightblue, $amount: 0.7);
+  }
+  & ul {
+    margin: unset;
+    & li {
+      margin: unset;
+    }
   }
 }
-// @include media-breakpoint-down(lg) {
-//   .navbar-collapse.collapse {
-//     visibility: unset;
-//     background-color: transparentize($color: $logo-color-lightgrey, $amount: 0.2);
-//     text-align: right;
-//     & .nav-item .nav-link {
-//       padding-right: 15px;
-//     }
-//   }
-// }
+@include media-breakpoint-down(lg) {
+  .navbar-collapse {
+    // background-color: transparentize($color: $logo-color-lightblue, $amount: 0.9);
+    font-weight: bold;
+    & .navbar-nav {
+      align-items: end;
+    }
+    & .nav-item .nav-link {
+      padding-right: 15px;
+    }
+  }
+}
 .navbar-logo {
   max-height: 91px;
 }
