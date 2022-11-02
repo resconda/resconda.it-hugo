@@ -16,7 +16,7 @@ $VALID_INPUT_FIELDS = [
 $captchaSecret = getenv("FRIENDLY_CAPTCHA_SECRET");
 $captchaKey = getenv("FRIENDLY_CAPTCHA_SITEKEY");
 // DEBUG
-error_log("Secret: $captchaSecret - Key: $captchaKey");
+error_log("Captcha Key: $captchaKey");
 // DEBUG
 error_log("Raw input: " . print_r($_POST, TRUE));
 $INPUT = array_intersect_key($_POST, $VALID_INPUT_FIELDS);
@@ -32,17 +32,21 @@ if(count($missing) > 0){
 
 $verified = captchaVerify($INPUT[$FRC_CAPTCHA_SOLUTION_KEY], $captchaSecret, $captchaKey);
 if($verified === TRUE){
-    // TODO: send email to site master
-    $inputstr = "";
-    foreach ($INPUT as $key => $value) {
-        $inputstr .= "$key: $value\n";
-    }
     $message = <<<EOF
-A new contact request was sent from website's contact form.
+Una nuova richiesta di contatto e' stata inviata dal form web.
 
-$inputstr
+Nome: $INPUT['name']
+Email: $INPUT['email']
+Telefono: $INPUT['phome']
+Messaggio:
+$INPUT['message']
+
+Non rispondere a questo messaggio.
 EOF;
-    $enqueued = mail($SITEADMIN['email'], "New contact request", $message);
+    $headers = [
+        "From" => "webmaster <no-reply@resconda.it>"
+    ];
+    $enqueued = mail($SITEADMIN['email'], "New contact request", $message, $headers);
     $errors = [];
     if($enqueued != TRUE){
         $errors[] = "Error in PHP mail function. The notification email could not be sent to Site Master";
