@@ -39,10 +39,10 @@
                             });
                         }else{
                             name = data.name;
-                            successmsg = $('<div class="row bg-info" />')
-                                .append(`<div class="col-12 col-md-6>Grazie ${name}! Ti contatteremo presto.</div>`);
+                            successmsg = $('<div class="row bg-info" />');
+                            successmsg.append(`<div class="col-12 col-md-6">Grazie ${name}! Ti contatteremo presto.</div>`);
                             $('#form-response').append(successmsg);
-                            $('contactForm').find('input,textarea').val("");
+                            $('#contactForm').find('input,textarea').val("");
                         }
                     },
                 });
