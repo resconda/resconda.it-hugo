@@ -29,6 +29,7 @@
                     type: "POST",
                     url: "/php/contact.php",
                     data: data,
+                    contentType: "json",
                     success: function (data) {
                         console.log(JSON.stringify(data));
                         if(data.errors != undefined && data.errors.length > 0){

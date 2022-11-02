@@ -3,6 +3,8 @@
 
 require "config.php";
 
+header("Content-Type: application/json");
+
 $FRC_CAPTCHA_SOLUTION_KEY = "frc-captcha-solution";
 // TRUE means REQUIRED
 $VALID_INPUT_FIELDS = [
