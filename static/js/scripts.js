@@ -58,16 +58,17 @@ var friendlyCaptchaSolved = function(solution) {
     $('#contactForm .showtransition').removeClass("invisible");
     $('#friendlyCaptchaFormSubmit').removeAttr('disabled');
 }
+var offsetBodyPaddingTop = function() {
+    var navheight = $("nav.navbar").outerHeight(false);
+    $('body').css("padding-top", navheight);
+};
 $(document)
 .on("scroll", _.throttle(scrollUtils, 100))
 .on("ready", function () {
+    offsetBodyPaddingTop();
     setTimeout(() => {
         $('.fadein-onload').addClass("visible");
     }, 500);
-    $("#navBrandLogo").on("load", function() {
-        var navheight = $("nav.navbar").outerHeight(false);
-        $('body').css("padding-top", navheight);    
-    });
-    
+    $("#navBrandLogo").on("load ready", offsetBodyPaddingTop);    
     // friendlyCaptchaSetup();
 });
