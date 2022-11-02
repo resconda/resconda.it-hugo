@@ -35,11 +35,11 @@ if($verified === TRUE){
     $message = <<<EOF
 Una nuova richiesta di contatto e' stata inviata dal form web.
 
-Nome: $INPUT["name"]
-Email: $INPUT["email"]
-Telefono: $INPUT["phome"]
+Nome: {$INPUT['name']}
+Email: {$INPUT['email']}
+Telefono: {$INPUT['phome']}
 Messaggio:
-$INPUT["message"]
+{$INPUT['message']}
 
 Non rispondere a questo messaggio.
 EOF;
