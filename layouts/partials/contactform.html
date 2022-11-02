@@ -17,7 +17,9 @@
     </div>
     <div class="frc-captcha" data-sitekey="FCMNSLE4OU3RUFTK" data-callback="friendlyCaptchaSolved"></div>
 </form>
+<div id="form-response">
 
+</div>
 <script>
     window.addEventListener("load", function (document, event) {
         $("#friendlyCaptchaFormSubmit").click(submitEvent => {
@@ -29,25 +31,19 @@
                     data: data,
                     success: function (data) {
                         console.log(JSON.stringify(data));
+                        if(data.errors != undefined && data.errors.length > 0){
+                            data.errors.forEach(element => {
+                                errrow = $(`<div class="row bg-warning"><div class="col-12 col-md-6>${element}`);
+                                $("#form-response").append(errrow); 
+                            });
+                        }else{
+                            name = data.name;
+                            successmsg = `<div class="row bg-info"><div class="col-12 col-md-6>Grazie ${name}! Ti contatteremo presto.`;
+                            $('#form-response').append(successmsg);
+                        }
                     },
                 });
                 submitEvent.preventDefault();
             });
     });
 </script>
-<style>
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgba(255, 255, 255, 0.664);
-  opacity: 1;
-  /* Firefox */
-}
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: rgba(255, 255, 255, 0.664);
-}
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: rgba(255, 255, 255, 0.664);
-}
-</style>
