@@ -37,7 +37,7 @@ Una nuova richiesta di contatto e' stata inviata dal form web.
 
 Nome: {$INPUT['name']}
 Email: {$INPUT['email']}
-Telefono: {$INPUT['phome']}
+Telefono: {$INPUT['phone']}
 Messaggio:
 {$INPUT['message']}
 
