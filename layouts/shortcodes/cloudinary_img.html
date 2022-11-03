@@ -1,0 +1,8 @@
+{{/* OPTIONAL */}}
+{{$quality := or (.Get "quality") ("auto") }}
+<img {{ with .Get "width" }} width="{{ . }}" {{ end }} {{ with .Get "id" }} id="{{ . }}" {{ end }} {{ with .Get "class" }} class="{{ . }}"
+    {{ end }} {{ with .Get "style" }} style="{{ . }}" {{ end }} {{ with .Get "alt" }} alt="{{ . }}" {{ else }}alt="post-image" {{
+    end }} {{ if $image_name := .Get "src" }} srcset="{{ range $size := slice " 256" "512" "768" "1024" "1280" }}
+    https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_auto,w_{{ $size }}/{{ $image_name }} {{ $size }}w,
+    {{end}}" src="https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_{{ $quality }},w_512/{{ .Get "src" }}"
+    {{ else }} {{ errorf "cloudinary_image partial needs the 'src' named attribute" }} {{ end }} />
