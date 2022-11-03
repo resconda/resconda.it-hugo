@@ -7,19 +7,21 @@
   <!-- list template -->
   <div class="row row-cols-1 row-cols-md-2 g-4 pb-2">
     {{ range .RegularPages }}
-    <div class="card page-card" >
-      <div class="card-body d-flex flex-column">
-        <p>{{.Date| time.Format ":date_long"}}</p>
-        <h3 class="card-title flex-grow-1">{{.Title}}</h3>
-        {{with .Params.subtitle}}<h5 class="card-subtitle">{{.}}</h5>{{end}}
-        <div class="card-text my-2">{{.Summary}}</div>
-        <a href="{{.Permalink}}" class="btn btn-secondary align-self-baseline">Leggi tutto</a>
+    <!-- <div class="col"> -->
+      <div class="card page-card" >
+        <div class="card-body d-flex flex-column">
+          <p>{{.Date| time.Format ":date_long"}}</p>
+          <h3 class="card-title flex-grow-1">{{.Title}}</h3>
+          {{with .Params.subtitle}}<h5 class="card-subtitle">{{.}}</h5>{{end}}
+          <div class="card-text my-2">{{.Summary}}</div>
+          <a href="{{.Permalink}}" class="btn btn-secondary align-self-baseline">Leggi tutto</a>
+        </div>
+        {{ with .Params.cover_image }}
+          {{$alt := (path.Split .)}}
+          {{ partial "cloudinary_image.html" (dict "image_name" . "alt" $alt.File  "class" "card-img-top cover cover-30")}}
+        {{end}}
       </div>
-      {{ with .Params.cover_image }}
-        {{$alt := (path.Split .)}}
-        {{ partial "cloudinary_image.html" (dict "image_name" . "alt" $alt.File  "class" "card-img-top cover cover-30")}}
-      {{end}}
-    </div>
+    <!-- </div> -->
     {{ end }}
   </div>
 </div>

@@ -4,7 +4,7 @@ draft: true
 title: {{ replace .Name "-" " " | title }}
 date: {{ dateFormat "2006-01-02" .Date }}
 ## below are user-defined parameters (lower case keys recommended)
-subtitle: # leave blank if no subtitle is provided
+summary: # leave blank if no summary is provided
 cover_image: image_path # optional
 tags:
   - tag1

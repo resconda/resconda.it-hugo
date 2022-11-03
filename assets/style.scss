@@ -264,6 +264,12 @@ table, .highlight>pre, pre.example {
         margin-right: 0.5em;
     }
 }
+.taglist a:hover {
+  text-decoration: none;
+}
+.badge {
+  padding: 5px;
+}
 #our-numbers{
   color: $logo-color-orange;
   p.promo-description{
@@ -480,11 +486,12 @@ ul.cloud {
 .card.page-card {
     // these to remove bootstrap defaults
     border: none;
-    border-radius: unset; ///
-    border-bottom: 1px solid rgba(0, 0, 0, .125);
-    &:last-child {
-      border-bottom: none;
-    }
+    // border-radius: unset; ///
+    border-top: 1px solid rgba(0, 0, 0, .125);
+    // padding-bottom: 1em;
+    // &:first-child {
+    //   border-top: none;
+    // }
     .card-text {
         font-size: smaller;
         /*font-style: italic;*/
