@@ -1,7 +1,7 @@
 ---
 ## Important: If this is a draft, next line should NOT begin with #
 draft: false
-title: Crisi climatica qualcuno ne dubita
+title: "Cambiamento climatico: qualcuno ne dubita"
 date: 2022-11-03
 ## below are user-defined parameters (lower case keys recommended)
 summary: # leave blank if no summary is provided
