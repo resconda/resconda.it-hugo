@@ -1,6 +1,9 @@
+{{ define "header" }}
+<div></div>
+{{ end }}
 {{ define "main" }}
 <div class="container">
-  <h1 class="title">{{ .Title }}</h1>
+  <h1 class="title">Tutti i post taggati <b>{{ .Title }}</b></h1>
   <ul class="posts">
     {{ range .Pages }}
     <li class="post">
