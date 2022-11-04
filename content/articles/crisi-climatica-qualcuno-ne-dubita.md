@@ -5,7 +5,7 @@ title: "Cambiamento climatico: qualcuno ne dubita"
 date: 2022-11-03
 ## below are user-defined parameters (lower case keys recommended)
 summary: # leave blank if no summary is provided
-cover_image: assets/post-img/hqdefault_m0t761 # optional
+cover_image: assets/post-img/500_scienziati_oeooj3 # optional
 tags:
   - clima
 ---
