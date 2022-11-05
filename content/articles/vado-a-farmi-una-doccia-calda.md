@@ -19,7 +19,7 @@ Se hai visto [questo filmato](https://youtu.be/ZzbHGSaMjH0) ti dico che ci vorre
 
 Tranquilli, niente di pi&ugrave; di un po' di termodinamica del liceo.
 
-Alcune stime sono molto soggettive (es. durata doccia, temperatura acqua alla fonte e di uscita, ...), ma giusto per avere un ordine di grandezza:
+Alcune stime sono molto soggettive (es. durata doccia, temperatura acqua alla fonte e di uscita, ...), ma &egrave; giusto per avere un ordine di grandezza:
 
 - temperatura dell'acqua della doccia: {{< imath escape="true" >}}T_c = 42\ ^\circ C{{< /imath >}}
 - temperatura dell'acqua da scaldare: {{< imath escape="true" >}}T_f = 10\ ^\circ C{{< /imath >}}
