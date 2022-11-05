@@ -445,6 +445,11 @@ i.fa, i.fa-solid {
   font-size: smaller;
   color: #AAAAAA;
 }
+.details-block{
+  & .card-body {
+    font-size: small;
+  }
+}
 /*tag cloud*/
 ul.cloud {
   list-style: none;
