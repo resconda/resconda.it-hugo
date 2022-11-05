@@ -23,7 +23,7 @@ Alcune stime sono molto soggettive (es. durata doccia, temperatura acqua alla fo
 
 - temperatura dell'acqua della doccia: {{< imath escape="true" >}}T_c = 42\ ^\circ C{{< /imath >}}
 - temperatura dell'acqua da scaldare: {{< imath escape="true" >}}T_f = 10\ ^\circ C{{< /imath >}}
-- flusso doccia: {{< imath escape="true" >}}\Phi = 20\ L/\textrm{min}{{< /imath >}}
+- flusso doccia: {{< imath escape="true" >}}\Phi = 10\ L/\textrm{min}{{< /imath >}}
 - durata doccia: {{< imath escape="true" >}}\Theta = 5\ \textrm{min}{{< /imath >}}
 - rendimento caldaia[^1]: {{< imath escape="true" >}}\rho = 65\%{{< /imath >}}
 - potere calorifico inferiore del metano: {{< imath escape="true" >}}\delta = 50\ \textrm{MJ}/\textrm{kg}{{< /imath >}}
