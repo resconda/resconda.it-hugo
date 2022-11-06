@@ -22,7 +22,11 @@ definitions:
         deployment: staging
         script:
           - |
-            rsync -e 'ssh -p 44367' -vru --delete public/ ${HETZNER_SSH_USER}@${HETZNER_HOST}:${HETZNER_DEPLOY_PATH}/
+            if [[ -z "${HETZNER_DEPLOYPATH}" ]] || [[ ! -d "${HETZNER_DEPLOYPATH}" ]]; then
+              echo "${HETZNER_DEPLOYPATH} is not a valid folder. Aborting"
+              exit 1
+            fi
+            rsync -e 'ssh -p 44367' -vru --delete public/ ${HETZNER_SSH_USER}@${HETZNER_HOST}:${HETZNER_DEPLOYPATH}/
 pipelines:
   branches:
     master:
