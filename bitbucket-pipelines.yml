@@ -3,24 +3,33 @@
 #  This template allows you to validate your Go (Golang) code.
 #  The workflow allows running tests, build and code linting on the default branch.
 
-
-pipelines:
-  default:
-    - step:
-        image: trenton/hugo-extended
-        name: Build Hugo
-        script:
+definitions:
+  steps:
+    - step: &build
+      image: klakegg/hugo:0.105.0-ext
+      name: Build Hugo
+      script:
         - |
           if [[ "${BITBUCKET_BRANCH}" != "master" ]]; then
             DEBUG="-D"
           fi
           hugo $DEBUG
-        artifacts:
-          - public/**
-    - step:
-        image: instrumentisto/rsync-ssh
-        name: Deploy to server
-        script:
+      artifacts:
+        - public/**
+    - step: &deploy
+      image: instrumentisto/rsync-ssh
+      name: Deploy to server
+      deployment: staging
+      script:
         - |
-          # rsync -vru --delete public/ ${DEPLOY_SSH_USER}@${DEPLOY_HOST}:${DEPLOY_ROOT_FOLDER}/ # old deploy server
-          rsync -e 'ssh -p 44367' -vru --delete public/ ${HETZNER_SSH_USER}@${HETZNER_HOST}:${HETZNER_DEPLOY_ROOT}/
+          rsync -e 'ssh -p 44367' -vru --delete public/ ${HETZNER_SSH_USER}@${HETZNER_HOST}:${HETZNER_DEPLOY_PATH}/
+pipelines:
+  branches:
+    master:
+      - step: *build
+      - step:
+        <<: *deploy
+        deployment: production
+  default:
+    - step: *build
+    - step: *deploy
