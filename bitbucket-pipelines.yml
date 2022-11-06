@@ -22,7 +22,7 @@ definitions:
         deployment: staging
         script:
           - |
-            if [[ -z "${HETZNER_DEPLOYPATH}" ]] || [[ ! -d "${HETZNER_DEPLOYPATH}" ]]; then
+            if [[ -z "${HETZNER_DEPLOYPATH}" ]] || [[ ! "${HETZNER_DEPLOYPATH}" =~ "/home/${HETZNER_SSH_USER}/.*" ]]; then
               echo "${HETZNER_DEPLOYPATH} is not a valid folder. Aborting"
               exit 1
             fi
