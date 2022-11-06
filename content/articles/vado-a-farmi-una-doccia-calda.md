@@ -11,7 +11,7 @@ tags:
   - fisica
 ---
 
-Quanta energia si usa per farsi una doccia calda? Diciamo che fa 3 kWh nconsumati, per farla breve, anzi no, di più, perché nel calcolo è stata nconsiderata solo l'energia spesa per scaldare l'acqua con il gas e non nquella spesa per estrarlo, trasportarlo, portarlo fino a casa...e nneppure quella per raccogliere e depurare l'acqua e portarla fino in nbagno, per produrre e installare la rubinetteria, le piastrelle ed il nbox doccia...Insomma probabilmente anche parecchio di più! (quando navremo un dato più raffinato non mancheremo di postarlo...)
+Quanta energia si usa per farsi una doccia calda? Diciamo che fa 3 kWh consumati, per farla breve, anzi no, di più, perché nel calcolo è stata considerata solo l'energia spesa per scaldare l'acqua con il gas e non quella spesa per estrarlo, trasportarlo, portarlo fino a casa...e neppure quella per raccogliere e depurare l'acqua e portarla fino in bagno, per produrre e installare la rubinetteria, le piastrelle ed il box doccia...Insomma probabilmente anche parecchio di più! (quando avremo un dato più raffinato non mancheremo di postarlo...)
 
 Se hai visto [questo filmato](https://youtu.be/ZzbHGSaMjH0) ti dico che ci vorrebbero 143 "Robert" per farti fare una doccia calda...
 
@@ -23,13 +23,13 @@ Alcune stime sono molto soggettive (es. durata doccia, temperatura acqua alla fo
 
 - temperatura dell'acqua della doccia: {{< imath escape="true" >}}T_c = 42\ ^\circ C{{< /imath >}}
 - temperatura dell'acqua da scaldare: {{< imath escape="true" >}}T_f = 10\ ^\circ C{{< /imath >}}
-- flusso doccia: {{< imath escape="true" >}}\Phi = 10\ L/\textrm{min}{{< /imath >}}
+- flusso doccia: {{< imath escape="true" >}}\Phi = 10\ \textrm{L}/\textrm{min}{{< /imath >}}
 - durata doccia: {{< imath escape="true" >}}\Theta = 5\ \textrm{min}{{< /imath >}}
 - rendimento caldaia[^1]: {{< imath escape="true" >}}\rho = 65\%{{< /imath >}}
 - potere calorifico inferiore del metano: {{< imath escape="true" >}}\delta = 50\ \textrm{MJ}/\textrm{kg}{{< /imath >}}
 
 Da cui ricaviamo:
-- volume da scaldare: {{< imath escape="true" >}}V = \Phi \ \Theta = 50\ L{{< /imath >}}
+- volume da scaldare: {{< imath escape="true" >}}V = \Phi \ \Theta = 50\ \textrm{L}{{< /imath >}}
 - massa da scaldare: {{< imath escape="true" >}}50\ \textrm{kg}{{< /imath >}}
 - differenza di temperatura: {{< imath escape="true" >}}\Delta T = 32\ ^\circ C{{< /imath >}}
 
