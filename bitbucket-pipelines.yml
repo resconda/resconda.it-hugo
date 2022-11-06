@@ -6,23 +6,23 @@
 definitions:
   steps:
     - step: &build
-      image: klakegg/hugo:0.105.0-ext
-      name: Build Hugo
-      script:
-        - |
-          if [[ "${BITBUCKET_BRANCH}" != "master" ]]; then
-            DEBUG="-D"
-          fi
-          hugo $DEBUG
-      artifacts:
-        - public/**
+        image: klakegg/hugo:0.105.0-ext
+        name: Build Hugo
+        script:
+          - |
+            if [[ "${BITBUCKET_BRANCH}" != "master" ]]; then
+              DEBUG="-D"
+            fi
+            hugo $DEBUG
+        artifacts:
+          - public/**
     - step: &deploy
-      image: instrumentisto/rsync-ssh
-      name: Deploy to server
-      deployment: staging
-      script:
-        - |
-          rsync -e 'ssh -p 44367' -vru --delete public/ ${HETZNER_SSH_USER}@${HETZNER_HOST}:${HETZNER_DEPLOY_PATH}/
+        image: instrumentisto/rsync-ssh
+        name: Deploy to server
+        deployment: staging
+        script:
+          - |
+            rsync -e 'ssh -p 44367' -vru --delete public/ ${HETZNER_SSH_USER}@${HETZNER_HOST}:${HETZNER_DEPLOY_PATH}/
 pipelines:
   branches:
     master:
