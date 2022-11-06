@@ -1,14 +1,20 @@
+var navbarSetBackgroundAccordingToScroll = function(pageTop = null){
+    if(!pageTop){
+        pageTop = $(document).scrollTop();
+    }
+    if (pageTop > 0) {
+        $('nav.navbar').addClass('background');
+    } else if(!$('#navbarNav').hasClass('show')) {
+        $('nav.navbar').removeClass('background');
+    }
+}
 var scrollUtils = function () {
     var pageTop = $(document).scrollTop();
     var pageBottom = pageTop + $(window).height();
     var tags = $(".fadein-scroll");
 
-    if (pageTop > 0) {
-        $('nav.navbar').addClass('background');
-    } else {
-        $('nav.navbar').removeClass('background');
+    navbarSetBackgroundAccordingToScroll(pageTop);
 
-    }
     for (var i = 0; i < tags.length; i++) {
         var tag = tags[i];
         if ($(tag).offset().top < pageBottom) {
@@ -71,4 +77,10 @@ $(document)
     }, 500);
     $("#navBrandLogo").on("load ready", offsetBodyPaddingTop);    
     // friendlyCaptchaSetup();
+    $('#siteNavbar')[0].addEventListener('show.bs.collapse', event => {
+        navbarSetBackgroundAccordingToScroll(1);
+    });
+    $('#siteNavbar')[0].addEventListener('hidden.bs.collapse', event => {
+        navbarSetBackgroundAccordingToScroll();
+    });
 });

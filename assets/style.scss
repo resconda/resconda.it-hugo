@@ -120,7 +120,7 @@ ol>li, ul>li {
   background-color: transparent;
   transition: background-color 0.2s;
   &.background {
-    background-color: transparentize($color: $logo-color-lightblue, $amount: 0.2);
+    background-color: transparentize($color: $logo-color-lightgrey, $amount: 0.2);
   }
   & ul {
     margin: unset;
@@ -130,7 +130,7 @@ ol>li, ul>li {
   }
 }
 @include media-breakpoint-down(lg) {
-  .navbar-collapse {
+  #siteNavbar .navbar-collapse {
     // background-color: transparentize($color: $logo-color-lightblue, $amount: 0.9);
     font-weight: bold;
     & .navbar-nav {
@@ -138,6 +138,7 @@ ol>li, ul>li {
     }
     & .nav-item .nav-link {
       padding-right: 15px;
+      color: $logo-color-blue;
     }
   }
 }
@@ -522,7 +523,8 @@ nav {
 #siteNavbar .nav-link{
   font-size: 1.3rem;
   border-radius: 10px;
-  color: $logo-color-orange;
+  color: $logo-color-blue;
+  font-weight: bold;
   // text-transform: uppercase;
   &.active{
     background-color: $logo-color-lightgrey;
