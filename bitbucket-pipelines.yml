@@ -32,8 +32,8 @@ pipelines:
     master:
       - step: *build
       - step:
-        <<: *deploy
-        deployment: production
+          <<: *deploy
+          deployment: production
   default:
     - step: *build
     - step: *deploy
