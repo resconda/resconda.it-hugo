@@ -54,8 +54,8 @@ languages:
   it:
     languageName: Italian
     weight: 1
-  en:
-    languageName: English
-    weight: 2
+  # en:
+  #   languageName: English
+  #   weight: 2
 
 DefaultContentLanguage: it
