@@ -1,6 +1,6 @@
 ---
 ## Important: If this is a draft, next line should NOT begin with #
-title: Intorno Al Cambiamento Climatico
+title: Intorno al cambiamento climatico
 date: 2022-12-02
 ## below are user-defined parameters (lower case keys recommended)
 summary: |

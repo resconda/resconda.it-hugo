@@ -34,7 +34,7 @@ di plauso!
 Peraltro, nessuna delle COP precedenti (la prima è di quasi 30 anni fa),
 sembra aver ottenuto risultati eclatanti, per lo meno per quanto
 riguarda le emissioni di carbonio in atmosfera (principale causa del
-cambiamento climatico), come dimostra il grafico a lato, che riporta le
+cambiamento climatico), come dimostra il grafico sotto, che riporta le
 26 precedenti COP e la parallela crescita di emissioni di CO2 in
 atmosfera.
 
