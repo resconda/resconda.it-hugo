@@ -6,7 +6,7 @@ date: 2022-12-02
 summary: |
   Sono noiosi è vero. Richiedono attenzione e normalmente una certa
   quantità del nostro tempo per afferrarne le implicazioni.
-cover_image: image_path # optional
+cover_image: assets/post-img/11_p0iqpt # optional
 tags:
   - numeri
 ---
