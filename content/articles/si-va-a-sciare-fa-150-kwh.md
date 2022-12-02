@@ -4,7 +4,7 @@ title: Si va a sciare? Fa 150 Kwh!
 date: 2022-12-02
 ## below are user-defined parameters (lower case keys recommended)
 summary: Quant'è il consumo di energia di una giornata tipo sugli sci?
-# cover_image: image_path # optional
+cover_image: assets/post-img/8537138810_0c924a8691_b_wxy2sm # optional
 tags:
   - energia
 ---
@@ -48,6 +48,21 @@ polenta, caffè corretto, shottino,...
 (Elaborazione Resconda su dati
 [Raccontadati](http://www.raccontadati.it/2019/01/energia-sci/) ed
 altri. Calcolo a questo link)
+
+{{< details header="Qualche dettaglio in più sul calcolo" >}}
+
+- Autostrada A5, da Torino a Valtournenche / Cervinia  
+  Costo energetico realizzazione autostrada **43.320 Gj/km** (equivalenti a 12.033.333 kWh/km, [fonte](https://www.sciencedirect.com/science/article/abs/pii/S0950061814013075));
+  20 anni di ammortamento; transito di 3.000.000 di veicoli/anno -> 0,2 kWh costo veicolo per transito x km.;  
+  **Dati caso: 234 km percorsi da Torino a Valtournenche / Cervinia: 46,93 kWh costo energetico autostrada.**;
+- Carburante  
+  **Dati caso: 0,07 l/km x 234 = 16.4 L totale consumo; emergy carburante 9,6 kWh/L. 157 kWh complessivi**;
+- Automobile  
+  Costo energetico realizzazione auto 76.000 kWh (fonte: MacKay, D.J.C.  2009.  Sustainable Energy-without the hot air.  Cambridge University Press), 300.000 km vita utile, 0,253kWh/km;  
+  **Dati caso: 234 km percorsi: 59,3 kWh costo uso automobile.**;
+- Comprensorio sciistico 
+  12 kWh / giorno / utente (fonte dati: [Raccontadati](http://www.raccontadati.it/2019/01/energia-sci/))
+{{< /details >}}
 
 <!--
   created 2022-12-02 12:50:27.662063 +0100 CET m=+0.106144376
