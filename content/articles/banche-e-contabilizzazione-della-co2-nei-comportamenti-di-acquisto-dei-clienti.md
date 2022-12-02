@@ -6,7 +6,7 @@ date: 2022-12-02
 summary: |
   Uno studio di Nature descrive un metodo per fornire ai consumatori informazioni sulla 
   CO2 dei loro acquisti tramite carta di credito.
-# cover_image: image_path # optional
+cover_image: assets/post-img/mastercard_2Bcarbon_2Bcalculator_saebsh # optional
 tags:
   - CO2
   - EmCoin

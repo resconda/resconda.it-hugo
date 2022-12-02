@@ -6,7 +6,7 @@ date: 2022-12-02
 summary: Una storia di successo senza dubbio, dal punto di vista biologico.
 cover_image: assets/post-img/image003_mzf6js # optional
 tags:
-  - sovrapopolazione
+  - sovrappopolazione
 ---
 Intorno al 15 novembre abbiamo fatto cifra tonda! **8 miliardi di uom-abitanti del pianeta terra**.  
 Una storia di successo senza dubbio, dal punto di vista biologico. 
