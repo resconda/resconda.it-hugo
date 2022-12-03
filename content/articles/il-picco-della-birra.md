@@ -1,6 +1,6 @@
 ---
 ## Important: If this is a draft, next line should NOT begin with #
-title: Il Picco Della Birra
+title: Il picco della birra
 date: 2022-12-02
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
@@ -12,10 +12,10 @@ tags:
 ---
 **Colin Campbell (24.07.1931 - 13.11.2022)**
 
-Geologo petrolchimico, dedicò la sua vita a studiare l\'esaurimento
+Geologo petrolchimico, per 40 anni manager e consulente di società petrolifere come Texaco, BP ed Amoco, dedicò la sua vita a studiare l\'esaurimento
 delle [fonti
-fossili](https://it.wikipedia.org/wiki/Combustibili_fossili), pubblicò
-nel 1998 un articolo su "Scientific American" intitolato "*The End of
+fossili](https://it.wikipedia.org/wiki/Combustibili_fossili). Pubblicò
+nel 1998 un articolo determinante su "Scientific American", intitolato "*The End of
 Cheap Oil*".  
 
 Il modello era semplice e i dati ancora incerti, ma lo
