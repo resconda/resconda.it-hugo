@@ -11,8 +11,8 @@ tags:
 Intorno al 15 novembre abbiamo fatto cifra tonda! **8 miliardi di uom-abitanti del pianeta terra**.  
 Una storia di successo senza dubbio, dal punto di vista biologico. 
 
-Già oggi sono comunque circa 3 milioni in più. Tipo una città piuttosto grande.  
-Ci sono voluti 400 mila anni perarrivare a un milione di esseri umani, deboli e spaventati, sparpagliati sul pianeta terra.  
+Oggi (in poco meno di 3 settimane) sono comunque aumentati di circa 3 milioni. Tipo una nuova città, piuttosto grande.  
+Ci sono voluti 400 mila anni per arrivare a un milione di esseri umani, deboli e spaventati, sparpagliati sul pianeta terra.  
 10 mila anni dopo - alla nascita di Cristo - ce n'erano 200 milioni.  
 Nel 1804 un miliardo. Appena 12 anni fa eravamo 7 miliardi.  
 Oggi la popolazione umana aumenta di circa 166 mila individui al giorno, 2 persone in più ogni secondo che passa... 
