@@ -49,7 +49,7 @@ circa 11.000 tonnellate di CO2 in atmosfera, circa le emissioni medie di
 Il costo
 energetico del Tonino Lamborghini International Convention Center dove
 si è tenuto il summit e quello dei canapè di gamberetti in coulisse di
-pompelmo li calcoliamo magari un'altra volta...
+pompelmo li calcoliamo un'altra volta...
 
 <!--
   created 2022-12-02 12:51:39.492131 +0100 CET m=+0.037111085
