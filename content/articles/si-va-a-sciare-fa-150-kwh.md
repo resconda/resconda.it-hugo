@@ -15,7 +15,7 @@ gli ecosistemi in cui l'impatto del cambiamento è reso più evidente. I
 ghiacciai [si assottigliano sempre
 più](http://www.nimbus.it/ghiacciai/2022/220922_CiardoneyBilancio.htm),
 molti sono già spariti, altri ancora crollano (e talvolta
-uccidono...come la Marmolada).  
+uccidono, come la Marmolada).  
 L'innevamento si riduce negli anni e
 molte stazioni sciistiche "spariscono": nel giugno del 2020 erano state
 recensite [311 località sciistiche
@@ -26,7 +26,7 @@ Difficile tuttavia cambiare le belle e gratificanti abitudini.
 Così alla dotazione sempre minore di neve (dove si può) si cerca di
 replicare con un impiego crescente dei cannoni sparaneve, che però
 consumano acqua ed energia (oltre ad avere effetti negativi sulla
-biologia del terreno interessato, a dirla tutta...).
+biologia del terreno interessato a causa delle differenze fisico-chimiche tra neve artificiale e naturale).
 
 Ma quant'è il consumo di energia di una giornata tipo sugli sci? Diciamo
 due persone che prendono la macchina e da Torino vanno a sciare un
@@ -37,9 +37,9 @@ Londra](https://www.resconda.it/articles/energia-dei-voli-aerei/)), di
 cui 23 kWh di ammortamento energetico dell'autostrada e della strada
 fino a Valtournenche, 12 kWh per il costo energetico del comprensorio
 sciistico (per muovere gli impianti, battere la pista e sparare neve coi
-cannoni ma senza contare l'energia usata per la realizzazione degli
+cannoni, ma senza contare l'energia usata per la realizzazione degli
 impianti e per la loro manutenzione), 109 kWh per l'auto (79 kWh per il
-carburante + 30 per il suo ammortamento energetico) e per arrotondare
+carburante + 30 kWh per il suo ammortamento energetico) e, per arrotondare,
 più o meno 7 kWh di ammortamento energetico dell'attrezzatura da sci,
 abbigliamento tecnico, tubo di biscotti da 120 cm preso all'autogrill,
 scaldino per le mani, go pro sul caschetto, oakley, carbonada con
