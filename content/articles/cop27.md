@@ -25,11 +25,11 @@ destinarsi ogni decisione riguardante quali Paesi ne potranno
 beneficiare, quali Paesi dovranno mettere i soldi per costituirlo e
 quanti soldi dovranno essere messi.  
 In sostanza si può dire che un Fondo
-così, unico risultato della COP in questione, potremmo costituirlo anche
-noi! Dati i risultati la critica volta al rappresentante italiano (il
+così (unico risultato della COP), potremmo costituirlo anche
+noi. Dati i risultati, la critica volta al rappresentante italiano (il
 Ministro Pichetto) di essersene andato prima della conclusione forse
 lascia un po' il tempo che trova e potrebbe persino costituire un motivo
-di plauso!
+di plauso...
 
 Peraltro, nessuna delle COP precedenti (la prima è di quasi 30 anni fa),
 sembra aver ottenuto risultati eclatanti, per lo meno per quanto
