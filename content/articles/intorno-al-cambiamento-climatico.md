@@ -28,8 +28,10 @@ popolazione aumenta sulla terra perché aumenta la disponibilità di CO2
 se - come le piante - ci "nutrissimo" di CO2.  
 Ma così non è. Più probabilmente il contrario.
 
+
+
 {{< cloudinary_img src="assets/post-img/image018_jakl3r" caption="Popolazione mondiale, andamento storico.">}}
-{{< cloudinary_img src="assets/post-img/10000-years-of-carbon-dioxide-Dr-Robert-Rohde_faovno" caption="Contentrazione CO2, andamento storico.">}}
+{{< cloudinary_img src="assets/post-img/KMnNWHGi0lNij0VIrVh75D67wMuKw18wrmTJlpWaFug_nnypxg" caption="Contentrazione CO2, andamento storico.">}}
 <!--
   created 2022-12-02 12:51:53.548967 +0100 CET m=+0.034039460
 -->
