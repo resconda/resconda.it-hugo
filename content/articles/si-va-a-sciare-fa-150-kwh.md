@@ -1,6 +1,6 @@
 ---
 ## Important: If this is a draft, next line should NOT begin with #
-title: Si va a sciare? Fa 150 Kwh!
+title: Si va a sciare? Fa 150 kWh!
 date: 2022-12-02
 ## below are user-defined parameters (lower case keys recommended)
 summary: Quant'è il consumo di energia di una giornata tipo sugli sci?
