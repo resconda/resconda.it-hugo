@@ -26,8 +26,7 @@ della CO2 in atmosfera (in blu) e della popolazione umana sulla terra
 curve sono perfettamente sovrapponibili! Si potrebbe dedurne che la
 popolazione aumenta sulla terra perché aumenta la disponibilità di CO2
 se - come le piante - ci "nutrissimo" di CO2.  
-Ma così non è. Sarà forse
-il contrario?
+Ma così non è. Più probabilmente il contrario.
 
 {{< cloudinary_img src="assets/post-img/image018_jakl3r" caption="Popolazione mondiale, andamento storico.">}}
 {{< cloudinary_img src="assets/post-img/10000-years-of-carbon-dioxide-Dr-Robert-Rohde_faovno" caption="Contentrazione CO2, andamento storico.">}}
