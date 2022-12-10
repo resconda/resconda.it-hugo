@@ -12,5 +12,5 @@ def handler(req):
         urihandler = uriitem[1]
         if uri == request_uri:
             return urihandler(req)
-            break
+    req.log_error("Invalid path %s" % request_uri)
     return apache.HTTP_BAD_REQUEST
