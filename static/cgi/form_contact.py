@@ -2,14 +2,6 @@ from mod_python import apache
 from json import dumps as jds
 import urllib.parse as ups
 
-VALID_PARAMS = [
-    ("name", False, _sanitize_string),
-    ("email", True, _sanitize_string),
-    ("phone", False, _sanitize_string),
-    ("message", False, _sanitize_string),
-    ("newsletter", True, _sanitize_bool),
-]
-
 
 def _sanitize_bool(input) -> bool:
     if type(input) is bool:
@@ -19,11 +11,23 @@ def _sanitize_bool(input) -> bool:
     if type(input) is str:
         return input != "0"
 
+
 def _sanitize_string(input) -> str:
     if type(input) in [str, bytes]:
         return ups.unquote_plus(input)
     else:
         return None
+
+
+VALID_PARAMS = [
+    ("name", False, _sanitize_string),
+    ("email", True, _sanitize_string),
+    ("phone", False, _sanitize_string),
+    ("message", False, _sanitize_string),
+    ("newsletter", True, _sanitize_bool),
+]
+
+
 
 def validate_input(params: dict) -> list:
     output = []
