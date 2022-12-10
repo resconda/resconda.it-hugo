@@ -53,17 +53,15 @@ def form_contact(req):
         "errors": []
     }
     rawdata = req.read()
+    req.log_error(rawdata.decode(),  apache.APLOG_ERR)
     rawparams = ups.parse_qsl(rawdata)
     validationErrors = validate_input(params=rawparams)
     if len(validationErrors) > 0:
         output["errors"] = validationErrors
-        return apache.OK
-    sanitised = sanitise_input(rawparams)
-    req.log_error("Sanitised input: %s" % jds(sanitised))
-    # req.log_error("Request content type %s" % req.content_type)
-    # req.log_error(rawdata.decode(),  apache.APLOG_ERR)
-    # TEMP
-    req.content_type = "application/json"
+    else:
+        sanitised = sanitise_input(rawparams)
+        req.log_error("Sanitised input: %s" % jds(sanitised))
     
+    req.content_type = "application/json"
     req.write(jds(output))
     return apache.OK
