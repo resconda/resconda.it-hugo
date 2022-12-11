@@ -1,19 +1,21 @@
 from os import environ
 import requests
 
-CAPTCHASECRET = environ["FRIENDLY_CAPTCHA_SECRET"]
-CAPTCHAKEY = environ["FRIENDLY_CAPTCHA_SITEKEY"]
 CAPTCHAURL = "https://api.friendlycaptcha.com/api/v1/siteverify"
 
 
 class CaptchaVerifyException(Exception):
     pass
 
-def captcha_verify(solution) -> bool:
+def captcha_verify(solution):
+    csecret = environ.get("FRIENDLY_CAPTCHA_SECRET")
+    ckey = environ.get("FRIENDLY_CAPTCHA_SITEKEY")
+    if csecret is None or ckey is None:
+        raise CaptchaVerifyException("FriendlyCaptcha key/secret are missing")
     r = requests.post(CAPTCHAURL, data={
         "solution": solution,
-        "secret": CAPTCHASECRET,
-        "sitekey": CAPTCHAKEY,
+        "secret": csecret,
+        "sitekey": ckey,
     })
     try:
         rdict = r.json()
