@@ -1,7 +1,17 @@
 from mod_python import apache
 from json import dumps as jds
 import urllib.parse as ups
+import re
 
+
+def _sanitize_email(input) -> str:
+    tostr = _sanitize_string(input)
+    email_reg = r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
+    if re.match(tostr):
+        return tostr
+    else:
+        apache.log_error("[%s] Invalid email: %s" % (__name__, tostr), apache.APLOG_ERR)
+        return None
 
 def _sanitize_bool(input) -> bool:
     if type(input) is bool:
@@ -23,10 +33,10 @@ def _sanitize_string(input) -> str:
 
 VALID_PARAMS = [
     ("name", False, _sanitize_string),
-    ("email", True, _sanitize_string),
+    ("email", True, _sanitize_email),
     ("phone", False, _sanitize_string),
     ("message", False, _sanitize_string),
-    ("newsletter", True, _sanitize_bool),
+    ("newsletter", False, _sanitize_bool),
 ]
 
 
