@@ -1,42 +1,17 @@
 from mod_python import apache
 from json import dumps as jds
 import urllib.parse as ups
-import re
-
-
-def _sanitize_email(input) -> str:
-    tostr = _sanitize_string(input)
-    email_reg = r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
-    if re.match(email_reg, tostr):
-        return tostr
-    else:
-        apache.log_error("[%s] Invalid email: %s" % (__name__, tostr), apache.APLOG_ERR)
-        return None
-
-def _sanitize_bool(input) -> bool:
-    if type(input) is bool:
-        return input
-    if type(input) is int:
-        return input != 0
-    if type(input) is str:
-        return input != "0"
-
-
-def _sanitize_string(input) -> str:
-    if type(input) is bytes:
-        return input.decode()
-    elif type(input) is str:
-        return input
-    else:
-        return None
+import sanitizers
+import friendlycaptcha
 
 
 VALID_PARAMS = [
-    ("name", False, _sanitize_string),
-    ("email", True, _sanitize_email),
-    ("phone", False, _sanitize_string),
-    ("message", False, _sanitize_string),
-    ("newsletter", False, _sanitize_bool),
+    ("name", False, sanitizers.sanitize_string),
+    ("email", True, sanitizers.sanitize_email),
+    ("phone", False, sanitizers.sanitize_string),
+    ("message", False, sanitizers.sanitize_string),
+    ("newsletter", False, sanitizers.sanitize_bool),
+    ("frc-captcha-solution", True, friendlycaptcha.captcha_verify),
 ]
 
 
@@ -74,8 +49,18 @@ def form_contact(req):
     if len(validationErrors) > 0:
         output["errors"] = validationErrors
     else:
-        sanitised = sanitise_input(rawparams)
-        req.log_error("Sanitised input: %s" % jds(sanitised))
+        try:
+            sanitised = sanitise_input(rawparams)
+            output["name"] = sanitised["name"]
+            req.log_error("Sanitised input: %s" % jds(sanitised), apache.APLOG_DEBUG)
+        except sanitizers.SanitiserException as sex:
+            errstr = "Invalid input: %s" % sex.message
+            output["errors"].append(errstr)
+            req.log_error(errstr)
+        except friendlycaptcha.CaptchaVerifyException as cve:
+            errstr = "Captcha verification error: %s" % cve.message
+            output["errors"].append(errstr)
+            req.log_error(errstr)
     
     req.content_type = "application/json"
     req.write(jds(output))

@@ -2,7 +2,7 @@ from mod_python import apache
 from contact import form_contact
 
 URIs = [
-    ("/cgi/form_contact.py", form_contact),
+    ("/cgi/form_contact", form_contact),
 ]
 
 def handler(req):
@@ -11,8 +11,9 @@ def handler(req):
         uri = uriitem[0]
         urihandler = uriitem[1]
         if uri == request_uri:
-            req.log_error("Path has a valid handler %s" % str(urihandler))
+            req.log_error("Path %s has a valid handler %s" %
+                          (uri, str(urihandler), apache.APLOG_DEBUG))
             # return urihandler(req)
             return form_contact(req)
-    req.log_error("Invalid path %s" % request_uri)
+    req.log_error("Invalid path %s" % request_uri, apache.APLOG_ERR)
     return apache.HTTP_BAD_REQUEST
