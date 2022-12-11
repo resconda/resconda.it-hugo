@@ -28,7 +28,6 @@ VALID_PARAMS = [
 ]
 
 
-
 def validate_input(params: dict) -> list:
     output = []
     for vp in VALID_PARAMS:
@@ -45,17 +44,20 @@ def sanitise_input(params: dict) -> dict:
         pval = params.get(pname)
         if pval is not None:
             phandler = vp[2]
-            sanitised[pname] = phandler(pval)
+            if type(pval) is list:
+                sanitised[pname] = [phandler(original) for original in pval]
+            else:                
+                sanitised[pname] = phandler(pval)
     return sanitised
 
 def form_contact(req):
     output = {
         "errors": []
     }
-    rawdata = req.read()
-    req.log_error(rawdata.decode(),  apache.APLOG_ERR)
-    rawparams = ups.parse_qsl(rawdata)
-    req.log_error("Parsed params: %s" % jds(rawparams), apache.APLOG_ERR)
+    rawdata = req.read().decode()
+    req.log_error(rawdata,  apache.APLOG_ERR)
+    rawparams = ups.parse_qs(rawdata)
+    req.log_error("Parsed params: %s" % str(rawparams), apache.APLOG_ERR)
     validationErrors = validate_input(params=rawparams)
     if len(validationErrors) > 0:
         output["errors"] = validationErrors
