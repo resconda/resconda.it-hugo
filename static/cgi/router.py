@@ -1,5 +1,5 @@
 from mod_python import apache
-from form_contact import form_contact
+from contact import form_contact
 
 URIs = [
     ("/cgi/form_contact.py", form_contact),

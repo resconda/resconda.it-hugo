@@ -55,6 +55,7 @@ def form_contact(req):
     rawdata = req.read()
     req.log_error(rawdata.decode(),  apache.APLOG_ERR)
     rawparams = ups.parse_qsl(rawdata)
+    req.log_error("Parsed params: %s" % jds(rawparams), apache.APLOG_ERR)
     validationErrors = validate_input(params=rawparams)
     if len(validationErrors) > 0:
         output["errors"] = validationErrors
