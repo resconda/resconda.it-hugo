@@ -13,8 +13,10 @@ def _sanitize_bool(input) -> bool:
 
 
 def _sanitize_string(input) -> str:
-    if type(input) in [str, bytes]:
-        return ups.unquote_plus(input)
+    if type(input) is bytes:
+        return input.decode()
+    elif type(input) is str:
+        return input
     else:
         return None
 
