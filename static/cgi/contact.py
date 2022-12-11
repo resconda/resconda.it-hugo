@@ -7,7 +7,7 @@ import re
 def _sanitize_email(input) -> str:
     tostr = _sanitize_string(input)
     email_reg = r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
-    if re.match(tostr):
+    if re.match(email_reg, tostr):
         return tostr
     else:
         apache.log_error("[%s] Invalid email: %s" % (__name__, tostr), apache.APLOG_ERR)
