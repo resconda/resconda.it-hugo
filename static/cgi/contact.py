@@ -54,11 +54,11 @@ def form_contact(req):
             output["name"] = sanitised["name"]
             req.log_error("Sanitised input: %s" % jds(sanitised), apache.APLOG_DEBUG)
         except sanitizers.SanitiserException as sex:
-            errstr = "Invalid input: %s" % sex.message
+            errstr = "Invalid input: %s" % str(sex)
             output["errors"].append(errstr)
             req.log_error(errstr)
         except friendlycaptcha.CaptchaVerifyException as cve:
-            errstr = "Captcha verification error: %s" % cve.message
+            errstr = "Captcha verification error: %s" % str(cve)
             output["errors"].append(errstr)
             req.log_error(errstr)
     
