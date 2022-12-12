@@ -51,6 +51,9 @@ def form_contact(req):
     }
     rawdata = req.read().decode()
     req.log_error(rawdata,  apache.APLOG_ERR)
+    # parse_qs yields a dict whose values are all lists of values,
+    # so that multiple occurrences of a parameter are handled
+    # hence we must always handle lists, even when only one value is expected
     rawparams = ups.parse_qs(rawdata)
     req.log_error("Parsed params: %s" % str(rawparams), apache.APLOG_ERR)
     validationErrors = validate_input(params=rawparams)
@@ -61,7 +64,8 @@ def form_contact(req):
             sanitised = sanitise_input(rawparams)
             output["name"] = sanitised["name"]
             req.log_error("Sanitised input: %s" % jds(sanitised), apache.APLOG_DEBUG)
-            captcha_verify(req, rawparams["frc-captcha-solution"])
+            solution = rawparams.get("frc-captcha-solution", [""])
+            captcha_verify(req, solution[0])
         except sanitizers.SanitiserException as sex:
             errstr = "Invalid input: %s" % str(sex)
             output["errors"].append(errstr)
