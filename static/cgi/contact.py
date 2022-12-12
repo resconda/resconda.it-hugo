@@ -15,7 +15,7 @@ VALID_PARAMS = [
 
 def validate_input(params: dict) -> list:
     output = []
-    for vp in ContactRequestHandler.VALID_PARAMS:
+    for vp in VALID_PARAMS:
         pname = vp[0]
         prequired = vp[1]
         if prequired and pname not in params:
@@ -25,7 +25,7 @@ def validate_input(params: dict) -> list:
 
 def sanitise_input(params: dict) -> dict:
     sanitised = {}
-    for vp in ContactRequestHandler.VALID_PARAMS:
+    for vp in VALID_PARAMS:
         pname = vp[0]
         pval = params.get(pname)
         if pval is not None:
