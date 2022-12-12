@@ -21,7 +21,7 @@ def captcha_verify(solution, secret, key):
             successString = rdict.get("success")
             if successString != "true":
                 raise CaptchaVerifyException(
-                    "Captcha verfification failed")
+                    "Captcha verfification failed: %s" % str(rdict))
         else:
             raise CaptchaVerifyException("Invalid response to captcha verification call")
     except Exception as ex:

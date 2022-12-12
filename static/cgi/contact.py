@@ -39,7 +39,7 @@ def sanitise_input(params: dict) -> dict:
 
 def captcha_verify(req, solution: str):
     opts = req.get_options()
-    req.log_error("Request options: %s" % str(opts), apache.APLOG_DEBUG)
+    req.log_error("Request options: %s" % str(opts), apache.APLOG_ERROR)
     secret = opts.get("FRIENDLY_CAPTCHA_SECRET")
     sitekey = opts.get("FRIENDLY_CAPTCHA_SITEKEY")
     friendlycaptcha.captcha_verify(solution, secret, sitekey)
