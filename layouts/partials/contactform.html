@@ -14,7 +14,7 @@
     </div>
     <div class="col-12">
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" value="1" name="newsletter" id="flexCheckDefault">
             <label class="form-check-label" for="flexCheckDefault">
                 Voglio iscrivermi alla newsletter (e accetto i <a href="/privacy">termini della privacy</a>)
             </label>
@@ -42,12 +42,12 @@
                         console.log(JSON.stringify(data));
                         if(data.errors != undefined && data.errors.length > 0){
                             data.errors.forEach(element => {
-                                errrow = $(`<div class="row bg-warning"><div class="col-12 col-md-6>${element}`);
+                                errrow = $(`<div class="row bg-warning"><div class="col-12 col-md-6>${element}</div></div>`);
                                 $("#form-response").append(errrow); 
                             });
                         }else{
                             name = data.name;
-                            successmsg.append(`<p class="bg-info">Grazie ${name}! Ti contatteremo presto.</p>`);
+                            successmsg = $(`<p class="bg-info">Grazie ${name}! Ti contatteremo presto.</p>`);
                             $('#form-response').append(successmsg);
                             $('#contactForm').find('input,textarea').val("");
                         }
