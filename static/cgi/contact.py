@@ -4,29 +4,28 @@ import urllib.parse as ups
 import sanitizers
 import friendlycaptcha
 
-
 VALID_PARAMS = [
     ("name", False, sanitizers.sanitize_string),
     ("email", True, sanitizers.sanitize_email),
     ("phone", False, sanitizers.sanitize_string),
     ("message", False, sanitizers.sanitize_string),
     ("newsletter", False, sanitizers.sanitize_bool),
-    ("frc-captcha-solution", True, friendlycaptcha.captcha_verify),
 ]
 
 
 def validate_input(params: dict) -> list:
     output = []
-    for vp in VALID_PARAMS:
+    for vp in ContactRequestHandler.VALID_PARAMS:
         pname = vp[0]
         prequired = vp[1]
         if prequired and pname not in params:
             output.append({pname: "Missing required"})
     return output
 
+
 def sanitise_input(params: dict) -> dict:
     sanitised = {}
-    for vp in VALID_PARAMS:
+    for vp in ContactRequestHandler.VALID_PARAMS:
         pname = vp[0]
         pval = params.get(pname)
         if pval is not None:
@@ -36,6 +35,14 @@ def sanitise_input(params: dict) -> dict:
             else:                
                 sanitised[pname] = phandler(pval)
     return sanitised
+
+
+def captcha_verify(req: apache.request, solution: str):
+    opts = req.get_options()
+    secret = opts["FRIENDLY_CAPTCHA_SECRET"]
+    sitekey = opts["FRIENDLY_CAPTCHA_SITEKEY"]
+    friendlycaptcha.captcha_verify(solution, secret, sitekey)
+
 
 def form_contact(req):
     output = {
@@ -53,6 +60,7 @@ def form_contact(req):
             sanitised = sanitise_input(rawparams)
             output["name"] = sanitised["name"]
             req.log_error("Sanitised input: %s" % jds(sanitised), apache.APLOG_DEBUG)
+            captcha_verify(req, rawparams["frc-captcha-solution"])
         except sanitizers.SanitiserException as sex:
             errstr = "Invalid input: %s" % str(sex)
             output["errors"].append(errstr)

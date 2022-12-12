@@ -7,15 +7,13 @@ CAPTCHAURL = "https://api.friendlycaptcha.com/api/v1/siteverify"
 class CaptchaVerifyException(Exception):
     pass
 
-def captcha_verify(solution):
-    csecret = environ.get("FRIENDLY_CAPTCHA_SECRET")
-    ckey = environ.get("FRIENDLY_CAPTCHA_SITEKEY")
-    if csecret is None or ckey is None:
+def captcha_verify(solution, secret, key):
+    if secret is None or key is None:
         raise CaptchaVerifyException("FriendlyCaptcha key/secret are missing")
     r = requests.post(CAPTCHAURL, data={
         "solution": solution,
-        "secret": csecret,
-        "sitekey": ckey,
+        "secret": secret,
+        "sitekey": key,
     })
     try:
         rdict = r.json()
