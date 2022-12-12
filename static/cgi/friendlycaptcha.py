@@ -24,5 +24,5 @@ def captcha_verify(solution, secret, key):
                     "Captcha verfification failed")
         else:
             raise CaptchaVerifyException("Invalid response to captcha verification call")
-    except requests.exceptions.JSONDecodeError as jde:
-        raise jde
+    except Exception as ex:
+        raise CaptchaVerifyException(str(ex))

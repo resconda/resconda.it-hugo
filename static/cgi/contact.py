@@ -39,8 +39,9 @@ def sanitise_input(params: dict) -> dict:
 
 def captcha_verify(req, solution: str):
     opts = req.get_options()
-    secret = opts["FRIENDLY_CAPTCHA_SECRET"]
-    sitekey = opts["FRIENDLY_CAPTCHA_SITEKEY"]
+    req.log_error("Request options: %s" % str(opts), apache.APLOG_DEBUG)
+    secret = opts.get("FRIENDLY_CAPTCHA_SECRET")
+    sitekey = opts.get("FRIENDLY_CAPTCHA_SITEKEY")
     friendlycaptcha.captcha_verify(solution, secret, sitekey)
 
 
