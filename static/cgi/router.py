@@ -13,7 +13,7 @@ def handler(req):
         if uri == request_uri:
             req.log_error("Path %s has a valid handler %s" %
                           (uri, str(urihandler)), apache.APLOG_DEBUG)
-            # return urihandler(req)
-            return form_contact(req)
+            return urihandler(req)
+            # return form_contact(req)
     req.log_error("Invalid path %s" % request_uri, apache.APLOG_ERR)
     return apache.HTTP_BAD_REQUEST
