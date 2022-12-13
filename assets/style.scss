@@ -37,6 +37,7 @@ $input-placeholder-color: $gray-500;
 // 4. Include any optional Bootstrap CSS as needed
 // --> these surely needed
 @import "./bootstrap/scss/navbar";
+@import "./bootstrap/scss/alert";
 @import "./bootstrap/scss/nav";
 @import "./bootstrap/scss/list-group";
 @import "./bootstrap/scss/card";
