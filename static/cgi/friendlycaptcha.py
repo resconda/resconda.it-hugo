@@ -18,8 +18,8 @@ def captcha_verify(solution, secret, key):
     try:
         rdict = r.json()
         if rdict and type(rdict) is dict:
-            successString = rdict.get("success")
-            if successString != "true":
+            successString = rdict.get("success", False)
+            if successString is not True:
                 raise CaptchaVerifyException(
                     "Captcha verfification failed: %s" % str(rdict))
         else:
