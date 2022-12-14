@@ -87,7 +87,7 @@ Grazie,
 
     # send it out
     conn = SMTP("localhost")
-    conn.sendmail(email, [SITEADMIN["name"]], msg)
+    conn.sendmail(email, [SITEADMIN["email"]], msg)
     conn.quit()
 
 
