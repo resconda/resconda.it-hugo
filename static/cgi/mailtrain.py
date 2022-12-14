@@ -29,8 +29,8 @@ def add_subscription(listid: str, access_token: str, input: dict):
     if LISTS.get(listid) is None:
         raise MailtrainException(
             "%s invalid listid %s" % listid)
-    posturl = pjoin(MAILTRAIN_URL, MAILTRAIN_SUBSCRIBE_URI)
-    posturl = pjoin(posturl, listid)
+    posturl = urljoin(MAILTRAIN_URL, MAILTRAIN_SUBSCRIBE_URI)
+    posturl = urljoin(posturl, listid)
     posturl += "?access_token=%s" % access_token
 
     postdata = {"EMAIL": email}
