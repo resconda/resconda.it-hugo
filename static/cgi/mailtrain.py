@@ -1,4 +1,4 @@
-from os.path import join as pjoin
+from requests.compat import urljoin
 import requests
 
 MAILTRAIN_URL = "https://lists.resconda.it"
@@ -29,7 +29,8 @@ def add_subscription(listid: str, access_token: str, input: dict):
     if LISTS.get(listid) is None:
         raise MailtrainException(
             "%s invalid listid %s" % listid)
-    posturl = pjoin(MAILTRAIN_URL, MAILTRAIN_SUBSCRIBE_URI, listid)
+    posturl = pjoin(MAILTRAIN_URL, MAILTRAIN_SUBSCRIBE_URI)
+    posturl = pjoin(posturl, listid)
     posturl += "?access_token=%s" % access_token
 
     postdata = {"EMAIL": email}
