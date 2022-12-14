@@ -118,7 +118,10 @@ def form_contact(req):
             req.log_error("Sanitised input: %s" % jds(sanitised), apache.APLOG_DEBUG)
             solution = rawparams.get("frc-captcha-solution", [""])
             captcha_verify(req, solution[0])
-            process_form_input(sanitised)
+            # flatten the input before consuming it
+            mangledinput = {x:sanitised[x][0] for x in sanitised}
+
+            process_form_input(mangledinput)
         except sanitizers.SanitiserException as sex:
             errstr = "Invalid input"
             output["errors"].append(errstr)
