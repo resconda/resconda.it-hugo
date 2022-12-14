@@ -56,8 +56,7 @@ def add_mailtrain_subscription(req, input: dict):
     opts = req.get_options()
     listid = opts.get("MAILTRAIN_LISTID")
     access_token = opts.get("MAILTRAIN_ACCESSTOKEN")
-    try:
-        mailtrain.add_subscription(listid, access_token, input)
+    mailtrain.add_subscription(listid, access_token, input)
 
 
 def send_contact_notification(input: dict):
