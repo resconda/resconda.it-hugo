@@ -17,7 +17,7 @@ LISTS = {
 }
 
 
-class MailtrainException(Exception)
+class MailtrainException(Exception):
     pass
 
 
