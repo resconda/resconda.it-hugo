@@ -91,10 +91,10 @@ Grazie,
     conn.quit()
 
 
-def process_form_input(input: dict):
+def process_form_input(req, input: dict):
     send_contact_notification(input)
     if input.get("newsletter", False):
-        add_mailtrain_subscription(input)
+        add_mailtrain_subscription(req, input)
 
 
 def form_contact(req):
@@ -121,7 +121,7 @@ def form_contact(req):
             # flatten the input before consuming it
             mangledinput = {x:sanitised[x][0] for x in sanitised}
 
-            process_form_input(mangledinput)
+            process_form_input(req, mangledinput)
         except sanitizers.SanitiserException as sex:
             errstr = "Invalid input"
             output["errors"].append(errstr)
