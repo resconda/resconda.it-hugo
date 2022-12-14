@@ -3,6 +3,13 @@ from json import dumps as jds
 import urllib.parse as ups
 import sanitizers
 import friendlycaptcha
+from smtplib import SMTP
+import mailtrain
+
+SITEADMIN = {
+    "name": "Marcello Corongiu",
+    "email": "info@resconda.it",
+}
 
 VALID_PARAMS = [
     ("name", False, sanitizers.sanitize_string),
@@ -45,6 +52,52 @@ def captcha_verify(req, solution: str):
     friendlycaptcha.captcha_verify(solution, secret, sitekey)
 
 
+def add_mailtrain_subscription(req, input: dict):
+    opts = req.get_options()
+    listid = opts.get("MAILTRAIN_LISTID")
+    access_token = opts.get("MAILTRAIN_ACCESSTOKEN")
+    try:
+        mailtrain.add_subscription(listid, access_token, input)
+
+
+def send_contact_notification(input: dict):
+    name = dict.get("name")
+    email = dict.get("email")
+    message = dict.get("message", "")
+    if dict.get("newsletter", False):
+        message += "\n\nHo richiesto l'iscrizione alla newletter."
+    # make sure the user provided all the parameters
+    if not (name and email and message):
+        return "A required parameter is missing, \
+               please go back and correct the error"
+
+    # create the message text
+    msg = """\
+From: %s <%s>
+Subject: [resconda.it] richiesta di contatto
+To: %s
+
+Ho inviato una richiesta di contatto dal form web.
+
+%s
+
+Grazie,
+%s
+
+""" % (name, email, SITEADMIN["email"], message, name)
+
+    # send it out
+    conn = SMTP("localhost")
+    conn.sendmail(email, [SITEADMIN["name"]], msg)
+    conn.quit()
+
+
+def process_form_input(input: dict):
+    send_contact_notification(input)
+    if input.get("newsletter", False):
+        add_mailtrain_subscription(input)
+
+
 def form_contact(req):
     output = {
         "errors": []
@@ -66,15 +119,20 @@ def form_contact(req):
             req.log_error("Sanitised input: %s" % jds(sanitised), apache.APLOG_DEBUG)
             solution = rawparams.get("frc-captcha-solution", [""])
             captcha_verify(req, solution[0])
+            process_form_input(sanitised)
         except sanitizers.SanitiserException as sex:
-            errstr = "Invalid input: %s" % str(sex)
+            errstr = "Invalid input"
             output["errors"].append(errstr)
-            req.log_error(errstr)
+            req.log_error("%s: %s" % (errstr, str(sex)))
         except friendlycaptcha.CaptchaVerifyException as cve:
-            errstr = "Captcha verification error: %s" % str(cve)
+            errstr = "Invalid input"
             output["errors"].append(errstr)
-            req.log_error(errstr)
-    
+            req.log_error("%s: %s" % (errstr, str(cve)))
+        except mailtrain.MailtrainException as mex:
+            errstr = "Invalid input"
+            output["errors"].append(errstr)
+            req.log_error("%s: %s" % (errstr, str(mex)))
+
     req.content_type = "application/json"
     req.write(jds(output))
     return apache.OK
