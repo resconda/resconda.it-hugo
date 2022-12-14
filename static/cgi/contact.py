@@ -60,10 +60,10 @@ def add_mailtrain_subscription(req, input: dict):
 
 
 def send_contact_notification(input: dict):
-    name = dict.get("name")
-    email = dict.get("email")
-    message = dict.get("message", "")
-    if dict.get("newsletter", False):
+    name = input.get("name")
+    email = input.get("email")
+    message = input.get("message", "")
+    if input.get("newsletter", False):
         message += "\n\nHo richiesto l'iscrizione alla newletter."
     # make sure the user provided all the parameters
     if not (name and email and message):
