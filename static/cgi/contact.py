@@ -89,6 +89,7 @@ Grazie,
     webmaster=SITEADMIN["webmasterSender"],
     contactName=name,
     contactEmail=contactEmail,
+    siteAdminEmail=SITEADMIN["email"],
     contactMessage=message)
 
     # send it out
