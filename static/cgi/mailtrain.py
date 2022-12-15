@@ -46,7 +46,8 @@ def add_subscription(listid: str, access_token: str, input: dict):
     if "name" in input and "surname" not in input:
         namecomps = input["name"].split(" ")
         if len(namecomps) > 1:
-            input["surname"] = " ".join(namecomps[1:])
+            input["name"] = namecomps[0]
+            input["surname"] = " ".join(namecomps[1:]).upper()
     postdata = {
         "EMAIL": email,
         "MERGE_NON_ASSOCIATO": 1, # THANK YOU SO MUCH, MARCELLO
