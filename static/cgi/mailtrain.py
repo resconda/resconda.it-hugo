@@ -35,10 +35,7 @@ def add_subscription(listid: str, access_token: str, input: dict):
     if LISTS.get(listid) is None:
         raise MailtrainException(
             "%s invalid listid %s" % listid)
-    posturl = urljoin(MAILTRAIN_URL, MAILTRAIN_SUBSCRIBE_URI)
-    posturl = urljoin(posturl, listid)
-    posturl += "?access_token=%s" % access_token
-
+    posturl = MAILTRAIN_URL + MAILTRAIN_SUBSCRIBE_URI + "/%s" % listid + "?access_token=%s" % access_token
     postdata = {"EMAIL": email}
     for k,v in input.items():
         mtMergeName = LISTS[listid]["fields"].get(k, {}).get("merge_tag", None)
