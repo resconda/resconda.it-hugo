@@ -23,7 +23,7 @@ class MailtrainException(Exception):
       self.message = message
       self.url = url
     
-    def __str__(self)
+    def __str__(self):
         return "[Mailtrain] {url} - {msg}".format(url=self.url, msg=self.message)
 
 
