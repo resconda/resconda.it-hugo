@@ -9,6 +9,7 @@ import mailtrain
 SITEADMIN = {
     "name": "Marcello Corongiu",
     "email": "info@resconda.it",
+    "webmasterSender": "no-reply@resconda.it",
 }
 
 VALID_PARAMS = [
@@ -18,6 +19,9 @@ VALID_PARAMS = [
     ("message", False, sanitizers.sanitize_string),
     ("newsletter", False, sanitizers.sanitize_bool),
 ]
+
+class ContactException(Exception):
+    pass
 
 
 def validate_input(params: dict) -> list:
@@ -65,30 +69,34 @@ def send_contact_notification(input: dict):
     message = input.get("message", "")
     if input.get("newsletter", False):
         message += "\n\nHo richiesto l'iscrizione alla newletter."
-    # make sure the user provided all the parameters
-    if not (name and contactEmail and message):
-        return "A required parameter is missing, \
-               please go back and correct the error"
-
+    
     # create the message text
     msg = """\
-From: no-reply@resconda.it
-Subject: Richiesta di contatto da %s <%s>
-To: %s
+From: {webmaster}
+Subject: Richiesta di contatto da {contactName} <{contactEmail}>
+To: {siteAdminEmail}
 
 Ho inviato una richiesta di contatto dal form web.
 
-%s
+{contactMessage}
 
 Grazie,
-%s
+{contactName}
 
-""" % (name, contactEmail, SITEADMIN["email"], message, name)
+""".format(
+    webmaster=SITEADMIN["webmasterSender"],
+    contactName=name,
+    contactEmail=contactEmail,
+    contactMessage=message)
 
     # send it out
     conn = SMTP("localhost")
-    conn.sendmail(contactEmail, [SITEADMIN["email"]], msg)
-    conn.quit()
+    try:
+        conn.sendmail(SITEADMIN["webmasterSender"], [SITEADMIN["email"]], msg)
+    except Exception as ex: # SMTPlib has too many flavour of exception to handle them all
+        raise ContactException("sendmail error: {}".format(str(ex)))
+    finally:
+        conn.quit()
 
 
 def process_form_input(req, input: dict):
@@ -131,6 +139,10 @@ def form_contact(req):
             errstr = "Invalid input"
             output["errors"].append(errstr)
             req.log_error("%s: %s" % (errstr, str(cve)))
+        except ContactException as ce:
+            errstr = "Server error. Please write to <a href=\"mailto:info@resconda.it\">info@resconda.it</a>"
+            output["errors"].append(errstr)
+            req.log_error(str(ce))
         except mailtrain.MailtrainException as mex:
             errstr = "Invalid input"
             output["errors"].append(errstr)
