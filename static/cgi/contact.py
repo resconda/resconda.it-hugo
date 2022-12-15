@@ -49,7 +49,7 @@ def sanitise_input(params: dict) -> dict:
 
 
 def captcha_verify(req, solution: str):
-    req.log_error("%s" % __name__, apache.APLOG_DEBUG)
+    req.log_error("%s" % "captcha_verify", apache.APLOG_DEBUG)
     opts = req.get_options()
     req.log_error("Request options: %s" % str(opts), apache.APLOG_DEBUG)
     secret = opts.get("FRIENDLY_CAPTCHA_SECRET")
@@ -58,7 +58,7 @@ def captcha_verify(req, solution: str):
 
 
 def add_mailtrain_subscription(req, input: dict):
-    req.log_error("%s" % __name__, apache.APLOG_DEBUG)
+    req.log_error("%s" % "add_mailtrain_subscription", apache.APLOG_DEBUG)
     opts = req.get_options()
     listid = opts.get("MAILTRAIN_LISTID")
     access_token = opts.get("MAILTRAIN_ACCESSTOKEN")

@@ -11,6 +11,11 @@ LISTS = {
                 "name": "First Name",
                 "type": "Text",
                 "merge_tag": "MERGE_FIRST_NAME",
+            },
+            "surname": {
+                "name": "Last Name",
+                "type": "Text",
+                "merge_tag": "MERGE_LAST_NAME",
             }
         }
     }
@@ -36,7 +41,16 @@ def add_subscription(listid: str, access_token: str, input: dict):
         raise MailtrainException(
             "%s invalid listid %s" % listid)
     posturl = MAILTRAIN_URL + MAILTRAIN_SUBSCRIBE_URI + "/%s" % listid + "?access_token=%s" % access_token
-    postdata = {"EMAIL": email}
+    # name manipulation: if only 'name' was given and the string value has more than one word,
+    # we try and guess the split btw first and last name(s)
+    if "name" in input and "surname" not in input:
+        namecomps = input["name"].split(" ")
+        if len(namecomps) > 1:
+            input["surname"] = " ".join(namecomps[1:])
+    postdata = {
+        "EMAIL": email,
+        "MERGE_NON_ASSOCIATO": 1, # THANK YOU SO MUCH, MARCELLO
+    }
     for k,v in input.items():
         mtMergeName = LISTS[listid]["fields"].get(k, {}).get("merge_tag", None)
         if mtMergeName:

@@ -30,6 +30,7 @@
 </div>
 <script>
     window.addEventListener("load", function (document, event) {
+        $("#form-response").empty();
         $("#friendlyCaptchaFormSubmit").click(submitEvent => {
             formid = $("#friendlyCaptchaFormSubmit").attr('form');
             data = $(`#${formid}`).serialize();
