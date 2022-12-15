@@ -18,7 +18,13 @@ LISTS = {
 
 
 class MailtrainException(Exception):
-    pass
+    def __init__(self, message, url="URL not defined"):
+      super().__init__()
+      self.message = message
+      self.url = url
+    
+    def __str__(self)
+        return "[Mailtrain] {url} - {msg}".format(url=self.url, msg=self.message)
 
 
 def add_subscription(listid: str, access_token: str, input: dict):
@@ -48,12 +54,12 @@ def add_subscription(listid: str, access_token: str, input: dict):
                 if subscriptionID:
                     return subscriptionID
                 else:
-                    raise MailtrainException("Invalid response content: %s" % r.text)
+                    raise MailtrainException("Invalid response content: %s" % r.text, posturl)
             else:
                 raise MailtrainException(
-                    "Invalid response content: %s" % r.text)
+                    "Invalid response content: %s" % r.text, posturl)
         else:
             raise MailtrainException(
-                "Invalid response to 'Add subscription' Mailtrain API call")
+                "Invalid response to 'Add subscription' Mailtrain API call", posturl)
     except Exception as ex:
-        raise MailtrainException(str(ex))
+        raise MailtrainException(str(ex), posturl)
