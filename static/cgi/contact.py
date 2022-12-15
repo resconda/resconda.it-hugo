@@ -61,19 +61,19 @@ def add_mailtrain_subscription(req, input: dict):
 
 def send_contact_notification(input: dict):
     name = input.get("name")
-    email = input.get("email")
+    contactEmail = input.get("email")
     message = input.get("message", "")
     if input.get("newsletter", False):
         message += "\n\nHo richiesto l'iscrizione alla newletter."
     # make sure the user provided all the parameters
-    if not (name and email and message):
+    if not (name and contactEmail and message):
         return "A required parameter is missing, \
                please go back and correct the error"
 
     # create the message text
     msg = """\
-From: %s <%s>
-Subject: [resconda.it] richiesta di contatto
+From: no-reply@resconda.it
+Subject: Richiesta di contatto da %s <%s>
 To: %s
 
 Ho inviato una richiesta di contatto dal form web.
@@ -83,17 +83,18 @@ Ho inviato una richiesta di contatto dal form web.
 Grazie,
 %s
 
-""" % (name, email, SITEADMIN["email"], message, name)
+""" % (name, contactEmail, SITEADMIN["email"], message, name)
 
     # send it out
     conn = SMTP("localhost")
-    conn.sendmail(email, [SITEADMIN["email"]], msg)
+    conn.sendmail(contactEmail, [SITEADMIN["email"]], msg)
     conn.quit()
 
 
 def process_form_input(req, input: dict):
     send_contact_notification(input)
     if input.get("newsletter", False):
+        req.log_error("Newsletter subscription requested", apache.APLOG_DEBUG)
         add_mailtrain_subscription(req, input)
 
 
