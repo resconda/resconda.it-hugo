@@ -48,10 +48,10 @@ def add_subscription(listid: str, access_token: str, input: dict):
                 if subscriptionID:
                     return subscriptionID
                 else:
-                    raise MailtrainException("Invalid response content: %s" % rdata)
+                    raise MailtrainException("Invalid response content: %s" % r.text)
             else:
                 raise MailtrainException(
-                    "Invalid response content: %s" % rdata)
+                    "Invalid response content: %s" % r.text)
         else:
             raise MailtrainException(
                 "Invalid response to 'Add subscription' Mailtrain API call")
