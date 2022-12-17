@@ -1,10 +1,10 @@
 <!-- contact form -->
-<form class="row gy-2 pink justify-content-center" id="contactForm">
+<form class="row gy-2 pink justify-content-center" id="contactForm" novalidate>
     <div class="col-12">
         <input name="name" type="text" class="form-control" placeholder="Nome e cognome" aria-label="Nome e cognome">
     </div>
     <div class="col-12 col-md-6">
-        <input name="email" type="email" class="form-control" placeholder="Email" aria-label="email">
+        <input name="email" type="email" class="form-control" placeholder="Email" aria-label="email" required>
     </div>
     <div class="col-12 col-md-6">
         <input name="phone" type="text" class="form-control" placeholder="Telefono" aria-label="telefono">
@@ -26,35 +26,4 @@
     <div class="frc-captcha" data-sitekey="FCMNSLE4OU3RUFTK" data-callback="friendlyCaptchaSolved" data-lang="it"></div>
 </form>
 <div id="form-response" class="mt-3">
-
 </div>
-<script>
-    window.addEventListener("load", function (document, event) {
-        $("#form-response").empty();
-        $("#friendlyCaptchaFormSubmit").click(submitEvent => {
-            formid = $("#friendlyCaptchaFormSubmit").attr('form');
-            data = $(`#${formid}`).serialize();
-            $.ajax({
-                    type: "POST",
-                    url: "/cgi/form_contact",
-                    data: data,
-                    dataType: "json",
-                    success: function (data) {
-                        console.log(JSON.stringify(data));
-                        if(data.errors != undefined && data.errors.length > 0){
-                            data.errors.forEach(element => {
-                                errrow = $(`<div class="alert alert-warning">${element}</div>`);
-                                $("#form-response").append(errrow); 
-                            });
-                        }else{
-                            name = data.name;
-                            successmsg = $(`<div class="alert alert-info text-center">Grazie ${name}! Ti contatteremo presto.</div>`);
-                            $('#form-response').append(successmsg);
-                            $('#contactForm').find('input,textarea').val("");
-                        }
-                    },
-                });
-                submitEvent.preventDefault();
-            });
-    });
-</script>
