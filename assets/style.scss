@@ -283,7 +283,7 @@ table, .highlight>pre, pre.example {
   font-size: 2.5rem;
   font-weight: bold;
   @include media-breakpoint-up(sm) {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 .fullwidth-section{
@@ -691,6 +691,9 @@ a>button {
   a {
     color: $green01;
   }
+}
+a.greenlink {
+  color: $green01;
 }
 /* Bootstrap overrides */
 
