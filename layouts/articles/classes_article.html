@@ -1,0 +1,49 @@
+{{ define "header" }}
+<div></div>
+{{ end }}
+{{ define "main" }}
+<div class="container-fluid">
+    <div class="row mb-2">
+        <div class="col-12 col-lg-8">
+            <section id="main">
+                <h1 id="title">{{ .Title }}</h1>
+                {{ with .Params.cover_image}}
+                {{ partial "cloudinary_image.html" (dict "image_name" . )}}
+                {{end}}
+                <h4 id="date"> {{ dateFormat "2 January 2006" .Date.Local }}
+                    <span class="wordcount">{{ .WordCount }} parole</span>
+                </h4>
+                <div class="d-flex flex-row taglist">
+                    {{ with .Params.tags }}
+                    {{ range . }}
+                    <div class="p-1">
+                        <a href="/tags/{{ . | urlize }}"><span class="badge rounded-pill bg-info text-dark">
+                                {{.}}
+                            </span></a>
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                </div>
+                <div class="mt-2">
+                    <article id="content">
+                        {{ partial "classi_energetiche.html" . }}
+                    </article>
+                </div>
+            </section>
+        </div>
+        <div class="col-12 col-lg-4">
+            <aside id="meta">
+                <div>
+                    <h5>Tags</h5>
+                    {{ partial "tag-cloud.html" }}
+                </div>
+                <div>
+                    <h5>Articoli recenti</h5>
+                    {{ .Scratch.Set "limit" 5 }}
+                    {{ partial "post-list.html" . }}
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+{{ end }}

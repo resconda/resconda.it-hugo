@@ -8,27 +8,29 @@ summary: | # leave blank if no summary is provided
 cover_image: # optional
 tags:
   - energia
+layout: classes_article
+classes:
+  - img: assets/img/PILLOLE/2023/FEB/wh_f67p3a #
+    alt: "Wh pill"
+    title: "Wh (x1)"
+    body: "&Egrave; la dimensione propria delle attività umane, dei piccoli elettrodomestici, dei piccoli consumi energetici quotidiani"
+  - img: assets/img/PILLOLE/2023/FEB/kwh_yijayi #
+    alt: "kWh pill"
+    title: "kWh (x1.000)"
+    body: "&Egrave; la dimensione dei consumi quotidiani più significativi, delle automobili, degli elettrodomestici più energivori"
+  - img: assets/img/PILLOLE/2023/FEB/mwh_p7copi #
+    alt: "MWh pill"
+    title: "MWh (x1.000.000)"
+    body: "&Egrave; la dimensione propria delle attività industriali e delle piccole comunità"
+  - img: assets/img/PILLOLE/2023/FEB/gwh_e2o7td #
+    alt: "GWh pill"
+    title: "GWh (x1.000.000.000)"
+    body: "&Egrave; la dimensione dei consumi e della produzione propria dei grandi impianti e delle grandi comunità"
+  - img: assets/img/PILLOLE/2023/FEB/twh_mh67wz #
+    alt: "TWh pill"
+    title: "TWh (x1.000.000.000.000)"
+    body: "&Egrave; la dimensione dei consumi e della produzione a livello nazionale e transnazionale, delle categorie aggregate"
 ---
-
-## Wh (x1)
-
-&Egrave; la dimensione propria delle attività umane, dei piccoli elettrodomestici, dei piccoli consumi energetici quotidiani
-
-## kWh (x1.000)
-
-&Egrave; la dimensione dei consumi quotidiani più significativi, delle automobili, degli elettrodomestici più energivori
-
-## MWh (x1.000.000)
-
-&Egrave; la dimensione propria delle attività industriali e delle piccole comunità 
-
-## GWh (x1.000.000.000)
-
-&Egrave; la dimensione dei consumi e della produzione propria dei grandi impianti e delle grandi comunità 
-
-## TWh (x1.000.000.000.000)
-
-&Egrave; la dimensione dei consumi e della produzione a livello nazionale e transnazionale, delle categorie aggregate
 
 <!--
   created 2023-02-01 15:42:54.300152 +0100 CET m=+0.124957210

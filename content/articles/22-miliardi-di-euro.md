@@ -4,7 +4,7 @@ date: 2023-02-01
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
   E’ il valore dei prodotti, praticamente nuovi, che sono stati distrutti da grossisti e dettaglianti del settore E-commerce in Europa nel 2022.
-cover_image: # optional
+cover_image: assets/img/PILLOLE/2023/FEB/prime_sbgmvg
 tags:
   - sostenibilita
 ---

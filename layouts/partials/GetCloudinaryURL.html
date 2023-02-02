@@ -1,0 +1,2 @@
+{{ $quality := or (.quality) ("auto") }}
+{{ return printf "https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_%d,w_256/%s" $quality .name }}

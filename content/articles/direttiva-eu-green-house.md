@@ -5,7 +5,7 @@ date: 2023-02-01
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
   Ha fatto discutere la proposta di Direttiva comunitaria cosiddetta “green house”, volta a promuovere il miglioramento dell’efficienza energetica del patrimonio abitativo europeo.
-cover_image: # optional
+cover_image: assets/img/PILLOLE/2023/FEB/green_house_2_ipsigu
 tags:
   - green
   - UE
