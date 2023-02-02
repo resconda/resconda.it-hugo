@@ -10,8 +10,8 @@
                 {{ with .Params.cover_image}}
                 {{ partial "cloudinary_image.html" (dict "image_name" . )}}
                 {{end}}
-                <h4 id="date"> {{ dateFormat "2 January 2006" .Date.Local }}
-                    <span class="wordcount">{{ .WordCount }} parole</span>
+                <h4 id="date"> 
+                    {{ dateFormat "2 January 2006" .Date.Local }}
                 </h4>
                 <div class="d-flex flex-row taglist">
                     {{ with .Params.tags }}
@@ -26,6 +26,7 @@
                 </div>
                 <div class="mt-2">
                     <article id="content">
+                        {{ .Content }}
                         {{ partial "classi_energetiche.html" . }}
                     </article>
                 </div>
