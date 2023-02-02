@@ -17,7 +17,7 @@ Negli ultimi anni sono stati numerosi gli interventi pubblici volti a migliorare
 
 La logica che ha orientato il legislatore (sia comunitario che nazionale) è comunque in generale sempre volta a raggiungere obiettivi di sostenibilità ambientale favorendo al contempo la produzione di beni e servizi.  
 Il famoso 110% accordato a chi ristruttura la propria casa si è basato su tale approccio, così come le innumerevoli agevolazioni di cui ha beneficiato la sostituzione del parco automobilistico con veicoli a minori emissioni.  
-Ma, come abbiamo visto con l’auto elettrica [link], non sempre sostituire un bene a bassa efficienza energetica con uno a più alta efficienza rappresenta un vantaggio in termini ambientali: dipende dalle circostanze e sempre in relazione al fatto che ogni bene prodotto o attività realizzata ha un impatto energetico ed ambientale. 
+Ma, [come abbiamo visto](/articles/veicoli-elettrici-quale-impatto-ambientale/) con l’auto elettrica, non sempre sostituire un bene a bassa efficienza energetica con uno a più alta efficienza rappresenta un vantaggio in termini ambientali: dipende dalle circostanze e sempre in relazione al fatto che ogni bene prodotto o attività realizzata ha un impatto energetico ed ambientale. 
 
 Migliorare l’efficienza energetica di una seconda casa usata poco e magari solo in periodi dell’anno che non richiedono consistenti interventi di climatizzazione dotandola di un cappotto termico, nuovi serramenti e pompe di calore, da un punto di vista ambientale potrebbe costituire un danno netto. 
 
