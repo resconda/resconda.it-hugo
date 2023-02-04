@@ -12,28 +12,33 @@ layout: classes_article
 classes:
   - img: assets/img/PILLOLE/2023/FEB/wh_f67p3a #
     alt: "Wh pill"
-    title: "Wh (x1)"
+    title: "_vattora_ (x1)"
     label: "Wh"
+    color: "#40C0F2"
     body: "&Egrave; la dimensione propria delle attività umane, dei piccoli elettrodomestici, dei piccoli consumi energetici quotidiani"
   - img: assets/img/PILLOLE/2023/FEB/kwh_yijayi #
     alt: "kWh pill"
-    title: "kWh (x1.000)"
+    title: "*chilovattora* (x1.000)"
     label: "kWh"
+    color: "#66768D"
     body: "&Egrave; la dimensione dei consumi quotidiani più significativi, delle automobili, degli elettrodomestici più energivori"
   - img: assets/img/PILLOLE/2023/FEB/mwh_p7copi #
     alt: "MWh pill"
-    title: "MWh (x1.000.000)"
+    title: "*megavattora* (x1.000.000)"
     label: "MWh"
+    color: "#F77E04"
     body: "&Egrave; la dimensione propria delle attività industriali e delle piccole comunità"
   - img: assets/img/PILLOLE/2023/FEB/gwh_e2o7td #
     alt: "GWh pill"
-    title: "GWh (x1.000.000.000)"
+    title: "_gigavattora_ (x1.000.000.000)"
     label: "GWh"
+    color: "#B6BDCD"
     body: "&Egrave; la dimensione dei consumi e della produzione propria dei grandi impianti e delle grandi comunità"
   - img: assets/img/PILLOLE/2023/FEB/twh_mh67wz #
     alt: "TWh pill"
-    title: "TWh (x1.000.000.000.000)"
+    title: "_teravattora_ (x1.000.000.000.000)"
     label: "TWh"
+    color: "#626262"
     body: "&Egrave; la dimensione dei consumi e della produzione a livello nazionale e transnazionale, delle categorie aggregate"
 ---
 
