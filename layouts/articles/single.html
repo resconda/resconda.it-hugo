@@ -17,9 +17,12 @@
           {{ with .Params.tags }}
             {{ range . }}
             <div class="p-1">
-              <a href="/tags/{{ . | urlize }}"><span class="badge rounded-pill bg-info text-dark">
-                      {{.}}
-                    </span></a>
+              <a href="/tags/{{ . | urlize }}">
+                <!-- <span class="badge rounded-pill bg-info text-dark">
+                  {{.}}
+                </span> -->
+                {{ partial "tag_svg.html" (dict "label" . )}}
+              </a>
             </div>
             {{ end }}
           {{ end }}

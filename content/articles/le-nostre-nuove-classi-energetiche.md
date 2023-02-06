@@ -5,7 +5,7 @@ date: 2023-02-01
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
   Per fornire un’indicazione aggiuntiva ed abituare il lettore alle dimensioni dell’energia, a partire da queste Pillole ad ogni post sarà associata un’etichetta di colore diverso, rappresentante la classe dimensionale del fenomeno trattato
-cover_image: # optional
+cover_image: assets/img/PILLOLE/2023/FEB/all_horizontal_inrzyw # optional
 tags:
   - energia
 layout: classes_article
@@ -13,12 +13,12 @@ classes:
   - alt: "Wh pill"
     title: "_wattora_ (x1)"
     label: "Wh"
-    color: "#40C0F2"
+    color: "#40C0F2" # $logo-color-lightblue
     body: "&Egrave; la dimensione propria delle attività umane, dei piccoli elettrodomestici, dei piccoli consumi energetici quotidiani"
   - alt: "kWh pill"
     title: "*chilowattora* (x1.000)"
     label: "kWh"
-    color: "#66768D"
+    color: "#66768D" # $logo-color-blue
     body: "&Egrave; la dimensione dei consumi quotidiani più significativi, delle automobili, degli elettrodomestici più energivori"
   - alt: "MWh pill"
     title: "*megawattora* (x1.000.000)"
