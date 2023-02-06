@@ -7,8 +7,8 @@ summary: | # leave blank if no summary is provided
   L'economia "virtuale" diventa sempre più rilevante, Alfabet, Microsoft, Meta, scalzano le vecchie aziende manifatturiere nelle valorizzazioni di borsa. E' questo un bene per l'ambiente? Qual'è l'impatto energetico dell'Information Technology, dell'Intelligenza artificiale?  
 cover_image: assets/img/PILLOLE/2023/FEB/chat-gpt_dubidt
 tags:
-  - TWh
   - tecnologia
+class: TWh
 ---
 
 Si direbbe che l’economia della transizione ecologica debba necessariamente passare attraverso la progressiva riduzione dall’industria manifatturiera tradizionale, con il suo uso massiccio di materie prime, energia, le sue emissioni inquinanti e reflui tossici a favore della ricchezza prodotta dall’IT, fatta di bit e reti neurali...

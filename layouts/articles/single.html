@@ -6,7 +6,13 @@
   <div class="row mb-2">
     <div class="col-12 col-lg-8">
       <section id="main">
-        <h1 id="title">{{ .Title }}</h1>
+        <h1 id="title">
+          {{ .Title }}
+        {{ with .Params.class }}
+        <span class="badge">
+          {{ partial "tag_svg.html" (dict "label" . )}}
+        </span>
+        {{ end }}</h1>
         {{ with .Params.cover_image}}
         {{ partial "cloudinary_image.html" (dict "image_name" . )}}
         {{end}}
@@ -21,7 +27,6 @@
                 <span class="badge rounded-pill bg-info text-dark">
                   {{.}}
                 </span>
-                <!-- {{ partial "tag_svg.html" (dict "label" . )}} -->
               </a>
             </div>
             {{ end }}

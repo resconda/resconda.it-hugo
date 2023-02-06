@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Le nostre nuove classi energetiche"
 date: 2023-02-01
 ## below are user-defined parameters (lower case keys recommended)
