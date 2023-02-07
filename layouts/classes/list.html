@@ -1,0 +1,20 @@
+{{ define "header" }}
+<!-- Questa pagina elenca tutti i post con un determinato .Title tag -->
+<div></div>
+{{ end }}
+{{ define "main" }}
+<div class="container">
+    <h1 class="title">Tutti i post con classe energetica <b>{{ .Title }}</b></h1>
+    <ul class="posts">
+        {{ range .Pages }}
+        <li class="post">
+            <a href="{{ .Permalink }}">
+                <date>{{ .Date.Format "02.01.2006" }}</date>
+                <span>{{ .Title }}</span>
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+    <ul>
+</div>
+{{ end }}

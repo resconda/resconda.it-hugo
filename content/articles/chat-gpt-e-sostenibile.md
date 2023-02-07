@@ -8,7 +8,8 @@ summary: | # leave blank if no summary is provided
 cover_image: assets/img/PILLOLE/2023/FEB/chat-gpt_dubidt
 tags:
   - tecnologia
-class: TWh
+classes: 
+  - TWh
 ---
 
 Si direbbe che l’economia della transizione ecologica debba necessariamente passare attraverso la progressiva riduzione dall’industria manifatturiera tradizionale, con il suo uso massiccio di materie prime, energia, le sue emissioni inquinanti e reflui tossici a favore della ricchezza prodotta dall’IT, fatta di bit e reti neurali...

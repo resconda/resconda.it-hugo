@@ -1,5 +1,5 @@
 <div class="container">
-    {{ range $class := .Params.classes }}
+    {{ range $class := .Params.energy_classes }}
     <div class="card my-2 border-0" >
     {{partial "tag_svg.html" (dict "color" $class.color "label" $class.label "extra_class" "fill") }}
         <div class="card-body">

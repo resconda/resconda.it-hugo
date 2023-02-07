@@ -5,7 +5,8 @@ date: 2023-02-01
 summary: | # leave blank if no summary is provided
   Quanta energia si risparmia in un anno passando a un casello autostradale nella corsia telepass, invece di fermarsi al "ALT" del pedaggio?
 cover_image: assets/img/PILLOLE/2023/FEB/telepass_hqyrmj
-class: Wh
+classes: 
+  - Wh
 tags:
   - energia
 ---

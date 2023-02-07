@@ -8,7 +8,7 @@ cover_image: assets/img/PILLOLE/2023/FEB/all_horizontal_inrzyw # optional
 tags:
   - energia
 layout: classes_article
-classes:
+energy_classes:
   - alt: "Wh pill"
     title: "_wattora_ (x1)"
     label: "Wh"

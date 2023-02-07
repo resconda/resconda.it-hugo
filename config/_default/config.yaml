@@ -58,4 +58,8 @@ languages:
   #   languageName: English
   #   weight: 2
 
+taxonomies:
+  tag: tags
+  class: classes
+
 DefaultContentLanguage: it

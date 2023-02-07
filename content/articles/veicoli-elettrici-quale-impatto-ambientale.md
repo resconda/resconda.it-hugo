@@ -5,7 +5,8 @@ date: 2023-02-01
 summary: |  # leave blank if no summary is provided
   La scelta di un veicolo elettrico è oggetto di riflessione e discussioni. Vogliamo portare un contributo alla questione, fornendo alcune indicazioni al riguardo...
 cover_image: assets/img/PILLOLE/2023/FEB/auto_elettrica_vmgpas
-class: GWh
+classes: 
+  - GWh
 tags:
   - EV
 ---
