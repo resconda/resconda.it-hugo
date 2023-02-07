@@ -1,0 +1,50 @@
+.energy-tag {
+    // DEFAULTS
+    .tag_frame, .tag_ring {
+        stroke: black;
+    }
+    .tag_label {
+        fill: black;
+    }
+    // per-class colors
+    &.wh {
+        .tag_frame, .tag_ring {
+            stroke: var(--site-color-logo-lightblue);
+        }
+        .tag_label {
+            fill: var(--site-color-logo-lightblue);
+        }
+    }
+    &.kwh {
+        .tag_frame, .tag_ring {
+            stroke: var(--site-color-logo-blue);
+        }
+        .tag_label {
+            fill: var(--site-color-logo-blue);
+        }
+    }
+    &.mwh {
+        .tag_frame, .tag_ring {
+            stroke: var(--site-color-logo-orange);
+        }
+        .tag_label {
+            fill: var(--site-color-logo-orange);
+        }
+    }
+    &.gwh {
+        .tag_frame, .tag_ring {
+            stroke: var(--site-color-acidgreen);
+        }
+        .tag_label {
+            fill: var(--site-color-acidgreen);
+        }
+    }
+    &.twh {
+        .tag_frame, .tag_ring {
+            stroke: var(--site-color-pink);
+        }
+        .tag_label {
+            fill: var(--site-color-pink);
+        }
+    }
+}

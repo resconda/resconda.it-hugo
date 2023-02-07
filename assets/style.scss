@@ -60,6 +60,29 @@ $input-placeholder-color: $gray-500;
 //  @import "scss/color.scss";
 
 // GLOBALS
+:root {
+  --site-color-logo-lightgrey: #{$logo-color-lightgrey};
+  --site-color-logo-lightblue: #{$logo-color-lightblue};
+  --site-color-logo-orange: #{$logo-color-orange};
+  --site-color-logo-blue: #{$logo-color-blue};
+  --site-color-highlight: #{$highlight};
+  --site-color-grey: #{$grey};
+  --site-color-background1: #{$background1};
+  --site-color-background2: #{$background2};
+  --site-color-background3: #{$background3};
+  --site-color-background4: #{$background4};
+  --site-color-acidgreen: #{$green01};
+  --site-color-background6: #{$background6};
+  --site-color-darkblue: #{$colordarkblue};
+  --site-color-mildgrey: #{$colormildgrey};
+  --site-color-pink: #{$colorpink};
+  --site-color-primary: #{$primary};
+  --site-color-secondary: #{$secondary};
+  --site-color-tertiary: #{$tertiary};
+  --site-color-quaternary: #{$quaternary};
+  --site-color-input-placeholder: #{$input-placeholder-color};
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -747,3 +770,6 @@ a.greenlink {
 #title {
   font-weight: bold;
 }
+
+// Energy tags
+@import "./energy_tags.scss";

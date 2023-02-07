@@ -22,7 +22,6 @@ classes:
   - alt: "MWh pill"
     title: "*megawattora* (x1.000.000)"
     label: "MWh"
-    color: "#F77E04"
     body: "&Egrave; la dimensione propria delle attività industriali e delle piccole comunità"
   - alt: "GWh pill"
     title: "_gigawattora_ (x1.000.000.000)"
