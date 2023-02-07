@@ -1,7 +1,7 @@
 <div class="container">
     {{ range $class := .Params.classes }}
     <div class="card my-2 border-0" >
-    {{partial "tag_svg.html" (dict "color" $class.color "label" $class.label) }}
+    {{partial "tag_svg.html" (dict "color" $class.color "label" $class.label "extra_class" "fill") }}
         <div class="card-body">
             <h5 class="card-title">{{ $class.title | markdownify }}</h5>
             <p class="card-text">{{ $class.body | markdownify }}</p>
