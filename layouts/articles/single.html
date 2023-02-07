@@ -8,11 +8,13 @@
       <section id="main">
         <h1 id="title">
           {{ .Title }}
+       </h1>
         {{ with .Params.class }}
-        <span class="badge">
-          {{ partial "tag_svg.html" (dict "label" . )}}
+        <div class="mb-2">
+          {{ partial "tag_svg.html" (dict "label" . "width" "4rem" "extra_class" "fill")}}
+        </div>
         </span>
-        {{ end }}</h1>
+        {{ end }}
         {{ with .Params.cover_image}}
         {{ partial "cloudinary_image.html" (dict "image_name" . )}}
         {{end}}
@@ -22,7 +24,7 @@
         <div class="d-flex flex-row taglist">
           {{ with .Params.tags }}
             {{ range . }}
-            <div class="p-1">
+            <div class="p-1 align-middle">
               <a href="/tags/{{ . | urlize }}">
                 <span class="badge rounded-pill bg-info text-dark">
                   {{.}}

@@ -1,6 +1,8 @@
+// hollow
 .energy-tag {
     // DEFAULTS
     .tag_frame, .tag_ring {
+        fill: none;
         stroke: black;
     }
     .tag_label {
@@ -9,6 +11,7 @@
     // per-class colors
     &.wh {
         .tag_frame, .tag_ring {
+            fill: none;
             stroke: var(--site-color-logo-lightblue);
         }
         .tag_label {
@@ -17,6 +20,7 @@
     }
     &.kwh {
         .tag_frame, .tag_ring {
+            fill: none;
             stroke: var(--site-color-logo-blue);
         }
         .tag_label {
@@ -25,6 +29,7 @@
     }
     &.mwh {
         .tag_frame, .tag_ring {
+            fill: none;
             stroke: var(--site-color-logo-orange);
         }
         .tag_label {
@@ -33,6 +38,7 @@
     }
     &.gwh {
         .tag_frame, .tag_ring {
+            fill: none;
             stroke: var(--site-color-acidgreen);
         }
         .tag_label {
@@ -41,10 +47,103 @@
     }
     &.twh {
         .tag_frame, .tag_ring {
+            fill: none;
             stroke: var(--site-color-pink);
         }
         .tag_label {
             fill: var(--site-color-pink);
+        }
+    }
+}
+// fill
+.energy-tag.fill{
+
+    // DEFAULTS
+    .tag_frame {
+        fill: black;
+    }
+    .tag_ring {
+        fill: white;
+        stroke: black;
+    }
+
+    .tag_label {
+        fill: white;
+    }
+
+    // per-class colors
+    &.wh {
+
+        .tag_frame {
+        fill: var(--site-color-logo-lightblue);
+        }
+        .tag_ring {
+            fill: white;
+            stroke: var(--site-color-logo-lightblue);
+        }
+
+        .tag_label {
+            fill: white;
+        }
+    }
+
+    &.kwh {
+
+        .tag_frame {
+        fill: var(--site-color-logo-blue);
+        }
+        .tag_ring {
+            fill: white;
+            stroke: var(--site-color-logo-blue);
+        }
+
+        .tag_label {
+            fill: white;
+        }
+    }
+
+    &.mwh {
+
+        .tag_frame {
+        fill: var(--site-color-logo-orange);
+        }
+        .tag_ring {
+            fill: white;
+            stroke: var(--site-color-logo-orange);
+        }
+
+        .tag_label {
+            fill: white;
+        }
+    }
+
+    &.gwh {
+
+        .tag_frame {
+        fill: var(--site-color-acidgreen);
+        }
+        .tag_ring {
+            fill: white;
+            stroke: var(--site-color-acidgreen);
+        }
+
+        .tag_label {
+            fill: white;
+        }
+    }
+
+    &.twh {
+
+        .tag_frame {
+        fill: var(--site-color-pink);
+        }
+        .tag_ring {
+            fill: white;
+            stroke: var(--site-color-pink);
+        }
+
+        .tag_label {
+            fill: white;
         }
     }
 }
