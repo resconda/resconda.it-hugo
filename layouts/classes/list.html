@@ -9,6 +9,8 @@
     <div>
         <span class="site-title align-middle">Classe</span> {{ partial "tag_svg" (dict "label" .Title "extra_class" "fill" "width" "10rem" ) }}
     </div>
+    {{ $count := len .RegularPages }}
+    <p>{{cond (eq $count 0) "Nessun" ""}} {{ $count }} {{cond (gt $count 1) "articoli" "articolo"}}</p>
     <!-- list template -->
     <div class="row row-cols-1 row-cols-md-2 g-4 pb-2">
         {{ range .RegularPages }}
