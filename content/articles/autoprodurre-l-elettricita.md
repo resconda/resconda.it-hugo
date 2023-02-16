@@ -8,6 +8,8 @@ summary: |
   Usare l'energia muscolare per produrre l'energia elettrica per le nostre utenze domestiche: 
   siete pronte a sudare tanto, ma tanto tanto?
 cover_image: assets/post-img/cycle_zlwqmv # optional
+classes:
+  - Wh
 tags:
   - energia
   - elettricità

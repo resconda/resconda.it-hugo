@@ -9,6 +9,8 @@ tags:
   - ordini di grandezza
   - energia
   - fossile
+classes:
+  - GWh
 math: true
 summary: |
   10 milioni di kWh (10 GWh) è l'energia dissipata nel Marzo 2022 per portare dalla Russia in Ucraina un convoglio militare lungo 65 km..
