@@ -47,9 +47,9 @@ $$
 
 Questo numero di veicoli militari quindi si &egrave; mosso per i 200km che li separavano da Kiev.
 
-Approssimando il consumo medio di questi mezzi, (camion carichi, e mezzi
-corazzati) anche qui non esageriamo (o al massimo sottostimiamo) un
-consumo medio di $1L/km$. \[FONTE\]
+[Approssimando](https://it.wikipedia.org/wiki/M1_Abrams#Consumo) il consumo medio di questi camion carichi e mezzi
+corazzati, (sotto-)stimiamo un
+consumo medio di $1L/km$.
 
 Circa 5000 mezzi per 200km fanno 1.000.000 L di Diesel.
 
