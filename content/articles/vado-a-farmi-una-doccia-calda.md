@@ -6,6 +6,8 @@ date: 2022-11-03
 summary: |
   Quanta energia si usa per farsi una doccia calda? Diciamo che fa 3 kWh consumati, per farla breve. Anzi no, di più...
 cover_image: assets/post-img/acqua-troppo-calda_t4hs1h 
+classes:
+  - kWh
 tags:
   - energia
   - fisica

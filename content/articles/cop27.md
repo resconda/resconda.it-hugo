@@ -10,6 +10,8 @@ summary: |
 cover_image: assets/post-img/cop27_lp5vcl # optional
 tags:
   - COP
+classes:
+  - GWh
 ---
 
 Il 20 novembre si è chiusa a Sharm Al Sheik, in Egitto, la COP27 ovvero il

@@ -8,7 +8,7 @@ summary: |
   ancora (sorprendentemente) in corso sul cambiamento climatico. 
 cover_image: assets/post-img/cropped-Wildfires-and-Climate-Change_ge7prp # optional
 tags:
-  - cambiamento climatico
+  - clima
   - sovrappopolazione
   - CO2
 ---
