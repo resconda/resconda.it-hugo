@@ -1,0 +1,18 @@
+{{ define "header" }}
+<div></div>
+{{ end }}
+{{ define "main" }}
+<div class="container-fluid">
+    <h2 class="site-title">Tutti i tag</h2>
+    <!-- list template -->
+        {{ partial "tag-cloud.html" }}
+        <!-- {{ range $idx, $tag := .Site.Taxonomies.tags.ByCount }}
+        <div class="h{{math.Min 6 (math.Add $idx 1)}}">
+            {{ with site.GetPage (path.Join "tags" .Name )}}
+            <a href="{{.Permalink}}">{{.LinkTitle}}</a> <span class="badge rounded-pill bg-secondary" style="font-size:smaller;"> &nbsp;{{- $tag.Count -}}&nbsp; </span>
+            {{ end }}
+        </div>
+        {{ end }} -->
+
+</div>
+{{ end }}

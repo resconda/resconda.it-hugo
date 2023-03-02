@@ -433,14 +433,14 @@ i.fa, i.fa-solid {
         a {
             display: block;
             padding: 0.5em 0;
-            color: black;
+            color: unset;
             text-decoration: none;
             &:hover, &:focus, &:active {
                 background: $logo-color-lightgrey;
             }
         }
         date {
-            font-family: monospace, monospace; // https://github.com/necolas/normalize.css#extended-details-and-known-issues
+            // font-family: monospace, monospace; // https://github.com/necolas/normalize.css#extended-details-and-known-issues
             font-size: 0.7rem;
             vertical-align: middle;
             padding-right: 2rem;

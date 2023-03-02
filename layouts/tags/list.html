@@ -1,0 +1,22 @@
+{{ define "header" }}
+<div></div>
+{{ end }}
+{{ define "main" }}
+<div class="container-fluid">
+    <div>
+        <p><a href="/tags">Tutti i tag</a></p>
+    </div>
+    <div class="site-title">
+        Tag <i>{{.Title}}</i>
+    </div>
+    {{ $count := len .RegularPages }}
+    <p>{{cond (eq $count 0) "Nessun" ""}} {{ $count }} {{cond (gt $count 1) "articoli" "articolo"}}</p>
+    <!-- list template -->
+    <div class="row row-cols-1 row-cols-md-2 g-4 pb-2">
+        {{ range .RegularPages }}
+        {{ partial "article_preview_list_item.html" . }}
+        <!-- </div> -->
+        {{ end }}
+    </div>
+</div>
+{{ end }}

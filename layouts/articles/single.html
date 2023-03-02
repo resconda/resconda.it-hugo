@@ -48,11 +48,11 @@
     <div class="col-12 col-lg-4">
       <aside id="meta">
         <div>
-          <h5>Tags</h5>
+          <h5 class="fw-bold">Tags</h5>
           {{ partial "tag-cloud.html" }}
         </div>
         <div>
-          <h5>Articoli recenti</h5>
+          <h5 class="fw-bold">Articoli recenti</h5>
           {{ .Scratch.Set "limit" 5 }}
           {{ partial "post-list.html" . }}
         </div>
