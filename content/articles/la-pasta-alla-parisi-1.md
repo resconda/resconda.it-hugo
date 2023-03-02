@@ -6,7 +6,7 @@ date: 2023-03-02
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
   Quanta energia serve a cucinare un piatto di pasta? E quanta se ne risparmia seguendo i suggerimenti del premio Nobel per la Fisica Giorgio Parisi?
-cover_image: image_path # optional
+cover_image: assets/post-img/cooking_pasta_vp5myd # optional
 classes:
   - Wh
 tags:
@@ -30,7 +30,7 @@ Facciamo invece un conto a spanne, come piace a noi, basato sull'esperienza pers
 Quindi, l’energia di bollitura
 
 {{< math >}}
-E_{B} = P\ \Delta t = 6kW\ 1/12 h = 0.5 \textrm{kWh}
+E_{B} = P \Delta t = 6\ \textrm{kW}\ 1/12\ \textrm{h} = 0.5\ \textrm{kWh}
 {{< /math >}}
 
 Passiamo alla cottura.
@@ -43,10 +43,11 @@ Possiamo tenere 650W come riferimento.
 La pasta cuoce mediamente per 10 minuti, quindi
 
 {{< math >}}
-E_{C} = P\ t = 0.65 \textrm{kW}\ 1/6 \textrm{h} \simeq 0.11 \textrm{kWh}
+E_{C} = P \Delta t = 0.65\ \textrm{kW}\ 1/6\ \textrm{h} \simeq 0.11\ \textrm{kWh}
 {{< /math >}}
 
-Possiamo pertanto dire che: **per cuocere un piatto di pasta in modo tradizionale su fornello a gas si consumano ALMENO 0.61 kWh**
+Possiamo pertanto dire che: 
+>**per cuocere un piatto di pasta in modo tradizionale su fornello a gas si consumano ALMENO 0.61 kWh**
 
 ## La rivoluzione Parisi
 
