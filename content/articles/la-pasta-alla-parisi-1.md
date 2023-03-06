@@ -1,7 +1,6 @@
 ---
 ## Important: If this is a draft, next line should NOT begin with #
-draft: true
-title: La Pasta Alla Parisi 1
+title: La Pasta Alla Parisi
 date: 2023-03-02
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
@@ -55,9 +54,9 @@ Abbiamo letto di questa sua trovata su molti giornali/siti: si tratta di calare 
 
 Quindi, se prima abbiamo fatto i conti giusti: **andremmo a risparmiare quei 0.11 kWh della cottura, pari al 18% del totale dell’energia necessaria con il metodo “tradizionale”**
 
-Piastra a induzione
+## E senza gas?
 
-DA COMPLETARE
+Come cambiano le grandezze energetiche in gioco quando al posto dei fornelli usiamo le piastre a induzione? Rimandiamo questi conti a un prossimo episodio, ma possiamo fare una piccola anticipazione su come cambia il bilancio quando entra in gioco l'elettrico. Riportiamo i dati misurati, tramite una presa con misurazione di potenza/energia, facendo bollire gli stessi 2 litri d'acqua dentro un bollitore: abbiamo osservato che sono necessari 0.192 kWh, abbondantemente meno della met&agrave; della stima che abbiamo fatto per il fornello a gas.
 
 <!--
   created 2023-03-02 12:00:17.144801 +0100 CET m=+0.110160376

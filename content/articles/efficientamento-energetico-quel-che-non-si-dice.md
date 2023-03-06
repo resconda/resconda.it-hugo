@@ -1,12 +1,11 @@
 ---
 ## Important: If this is a draft, next line should NOT begin with #
-draft: true
 title: "Efficientamento energetico: quel che non si dice"
 date: 2023-03-02
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
   Un intervento di efficientamento è utile (dal punto di vista ambientale) solo se i ricavi superano i costi, in maniera sensibile ed in tempi ragionevoli, come qualsiasi buon investimento. Diversamente può costituire un investimento poco o per nulla vantaggioso.
-cover_image: image_path # optional
+cover_image: assets/post-img/f4c3efe57abd7654bcc43e67a76576be2973322e3b52e09c551b2c547770_csj6ri # optional
 classes:
   - MWh
 tags:
