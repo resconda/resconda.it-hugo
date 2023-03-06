@@ -1,6 +1,6 @@
 ---
 ## Important: If this is a draft, next line should NOT begin with #
-title: "Efficientamento energetico: quel che non si dice"
+title: "Efficientamento energetico delle abitazioni: quel che non si dice"
 date: 2023-03-02
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
