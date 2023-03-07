@@ -4,8 +4,7 @@ title: ResCoPrire l'acqua calda
 date: 2023-03-02
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
-  Ad Ottobre, in una delle precedenti Pillole Rescondiane abbiamo introdotto un primo numero sul costo energetico di una doccia.
-  Quello che aggiungiamo oggi è una semplice esperienza di raccolta dati, un ventaglio di scenari e un ragionamento su quanto il nostro comportamento può influire su questo dato.
+  Quale di queste docce si addice di più alla vostra abitudine? E nella vostra famiglia? Quante “Greta” e quanti “Sciagurati” sono là fuori? Quali soluzioni tecnologiche possiamo utilizzare per limitare questo impatto?
 cover_image: assets/post-img/Screenshot_2023-03-06_at_22.41.45_pipile # optional
 classes:
   - kWh
@@ -73,6 +72,12 @@ Nella seguente Tabella vedete varie tipologie “umane” di docce, una serie di
 
 
 {{< cloudinary_img src="assets/post-img/Screenshot_2023-03-06_at_22.46.51_u71shz" >}}
+
+Una tabella che vuole esaltare il risultato quantitativo di un’azione, a prescindere dalla soluzione tecnologica che in questo post ignoriamo, e di come semplicemente flusso e durata di una doccia possono influire sul suo impatto energetico. 
+
+Quale di queste docce si addice di più alla vostra abitudine? E nella vostra famiglia? Quante “Greta” e quanti “Sciagurati” sono là fuori? Quali soluzioni tecnologiche possiamo utilizzare per limitare questo impatto?
+
+Approfondiremo presto questi diversi punti di vista in altre pillole.
 
 [^1]: non abbiamo ricevuto sponsorizzazioni da Amphiro, semplicemente avevamo questo prodotto a disposizione.
 

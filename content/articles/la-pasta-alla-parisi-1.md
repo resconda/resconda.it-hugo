@@ -1,6 +1,6 @@
 ---
 ## Important: If this is a draft, next line should NOT begin with #
-title: La Pasta Alla Parisi
+title: La pasta “alla Parisi“
 date: 2023-03-02
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
