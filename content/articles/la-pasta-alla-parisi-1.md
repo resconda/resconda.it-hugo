@@ -42,7 +42,7 @@ E_{C} = P \Delta t = 0.65\ \textrm{kW}\ 1/6\ \textrm{h} \simeq 0.11\ \textrm{kWh
 Possiamo pertanto dire che: 
 >**per cuocere un piatto di pasta in modo tradizionale su fornello a gas si consumano ALMENO 0.61 kWh**
 
-## Linguine alla
+## Linguine alla "Parisi" 
 
 Ne abbiamo letto molto qualche mese fa: si tratta di buttare la pasta e contemporaneamente spegnere il gas, facendola cuocere di solo calore residuo, ben chiusa con il coperchio.
 In tal modo **si risparmiano 0.11 kWh, ovvero il 18% dell’energia richiesta dal metodo “tradizionale”**
