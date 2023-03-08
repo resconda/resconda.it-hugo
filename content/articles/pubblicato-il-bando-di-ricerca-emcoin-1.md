@@ -10,9 +10,7 @@ tags:
   - EmCoin
 ---
 
-[Pubblicato](https://didattica.polito.it/pls/portal30/sviluppo.pkg_apply_admin.download_bando?p_id_bando=33430&p_tipo=bando) il bando di ricerca per la realizzazione del progetto EMCOIN1 (Embodied Emergy as a COin), finalizzato a realizzare una solida metodologia di calcolo dell'energia incorporata nei principali oggetti e servizi di consumo, un progetto ideato da Resconda e realizzato con altri partner grazie ad un contributo ottenuto sui fondi 8x1000 della Chieda Valdese. 
-
-Scadenza  23 Febbraio prossimo.
+[Pubblicato](/docs/scheda-attivita-di-ricerca-progetto-emcoin.pdf) il bando di ricerca per la realizzazione del progetto EMCOIN1 (Embodied Emergy as a COin), finalizzato a realizzare una solida metodologia di calcolo dell'energia incorporata nei principali oggetti e servizi di consumo, un progetto ideato da Resconda e realizzato con altri partner grazie ad un contributo ottenuto sui fondi 8x1000 della Chieda Valdese. 
 
 {{< cloudinary_img src="assets/img/8x1000_chiesavaldese_a8knhc" >}}
 
