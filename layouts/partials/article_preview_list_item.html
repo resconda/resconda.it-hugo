@@ -1,4 +1,5 @@
-<div class="card page-card">
+<div class="card page-card" href="{{.Permalink}}">
+    <a href="{{.Permalink}}" class="link"></a>
     <div class="card-body d-flex flex-column">
         <p>{{.Date| time.Format ":date_long"}}</p>
         <h3 class="card-title flex-grow-1">{{.Title}}</h3>
@@ -7,7 +8,7 @@
         </div>
         {{ end }}
         <div class="card-text my-2">{{.Summary}}</div>
-        <a href="{{.Permalink}}" class="btn btn-secondary align-self-baseline">Leggi tutto</a>
+        <!-- <a href="{{.Permalink}}" class="btn btn-secondary align-self-baseline">Leggi tutto</a> -->
     </div>
     {{ with .Params.cover_image }}
     {{$alt := (path.Split .src)}}
