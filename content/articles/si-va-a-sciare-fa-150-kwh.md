@@ -4,7 +4,8 @@ title: Si va a sciare? Fa 150 kWh!
 date: 2022-12-02
 ## below are user-defined parameters (lower case keys recommended)
 summary: Quant'è il consumo di energia di una giornata tipo sugli sci?
-cover_image: assets/post-img/8537138810_0c924a8691_b_wxy2sm # optional
+cover_image:
+  src: assets/post-img/8537138810_0c924a8691_b_wxy2sm
 tags:
   - energia
 classes:

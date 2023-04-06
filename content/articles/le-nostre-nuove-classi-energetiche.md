@@ -4,7 +4,8 @@ date: 2023-02-01
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
   Per fornire un’indicazione aggiuntiva ed abituare il lettore alle dimensioni dell’energia, a partire da queste Pillole ad ogni post sarà associata un’etichetta di colore diverso, rappresentante la classe dimensionale del fenomeno trattato
-cover_image: assets/img/PILLOLE/2023/FEB/all_horizontal_inrzyw # optional
+cover_image:
+  src: assets/img/PILLOLE/2023/FEB/all_horizontal_inrzyw
 tags:
   - energia
 layout: classes_article

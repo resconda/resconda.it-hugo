@@ -4,7 +4,8 @@ draft: false
 title: Il costo energetico delle operazioni militari
 date: 2022-03-12
 ## below are user-defined parameters (lower case keys recommended)
-cover_image: /assets/post-img/ua_russian_convoy_satellite # optional
+cover_image:
+  src: assets/post-img/ua_russian_convoy_satellite # optional
 tags:
   - ordini di grandezza
   - energia

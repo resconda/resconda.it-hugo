@@ -5,7 +5,8 @@ date: 2022-11-04
 ## below are user-defined parameters (lower case keys recommended)
 summary: # leave blank if no summary is provided
   
-cover_image: assets/post-img/cbfdb4d503937bbcaf81cae38f49b0b258ecdccf_jfhvhr # optional
+cover_image:
+  src: assets/post-img/cbfdb4d503937bbcaf81cae38f49b0b258ecdccf_jfhvhr
 tags:
   - resconda
   - eventi

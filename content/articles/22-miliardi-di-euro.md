@@ -4,7 +4,8 @@ date: 2023-02-01
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
   E’ il valore dei prodotti - praticamente nuovi, acquistati su Internet e restituiti dagli acquirenti al venditore - che sono stati in Europa nel 2022. Per il negozio online &egrave; pi&ugrave; conveniente distruggerli che rimetterli in vendita...
-cover_image: assets/img/PILLOLE/2023/FEB/prime_sbgmvg
+cover_image:
+  src: assets/img/PILLOLE/2023/FEB/prime_sbgmvg
 tags:
   - sostenibilità
 ---

@@ -5,7 +5,8 @@ date: 2023-03-02
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
   Quale di queste docce si addice di più alla vostra abitudine? E nella vostra famiglia? Siete più “Gretini” o “Sciagurati”? Quali soluzioni tecnologiche possiamo utilizzare per limitare questo impatto?
-cover_image: assets/post-img/Screenshot_2023-03-06_at_22.46.51_u71shz.png # optional
+cover_image:
+  src: assets/post-img/Screenshot_2023-03-06_at_22.46.51_u71shz.png
 classes:
   - kWh
 tags:

@@ -5,7 +5,8 @@ date: 2023-04-06
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
   Mettiamo l’energia da parte e parliamo un poco di acqua, vista la situazione estremamente siccitosa… Quanta acqua consumiamo? Quanta ce n’è? Quanta ne buttiamo via?
-cover_image: assets/post-img/EarthWater-3spheres-1_286095_blljcz # optional
+cover_image:
+  src: assets/post-img/EarthWater-3spheres-1_286095_blljcz
 tags:
   - siccità
   - ordini di grandezza

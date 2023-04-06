@@ -5,7 +5,8 @@ date: 2023-04-06
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
   Gli eventi turistici hanno rilevanti ed importanti ricadute sociali ed economiche sui territori che li ospitano. Tuttavia, come ogni attività umana, hanno un impatto ambientale… e dei costi energetici. 
-cover_image: assets/post-img/kid-rock-89811_1920_bo0ovx # optional
+cover_image:
+  src: assets/post-img/kid-rock-89811_1920_bo0ovx
 classes:
   - MWh
 tags:

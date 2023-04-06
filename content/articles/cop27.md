@@ -7,7 +7,8 @@ summary: |
   Il 20 novembre si è chiusa a Sharm Al Sheik, in Egitto, la COP27 ovvero il
   27° Summit intergovernativo dedicato al cambiamento climatico. 
 
-cover_image: assets/post-img/52499223179_2d872ce78a_k_vgvvsp # optional
+cover_image:
+  src: assets/post-img/52499223179_2d872ce78a_k_vgvvsp
 tags:
   - COP
 classes:

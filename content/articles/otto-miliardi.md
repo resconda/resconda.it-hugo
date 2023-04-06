@@ -4,7 +4,8 @@ title: Otto Miliardi
 date: 2022-12-02
 ## below are user-defined parameters (lower case keys recommended)
 summary: Una storia di successo senza dubbio, dal punto di vista biologico.
-cover_image: assets/post-img/image003_mzf6js # optional
+cover_image:
+  src: assets/post-img/image003_mzf6js
 tags:
   - sovrappopolazione
 ---

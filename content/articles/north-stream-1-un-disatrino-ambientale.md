@@ -4,7 +4,8 @@ draft: false
 title: "North Stream: un disastrino ambientale?"
 date: 2022-09-30
 ## below are user-defined parameters (lower case keys recommended)
-cover_image: /assets/post-img/220930-gas-leak-Nord-Stream-2-se-1231p-66a05e_pz7elc
+cover_image: 
+  src: /assets/post-img/220930-gas-leak-Nord-Stream-2-se-1231p-66a05e_pz7elc
 classes:
   - GWh
 tags:

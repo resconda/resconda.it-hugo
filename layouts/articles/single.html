@@ -19,7 +19,7 @@
           {{ end }}
         {{ end }}
           {{ with .Params.cover_image}}
-          {{ partial "cloudinary_image.html" (dict "image_name" . )}}
+          {{ partial "cloudinary_image.html" (dict "image_name" .src "caption" .caption )}}
           {{end}}
         </div>
         <h4 id="date"> {{ dateFormat "2 January 2006" .Date.Local }} 

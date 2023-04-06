@@ -5,7 +5,8 @@ date: 2023-04-06
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
   Abbiamo usato ChatGPT per generare un post (prima del bando ducale di esilio). Abbiamo chiesto al bot di confrontare il consumo energetico sul percorso Torino-Roma tra un’auto elettrica ed una a benzina. La risposta mette insieme fatti e fake news...
-cover_image: assets/post-img/artificial-intelligence-2228610_1920_lxyuai # optional
+cover_image:
+  src: assets/post-img/artificial-intelligence-2228610_1920_lxyuai
 classes:
   - kWh
 tags:
