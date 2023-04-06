@@ -9,6 +9,9 @@ summary: |
 cover_image: assets/post-img/kid-rock-89811_1920_bo0ovx # optional
 classes:
   - MWh
+tags:
+  - turismo
+  - sostenibilità
 ---
 
 Gli eventi turistici hanno rilevanti ed importanti ricadute sociali ed economiche sui territori che li ospitano. Tuttavia, come ogni attività umana, hanno un impatto ambientale… e dei costi energetici. 

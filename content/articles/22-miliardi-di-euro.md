@@ -6,7 +6,7 @@ summary: | # leave blank if no summary is provided
   E’ il valore dei prodotti - praticamente nuovi, acquistati su Internet e restituiti dagli acquirenti al venditore - che sono stati in Europa nel 2022. Per il negozio online &egrave; pi&ugrave; conveniente distruggerli che rimetterli in vendita...
 cover_image: assets/img/PILLOLE/2023/FEB/prime_sbgmvg
 tags:
-  - sostenibilita
+  - sostenibilità
 ---
 
 Si tratta per la quasi totalità di prodotti a basso costo (specialmente nei settori elettronica e tessile) acquistati su Internet e restituiti dagli acquirenti al venditore per il quale, per ragioni amministrative, organizzative etc. è più conveniente distruggerli che rimetterli in vendita...

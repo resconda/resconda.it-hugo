@@ -9,6 +9,9 @@ summary: |
 cover_image: assets/post-img/img_mokhlu # optional
 classes:
   - GWh
+tags:
+  - tecnologia
+  - sostenibilità
 ---
 
 

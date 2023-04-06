@@ -10,7 +10,7 @@ classes:
   - Wh
 tags:
   - food
-  - sostenibilita
+  - sostenibilità
   - efficienza energetica
 ---
 
