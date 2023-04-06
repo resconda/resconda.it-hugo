@@ -1,18 +1,18 @@
 ---
 ## Important: If this is a draft, next line should NOT begin with #
 draft: true
-title: Turismo Degli Eventi Quale Impatto Ambientale
+title: "Turismo degli eventi: quale impatto ambientale?"
 date: 2023-04-06
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
-  Gli eventi turistici hanno rilevanti ed importanti ricadute sociali ed economiche sui territori che li ospitano tuttavia, come ogni attività umana, hanno un impatto ambientale…e dei costi energetici. 
+  Gli eventi turistici hanno rilevanti ed importanti ricadute sociali ed economiche sui territori che li ospitano. Tuttavia, come ogni attività umana, hanno un impatto ambientale… e dei costi energetici. 
 cover_image: assets/post-img/kid-rock-89811_1920_bo0ovx # optional
 tags:
   - tag1
   - tag2
 ---
 
-Gli eventi turistici hanno rilevanti ed importanti ricadute sociali ed economiche sui territori che li ospitano tuttavia, come ogni attività umana, hanno un impatto ambientale…e dei costi energetici. 
+Gli eventi turistici hanno rilevanti ed importanti ricadute sociali ed economiche sui territori che li ospitano. Tuttavia, come ogni attività umana, hanno un impatto ambientale… e dei costi energetici. 
 
 Uno studio analizza questo aspetto con riferimento a quattro differenti tipologie di eventi analizzati in un Comune italiano: un concerto (3.320 partecipanti), un ciclo di venticinque allenamenti collettivi di corsa (1.000 partecipanti per allenamento), il carnevale cittadino (40.000 partecipanti), un ciclo di undici conferenze(1.230 partecipanti in totale).
 
