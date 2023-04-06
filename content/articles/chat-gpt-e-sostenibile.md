@@ -5,7 +5,8 @@ date: 2023-02-01
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
   L'economia "virtuale" diventa sempre più rilevante, Alfabet, Microsoft, Meta, scalzano le vecchie aziende manifatturiere nelle valorizzazioni di borsa. E' questo un bene per l'ambiente? Qual'è l'impatto energetico dell'Information Technology, dell'Intelligenza artificiale?  
-cover_image: assets/img/PILLOLE/2023/FEB/chat-gpt_dubidt
+cover_image:
+  src: assets/img/PILLOLE/2023/FEB/chat-gpt_dubidt
 tags:
   - tecnologia
 classes: 

@@ -6,7 +6,8 @@ date: 2022-11-03
 ## below are user-defined parameters (lower case keys recommended)
 # summary: |
 #   Il 1 dicembre, avrà formalmente avvio il progetto Emcoin 1 (per la realizzazione di un sistema di quantificazione e codifica dell'energia incorporata nei prodotti di consumo) 
-cover_image: assets/post-img/Immagine13_mnw014 # optional
+cover_image:
+  src: assets/post-img/Immagine13_mnw014
 tags:
   - resconda
   - emcoin

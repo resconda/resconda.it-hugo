@@ -4,7 +4,8 @@ draft: false
 title: Quanto impatta un volo aereo?
 date: 2022-08-29
 ## below are user-defined parameters (lower case keys recommended)
-cover_image: /assets/post-img/Another_Airplane_21__284676723312_29_qsijjw
+cover_image:
+  src: assets/post-img/Another_Airplane_21__284676723312_29_qsijjw
 classes:
   - MWh
 tags:

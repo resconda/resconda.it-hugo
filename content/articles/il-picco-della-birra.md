@@ -5,7 +5,8 @@ date: 2022-12-02
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
   *È una teoria abbastanza semplice e che qualsiasi bevitore di birra capisce. Il bicchiere inizia pieno e finisce vuoto e prima lo bevi, prima sparisce...*
-cover_image: assets/post-img/unnamed_j9lxod # optional
+cover_image:
+  src: assets/post-img/unnamed_j9lxod
 tags:
   - picco del petrolio
   - birra

@@ -5,7 +5,8 @@ date: 2023-02-01
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
   Perchè migliorare le performances ambientali di un edificio talvolta può, alla fine dei conti, fare un danno all'ambiente...
-cover_image: assets/img/PILLOLE/2023/FEB/green_house_2_ipsigu
+cover_image:
+  src: assets/img/PILLOLE/2023/FEB/green_house_2_ipsigu
 tags:
   - green
   - UE

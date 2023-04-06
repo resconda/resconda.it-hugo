@@ -10,7 +10,7 @@
         <a href="{{.Permalink}}" class="btn btn-secondary align-self-baseline">Leggi tutto</a>
     </div>
     {{ with .Params.cover_image }}
-    {{$alt := (path.Split .)}}
-    {{ partial "cloudinary_image.html" (dict "image_name" . "alt" $alt.File "class" "card-img-top cover cover-30")}}
+    {{$alt := (path.Split .src)}}
+    {{ partial "cloudinary_image.html" (dict "image_name" .src "alt" $alt.File "class" "card-img-top cover cover-30")}}
     {{end}}
 </div>

@@ -6,7 +6,8 @@ date: 2022-12-02
 summary: |
   Continuiamo a fornire qualche spunto di riflessione intorno al dibattito
   ancora (sorprendentemente) in corso sul cambiamento climatico. 
-cover_image: assets/post-img/cropped-Wildfires-and-Climate-Change_ge7prp # optional
+cover_image:
+  src: assets/post-img/cropped-Wildfires-and-Climate-Change_ge7prp
 tags:
   - clima
   - sovrappopolazione

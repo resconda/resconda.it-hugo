@@ -5,7 +5,8 @@ date: 2023-03-02
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
   Quanta energia serve a cucinare un piatto di pasta? E quanta se ne risparmia seguendo i suggerimenti del premio Nobel per la Fisica Giorgio Parisi?
-cover_image: assets/post-img/cooking_pasta_vp5myd # optional
+cover_image:
+  src: assets/post-img/cooking_pasta_vp5myd
 classes:
   - Wh
 tags:

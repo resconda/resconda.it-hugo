@@ -5,7 +5,8 @@ date: 2023-03-06
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
   Camillo Langone su Il Foglio condanna “l’irrazionalità dell’ambientalismo”: “*Che senso ha smettere di mangiare carne per limitare l’impatto ambientale e poi comprare pomodori coltivati nelle serre cilene e portati nei supermercati a bordo di aeroplani?*“
-cover_image: assets/post-img/delicious-dietary-beef-with-tomatoes_o35efc # optional
+cover_image:
+  src: assets/post-img/delicious-dietary-beef-with-tomatoes_o35efc
 classes:
   - kWh
 tags:
