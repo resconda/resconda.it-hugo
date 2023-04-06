@@ -1,11 +1,11 @@
 ---
 ## Important: If this is a draft, next line should NOT begin with #
 draft: true
-title: Quando Chatgpt Non E Abbastanza Intelligente
+title: Quando ChatGPT non è abbastanza intelligente
 date: 2023-04-06
 ## below are user-defined parameters (lower case keys recommended)
 summary: | # leave blank if no summary is provided
-  Abbiamo usato Chat GPT per generare un post (prima del bando ducale di esilio). Abbiamo chiesto al bot di confrontare il consumo energetico sul percorso Torino-Roma tra un’auto elettrica ed una a benzina. La risposta mette insieme fatti e fake news...
+  Abbiamo usato ChatGPT per generare un post (prima del bando ducale di esilio). Abbiamo chiesto al bot di confrontare il consumo energetico sul percorso Torino-Roma tra un’auto elettrica ed una a benzina. La risposta mette insieme fatti e fake news...
 cover_image: assets/post-img/artificial-intelligence-2228610_1920_lxyuai # optional
 tags:
   - tag1
