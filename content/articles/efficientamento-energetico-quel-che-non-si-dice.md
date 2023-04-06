@@ -10,7 +10,7 @@ classes:
   - MWh
 tags:
   - efficienza
-  - sostenibilita
+  - sostenibilità
   - tecnologia
 ---
 

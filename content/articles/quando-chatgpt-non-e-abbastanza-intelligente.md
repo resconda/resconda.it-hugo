@@ -9,6 +9,9 @@ summary: | # leave blank if no summary is provided
 cover_image: assets/post-img/artificial-intelligence-2228610_1920_lxyuai # optional
 classes:
   - kWh
+tags:
+  - tecnologia
+  - EV
 ---
 
 Abbiamo chiesto a Chat GPT (prima del bando ducale di esilio) di confrontare il consumo energetico di un auto elettrica con un auto a benzina. sul percorso Torino Roma. La risposta è (come quasi sempre) assolutamente decorosa, ma contiene elementi fuorvianti, probabilmente determinati dalla knowledge base dalla quale estrae i dati…probabilmente A.I. non può elevarsi molto al di sopra dell’utente medio di Internet…

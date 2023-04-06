@@ -10,7 +10,7 @@ classes:
   - kWh
 tags:
   - food
-  - sostenibilita
+  - sostenibilità
 ---
 
 Tra i giornali che hanno una linea editoriale sostanzialmente avversa alle tematiche della tutela ambientale c’è [Il Foglio](https://www.ilfoglio.it/tag/ambientalismo/). Camillo Langone (editorialista cattolico ultraconservatore che si occupa principalmente di enogastronomia, pittura, religione e letteratura) recensisce in libro “*Non dobbiamo salvare il mondo. Dall’auto elettrica al bio, tutti i falsi miti della religione green*” (Piemme) affermando: “*Che senso ha smettere di mangiare carne per limitare l’impatto ambientale e poi comprare pomodori coltivati nelle serre cilene e portati nei supermercati a bordo di aeroplani?*”.
