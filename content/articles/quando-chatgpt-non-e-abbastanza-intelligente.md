@@ -14,9 +14,10 @@ tags:
   - EV
 ---
 
-Abbiamo chiesto a Chat GPT (prima del bando ducale di esilio) di confrontare il consumo energetico di un auto elettrica con un auto a benzina. sul percorso Torino Roma. La risposta è (come quasi sempre) assolutamente decorosa, ma contiene elementi fuorvianti, probabilmente determinati dalla knowledge base dalla quale estrae i dati…probabilmente A.I. non può elevarsi molto al di sopra dell’utente medio di Internet…
+Abbiamo chiesto a Chat GPT (prima del bando ducale di esilio) di confrontare il consumo energetico di un'auto elettrica con un'auto a benzina, sul percorso Torino Roma.  
+La risposta è (come quasi sempre) assolutamente decorosa, ma **contiene elementi fuorvianti**, probabilmente determinati dalla knowledge base dalla quale estrae i dati. Probabilmente A.I. non può elevarsi molto al di sopra dell’utente medio di Internet…
 
-Chat GPT risponde 
+Chat GPT risponde:
 
 {{< styledquote style="font-family: 'Share Tech Mono', monospace; font-style: unset;">}}
 “l'auto a benzina avrebbe bisogno di circa 436,1 kWh di energia per percorrere la distanza (…) un'auto elettrica avrebbe bisogno di circa 100-117 kWh di energia. In conclusione, l'auto elettrica sembra avere un notevole vantaggio in termini di efficienza energetica e emissioni di CO2 rispetto all'auto a benzina. Tuttavia, le emissioni di CO2 possono variare notevolmente a seconda della fonte di energia utilizzata per produrre l'elettricità necessaria per ricaricare la batteria. Pertanto, per massimizzare il vantaggio ambientale dell'auto elettrica, è importante che l'energia elettrica provenga da fonti rinnovabili o a bassa emissione di CO2”
@@ -42,9 +43,10 @@ L’affermazione è discutibile: anche nel caso in cui l’elettricità utilizza
 
 La conseguenza logica di tale affermazione, in un contesto in cui l’energia elettrica è prodotta solo in parte (minoritaria) da fonti rinnovabili è: l’auto elettrica non è  un'opzione molto più pulita e sostenibile rispetto all'auto a benzina.
 
-Probabilmente tali “scivoloni” sono determinati dall’abbondanza di controinformazione presente sulla knowledge base internet su cui Chat GPT opera (anche in considerazione dell'importante campagna di fake news attivata di recente a fronte deii provvedimenti che vanno a toccare un settore economico molto competitivo e di grande rilevanza in Europa). Anche per Chat GPT è difficile nuotare in tali acque sporche ed uscirne intonsa…
+Probabilmente tali “scivoloni” sono determinati dall’**abbondanza di controinformazione presente sulla knowledge base internet** su cui Chat GPT opera (anche in considerazione dell'importante campagna di fake news attivata di recente a fronte dei provvedimenti che vanno a toccare un settore economico molto competitivo e di grande rilevanza in Europa).  
+Anche per Chat GPT è difficile nuotare in tali acque sporche ed uscirne intonsa…
 
-Chat GPT non tiene conto, infine, del costo dell’energia incorporata nei due tipi di auto (che tra l’altro penalizza il veicolo elettrico), ma nella realtà, come sappiamo, pochissimi considerano l’energia incorporata in un bene…  
+Chat GPT non tiene conto, infine, del costo dell’**energia incorporata nei due tipi di auto** (che tra l’altro penalizza il veicolo elettrico), ma nella realtà, come sappiamo, pochissimi considerano l’energia incorporata in un bene.
 
 {{< details header="La risposta completa di Chat GPT" bodystyle="font-family: 'Share Tech Mono', monospace;">}}
 La maggior parte delle auto a benzina ha un consumo medio di carburante di circa 7 litri per 100 km. Quindi, per percorrere i 700 km da Torino a Roma, un'auto a benzina consumerebbe circa 49 litri di carburante. Poiché un litro di benzina produce circa 8,9 kWh di energia, l'auto a benzina avrebbe bisogno di circa 436,1 kWh di energia per percorrere la distanza.  
