@@ -18,12 +18,12 @@ $VALID_INPUT_FIELDS = [
 $captchaSecret = getenv("FRIENDLY_CAPTCHA_SECRET");
 $captchaKey = getenv("FRIENDLY_CAPTCHA_SITEKEY");
 // DEBUG
-error_log("Captcha Key: $captchaKey");
+debugLog("Captcha Key: $captchaKey");
 // DEBUG
-error_log("Raw input: " . print_r($_POST, TRUE));
+debugLog("Raw input: " . print_r($_POST, TRUE));
 $INPUT = array_intersect_key($_POST, $VALID_INPUT_FIELDS);
 // DEBUG
-error_log("Filtered: " . print_r($INPUT, TRUE));
+debugLog("Filtered: " . print_r($INPUT, TRUE));
 $missing = array_diff_key(array_filter($VALID_INPUT_FIELDS), $INPUT);
 if(count($missing) > 0){
     echo json_encode([
