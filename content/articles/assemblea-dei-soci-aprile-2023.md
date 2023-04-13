@@ -1,6 +1,5 @@
 ---
 ## Important: If this is a draft, next line should NOT begin with #
-draft: true
 title: Assemblea dei Soci, Aprile 2023
 date: 2023-04-13
 ## below are user-defined parameters (lower case keys recommended)
