@@ -2,12 +2,18 @@ var contactForm;
 var defaultWidget;
 
 var friendlyCaptchaSolved = function (solution) {
-    $(contactForm).find('.showtransition').removeClass("invisible");
-    $('#friendlyCaptchaFormSubmit').removeAttr('disabled');
+    elements = contactForm.getElementsByClassName('.showtransition');
+    for (let i = 0; i < elements.length; i++) {
+        const el = elements[i];
+        el.classList.remove("invisible");        
+    }
+    document.getElementById('friendlyCaptchaFormSubmit').removeAttribute('disabled');
 };
 
 var validateForm = function() {
     var ret = true;
+    var name = document.getElementsByName('name')[0];
+    var phone = document.getElementsByName('phone')[0];
     var email = document.getElementsByName('email')[0];
     var message = document.getElementsByName('message')[0];
     var newsletter = document.getElementsByName('newsletter')[0];
@@ -28,41 +34,83 @@ var validateForm = function() {
         message.reportValidity();
         newsletter.reportValidity();
         ret = false;
-    }   
+    }
+    if(ret){
+        return {
+            name: name.value,
+            phone: phone.value,
+            email: email.value,
+            message: message.value,
+            newsletter : newsletter.checked
+        }
+    }
     return ret;
 }
 
-window.addEventListener("load", function (document, event) {
+window.addEventListener("load", () => {
     defaultWidget = friendlyChallenge.autoWidget;
-    contactForm = $("#contactForm")[0];
-    $("#form-response").empty();
-    $("#friendlyCaptchaFormSubmit").click(submitEvent => {
-        if(validateForm()){
-            formid = $("#friendlyCaptchaFormSubmit").attr('form');
-            data = $(`#${formid}`).serialize();
-            $.ajax({
-                type: "POST",
-                url: "/cgi/form_contact",
-                data: data,
-                dataType: "json",
-                success: function (data) {
-                    console.log(JSON.stringify(data));
-                    if (data.errors != undefined && data.errors.length > 0) {
-                        data.errors.forEach(element => {
-                            errrow = $(`<div class="alert alert-warning">${element}</div>`);
-                            $("#form-response").append(errrow);
-                        });
-                    } else {
-                        let name = data.name;
-                        successmsg = $(`<div class="alert alert-info text-center">Grazie ${name}! Ti contatteremo presto.</div>`);
-                        $('#form-response').append(successmsg);
-                        $('#contactForm').find('input,textarea').val("");
-                        defaultWidget.reset();
-                    }
-                },
+    contactForm = document.getElementById("contactForm");
+    document.getElementById("friendlyCaptchaFormSubmit").addEventListener("click", submitEvent => {
+        var validatedData = validateForm();
+        if(validatedData !== false){
+            document.getElementById("form-response").innerHTML = "";
+            var XHR = new XMLHttpRequest();
+            var FD = new FormData();
+            for(const [name, value] of Object.entries(validatedData)) {
+                name = item.name;
+                value  = item.value;
+                FD.append(name, value);
+            };
+            // Define what happens on successful data submission
+            XHR.addEventListener('load', (event) => {
+                var data = JSON.parse(XHR.responseText);
+                // console.log(JSON.stringify(data));
+                if (data.errors != undefined && data.errors.length > 0) {
+                    data.errors.forEach(element => {
+                        errrow = $(`<div class="alert alert-warning">${element}</div>`);
+                        $("#form-response").append(errrow);
+                    });
+                } else {
+                    let name = data.name;
+                    successmsg = $(`<div class="alert alert-info text-center">Grazie ${name}! Ti contatteremo presto.</div>`);
+                    $('#form-response').append(successmsg);
+                    $('#contactForm').find('input,textarea').val("");
+                    defaultWidget.reset();
+                }
             });
+            // Define what happens in case of an error
+            XHR.addEventListener('error', (event) => {
+                alert('Oops! Something went wrong.');
+            });
+            // Set up our request
+            XHR.open('POST', '/cgi/form_contact');
+            // Send our FormData object; HTTP headers are set automatically
+            XHR.send(FD);
+            // $.ajax({
+            //     type: "POST",
+            //     url: "/cgi/form_contact",
+            //     data: data,
+            //     dataType: "json",
+            //     success: function (data) {
+            //         console.log(JSON.stringify(data));
+            //         if (data.errors != undefined && data.errors.length > 0) {
+            //             data.errors.forEach(element => {
+            //                 errrow = $(`<div class="alert alert-warning">${element}</div>`);
+            //                 $("#form-response").append(errrow);
+            //             });
+            //         } else {
+            //             let name = data.name;
+            //             successmsg = $(`<div class="alert alert-info text-center">Grazie ${name}! Ti contatteremo presto.</div>`);
+            //             $('#form-response').append(successmsg);
+            //             $('#contactForm').find('input,textarea').val("");
+            //             defaultWidget.reset();
+            //         }
+            //     },
+            // });
         }else{ // invalid form
-
+            successmsg = new HTMLElement();
+            successmsg.innerHTML = `<div class="alert alert-warning text-center">Ricontrolla i dati</div>`;
+            document.getElementById('form-response').append(successmsg);
         }
         // contactForm.classList.add('was-validated')
         submitEvent.preventDefault();

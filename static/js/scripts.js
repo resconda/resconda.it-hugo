@@ -1,31 +1,45 @@
 var navbarSetBackgroundAccordingToScroll = function(pageTop = null){
     if(!pageTop){
-        pageTop = $(document).scrollTop();
+        pageTop = document.scrollTop;
     }
     if (pageTop > 0) {
-        $('nav.navbar').addClass('background');
-    } else if(!$('#navbarNav').hasClass('show')) {
-        $('nav.navbar').removeClass('background');
+        document.querySelector('nav.navbar').classList.add('background');
+    } else if(!document.getElementById('navbarNav').classList.contains('show')) {
+        document.querySelector('nav.navbar').classList.remove('background');
     }
+};
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.bottom >= 0 &&
+        // rect.left >= 0 &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) *0.9
+        // rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
 }
 var scrollUtils = function () {
-    var pageTop = $(document).scrollTop();
-    var pageBottom = pageTop + $(window).height();
-    var tags = $(".fadein-scroll");
+    var pageTop = document.body.scrollTop || document.documentElement.scrollTop;
+    var pageBottom = pageTop + window.innerHeight;
+    var tags = document.getElementsByClassName("fadein-scroll");
 
     navbarSetBackgroundAccordingToScroll(pageTop);
 
-    for (var i = 0; i < tags.length; i++) {
+    for (var i = 0; tags && i < tags.length; i++) {
         var tag = tags[i];
-        if ($(tag).offset().top < pageBottom) {
-            $(tag).addClass("visible");
+        // var scrollInView = tag.getBoundingClientRect().top;
+        // if (scrollInView < pageBottom) {
+        if (isInViewport(tag)) {
+            // console.log(`[DEBUG] VISIBLE element at ${tag.getBoundingClientRect().top} with content: ${tag.innerHTML}`);
+            tag.classList.add("visible");
+        }else{
+            tag.classList.remove("visible");
         }
     }
     // home page only
-    var peopleWalkingVideo = $('#peopleWalkingVideo');
-    if (peopleWalkingVideo.length > 0 ){
+    var peopleWalkingVideo = document.getElementById('peopleWalkingVideo');
+    if (peopleWalkingVideo && peopleWalkingVideo.length > 0 ){
         if( 
-        peopleWalkingVideo.offset().top < pageBottom && peopleWalkingVideo.offset().top + peopleWalkingVideo.height() > pageTop) {
+        peopleWalkingVideo.offsetTop < pageBottom && peopleWalkingVideo.offsetTop + peopleWalkingVideo.offsetHeight > pageTop) {
         peopleWalkingVideo[0].play();
         } else {
             peopleWalkingVideo[0].pause();
@@ -33,22 +47,25 @@ var scrollUtils = function () {
     }
 };
 var offsetBodyPaddingTop = function() {
-    var navheight = $("nav.navbar").outerHeight(false);
-    $('body').css("padding-top", navheight);
+    var navheight = document.querySelector("nav.navbar").offsetHeight;
+    document.body.style.paddingTop = `${navheight}px`;
 };
-$(document)
-.on("scroll", _.throttle(scrollUtils, 100))
-.on("ready", function () {
+document.addEventListener("scroll", _.throttle(scrollUtils, 100));
+window.addEventListener("load", () => {
     offsetBodyPaddingTop();
     setTimeout(() => {
-        $('.fadein-onload').addClass("visible");
+        var elements = document.getElementsByClassName('fadein-onload');
+        for(var i = 0; i<elements.length; i++) {
+            elements[i].classList.add("visible");
+        };
     }, 500);
-    $("#navBrandLogo").on("load ready", offsetBodyPaddingTop);    
+    // document.getElementById("navBrandLogo").addEventListener("load", offsetBodyPaddingTop);
+    // document.getElementById("navBrandLogo").addEventListener("ready", offsetBodyPaddingTop);    
     // friendlyCaptchaSetup();
-    $('#siteNavbar')[0].addEventListener('show.bs.collapse', event => {
+    document.getElementById('siteNavbar').addEventListener('show.bs.collapse', event => {
         navbarSetBackgroundAccordingToScroll(1);
     });
-    $('#siteNavbar')[0].addEventListener('hidden.bs.collapse', event => {
+    document.getElementById('siteNavbar').addEventListener('hidden.bs.collapse', event => {
         navbarSetBackgroundAccordingToScroll();
     });
 });
