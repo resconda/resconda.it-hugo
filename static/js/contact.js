@@ -2,7 +2,7 @@ var contactForm;
 var defaultWidget;
 
 var friendlyCaptchaSolved = function (solution) {
-    elements = contactForm.getElementsByClassName('.showtransition');
+    elements = contactForm.getElementsByClassName('showtransition');
     for (let i = 0; i < elements.length; i++) {
         const el = elements[i];
         el.classList.remove("invisible");        
@@ -51,14 +51,12 @@ window.addEventListener("load", () => {
     defaultWidget = friendlyChallenge.autoWidget;
     contactForm = document.getElementById("contactForm");
     document.getElementById("friendlyCaptchaFormSubmit").addEventListener("click", submitEvent => {
+        document.getElementById("form-response").innerHTML = "";
         var validatedData = validateForm();
         if(validatedData !== false){
-            document.getElementById("form-response").innerHTML = "";
             var XHR = new XMLHttpRequest();
             var FD = new FormData();
             for(const [name, value] of Object.entries(validatedData)) {
-                name = item.name;
-                value  = item.value;
                 FD.append(name, value);
             };
             // Define what happens on successful data submission
