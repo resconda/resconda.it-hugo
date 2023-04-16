@@ -69,7 +69,9 @@ window.addEventListener("load", () => {
                 // console.log(JSON.stringify(data));
                 if (data.errors != undefined && data.errors.length > 0) {
                     data.errors.forEach(element => {
-                        errrow = new HTMLElement(); errrow.innerHTML = `<div class="alert alert-warning">${element}</div>`;
+                        errrow = document.createElement('div'); 
+                        errrow.classList.add('alert', 'alert-warning');
+                        errrow.innerHTML = element;
                         document.getElementById("form-response").append(errrow);
                     });
                 } else {
@@ -114,7 +116,7 @@ window.addEventListener("load", () => {
             successmsg.innerHTML = `<div class="alert alert-warning text-center">Ricontrolla i dati</div>`;
             document.getElementById('form-response').append(successmsg);
         }
-        // contactForm.classList.add('was-validated')
+        // contactForm.classList.add('alert', 'alert-warning'';was-validated')
         submitEvent.preventDefault();
     });
 });
