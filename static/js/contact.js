@@ -55,7 +55,10 @@ window.addEventListener("load", () => {
         var validatedData = validateForm();
         if(validatedData !== false){
             var XHR = new XMLHttpRequest();
-            var aData = []
+            frcsolution = document.getElementsByName('frc-captcha-solution')[0].value;
+            var aData = [
+                `frc-captcha-solution=${frcsolution}`
+            ]
             for(const [name, value] of Object.entries(validatedData)) {
                 // encValue = encodeURIComponent(value);
                 aData.push(`${name}=${encodeURIComponent(value)}`);
