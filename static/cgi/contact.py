@@ -140,7 +140,7 @@ def form_contact(req):
             output["errors"].append(errstr)
             req.log_error("%s: %s" % (errstr, str(sex)))
         except friendlycaptcha.CaptchaVerifyException as cve:
-            errstr = "Invalid input"
+            errstr = "Captcha verification failed"
             output["errors"].append(errstr)
             req.log_error("%s: %s" % (errstr, str(cve)))
         except ContactException as ce:
@@ -148,7 +148,7 @@ def form_contact(req):
             output["errors"].append(errstr)
             req.log_error(str(ce))
         except mailtrain.MailtrainException as mex:
-            errstr = "Invalid input"
+            errstr = "Subscription failed"
             output["errors"].append(errstr)
             req.log_error("%s: %s" % (errstr, str(mex)))
 
