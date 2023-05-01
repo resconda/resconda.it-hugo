@@ -12,6 +12,9 @@
     <title>{{ .Title }}</title>
         {{ end }}
     {{ end}}
+    {{ with .Params.cover_image.src }}
+    <meta property="og:image" content={{ partial "GetCloudinaryURL.html" (dict "name" .)}} />
+    {{ end }}
     <!-- Google fonts https://fonts.google.com/ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

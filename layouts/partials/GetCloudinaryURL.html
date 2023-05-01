@@ -1,2 +1,2 @@
-{{ $quality := or (.quality) ("auto") }}
-{{ return printf "https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_%d,w_256/%s" $quality .name }}
+{{ $quality := or (string .quality) ("auto") }}
+{{ return path.Clean ( printf "https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_%s,w_256/%s" $quality .name ) }}
