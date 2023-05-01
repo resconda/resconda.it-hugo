@@ -7,7 +7,6 @@ summary: |
   Una domanda posta a chat GPT “costa” tra 0,2 e 0,8 Wh: il contenuto di energia di una batteria AA. Ma quante domande gli vengono poste in un mese? Quale è il consumo complessivo di energia?
 cover_image:
   src: assets/post-img/img_mokhlu
-  caption: "*Credits: LaPresse*"
 classes:
   - GWh
 tags:
