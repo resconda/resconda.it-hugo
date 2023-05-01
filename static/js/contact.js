@@ -66,7 +66,6 @@ window.addEventListener("load", () => {
             // Define what happens on successful data submission
             XHR.addEventListener('load', (event) => {
                 var data = JSON.parse(XHR.responseText);
-                // console.log(JSON.stringify(data));
                 if (data.errors != undefined && data.errors.length > 0) {
                     data.errors.forEach(element => {
                         errrow = document.createElement('div'); 
@@ -90,33 +89,11 @@ window.addEventListener("load", () => {
             XHR.open('POST', '/cgi/form_contact');
             // Send our FormData object; HTTP headers are set automatically
             XHR.send(aData.join("&"));
-            // $.ajax({
-            //     type: "POST",
-            //     url: "/cgi/form_contact",
-            //     data: data,
-            //     dataType: "json",
-            //     success: function (data) {
-            //         console.log(JSON.stringify(data));
-            //         if (data.errors != undefined && data.errors.length > 0) {
-            //             data.errors.forEach(element => {
-            //                 errrow = $(`<div class="alert alert-warning">${element}</div>`);
-            //                 $("#form-response").append(errrow);
-            //             });
-            //         } else {
-            //             let name = data.name;
-            //             successmsg = $(`<div class="alert alert-info text-center">Grazie ${name}! Ti contatteremo presto.</div>`);
-            //             $('#form-response').append(successmsg);
-            //             $('#contactForm').find('input,textarea').val("");
-            //             defaultWidget.reset();
-            //         }
-            //     },
-            // });
         }else{ // invalid form
             successmsg = new HTMLElement();
             successmsg.innerHTML = `<div class="alert alert-warning text-center">Ricontrolla i dati</div>`;
             document.getElementById('form-response').append(successmsg);
         }
-        // contactForm.classList.add('alert', 'alert-warning'';was-validated')
         submitEvent.preventDefault();
     });
 });

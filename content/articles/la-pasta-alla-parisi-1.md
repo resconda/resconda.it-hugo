@@ -32,7 +32,7 @@ E_{B} = P \Delta t = 6\ \textrm{kW}\ 1/12\ \textrm{h} = 0.5\ \textrm{kWh}
 
 Passiamo alla cottura.
 
-Siamo ottimisti e ipotizziamo che raggiunto il bollore, si sposti la pentola sul fornello piccolo regolato al minimo: facendo una prova in casa per un minuto abbiamo registrato sul contatore un consumo di 0.001 metri cubi di gas metano (equivalente a 10.69 Wh, quindi potenza media {{< imath escape="true" >}}P = 10.69 Wh / 1/60 h = 641 W{{< /imath >}}. 
+Siamo ottimisti e ipotizziamo che raggiunto il bollore, si sposti la pentola sul fornello piccolo regolato al minimo: facendo una prova in casa per un minuto abbiamo registrato sul contatore un consumo di 0.001 metri cubi di gas metano (equivalente a 10.69 Wh, quindi potenza media {{< imath >}}P = 10.69 Wh / 1/60 h = 641 W{{< /imath >}}). 
 
 La pasta cuoce mediamente per 10 minuti, quindi
 
