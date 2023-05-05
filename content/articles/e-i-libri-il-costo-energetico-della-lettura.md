@@ -7,6 +7,8 @@ summary: |
 cover_image: # optional
   src: assets/post-img/reading-925589_640_d6vujv
 #   caption: "caption string"
+classes:
+  - kWh
 tags:
   - tag1
   - tag2
