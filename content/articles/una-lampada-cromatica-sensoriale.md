@@ -12,7 +12,7 @@ classes:
   - Wh
 tags:
   - ordini di grandezza
-  - efficienza
+  - lampadine
 ---
 
 Sulla scatola l'azienda produttrice scrive: _“Rilassatevi e godete dell'effetto cromatico sensoriale della lampada [nome omesso]“_.

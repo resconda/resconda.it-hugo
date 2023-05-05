@@ -3,15 +3,15 @@ title: "Hotel, quanto mi E-costi..."
 date: 2023-05-05
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
-  Quanto e-costa in media una camera d'albergo in Italia? Qual è la differenza tra un 3 stelle ed un 5 stelle? Cerchiamo di vedere gli alberghi sotto un'altra prospettiva...
+  Quanto e-costa in media una camera d'albergo in Italia? Qual è la differenza tra un 3 stelle ed un 5 stelle? Cerchiamo di vedere gli alberghi sotto un'altra prospettiva.
 cover_image: # optional
   src: assets/post-img/hotel-1330850_640_catuc9
 #   caption: "caption string"
 classes:
   - kWh
 tags:
-  - tag1
-  - tag2
+  - turismo
+  - energia
 ---
 
 Le strutture ricettive italiane sono diminuite in numero ma hanno aumentato la loro capacità ricettiva, allineandosi ad una offerta di qualità medio-alta. Di pari passo sono però aumentati i consumi energetici di queste strutture (quasi inevitabilmente qualità va a braccetto con consumo di energia...), rappresentando una quota considerevole nel bilancio totale dei consumi elettrici e delle emissioni di gas ad effetto serra del settore turistico.

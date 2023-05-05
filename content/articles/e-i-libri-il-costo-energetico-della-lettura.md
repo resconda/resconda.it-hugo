@@ -10,8 +10,8 @@ cover_image: # optional
 classes:
   - kWh
 tags:
-  - tag1
-  - tag2
+  - energia
+  - libri
 ---
 
 In diversi post abbiamo trattato il costo energetico dell'Information Technology, dimostrando che per quanto "intangibile", è del tutto tangibile ed importante il suo consumo di energia e conseguente impatto ambientale...

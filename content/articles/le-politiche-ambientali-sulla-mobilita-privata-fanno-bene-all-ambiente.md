@@ -1,5 +1,5 @@
 ---
-title: Le politiche ambientali sulla mobilita privata fanno bene all ambiente
+title: Le politiche ambientali sulla mobilità privata fanno bene all'ambiente?
 date: 2023-05-05
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
@@ -8,22 +8,21 @@ cover_image: # optional
   src: assets/post-img/glass-window-1845534_640_swe6ib
 #   caption: "caption string"
 tags:
-  - tag1
-  - tag2
+  - mobilità
+  - aria
+  - ambiente
 ---
 
-Il particolato "sottile", il cd. "PM10", il "PM2,5" (composto da particelle più piccole...) e le altre emissioni sono dannose per l'ambiente (ci sono studi che ne mostrano gli effetti negativi su molte specie vegetali e animali), ma lo sono soprattutto [per la salute umana](https://www.eea.europa.eu/publications/air-quality-in-europe-2022/health-impacts-of-air-pollution): in Europa lo scorso anno ci sono stati 311 mila decessi "anticipati", di cui 238 mila attribuiti ad inquinamento da PM 2,5, 49 mila al biossido d'azoto (NO2 o NOX) e 24 mila all'ozono (O3). A margine segnaliamo che le autorità sanitarie europee sembrano prendere in considerazione quasi esclusivamente il PM2,5, mentre non abbiamo trovato dati sulla mortalità causata da PM10. L'Italia in questo contesto ha fatto la sua parte: circa 60 mila decessi, di cui 52 mila da PM2,5, 11 mila da NOX e 5 mila da O3. A titolo informativo, le morti attribuite al Covid nel 2021 in Italia sono state circa 60 mila...
+Il particolato "sottile", il cd. "PM10", il "PM2,5" (composto da particelle più piccole...) e le altre emissioni sono dannose per l'ambiente (ci sono studi che ne mostrano gli effetti negativi su molte specie vegetali e animali), ma lo sono soprattutto [per la salute umana](https://www.eea.europa.eu/publications/air-quality-in-europe-2022/health-impacts-of-air-pollution): in Europa lo scorso anno ci sono stati 311 mila decessi "anticipati", di cui 238 mila attribuiti ad inquinamento da PM 2,5, 49 mila al biossido d'azoto (NO2 o NOX) e 24 mila all'ozono (O3). A margine segnaliamo che le autorità sanitarie europee sembrano prendere in considerazione quasi esclusivamente il PM2,5, mentre non abbiamo trovato dati sulla mortalità causata da PM10. L'Italia in questo contesto ha fatto la sua parte: circa 60 mila decessi, di cui 52 mila da PM2,5, 11 mila da NOX e 5 mila da O3. A titolo informativo, le morti attribuite al Covid nel 2021 in Italia sono state circa 60 mila.
 
 L'Italia può inoltre vantare dei record, in particolare Torino, la città più inquinata d'Italia, secondo il [rapporto "Malaria" di Legambiente](https://www.legambiente.it/wp-content/uploads/2021/11/Rapporto_Malaria_2023.pdf)
 
 La normativa in materia di riduzione delle emissioni delle auto è stata introdotta nel 1992, più di 30 anni fa e la situazione è senz'altro [migliorata negli ultimi anni](https://www.snpambiente.it/wp-content/uploads/2021/01/superamenti-pm10.jpg).
 
 In particolare, le emissioni PM2,5 sembrano (ad esempio secondo i [dati rilevati da ARPA Piemonte](https://www.arpa.piemonte.it/arpa-comunica/file-notizie/2022/tabellapm25.jpg)), abbastanza confortanti: la media annua non ha mai superato tra il 2019 ed il 2021 in tutte le stazioni di rilevamento piemontesi (compresa Torino) la soglia di attenzione di 25 microgrammi/m3. Tra l'altro non si rilevano effetti particolarmente evidenti sul PM2,5 delle misure di limitazione della mobilità adottate durante la pandemia...  
-Anche il progetto IAAS rileva tra il 2005 ed il 2020 una riduzione della metà dei decessi causati da PM2,5 e di più di 4 volte di quelli causati da NOX.
+Anche il progetto IAAS [rileva](https://www.viias.it/pagine/impatto-sulla-salute) tra il 2005 ed il 2020 una riduzione della metà dei decessi causati da PM2,5 e di più di 4 volte di quelli causati da NOX.
 
-[*https://www.viias.it/pagine/impatto-sulla-salute*](https://www.viias.it/pagine/impatto-sulla-salute).
-
-In sintesi, la situazione è molto migliorata rispetto a 15 anni fa (nel 2005 si registravano in Europa più di 500 mila decessi) e continua a migliorare. Tuttavia i numeri dei decessi rimangono alti ... Senz'altro l'atmosfera è un sistema dinamico complesso e il traffico automobilistico non è comunque il fattore che causa il maggior inquinamento da PM2,5 (che rimane a livello nazionale il riscaldamento domestico, ancorché localmente il trasporto possa incidere in misura maggiore).
+In sintesi, la situazione è molto migliorata rispetto a 15 anni fa (nel 2005 si registravano in Europa più di 500 mila decessi) e continua a migliorare. Tuttavia i numeri dei decessi rimangono alti. Senz'altro l'atmosfera è un sistema dinamico complesso e il traffico automobilistico non è comunque il fattore che causa il maggior inquinamento da PM2,5 (che rimane a livello nazionale il riscaldamento domestico, ancorché localmente il trasporto possa incidere in misura maggiore).
 
 {{< cloudinary_img src="assets/post-img/fig.5-inquinamento-PM25_vinmjt" caption="Fonte: https://www.rerebaudengo.it" >}}
 
