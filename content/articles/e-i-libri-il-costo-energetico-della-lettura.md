@@ -3,7 +3,7 @@ title: E i libri? Il costo energetico della lettura
 date: 2023-05-05
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
-  Qual'è il costo energetico ("*e-costo*") di un libro stampato? Meglio leggero in versione digitale? Perché anche la cultura, l'elemento più immateriale che esiste, ha un impatto ambientale...e non trascurabile!
+  Qual è il costo energetico ("*e-costo*") di un libro stampato? Meglio leggero in versione digitale? Perché anche la cultura, l'elemento più immateriale che esiste, ha un impatto ambientale...e non trascurabile!
 cover_image: # optional
   src: assets/post-img/reading-925589_640_d6vujv
 #   caption: "caption string"
