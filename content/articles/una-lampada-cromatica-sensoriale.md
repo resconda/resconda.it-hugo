@@ -1,6 +1,4 @@
 ---
-## Important: If this is a draft, next line should NOT begin with #
-draft: true
 title: Una lampada cromatica sensoriale
 date: 2023-05-01
 ## below are user-defined parameters (lower case keys recommended)
