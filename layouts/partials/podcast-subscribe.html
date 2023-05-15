@@ -1,0 +1,29 @@
+<script>
+    window.podcastData = {
+        "title": "{{$.Site.Params.podcast.tagline}}",
+        "subtitle": "{{$.Site.Params.podcast.tagline}}",
+        "description": "{{$.Site.Title}}",
+        "cover": "{{ $.Site.Params.podcast.cdn_url }}images/logo_feed.png",
+        "feeds": [
+            {
+                "type": "audio",
+                "format": "mp3",
+                "url": "{{$.Site.BaseURL}}feed/mp3/",
+                "variant": "high"
+            },
+            {
+                "type": "audio",
+                "format": "aac",
+                "url": "{{$.Site.BaseURL}}feed/aac/",
+                "variant": "high",
+                "directory-url-itunes": "{{ $.Site.Params.podcast.itunes_url }}"
+            }
+        ]
+    }
+</script>
+
+<script class="podlove-subscribe-button" src="{{$.Site.BaseURL}}subscribe-button/javascripts/app.js" data-language="en"
+    data-size="medium" data-json-data="podcastData" data-color="#ff3c5c" data-format="square" data-style="frameless"
+    data-buttonid="podsub1" data-hide="true"></script>
+<noscript><a href="{{$.Site.BaseURL}}feed/aac/">Subscribe to feed</a></noscript>
+<div class="podlove-subscribe-button-podsub1 subscribe"></div>

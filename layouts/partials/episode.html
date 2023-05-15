@@ -1,0 +1,57 @@
+<div class="card h-100 text-center">
+    <div class="card-header">
+        #{{.Params.number}}: {{ .Title }}
+    </div>
+    <div class="card-body">
+        <div class="post_downloads mb-2 mr-2">
+            <div class="podcast-description">
+                {{.Params.short_description}}
+            </div>
+            <div class="icon-mic">
+                Pubblicato il 
+                <strong>{{ .PublishDate | time.Format ":date_long" }}</strong>
+            </div>
+            <!-- <div class="icon-download"><strong>Download As:</strong> <a
+                    href="{{.Site.Params.podcast.download_url}}{{.Params.aac.asset_link}}" class="download-link">AAC
+                    M4A</a>, <a href="{{.Site.Params.podcast.download_url}}{{.Params.mp3.asset_link}}"
+                    class="download-link">MP3</a>
+            </div> -->
+            <!-- <div class="icon-download"><strong>Rate</strong> <a href="{{.Site.Params.podcast.itunes_url}}">on iTunes</a></div> -->
+        </div>
+        <!-- Image -->
+        <div class="post_thumb mr-2 mb-2">
+            {{ if .Params.image }}
+            {{ $originalImg := resources.Get .Params.image.url }}
+            {{ if $originalImg }}
+            {{ $thumbnailImg := $originalImg.Fit "800x600" }}
+            <figure>
+                <img class="post_thumbnail" alt="{{ .Params.image.alt | default .Title | markdownify | safeHTML }}"
+                    src="{{$thumbnailImg.RelPermalink}}" />
+                <figcaption class="figure-caption">{{ .Params.image.alt | default .Title | markdownify | safeHTML }}
+                </figcaption>
+            </figure>
+            {{else}}
+            <a href="{{ .Site.Params.podcast.cdn_url }}images/logo_wide.png"><img
+                    src="{{ .Site.Params.podcast.cdn_url }}images/logo_wide.png" alt="{{.Title}}" width="320"
+                    class="post_thumbnail" /></a>
+            {{end}}
+            {{else}}
+            <a href="{{ .Site.Params.podcast.cdn_url }}images/logo_wide.png"><img
+                    src="{{ .Site.Params.podcast.cdn_url }}images/logo_wide.png" alt="{{.Title}}" width="320"
+                    class="post_thumbnail" /></a>
+            {{end}}
+            <!-- <div class='post_extra mb-2'>
+                <div class="mr-1">
+                    {{/* partialCached "podcast-subscribe.html" . */}}
+                </div>
+                {{/* partial "share.html" . */}}
+            </div> -->
+        </div>
+    </div>
+    <div class="card-footer text-body-secondary">
+        <!-- Player -->
+        <audio controls src="{{.Site.Params.podcast.download_url}}/{{.Params.mp3.asset_link}}" />
+    </div>
+</div>
+
+
