@@ -76,14 +76,6 @@ taxonomies:
 DefaultContentLanguage: it
 
 outputFormats:
-  aacfeed:
-    MediaType: "application/rss+xml"
-    BaseName: "index"
-    path: "/feed/aac"
-    IsHTML: false
-    IsPlainText: true
-    noUgly: true
-    Rel: "alternate"
   mp3feed:
     MediaType: "application/rss+xml"
     BaseName: "index"
@@ -98,5 +90,4 @@ outputs:
     - HTML
     - AMP
     - RSS
-    - aacfeed
     - mp3feed
