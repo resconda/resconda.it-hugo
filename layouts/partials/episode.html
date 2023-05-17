@@ -39,9 +39,9 @@
                 {{ partial "cloudinary_image.html" (dict "image_name" .Params.image.url "alt" .Params.image.alt ) }}
                 {{end}}
             {{else}}
-                <a href="{{ .Site.Params.podcast.cdn_url }}images/logo_wide.png"><img
-                        src="{{ .Site.Params.podcast.cdn_url }}images/logo_wide.png" alt="{{.Title}}" width="320"
-                        class="post_thumbnail" /></a>
+                <a href="{{ .Site.Params.podcast.download_url }}images/logo_wide.png">
+                    <img src="{{ .Site.Params.podcast.download_url }}images/logo_wide.png" alt="{{.Title}}" width="320" class="post_thumbnail" />
+                </a>
             {{end}}
             <!-- <div class='post_extra mb-2'>
                 <div class="mr-1">

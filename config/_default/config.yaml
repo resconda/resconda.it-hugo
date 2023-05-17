@@ -27,12 +27,13 @@ params:
       name: instagram
       icon_tag: "<i class=\"fa-brands fa-instagram fa-2x\"></i>"
     podcast:
-      description: <podcast description>
-      tagline: Foodie Flashback - Food & Memories
+      description: Un podcast di ResConDA
+      tagline: ResConDA Podcast
       download_url: https://res.cloudinary.com/resconda-it/video/upload/v1683909094/assets/podcast/
-      cdn_url: https://cdn.foodieflashback.com/
-      itunes_url: https://podcasts.apple.com/us/podcast/foodie-flashback/id1504783815
-      itunes_id: id1504783815
+      author: ResConDA
+      owner:
+        name: Marcello Corongiu
+        email: info@resconda.it
 
 menus:
   main:

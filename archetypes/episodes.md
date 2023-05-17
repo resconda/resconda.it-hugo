@@ -14,7 +14,7 @@ mp3:
 url: /episodes/NUMBER
 tags: []
 image: 
-  url: assets/img/logo/favicon
+  url: images/image_name
   alt: "Logo ResConDA"
 draft: true # (depending on whether it's ready to be published)
 ---
