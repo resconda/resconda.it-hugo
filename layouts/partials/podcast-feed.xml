@@ -1,3 +1,4 @@
+<!-- SEE https://help.apple.com/itc/podcasts_connect/#/itcb54353390 for specifications on apple podcast format -->
 {{ `<?xml version="1.0" encoding="utf-8"?>` | safeHTML }}
 <rss version="2.0"
     xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -8,69 +9,64 @@
     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
     xmlns:media="http://search.yahoo.com/mrss/">
-    <channel> {{ $assetFormat := .Scratch.Get "asset-format" }} <title>{{ .Site.Title}}</title>
-        <atom:link href="{{.Site.BaseURL}}feed/{{$assetFormat}}/" rel="self" type="application/rss+xml" />
-        <link>{{.Site.BaseURL}}</link>
+    <channel> {{ $assetFormat := .Scratch.Get "asset-format" }} 
+        <!-- required tags -->
+        <title>{{ .Site.Params.podcast.tagline }}</title>
         <description>{{.Site.Params.podcast.description}}</description>
-        <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
-        <sy:updatePeriod>hourly</sy:updatePeriod>
-        <sy:updateFrequency>1</sy:updateFrequency>
+        <!-- Artwork must be a minimum size of 1400 x 1400 pixels and a maximum size of 3000 x 3000
+            pixels, in JPEG or PNG format, 72 dpi, with appropriate file extensions (.jpg, .png),
+            and in the RGB colorspace. These requirements are different from the standard RSS image
+            tag specifications. -->
+        <itunes:image href="{{ .Site.Params.podcast.cdn_url }}images/logo_feed.png" /> 
         <language>it</language>
-        <copyright>Copyright&#xA9; {{.Site.Title}}</copyright>
-        <managingEditor>{{.Site.Params.author.email}} ({{ .Site.Params.author.name }})</managingEditor>
-        <webMaster>{{.Site.Params.author.email}} ({{ .Site.Params.author.name }})</webMaster>
-        <itunes:new-feed-url>{{.Site.BaseURL}}feed/{{$assetFormat}}/</itunes:new-feed-url>
-        <itunes:type>episodic</itunes:type>
-        <itunes:subtitle>{{.Site.Params.podcast.tagline}}</itunes:subtitle>
-        <itunes:summary>{{.Site.Params.podcast.description}}</itunes:summary>
-        <itunes:keywords></itunes:keywords>
         <itunes:category text="Science">
             <itunes:category text="Nature" />
         </itunes:category>
-        <itunes:category text="Technology" />
+        <itunes:category
+            text="Technology" />
+        <atom:link
+            href="{{.Site.BaseURL}}feed/{{$assetFormat}}/" rel="self" type="application/rss+xml" />
+        <itunes:explicit>false</itunes:explicit>
+        <!-- optional (recomended) tags -->
         <itunes:author>{{.Site.Params.author.name}}</itunes:author>
+        <link>{{.Site.BaseURL}}</link>
         <itunes:owner>
             <itunes:name>{{.Site.Params.author.name}}</itunes:name>
             <itunes:email>{{.Site.Params.author.email}}</itunes:email>
         </itunes:owner>
-        <itunes:block>no</itunes:block>
-        <itunes:explicit>no</itunes:explicit>
-        <itunes:image href="{{ .Site.Params.podcast.cdn_url }}images/logo_feed.png" /> 
         {{ range (where .Site.RegularPages "Params.layout" "episode")}} 
             {{ .Scratch.Set "asset" .Params.mp3 }}
         <item>
-            <link>{{.Permalink}}</link>
+            <!-- required tags -->
             <title>{{ .Params.number }}. {{ .Params.title }}</title>
+            <enclosure
+                url='{{.Site.Params.podcast.download_url}}{{ (.Scratch.Get "asset").asset_link | safeHTML }}'
+                length='{{ (.Scratch.Get "asset").length }}'
+                type="audio/{{$assetFormat}}" />
+            <!-- optional (recomended) tags -->
+            <guid>{{.Site.BaseURL}}{{if .Params.guid }}{{ .Params.guid }}{{ else }}{{ .Params.number }}{{ end }}/</guid>
             <pubDate>{{.PublishDate.Format "Mon, 02 Jan 2006 15:04:00 -0700" }}</pubDate>
             <description>{{.Params.short_description }}</description>
-            <enclosure url='{{.Site.Params.podcast.download_url}}{{ (.Scratch.Get "asset").asset_link | safeHTML }}'
-                length='{{ (.Scratch.Get "asset").length }}' 
-                type="audio/{{$assetFormat}}" />
-            <guid>{{.Site.BaseURL}}{{if .Params.guid }}{{ .Params.guid }}{{ else }}{{ .Params.number }}{{ end }}/</guid>
-            <itunes:author>{{.Site.Params.author.name}}</itunes:author>
-            <itunes:episode>{{ .Params.number }}</itunes:episode>
-            <itunes:title>{{.Params.title }}</itunes:title>
-            <itunes:summary>{{ .Content | plainify }}</itunes:summary>
-            <itunes:subtitle>{{.Params.short_description | plainify }}</itunes:subtitle>
-            <content:encoded>
-                {{ `<![CDATA[` | safeHTML }}{{ .Content }}{{ `]]>` | safeHTML}}
-            </content:encoded> 
-            {{ $scratch := newScratch }} 
-            {{ if isset .Params "image" }} {{$originalImg := resources.Get .Params.image.url }} 
-                {{ if $originalImg }} 
-                    {{ $thumbnailImg := $originalImg.Fit "3000x3000" }} 
+            <itunes:duration>{{ .Params.duration }}</itunes:duration>
+            <link>{{.Permalink}}</link>
+            <!-- Artwork must be a minimum size of 1400 x 1400 pixels and a maximum size of 3000 x 3000
+            pixels, in JPEG or PNG format, 72 dpi, with appropriate file extensions (.jpg, .png),
+            and in the RGB colorspace. These requirements are different from the standard RSS image
+            tag specifications. -->
+            {{ $scratch := newScratch }}
+            {{ if isset .Params "image" }} {{$originalImg := resources.Get .Params.image.url }}
+                {{ if $originalImg }}
+                    {{ $thumbnailImg := $originalImg.Fit "3000x3000" }}
                     {{ $scratch.Set "image" $thumbnailImg.RelPermalink }}
-                {{else}} 
+                {{else}}
                     {{ $scratch.Set "image" "images/thumbnail.svg" }}
                 {{end}}
-            {{ else }} 
-                {{$scratch.Set "image" (printf "%simages/logo_feed.png" .Site.Params.podcast.cdn_url) }} 
-            {{ end }} 
-            {{ $image := $scratch.Get "image" }} 
+            {{ else }}
+                {{$scratch.Set "image" (printf "%simages/logo_feed.png" .Site.Params.podcast.cdn_url) }}
+            {{ end }}
+            {{ $image := $scratch.Get "image" }}
             <itunes:image href="{{ (absURL $image) }}" />
-            <itunes:duration>{{ .Params.duration }}</itunes:duration>
-            <itunes:keywords>{{ delimit .Params.tags ", " }}</itunes:keywords>
-            <itunes:episodeType>{{ .Params.eptype }}</itunes:episodeType>
+            <itunes:explicit>false</itunes:explicit>            
         </item>
         {{end}} 
     </channel>
