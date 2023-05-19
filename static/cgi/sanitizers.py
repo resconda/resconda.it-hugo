@@ -19,7 +19,7 @@ def sanitize_bool(input) -> bool:
     elif type(input) is int:
         return input != 0
     elif type(input) is str:
-        return input != "0"
+        return input != "0" and input != "false"
     else:
         raise SanitiserException("Invalid bool value %s" % str(input))
 
