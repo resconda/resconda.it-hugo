@@ -76,7 +76,7 @@ window.addEventListener("load", () => {
                 } else {
                     let name = data.name;
                     successmsg = document.createElement('div'); 
-                    successmsg.classList.append("alert", "alert-info", "text-center");
+                    successmsg.classList.add("alert", "alert-info", "text-center");
                     successmsg.innerText = `Grazie ${name}! Ti contatteremo presto.`;
                     document.getElementById('form-response').append(successmsg);
                     document.getElementById('contactForm').querySelectorAll('input,textarea').forEach(el => { el.value = ""; });
@@ -93,7 +93,7 @@ window.addEventListener("load", () => {
             XHR.send(aData.join("&"));
         }else{ // invalid form
             successmsg = document.createElement('div');
-            successmsg.classList.append("alert", "alert-warning", "text-center");
+            successmsg.classList.add("alert", "alert-warning", "text-center");
             successmsg.innerText = `Ricontrolla i dati`;
             document.getElementById('form-response').append(successmsg);
         }
