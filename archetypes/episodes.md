@@ -1,6 +1,6 @@
 ---
-author: Patrice Brend'amour
-title: "Title"
+author: Marcello Corongiu
+title: "Titolo"
 layout: episode
 eptype: full
 number: {{ .Name | strings.TrimLeft "0" }} # episode_number
