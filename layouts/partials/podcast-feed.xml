@@ -54,19 +54,9 @@
             pixels, in JPEG or PNG format, 72 dpi, with appropriate file extensions (.jpg, .png),
             and in the RGB colorspace. These requirements are different from the standard RSS image
             tag specifications. -->
-            {{ $scratch := newScratch }}
-            {{ if isset .Params "image" }} {{$originalImg := resources.Get .Params.image.url }}
-                {{ if $originalImg }}
-                    {{ $thumbnailImg := $originalImg.Fit "3000x3000" }}
-                    {{ $scratch.Set "image" $thumbnailImg.RelPermalink }}
-                {{else}}
-                    {{ $scratch.Set "image" "images/thumbnail.svg" }}
-                {{end}}
-            {{ else }}
-                {{$scratch.Set "image" (printf "%simages/logo_feed.png" .Site.Params.podcast.download_url) }}
+            {{ with .Params.image }}
+            <itunes:image href="{{ partial "GetCloudinaryURL.html" (dict "name" .url) }}" />
             {{ end }}
-            {{ $image := $scratch.Get "image" }}
-            <itunes:image href="{{ (absURL $image) }}" />
             <itunes:explicit>false</itunes:explicit>            
         </item>
         {{end}} 

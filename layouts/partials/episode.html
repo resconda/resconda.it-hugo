@@ -25,24 +25,9 @@
         </div>
         <!-- Image -->
         <div class="post_thumb mr-2 mb-2">
-            {{ if .Params.image }}
-            {{ $originalImg := resources.Get .Params.image.url }}
-                {{ if $originalImg }}
-                {{ $thumbnailImg := $originalImg.Fit "800x600" }}
-            <figure>
-                <img class="post_thumbnail" alt="{{ .Params.image.alt | default .Title | markdownify | safeHTML }}"
-                    src="{{$thumbnailImg.RelPermalink}}" />
-                <figcaption class="figure-caption">{{ .Params.image.alt | default .Title | markdownify | safeHTML }}
-                </figcaption>
-            </figure>
-                {{else}}
-                {{ partial "cloudinary_image.html" (dict "image_name" .Params.image.url "alt" .Params.image.alt ) }}
-                {{end}}
-            {{else}}
-                <a href="{{ .Site.Params.podcast.download_url }}images/logo_wide.png">
-                    <img src="{{ .Site.Params.podcast.download_url }}images/logo_wide.png" alt="{{.Title}}" width="320" class="post_thumbnail" />
-                </a>
-            {{end}}
+            {{ with .Params.image }}
+            {{ partial "cloudinary_image.html" (dict "image_name" .url "alt" .alt) }}
+            {{ end }}
             <!-- <div class='post_extra mb-2'>
                 <div class="mr-1">
                     {{/* partialCached "podcast-subscribe.html" . */}}
