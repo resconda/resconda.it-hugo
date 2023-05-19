@@ -4,7 +4,7 @@
     </div>
     <div class="card-body">
         <div class="post_downloads mb-2 mr-2">
-            <div class="podcast-date">
+            <div class="text-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rocket-takeoff"
                     viewBox="0 0 16 16">
                     <path
@@ -38,7 +38,7 @@
     </div>
     <div class="card-footer text-body-secondary text-center">
         <!-- Player -->
-        <audio controls src="{{.Site.Params.podcast.download_url}}/{{.Params.mp3.asset_link}}" />
+        <audio controls src="{{.Site.Params.podcast.download_url}}{{.Params.mp3.asset_link}}" />
     </div>
 </div>
 
