@@ -18,15 +18,12 @@
             <div class="podcast-description">
                 {{.Params.short_description}}
             </div>
-            <!-- <div class="icon-download"><strong>Download As:</strong><a href="{{.Site.Params.podcast.download_url}}{{.Params.mp3.asset_link}}"
-                    class="download-link">MP3</a>
-            </div> -->
             <!-- <div class="icon-download"><strong>Rate</strong> <a href="{{.Site.Params.podcast.itunes_url}}">on iTunes</a></div> -->
         </div>
         <!-- Image -->
         <div class="post_thumb mr-2 mb-2">
             {{ with .Params.image }}
-            {{ partial "cloudinary_image.html" (dict "image_name" .url "alt" .alt) }}
+            {{ partial "cloudinary_image.html" (dict "image_name" .url "alt" .alt "class" "w-75") }}
             {{ end }}
             <!-- <div class='post_extra mb-2'>
                 <div class="mr-1">
