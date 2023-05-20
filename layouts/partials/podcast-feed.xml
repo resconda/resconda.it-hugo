@@ -15,7 +15,8 @@
             pixels, in JPEG or PNG format, 72 dpi, with appropriate file extensions (.jpg, .png),
             and in the RGB colorspace. These requirements are different from the standard RSS image
             tag specifications. -->
-        <itunes:image href="{{ .Site.Params.podcast.download_url }}images/logo_feed.png" /> 
+        <itunes:image
+            href="https://res.cloudinary.com/resconda-it/image/upload/v1684593261/assets/img/logo/resconda_logo_1400_72dpi_b2robg.png" /> 
         <language>it</language>
         <itunes:category text="Science">
             <itunes:category text="Nature" />
