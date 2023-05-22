@@ -21,12 +21,12 @@ var loglevels = map[string]log.Level{
 }
 
 type Class struct {
-	ID   uint `gorm:"primaryKey"`
-	name string
+	ID   uint   `gorm:"primaryKey"`
+	Name string `gorm:"uniqueIndex"`
 }
 type Tag struct {
-	ID   uint `gorm:"primaryKey"`
-	name string
+	ID   uint   `gorm:"primaryKey"`
+	Name string `gorm:"uniqueIndex"`
 }
 type DBContent struct {
 	ID           uint `gorm:"primaryKey"`
@@ -41,13 +41,13 @@ type DBContent struct {
 	Draft        bool
 }
 type ContentYamlHeader struct {
-	Category  string
-	Title     string
-	Date      time.Time
-	Summary   string
-	Classes   []string
-	Tags      []string
-	Cover_img struct {
+	Category    string
+	Title       string
+	Date        time.Time
+	Summary     string
+	Classes     []string
+	Tags        []string
+	Cover_image struct {
 		Src     string
 		Caption string
 	}
@@ -66,11 +66,12 @@ func initDB() {
 	database.AutoMigrate(&Tag{})
 	database.AutoMigrate(&DBContent{})
 }
-func analyseFile(filepath string) (ContentYamlHeader, error) {
+func analyseFile(file_path string) (ContentYamlHeader, error) {
 	var header ContentYamlHeader
-	file, err := os.Open(filepath)
+	header.Category = filepath.Base(filepath.Dir(file_path))
+	file, err := os.Open(file_path)
 	if err != nil {
-		log.Errorf("Unable to open file %s: %s", filepath, err.Error())
+		log.Errorf("Unable to open file %s: %s", file_path, err.Error())
 		return header, err
 	}
 	var scanner = bufio.NewScanner(file)
@@ -103,7 +104,13 @@ func analyseFile(filepath string) (ContentYamlHeader, error) {
 	if header_close {
 		err := yaml.Unmarshal([]byte(headerString), &header)
 		if err == nil { // we found the YAML header block
-			log.Infof("[analyzeFile] YAML header parsed from file %s", filepath)
+			log.Infof("[analyzeFile] YAML header parsed from file %s", file_path)
+			if len(header.Classes) == 0 {
+				log.Warningf("Header for file %s has no classes", file_path)
+			}
+			if len(header.Tags) == 0 {
+				log.Warningf("Header for file %s has no tags", file_path)
+			}
 			return header, err
 		} else {
 			log.Errorf("Error deserialising YAML header: %s", headerString)
@@ -112,7 +119,35 @@ func analyseFile(filepath string) (ContentYamlHeader, error) {
 	return header, errors.New("YAML header not found")
 }
 func updateDBFromHeader(header ContentYamlHeader) {
-
+	var entryClasses []Class
+	var entryTags []Tag
+	for _, class := range header.Classes {
+		var entryClass Class
+		database.FirstOrCreate(&entryClass, Class{Name: class})
+		entryClasses = append(entryClasses, entryClass)
+		// database.Clauses(clause.OnConflict{DoNothing: true}).Create(&entryClass)
+		// database.Save(&entryClass)
+	}
+	for _, tag := range header.Tags {
+		var entryTag Tag
+		database.FirstOrCreate(&entryTag, Tag{Name: tag})
+		entryTags = append(entryTags, entryTag)
+		// database.Clauses(clause.OnConflict{DoNothing: true}).Create(&entryTag)
+		// database.Save(&entryTag)
+	}
+	var entry DBContent = DBContent{
+		Category:     header.Category,
+		Title:        header.Title,
+		Date:         header.Date,
+		Summary:      header.Summary,
+		Draft:        header.Draft,
+		ImageSrc:     header.Cover_image.Src,
+		ImageCaption: header.Cover_image.Caption,
+		Classes:      entryClasses,
+		Tags:         entryTags,
+	}
+	database.Create(&entry)
+	database.Save(&entry)
 }
 func walkFunc(path string, d fs.DirEntry, err error) error {
 	var reterr error
@@ -147,4 +182,5 @@ func main() {
 	if err != nil {
 		log.Errorf("Walk error: %s", err.Error())
 	}
+	database.Commit()
 }
