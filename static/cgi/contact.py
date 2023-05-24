@@ -17,10 +17,14 @@ VALID_PARAMS = [
     ("email", True, sanitizers.sanitize_email),
     ("phone", False, sanitizers.sanitize_string),
     ("message", False, sanitizers.sanitize_string),
-    ("newsletter", False, sanitizers.sanitize_bool),
+    ("privacy", True, sanitizers.sanitize_bool),
 ]
 
 class ContactException(Exception):
+    pass
+
+
+class PrivacyGrantException(Exception):
     pass
 
 
@@ -69,16 +73,14 @@ def send_contact_notification(input: dict):
     name = input.get("name")
     contactEmail = input.get("email")
     message = input.get("message", "")
-    if input.get("newsletter", False):
-        message += "\n\nHo richiesto l'iscrizione alla newletter."
     
     # create the message text
     msg = """\
 From: {webmaster}
-Subject: Richiesta di contatto da {contactName} <{contactEmail}>
+Subject: Richiesta iscrizione alla newsletter da {contactName} <{contactEmail}>
 To: {siteAdminEmail}
 
-Ho inviato una richiesta di contatto dal form web.
+Mi sono iscritt@!
 
 {contactMessage}
 
@@ -104,10 +106,11 @@ Grazie,
 
 def process_form_input(req, input: dict):
     req.log_error("%s" % __name__, apache.APLOG_DEBUG)
+    # verify 'privacy' checkbox was checked
+    if input.get('privacy', False) is False:
+        raise PrivacyGrantException("Privacy policy has not been accepted by the user")
     send_contact_notification(input)
-    if input.get("newsletter", False):
-        req.log_error("Newsletter subscription requested", apache.APLOG_DEBUG)
-        add_mailtrain_subscription(req, input)
+    add_mailtrain_subscription(req, input)
 
 
 def form_contact(req):
@@ -143,6 +146,10 @@ def form_contact(req):
             errstr = "Captcha verification failed"
             output["errors"].append(errstr)
             req.log_error("%s: %s" % (errstr, str(cve)))
+        except PrivacyGrantException as pg:
+            errstr = str(pg)
+            output["errors"].append(errstr)
+            req.log_error(errstr)
         except ContactException as ce:
             errstr = "Server error. Please write to <a href=\"mailto:info@resconda.it\">info@resconda.it</a>"
             output["errors"].append(errstr)

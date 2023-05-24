@@ -16,23 +16,21 @@ var validateForm = function() {
     var phone = document.getElementsByName('phone')[0];
     var email = document.getElementsByName('email')[0];
     var message = document.getElementsByName('message')[0];
-    var newsletter = document.getElementsByName('newsletter')[0];
+    var privacy = document.getElementsByName('privacy')[0];
 
     email.setCustomValidity("");
     message.setCustomValidity("");
-    newsletter.setCustomValidity("");
+    privacy.setCustomValidity("");
     
     if(!email.checkValidity()){
         email.setCustomValidity("Indirizzo email non valido (richiesto)");
         email.reportValidity();
         ret = false;
     }
-    // a message or newsletter subscription request are required (or both)
-    if( message.value.length == 0 && !newsletter.checked){
-        message.setCustomValidity("Inserisci un messaggio o richiedi l'iscrizione alla newsletter")
-        newsletter.setCustomValidity("Inserisci un messaggio o richiedi l'iscrizione alla newsletter")
-        message.reportValidity();
-        newsletter.reportValidity();
+    // a message or privacy subscription request are required (or both)
+    if( !privacy.checked){
+        privacy.setCustomValidity("Devi accettare i termini per iscriverti alla newsletter")
+        privacy.reportValidity();
         ret = false;
     }
     if(ret){
@@ -41,7 +39,7 @@ var validateForm = function() {
             phone: phone.value,
             email: email.value,
             message: message.value,
-            newsletter : newsletter.checked
+            privacy : privacy.checked
         }
     }
     return ret;
