@@ -5,6 +5,9 @@
     {{ block "nav" . }}
     {{ partial "nav.html" . }}
     {{ end }}
+    {{ if or .Params.showNewsletterBanner .IsHome }}
+    {{ partial "newsletter_banner.html" . }}
+    {{ end }}
     {{ block "header" . }}
     {{ partial "header.html" . }}
     {{ end }}

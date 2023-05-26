@@ -1,3 +1,4 @@
+const newsletterBannerDismissedCookieName = "newsletterBannerDismissed";
 var navbarSetBackgroundAccordingToScroll = function(pageTop = null){
     if(!pageTop){
         pageTop = document.scrollTop;
@@ -16,6 +17,14 @@ function isInViewport(element) {
         rect.top <= (window.innerHeight || document.documentElement.clientHeight) *0.9
         // rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
+}
+function checkACookieExists(cookieName) {
+    if (
+        document.cookie.split(";").some((item) => item.trim().startsWith(`${cookieName}=`))
+    ) {
+        return true;
+    }
+    return false;
 }
 var scrollUtils = function () {
     var pageTop = document.body.scrollTop || document.documentElement.scrollTop;
@@ -68,4 +77,16 @@ window.addEventListener("load", () => {
     document.getElementById('siteNavbar').addEventListener('hidden.bs.collapse', event => {
         navbarSetBackgroundAccordingToScroll();
     });
+    var newsletterBanner = document.getElementById('newsletter-banner');
+    if(newsletterBanner !== undefined){
+        newsletterBanner.addEventListener('closed.bs.alert', event => {
+            console.log('Newsletter banner closed');
+            duration = 7 * 24 * 3600;// 1 week
+            document.cookie = newsletterBannerDismissedCookieName + "=1;     max-age=" + duration + ";   Secure;"
+        });
+        wasDismissed = checkACookieExists(newsletterBannerDismissedCookieName);
+        if(!wasDismissed){
+            newsletterBanner.classList.remove('d-none');
+        }
+    }
 });
