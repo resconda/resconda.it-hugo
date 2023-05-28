@@ -130,7 +130,7 @@ ol>li, ul>li {
     .container, .container-fluid {
         /*font-size: 125%; non l'ho capita*/
         max-width: 50em;
-        .container-full {
+        &.container-full {
             max-width: unset;
         }
     }
@@ -153,6 +153,10 @@ ol>li, ul>li {
       margin: unset;
     }
   }
+}
+.list-group.list-group-transparent li{
+  background-color: transparent;
+  border: none;
 }
 @include media-breakpoint-down(lg) {
   #siteNavbar .navbar-collapse {
@@ -234,6 +238,10 @@ img {
     }
   }
   font-weight: bold;
+}
+.svg-icon {
+  width: 1.5em; 
+  height: 1.5em;
 }
 blockquote {
     padding-left: 1em;
