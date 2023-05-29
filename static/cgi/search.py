@@ -1,5 +1,6 @@
 import sqlite3
 from mod_python import apache
+import urllib.parse as ups
 import os
 from json import dumps as jds
 
@@ -12,7 +13,7 @@ draft = 0
 AND ( 0
     OR category LIKE :category
     OR title LIKE :title
-    OR summary LIKE :sumamry
+    OR summary LIKE :summary
     OR image_caption LIKE :caption
     )
 '''
@@ -20,9 +21,13 @@ CATEGORIES_QUERY = '''\
 SELECT id, category FROM categories WHERE
 '''
 
+def dict_factory(cursor, row):
+    fields = [column[0] for column in cursor.description]
+    return {key: value for key, value in zip(fields, row)}
+
 def _dbcursor() -> sqlite3.Cursor:
     con = sqlite3.connect(DB_PATH)
-    con.row_factory = sqlite3.Row
+    con.row_factory = dict_factory
     cur = con.cursor()
     return cur
 
@@ -39,6 +44,7 @@ def _make_generic_query(term: str) -> list:
         ret.append(row)
     return ret
 
+
     
 """ 
 GET /search?q={search_term}
@@ -51,12 +57,14 @@ def search(req):
     # hence we must always handle lists, even when only one value is expected
     rawparams = ups.parse_qs(rawdata)
     req.log_error("Parsed params: %s" % str(rawparams), apache.APLOG_DEBUG)
-    term = rawparams['q']
-    rows = _make_generic_query(term)
+    term = rawparams.get('q', [""])
+    rows = _make_generic_query(term[0])
+    req.content_type = "application/json"
     req.write(jds({
         "term": term,
         "data": rows
     }))
+    return apache.OK
 
 """ 
 GET /search/categories
@@ -66,9 +74,11 @@ def search_categories(req):
     results = []
     for row in cursor.execute("SELECT DISTINCT category FROM db_contents WHERE draft = 0"):
         results.append(row['category'])
-    req.write({
+    req.content_type = "application/json"
+    req.write(jds({
         "data": results
-    })
+    }))
+    return apache.OK
 
 
 """ 
@@ -79,9 +89,11 @@ def search_classes(req):
     results = []
     for row in cursor.execute("SELECT * FROM classes"):
         results.append(row)
-    req.write({
+    req.content_type = "application/json"
+    req.write(jds({
         "data": results
-    })
+    }))
+    return apache.OK
 
 """ 
 GET /search/tags
@@ -91,6 +103,9 @@ def search_tags(req):
     results = []
     for row in cursor.execute("SELECT * FROM tags"):
         results.append(row)
-    req.write({
+    req.content_type = "application/json"
+    req.write(jds({
         "data": results
-    })
+    }))
+    return apache.OK
+    
