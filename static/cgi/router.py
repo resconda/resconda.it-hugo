@@ -1,10 +1,11 @@
 from mod_python import apache
 from contact import form_contact
-from search import search
+from search import search, search_categories
 
 URIs = [
     ("/cgi/form_contact", form_contact),
     ("/cgi/search", search),
+    ("/cgi/search/categories", search_categories),
 ]
 
 def handler(req):
