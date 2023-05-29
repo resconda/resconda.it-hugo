@@ -13,7 +13,7 @@ definitions:
             cd scripts/go/searchdb
             go mod tidy && go build || exit 1
             cd -
-            ./scripts/go/searchdb/searchdb
+            ./scripts/go/searchdb/searchdb ./content
         artifacts:
           - contents.sqlite
     - step: &build
