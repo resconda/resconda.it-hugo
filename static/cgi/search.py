@@ -21,10 +21,13 @@ CATEGORIES_QUERY = '''\
 SELECT id, category FROM categories WHERE
 '''
 
+<<<<<<< HEAD
 def dict_factory(cursor, row):
     fields = [column[0] for column in cursor.description]
     return {key: value for key, value in zip(fields, row)}
 
+=======
+>>>>>>> 9f8c311 (RI-33 search backend wip)
 def _dbcursor() -> sqlite3.Cursor:
     con = sqlite3.connect(DB_PATH)
     con.text_factory = bytes
