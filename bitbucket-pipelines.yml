@@ -20,20 +20,11 @@ definitions:
         image: klakegg/hugo:0.105.0-ext
         name: Build Hugo
         script:
-          - | # build search db
-            cd scripts/go/searchdb
-            go mod tidy && go build
-            cd -
-            ./scripts/go/searchdb/searchdb
           - | # build Hugo site
             if [[ "${BITBUCKET_BRANCH}" != "master" ]]; then
               DEBUG="-D"
             fi
             hugo $DEBUG
-          - | # place search db into public folder
-            mkdir -p public/cgi/res
-            cp test.db public/cgi/res/
-
         artifacts:
           - public/**
     - step: &deploy
