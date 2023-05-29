@@ -20,7 +20,7 @@ CATEGORIES_QUERY = '''\
 SELECT id, category FROM categories WHERE
 '''
 
-def _dbcursor() -> sqlite3.cursor:
+def _dbcursor() -> sqlite3.Cursor:
     con = sqlite3.connect(DB_PATH)
     con.row_factory = sqlite3.Row
     cur = con.cursor()
@@ -40,57 +40,57 @@ def _make_generic_query(term: str) -> list:
     return ret
 
     
-    """ 
-    GET /search?q={search_term}
-    """
-    def search(req):
-        rawdata = req.read().decode()
-        req.log_error(rawdata,  apache.APLOG_DEBUG)
-        # parse_qs yields a dict whose values are all lists of values,
-        # so that multiple occurrences of a parameter are handled
-        # hence we must always handle lists, even when only one value is expected
-        rawparams = ups.parse_qs(rawdata)
-        req.log_error("Parsed params: %s" % str(rawparams), apache.APLOG_DEBUG)
-        term = rawparams['q']
-        rows = _make_generic_query(term)
-        req.write(jds({
-            "term": term,
-            "data": rows
-        }))
+""" 
+GET /search?q={search_term}
+"""
+def search(req):
+    rawdata = req.read().decode()
+    req.log_error(rawdata,  apache.APLOG_DEBUG)
+    # parse_qs yields a dict whose values are all lists of values,
+    # so that multiple occurrences of a parameter are handled
+    # hence we must always handle lists, even when only one value is expected
+    rawparams = ups.parse_qs(rawdata)
+    req.log_error("Parsed params: %s" % str(rawparams), apache.APLOG_DEBUG)
+    term = rawparams['q']
+    rows = _make_generic_query(term)
+    req.write(jds({
+        "term": term,
+        "data": rows
+    }))
 
-    """ 
-    GET /search/categories
-    """
-    def search_categories(req):
-        cursor = _dbcursor()
-        results = []
-        for row in cursor.execute("SELECT DISTINCT category FROM db_contents WHERE draft = 0"):
-            results.append(row['category'])
-        req.write({
-            "data": results
-        })
+""" 
+GET /search/categories
+"""
+def search_categories(req):
+    cursor = _dbcursor()
+    results = []
+    for row in cursor.execute("SELECT DISTINCT category FROM db_contents WHERE draft = 0"):
+        results.append(row['category'])
+    req.write({
+        "data": results
+    })
 
-    
-    """ 
-    GET /search/classes
-    """
-    def search_classes(req):
-        cursor = _dbcursor()
-        results = []
-        for row in cursor.execute("SELECT * FROM classes"):
-            results.append(row)
-        req.write({
-            "data": results
-        })
-    
-    """ 
-    GET /search/tags
-    """
-    def search_tags(req):
-        cursor = _dbcursor()
-        results = []
-        for row in cursor.execute("SELECT * FROM tags"):
-            results.append(row)
-        req.write({
-            "data": results
-        })
+
+""" 
+GET /search/classes
+"""
+def search_classes(req):
+    cursor = _dbcursor()
+    results = []
+    for row in cursor.execute("SELECT * FROM classes"):
+        results.append(row)
+    req.write({
+        "data": results
+    })
+
+""" 
+GET /search/tags
+"""
+def search_tags(req):
+    cursor = _dbcursor()
+    results = []
+    for row in cursor.execute("SELECT * FROM tags"):
+        results.append(row)
+    req.write({
+        "data": results
+    })
