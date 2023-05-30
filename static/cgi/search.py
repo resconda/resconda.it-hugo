@@ -50,12 +50,7 @@ def _make_generic_query(term: str) -> list:
 GET /search?q={search_term}
 """
 def search(req):
-    rawdata = req.read().decode()
-    req.log_error(rawdata,  apache.APLOG_DEBUG)
-    # parse_qs yields a dict whose values are all lists of values,
-    # so that multiple occurrences of a parameter are handled
-    # hence we must always handle lists, even when only one value is expected
-    rawparams = ups.parse_qs(rawdata)
+    rawparams = ups.parse_qs(req.args)
     req.log_error("Parsed params: %s" % str(rawparams), apache.APLOG_DEBUG)
     term = rawparams.get('q', [""])
     rows = _make_generic_query(term[0])
