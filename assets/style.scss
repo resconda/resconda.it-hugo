@@ -380,6 +380,9 @@ table, .highlight>pre, pre.example {
     opacity: 0;
   }
 }
+#podcast-links {
+  background-color: $background1;
+}
 $fadein_delay: 0.3s;
 .fadein-scroll, .fadein-onload {
   opacity: 0;
