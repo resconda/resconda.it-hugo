@@ -242,6 +242,8 @@ img {
 .svg-icon {
   width: 1.5em; 
   height: 1.5em;
+  stroke: $logo-color-orange;
+  fill: $logo-color-orange;
 }
 blockquote {
     padding-left: 1em;
@@ -382,6 +384,10 @@ table, .highlight>pre, pre.example {
 }
 #podcast-links {
   background-color: $background1;
+  color: $logo-color-orange;
+  a {
+    color: $logo-color-orange;
+  }
 }
 $fadein_delay: 0.3s;
 .fadein-scroll, .fadein-onload {
