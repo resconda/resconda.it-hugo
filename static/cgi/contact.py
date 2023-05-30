@@ -117,12 +117,7 @@ def form_contact(req):
     output = {
         "errors": []
     }
-    rawdata = req.read().decode()
-    req.log_error(rawdata,  apache.APLOG_DEBUG)
-    # parse_qs yields a dict whose values are all lists of values,
-    # so that multiple occurrences of a parameter are handled
-    # hence we must always handle lists, even when only one value is expected
-    rawparams = ups.parse_qs(rawdata)
+    rawparams = req.args
     req.log_error("Parsed params: %s" % str(rawparams), apache.APLOG_DEBUG)
     validationErrors = validate_input(params=rawparams)
     if len(validationErrors) > 0:
