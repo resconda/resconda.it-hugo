@@ -10,9 +10,11 @@ cover_image:
 classes:
   - Wh
 tags:
+  - cucina
   - food
   - sostenibilità
   - efficienza energetica
+  - casa
 ---
 
 Quanta energia serve a cucinare un piatto di pasta in modo tradizionale? Quanta energia possiamo risparmiare introducendo i suggerimenti di Giorgio Parisi, premio [Nobel per la fisica 2021](https://www.nobelprize.org/prizes/physics/2021/parisi/facts/)?

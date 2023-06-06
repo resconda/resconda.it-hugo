@@ -1,14 +1,18 @@
 ---
 tags:
-- energia
-- casa
-- cucina
+  - cucina
+  - food
+  - sostenibilità
+  - efficienza energetica
+  - casa
 date: '2023-06-04'
 title: 'Piastra a induzione vs. fornello a gas'
 classes: 
 - wh
 summary: |
   Con i rincari delle bollette di luce e soprattutto di gas, è tornata in auge la discussione su cosa convenga di più, in termini economici, tra una tradizionale cucina a gas e una moderna piastra a induzione. Ma quella che costa meno sarà anche la meno energivora? 
+cover_image:
+  src: assets/post-img/piqsels.com-id-zbqtj_psfhiy
 ---
 
 Come promesso in una [precedente](/articles/la-pasta-alla-parisi-1/) pillola, vogliamo continuare sul tema "energia in cucina" e vedere se la tecnologia può darci una mano a intaccare meno il nostro budget energetico quando siamo "ai fornelli". 
