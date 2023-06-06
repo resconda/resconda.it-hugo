@@ -1,11 +1,21 @@
 <ul class="cloud" role="navigation" aria-label="Webdev tag cloud" data-show-value="true">
 	{{ $data := newScratch }}
 	{{ $data.Set "maxCount" 0 }}
+	{{ $data.Set "minCount" 99999 }}
+	
 	{{ range (site.Taxonomies.tags) }}
-	<li><a href="{{ .Page.Permalink }}" data-weight="{{.Count}}">{{ .Page.Title }}</a></li>
-	{{ $data.Set "maxCount" (math.Max .Count ($data.Get "maxCount")) }}
+		{{ $data.Set "maxCount" (math.Max .Count ($data.Get "maxCount")) }}
+		{{ $data.Set "minCount" (math.Min .Count ($data.Get "minCount")) }}
 	{{ end }}
 	{{ $maxCount := $data.Get "maxCount" }}
+	{{ $minCount := $data.Get "minCount"}}
+	{{ $maxSize := 9 }}
+	{{ $minSize := 1 }}
+	{{ $steep := math.Div (math.Sub $maxSize $minSize) (math.Sub $maxCount $minCount)}}
+	{{ range (site.Taxonomies.tags) }}
+	{{ $size := math.Ceil (math.Mul $steep .Count )}}
+	<li><a href="{{ .Page.Permalink }}" style="--size: {{$size}}" data-count="{{.Count}}">{{ .Page.Title }}</a></li>
+	{{ end }}
 </ul>
 <style>
 	ul.cloud a {
@@ -20,16 +30,8 @@
 		/* these set the tag label size according to data-weight attr */
 		font-size: calc(var(--size) * 0.25rem + 0.7rem);
 	}
-	ul.cloud a[data-weight="{{ math.Sub $maxCount 0}}"] { --size: {{ math.Sub $maxCount 0}}}
-	ul.cloud a[data-weight="{{ math.Sub $maxCount 1}}"] { --size: {{ math.Sub $maxCount 1}}}
-	ul.cloud a[data-weight="{{ math.Sub $maxCount 2}}"] { --size: {{ math.Sub $maxCount 2}}}
-	ul.cloud a[data-weight="{{ math.Sub $maxCount 3}}"] { --size: {{ math.Sub $maxCount 3}}}
-	ul.cloud a[data-weight="{{ math.Sub $maxCount 4}}"] { --size: {{ math.Sub $maxCount 4}}}
-	ul.cloud a[data-weight="{{ math.Sub $maxCount 5}}"] { --size: {{ math.Sub $maxCount 5}}}
-	ul.cloud a[data-weight="{{ math.Sub $maxCount 6}}"] { --size: {{ math.Sub $maxCount 6}}}
-	ul.cloud a[data-weight="{{ math.Sub $maxCount 7}}"] { --size: {{ math.Sub $maxCount 7}}}
-	ul.cloud a[data-weight="{{ math.Sub $maxCount 8}}"] { --size: {{ math.Sub $maxCount 8}}}
-	ul.cloud a[data-weight="{{ math.Sub $maxCount 9}}"] { --size: {{ math.Sub $maxCount 9}}}
-	ul.cloud a[data-weight="{{ math.Sub $maxCount 10}}"] { --size: {{ math.Sub $maxCount 10}}}
-	ul.cloud a[data-weight="{{ math.Sub $maxCount 11}}"] { --size: {{ math.Sub $maxCount 11}}}
+	ul.cloud a::after {
+		content: " (" attr(data-count) ")";
+    	font-size: 1rem;
+	}
 </style>

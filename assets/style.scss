@@ -504,10 +504,10 @@ ul.cloud {
   line-height: 2.5rem;
   
   /* this shows the counter next to the tag label */
-  &[data-show-value] a::after {
-    content: " (" attr(data-weight) ")";
-    font-size: 1rem;
-  }
+  // &[data-show-value] a::after {
+  //   content: " (" attr(data-weight) ")";
+  //   font-size: 1rem;
+  // }
 }
 /* lists */
 
