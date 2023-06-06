@@ -3,7 +3,7 @@ tags:
 - energia
 - casa
 - cucina
-created: '2023-06-04'
+date: '2023-06-04'
 title: 'Piastra a induzione vs. fornello a gas'
 classes: 
 - wh
