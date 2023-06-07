@@ -1,6 +1,4 @@
 ---
-## Important: If this is a draft, next line should NOT begin with #
-draft: true
 title: Energia, ambiente, ricchezza
 date: 2023-06-07
 ## below are user-defined parameters (lower case keys recommended)

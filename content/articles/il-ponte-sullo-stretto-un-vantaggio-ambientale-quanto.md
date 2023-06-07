@@ -57,15 +57,12 @@ Quanta CO2 si emette per fare il ponte? In assenza di un progetto validato parti
 - 2,3 kt tiranti acciaio nobile (4000 gCO2eq/kg)
 - 34 km3 asfalto (20 kt)
 
-[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4809014](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4809014/#:~:text=The%20construction%20process%20includes%20the,pavement%20construction%20is%2052%2C264%2C916.06%20kg).
 
 Tot. 605 kt CO2eq di materiali, considerando in maniera molto approssimativa un costo energetico di +300 kt CO2eq (pari al 50%) per la realizzazione del ponte più 100 kt per la linea ferroviaria, fa un totale di 1 Milione di tonnellate di CO2eq.
 
 Facendo una proporzione puramente lineare tra i due ponti (rapporto lunghezze ponti del 42% - 8 km / 3,3 km) il risultato è di 420 kt CO2 eq per la realizzazione dell'opera.
 
 Se consideriamo invece uno studio che mira ad individuare il costo in termini di CO2 della realizzazione dei ponti, interpolando in maniera orientativa i dati presentati nei grafici in considerazione dei valori dimensionali ed economici del ponte sullo stretto - approssimativamente 219.000 mq (60 x 3660 m da progetto attuale) per 15 miliardi di euro di investimento, il costo si aggirerebbe intorno a 800-1000 ktCO2e.
-
-[https://theacademic.com/the-carbon-footprint-of-bridges/](https://theacademic.com/the-carbon-footprint-of-bridges/#:~:text=The%20average%20normalised%20carbon%20for,steel%20or%20cement%20and%20concrete)
 
 Possiamo quindi considerare conservativamente un valore medio di 600 ktCO2e per la realizzazione del ponte.
 
@@ -79,6 +76,9 @@ Fonti
 - [https://www.siteb.it/wp-content/uploads/rassegna_del_bitume/articoli/3400_1.pdf](https://www.siteb.it/wp-content/uploads/rassegna_del_bitume/articoli/3400_1.pdf)
 - [https://www.yumpu.com/en/document/read/35498140/environmental-product-declaration-for-railway-bridges-on-the-](https://www.yumpu.com/en/document/read/35498140/environmental-product-declaration-for-railway-bridges-on-the-)
 - [https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.13293](https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.13293)
+- [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4809014](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4809014/#:~:text=The%20construction%20process%20includes%20the,pavement%20construction%20is%2052%2C264%2C916.06%20kg).
+- [https://theacademic.com/the-carbon-footprint-of-bridges/](https://theacademic.com/the-carbon-footprint-of-bridges/#:~:text=The%20average%20normalised%20carbon%20for,steel%20or%20cement%20and%20concrete)
+
 
 {{< /details >}}
 
