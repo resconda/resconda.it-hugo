@@ -12,7 +12,7 @@ tags:
   - grandi opere
   - CO2
 classes:
-  - gwh
+  - GWh
 ---
 
 Nel marzo scorso è stato approvato un provvedimento che prevede il riavvio del percorso di progettazione e realizzazione del Ponte sullo stretto. Secondo il Ministro delle Infrastrutture Matteo Salvini "*si tratta di un'opera fortemente green: consentirà di ridurre l'inquinamento da anidride carbonica*".

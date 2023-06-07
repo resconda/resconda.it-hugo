@@ -8,7 +8,7 @@ tags:
 date: '2023-06-04'
 title: 'Gas, elettrico tradizionale o induzione?'
 classes: 
-- wh
+- Wh
 summary: |
   Da un punto di vista energetico ha senso optare per le piastre ad induzione al posto dei fornelli a gas o delle piastre elettriche tradizionali? Quanta energia consumano realmente?
 cover_image:

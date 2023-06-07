@@ -12,7 +12,7 @@ tags:
   - energia
   - società
 classes:
-  - mwh
+  - MWh
 ---
 
 In una delle pillole dei mesi scorsi abbiamo riportato l'impatto energetico di [*un viaggio aereo*](/articles/energia-dei-voli-aerei/). In quel post abbiamo considerato una tratta "media" di 1000 km su un volo commerciale "standard" il cui consumo di energia è risultato pari a circa 300 kWh per passeggero.
