@@ -1,6 +1,4 @@
 ---
-## Important: If this is a draft, next line should NOT begin with #
-draft: true
 title: "Il ponte sullo stretto: un vantaggio ambientale? Quanto?"
 date: 2023-06-07
 ## below are user-defined parameters (lower case keys recommended)
@@ -10,8 +8,11 @@ cover_image: # optional
   src: assets/post-img/ponte_xjgj2b
 #   caption: "caption string"
 tags:
-  - tag1
-  - tag2
+  - cemento
+  - grandi opere
+  - CO2
+classes:
+  - gwh
 ---
 
 Nel marzo scorso è stato approvato un provvedimento che prevede il riavvio del percorso di progettazione e realizzazione del Ponte sullo stretto. Secondo il Ministro delle Infrastrutture Matteo Salvini "*si tratta di un'opera fortemente green: consentirà di ridurre l'inquinamento da anidride carbonica*".
