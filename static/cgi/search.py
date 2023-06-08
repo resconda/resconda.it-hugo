@@ -27,7 +27,6 @@ def dict_factory(cursor, row):
 
 def _dbcursor() -> sqlite3.Cursor:
     con = sqlite3.connect(DB_PATH)
-    con.text_factory = bytes
     con.row_factory = dict_factory
     cur = con.cursor()
     return cur
