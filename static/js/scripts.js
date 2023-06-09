@@ -59,6 +59,18 @@ var offsetBodyPaddingTop = function() {
     var navheight = document.querySelector("nav.navbar").offsetHeight;
     document.body.style.paddingTop = `${navheight}px`;
 };
+var searchPage = function(searchTerm) {
+    var XHR = new XMLHttpRequest();
+    XHR.addEventListener('load', (event) => {
+        var data = JSON.parse(XHR.responseText);
+        console.log(data);
+    });
+    XHR.addEventListener('error', (event) => {
+        console.log("searchPage error: " + XHR.responseText);
+    });
+    XHR.open('GET', `/cgi/search?q=${encodeURIComponent(searchTerm)}`);
+    XHR.send();
+}
 document.addEventListener("scroll", _.throttle(scrollUtils, 100));
 window.addEventListener("load", () => {
     offsetBodyPaddingTop();
@@ -89,4 +101,8 @@ window.addEventListener("load", () => {
             newsletterBanner.classList.remove('d-none');
         }
     }
+    document.getElementById('searchButton').addEventListener('click', event => {
+        var searchTerm = document.getElementById('searchTerm').value;
+        searchPage(searchTerm);
+    });
 });
