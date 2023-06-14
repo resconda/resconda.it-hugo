@@ -17,3 +17,5 @@ Basta ascoltare roba noiosa e banale, iscriviti al canale podcast e fai iscriver
 Le puntate hanno una durata di circa 15 minuti e cadenza (speriamo) settimanale.
 
 Non ti deluderà!  (nel caso puoi comunque azzerare il volume...)
+
+{{< podcast_links >}}

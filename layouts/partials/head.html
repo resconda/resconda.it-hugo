@@ -2,14 +2,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="{{ .Site.Params.logo | absLangURL }}">
-
     {{ if .IsHome }}
-    <title>{{ .Title }}</title>
+    <title>{{ .Title | htmlUnescape }}</title>
     {{ else }}
-        {{ if .Params.seoTitle }}
-    <title>{{ .Params.seoTitle }}</title>
+        {{ if .Params.seoTitle | htmlUnescape }}
+    <title>{{ .Params.seoTitle | htmlUnescape }}</title>
         {{ else }}
-    <title>{{ .Title }}</title>
+    <title>{{ .Title | htmlUnescape }}</title>
         {{ end }}
     {{ end}}
     {{ with .Params.cover_image.src }}

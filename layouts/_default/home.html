@@ -241,7 +241,10 @@
             </div>
         </div>
     </section>
-    {{ partial "podcast_links.html" . }}
+    <section id="podcast-links" class="py-4">
+        <div class="h4 text-center">Ascolta il podcast di ResConDA</div>
+        {{ partial "podcast_links.html" . }}
+    </section>
 </div>
 {{ end }}
 {{ define "footer_scripts" }}
