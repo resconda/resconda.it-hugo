@@ -4,7 +4,7 @@
 {{ define "main" }}
 <div class="fullwidth-container">
   {{with $.Title}}
-  <h1 class="title">{{ $.Title }}
+  <h1 class="title">{{ $.Title | htmlUnescape }}
     <br>
     {{with $.Params.Subtitle}}
     <span class="subtitle">{{ $.Params.Subtitle }}</span>

@@ -10,7 +10,7 @@
     <div class="col-12 col-lg-8">
       <section id="main">
         <h1 id="title">
-          {{ .Title }}
+          {{ .Title| htmlUnescape }}
        </h1>
        <div style="position:relative;">
         {{ if isset .Params.classes 0 }}
