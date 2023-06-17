@@ -22,7 +22,6 @@ Il bando riconosce una borsa di studio di circa 1.100 eur/mese per 9 mesi di lav
 **Nel caso fossi a conoscenza di qualcuno potenzialmente interessato/a a partecipare al bando** digli di scrivere a
 [*info@resconda.it*](mailto:info@resconda.it)
 
-Una scheda riassuntiva del progetto è disponibile [*QUI*](https://drive.google.com/file/d/1-WSMnu5e3FrBeFxsmYJ6FNGw2e5oUiqG/view?usp=sharing)
 
 <!--
   created 2022-11-03 20:08:24.84956 +0100 CET m=+0.076228335
