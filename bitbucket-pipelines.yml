@@ -14,6 +14,10 @@ definitions:
             go mod tidy && go build || exit 1
             cd -
             ./scripts/go/searchdb_builder/searchdb ./content
+          - | # build search server
+            cd scripts/go/searchdb_server
+            go mod tidy && go build || exit 1
+            # TODO add go run or spawn server execution
         artifacts:
           - contents.sqlite
     - step: &build
