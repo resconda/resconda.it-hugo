@@ -10,10 +10,10 @@ definitions:
         name: "Build searchdb with go"
         script:
           - | # build search db
-            cd scripts/go/searchdb
+            cd scripts/go/searchdb_builder
             go mod tidy && go build || exit 1
             cd -
-            ./scripts/go/searchdb/searchdb ./content
+            ./scripts/go/searchdb_builder/searchdb ./content
         artifacts:
           - contents.sqlite
     - step: &build

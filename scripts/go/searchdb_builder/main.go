@@ -113,7 +113,7 @@ func analyseFile(file_path string) (ContentYamlHeader, error) {
 			}
 			return header, err
 		} else {
-			log.Errorf("Error deserialising YAML header: %s", headerString)
+			log.Errorf("Error deserialising YAML header in file %s: %s", file_path, err.Error())
 		}
 	}
 	return header, errors.New("YAML header not found")
