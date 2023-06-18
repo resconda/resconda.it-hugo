@@ -5,7 +5,7 @@ tags:
   - sostenibilità
   - efficienza energetica
   - casa
-date: '2023-06-04'
+date: 2023-06-04
 title: 'Gas, elettrico tradizionale o induzione?'
 classes: 
 - Wh
