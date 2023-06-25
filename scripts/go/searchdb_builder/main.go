@@ -7,6 +7,7 @@ import (
 	"io/fs"
 	"os"
 	"path/filepath"
+	"strings"
 	"time"
 
 	log "github.com/sirupsen/logrus"
@@ -39,6 +40,7 @@ type DBContent struct {
 	ImageSrc     string
 	ImageCaption string
 	Draft        bool
+	Path         string
 }
 type ContentYamlHeader struct {
 	Category    string
@@ -52,6 +54,7 @@ type ContentYamlHeader struct {
 		Caption string
 	}
 	Draft bool
+	Path  string
 }
 
 var database *gorm.DB
@@ -145,6 +148,7 @@ func updateDBFromHeader(header ContentYamlHeader) {
 		ImageCaption: header.Cover_image.Caption,
 		Classes:      entryClasses,
 		Tags:         entryTags,
+		Path:         header.Path,
 	}
 	database.Create(&entry)
 	database.Save(&entry)
@@ -159,6 +163,10 @@ func walkFunc(path string, d fs.DirEntry, err error) error {
 		if lerr != nil {
 			log.Errorf("Unable to parse YAML header from file %s: %s", path, lerr.Error())
 		} else {
+			header.Path = strings.ReplaceAll(path, "../", "")
+			header.Path = strings.ReplaceAll(header.Path, filepath.Ext(path), "")
+			firstSlash := strings.Index(header.Path, "/")
+			header.Path = header.Path[firstSlash:]
 			updateDBFromHeader(header)
 		}
 	}

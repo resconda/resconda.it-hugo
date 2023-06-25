@@ -19,6 +19,7 @@ type DbContentResult struct {
 	Title    string
 	Date     string
 	Summary  string
+	Path     string
 }
 type SearchResult struct {
 	DbResult DbContentResult
@@ -47,7 +48,7 @@ func searchDB(c *gin.Context) {
 	var q, category string
 	category, exists = c.GetQuery("category")
 	queryContents := db.Table("db_contents").Select(
-		"db_contents.id", "category", "title", "summary", "date").Joins(
+		"db_contents.id", "category", "title", "summary", "date", "path").Joins(
 		"LEFT JOIN content_tags ct ON ct.db_content_id = db_contents.id").Joins(
 		"LEFT JOIN tags ON tags.id = ct.tag_id").Group("db_contents.id")
 	if exists {
