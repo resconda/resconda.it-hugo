@@ -46,7 +46,7 @@ definitions:
             rsync -e 'ssh -p 44367' -vru --delete scripts/go/searchdb_server/ ${HETZNER_SSH_USER}@${HETZNER_HOST}:/tmp/searchdb_server/
             ssh -p 44367 ${HETZNER_SSH_USER}@${HETZNER_HOST} "cd /tmp/searchdb_server && \
               export CONTENTS_SQLITE_DBPATH=${HETZNER_DEPLOYPATH}/cgi/res/contents.sqlite && \
-              docker-compose down && docker-compose up -d
+              docker-compose down && docker-compose up -d"
 pipelines:
   branches:
     master:
