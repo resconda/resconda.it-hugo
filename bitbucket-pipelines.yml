@@ -14,14 +14,8 @@ definitions:
             go mod tidy && go build || exit 1
             cd -
             ./scripts/go/searchdb_builder/searchdb ./content
-          # - | # build search server
-          #   cd scripts/go/searchdb_server
-          #   go mod tidy && go build || exit 1
-          #   cd -
-          #   cp ./scripts/go/searchdb_server/searchdb_server ./
         artifacts:
           - contents.sqlite
-          # - searchdb_server
     - step: &build
         image: klakegg/hugo:0.105.0-ext
         name: Build Hugo
@@ -41,12 +35,18 @@ definitions:
           - | # place search db into public folder
             mkdir -p public/cgi/res
             cp contents.sqlite public/cgi/res/
-          - |
+          - | # deploy public folder
             if [[ ! "${HETZNER_DEPLOYPATH}" =~ "/home/${HETZNER_SSH_USER}/.*" ]]; then
               echo "${HETZNER_DEPLOYPATH} is not a valid folder. Aborting"
               exit 1
             fi
             rsync -e 'ssh -p 44367' -vru --delete public/ ${HETZNER_SSH_USER}@${HETZNER_HOST}:${HETZNER_DEPLOYPATH}/
+          - | # deploy searchdb_server container
+            ssh -p 44367 ${HETZNER_SSH_USER}@${HETZNER_HOST} "mkdir -p /tmp/seachdb_server"
+            rsync -e 'ssh -p 44367' -vru --delete scripts/go/searchdb_server/ ${HETZNER_SSH_USER}@${HETZNER_HOST}:/tmp/searchdb_server/
+            ssh -p 44367 ${HETZNER_SSH_USER}@${HETZNER_HOST} "cd /tmp/searchdb_server && \
+              export CONTENTS_SQLITE_DBPATH=${HETZNER_DEPLOYPATH}/cgi/res/contents.sqlite && \
+              docker-compose down && docker-compose up -d
 pipelines:
   branches:
     master:
