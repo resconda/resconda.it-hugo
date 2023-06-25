@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  server:
+    build: .
+    volumes:
+    - ${CONTENTS_SQLITE_DBPATH}:/usr/src/app/contents.sqlite # .env file
+    entrypoint: app ./contents.sqlite
+    ports:
+      - 0.0.0.0:48081:80

@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
 
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
@@ -33,7 +34,7 @@ type SearchOutput struct {
 }
 
 func searchDB(c *gin.Context) {
-	db, err := gorm.Open(sqlite.Open("contents.sqlite"), &gorm.Config{})
+	db, err := gorm.Open(sqlite.Open(DATABASE), &gorm.Config{})
 	var output SearchOutput
 	if err != nil {
 		errstr := fmt.Sprintf("Unable to open DB: %s", err.Error)
@@ -80,6 +81,10 @@ func searchDB(c *gin.Context) {
 }
 
 func main() {
+	args := os.Args
+	if len(args) > 1 {
+		DATABASE = args[1]
+	}
 	router := gin.Default()
 	router.GET("/search", searchDB)
 
