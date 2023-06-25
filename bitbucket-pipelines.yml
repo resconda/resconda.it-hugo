@@ -14,12 +14,14 @@ definitions:
             go mod tidy && go build || exit 1
             cd -
             ./scripts/go/searchdb_builder/searchdb ./content
-          - | # build search server
-            cd scripts/go/searchdb_server
-            go mod tidy && go build || exit 1
-            # TODO add go run or spawn server execution
+          # - | # build search server
+          #   cd scripts/go/searchdb_server
+          #   go mod tidy && go build || exit 1
+          #   cd -
+          #   cp ./scripts/go/searchdb_server/searchdb_server ./
         artifacts:
           - contents.sqlite
+          # - searchdb_server
     - step: &build
         image: klakegg/hugo:0.105.0-ext
         name: Build Hugo

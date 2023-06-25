@@ -68,7 +68,7 @@ var searchPage = function(searchTerm) {
     XHR.addEventListener('error', (event) => {
         console.log("searchPage error: " + XHR.responseText);
     });
-    XHR.open('GET', `/cgi/search?q=${encodeURIComponent(searchTerm)}`);
+    XHR.open('GET', `/search?q=${encodeURIComponent(searchTerm)}`);
     XHR.send();
 }
 document.addEventListener("scroll", _.throttle(scrollUtils, 100));
