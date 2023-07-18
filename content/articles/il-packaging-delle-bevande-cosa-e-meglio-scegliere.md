@@ -1,5 +1,5 @@
 ---
-title: "Il packaging delle bevande: cosa e meglio scegliere?"
+title: "Il packaging delle bevande: cosa è meglio scegliere?"
 date: 2023-07-16
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
