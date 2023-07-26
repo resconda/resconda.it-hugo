@@ -21,7 +21,11 @@ tags: # e' in formato array (lista), quindi righe con un '- ' iniziale e un tag 
   - tag1
   - tag2
   - tagN
-cover_image: /path-to-image # opzionale
+cover_image: # oggetto opzionale
+  src: /path-to-image
+  caption: "descrizione immagine (e/o credits), da visualizzare subito sotto la figura" # opzionale
+classes:
+  - kWh # UN solo elemento a scelta tra Wh, kWh, MWh, GWh, TWh
 --- # tre trattini di chiusura
 ```
 
