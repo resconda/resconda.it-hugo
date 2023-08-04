@@ -6,7 +6,7 @@ tags:
 classes:
 - kWh
 date: '2023-08-04'
-title: ''Si va a fare immersioni? Fanno XXX kWh!"
+title: "Si va a fare immersioni? Fanno XXX kWh!"
 summary: |
   Fare immersioni è un hobby estivo che nell'immaginario collettivo sembra essere molto eco friendly e sostenibile. Vediamo se è vero... 
 ---
