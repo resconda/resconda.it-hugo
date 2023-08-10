@@ -6,12 +6,14 @@
 
 {{/* OPTIONAL */}}
 {{$quality := or (.quality) ("auto") }}
+{{$start_offset := or (.start_offset) ("so_auto") }}
 
 {{$style := .Scratch.Get "style" or "" }}
 <video muted
     {{with .id}}id="{{ . }}"{{end}}
     {{with $class}}class="{{.}}"{{end}} 
     {{with $alt}}alt="{{.}}"{{else}}alt="post-image"{{end}} 
+    poster="https://res.cloudinary.com/resconda-it/video/upload/{{ $start_offset }}/{{ $video_name }}.jpg"
     style="{{ $style }}">
     <source 
 src="https://res.cloudinary.com/resconda-it/video/upload/{{ $video_name }}" type="{{ $video_type }}" />
