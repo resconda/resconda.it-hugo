@@ -43,7 +43,7 @@ jobs:
         run: |
           set -x
           cd ${GITHUB_WORKSPACE} && \
-          ls \
+          ls # temp, remove when done
           $HUGO_BIN \
             --minify \
             --baseURL "$PUBLIC_URL" \
