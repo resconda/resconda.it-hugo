@@ -42,7 +42,8 @@ jobs:
           HUGO_ENV: production
         run: |
           set -x
-          cd ${GITHUB_WORKSPACE} &&
+          cd ${GITHUB_WORKSPACE} && \
+          ls \
           $HUGO_BIN \
             --minify \
             --baseURL "$PUBLIC_URL" \
