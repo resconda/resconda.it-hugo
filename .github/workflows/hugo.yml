@@ -31,6 +31,7 @@ jobs:
   build_and_install:
     runs-on: self-hosted
     env:
+      HUGO_BIN: "/snap/bin/hugo"
       PUBLIC_HTML: ${{ github.ref == 'refs/heads/main' && '/home/resconda.it/resconda.it-hugo' || '/home/resconda.it/staging' }}
     steps:
       - name: Build with Hugo and deploy to PUBLIC_HTML
@@ -39,7 +40,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo \
+          $HUGO_BIN \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
             -d $PUBLIC_HTML
