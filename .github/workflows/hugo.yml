@@ -36,13 +36,15 @@ jobs:
       PUBLIC_URL: ${{ github.ref == 'refs/heads/main' && 'https://resconda.it' || 'https://resconda.it:44443' }}
     steps:
       - name: Build with Hugo and deploy to PUBLIC_HTML
+        uses: actions/checkout@v3
         env:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
           set -x
-          cd ${GITHUB_WORKSPACE} && \
+          # cd ${GITHUB_WORKSPACE} && \
+          pwd
           ls # temp, remove when done
           $HUGO_BIN \
             --minify \
