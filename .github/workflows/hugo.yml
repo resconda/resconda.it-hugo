@@ -31,7 +31,7 @@ jobs:
   build_and_install:
     runs-on: resconda
     env:
-      PUBLIC_HTML: ${{ github.ref == 'refs/heads/main' && "$HOME/resconda.it/resconda.it-hugo" || "$HOME/resconda.it/staging" }}
+      PUBLIC_HTML: ${{ github.ref == 'refs/heads/main' && '/home/resconda.it/resconda.it-hugo' || '/home/resconda.it/staging' }}
     steps:
       - name: Build with Hugo and deploy to PUBLIC_HTML
         env:
