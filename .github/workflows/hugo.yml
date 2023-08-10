@@ -29,7 +29,7 @@ on:
 jobs:
   # Build job
   build_and_install:
-    runs-on: resconda
+    runs-on: self-hosted
     env:
       PUBLIC_HTML: ${{ github.ref == 'refs/heads/main' && '/home/resconda.it/resconda.it-hugo' || '/home/resconda.it/staging' }}
     steps:
