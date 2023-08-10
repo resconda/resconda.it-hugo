@@ -41,6 +41,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
+          set -x
           cd ${GITHUB_WORKSPACE} &&
           $HUGO_BIN \
             --minify \
