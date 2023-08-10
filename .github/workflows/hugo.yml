@@ -32,9 +32,12 @@ jobs:
     runs-on: self-hosted
     env:
       HUGO_BIN: "/snap/bin/hugo"
-      PUBLIC_HTML: ${{ github.ref == 'refs/heads/main' && '/home/resconda.it/resconda.it-hugo' || '/home/resconda.it/staging' }}
+      PUBLIC_HTML: ${{ github.ref == 'refs/heads/main' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
       PUBLIC_URL: ${{ github.ref == 'refs/heads/main' && 'https://resconda.it' || 'https://resconda.it:44443' }}
     steps:
+      - name: DEBUG whoami
+        run: |
+          echo "I AM `whoami`"
       - name: Checkout repo
         uses: actions/checkout@v3
       - name: Build with Hugo and deploy to PUBLIC_HTML
