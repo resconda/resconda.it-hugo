@@ -56,7 +56,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --baseURL "${{ env.PUBLIC_URL }}/" \
             -d dist
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
@@ -73,5 +73,5 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dist
-          path: $PUBLIC_HTML
+          path: ${{ env.PUBLIC_HTML }}
                 
