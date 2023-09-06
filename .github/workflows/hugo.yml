@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  PUBLIC_HTML: ${{ github.ref == 'refs/heads/main' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
+  PUBLIC_HTML: ${{ github.ref == 'refs/heads/main' && '/home/resconda/resconda.it/public' || '/home/resconda/resconda.it/staging' }}
   PUBLIC_URL: ${{ github.ref == 'refs/heads/main' && 'https://resconda.it' || 'https://resconda.it:44443' }}
 
 jobs:
