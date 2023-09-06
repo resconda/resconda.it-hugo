@@ -38,4 +38,4 @@ Rispetto alla giornata in pista da sci, per ragioni fisiologiche e di sicurezza 
 - navigazione A/R a/da sito di immersione (x2): 48kWh
 - **TOTALE: 97,9kWh**
 
-Questo valore, con tutte le incertezze del caso, è dello stesso ordine di grandezza di quello della giornata sugli sci. Non dovrebbe stupirci: la grossa fetta di energia se la mangiano ancora una volta i motori a scoppio, che in questo caso sono addirittura due (auto + gommone).
+Questo valore, con tutte le incertezze del caso, è dello **stesso ordine di grandezza di quello della giornata sugli sci.** Non dovrebbe stupirci: la **grossa fetta di energia se la mangiano ancora una volta i motori a scoppio**, che in questo caso sono addirittura due (auto + gommone).

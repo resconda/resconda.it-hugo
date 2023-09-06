@@ -3,7 +3,7 @@ title: "I frigoriferi non riposano mai"
 date: 2023-09-05
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
-  Anche se potenze ben più basse di altri elettrodomestici, i frigoriferi consumano poco\... ma sempre! E questo li rende i principali energivori casalinghi, specialmente in estate, quando consumano fino al 30% in più rispetto all'inverno...
+  Avendo basse potenze, i frigoriferi consumano energia lentamente... ma ininterrottamente! E questo li rende i principali energivori casalinghi, specialmente in estate, quando consumano fino al 30% in più rispetto all'inverno...
 cover_image: # optional
    src: assets/post-img/fridge-3475996_1280_vsxwb0
 #   caption: "caption string"
@@ -19,13 +19,11 @@ Siamo giunti verso la fine di un'altra estate da record. Le conseguenze dell'inn
 
 In questa pillola ne scegliamo uno che potrebbe passare inosservato: la differenza di consumo dei frigoriferi tra estate ed inverno.
 
-I frigoriferi generalmente hanno in media un consumo modesto, tra i 100W e 240W (frigoriferi di classe A e B) ma, a differenza degli altri elettrodomestici più comuni, lavorano costantemente: 24 ore al giorno e 365 giorni l'anno[^*]
-
-In realtà non è propriamente vero, un frigorifero APERTO, lavorerebbe 24h al giorno a piena potenza, nella quotidianità il motore del nostro frigorifero "attacca e stacca" al raggiungimento della temperatura desiderata.
+I frigoriferi generalmente hanno in media un consumo modesto, tra i 100W e 240W (frigoriferi di classe A e B) ma, **a differenza degli altri elettrodomestici più comuni, lavorano costantemente**: 24 ore al giorno e 365 giorni l'anno[^*]
 
 Frigoriferi più datati, oltre ad avere motori meno efficienti possono avere guarnizioni logorate e quindi perdite che tendono a fare lavorare per più ore al giorno il frigorifero, aumentandone i consumi.
 
-Un altro fattore (banale tanto quanto determinante al fine dei consumi) è la temperatura della stanza in cui il frigorifero opera: in estate infatti il consumo è di norma ben più alto rispetto a quello invernale. Di quanto? Le nostre stime e rilevamenti, che trovano riscontro in varie ricerche fatte \[[1](https://www.quora.com/Do-refrigerators-consume-more-power-in-the-summer-than-the-winter)\], \[[2](https://www.casacondominio.net/caldo-si-impennano-consumi-del-frigo/#:~:text=Per%20mantenere%20i%20cibi%20freschi,pi%C3%B9%20nei%20tre%20mesi%20estivi.)\], attestano questo incremento in circa il 30%!
+Un altro fattore (banale tanto quanto determinante al fine dei consumi) è la **temperatura della stanza** in cui il frigorifero opera: in estate infatti il consumo è di norma ben più alto rispetto a quello invernale. Di quanto? Le nostre stime e rilevamenti, che trovano riscontro in varie ricerche fatte \[[1](https://www.quora.com/Do-refrigerators-consume-more-power-in-the-summer-than-the-winter)\], \[[2](https://www.casacondominio.net/caldo-si-impennano-consumi-del-frigo/#:~:text=Per%20mantenere%20i%20cibi%20freschi,pi%C3%B9%20nei%20tre%20mesi%20estivi.)\], attestano questo **incremento in circa il 30%!**
 
 Nelle seguenti immagini, ricavate dalla APP di monitoraggio di un impianto fotovoltaico domestico, si possono vedere i consumi relativi ai mesi di Luglio 23 e Dicembre 2022 di una abitazione del nord Italia nei periodi di non occupazione, ma con un frigorifero combinato ed un congelatore a pozzetto in funzione.
 
