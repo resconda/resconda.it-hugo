@@ -30,7 +30,7 @@ jobs:
           go mod tidy && go build
       
       - name: Run
-        run: scripts/go/searchdb_builder/searchdb contents/
+        run: scripts/go/searchdb_builder/searchdb content/
 
       - name: Archive output DB
         uses: actions/upload-artifact@v3
