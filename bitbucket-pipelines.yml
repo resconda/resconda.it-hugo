@@ -24,7 +24,7 @@ definitions:
             if [[ "${BITBUCKET_BRANCH}" != "master" ]]; then
               DEBUG="-D"
             fi
-            hugo $DEBUG
+            hugo $DEBUG --environment production
         artifacts:
           - public/**
     - step: &deploy

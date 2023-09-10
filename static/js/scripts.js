@@ -99,8 +99,9 @@ window.addEventListener("load", () => {
         wasDismissed = checkACookieExists(newsletterBannerDismissedCookieName);
         if(!wasDismissed){
             newsletterBanner.classList.remove('d-none');
-        }
+        }confi
     }
+    /// TODO: review this
     document.getElementById('searchButton').addEventListener('click', event => {
         var searchTerm = document.getElementById('searchTerm').value;
         searchPage(searchTerm);
