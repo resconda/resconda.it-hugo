@@ -60,9 +60,38 @@ var offsetBodyPaddingTop = function() {
     document.body.style.paddingTop = `${navheight}px`;
 };
 var searchPage = function(searchTerm) {
+    const resultsElement = document.getElementById("search_results");
+    resultsElement.classList.add("d-none");
+    for (const child of resultsElement.children) {
+        child.remove();
+    }
     var XHR = new XMLHttpRequest();
     XHR.addEventListener('load', (event) => {
         var data = JSON.parse(XHR.responseText);
+        if(data.Results.length > 0){
+            resultsElement.classList.remove("d-none");
+            for (let resIdx = 0; resIdx < data.Results.length; resIdx++) {
+                const result = data.Results[resIdx];
+                const cat = result.DbResult.Category;
+                if(cat !== "articles") continue; // we pick articles only, for now
+                const title = result.DbResult.Title;
+                const summary = result.DbResult.Summary;
+                const path = result.DbResult.Path;
+                const tagsString = result.Tags.join(", ");
+                const date = new Date(result.DbResult.Date).toLocaleDateString();
+                const newlement = document.createElement('a');
+                newlement.setAttribute("href", path);
+                newlement.classList.add('list-group-item', 'list-group-item-action');
+                const elementContent = `<div class="d-flex w-100 justify-content-between">
+    <h5 class="mb-1">${title}</h5>
+    <small>${date}</small>
+    </div>
+    <p class="mb-1">${summary}</p>
+    <small>TAGS: ${tagsString}</small>`;
+                newlement.innerHTML = elementContent;
+                resultsElement.appendChild(newlement);
+            }
+        }
         console.log(data);
     });
     XHR.addEventListener('error', (event) => {
@@ -99,11 +128,18 @@ window.addEventListener("load", () => {
         wasDismissed = checkACookieExists(newsletterBannerDismissedCookieName);
         if(!wasDismissed){
             newsletterBanner.classList.remove('d-none');
-        }confi
+        }
     }
     /// TODO: review this
-    document.getElementById('searchButton').addEventListener('click', event => {
+    var triggersearch = event => {
         var searchTerm = document.getElementById('searchTerm').value;
         searchPage(searchTerm);
+    };
+    document.getElementById('searchForm').addEventListener('submit', event => {
+        event.preventDefault();
+        triggersearch(event);
+    });
+    document.getElementById('searchButton').addEventListener('click', event => {
+        triggersearch(event);
     });
 });
