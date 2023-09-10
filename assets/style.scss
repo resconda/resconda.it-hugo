@@ -263,9 +263,9 @@ table {
         table-layout: fixed;
         width: 100%;
     }
-    tr:nth-child(even) {
-        background-color: $logo-color-lightgrey;
-    }
+    // tr:nth-child(even) {
+    //     background-color: $logo-color-lightgrey;
+    // }
     tbody {
         display: block;
         max-height: 70vh;
@@ -427,6 +427,9 @@ a.btn:hover{
 // fontawesome icons
 i.fa, i.fa-solid {
   color:  $tertiary;
+}
+div.footnotes {
+  font-size: small;
 }
 .footnote-definition {
     sup {
