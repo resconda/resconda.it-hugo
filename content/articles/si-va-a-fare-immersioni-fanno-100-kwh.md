@@ -5,7 +5,7 @@ tags:
 - energia
 classes:
 - kWh
-date: '2023-09-05'
+date: 2023-09-05
 title: "Andati a fare un immersione? Fa 98 kWh!"
 summary: |
   Fare immersioni è un hobby estivo che nell'immaginario collettivo sembra essere molto eco friendly e sostenibile. Vediamo se è vero... 
