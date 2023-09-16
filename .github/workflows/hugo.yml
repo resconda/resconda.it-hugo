@@ -10,8 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  PUBLIC_HTML: ${{ github.ref == 'refs/heads/main' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
-  PUBLIC_URL: ${{ github.ref == 'refs/heads/main' && 'https://resconda.it' || 'https://resconda.it:44443' }}
+  STAGING: ${{ github.ref == 'refs/heads/main' && '0' || '1' }}
 
 jobs:
   build_searchdb:
@@ -24,20 +23,31 @@ jobs:
         with:
           go-version: '1.18'
 
-      - name: Build
+      - name: Setup env
+        run: |
+          mkdir -p dist/res
+      - name: Build builder
         run: |
           cd scripts/go/searchdb_builder
           go mod tidy && go build
       
       - name: Run
-        run: scripts/go/searchdb_builder/searchdb content/
-
-      - name: Archive output DB
+        run: |
+          scripts/go/searchdb_builder/searchdb content/
+          cp contents.sqlite dist/res
+      
+      - name: Build server
+        run: |
+          cd scripts/go/searchdb_server
+          go mod tidy && go build -o ${GITHUB_WORKSPACE}/dist/searchdb_server
+      
+      - name: Archive output DB and server executable
         uses: actions/upload-artifact@v3
         with:
           name: searchdb
           path: |
-            contents.sqlite
+            dist/
+
       # Not needed right now
       # - name: Test
       #   run: go test -v ./...
@@ -46,6 +56,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.117.0
+      PUBLIC_URL: ${{ env.STAGING == '0' && 'https://resconda.it' || 'https://resconda.it:44443' }}
     steps:
       - name: Install Hugo CLI
         run: |
@@ -75,14 +86,21 @@ jobs:
   deploy:
     needs: [build_searchdb, build_hugo]
     runs-on: self-hosted
+    env:
+      PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
     steps:
       - name: Download server code and deploy to PUBLIC_HTML
         uses: actions/download-artifact@v3
         with:
           name: dist
           path: ${{ env.PUBLIC_HTML }}
-      - name: Download searchdb sqlite file and deploy to PUBLIC_HTML/cgi/res
+      - name: Download searchdb server and sqlite DB file and deploy to PUBLIC_HTML/cgi/
         uses: actions/download-artifact@v3
         with:
           name: searchdb
-          path: ${{ env.PUBLIC_HTML }}/cgi/res
+          path: ${{ env.PUBLIC_HTML }}/cgi/
+      - name: Run searchdb server
+        env:
+          GIN_MODE= ${{ env.STAGING == '0' && release || debug }}
+        run: |
+          ${{ env.PUBLIC_HTML }}/cgi/searchdb_server &

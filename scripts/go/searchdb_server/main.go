@@ -89,5 +89,5 @@ func main() {
 	router := gin.Default()
 	router.GET("/search", searchDB)
 
-	router.Run("0.0.0.0:80")
+	router.Run("0.0.0.0:48081")
 }
