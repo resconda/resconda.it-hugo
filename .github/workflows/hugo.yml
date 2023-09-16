@@ -56,7 +56,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.117.0
-      PUBLIC_URL: ${{ env.STAGING == '0' && 'https://resconda.it' || 'https://resconda.it:44443' }}
     steps:
       - name: Install Hugo CLI
         run: |
@@ -71,6 +70,7 @@ jobs:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
+          PUBLIC_URL: ${{ env.STAGING == '0' && 'https://resconda.it' || 'https://resconda.it:44443' }}
         run: |
           hugo \
             --minify \
@@ -86,21 +86,24 @@ jobs:
   deploy:
     needs: [build_searchdb, build_hugo]
     runs-on: self-hosted
-    env:
-      PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
     steps:
       - name: Download server code and deploy to PUBLIC_HTML
+        env:
+          PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
         uses: actions/download-artifact@v3
         with:
           name: dist
           path: ${{ env.PUBLIC_HTML }}
       - name: Download searchdb server and sqlite DB file and deploy to PUBLIC_HTML/cgi/
+        env:
+          PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
         uses: actions/download-artifact@v3
         with:
           name: searchdb
           path: ${{ env.PUBLIC_HTML }}/cgi/
       - name: Run searchdb server
         env:
-          GIN_MODE= ${{ env.STAGING == '0' && release || debug }}
+          PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
+          GIN_MODE: ${{ env.STAGING == '0' && release || debug }}
         run: |
           ${{ env.PUBLIC_HTML }}/cgi/searchdb_server &
