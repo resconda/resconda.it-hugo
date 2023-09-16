@@ -104,6 +104,6 @@ jobs:
       - name: Run searchdb server
         env:
           PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
-          GIN_MODE: ${{ env.STAGING == '0' && release || debug }}
+          GIN_MODE: ${{ env.STAGING == '0' && 'release' || 'debug' }}
         run: |
           ${{ env.PUBLIC_HTML }}/cgi/searchdb_server &
