@@ -106,5 +106,6 @@ jobs:
           PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
           GIN_MODE: ${{ env.STAGING == '0' && 'release' || 'debug' }}
         run: |
-          go mod tidy && go build -o ${{ env.PUBLIC_HTML }}/cgi/searchdb_server
+          GO=/usr/local/go/bin/go
+          $GO mod tidy && $GO build -o ${{ env.PUBLIC_HTML }}/cgi/searchdb_server && \
           ${{ env.PUBLIC_HTML }}/cgi/searchdb_server &
