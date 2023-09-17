@@ -31,22 +31,22 @@ jobs:
           cd scripts/go/searchdb_builder
           go mod tidy && go build
       
-      - name: Run
+      - name: Run builder and stash the generated DB file
         run: |
           scripts/go/searchdb_builder/searchdb content/
           cp contents.sqlite dist/res
       
-      - name: Build server
-        run: |
-          cd scripts/go/searchdb_server
-          go mod tidy && go build -o ${GITHUB_WORKSPACE}/dist/searchdb_server
-      
+      - name: Pick searchdb_server code to be used later
+        uses: actions/upload-artifact@v3
+        with:
+          name: searchdb_server_src
+          path: scripts/go/searchdb_server
       - name: Archive output DB and server executable
         uses: actions/upload-artifact@v3
         with:
           name: searchdb
           path: |
-            dist/
+            dist/res/content.sqlite
 
       # Not needed right now
       # - name: Test
@@ -94,17 +94,22 @@ jobs:
         with:
           name: dist
           path: ${{ env.PUBLIC_HTML }}
-      - name: Download searchdb server and sqlite DB file and deploy to PUBLIC_HTML/cgi/
+      - name: Download sqlite DB file and deploy to PUBLIC_HTML/cgi/
         env:
           PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
         uses: actions/download-artifact@v3
         with:
           name: searchdb
-          path: ${{ env.PUBLIC_HTML }}/cgi/
-      - name: Run searchdb server
+          path: ${{ env.PUBLIC_HTML }}/cgi/res
+      - name: Download searchdb_server code to the CWD
+        uses: actions/download-artifact@v3
+        with:
+          name: searchdb_server_src
+      - name: build and run searchdb server
         env:
           PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
           GIN_MODE: ${{ env.STAGING == '0' && 'release' || 'debug' }}
         run: |
-          chmod +x ${{ env.PUBLIC_HTML }}/cgi/searchdb_server
+          cd scripts/go/searchdb_server
+          go mod tidy && go build -o ${{ env.PUBLIC_HTML }}/cgi/searchdb_server
           ${{ env.PUBLIC_HTML }}/cgi/searchdb_server &
