@@ -22,7 +22,9 @@ Ti invitiamo a **rinnovare l'iscrizione** per l'anno in corso, effettuando il ve
 
 {{< donate_table >}}
 
-[Qui il link](/docs/resconda_modulo_adesione_socio.pdf) al form di iscrizione, non tergiversate, fatelo subito (che poi ve ne scordate...)! 
+[Qui il link](/docs/resconda_modulo_adesione_socio.pdf) al form di iscrizione, per chi desidera associarsi a Resconda. 
+
+Non tergiversate, fatelo subito! (che poi ve ne scordate...) 
 
 Grazie!
 
