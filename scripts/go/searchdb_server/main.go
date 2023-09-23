@@ -38,7 +38,7 @@ func searchDB(c *gin.Context) {
 	db, err := gorm.Open(sqlite.Open(DATABASE), &gorm.Config{})
 	var output SearchOutput
 	if err != nil {
-		errstr := fmt.Sprintf("Unable to open DB: %s", err.Error)
+		errstr := fmt.Sprintf("Unable to open DB: %s", err.Error())
 		logrus.Errorf(errstr)
 		output.Errors = append(output.Errors, errstr)
 		c.IndentedJSON(http.StatusInternalServerError, output)

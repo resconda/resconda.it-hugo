@@ -77,16 +77,18 @@ var searchPage = function(searchTerm) {
                 const title = result.DbResult.Title;
                 const summary = result.DbResult.Summary;
                 const path = result.DbResult.Path;
-                const tagsString = result.Tags.join(", ");
+                const tagsString = result.Tags.map(tag => {
+                    return `<a href="/tags/${tag}">${tag}</a>`
+                }).join(", ");
                 const date = new Date(result.DbResult.Date).toLocaleDateString();
-                const newlement = document.createElement('a');
-                newlement.setAttribute("href", path);
+                const newlement = document.createElement('div');
                 newlement.classList.add('list-group-item', 'list-group-item-action');
-                const elementContent = `<div class="d-flex w-100 justify-content-between">
+                // newlement.setAttribute("href", path);
+                const elementContent = `<a href="${path}"><div class="d-flex w-100 justify-content-between">
     <h5 class="mb-1">${title}</h5>
     <small>${date}</small>
     </div>
-    <p class="mb-1">${summary}</p>
+    <p class="mb-1">${summary}</p></a>
     <small>TAGS: ${tagsString}</small>`;
                 newlement.innerHTML = elementContent;
                 resultsElement.appendChild(newlement);
