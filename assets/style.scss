@@ -421,6 +421,16 @@ figure {
         color: grey;
     }
 }
+caption {
+  margin-left: 1.0rem;
+  margin-right: 1.0rem;
+}
+tablecaption table {
+  caption-side: top;
+  & caption {
+    text-align: center;
+  }
+}
 a.btn:hover{
   text-decoration: unset;
 }

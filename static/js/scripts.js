@@ -102,6 +102,23 @@ var searchPage = function(searchTerm) {
     XHR.open('GET', `/search?q=${encodeURIComponent(searchTerm)}`);
     XHR.send();
 }
+var renderTableCaptions = function() {
+    const elements = document.getElementsByTagName("tablecaption");
+    for (let elidx = 0; elidx < elements.length; elidx++) {
+        const element = elements[elidx];
+        const table = element.getElementsByTagName("table").item(0);
+        if(!table) return;
+        const data = element.getElementsByTagName("data").item(0);
+        if(data){
+            const captionString = data.getAttribute("value") || "";
+            if(captionString.length>0){
+                var captionEl = document.createElement("caption");
+                captionEl.innerHTML = captionString;
+                table.prepend(captionEl);
+            }
+        }
+    }
+};
 document.addEventListener("scroll", _.throttle(scrollUtils, 100));
 window.addEventListener("load", () => {
     offsetBodyPaddingTop();
@@ -121,7 +138,7 @@ window.addEventListener("load", () => {
         navbarSetBackgroundAccordingToScroll();
     });
     var newsletterBanner = document.getElementById('newsletter-banner');
-    if(newsletterBanner !== undefined){
+    if (newsletterBanner && newsletterBanner !== undefined){
         newsletterBanner.addEventListener('closed.bs.alert', event => {
             console.log('Newsletter banner closed');
             duration = 7 * 24 * 3600;// 1 week
@@ -137,11 +154,18 @@ window.addEventListener("load", () => {
         var searchTerm = document.getElementById('searchTerm').value;
         searchPage(searchTerm);
     };
-    document.getElementById('searchForm').addEventListener('submit', event => {
-        event.preventDefault();
-        triggersearch(event);
-    });
-    document.getElementById('searchButton').addEventListener('click', event => {
-        triggersearch(event);
-    });
+    const searchformelement = document.getElementById('searchForm');
+    if(searchformelement){
+            searchformelement.addEventListener('submit', event => {
+            event.preventDefault();
+            triggersearch(event);
+        });
+    }
+    const searchbutton = document.getElementById('searchButton')
+    if(searchbutton){
+        searchbutton.addEventListener('click', event => {
+            triggersearch(event);
+        });
+    }
+    renderTableCaptions();
 });

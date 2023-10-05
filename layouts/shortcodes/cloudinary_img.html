@@ -11,5 +11,7 @@
             {{end}}" src={{ $src }}
             {{ else }} {{ errorf "cloudinary_image partial needs the 'src' named attribute" }} {{ end }} />
     </a>
-    {{ with .Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+    {{ with .Get "caption" }}
+    <figcaption>{{ . | markdownify }}</figcaption>
+    {{ end }}
 </figure>
