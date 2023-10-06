@@ -10,12 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-<<<<<<< HEAD
   STAGING: ${{ github.ref == 'refs/heads/main' && '0' || '1' }}
-=======
-  PUBLIC_HTML: ${{ github.ref == 'refs/heads/main' && '/home/resconda/resconda.it/public' || '/home/resconda/resconda.it/staging' }}
-  PUBLIC_URL: ${{ github.ref == 'refs/heads/main' && 'https://resconda.it' || 'https://resconda.it:44443' }}
->>>>>>> 36493cf36e50bdb40c9401d517fc5787ffd5f632
 
 jobs:
   build_searchdb:
