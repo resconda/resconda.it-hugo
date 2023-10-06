@@ -85,7 +85,7 @@ jobs:
     steps:
       - name: Download server code and deploy to PUBLIC_HTML
         env:
-          PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
+          PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/public' || '/home/resconda/resconda.it/staging' }}
         uses: actions/download-artifact@v3
         with:
           name: dist
