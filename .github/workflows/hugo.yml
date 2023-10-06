@@ -10,7 +10,12 @@ on:
   workflow_dispatch:
 
 env:
+<<<<<<< HEAD
   STAGING: ${{ github.ref == 'refs/heads/main' && '0' || '1' }}
+=======
+  PUBLIC_HTML: ${{ github.ref == 'refs/heads/main' && '/home/resconda/resconda.it/public' || '/home/resconda/resconda.it/staging' }}
+  PUBLIC_URL: ${{ github.ref == 'refs/heads/main' && 'https://resconda.it' || 'https://resconda.it:44443' }}
+>>>>>>> 36493cf36e50bdb40c9401d517fc5787ffd5f632
 
 jobs:
   build_searchdb:
@@ -90,22 +95,23 @@ jobs:
         with:
           name: dist
           path: ${{ env.PUBLIC_HTML }}
-      - name: Download sqlite DB file and deploy to PUBLIC_HTML/cgi/
-        env:
-          PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
-        uses: actions/download-artifact@v3
-        with:
-          name: searchdb
-          path: ${{ env.PUBLIC_HTML }}/cgi/res
-      - name: Download searchdb_server code to the CWD
-        uses: actions/download-artifact@v3
-        with:
-          name: searchdb_server_src
-      - name: build and run searchdb server
-        env:
-          PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
-          GIN_MODE: ${{ env.STAGING == '0' && 'release' || 'debug' }}
-        run: |
-          GO=/usr/local/go/bin/go
-          $GO mod tidy && $GO build -o ${{ env.PUBLIC_HTML }}/cgi/searchdb_server && \
-          ${{ env.PUBLIC_HTML }}/cgi/searchdb_server &
+      ## Unstable search stuff
+      # - name: Download sqlite DB file and deploy to PUBLIC_HTML/cgi/
+      #   env:
+      #     PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
+      #   uses: actions/download-artifact@v3
+      #   with:
+      #     name: searchdb
+      #     path: ${{ env.PUBLIC_HTML }}/cgi/res
+      # - name: Download searchdb_server code to the CWD
+      #   uses: actions/download-artifact@v3
+      #   with:
+      #     name: searchdb_server_src
+      # - name: build and run searchdb server
+      #   env:
+      #     PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
+      #     GIN_MODE: ${{ env.STAGING == '0' && 'release' || 'debug' }}
+      #   run: |
+      #     GO=/usr/local/go/bin/go
+      #     $GO mod tidy && $GO build -o ${{ env.PUBLIC_HTML }}/cgi/searchdb_server && \
+      #     ${{ env.PUBLIC_HTML }}/cgi/searchdb_server &
