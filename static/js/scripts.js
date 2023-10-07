@@ -1,4 +1,5 @@
 const newsletterBannerDismissedCookieName = "newsletterBannerDismissed";
+const picsDisclaimerBannerDismissedCookieName = "picsDisclaimerBannerDismissed";
 var navbarSetBackgroundAccordingToScroll = function(pageTop = null){
     if(!pageTop){
         pageTop = document.scrollTop;
@@ -119,6 +120,26 @@ var renderTableCaptions = function() {
         }
     }
 };
+var handleDisposableBanners = function() {
+    const bannerIDsList = [
+        {elementId: "newsletter-banner", cookieName: newsletterBannerDismissedCookieName}, 
+        {elementId: "picsdisclaimer-banner", cookieName: picsDisclaimerBannerDismissedCookieName},
+    ];
+    bannerIDsList.forEach(element => {
+        const bannerElement = document.getElementById(element.elementId);
+        if (bannerElement && bannerElement !== undefined) {
+            bannerElement.addEventListener('closed.bs.alert', event => {
+                console.log(`${element} closed`);
+                duration = 7 * 24 * 3600;// 1 week
+                document.cookie = element.cookieName + "=1;     max-age=" + duration + ";   Secure;"
+            });
+            wasDismissed = checkACookieExists(element.cookieName);
+            if (!wasDismissed) {
+                bannerElement.classList.remove('d-none');
+            }
+        }
+    });
+};
 document.addEventListener("scroll", _.throttle(scrollUtils, 100));
 window.addEventListener("load", () => {
     offsetBodyPaddingTop();
@@ -137,18 +158,7 @@ window.addEventListener("load", () => {
     document.getElementById('siteNavbar').addEventListener('hidden.bs.collapse', event => {
         navbarSetBackgroundAccordingToScroll();
     });
-    var newsletterBanner = document.getElementById('newsletter-banner');
-    if (newsletterBanner && newsletterBanner !== undefined){
-        newsletterBanner.addEventListener('closed.bs.alert', event => {
-            console.log('Newsletter banner closed');
-            duration = 7 * 24 * 3600;// 1 week
-            document.cookie = newsletterBannerDismissedCookieName + "=1;     max-age=" + duration + ";   Secure;"
-        });
-        wasDismissed = checkACookieExists(newsletterBannerDismissedCookieName);
-        if(!wasDismissed){
-            newsletterBanner.classList.remove('d-none');
-        }
-    }
+    handleDisposableBanners();
     /// TODO: review this
     var triggersearch = event => {
         var searchTerm = document.getElementById('searchTerm').value;

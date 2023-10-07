@@ -8,6 +8,9 @@
     {{ if or .Params.showNewsletterBanner .IsHome }}
     {{ partial "newsletter_banner.html" . }}
     {{ end }}
+    {{ if or .Params.showPicDisclaimerBanner }}
+    {{ partial "picsdisclaimer_banner.html" . }}
+    {{ end }}
     {{ block "header" . }}
     {{ partial "header.html" . }}
     {{ end }}
