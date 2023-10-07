@@ -117,13 +117,20 @@ ol>li, ul>li {
     counter-reset: h3counter;
   }
 }
-// #pageContent {
-//   top: 91px;
-//   position: relative;
-// }
+.navbar img {
+  max-width: 300px;
+  transition: max-width 0.5s;
+  &.reduced {
+    max-width: 150px;
+  }
+}
 @media (max-width: 576px) {
   .navbar img {
     max-width: 200px;
+    transition: max-width 0.5s;
+    &.reduced {
+      max-width: 120px;
+    }
   }
 }
 @media (min-width: 768px) {
@@ -216,7 +223,7 @@ dl {
     }
 }
 img {
-    max-width: 100%;
+    max-width: 300px;
     display: block;
     margin: 0 auto;
     // padding: 0.5em;

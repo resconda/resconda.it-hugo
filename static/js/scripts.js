@@ -4,10 +4,18 @@ var navbarSetBackgroundAccordingToScroll = function(pageTop = null){
     if(!pageTop){
         pageTop = document.scrollTop;
     }
+    const navBrandLogo = document.getElementById("navBrandLogo");
     if (pageTop > 0) {
         document.querySelector('nav.navbar').classList.add('background');
+        // reduce navbar height by reducing navBrandLogo max-width;
+        if(navBrandLogo){
+            navBrandLogo.classList.add('reduced');
+        }
     } else if(!document.getElementById('navbarNav').classList.contains('show')) {
         document.querySelector('nav.navbar').classList.remove('background');
+        if (navBrandLogo) {
+            navBrandLogo.classList.remove('reduced');
+        }
     }
 };
 function isInViewport(element) {
@@ -40,7 +48,7 @@ var scrollUtils = function () {
         // if (scrollInView < pageBottom) {
         if (isInViewport(tag)) {
             // console.log(`[DEBUG] VISIBLE element at ${tag.getBoundingClientRect().top} with content: ${tag.innerHTML}`);
-            tag.classList.add("visible");
+            tag.classList.remove("visible");
         }else{
             tag.classList.remove("visible");
         }
