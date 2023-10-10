@@ -48,7 +48,7 @@ var scrollUtils = function () {
         // if (scrollInView < pageBottom) {
         if (isInViewport(tag)) {
             // console.log(`[DEBUG] VISIBLE element at ${tag.getBoundingClientRect().top} with content: ${tag.innerHTML}`);
-            tag.classList.remove("visible");
+            tag.classList.add("visible");
         }else{
             tag.classList.remove("visible");
         }
