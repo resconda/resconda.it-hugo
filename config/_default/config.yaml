@@ -26,6 +26,8 @@ params:
     - link: "https://instagram.com"
       name: instagram
       icon_tag: "<i class=\"fa-brands fa-instagram fa-2x\"></i>"
+    search: true
+    search_minify: true
 
 menus:
   main:
@@ -49,7 +51,11 @@ menus:
     identifier: "contatti"
     url: "/#contactus"
     weight: 15
-  
+
+outputs:
+  home: 
+    - HTML
+    - JSON
 languages:
   it:
     languageName: Italian

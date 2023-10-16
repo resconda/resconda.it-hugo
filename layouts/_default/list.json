@@ -1,0 +1,24 @@
+{{- $articles := slice -}}
+
+{{- range where site.RegularPages.ByPublishDate.Reverse "Section" "==" "articles" -}}  
+  {{- $item := dict
+    "Title" .Title
+    "PublishDateFormatted" (.PublishDate.Format "2006-01-02")
+    "RelPermalink" .RelPermalink
+  -}}
+
+  {{- with .Params.classes -}}{{- $item = merge $item ( dict "Classes" (delimit . ", ") ) -}}{{- end -}}
+  {{- with .Params.tags -}}{{- $item = merge $item ( dict "Tags" (delimit . ", ") ) -}}{{- end -}}
+  {{- with .Params.summary -}}{{- $item = merge $item (dict "Summary" .) -}}{{- end -}}
+
+  {{- $articles = $articles | append $item -}}
+{{- end -}}
+
+{{- $object := dict "articles" $articles -}}
+
+{{- if (eq site.Params.search_minify true) -}}
+  {{- $object | jsonify -}}
+{{- else -}}
+  {{- $jsonifyOptions := dict "indent" "  " -}}
+  {{- $object | jsonify $jsonifyOptions -}}
+{{- end -}}
