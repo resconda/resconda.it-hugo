@@ -68,7 +68,7 @@ var offsetBodyPaddingTop = function() {
     var navheight = document.querySelector("nav.navbar").offsetHeight;
     document.body.style.paddingTop = `${navheight}px`;
 };
-var searchPage = function(searchTerm) {
+var fetchAndSearchPage = function(searchTerm) {
     const resultsElement = document.getElementById("search_results");
     resultsElement.classList.add("d-none");
     for (const child of resultsElement.children) {
@@ -106,7 +106,7 @@ var searchPage = function(searchTerm) {
         console.log(data);
     });
     XHR.addEventListener('error', (event) => {
-        console.log("searchPage error: " + XHR.responseText);
+        console.log("fetchAndSearchPage error: " + XHR.responseText);
     });
     XHR.open('GET', `/search?q=${encodeURIComponent(searchTerm)}`);
     XHR.send();
@@ -148,6 +148,36 @@ var handleDisposableBanners = function() {
         }
     });
 };
+var searchData = undefined;
+const fetchSearchData = () => {
+    const XHR = new XMLHttpRequest();
+    XHR.addEventListener('load', (event) => {
+        searchData = JSON.parse(XHR.responseText);
+    });
+    XHR.addEventListener('error', (event) => {
+        console.log("fetchSearchData error: " + XHR.responseText);
+    });
+    XHR.open('GET', `/index.json`);
+    XHR.send();
+}
+const searchSearchData = searchTerm => {
+    if(searchData === undefined){
+        console.log("[ERROR] Search data unavailable");
+        return;
+    }
+    const matchingArticles = [];
+    for(const article of searchData.articles){
+        for(const key of ['Summary', 'Title', 'Tags']){
+            const value = article[key];
+            if(value !== undefined && value.includes(searchTerm)){
+                matchingArticles.push(article);
+                console.log("[DEBUG] Article: '" + article.Title + "' matches the search term");
+                break;
+            }
+        };
+    };
+
+};
 document.addEventListener("scroll", _.throttle(scrollUtils, 100));
 window.addEventListener("load", () => {
     offsetBodyPaddingTop();
@@ -170,20 +200,24 @@ window.addEventListener("load", () => {
     /// TODO: review this
     var triggersearch = event => {
         var searchTerm = document.getElementById('searchTerm').value;
-        searchPage(searchTerm);
+        // fetchAndSearchPage(searchTerm);
+        searchSearchData(searchTerm);
     };
-    const searchformelement = document.getElementById('searchForm');
-    if(searchformelement){
-            searchformelement.addEventListener('submit', event => {
-            event.preventDefault();
-            triggersearch(event);
-        });
-    }
+    // const searchformelement = document.getElementById('searchForm');
+    // if(searchformelement){
+    //         searchformelement.addEventListener('submit', event => {
+    //         event.preventDefault();
+    //         triggersearch(event);
+    //     });
+    // }
     const searchbutton = document.getElementById('searchButton')
     if(searchbutton){
-        searchbutton.addEventListener('click', event => {
-            triggersearch(event);
-        });
+        searchbutton.addEventListener('click', triggersearch);
+    }
+    const searchInput = document.getElementById('searchTerm');
+    if(searchInput){
+        searchInput.addEventListener('keyup', triggersearch);
     }
     renderTableCaptions();
+    fetchSearchData();
 });
