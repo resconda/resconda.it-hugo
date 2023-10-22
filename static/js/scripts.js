@@ -149,6 +149,85 @@ var handleDisposableBanners = function() {
     });
 };
 var searchData = undefined;
+const updateSearchResults = results => {
+    if (results.length > 0) {
+        const resultsElement = document.getElementById("search_results");
+        resultsElement.classList.add("d-none");
+        for (const child of resultsElement.children) {
+            child.remove();
+        }
+        resultsElement.classList.remove("d-none");
+        for (let resIdx = 0; resIdx < results.length; resIdx++) {
+            const result = results[resIdx];
+            const classOjects = searchData.classes;
+            const classTags = [];
+            if("Classes" in result){
+                result.Classes.split(", ").forEach(className => {
+                    classElement = document.createElement("span");
+                    classElement.innerHTML = classOjects[className.toLowerCase()];
+                    classTags.push(classElement);
+                });
+            }
+            const publishdateformatted = new Date(result.PublishDateFormatted).toLocaleDateString();
+            const relpermalink = result.RelPermalink;
+            const summary = result.Summary;
+            const tags = result.Tags.split(", ").map(tagstring => {
+                return `<a href="/tags/${tagstring}"><span class="badge rounded-pill tag-pill">${tagstring}</span></a>`;
+            });
+            const title = result.Title;
+            
+            const newlement = document.createElement('div');
+            newlement.classList.add('list-group-item', 'list-group-item-action');
+            const elementLinkWrapper = document.createElement('a');
+            elementLinkWrapper.setAttribute("href", relpermalink)
+            var elementContent = document.createElement('div');
+            elementContent.classList.add("d-flex", "w-100", "justify-content-between");
+            elementContent.innerHTML = `<h5 class="mb-1 search-result-title">${title}</h5><small>${publishdateformatted}</small>`;
+            elementLinkWrapper.appendChild(elementContent);
+            
+            elementContent = document.createElement('p');
+            elementContent.classList.add("mb-1", "search-result-summary");
+            elementContent.innerHTML = summary;
+            elementLinkWrapper.appendChild(elementContent);
+
+            newlement.appendChild(elementLinkWrapper);
+
+            const elementMetadata = document.createElement('div');
+            elementMetadata.classList.add("d-flex", "w-100", "justify-content-between", "align-items-center");
+            const tagsColumn = document.createElement('small');
+            const tagsColumnLabel = document.createElement('span');
+            tagsColumnLabel.classList.add("search-result-tags-label");
+            tagsColumnLabel.innerHTML = "TAGS";
+            tagsColumn.appendChild(tagsColumnLabel);
+            tagsColumn.innerHTML += ": ";
+            tagsColumn.innerHTML += tags.join(" ");
+            
+            elementMetadata.appendChild(tagsColumn);
+
+            const classesColumn = document.createElement('small');
+            classTags.forEach(classElement => { classesColumn.appendChild(classElement) });
+            elementMetadata.appendChild(classesColumn);
+
+            newlement.appendChild(elementMetadata);
+
+
+//             const elementContent = 
+// `<a href="${relpermalink}">
+//     <div class="d-flex w-100 justify-content-between">
+//         <h5 class="mb-1 search-result-title">${title}</h5>
+//         <small>${publishdateformatted}</small>
+//     </div>
+//     <p class="mb-1 search-result-summary">${summary}</p>
+// </a>
+// <div class="d-flex w-100 justify-content-between">
+//     <small><span class="search-result-tags-label">TAGS</span>: ${tags.join(" ")}</small>
+//     <small>${classTags.join(" ")}</small>
+// </div>`;
+//             newlement.innerHTML = elementContent;
+            resultsElement.appendChild(newlement);
+        }
+    }
+};
 const fetchSearchData = () => {
     const XHR = new XMLHttpRequest();
     XHR.addEventListener('load', (event) => {
@@ -171,12 +250,15 @@ const searchSearchData = searchTerm => {
             const value = article[key];
             if(value !== undefined && value.includes(searchTerm)){
                 matchingArticles.push(article);
-                console.log("[DEBUG] Article: '" + article.Title + "' matches the search term");
+                // console.log("[DEBUG] Article: '" + article.Title + "' matches the search term");
                 break;
             }
         };
     };
-
+    if(matchingArticles.length>0){
+        console.log("[DEBUG] Found " + matchingArticles.length +  " articles");
+        updateSearchResults(matchingArticles);
+    }
 };
 document.addEventListener("scroll", _.throttle(scrollUtils, 100));
 window.addEventListener("load", () => {
@@ -216,7 +298,7 @@ window.addEventListener("load", () => {
     }
     const searchInput = document.getElementById('searchTerm');
     if(searchInput){
-        searchInput.addEventListener('keyup', triggersearch);
+        searchInput.addEventListener('keydown', _.debounce(triggersearch, 1000));
     }
     renderTableCaptions();
     fetchSearchData();

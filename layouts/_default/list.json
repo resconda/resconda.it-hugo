@@ -9,12 +9,19 @@
 
   {{- with .Params.classes -}}{{- $item = merge $item ( dict "Classes" (delimit . ", ") ) -}}{{- end -}}
   {{- with .Params.tags -}}{{- $item = merge $item ( dict "Tags" (delimit . ", ") ) -}}{{- end -}}
-  {{- with .Params.summary -}}{{- $item = merge $item (dict "Summary" .) -}}{{- end -}}
+  {{- with .Params.summary -}}{{- $item = merge $item (dict "Summary" (.|markdownify)) -}}{{- end -}}
 
   {{- $articles = $articles | append $item -}}
 {{- end -}}
 
-{{- $object := dict "articles" $articles -}}
+{{- $classes := dict -}}
+
+{{- range $className, $classObj := .Site.Taxonomies.classes -}}
+  {{- $item := partial "tag_svg.html" (dict "label" $className "width" "4rem" "extra_class" "fill") -}}
+  {{- $classes = merge $classes (dict $className $item) -}}
+{{- end -}}
+
+{{- $object := dict "articles" $articles "classes" $classes -}}
 
 {{- if (eq site.Params.search_minify true) -}}
   {{- $object | jsonify -}}

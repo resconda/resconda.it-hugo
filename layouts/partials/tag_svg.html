@@ -1,9 +1,8 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
-{{ $color := "black" }}
-{{ $lowlabel := lower .label }}
-{{ $width := or (.width) "100%" }}
-{{ $extra_class := or (.extra_class) "" }}
-
+{{- $color := "black" -}}
+{{- $lowlabel := lower .label -}}
+{{- $width := or (.width) "100%" -}}
+{{- $extra_class := or (.extra_class) "" -}}
 <a href="/classes/{{lower .label}}">
     <svg class="mb-2 energy-tag {{$lowlabel}} {{$extra_class}}" width="{{$width}}" viewBox="0 0 98.838372 58.805672" version="1.1"
         inkscape:version="1.2.1 (9c6d41e, 2022-07-14)" sodipodi:docname="price_tag.svg"

@@ -615,6 +615,11 @@ span.unit {
 .bg-green {
   background-color: $green01;
 }
+.tag-pill {
+  background-color: $logo-color-lightblue;
+  color: white;
+  padding: 5px 15px;
+}
 form.pink {
   & .form-control {
     color: white;
@@ -797,8 +802,21 @@ a.greenlink {
   }
 }
 
-// Article specific
+// Articles specific
 #title {
+  font-weight: bold;
+}
+#search_results a {
+  text-decoration: unset;
+  color: unset;
+}
+.search-result-title {
+}
+.search-result-summary {
+  color: $logo-color-blue;
+}
+.search-result-tags-label {
+  color: $logo-color-orange;
   font-weight: bold;
 }
 
