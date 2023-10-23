@@ -149,14 +149,24 @@ var handleDisposableBanners = function() {
     });
 };
 var searchData = undefined;
+const searchResultCollapse = new bootstrap.Collapse("#search_results");
+const clearSearchResults = () => {
+    const resultsElement = document.getElementById("search_results");
+    const resultsInfoElement = document.getElementById("search_results_info");
+    // resultsElement.classList.add("d-none");
+    while (resultsElement.hasChildNodes()) {
+        resultsElement.removeChild(resultsElement.firstChild);
+    }
+    resultsInfoElement.classList.add("d-none");
+    resultsInfoElement.innerText = "";
+};
 const updateSearchResults = results => {
+    const resultsElement = document.getElementById("search_results");
+    const resultsInfoElement = document.getElementById("search_results_info");
     if (results.length > 0) {
-        const resultsElement = document.getElementById("search_results");
-        resultsElement.classList.add("d-none");
-        for (const child of resultsElement.children) {
-            child.remove();
-        }
-        resultsElement.classList.remove("d-none");
+        resultsInfoElement.classList.remove('d-none');
+        const masculinePlural = results.length > 1 ? "i" : "o";
+        resultsInfoElement.innerText = `${results.length} element${masculinePlural} trovat${masculinePlural}`;
         for (let resIdx = 0; resIdx < results.length; resIdx++) {
             const result = results[resIdx];
             const classOjects = searchData.classes;
@@ -209,23 +219,12 @@ const updateSearchResults = results => {
             elementMetadata.appendChild(classesColumn);
 
             newlement.appendChild(elementMetadata);
-
-
-//             const elementContent = 
-// `<a href="${relpermalink}">
-//     <div class="d-flex w-100 justify-content-between">
-//         <h5 class="mb-1 search-result-title">${title}</h5>
-//         <small>${publishdateformatted}</small>
-//     </div>
-//     <p class="mb-1 search-result-summary">${summary}</p>
-// </a>
-// <div class="d-flex w-100 justify-content-between">
-//     <small><span class="search-result-tags-label">TAGS</span>: ${tags.join(" ")}</small>
-//     <small>${classTags.join(" ")}</small>
-// </div>`;
-//             newlement.innerHTML = elementContent;
             resultsElement.appendChild(newlement);
         }
+        searchResultCollapse.show();
+    } else {
+        resultsInfoElement.innerText = `Nessun elemento trovato`;
+        resultsInfoElement.classList.remove("d-none");
     }
 };
 const fetchSearchData = () => {
@@ -248,17 +247,17 @@ const searchSearchData = searchTerm => {
     for(const article of searchData.articles){
         for(const key of ['Summary', 'Title', 'Tags']){
             const value = article[key];
-            if(value !== undefined && value.includes(searchTerm)){
+            if(value !== undefined && value.toLowerCase().includes(searchTerm.toLowerCase())){
                 matchingArticles.push(article);
                 // console.log("[DEBUG] Article: '" + article.Title + "' matches the search term");
                 break;
             }
         };
     };
-    if(matchingArticles.length>0){
-        console.log("[DEBUG] Found " + matchingArticles.length +  " articles");
-        updateSearchResults(matchingArticles);
-    }
+    updateSearchResults(matchingArticles);
+};
+const searchFailed = reason => {
+    console.log(reason);
 };
 document.addEventListener("scroll", _.throttle(scrollUtils, 100));
 window.addEventListener("load", () => {
@@ -269,9 +268,6 @@ window.addEventListener("load", () => {
             elements[i].classList.add("visible");
         };
     }, 500);
-    // document.getElementById("navBrandLogo").addEventListener("load", offsetBodyPaddingTop);
-    // document.getElementById("navBrandLogo").addEventListener("ready", offsetBodyPaddingTop);    
-    // friendlyCaptchaSetup();
     document.getElementById('siteNavbar').addEventListener('show.bs.collapse', event => {
         navbarSetBackgroundAccordingToScroll(1);
     });
@@ -280,25 +276,41 @@ window.addEventListener("load", () => {
     });
     handleDisposableBanners();
     /// TODO: review this
-    var triggersearch = event => {
+    var triggersearch = () => {
         var searchTerm = document.getElementById('searchTerm').value;
-        // fetchAndSearchPage(searchTerm);
-        searchSearchData(searchTerm);
+        // if searchTerm is too short don't trigger search
+        if(searchTerm.length < 3){
+            searchFailed("Search term is too short");
+        }else{
+            searchResultCollapse.hide();
+            clearSearchResults();
+            setTimeout(() => {
+                searchSearchData(searchTerm);
+            }, 1000);
+            // const hiddenListener = event => {
+            //     event.target.removeEventListener('hidden.bs.collapse', hiddenListener);
+            //     searchSearchData(searchTerm);
+            // }
+            // document.getElementById("search_results").addEventListener('hidden.bs.collapse', hiddenListener);
+            // searchResultCollapse.hide();
+        }
     };
-    // const searchformelement = document.getElementById('searchForm');
-    // if(searchformelement){
-    //         searchformelement.addEventListener('submit', event => {
-    //         event.preventDefault();
-    //         triggersearch(event);
-    //     });
-    // }
     const searchbutton = document.getElementById('searchButton')
     if(searchbutton){
         searchbutton.addEventListener('click', triggersearch);
     }
     const searchInput = document.getElementById('searchTerm');
+    const debounced = _.debounce(triggersearch, 1000);
     if(searchInput){
-        searchInput.addEventListener('keydown', _.debounce(triggersearch, 1000));
+        searchInput.addEventListener('keydown', event => {
+            if (event.code === 'Enter') { // return press triggers immediately
+                event.preventDefault();
+                debounced.cancel();
+                triggersearch();
+            }else{
+                debounced();
+            }
+        });
     }
     renderTableCaptions();
     fetchSearchData();
