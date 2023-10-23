@@ -81,7 +81,9 @@ jobs:
             dist
 
   deploy:
-    needs: [build_searchdb, build_hugo]
+    needs: 
+	# - build_searchdb 
+	- build_hugo
     runs-on: self-hosted
     steps:
       - name: Download server code and deploy to PUBLIC_HTML
