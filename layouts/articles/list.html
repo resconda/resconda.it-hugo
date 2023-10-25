@@ -10,7 +10,28 @@
   </div>
   <div class="row mb-4">
     <div class="text-center" id="search_results_info"></div>
-    <div class="list-group collapse" id="search_results"></div>
+    <div id="search_result_template" class="list-group-item list-group-item-action d-none">
+      <a href="#">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 search-result-title">title</h5>
+          <small class="search-result-date">date</small>
+        </div>
+        <p class="mb-1 search-result-summary">summary</p>
+      </a>
+      <div class="d-flex w-100 justify-content-between align-items-center">
+        <small>
+          <a href="#">
+            <span class="badge rounded-pill tag-pill">tag1</span>
+          </a>
+        </small>
+        <small>
+          {{- range $className, $classObj := .Site.Taxonomies.classes -}}
+          {{- partial "tag_svg.html" (dict "label" $className "width" "4rem" "extra_class" "fill d-none") -}}
+          {{- end -}}
+        </small>
+      </div>
+    </div>
+    <div class="list-group" id="search_results"></div>
   </div>
   <h2 class="site-title">{{.Title| htmlUnescape}}</h2>
   <!-- list template -->
