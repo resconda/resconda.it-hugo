@@ -87,7 +87,7 @@ var fetchAndSearchPage = function(searchTerm) {
                 const summary = result.DbResult.Summary;
                 const path = result.DbResult.Path;
                 const tagsString = result.Tags.map(tag => {
-                    return `<a href="/tags/${tag}">${tag}</a>`
+                    return `<a href="/tags/${tag.toLowerCase()}">${tag}</a>`
                 }).join(", ");
                 const date = new Date(result.DbResult.Date).toLocaleDateString();
                 const newlement = document.createElement('div');
@@ -149,17 +149,66 @@ var handleDisposableBanners = function() {
     });
 };
 var searchData = undefined;
-const searchResultCollapse = new bootstrap.Collapse("#search_results");
+// const searchResultCollapse = new bootstrap.Collapse("#search_results");
 const clearSearchResults = () => {
     const resultsElement = document.getElementById("search_results");
     const resultsInfoElement = document.getElementById("search_results_info");
-    // resultsElement.classList.add("d-none");
+    
     while (resultsElement.hasChildNodes()) {
-        resultsElement.removeChild(resultsElement.firstChild);
+        const firstChild = resultsElement.children[0];
+        resultsElement.removeChild(firstChild);
     }
     resultsInfoElement.classList.add("d-none");
     resultsInfoElement.innerText = "";
 };
+const updateSearchResults2 = results => {
+    const resultsElement = document.getElementById("search_results");
+    const resultsInfoElement = document.getElementById("search_results_info");
+    if (results.length > 0) {
+        resultsInfoElement.classList.remove('d-none');
+        const masculinePlural = results.length > 1 ? "i" : "o";
+        resultsInfoElement.innerText = `${results.length} element${masculinePlural} trovat${masculinePlural}`;
+        const templateItem = document.getElementById("search_result_template");
+        for (let resIdx = 0; resIdx < results.length; resIdx++) {
+            const result = results[resIdx];
+            const classOjects = searchData.classes;
+            const classTags = [];
+            if ("Classes" in result) {
+                result.Classes.split(", ").forEach(className => {
+                    classTags.push(className.toLowerCase());
+                });
+            }
+            const date = new Date(result.PublishDateFormatted).toLocaleDateString();
+            const relpermalink = result.RelPermalink;
+            const summary = result.Summary;
+            const title = result.Title;
+            const newElement = templateItem.cloneNode(true);
+            const tagelementtemplate = newElement.querySelector(".pill-element-template");
+            for (const tag of result.Tags.split(", ")) {
+                const newTagElement = tagelementtemplate.cloneNode(true);
+                newTagElement.classList.remove("d-none", "pill-element-template");
+                newTagElement.setAttribute("href", `/tags/${tag.toLowerCase()}`);
+                newTagElement.querySelector("span").innerHTML = tag;
+                tagelementtemplate.parentElement.appendChild(newTagElement);
+            }
+
+            newElement.removeAttribute("id");
+            newElement.getElementsByClassName("search-result-title").item(0).innerHTML = title;
+            newElement.getElementsByClassName("search-result-summary").item(0).innerHTML = summary;
+            newElement.getElementsByClassName("search-result-date").item(0).innerText = date;
+
+            for(cls of classTags){
+                newElement.querySelector(`svg.${cls}`).classList.remove("d-none");
+            }
+            resultsElement.appendChild(newElement);
+            newElement.classList.remove('d-none'); // TODO: make transition
+        }
+        // searchResultCollapse.show();
+    } else {
+        resultsInfoElement.innerText = `Nessun elemento trovato`;
+        resultsInfoElement.classList.remove("d-none");
+    }
+}
 const updateSearchResults = results => {
     const resultsElement = document.getElementById("search_results");
     const resultsInfoElement = document.getElementById("search_results_info");
@@ -182,7 +231,7 @@ const updateSearchResults = results => {
             const relpermalink = result.RelPermalink;
             const summary = result.Summary;
             const tags = result.Tags.split(", ").map(tagstring => {
-                return `<a href="/tags/${tagstring}"><span class="badge rounded-pill tag-pill">${tagstring}</span></a>`;
+                return `<a href="/tags/${tagstring.toLowerCase()}"><span class="badge rounded-pill tag-pill">${tagstring}</span></a>`;
             });
             const title = result.Title;
             
@@ -221,7 +270,7 @@ const updateSearchResults = results => {
             newlement.appendChild(elementMetadata);
             resultsElement.appendChild(newlement);
         }
-        searchResultCollapse.show();
+        // searchResultCollapse.show();
     } else {
         resultsInfoElement.innerText = `Nessun elemento trovato`;
         resultsInfoElement.classList.remove("d-none");
@@ -249,15 +298,16 @@ const searchSearchData = searchTerm => {
             const value = article[key];
             if(value !== undefined && value.toLowerCase().includes(searchTerm.toLowerCase())){
                 matchingArticles.push(article);
-                // console.log("[DEBUG] Article: '" + article.Title + "' matches the search term");
                 break;
             }
         };
     };
-    updateSearchResults(matchingArticles);
+    updateSearchResults2(matchingArticles);
 };
 const searchFailed = reason => {
-    console.log(reason);
+    const resultsInfoElement = document.getElementById("search_results_info");
+    resultsInfoElement.innerHTML = reason;
+    resultsInfoElement.classList.remove('d-none');
 };
 document.addEventListener("scroll", _.throttle(scrollUtils, 100));
 window.addEventListener("load", () => {
@@ -280,19 +330,16 @@ window.addEventListener("load", () => {
         var searchTerm = document.getElementById('searchTerm').value;
         // if searchTerm is too short don't trigger search
         if(searchTerm.length < 3){
-            searchFailed("Search term is too short");
+            if(searchTerm.length == 0){
+                clearSearchResults();
+            }else{
+                searchFailed("Termine di ricerca troppo corto");
+            }
         }else{
-            searchResultCollapse.hide();
             clearSearchResults();
             setTimeout(() => {
                 searchSearchData(searchTerm);
             }, 1000);
-            // const hiddenListener = event => {
-            //     event.target.removeEventListener('hidden.bs.collapse', hiddenListener);
-            //     searchSearchData(searchTerm);
-            // }
-            // document.getElementById("search_results").addEventListener('hidden.bs.collapse', hiddenListener);
-            // searchResultCollapse.hide();
         }
     };
     const searchbutton = document.getElementById('searchButton')

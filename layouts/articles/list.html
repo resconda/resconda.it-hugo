@@ -9,29 +9,49 @@
     </div>
   </div>
   <div class="row mb-4">
-    <div class="text-center" id="search_results_info"></div>
-    <div id="search_result_template" class="list-group-item list-group-item-action d-none">
-      <a href="#">
-        <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1 search-result-title">title</h5>
-          <small class="search-result-date">date</small>
-        </div>
-        <p class="mb-1 search-result-summary">summary</p>
-      </a>
-      <div class="d-flex w-100 justify-content-between align-items-center">
-        <small>
-          <a href="#">
-            <span class="badge rounded-pill tag-pill">tag1</span>
-          </a>
-        </small>
-        <small>
-          {{- range $className, $classObj := .Site.Taxonomies.classes -}}
-          {{- partial "tag_svg.html" (dict "label" $className "width" "4rem" "extra_class" "fill d-none") -}}
-          {{- end -}}
-        </small>
+    <div class="text-center" id="search_results_info">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
       </div>
     </div>
-    <div class="list-group" id="search_results"></div>
+  </div>
+  <div class="row">
+    <div class="col col-12">
+      <div id="search_result_template" class="list-group-item list-group-item-action d-none">
+        <a href="#">
+          <div class="row">
+            <div class="col d-flex">
+              <div class="flex-fill"><h5 class="mb-1 search-result-title">title</h5></div>
+              <div class="flex-fill text-end"><small class="search-result-date">date</small></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-12">
+              <p class="mb-1 search-result-summary">summary</p>
+            </div>
+          </div>
+        </a>
+        <div class="row">
+            <div class="col col-9 col-md-10 col-xl-11">
+              <div class="list-group list-group-horizontal-sm">
+                  <a class="pill-element-template d-none list-group-item border-0 px-1" href="#"><span class="badge rounded-pill tag-pill"></span></a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="list-group list-group-horizontal-sm justify-content-end">
+                {{- range $className, $classObj := .Site.Taxonomies.classes -}}
+                {{- partial "tag_svg.html" (dict "label" $className "width" "4rem" "extra_class" "fill d-none") -}}
+                {{- end -}}
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-12">
+      <div class="list-group" id="search_results"></div>
+    </div>
   </div>
   <h2 class="site-title">{{.Title| htmlUnescape}}</h2>
   <!-- list template -->
