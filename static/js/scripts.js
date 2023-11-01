@@ -193,6 +193,7 @@ const updateSearchResults2 = results => {
             }
 
             newElement.removeAttribute("id");
+            newElement.getElementsByClassName("search-result-link").item(0).setAttribute("href", relpermalink);
             newElement.getElementsByClassName("search-result-title").item(0).innerHTML = title;
             newElement.getElementsByClassName("search-result-summary").item(0).innerHTML = summary;
             newElement.getElementsByClassName("search-result-date").item(0).innerText = date;
