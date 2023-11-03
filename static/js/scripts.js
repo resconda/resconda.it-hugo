@@ -1,6 +1,9 @@
 const newsletterBannerDismissedCookieName = "newsletterBannerDismissed";
 const picsDisclaimerBannerDismissedCookieName = "picsDisclaimerBannerDismissed";
-var navbarSetBackgroundAccordingToScroll = function(pageTop = null){
+const resultsElement = document.getElementById("search_results");
+const resultsInfoElement = document.getElementById("search_results_info");
+const spinnerLoadingDiv = resultsInfoElement.querySelector(".spinner-border");
+var navbarSetBackgroundAccordingToScroll = function (pageTop = null) {
     if(!pageTop){
         pageTop = document.scrollTop;
     }
@@ -69,7 +72,6 @@ var offsetBodyPaddingTop = function() {
     document.body.style.paddingTop = `${navheight}px`;
 };
 var fetchAndSearchPage = function(searchTerm) {
-    const resultsElement = document.getElementById("search_results");
     resultsElement.classList.add("d-none");
     for (const child of resultsElement.children) {
         child.remove();
@@ -151,23 +153,19 @@ var handleDisposableBanners = function() {
 var searchData = undefined;
 // const searchResultCollapse = new bootstrap.Collapse("#search_results");
 const clearSearchResults = () => {
-    const resultsElement = document.getElementById("search_results");
-    const resultsInfoElement = document.getElementById("search_results_info");
-    
     while (resultsElement.hasChildNodes()) {
         const firstChild = resultsElement.children[0];
         resultsElement.removeChild(firstChild);
     }
-    resultsInfoElement.classList.add("d-none");
-    resultsInfoElement.innerText = "";
+    // resultsInfoElement.classList.add("d-none");
+    resultsInfoElement.querySelector(".info_message").innerText = "";
 };
 const updateSearchResults2 = results => {
-    const resultsElement = document.getElementById("search_results");
-    const resultsInfoElement = document.getElementById("search_results_info");
+
     if (results.length > 0) {
-        resultsInfoElement.classList.remove('d-none');
+        // resultsInfoElement.classList.remove('d-none');
         const masculinePlural = results.length > 1 ? "i" : "o";
-        resultsInfoElement.innerText = `${results.length} element${masculinePlural} trovat${masculinePlural}`;
+        resultsInfoElement.querySelector(".info_message").innerText = `${results.length} element${masculinePlural} trovat${masculinePlural}`;
         const templateItem = document.getElementById("search_result_template");
         for (let resIdx = 0; resIdx < results.length; resIdx++) {
             const result = results[resIdx];
@@ -206,77 +204,11 @@ const updateSearchResults2 = results => {
         }
         // searchResultCollapse.show();
     } else {
-        resultsInfoElement.innerText = `Nessun elemento trovato`;
-        resultsInfoElement.classList.remove("d-none");
+        resultsInfoElement.querySelector(".info_message").innerText = `Nessun elemento trovato`;
+        // resultsInfoElement.classList.remove("d-none");
     }
 }
-const updateSearchResults = results => {
-    const resultsElement = document.getElementById("search_results");
-    const resultsInfoElement = document.getElementById("search_results_info");
-    if (results.length > 0) {
-        resultsInfoElement.classList.remove('d-none');
-        const masculinePlural = results.length > 1 ? "i" : "o";
-        resultsInfoElement.innerText = `${results.length} element${masculinePlural} trovat${masculinePlural}`;
-        for (let resIdx = 0; resIdx < results.length; resIdx++) {
-            const result = results[resIdx];
-            const classOjects = searchData.classes;
-            const classTags = [];
-            if("Classes" in result){
-                result.Classes.split(", ").forEach(className => {
-                    classElement = document.createElement("span");
-                    classElement.innerHTML = classOjects[className.toLowerCase()];
-                    classTags.push(classElement);
-                });
-            }
-            const publishdateformatted = new Date(result.PublishDateFormatted).toLocaleDateString();
-            const relpermalink = result.RelPermalink;
-            const summary = result.Summary;
-            const tags = result.Tags.split(", ").map(tagstring => {
-                return `<a href="/tags/${tagstring.toLowerCase()}"><span class="badge rounded-pill tag-pill">${tagstring}</span></a>`;
-            });
-            const title = result.Title;
-            
-            const newlement = document.createElement('div');
-            newlement.classList.add('list-group-item', 'list-group-item-action');
-            const elementLinkWrapper = document.createElement('a');
-            elementLinkWrapper.setAttribute("href", relpermalink)
-            var elementContent = document.createElement('div');
-            elementContent.classList.add("d-flex", "w-100", "justify-content-between");
-            elementContent.innerHTML = `<h5 class="mb-1 search-result-title">${title}</h5><small>${publishdateformatted}</small>`;
-            elementLinkWrapper.appendChild(elementContent);
-            
-            elementContent = document.createElement('p');
-            elementContent.classList.add("mb-1", "search-result-summary");
-            elementContent.innerHTML = summary;
-            elementLinkWrapper.appendChild(elementContent);
 
-            newlement.appendChild(elementLinkWrapper);
-
-            const elementMetadata = document.createElement('div');
-            elementMetadata.classList.add("d-flex", "w-100", "justify-content-between", "align-items-center");
-            const tagsColumn = document.createElement('small');
-            const tagsColumnLabel = document.createElement('span');
-            tagsColumnLabel.classList.add("search-result-tags-label");
-            tagsColumnLabel.innerHTML = "TAGS";
-            tagsColumn.appendChild(tagsColumnLabel);
-            tagsColumn.innerHTML += ": ";
-            tagsColumn.innerHTML += tags.join(" ");
-            
-            elementMetadata.appendChild(tagsColumn);
-
-            const classesColumn = document.createElement('small');
-            classTags.forEach(classElement => { classesColumn.appendChild(classElement) });
-            elementMetadata.appendChild(classesColumn);
-
-            newlement.appendChild(elementMetadata);
-            resultsElement.appendChild(newlement);
-        }
-        // searchResultCollapse.show();
-    } else {
-        resultsInfoElement.innerText = `Nessun elemento trovato`;
-        resultsInfoElement.classList.remove("d-none");
-    }
-};
 const fetchSearchData = () => {
     const XHR = new XMLHttpRequest();
     XHR.addEventListener('load', (event) => {
@@ -289,6 +221,7 @@ const fetchSearchData = () => {
     XHR.send();
 }
 const searchSearchData = searchTerm => {
+    spinnerLoadingDiv.classList.add("d-none");
     if(searchData === undefined){
         console.log("[ERROR] Search data unavailable");
         return;
@@ -306,9 +239,7 @@ const searchSearchData = searchTerm => {
     updateSearchResults2(matchingArticles);
 };
 const searchFailed = reason => {
-    const resultsInfoElement = document.getElementById("search_results_info");
-    resultsInfoElement.innerHTML = reason;
-    resultsInfoElement.classList.remove('d-none');
+    resultsInfoElement.querySelector(".info_message").innerHTML = reason;
 };
 document.addEventListener("scroll", _.throttle(scrollUtils, 100));
 window.addEventListener("load", () => {
@@ -331,6 +262,7 @@ window.addEventListener("load", () => {
         var searchTerm = document.getElementById('searchTerm').value;
         // if searchTerm is too short don't trigger search
         if(searchTerm.length < 3){
+            resultsInfoElement.querySelector(".spinner-border").classList.add("d-none");
             if(searchTerm.length == 0){
                 clearSearchResults();
             }else{
@@ -338,9 +270,10 @@ window.addEventListener("load", () => {
             }
         }else{
             clearSearchResults();
-            setTimeout(() => {
-                searchSearchData(searchTerm);
-            }, 1000);
+            searchSearchData(searchTerm);
+            // setTimeout(() => {
+            //     searchSearchData(searchTerm);
+            // }, 1000);
         }
     };
     const searchbutton = document.getElementById('searchButton')
@@ -351,12 +284,31 @@ window.addEventListener("load", () => {
     const debounced = _.debounce(triggersearch, 1000);
     if(searchInput){
         searchInput.addEventListener('keydown', event => {
+            spinnerLoadingDiv.classList.remove('d-none');
             if (event.code === 'Enter') { // return press triggers immediately
                 event.preventDefault();
                 debounced.cancel();
                 triggersearch();
-            }else{
-                debounced();
+            } else {
+                var toIgnore = false;
+                const excludeRegexes = [/Escape/, /Tab/, /Control/, /Shift/, /Alt/, 
+                    /CapsLock/, /F[0-9]+/, /Pause/, /ScrollLock/, /PrintScreen/, /KanaMode/, 
+                    /Lang[0-9]/, /Intl/, /(Non)?Convert/, /Media/, /Volume/, 
+                    /Home/, /NumLock/, /Arrow/, /End/, /Page/, /Delete/, /Meta/, 
+                    /ContextMenu/, /Browser/, /Launch/, /Power/, /Unidentified/
+                ];
+                for (const regex of excludeRegexes) {
+                    if(event.code !== undefined && event.code.match(regex)){
+                        toIgnore = true;
+                        console.log("Ignored key code: " + event.code)
+                        break;
+                    }
+                }
+                if(!toIgnore){
+                    debounced();
+                }else{
+                    spinnerLoadingDiv.classList.add('d-none');
+                }
             }
         });
     }
