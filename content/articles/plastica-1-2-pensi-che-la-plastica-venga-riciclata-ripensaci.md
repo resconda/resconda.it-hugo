@@ -1,5 +1,5 @@
 ---
-title: "Plastica 1/2: pensi che la plastica venga riciclata? Ripensaci."
+title: "Pensi che la plastica venga riciclata? Beh, ripensaci..."
 date: 2023-11-06
 summary: |
   Ad oggi, sono state immesse nell'ambiente circa 11 miliardi di tonnellate di plastica, più della biomassa di tutti gli animali, terrestri e marini. Solo una piccola parte della plastica viene riciclata, il resto finisce ovunque, persino nel tuo sangue.

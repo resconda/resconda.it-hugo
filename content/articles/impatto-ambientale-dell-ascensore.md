@@ -1,5 +1,5 @@
 ---
-title: Impatto ambientale dell ascensore
+title: "Impatto ambientale dell’ascensore: quanto è meglio prendere le scale"
 date: 2023-11-06
 summary: |
   Ascensori, o spesso discensori, li usiamo ad occhi chiusi ma siamo consapevoli del loro consumo?
