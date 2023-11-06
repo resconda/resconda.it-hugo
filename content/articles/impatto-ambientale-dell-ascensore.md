@@ -1,6 +1,4 @@
 ---
-## Important: If this is a draft, next line should NOT begin with #
-draft: true
 title: Impatto ambientale dell ascensore
 date: 2023-11-06
 summary: |
