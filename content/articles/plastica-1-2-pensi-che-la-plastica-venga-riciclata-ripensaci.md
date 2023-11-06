@@ -15,17 +15,17 @@ Se ne parla sempre di più ma la consequenzialità logica nelle azioni e nei pro
 
 Alcuni dati:
 -   attualmente si producono circa 430 milioni di tonnellate di plastica all\'anno
--   Ad oggi, sono state create (prerogativa originariamente degli Dei...) circa 11 miliardi di tonnellate di plastica
+-   Ad oggi, sono state create circa 11 miliardi di tonnellate di plastica
 -   Un terzo della plastica creata è costituito da plastica monouso.
--   La plastica presente in natura supera in peso la biomassa di tutti gli animali
--   Il 95% degli imballaggi in plastica vengono smaltiti dopo un solo utilizzo
--   il 72% della plastica finisce in discarica o nell'ambiente, dove diventa un elemento fisso del mondo; si frantuma per formare microplastiche, pezzi più piccoli di cinque millimetri di diametro.
+-   La plastica presente in natura supera in peso la biomassa di tutti gli animali (terresti e marini)
+-   Il 95% degli imballaggi in plastica vengono gettati dopo un solo utilizzo
+-   il 72% della plastica finisce in discarica o nell'ambiente, dove diventa un elemento permanente del mondo; si frantuma per formare microplastiche, pezzi di dimensioni inferiori a pochi millimetri.
 -   Le microplastiche si trovano nelle profondità degli oceani, nella pioggia e nella neve dei luoghi più incontaminati, nei pesci, nel sangue umano, nel colon, nei polmoni, nelle vene, nel latte materno, nella placenta e nei feti.
 -   una persona consuma in media cinque grammi di plastica ogni settimana, per lo più dall\'acqua che beve, ma anche mangiando carni, crostacei, pesci, frutta e verdura...
 
-Se venisse dedicata alla questione un decimo dell'attenzione che merita, la plastica monouso sarebbe già del tutto bandita e sarebbero stati introdotti dei pesanti provvedimenti di natura fiscale per la riduzione degli imballaggi. Ma l'industria degli imballaggi è potente (per lo meno in Italia), al punto che la Direttiva imballaggi, recentemente presentata dalla Commissione Europea - che giustamente (ancorchè timidamente) spinge più verso il riuso che verso il riciclo - è stata fortemente boicottata dai nostri rappresentanti a Bruxelles.
+Se venisse dedicata alla questione un decimo dell'attenzione che merita, la plastica monouso sarebbe già del tutto bandita e sarebbero stati introdotti dei pesanti provvedimenti di natura fiscale per la riduzione degli imballaggi. Ma l'industria degli imballaggi è potente (per lo meno in Italia), al punto che nuova proposta di Regolamento sugli  imballaggi, recentemente presentata dalla Commissione Europea - che giustamente (ancorchè timidamente) spinge più verso il riuso che verso il riciclo - è stata fortemente boicottata dai nostri rappresentanti a Bruxelles.
 
-In conclusione: pensi che riciclare sia una soluzione? Beh, ripensaci.
+In conclusione: pensi che riciclare sia una soluzione? Beh, ripensaci...
 
 Fonti:
 - [https://www.sciencedirect.com/](https://www.sciencedirect.com/science/article/pii/S0013935120305703?via%3Dihub)
