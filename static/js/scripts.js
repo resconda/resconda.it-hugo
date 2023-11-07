@@ -1,8 +1,19 @@
 const newsletterBannerDismissedCookieName = "newsletterBannerDismissed";
 const picsDisclaimerBannerDismissedCookieName = "picsDisclaimerBannerDismissed";
-const resultsElement = document.getElementById("search_results");
-const resultsInfoElement = document.getElementById("search_results_info");
-const spinnerLoadingDiv = resultsInfoElement.querySelector(".spinner-border");
+const resultsElement = () => {
+    return document.getElementById("search_results");
+};
+const resultsInfoElement = () => {
+    return document.getElementById("search_results_info");
+};
+const spinnerLoadingDiv = () => {
+    var rie = resultsInfoElement();
+    if(rie !== null){
+        return rie.querySelector(".spinner-border");
+    }else{
+        return null;
+    }
+};
 var navbarSetBackgroundAccordingToScroll = function (pageTop = null) {
     if(!pageTop){
         pageTop = document.scrollTop;
@@ -72,15 +83,15 @@ var offsetBodyPaddingTop = function() {
     document.body.style.paddingTop = `${navheight}px`;
 };
 var fetchAndSearchPage = function(searchTerm) {
-    resultsElement.classList.add("d-none");
-    for (const child of resultsElement.children) {
+    resultsElement().classList.add("d-none");
+    for (const child of resultsElement().children) {
         child.remove();
     }
     var XHR = new XMLHttpRequest();
     XHR.addEventListener('load', (event) => {
         var data = JSON.parse(XHR.responseText);
         if(data.Results.length > 0){
-            resultsElement.classList.remove("d-none");
+            resultsElement().classList.remove("d-none");
             for (let resIdx = 0; resIdx < data.Results.length; resIdx++) {
                 const result = data.Results[resIdx];
                 const cat = result.DbResult.Category;
@@ -102,7 +113,7 @@ var fetchAndSearchPage = function(searchTerm) {
     <p class="mb-1">${summary}</p></a>
     <small>TAGS: ${tagsString}</small>`;
                 newlement.innerHTML = elementContent;
-                resultsElement.appendChild(newlement);
+                resultsElement().appendChild(newlement);
             }
         }
         console.log(data);
@@ -153,19 +164,17 @@ var handleDisposableBanners = function() {
 var searchData = undefined;
 // const searchResultCollapse = new bootstrap.Collapse("#search_results");
 const clearSearchResults = () => {
-    while (resultsElement.hasChildNodes()) {
-        const firstChild = resultsElement.children[0];
-        resultsElement.removeChild(firstChild);
+    while (resultsElement().hasChildNodes()) {
+        const firstChild = resultsElement().children[0];
+        resultsElement().removeChild(firstChild);
     }
-    // resultsInfoElement.classList.add("d-none");
-    resultsInfoElement.querySelector(".info_message").innerText = "";
+    resultsInfoElement().querySelector(".info_message").innerText = "";
 };
 const updateSearchResults2 = results => {
 
     if (results.length > 0) {
-        // resultsInfoElement.classList.remove('d-none');
         const masculinePlural = results.length > 1 ? "i" : "o";
-        resultsInfoElement.querySelector(".info_message").innerText = `${results.length} element${masculinePlural} trovat${masculinePlural}`;
+        resultsInfoElement().querySelector(".info_message").innerText = `${results.length} element${masculinePlural} trovat${masculinePlural}`;
         const templateItem = document.getElementById("search_result_template");
         for (let resIdx = 0; resIdx < results.length; resIdx++) {
             const result = results[resIdx];
@@ -199,13 +208,11 @@ const updateSearchResults2 = results => {
             for(cls of classTags){
                 newElement.querySelector(`svg.${cls}`).classList.remove("d-none");
             }
-            resultsElement.appendChild(newElement);
+            resultsElement().appendChild(newElement);
             newElement.classList.remove('d-none'); // TODO: make transition
         }
-        // searchResultCollapse.show();
     } else {
-        resultsInfoElement.querySelector(".info_message").innerText = `Nessun elemento trovato`;
-        // resultsInfoElement.classList.remove("d-none");
+        resultsInfoElement().querySelector(".info_message").innerText = `Nessun elemento trovato`;
     }
 }
 
@@ -221,7 +228,7 @@ const fetchSearchData = () => {
     XHR.send();
 }
 const searchSearchData = searchTerm => {
-    spinnerLoadingDiv.classList.add("d-none");
+    spinnerLoadingDiv().classList.add("d-none");
     if(searchData === undefined){
         console.log("[ERROR] Search data unavailable");
         return;
@@ -239,7 +246,7 @@ const searchSearchData = searchTerm => {
     updateSearchResults2(matchingArticles);
 };
 const searchFailed = reason => {
-    resultsInfoElement.querySelector(".info_message").innerHTML = reason;
+    resultsInfoElement().querySelector(".info_message").innerHTML = reason;
 };
 document.addEventListener("scroll", _.throttle(scrollUtils, 100));
 window.addEventListener("load", () => {
@@ -262,7 +269,7 @@ window.addEventListener("load", () => {
         var searchTerm = document.getElementById('searchTerm').value;
         // if searchTerm is too short don't trigger search
         if(searchTerm.length < 3){
-            resultsInfoElement.querySelector(".spinner-border").classList.add("d-none");
+            resultsInfoElement().querySelector(".spinner-border").classList.add("d-none");
             if(searchTerm.length == 0){
                 clearSearchResults();
             }else{
@@ -284,7 +291,7 @@ window.addEventListener("load", () => {
     const debounced = _.debounce(triggersearch, 1000);
     if(searchInput){
         searchInput.addEventListener('keydown', event => {
-            spinnerLoadingDiv.classList.remove('d-none');
+            spinnerLoadingDiv().classList.remove('d-none');
             if (event.code === 'Enter') { // return press triggers immediately
                 event.preventDefault();
                 debounced.cancel();
@@ -307,7 +314,7 @@ window.addEventListener("load", () => {
                 if(!toIgnore){
                     debounced();
                 }else{
-                    spinnerLoadingDiv.classList.add('d-none');
+                    spinnerLoadingDiv().classList.add('d-none');
                 }
             }
         });
