@@ -341,6 +341,9 @@ table, .highlight>pre, pre.example {
   padding-top: 2em;
   padding-bottom: 2em;
 }
+#announcement {
+  // background-color: $background2;
+}
 #prologue{
   background-color: $background1;
 }
@@ -618,6 +621,9 @@ span.unit {
 }
 .bg-green {
   background-color: $green01;
+}
+.bg-lightblue {
+  background-color: $background2;
 }
 .tag-pill {
   background-color: $logo-color-lightblue;
