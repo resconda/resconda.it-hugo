@@ -1,6 +1,7 @@
+from ast import parse
 from mod_python import apache
 from json import dumps as jds
-import urllib.parse as ups
+from urllib.parse import parse_qs
 import sanitizers
 import friendlycaptcha
 from smtplib import SMTP
@@ -117,7 +118,8 @@ def form_contact(req):
     output = {
         "errors": []
     }
-    rawparams = req.args
+    reqdata = req.read()
+    rawparams = parse_qs(reqdata.decode())
     req.log_error("Parsed params: %s" % str(rawparams), apache.APLOG_DEBUG)
     validationErrors = validate_input(params=rawparams)
     if len(validationErrors) > 0:
