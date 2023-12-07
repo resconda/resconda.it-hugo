@@ -5,7 +5,7 @@ date: 2023-12-06
 summary: |
   Il 29 Novembre il progetto Emcoin è stato presentato al pubblico presso l’Energy Center del Politecnico di Torino da Marcello Corongiu insieme a Angelo Tartaglia, Luca Mercalli e Maurizio Pallante.
 cover_image: # optional
-  src: assets/post-img/29_NOV_LOCANDINA_INTESTAZIONE_yfj94l
+  src: assets/post-img/photo_2023-12-07_10.12.53_qwtotg
 #   caption: "caption string"
 tags:
   - emcoin
