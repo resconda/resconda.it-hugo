@@ -1,0 +1,11 @@
+{{$width := or (.Get "width" ) ( "100%" ) }}
+{{$height := or (.Get "height" ) ( "300" ) }}
+{{$title := or (.Get "title" ) ( "YouTube video player" ) }}
+<div class="yt_iframe_container">
+    <iframe
+        width="{{ $width }}"
+        height="{{ $height }}"
+        title="{{ $title }}"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+        {{with .Get "src"}}src="{{.}}"{{end}}></iframe>
+</div>

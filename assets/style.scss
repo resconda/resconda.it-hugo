@@ -831,5 +831,9 @@ a.greenlink {
   font-weight: bold;
 }
 
+.yt_iframe_container {
+  padding: 1rem 0;
+}
+
 // Energy tags
 @import "./energy_tags.scss";
