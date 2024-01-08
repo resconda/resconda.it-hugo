@@ -1,0 +1,2 @@
+{{$extraclass:= printf "badge %s" (or (.Get "class") ("bg-secondary")) }}
+<span class={{$extraclass}}>{{ .Inner }}</span>
