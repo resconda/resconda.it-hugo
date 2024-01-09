@@ -1,165 +1,24 @@
 ---
-## Important: If this is a draft, next line should NOT begin with #
-draft: true
-title: Cremazione Una Scelta Laica Un Problema Ambientale
+title: "Cremazione: una scelta laica, un problema ambientale"
 date: 2024-01-08
 ## below are user-defined parameters (lower case keys recommended)
-summary: # leave blank if no summary is provided
+summary: |
+  La cremazione è una pratica sempre più diffusa, una scelta che in 30 anni è passata dal 3 al 37% dei casi. Tuttavia ha dei costi: quello economico è forse modesto, ma quello ambientale no.
 # cover_image: # optional
 #   src: assets/post-img/img_name
 #   caption: "caption string"
+classes:
+- kWh
 tags:
-  - tag1
-  - tag2
+  - energia
+  - consumi
 ---
 
-Write the excerpt here. This is the starting paragraph of the article and it
-will be shown in article preview (post list pages, for instance)
-
-<!--more-->
-
-Write the rest of the article here.
-
-The language to use is [Markdown](https://github.com/markdown-it/markdown-it)
-
-The following content is a handy Markdown 101
-
----
-
-
-# h1 Heading
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
-
-
-## Horizontal Rules
-
-___
-
----
-
-***
-
-
-## Typographic replacements
-
-
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-
-"Smartypants, double quotes" and 'single quotes'
-
-
-## Emphasis
-
-**This is bold text**
-
-__This is bold text__
-
-*This is italic text*
-
-_This is italic text_
-
-~~Strikethrough~~
-
-
-## Blockquotes
-
-
-> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-> > > ...or with spaces between arrows.
-
-
-## Lists
-
-Unordered
-
-+ Create a list by starting a line with `+`, `-`, or `*`
-+ Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-+ Very easy!
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
-
-Start numbering with offset:
-
-57. foo
-1. bar
-
-## Links
-
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-
-## Images
-
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-
-Like links, Images also have a footnote style syntax
-
-![Alt text][id]
-
-With a reference later in the document defining the URL location:
-
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-
-
-
-### Subscript / Superscript
-
-- 19^th^
-- H~2~O
-
-
-### Footnotes
-
-Footnote 1 link[^first].
-
-Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
-
-Duplicated footnote reference[^second].
-
-[^first]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^second]: Footnote text.
-
-
-### Definition lists
-
-Term 1
-
-:   Definition 1
-with lazy continuation.
-
-Term 2 with *inline markup*
-
-:   Definition 2
-
-        { some code, part of Definition 2 }
-
-    Third paragraph of definition 2.
-
+Le pratiche funerarie fanno da sempre parte del bagaglio culturale più profondo e radicato di ogni società. Esse variano da Paese a Paese, nel tempo e nello spazio: inumazione, tumulazione, cremazione, mummificazione e altro, ognuna declinata in modi diversi.  
+Negli ultimi decenni in Italia rispetto alla tradizionale sepoltura ha “preso piede” la pratica della cremazione, probabilmente complici gli elevatii costi e la ridotta disponibilità di posti nei cimiteri e forse una crescente laicizzazione della società... Erano circa 1.000 nel 1970, 15.000 nel 1992 (3% dei decessi), 260.000 nel 2022 (37% dei decessi).  
+Ma qual'è il costo energetico della cremazione? Gli impianti di cremazione hanno un processo di combustione energivoro e bruciano combustibili fossili, normalmente gas metano. 
+Un forno crematorio utilizza per la cremazione di un cadavere circa 285 kWh di gas e 15 kWh di energia elettrica, immettendo in atmosfera circa 400 chili di CO2 (oltre a numerosi altri elementi chimici alcuni dei quali decisamente nocivi). 
+La cremazione nel 2022 potrebbe quindi aver richiesto 78 GWh di energia, pari all’elettricità che consuma in 5 giorni l’intera Città metropolitana di Milano.
 
 <!--
   created 2024-01-08 13:20:09.358862 +0100 CET m=+0.125825251

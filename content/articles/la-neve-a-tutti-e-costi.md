@@ -10,7 +10,7 @@ classes:
 - GWh
 tags:
 - energia
-- acqua
+- sci
 - neve
 - inverno
 ---
