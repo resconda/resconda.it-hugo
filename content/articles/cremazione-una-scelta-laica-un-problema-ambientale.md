@@ -20,6 +20,9 @@ Ma qual'è il costo energetico della cremazione? Gli impianti di cremazione hann
 Un forno crematorio utilizza per la cremazione di un cadavere circa 285 kWh di gas e 15 kWh di energia elettrica, immettendo in atmosfera circa 400 chili di CO2 (oltre a numerosi altri elementi chimici alcuni dei quali decisamente nocivi). 
 La cremazione nel 2022 potrebbe quindi aver richiesto 78 GWh di energia, pari all’elettricità che consuma in 5 giorni l’intera Città metropolitana di Milano.
 
+Peraltro non mancano forme di funerale anche più energivore: qualche giorno fa è partita da Cape Canaveral una missione spaziale privata statunitense “Peregrine” il cui scopo è depositare sulla superficie lunare le ceneri di un’ottantina di persone, una pratica (non economica) che ha un certo successo oltre oceano. Non abbiamo calcolato il costo energetico di un funerale simile ma non c’è dubbio che non possa esistere un rituale funebre più energivoro!
+
+
 <!--
   created 2024-01-08 13:20:09.358862 +0100 CET m=+0.125825251
 -->
