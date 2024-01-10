@@ -19,7 +19,7 @@ Con il nuovo anno, insieme a panettoni e cenoni, un grande classico sono i bilan
 
 In questa pillola facciamo un riepilogo dei numeri raccolti nei mesi passati.
 
-### Wh
+### {{< classtag tier=Wh width="20%" extra_class="fill">}}
 
 [20 min Cyclette](/articles/teatro-a-pedali): {{< badge class="rounded-pill bg-secondary text-white fw-bold">}}17 Wh{{< /badge>}}
 
@@ -34,7 +34,7 @@ In questa pillola facciamo un riepilogo dei numeri raccolti nei mesi passati.
 [Lampada Cromatica](/articles/una-lampada-cromatica-sensoriale/) (24 ore) : {{< badge class="rounded-pill bg-secondary text-white fw-bold">}}720 Wh{{< /badge>}}
 
 
-### kWh
+### {{< classtag tier=kWh width="20%" extra_class="fill">}}
 
 [Doccia](/articles/vado-a-farmi-una-doccia-calda/) {{< badge class="rounded-pill bg-secondary text-white fw-bold">}}2/3 kWh{{< /badge>}}
 
@@ -56,7 +56,7 @@ Cibo: [carne o pomodori?](/articles/volete-carne-o-pomodori/):
 - un metro cubo di acqua rubinetto (1000 L) {{< badge class="rounded-pill bg-secondary text-white fw-bold">}}2 kWh{{< /badge>}}
 - Pacco di acqua (in plastica) da 6x 1,5 L {{< badge class="rounded-pill bg-secondary text-white fw-bold">}}6,5 kWh{{< /badge>}}
 
-### MWh
+### {{< classtag tier=MWh width="20%" extra_class="fill">}}
 
 Volare:
 - [Volo di 1000 km](/articles/energia-dei-voli-aerei/) tot 45 MWh - {{< badge class="rounded-pill bg-secondary text-white fw-bold">}}0,3 MWh{{< /badge>}} per passeggero
@@ -82,7 +82,7 @@ contenuto energetico di capi di abbigliamento scartati da famiglia di 4 persone/
 
 Consumo annuo [ascensore](/articles/impatto-ambientale-dell-ascensore/): uso residenziale 5 piani - nuova generazione vs. vecchia tecnologia : {{< badge class="rounded-pill bg-secondary text-white fw-bold">}}2 MWh{{< /badge>}} vs. {{< badge class="rounded-pill bg-secondary text-white fw-bold">}}12 MWh{{< /badge>}}
 
-### GWh
+### {{< classtag tier=GWh width="20%" extra_class="fill">}}
 
 [COP28](/articles/cop-28-il-disco-e-rotto/) ( Solo Aerei): 26 kt CO2e
 
@@ -96,7 +96,7 @@ Consumo annuo [ascensore](/articles/impatto-ambientale-dell-ascensore/): uso res
 
 [COP 27](/articles/cop27/) - 11 t CO2e
 
-### TWh
+### {{< classtag tier=TWh width="20%" extra_class="fill">}}
 
 [Frecce Tricolori](/articles/l-impatto-delle-frecce-tricolori-quello-ambientale/).  
 Consumo annuo esercitazioni più esibizioni: {{< badge class="rounded-pill bg-secondary text-white fw-bold">}}16 TWh{{< /badge>}}

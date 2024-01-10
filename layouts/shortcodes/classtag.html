@@ -1,0 +1,32 @@
+{{- $lowlabel := .Get "tier" | lower -}}
+{{- $width := or (.Get "width" ) "100%" -}}
+{{- $extra_class := or (.Get "extra_class") "" -}}
+<a href="/classes/{{$lowlabel}}">
+    <svg class="mb-2 energy-tag {{$lowlabel}} {{$extra_class}}" width="{{$width}}" viewBox="0 0 98.838372 58.805672"
+        version="1.1" inkscape:version="1.2.1 (9c6d41e, 2022-07-14)" sodipodi:docname="price_tag.svg"
+        inkscape:export-filename="price_tag.svg" inkscape:export-xdpi="399" inkscape:export-ydpi="399"
+        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+        <g inkscape:label="Layer 1" id="layer1" transform="translate(-40.02248,-219.23336)"
+            inkscape:export-filename="layer1.svg" inkscape:export-xdpi="399" inkscape:export-ydpi="399">
+            <g id="g1268" inkscape:export-filename="g1268.svg" inkscape:export-xdpi="399" inkscape:export-ydpi="399"
+                inkscape:label="tag_group">
+                <path class="tag_frame"
+                    style="opacity:0.98;stroke-width:1.065;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6.2;stroke-opacity:1"
+                    d="m 56.978789,219.76586 c -2.03758,0 -3.80221,1.12071 -4.718575,2.78071 v -0.0434 l -0.201022,0.45268 c -0.02105,0.0472 -0.04332,0.0936 -0.06305,0.1416 0,0 -11.364708,23.16912 -11.364708,25.5959 0,2.6465 11.330602,25.38806 11.330602,25.38806 v 5.2e-4 c 0.782671,2.0072 2.726,3.4246 5.016748,3.4246 h 75.960736 c 2.98555,0 5.38883,-2.40378 5.38883,-5.38934 V 225.1552 c 0,-2.98555 -2.40327,-5.38933 -5.38883,-5.38933 z"
+                    inkscape:label="tag_frame" sodipodi:nodetypes="cccccsccsssssc" />
+                <path class="tag_label_baseline"
+                    style="display:inline;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                    d="M 58.320127,261.92771 H 130.23832" id="path1193" inkscape:label="tag_label_baseline" />
+                <text xml:space="preserve" class="tag_label" inkscape:label="tag_label">
+                    <textPath xlink:href="#path1193" startOffset="100%" id="textPath7803">{{.Get "tier"}}</textPath>
+                </text>
+                <ellipse class="tag_ring"
+                    style="opacity:0.98;fill-rule:evenodd;stroke-width:0.828868;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6.2;stroke-opacity:1"
+                    id="path6153" cx="49.555088" cy="248.60039" rx="3.4834385" ry="3.6723378"
+                    transform="translate(-1.0208333e-6)" inkscape:label="tag_ring" />
+            </g>
+        </g>
+    </svg>
+</a>
