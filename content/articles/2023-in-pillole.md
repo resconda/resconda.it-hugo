@@ -6,12 +6,13 @@ summary: |
   Con il nuovo anno, insieme a panettoni e cenoni, un grande classico sono i bilanci dell'anno precedente.  
   In questa pillola facciamo un riepilogo dei numeri raccolti nei mesi passati.
 
-# cover_image: # optional
-#   src: assets/post-img/img_name
+cover_image: # optional
+  src: assets/post-img/2023_jy8slz
 #   caption: "caption string"
 tags:
-  - tag1
-  - tag2
+  - "2023"
+  - pillole
+  - riassunto
 ---
 
 Con il nuovo anno, insieme a panettoni e cenoni, un grande classico sono i bilanci dell'anno precedente.

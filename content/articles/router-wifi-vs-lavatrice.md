@@ -4,8 +4,8 @@ date: 2024-01-09
 summary: |
   E’ possibile che un piccolo dispositivo a bassa potenza come un modem router consumi più energia di un grande dispositivo di grande potenza come una lavatrice? Potenza ed energia sono concetti non sempre chiari a tutti... 
 
-# cover_image: # optional
-#   src: assets/post-img/img_name
+cover_image: # optional
+  src: assets/post-img/Senzanome3_j55bd3
 #   caption: "caption string"
 classes:
 - kWh

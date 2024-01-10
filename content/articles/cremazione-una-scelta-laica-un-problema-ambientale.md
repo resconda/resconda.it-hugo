@@ -4,8 +4,8 @@ date: 2024-01-08
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
   La cremazione è una pratica sempre più diffusa, una scelta che in 30 anni è passata dal 3 al 37% dei casi. Tuttavia ha dei costi: quello economico è forse modesto, ma quello ambientale no.
-# cover_image: # optional
-#   src: assets/post-img/img_name
+cover_image: 
+  src: assets/post-img/lake-1828427_1280_hym1w7
 #   caption: "caption string"
 classes:
 - kWh

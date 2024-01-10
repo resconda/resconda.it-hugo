@@ -3,8 +3,8 @@ title: La neve a tutti E-costi
 date: 2024-01-08
 summary: |
   4 km di pista innevata? Fanno 1 GWh!
-# cover_image: # optional
-#   src: assets/post-img/img_name
+cover_image: # optional
+  src: assets/post-img/snow-cannon-999296_1280_bpmwig
 #   caption: "caption string"
 classes:
 - GWh
