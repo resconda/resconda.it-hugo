@@ -23,13 +23,14 @@ Specifichiamo che questo dato si riferisce al totale innevamento di uno strato d
 
 Ciò significa che sciando lungo una pista di 4km, stiamo scivolando su circa un 1 GWh di energia.
 
-Pare che in Italia ci siano 6.000 km di piste, di cui [circa 5.400](https://www.ildolomiti.it/montagna/2023/in-italia-6000-km-di-piste-da-sci-il-90-innevate-artificialmente-dolomiti-superski-e-unautostrada-di-neve-artificiale-da-milano-a-cosenza-e-ora-di-dire-basta) (il 90%) vengono innevate artificialmente, con una e-spesa quindi di XXX GWh, quanto....
+Pare che in Italia ci siano 6.000 km di piste, di cui [circa 5.400](https://www.ildolomiti.it/montagna/2023/in-italia-6000-km-di-piste-da-sci-il-90-innevate-artificialmente-dolomiti-superski-e-unautostrada-di-neve-artificiale-da-milano-a-cosenza-e-ora-di-dire-basta) (il 90%) vengono innevate artificialmente.
 
 In Italia si stima che per innevare tutte le nostre piste di Alpi e Appennini solo di Energia (l'acqua necessaria meriterebbe un capitolo a sé), **ci vogliono 800 GWh.**
 
 Secondo [studi recenti](https://www.sciencedirect.com/science/article/abs/pii/S143383190470061X), inoltre, la neve artificiale, a causa della sua composizione, modifica l'ecosistema montano provocando cambiamenti strutturali nel suolo e nella flora interessata.
 
-C'è poi la questione dei costi economici. **Innevare artificialmente [una pista di 1000 metri costa](https://www.agi.it/cronaca/news/2021-02-15/piste-sci-quanto-costa-un-chilometro-11417576/) 40-50 mila euro**: il fenomeno dell'innevamento artificiale rappresenta una delle cause che hanno determinato il lievitare dei prezzi degli skipass, ancorchè tali costi sono spesso a carico degli Enti locali: in Piemonte, ad esempio, il 60% dei costi dell'innevamento artificiale è a carico della Regione Piemonte che, come molti altri soggetti, ritiene il deterioramento ambientale un problema che deve lasciare il passo alle ragioni dell'economia e del lavoro.
+C'è poi la questione dei costi economici. **Innevare artificialmente [una pista di 1000 metri costa](https://www.agi.it/cronaca/news/2021-02-15/piste-sci-quanto-costa-un-chilometro-11417576/) 40-50 mila euro**: il fenomeno dell'innevamento artificiale rappresenta una delle cause che hanno determinato il lievitare dei prezzi degli skipass, ancorchè tali costi sono spesso a carico degli Enti locali: in Piemonte, ad esempio, il 60% dei costi dell'innevamento artificiale è a carico della Regione Piemonte che, come molti altri soggetti, ritiene il deterioramento ambientale un problema che deve lasciare il passo alle ragioni dell'economia e del lavoro.  
+Con i dati di innevamento artificiale delle piste italiane riportati prima, parliamo di un costo complessivo di 216-270 milioni di euro.
 
 
 <!--
