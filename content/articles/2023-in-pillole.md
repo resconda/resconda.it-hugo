@@ -47,7 +47,7 @@ Cibo: [carne o pomodori?](/articles/volete-carne-o-pomodori/):
 - 1kg di Pomodori {{< badge class="rounded-pill bg-secondary text-white fw-bold">}}10&nbsp;kWh{{< /badge>}}
 
 [Consumo di Frigorifero](/articles/i-frigoriferi-non-riposano-mai/) + Congelatore a Pozzetto  
-{{< badge class="rounded-pill bg-secondary text-white fw-bold">}}3&nbsp;kWh/giorno{{< /badge>}} (in inverno) {{< badge class="rounded-pill bg-secondary text-white fw-bold">}}3&nbsp;kWh/giorno{{< /badge>}} (in estate)
+{{< badge class="rounded-pill bg-secondary text-white fw-bold">}}3&nbsp;kWh/giorno{{< /badge>}} (in inverno) {{< badge class="rounded-pill bg-secondary text-white fw-bold">}}5&nbsp;kWh/giorno{{< /badge>}} (in estate)
 
 [Giornata di immersione](/articles/si-va-a-fare-immersioni-fanno-100-kwh/) subacquea {{< badge class="rounded-pill bg-secondary text-white fw-bold">}}98&nbsp;kWh{{< /badge>}}
 
