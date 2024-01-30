@@ -35,22 +35,28 @@ menus:
   #   identifier: "home"
   #   url: "/"
   #   weight: 1
-  - title: News
+  - name: News
     identifier: "articles"
     url: "/articles"
     weight: 20
-  - title: Chi siamo
+  - name: Chi siamo
     identifier: "about"
     url: "/about"
     weight: 10
-  - title: Le basi
+  - name: Le basi
     identifier: "assunti_di_base"
     url: "/assunti-di-base"
     weight: 11
-  - title: Contatti
+  - name: Contatti
     identifier: "contatti"
     url: "/#contactus"
     weight: 15
+  - name: Emcoin 
+    post: "<i class=\"fa-solid fa-arrow-up-right-from-square fa-xs\"></i>"
+    identifier: "emcoin"
+    url: "https://emcoin.resconda.it"
+    params:
+      is_ext: true
 
 outputs:
   home: 

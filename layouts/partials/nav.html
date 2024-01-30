@@ -16,12 +16,12 @@
             <li class="nav-item {{ .Params.class }} {{ if .HasChildren }}dropdown{{ end }} {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
                 <a class="nav-link {{if .HasChildren}}dropdown-toggle{{end}}" 
                 {{ if .HasChildren }}data-bs-toggle="dropdown"{{end}}
-                aria-current="page" href="{{.URL}}" role="button">{{.Title}}</a>
+                aria-current="page" href="{{.URL}}" role="button">{{.Name}}{{- if .Post -}}&nbsp;{{.Post}}{{end}}</a>
                 {{ if .HasChildren }}
                 <ul class="dropdown-menu">
                     {{ range .Children }}
                     <li {{with .Class}}class="{{ .Params.class }}"{{end}}>
-                        <a class="dropdown-item" href="{{.URL}}">{{.Title}}</a>
+                        <a class="dropdown-item" href="{{.URL}}">{{.Name}}</a>
                     </li>
                     {{ end }}
                 </ul>
