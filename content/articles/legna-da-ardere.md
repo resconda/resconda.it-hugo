@@ -1,9 +1,9 @@
 ---
-title: Legna da ardere
+title: "Acquistare legna per scaldarsi: quanta energia contiene?"
 date: 2024-02-07
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
-  Quanta energia contiene un chilogrammo di legna? Circa 4kWh!
+  La legna è da sempre un modo di scaldarsi ed i rincari dell’energia del 2022 ne hanno spinto ulteriormente l’uso. Ma quanta energia contiene un chilogrammo di legna? Circa 4kWh! 
 cover_image: # optional
   src: assets/post-img/Diapositiva1_ok6lha
 tags:
@@ -31,8 +31,8 @@ In questa serie di tabelle tratte da una [presentazione](https://www.crpa.it/med
   Qui schematicamente spiegato:
   {{< cloudinary_img src="assets/post-img/Diapositiva3_hsmya7" >}}
 1. Anche al momento dell'acquisto, bisogna prestare attenzione al già nominato contenuto idrico (M) in quanto, se compriamo legna a peso, questo determinerà il costo dell'energia che stiamo acquistando.  
-  Acquistando legna "stagionata" a 20€/quintale con un contenuto idrico M del 20%, con 20€ abbiamo acquistato 400kWh di energia, ad un prezzo quindi di 0,047€/kWh, o 47€ al MWh.  
-  Acquistando legna a 20 €/quintale con un contenuto idrico M del 50%, con 20€ abbiamo acquistato 200-250kWh ad un prezzo quindi di 0,085€/kWh, o 85€ al MWh.
+  Acquistando legna "stagionata" a 15€/quintale con un contenuto idrico M del 20%, con 15€ abbiamo acquistato 400kWh di energia, ad un prezzo quindi di 0,038€/kWh, o 38€ al MWh.  
+  Acquistando legna a 15 €/quintale con un contenuto idrico M del 50%, con 15€ abbiamo acquistato 200-250kWh ad un prezzo quindi di 0,067€/kWh, o 67€ al MWh.
 1. Non c'è grossa differenza tra i vari tipi di legna.  
    Il potere calorifero si aggira intorno ai 4kWh/kg per le più classiche varietà di legna da ardere (legna secca):  
    | Poteri calorifici (kWh/kg) | Specie legnose               |
