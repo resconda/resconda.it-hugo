@@ -1,5 +1,5 @@
 ---
-title: Agricoltura Il Paradiso Verde
+title: "Agricoltura: il paradiso verde?"
 date: 2024-02-08
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
