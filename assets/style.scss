@@ -835,5 +835,12 @@ a.greenlink {
   padding: 1rem 0;
 }
 
+.social-share-block {
+  text-align: center;
+  p {
+    font-size: small;
+  }
+}
+
 // Energy tags
 @import "./energy_tags.scss";
