@@ -43,9 +43,15 @@
              {{ .Content }}
             </article>
         </div>
-        <div class="social-share-block">
-          <p class="mb-1">Ti è piaciuto l'articolo? Condividilo!</p>
-          <div class="sharethis-inline-share-buttons"></div>
+        <div class="row justify-content-center social-share-block">
+          <div class="col-12">
+            <a class="share-toggle-button" data-target="#sharethis-block">
+              <i class="fa-solid fa-bullhorn"></i>&nbsp;Condividi!
+            </a>
+          </div>
+          <div class="col-auto d-none" id="sharethis-block">
+            {{ partial "socials_share.html" . }}        
+          </div>
         </div>
       </section>
     </div>

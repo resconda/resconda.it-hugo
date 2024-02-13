@@ -1,0 +1,14 @@
+{{ $twitter_template := dict "url" "https://twitter.com/intent/tweet?text=__TITLE__&url=__LINK__" "icon" "fa-brands fa-x-twitter" }}
+{{ $facebook_template := dict "url" "https://www.facebook.com/sharer.php?t=__TITLE__&u=__LINK__" "icon" "fa-brands fa-facebook-f" }}
+{{ $linkedin_template := dict "url" "https://www.linkedin.com/sharing/share-offsite/?url=__LINK__" "icon" "fa-brands fa-linkedin-in" }}
+{{ $mailto_template := dict "url" "mailto:?subject=__TITLE__&amp;body=Potrebbe%20interessarti%20questo%20articolo%20su%20ResConDA:%20__LINK__" "icon" "fas fa-envelope" }}
+    
+{{ $socials := slice $twitter_template $facebook_template $linkedin_template $mailto_template }}
+{{ $title := .Title }}
+{{ $link := .Permalink }}
+<div>
+    {{ range $socials }}
+    {{ $url := replace (replace .url "__TITLE__" $title) "__LINK__" $link }}
+    <a role="button" class="btn btn-outline-info" href={{ $url }}><i class={{ .icon }}></i></a>
+    {{ end }}
+</div>
