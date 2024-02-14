@@ -11,6 +11,11 @@
     <title>{{ .Title | htmlUnescape }}</title>
         {{ end }}
     {{ end}}
+    <meta property="og:title" content={{ .Title | htmlUnescape }} />
+    <meta property="og:url" content={{ .Permalink }} />
+    {{ with .Summary}}
+    <meta property="og:description" content={{ . | htmlUnescape }} />
+    {{ end }}
     {{ with .Params.cover_image.src }}
     <meta property="og:image" content={{ partial "GetCloudinaryURL.html" (dict "name" .)}} />
     <meta name="twitter:image" content={{ partial "GetCloudinaryURL.html" (dict "name" .)}} />
