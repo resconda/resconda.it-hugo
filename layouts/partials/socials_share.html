@@ -4,11 +4,11 @@
 {{ $mailto_template := dict "url" "mailto:?subject=__TITLE__&amp;body=Potrebbe%20interessarti%20questo%20articolo%20su%20ResConDA:%20__LINK__" "icon" "fas fa-envelope" }}
     
 {{ $socials := slice $twitter_template $facebook_template $linkedin_template $mailto_template }}
-{{ $title := .Title }}
+{{ $title := (htmlEscape .Title) }}
 {{ $link := .Permalink }}
 <div>
     {{ range $socials }}
     {{ $url := replace (replace .url "__TITLE__" $title) "__LINK__" $link }}
-    <a role="button" class="btn btn-outline-primary" href={{ $url }}><i class={{ .icon }}></i></a>
+    <a role="button" class="btn btn-outline-primary" href={{ $url }} target="_blank"><i class={{ .icon }}></i></a>
     {{ end }}
 </div>
