@@ -841,6 +841,9 @@ a.greenlink {
     font-size: small;
   }
 }
+.share-toggle-button {
+  cursor: pointer;
+}
 
 // Energy tags
 @import "./energy_tags.scss";

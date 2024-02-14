@@ -9,6 +9,6 @@
 <div>
     {{ range $socials }}
     {{ $url := replace (replace .url "__TITLE__" $title) "__LINK__" $link }}
-    <a role="button" class="btn btn-outline-info" href={{ $url }}><i class={{ .icon }}></i></a>
+    <a role="button" class="btn btn-outline-primary" href={{ $url }}><i class={{ .icon }}></i></a>
     {{ end }}
 </div>

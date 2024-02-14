@@ -250,12 +250,14 @@ const searchFailed = reason => {
 };
 const enableSocialShareButtons = () => {
     document.querySelectorAll(".share-toggle-button").forEach((button) => {
+        const target = button.getAttribute("data-target");
+        if(!target) return;
         button.addEventListener("click", () => {
-            const target = button.getAttribute("data-target");
-            if(target){
-                document.getElementById(target.replace(/^#/, ""))?.classList.toggle("d-none");
-            }
+            document.getElementById(target.replace(/^#/, ""))?.classList.toggle("d-none");
         });
+        button.addEventListener("pointerenter", () => {
+            document.getElementById(target.replace(/^#/, ""))?.classList.remove("d-none");
+        })
     });
 };
 document.addEventListener("scroll", _.throttle(scrollUtils, 100));
