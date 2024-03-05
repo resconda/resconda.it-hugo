@@ -8,7 +8,7 @@ summary: |
 cover_image: # optional
   src: assets/post-img/vueling_2_ci0bje
 #   caption: "caption string"
-classe:
+classes:
   - Wh
 tags:
   - aerei

@@ -7,6 +7,8 @@ summary: |
 cover_image: # optional
   src: assets/post-img/fast-fashion-moda-a_qescta
 #   caption: "caption string"
+classes:
+  - kWh
 tags:
   - moda
   - vestiti
