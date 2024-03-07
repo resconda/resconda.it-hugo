@@ -1,5 +1,5 @@
 ---
-title: La logistica della moda
+title: "La logi(sti)ca spietata della moda"
 date: 2024-03-05
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
@@ -46,23 +46,23 @@ Per i punti 2. e 3. ci siamo affidati al portale [transportmeasures.org](http://
 
 Otteniamo quindi:
 
-| MEZZO      | Capacità di carico (kg) | Load factor | Carico medio (kg)  | E (kWh/km) | km medi per singolo capo | e-costo di un capo[^2] (kWh)|
+| MEZZO      | Capacità di carico (t) | Load factor | Carico medio (t)  | E (kWh/km) | km medi per singolo capo | e-costo di un capo[^2] (kWh)|
 | ---------- | ----------------------- | ----------- | ------------------ | ---------- | ------------------------ | ------------------------- |
-| Nave Ro-ro | 20.000                  | 0,7[^3]     | 14.000             | 0,667      | 96                       | 0,005                     |
-| Furgone    | 3.500                   | 0,3[^4]     | 1.050              | 30,395     | 345                      | 10,0                      |
-| Aereo      | 40.000[^6]              | 0,7[^5]     | 28.000             | 2,028      | 1422                     | 0,103                     |
-| Camion     | 26.000                  | 0,5         | 13.000             | 5,174[^1]  | 2259                     | 0,90                      |
-| TOTALE     |                         |             |                    |            | 4123                     | 11,0                      |
+| Nave Ro-ro | 20                  | 0,07[^3]     | 1.4           | 933     | 96                       | 0,064                     |
+| Furgone    | 3.5                   | 0,3[^4]     | 1.05              | 0,7     | 345                      | 0,2                      |
+| Aereo      | 40[^6]              | 0,7[^5]     | 28             | 18,6      | 1422                     | 0,948                     |
+| Camion     | 26                  | 0,5         | 13             | 8,7[^1]  | 2259                     | 1,51                      |
+| TOTALE     |                         |             |                    |            | **4123**                     | **2,7**                      |
 
-Da osservare che il valore di sintesi finale, **11 kWh** è una "media del pollo": ciascuno dei 24 capi può aver viaggiato tramite una o più modalità di trasporto, quasi certamente mai con tutte quante insieme.
+Da osservare che il valore di sintesi finale, **2,7 kWh** è una "media del pollo": ciascuno dei 24 capi può aver viaggiato tramite una o più modalità di trasporto, quasi certamente mai con tutte quante insieme.
 
 [^1]: usato camion 16-32t, intermedio
 [^2]: considerando un capo da 1kg
-[^3]: [*https://www.transportmeasures.org/en/wiki/manuals/sea/load-capacity-utilisation/*](https://www.transportmeasures.org/en/wiki/manuals/sea/load-capacity-utilisation/) Ro-ro
-[^4]: [*https://www.transportmeasures.org/en/wiki/manuals/road/vehicle-types-and-characteristics/*](https://www.transportmeasures.org/en/wiki/manuals/road/vehicle-types-and-characteristics/) Come camion abbiamo considerato la voce \"20-26t\", usando un valore intermedio tra "*%w*" e "*%pallet*". Come furgone il \"*van*\".
-[^5]: [*https://www.transportmeasures.org/en/wiki/evaluation-transport-suppliers/air-cargo-transport-baselines-2020/*](https://www.transportmeasures.org/en/wiki/evaluation-transport-suppliers/air-cargo-transport-baselines-2020/)
-[^6]: [*https://www.transportmeasures.org/en/wiki/manuals/air/aircraft-types/freight-aircraft-types/*](https://www.transportmeasures.org/en/wiki/manuals/air/aircraft-types/freight-aircraft-types/) La capacità di carico è molto variabile a seconda del velivolo considerato. Abbiamo preso un valore intermedio.
-[^7]: [*https://www.transportmeasures.org/en/wiki/evaluation-transport-suppliers/sea-cargo-transport-baselines/*](https://www.transportmeasures.org/en/wiki/evaluation-transport-suppliers/sea-cargo-transport-baselines/)
+[^3]: usato il load factor ricavato di Ro-ro [qui](https://www.transportmeasures.org/en/wiki/manuals/sea/load-capacity-utilisation/), **diviso per un fattore 10**: una nave Ro-Ro porta un sacco di peso "extra", rispetto al carico che interessa a noi. &Egrave; chiaramente una stima molto approssimativa
+[^4]: [https://www.transportmeasures.org/en/wiki/manuals/road/vehicle-types-and-characteristics/](https://www.transportmeasures.org/en/wiki/manuals/road/vehicle-types-and-characteristics/) Come camion abbiamo considerato la voce \"20-26t\", usando un valore intermedio tra "*%w*" e "*%pallet*". Come furgone il \"*van*\".
+[^5]: [https://www.transportmeasures.org/en/wiki/evaluation-transport-suppliers/air-cargo-transport-baselines-2020/](https://www.transportmeasures.org/en/wiki/evaluation-transport-suppliers/air-cargo-transport-baselines-2020/)
+[^6]: [https://www.transportmeasures.org/en/wiki/manuals/air/aircraft-types/freight-aircraft-types/](https://www.transportmeasures.org/en/wiki/manuals/air/aircraft-types/freight-aircraft-types/) La capacità di carico è molto variabile a seconda del velivolo considerato. Abbiamo preso un valore intermedio.
+[^7]: [https://www.transportmeasures.org/en/wiki/evaluation-transport-suppliers/sea-cargo-transport-baselines/](https://www.transportmeasures.org/en/wiki/evaluation-transport-suppliers/sea-cargo-transport-baselines/)
 [^8]: Dati [ecoinvent](https://ecoinvent.org)
 <!--
   created 2024-03-05 19:07:06.825008 +0100 CET m=+0.122072709

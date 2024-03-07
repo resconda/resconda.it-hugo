@@ -1,13 +1,12 @@
 ---
-title: "Cercare di apparire sostenibili: meglio evitare"
+title: "Dichiararsi sostenibili: quando è meglio evitare"
 date: 2024-03-05
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
-  La compagnia aerea Vueling (tra le altre) cerca di adottare delle politiche di contenimento dell'impatto ambientale, nei modi che le sono permessi. Alcuni di questi modi sono rappresentati nella foto sopra, dalla rivista di bordo della compagnia aerea: eliminare gli articoli monouso legati agli snack di bordo (cannucce, posate,...) scegliere prodotti che utilizzano imballaggi riciclati e inviare gli scontrini on line anziché stamparli su carta termica.  
-  Non abbiamo resistito a cercare di quantificare i risultati di uno sforzo così meritevole.
+ La compagnia aerea Vueling (tra le altre) cerca di adottare delle politiche di contenimento dell’impatto ambientale. Nella rivista di bordo si parla di: eliminare gli articoli monouso legati agli snack di bordo (cannucce, posate,…) scegliere prodotti che utilizzano imballaggi riciclati e inviare gli scontrini on line anziché stamparli su carta termica. Abbiamo cercato di quantificare i risultati di uno sforzo così meritevole.
 cover_image: # optional
-  src: assets/post-img/vueling_2_ci0bje
-#   caption: "caption string"
+  src: assets/post-img/Vueling_photo_Credit_Creative_Commons_2.0_author_Laurent_ERRERA_zekb7l
+  caption: "Credits: Laurent Errera - Creative Commons 2.0"
 classes:
   - Wh
 tags:
@@ -24,7 +23,7 @@ Un Airbus 320 della Vueling porta 180 passeggeri, se anche tutti prendono un caf
 
 Non è il caso di sentirsi in pace con la propria coscienza quando si opta per un bicchierino di carta e le aziende dovrebbero fare più attenzione ai numeri in gioco e fidarsi meno degli addetti al marketing, così, anche solo per non rendersi tragicamente ridicole quando cercano di rappresentarsi come attente all'ambiente.
 
-
+{{< cloudinary_img src="assets/post-img/vueling_2_ci0bje" >}}
 <!--
   created 2024-03-05 19:06:27.177472 +0100 CET m=+0.096322751
 -->

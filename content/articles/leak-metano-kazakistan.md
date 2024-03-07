@@ -1,11 +1,10 @@
 ---
-title: Leak Metano Kazakistan
+title: "Quando una perdita di gas, per quanto grande, non fa rumore"
 date: 2024-03-05
 summary: |
-  L'impatto del disastro è di circa un terzo rispetto a quello accaduto al Nord Stream nel Mar Baltico,
+  Il mese scorso si è venuto a sapere (poco) di una enorme perdita di metano in Kazakistan.  A seguito di un incidente nel pozzo di estrazione, per oltre sei mesi, c’è stata una perdita incontrollata di gas Metano.  L’impatto del disastro è dello stesso ordine di grandezza di quello relativo al gasdotto Nord Stream nel Mar Baltico avvenuto nel Settembre del 2022.
 cover_image: # optional
-  src: assets/post-img/1708078508-perdita_gas_kazakistan_gq7zt3
-  caption: "La perdita di metano in un pozzo di esplorazione petrolifera di Buzachi Neft nel Mangistau, in Kazakistan, in una fotografia diffusa il 4 agosto 2023 ([Dipartimento dell'Ecologia della regione del Mangistau](https://www.instagram.com/p/Cvg2NCqsgkY/))"
+  src: assets/post-img/factory-1593842_1280_mbl5sh
 classes:
   - GWh
 tags:
@@ -23,7 +22,7 @@ Dai dati a disposizione pare che la quantità di metano dispersa durante questo 
 \
 Grazie anche a tecnologie satellitari è possibile ormai da qualche anno monitorare le fuoriuscite di metano disperse in atmosfera.
 
-{{< cloudinary_img src="assets/post-img/unnamed_qjiwio" >}}
+{{< cloudinary_img src="assets/post-img/Satellite-detected-methane-leaks-from-human-activities_2021_lllsxn" >}}
 
 L'incidente in Kazakistan è il secondo come gravità da quando ci sono i mezzi per effettuare queste misurazioni, secondo appunto dietro a quello accaduto nel Mar Baltico
 
