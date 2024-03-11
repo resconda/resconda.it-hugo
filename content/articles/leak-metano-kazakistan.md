@@ -6,7 +6,7 @@ summary: |
 cover_image: # optional
   src: assets/post-img/factory-1593842_1280_mbl5sh
 classes:
-  - GWh
+  - TWh
 tags:
   - metano
   - emissioni
@@ -18,8 +18,8 @@ Un dato impressionante, che ha avuto sicuramente risonanza in quanto il disastro
 
 Durante il mese appena trascorso è apparso un titolo simile sulle pagine dei più grandi siti di notizie mondiali: in Kazakistan un\'esplosione di un pozzo di estrazione ha generato una fuoriuscita di metano che è [durata 6 mesi](https://www.bbc.com/news/world-asia-68166298)!
 
-Dai dati a disposizione pare che la quantità di metano dispersa durante questo periodo sia stata di 127 mila tonnellate, (0,13 Mt) quindi circa un terzo del disastro del Nord Stream.\
-\
+Dai dati a disposizione pare che la quantità di metano dispersa durante questo periodo sia stata di 127 mila tonnellate, (0,13 Mt) quindi circa un terzo del disastro del Nord Stream. Nei nostri amati kWh l’energia potenzialmente sprecata da questa fuoriuscita equivale a più di 1000 GWh!
+
 Grazie anche a tecnologie satellitari è possibile ormai da qualche anno monitorare le fuoriuscite di metano disperse in atmosfera.
 
 {{< cloudinary_img src="assets/post-img/Satellite-detected-methane-leaks-from-human-activities_2021_lllsxn" >}}
