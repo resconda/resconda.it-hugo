@@ -1,0 +1,45 @@
+{{/* REQUIRED */}}
+{{$title:= .Get "title" }}
+{{$description := .Get "description" }}
+{{$start := time.AsTime (.Get "start") }}
+{{$end := time.AsTime (.Get "end") }}
+{{/* OPTIONAL */}}
+{{$location := default nil (.Get "location") }}
+{{$timezone := or (.Get "timezone") ("Europe/Rome") }}
+{{$wholeday := default 0 (.Get "wholeday") }}
+
+{{$same_day_check_format := "2006-01-02"}}
+{{$same_day := eq ($start.Format $same_day_check_format) ($end.Format $same_day_check_format)}}
+
+{{$date_only_format := ":date_full"}}
+{{$multi_day_datetime_format := cond (eq $wholeday 0) ":date_full :time_short" $date_only_format }}
+
+<div class="event-block">
+    <div class="event-dates">
+        {{ if $same_day }}
+        {{ time.Format $date_only_format $start }} {{if eq $wholeday 0}}{{time.Format ":time_short" $start }} - {{time.Format ":time_short" $end}}{{ end }}
+        {{ else }}
+        {{time.Format $multi_day_datetime_format $start }} - {{time.Format $multi_day_datetime_format $end }}
+        {{ end }}
+    </div>
+    <div class="event-title">{{$title|markdownify}}</div>
+    {{ with $location }}
+    <div class="event-location"><i class="fa-solid fa-location-dot"></i> {{ . |markdownify}}</div>
+    {{ end }}
+    <div class="event-add-button-container">
+        <!-- Requires this in the head of the page:
+            AddEvent script 
+            <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+        -->
+        <div title="Aggiungi al calendario" class="addeventatc">
+            Aggiungi al calendario
+            <span class="start">{{ time.Format "2006-01-02 15:04:05" $start}}</span>
+            <span class="end">{{ time.Format "2006-01-02 15:04:05" $end }}</span>
+            <span class="timezone">{{ or (.Get "timezone") ("Europe/Rome") }}</span>
+            <span class="title">{{ .Get "title" }}</span>
+            <span class="description">{{ .Get "description" }}</span>
+            <span class="location">{{ default "Da definirsi" $location }}</span>
+        </div>
+    </div>
+    <div class="event-description">{{$description | markdownify}}</div>
+</div>

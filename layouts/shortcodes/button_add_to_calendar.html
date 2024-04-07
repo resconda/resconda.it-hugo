@@ -1,0 +1,17 @@
+<!-- Requires this in the head of the page:
+    AddEvent script 
+    <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+-->
+
+<!-- Button code -->
+{{ $time_start := time.AsTime (.Get "start" ) }}
+{{ $time_end := time.AsTime (.Get "end" ) }}
+<div title="Aggiungi al calendario" class="addeventatc">
+    Aggiungi al calendario
+    <span class="start">{{ time.Format "2006-01-02 15:04:05" $time_start}}</span>
+    <span class="end">{{ time.Format "2006-01-02 15:04:05" $time_end }}</span>
+    <span class="timezone">{{ or (.Get "timezone") ("Europe/Rome") }}</span>
+    <span class="title">{{ .Get "title" }}</span>
+    <span class="description">{{ .Get "description" }}</span>
+    <span class="location">{{ .Get "location" }}</span>
+</div>

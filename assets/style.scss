@@ -845,5 +845,26 @@ a.greenlink {
   cursor: pointer;
 }
 
+.event-dates {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.event-title {
+  font-size: larger;
+  color: $logo-color-orange;
+}
+.event-add-button-container {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.event-location {
+  font-style: italic;
+  color: $logo-color-blue;
+}
+.event-description {
+  font-size: smaller;
+}
+
 // Energy tags
 @import "./energy_tags.scss";

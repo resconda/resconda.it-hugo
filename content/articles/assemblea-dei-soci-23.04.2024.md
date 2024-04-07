@@ -4,8 +4,8 @@ date: 2024-04-06
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
   Convocazione dell'Assemblea dei soci di Resconda. la classe indicata (kWh) è relativa al consumo del traffico dati della videoconferenza...
-# cover_image: # optional
-#   src: assets/post-img/img_name
+cover_image: # optional
+  src: assets/img/logo/logo_scritta_stacked
 #   caption: "caption string"
 classes:
   - kWh

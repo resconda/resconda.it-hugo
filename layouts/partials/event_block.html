@@ -1,0 +1,39 @@
+{{/* REQUIRED */}}
+{{$title:= .title }}
+{{$description := .description }}
+{{$start := time.AsTime .start }}
+{{$end := time.AsTime .end }}
+{{$location := .location }}
+{{/* OPTIONAL */}}
+{{$timezone := or (.timezone) ("Europe/Rome") }}
+
+{{$same_day_check_format := "2006-01-02"}}
+{{$same_day := eq ($start.Format $same_day_check_format) ($end.Format $same_day_check_format)}}
+
+<div class="event-block">
+    <div class="event-dates">
+        {{ if $same_day }}
+        {{$start.Format "Mon 02 January 2006" }} {{$start.Format "15:04" }} - {{$end.Format "15:04"}}
+        {{ else }}
+        {{$start.Format "Mon 02 January 2006 15:04" }} - {{$end.Format "Mon 02 January 2006 15:04" }}
+        {{ end }}
+    </div>
+    <div class="event-title">{{$title|markdownify}}</div>
+    <div class="event-location">{{$location |markdownify}}</div>
+    <div class="event-add-button-container">
+        <!-- Requires this in the head of the page:
+            AddEvent script 
+            <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+        -->
+        <div title="Aggiungi al calendario" class="addeventatc">
+            Aggiungi al calendario
+            <span class="start">{{ time.Format "2006-01-02 15:04:05" $start}}</span>
+            <span class="end">{{ time.Format "2006-01-02 15:04:05" $end }}</span>
+            <span class="timezone">{{ or (.Get "timezone") ("Europe/Rome") }}</span>
+            <span class="title">{{ .Get "title" }}</span>
+            <span class="description">{{ .Get "description" }}</span>
+            <span class="location">{{ .Get "location" }}</span>
+        </div>
+    </div>
+    <div class="event-description">{{$description | markdownify}}</div>
+</div>
