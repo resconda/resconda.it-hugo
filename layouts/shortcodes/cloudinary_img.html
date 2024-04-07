@@ -4,12 +4,17 @@
 {{$largesrc := replace $src ",w_512" "" }}
 <figure>
     <a href="{{ $largesrc }}" target="_blank">
-        <img {{ with .Get "width" }} width="{{ . }}" {{ end }} {{ with .Get "id" }} id="{{ . }}" {{ end }} {{ with .Get "class" }} class="{{ . }}"
-            {{ end }} {{ with .Get "style" }} style="{{ . }}" {{ end }} {{ with .Get "alt" }} alt="{{ . }}" {{ else }}alt="post-image" {{
-            end }} {{ if $image_name := .Get "src" }} srcset="{{ range $size := slice " 256" "512" "768" "1024" "1280" }}
-            https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_auto,w_{{ $size }}/{{ $image_name }} {{ $size }}w,
-            {{end}}" src={{ $src }}
-            {{ else }} {{ errorf "cloudinary_image partial needs the 'src' named attribute" }} {{ end }} />
+        <picture>
+            <source src={{ printf "%s.avif" $src }} />
+            <source src={{ printf "%s.webp" $src }} />
+            <source src={{ printf "%s.jpeg" $src }} />
+            <img {{ with .Get "width" }} width="{{ . }}" {{ end }} {{ with .Get "id" }} id="{{ . }}" {{ end }} {{ with .Get "class" }} class="{{ . }}"
+                {{ end }} {{ with .Get "style" }} style="{{ . }}" {{ end }} {{ with .Get "alt" }} alt="{{ . }}" {{ else }}alt="post-image" {{
+                end }} {{ if $image_name := .Get "src" }} srcset="{{ range $size := slice " 256" "512" "768" "1024" "1280" }}
+                https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_auto,w_{{ $size }}/{{ $image_name }} {{ $size }}w,
+                {{end}}" src={{ $src }}
+                {{ else }} {{ errorf "cloudinary_image partial needs the 'src' named attribute" }} {{ end }} />
+        </picture>
     </a>
     {{ with .Get "caption" }}
     <figcaption>{{ . | markdownify }}</figcaption>
