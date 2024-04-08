@@ -6,7 +6,7 @@ summary: |
   Chiusa la parentesi pasquale, diamo qualche dato sul contenuto energetico di due tra gli alimenti più amati in Italia e di cui la nostra città (Torino) costituisce una consolidata tradizione: il cioccolato e il caffè.
 cover_image: # optional
   src: assets/post-img/melted_easteregg_zwv1eb
-  caption: "Autore: Luc Gnago | Credits: REUTERS"
+  caption: "Generata con Microsoft Copilot Designer"
 tags:
   - cioccolato
   - cibo
