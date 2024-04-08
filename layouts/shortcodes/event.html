@@ -7,6 +7,7 @@
 {{$location := default nil (.Get "location") }}
 {{$timezone := or (.Get "timezone") ("Europe/Rome") }}
 {{$wholeday := default 0 (.Get "wholeday") }}
+{{$nocalendar := default 0 (.Get "nocalendar") }}
 
 {{$same_day_check_format := "2006-01-02"}}
 {{$same_day := eq ($start.Format $same_day_check_format) ($end.Format $same_day_check_format)}}
@@ -26,6 +27,7 @@
     {{ with $location }}
     <div class="event-location"><i class="fa-solid fa-location-dot"></i> {{ . |markdownify}}</div>
     {{ end }}
+    {{ if eq $nocalendar 0 }}
     <div class="event-add-button-container">
         <!-- Requires this in the head of the page:
             AddEvent script 
@@ -41,5 +43,6 @@
             <span class="location">{{ default "Da definirsi" $location }}</span>
         </div>
     </div>
+    {{ end }}
     <div class="event-description">{{$description | markdownify}}</div>
 </div>

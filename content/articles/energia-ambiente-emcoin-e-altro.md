@@ -51,7 +51,7 @@ A questo fine è stata organizzata una serie di eventi, ognuno dei quali in una 
 {{< event 
   start="2024-06-05T00:00:00" 
   end="2024-06-05T23:59:59"
-  wholeday=1 
+  wholeday=1 nocalendar=1
   title="ENERGIA, AMBIENTE, ECONOMIA: AGIRE IN MODO CONSAPEVOLE PER CONTRIBUIRE ALLA LOTTA AL CAMBIAMENTO CLIMATICO. IL PROGETTO EMCOIN ED ALTRO" 
   description=`Questo evento, che si tiene nella giornata mondiale dell’ambiente, è inserito nel contesto della [27° edizione di Cinemambiente](https://www.festivalcinemambiente.it/it/27cinemambientedate/) e vede anch’esso la partecipazione di figure di eccezione.  
 Nell’ambito di questo incontro, oltre a presentare il progetto Emcoin, saranno fornite informazioni utili a tutti per comprendere come agire, individualmente o in gruppo, nella direzione di una reale sostenibilità ambientale. Oltre a presentare l’App Emcoin, saranno trattati i temi dell’energia incorporata (nascosta) nei prodotti e, su un piano più alto, il rapporto tra energia, economia e ambiente.
@@ -69,7 +69,7 @@ L’evento è aperto a tutti e gratuito (in attesa di conferma di luogo e ora).`
 {{< event 
   start="2024-06-18T00:00:00" 
   end="2024-06-19T23:59:59"
-  wholeday=1 
+  wholeday=1 nocalendar=1
   title="EMCOIN: E SE L'AMBIENTE E L'ENERGIA FOSSERO UNA VALUTA?" 
   description=`Conclude la serie di incontri una presentazione del progetto Emcoin nel contesto dell’Assemblea annuale dell’Associazione “Sostenibilità Equità Solidarietà”, che avrà luogo nella splendida cornice del Chiostro di Palazzo Merula a Vigevano. 
  
