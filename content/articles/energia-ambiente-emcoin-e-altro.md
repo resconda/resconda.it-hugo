@@ -5,7 +5,7 @@ date: 2024-04-06
 summary: |
   Al via una serie di eventi di presentazione dei risultati del lavoro svolto nell’ambito del [progetto Emcoin](https://emcoin.resconda.it/), con testimonianze e contributi di studiosi d’eccezione. La prima data è sabato 27 Aprile presso il Politecnico di Torino, segue il 22 Maggio ed il 5 Giugno sempre a Torino ed infine il 18 Giugno a Vigevano(PV). Seguiranno info.
 cover_image: # optional
-  src: assets/img/logo/logo_scritta_stacked
+  src: assets/img/logo/logo_emcoin2_k8dgyc
 #   caption: "caption string"
 tags:
   - Emcoin
@@ -67,9 +67,9 @@ Interverranno:
 L’evento è aperto a tutti e gratuito (in attesa di conferma di luogo e ora).` >}}
 
 {{< event 
-  start="2024-06-18T00:00:00" 
-  end="2024-06-19T23:59:59"
-  wholeday=1 nocalendar=1
+  start="2024-06-15T10:00:00" 
+  end="2024-06-15T12:00:00"
+  wholeday=0 nocalendar=0
   title="EMCOIN: E SE L'AMBIENTE E L'ENERGIA FOSSERO UNA VALUTA?" 
   description=`Conclude la serie di incontri una presentazione del progetto Emcoin nel contesto dell’Assemblea annuale dell’Associazione “Sostenibilità Equità Solidarietà”, che avrà luogo nella splendida cornice del Chiostro di Palazzo Merula a Vigevano. 
  
@@ -81,7 +81,11 @@ Interverranno.
 L’evento è gratuito. Data e ora in attesa di conferma.` 
   location="Palazzo Merula, Via Giovanni Merula 40, Vigevano (PV)">}}
 
-Partecipate numerosi!
+{{< center>}}
+  **Per informazioni sugli eventi scrivi a [info@resconda.it](mailto:info@resconda.it)**
+
+  **Partecipate numerosi!**
+  {{</ center>}}
 
 <!--
   created 2024-04-06 15:34:17.931486 +0200 CEST m=+0.037328542
