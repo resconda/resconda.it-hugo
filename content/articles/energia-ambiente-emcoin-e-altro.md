@@ -85,7 +85,7 @@ L’evento è gratuito. Data e ora in attesa di conferma.`
   **Per informazioni sugli eventi scrivi a [info@resconda.it](mailto:info@resconda.it)**
 
   **Partecipate numerosi!**
-  {{</ center>}}
+{{</ center>}}
 
 <!--
   created 2024-04-06 15:34:17.931486 +0200 CEST m=+0.037328542
