@@ -62,7 +62,7 @@ Interverranno:
 - **Charles A.S. Hall**, esperto in ecologia dei sistemi e biofisica dell’economia, Distinguished Professor presso la New York State University (in videoconferenza);
 - **Caterina Mele**, Docente DISEG, membro del CdA e del Green Team del Politecnico di Torino
 - **Maurizio Pallante**, Saggista, divulgatore, Presidente dell’Associazione “Sostenibilità Equità Solidarietà”
-- **Sergio Ulgiati**, già docente di chimica ambientale e LCA presso l'Università Parthenope di Napoli, professore onorario di contabilità ambientale presso la School of Environment, Beijing Normal University, Cina, incluso nella lista “World's Top 2% Scientists” della Stanford University.
+- **Sergio Ulgiati**, già docente di chimica ambientale e LCA presso l'Università Parthenope di Napoli, professore onorario di contabilità ambientale presso la School of Environment, Beijing Normal University, Cina
 
 L’evento è aperto a tutti e gratuito (in attesa di conferma di luogo e ora).` >}}
 
