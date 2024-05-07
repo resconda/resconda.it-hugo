@@ -14,7 +14,12 @@
                 <p class="white" style="font-size: smaller;">N.B. L'evento è gratuito ma è consigliato riservare un posto</p>
             </div>
             <div class="col-12 col-md-6">
-                {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/photo_2024-05-07_11.14.31_glufhf" ) }}
+                {{ $name := "assets/img/photo_2024-05-07_11.14.31_glufhf" }}
+                {{ with partial "GetCloudinaryURL.html" (dict "name" $name )}}
+                    <a href="{{.}}">
+                        {{ partial "cloudinary_image.html" (dict "image_name" $name ) }}
+                    </a>
+                {{ end }}
             </div>
         </div>
     </section>
