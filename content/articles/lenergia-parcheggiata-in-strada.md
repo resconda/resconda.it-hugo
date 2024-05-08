@@ -46,11 +46,13 @@ Con le sue 0.32 auto per nucleo familiare, famiglie in media di 1.95 persone, un
 Certo, un valore enorme in termini assoluti. Ma se vogliamo confrontare i due casi esaminati dobbiamo scalare per la superficie del territorio urbano. Mentre la nostra "piccola" Torino ha un'estensione di 130 km<sup>2</sup>, Tokyo si estende per un'impressionante area di più 13 mila km<sup>2</sup>, praticamente cento volte tanto.  
 Ma il fattore 100 in realtà è praticamente invertito, in favore di Tokyo, se dividiamo le "energie parcheggiate" per le rispettive superfici: **per Torino abbiamo 25 GWh/km<sup>2</sup>, per Tokyo solo 0,3.**
 
+{{< small >}}
 [1] considerato quasi tutto acciaio vergine, arrotondando per difetto da 32 a 30  
 [2] considerato 90% vergine, 10% riciclato  
 [3] adottato valore intermedio tra Polipropilene e ABS  
 [4] vetro rinforzato  
 [5] mediato tra queste fonti: [researchgate.net](https://www.researchgate.net/publication/46439901_Review_of_technical_literature_and_trends_related_to_automobile_mass-reduction_technology), [dailyindustry.wordpress.com](https://dailyindustry.wordpress.com/2009/05/26/world-needs-automotive-recycling-company/), [transportgeography.org](https://transportgeography.org/contents/chapter4/transportation-sustainability-decarbonization/material-components-car/)  
+{{</small>}}
 <!--  
   created 2024-05-08 18:41:34.218487 +0200 CEST m=+0.090838334
 -->
