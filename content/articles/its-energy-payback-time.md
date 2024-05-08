@@ -6,7 +6,7 @@ summary: |
 cover_image: # optional
   src: assets/post-img/Turbina_Open_Image_po4t34
 #   caption: "caption string"
-classe:
+classes:
   - GWh
 tags:
   - Rinnovabili
@@ -49,7 +49,7 @@ In un anno ci sono 8760 ore, con un CF del 26% la nostra turbina da 2MW in un an
 
 **Il tempo di *payback* per questa tecnologia nel nostro caso è quindi 1,93 anni: dopo circa due anni di funzionamento, la turbina eolica ha restituito l'energia necessaria alla sua realizzazione.**
 
-Questo modo di quantificare l'energia netta disponibile prodotta da un sistema di produzione di energia (quale esso sia), quindi la sua utilità ed impatto sulla società, il cd. "EROI" (Energy Return on Energy Investment), è stato introdotto circa 40 anni fa da **Charles A.S. Hall che -- udite, udite! - avremo ospite in videoconferenza** nell'ambito di un evento organizzato da Resconda il 5 Giugno 2024 a Torino (non puoi mancare!)
+Questo modo di quantificare l'energia netta disponibile prodotta da un sistema di produzione di energia (quale esso sia), quindi la sua utilità ed impatto sulla società, il cd. "EROEI" (Energy Return on Energy Investment), è stato introdotto circa 40 anni fa da **Charles A.S. Hall che -- udite, udite! -- avremo ospite in videoconferenza** nell'ambito di un [evento](/articles/eventi-resconda-22-maggio-2024) organizzato da Resconda il 5 Giugno 2024 a Torino (non puoi mancare!)
 
 I numeri sono più alti della stima fatta dai ricercatori citati sopra, ma non cambia la sostanza e soprattutto servono ad assolvere ad una delle mission di Resconda: impariamo a riconoscere gli ordini di grandezza e le problematiche in gioco e saremo già degli eruditi del mondo dell'energia.
 

@@ -20,7 +20,7 @@ Nel marzo del 2022 la Russia avviava la sua "operazione speciale" per "l'eradica
 
 Un [rapporto finanziato dall'European Climate Foundation](https://climatefocus.com/wp-content/uploads/2023/12/20231201_ClimateDamageWarUkraine18monthsEN.pdf) e realizzato con la collaborazione del governo Ucraino riportava il dato di 150 milioni di tonnellate di CO2e emesse a causa della guerra nei primi 18 mesi di guerra: di poco inferiori a quelle emesse dai Paesi Bassi in un anno.
 
-Di queste 150 t, 37 t per l'uso di armi, veicoli militari, munizioni ed altro "warfare" (circa 25 t solo per il carburante usato dalle truppe russe...), 22 t per gli incendi causati dal conflitto, 18 t per il maggior consumo di carburante degli aerei costretti ad evitare lo spazio aereo russo, 55 t stimate per le necessità della ricostruzione post bellica, il resto per le fughe di gas\...
+Di queste 150 Mt, 37 per l'uso di armi, veicoli militari, munizioni ed altro "warfare" (circa 25 solo per il carburante usato dalle truppe russe...), 22 per gli incendi causati dal conflitto, 18 per il maggior consumo di carburante degli aerei costretti ad evitare lo spazio aereo russo, 55 stimati per le necessità della ricostruzione post bellica, il resto per le fughe di gas\...
 
 {{< cloudinary_img src="assets/post-img/Ucraina_wgswdb" >}}
 
