@@ -15,8 +15,6 @@ tags:
 
 E' mattina, ci si prepara per la giornata e siamo pronti ad uscire di casa. Passiamo davanti alla cassetta delle lettere e puntualmente la troviamo colma di volantini.
 
-(IMMAGINE)
-
 In questa breve pillola cerchiamo di quantificare l'impatto energetico del mondo della pubblicità cartacea.
 
 Non siamo di certo i primi a porci questa [domanda](https://www.verdevero.it/quanto-pesa-un-volantino-di-carta/), e data la grande varietà di pubblicità che arriva nelle nostre cassette delle lettere siamo costretti ad approssimare.  
@@ -28,7 +26,7 @@ Nel nostro caso quindi 30 kWh annuali che per ogni famiglia vengono puntualmente
 Trenta kWh all'anno possono sembrare pochi, ma per chi vive in condominio è facile farsi un'idea del potere moltiplicativo.  
 In un condominio di 10 appartamenti il valore sale subito a 300 kWh = 0,3 MWh.
 
-Su scala nazionale invece, su 12 milioni di famiglie, escludendo quindi gli esercizi commerciali, e tenendo conto del solo 50% delle famiglie (chi vive relativamente lontano dai centri urbani è meno soggetto al volantinaggio), 6 milioni x 30 kWh = 180 GWh: **come se una delle nostre centrali elettriche fosse impiegata per produrre i volantini che gettiamo direttamente nella spazzatura.**
+Su scala nazionale invece, su 12 milioni di famiglie, escludendo quindi gli esercizi commerciali, e tenendo conto del solo 50% delle famiglie (chi vive relativamente lontano dai centri urbani è meno soggetto al volantinaggio), 6 milioni x 30 kWh = 180 GWh: **come se una piccola centrale elettrica fosse impiegata per produrre i volantini che gettiamo direttamente nella spazzatura.**
 
 <!--
   created 2024-06-07 19:09:06.564692 +0200 CEST m=+0.135678167

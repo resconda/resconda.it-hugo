@@ -1,6 +1,4 @@
 ---
-## Important: If this is a draft, next line should NOT begin with #
-draft: true
 title: Un Bel Piatto Di Petrolio Alle Vongole
 date: 2024-06-07
 ## below are user-defined parameters (lower case keys recommended)
