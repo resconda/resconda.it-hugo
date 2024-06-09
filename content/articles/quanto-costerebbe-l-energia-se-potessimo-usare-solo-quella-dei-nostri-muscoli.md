@@ -1,7 +1,8 @@
 ---
 title: "Quanto costerebbe l'energia se potessimo usare solo quella dei nostri muscoli?"
 date: 2024-06-07
-summary: ""
+summary: |
+  Per comprendere il vero costo dell'energia, che riceviamo in dono sostanzialmente gratuito dalla natura (specialmente nella forma dei combustibili fossili), è utile immaginare di poter usare solo quella prodotta dai nostri muscoli. Un contributo di Luciano Celi.
 cover_image: # optional
   src: assets/post-img/participants-attend-the-group-indoor-cycle-class-at-4ac40f_d2qzgf
 #   caption: "caption string"
