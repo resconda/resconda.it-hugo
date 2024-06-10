@@ -1,5 +1,5 @@
 ---
-title: Energia che vola(ntini) via
+title: "Pubblicità in buca: energia che vola(ntini) via"
 date: 2024-06-07
 summary: |
   Quanta energia è contenuta nella semplice pubblicità cartacea che ci troviamo nelle cassette della posta? In un anno circa 30 kWh per ciascuna famiglia. A livello italiano 180 GWh (!!!)
