@@ -1,8 +1,9 @@
 ---
-title: Un Bel Piatto Di Petrolio Alle Vongole
+title: Un bel piatto di petrolio alle vongole
 date: 2024-06-07
 ## below are user-defined parameters (lower case keys recommended)
-summary: # leave blank if no summary is provided
+summary: |
+  Si continua a rappresentare il mondo dell’agricoltura come il luogo della cura dell’ambiente e del rispetto per la natura ed i cicli delle stagioni. Ma senza l’uso di enormi quantità di petrolio sarebbe molto diverso da come lo conosciamo.
 cover_image: # optional
   src: assets/post-img/spaghetti_neri_i2iuxx
 #   caption: "caption string"
