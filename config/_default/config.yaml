@@ -28,6 +28,22 @@ params:
     icon_tag: "<i class=\"fa-brands fa-instagram fa-2x\"></i>"
   search: true
   search_minify: false
+  math: true
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
 
 menus:
   main:

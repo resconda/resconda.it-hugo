@@ -22,7 +22,7 @@ classes: # this is a list but one energy class should be set
 
 Ci sono almeno due forme di energia contenute in un temporale: quella cinetica del vento, che nell'area interessata aumenta tipicamente e raggiunge velocità considerevoli a seconda delle dimensioni del fronte temporalesco, e quella elettrostatica liberata dai lampi, le scariche da nuvola a nuvola, e dai fulmini, le scariche a terra.
 
-Facciamo un esperimento concettuale: ipotizziamo un temporale che agisce per trenta minuti su una zona di 3x3 km2, con un vento medio di 60 km/h (un temporale relativamente forte). Dentro questa perturbazione, ipotizziamo esserci in media 3 scariche a terra al minuto.
+Facciamo un esperimento concettuale: ipotizziamo un temporale che agisce per trenta minuti su una zona di 3x3 \( \textrm{km}^2 \), con un vento medio di 60 km/h (un temporale relativamente forte). Dentro questa perturbazione, ipotizziamo esserci in media 3 scariche a terra al minuto.
 
 Partiamo da quello che sembra intuitivamente essere "energeticamente" più interessante: il fulmine.
 
@@ -42,11 +42,9 @@ In buona parte dei casi, quindi, un impianto eolico colpito da un temporale può
 
 Come abbiamo fatto per i fulmini, limitiamoci a "fantasticare" sull'energia massima estraibile dal fronte di vento del nostro temporale, senza considerazioni sull'efficienza dell'impianto eolico, il tipo di pale e rotori, etc. Prendendo 250 metri di altezza nell'area considerata, e applicando la potenza data [legge di Betz](https://it.wikipedia.org/wiki/Legge_di_Betz)
 
-{{< math >}}
-P = \frac{1}{2} \cdot \rho \cdot S \cdot v^3
-{{< /math >}}
+\[ P = \frac{1}{2}\, \rho\, S\, v^3 \]
 
-con  densità dell'aria &rho; di 1.204 kg/m<sup>3</sup>, fronte d'aria di superficie S di 3 &times; 0.25 km<sup>2</sup> e velocità v di 60 km/h, per il tempo stimato, **otteniamo circa 1 TWh**.
+con densità dell'aria \( \rho = 1.204\, \textrm{kg}/\textrm{m}^3 \), fronte d'aria di superficie \( S = 3 \times 0.25\, \textrm{km}^2 \) e velocità \( v = 60\, \textrm{km}/\textrm{h} \), per il tempo stimato, **otteniamo circa 1 TWh**.
 
 Le nostre stime sono sicuramente molto grossolane e le ipotesi fatte molto "audaci", ma possiamo essere abbastanza fiduciosi sul fatto che **l'energia elettrostatica scaricata dai fulmini in un temporale sia enormemente più bassa di quella portata dal vento generato nello stesso contesto, di almeno 3 ordini di grandezza** (contrariamente a quanto l'intuizione iniziale ci suggeriva)**.**
 

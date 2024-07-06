@@ -28,19 +28,16 @@ Scomponiamo la creazione di un piatto di pasta in due fasi: bollitura dell’acq
 Per un piatto di pasta portiamo a bollore 2 litri di acqua. Per 80-100 g di pasta sono decisamente sovrabbondanti, ma spesso le persone usano quantità d’acqua ben oltre il necessario!
 Facciamo un conto basato sulla nostra esperienza: una pentola con 2L d’acqua su fornello grande, aperto al massimo, ci mette circa 5 minuti per arrivare a bollore. Il fornello grande consuma [6kW](https://en.wikipedia.org/wiki/Gas_stove) in termini di energia del gas, quindi, l’energia di bollitura
 
-{{< math >}}
-E_{B} = P \Delta t = 6\ \textrm{kW}\ 1/12\ \textrm{h} = 0.5\ \textrm{kWh}
-{{< /math >}}
+
+\[ E_{B} = P \Delta t = 6\ \textrm{kW}\ 1/12\ \textrm{h} = 0.5\ \textrm{kWh} \]
 
 Passiamo alla cottura.
 
-Siamo ottimisti e ipotizziamo che raggiunto il bollore, si sposti la pentola sul fornello piccolo regolato al minimo: facendo una prova in casa per un minuto abbiamo registrato sul contatore un consumo di 0.001 metri cubi di gas metano (equivalente a 10.69 Wh, quindi potenza media {{< imath >}}P = 10.69 Wh / 1/60 h = 641 W{{< /imath >}}). 
+Siamo ottimisti e ipotizziamo che raggiunto il bollore, si sposti la pentola sul fornello piccolo regolato al minimo: facendo una prova in casa per un minuto abbiamo registrato sul contatore un consumo di 0.001 metri cubi di gas metano (equivalente a 10.69 Wh, quindi potenza media \( P = 10.69 \textrm{Wh} / (1/60 \textrm{h}) = 641 \textrm{W} \)). 
 
 La pasta cuoce mediamente per 10 minuti, quindi
 
-{{< math >}}
-E_{C} = P \Delta t = 0.65\ \textrm{kW}\ 1/6\ \textrm{h} \simeq 0.11\ \textrm{kWh}
-{{< /math >}}
+\[ E_{C} = P \Delta t = 0.65\ \textrm{kW}\ 1/6\ \textrm{h} \simeq 0.11\ \textrm{kWh} \]
 
 Possiamo pertanto dire che: 
 >**per cuocere un piatto di pasta in modo tradizionale su fornello a gas si consumano ALMENO 0.61 kWh**

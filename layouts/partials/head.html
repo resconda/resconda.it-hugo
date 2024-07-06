@@ -41,9 +41,9 @@
     <script nomodule src="https://unpkg.com/friendly-challenge@0.9.6/widget.min.js" async defer></script>
 
     <!-- Mathjax -->
-    <script type="text/javascript" id="MathJax-script" async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
+    {{ if .Param "math" }}
+        {{ partialCached "math.html" . }}
+    {{ end }}
     <!-- FuseJS -->
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
     <!-- sharethis -->

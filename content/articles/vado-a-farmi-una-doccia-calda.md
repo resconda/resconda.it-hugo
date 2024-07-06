@@ -24,48 +24,48 @@ Tranquilli, niente di pi&ugrave; di un po' di termodinamica del liceo.
 
 Alcune stime sono molto soggettive (es. durata doccia, temperatura acqua alla fonte e di uscita, ...), ma &egrave; giusto per avere un ordine di grandezza:
 
-- temperatura dell'acqua della doccia: {{< imath escape="true" >}}T_c = 42\ ^\circ C{{< /imath >}}
-- temperatura dell'acqua da scaldare: {{< imath escape="true" >}}T_f = 10\ ^\circ C{{< /imath >}}
-- flusso doccia: {{< imath escape="true" >}}\Phi = 10\ \textrm{L}/\textrm{min}{{< /imath >}}
-- durata doccia: {{< imath escape="true" >}}\Theta = 5\ \textrm{min}{{< /imath >}}
-- rendimento caldaia[^1]: {{< imath escape="true" >}}\rho = 65\%{{< /imath >}}
-- potere calorifico inferiore del metano: {{< imath escape="true" >}}\delta = 50\ \textrm{MJ}/\textrm{kg}{{< /imath >}}
+- temperatura dell'acqua della doccia: \( T_c = 42\ ^\circ C \)
+- temperatura dell'acqua da scaldare: \( T_f = 10\ ^\circ C \)
+- flusso doccia: \( \Phi = 10\ \textrm{L}/\textrm{min} \)
+- durata doccia: \( \Theta = 5\ \textrm{min} \)
+- rendimento caldaia[^1]: \( \rho = 65\% \)
+- potere calorifico inferiore del metano: \( \delta = 50\ \textrm{MJ}/\textrm{kg} \)
 
 Da cui ricaviamo:
-- volume da scaldare: {{< imath escape="true" >}}V = \Phi \ \Theta = 50\ \textrm{L}{{< /imath >}}
-- massa da scaldare: {{< imath escape="true" >}}50\ \textrm{kg}{{< /imath >}}
-- differenza di temperatura: {{< imath escape="true" >}}\Delta T = 32\ ^\circ C{{< /imath >}}
+- volume da scaldare: \( V = \Phi \ \Theta = 50\ \textrm{L} \)
+- massa da scaldare: \( 50\ \textrm{kg} \)
+- differenza di temperatura: \( \Delta T = 32\ ^\circ C \)
 
 L'energia per scaldare una massa di materia
-{{< math >}}
-Q = m\ c_{sp}\ \Delta T.
-{{< /math >}}
+
+\[ Q = m\ c_{sp}\ \Delta T. \]
+
 
 **L'energia spesa dalla caldaia** dipender&agrave; innanzitutto dalla sua efficienza (pi&ugrave; altre perdite che qui trascuriamo)
-{{< math >}}
-E = Q/\rho = 10.3 MJ \equiv 2.86\ \textrm{kWh}.
-{{< /math >}}
+
+\[ E = Q/\rho = 10.3 MJ \equiv 2.86\ \textrm{kWh}. \]
+
 
 Dal potere calorifico possiamo ricavare la **massa di metano** necessaria a produrre questa energia
-{{< math >}}
-m = E/\delta = 0.206\ \textrm{kg}.
-{{< /math >}}
+
+\[ m = E/\delta = 0.206\ \textrm{kg}. \]
+
 
 Per tradurla in una quantit&agrave; familiare a tutte, i metri cubi standard (*smc*), occorre passare al capitolo "legge dei gas"
-{{< math >}}
-p\ V = n\ R\ T
-{{< /math >}}
+
+\[ p\ V = n\ R\ T \]
+
 dove:
-- pressione standard: {{< imath escape="true" >}}p = 1.013\cdot 10^5\ \textrm{Pa}{{< /imath >}}
-- temperatura standard: {{< imath escape="true" >}}T = 15\ ^\circ C \equiv 290\ K{{< /imath >}}
-- costante dei gas: {{< imath escape="true" >}}R = 8.314\ \textrm{J}/\textrm{mol K}{{< /imath >}}
-- massa molare metano: {{< imath escape="true" >}}M = 16.04\ \textrm{g}/\textrm{mol}{{< /imath >}}
-- numero di moli: {{< imath escape="true" >}}n = m/M = 0.013\ \textrm{mol}{{< /imath >}}
+- pressione standard: \( p = 1.013\cdot 10^5\ \textrm{Pa} \)
+- temperatura standard: \( T = 15\ ^\circ C \equiv 290\ K \)
+- costante dei gas: \( R = 8.314\ \textrm{J}/\textrm{mol K} \)
+- massa molare metano: \( M = 16.04\ \textrm{g}/\textrm{mol} \)
+- numero di moli: \( n = m/M = 0.013\ \textrm{mol} \)
 
 che ci permette di ricavare inversamente il volume:
-{{< math >}}
-V = \frac{m\ R\ T}{p\ M} = 0.03265\ m^3 (\textit{smc})
-{{< /math >}}
+
+\[ V = \frac{m\ R\ T}{p\ M} = 0.03265\ m^3 (\textit{smc}) \]
+
 
 
 [^1]: stima presa da [FAQ](https://www.amphiro.com/en/faq) sito Amphiro (voce "How accurate is the displayed energy consumption")
