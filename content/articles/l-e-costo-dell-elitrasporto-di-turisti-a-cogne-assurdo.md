@@ -1,7 +1,7 @@
 ---
 ## Important: If this is a draft, next line should NOT begin with #
 # draft: true
-title: "L'E-costo dell'elelitrasporto di turisti a Cogne: assurdo?"
+title: "L'E-costo dell'elitrasporto di turisti a Cogne: assurdo?"
 date: 2024-07-06
 ## below are user-defined parameters (lower case keys recommended)
 summary: |
