@@ -17,3 +17,5 @@ Grazie al supporto del SEFIT sarà possibile portare [l’App EmCoin](https://em
 in collaborazione con il Politecnico di Torino, l’Associazione SEQUS ed altri partner, dallo stato di dimostratore prototipale web based, 
 a prototipo di App nativa disponibile su piattaforme Android ed IOS, disponibile ai cittadini che intendano 
 portare un contributo definito ed efficace alla lotta al cambiamento climatico.
+
+A [questo link](https://podcasters.spotify.com/pod/show/resconda/episodes/Intervista-Progetto-SEFIT-e2mo29k) trovate l'intervista a Marcello Corongiu, estratto del podcast dedicato ai vincitori del bando SEFIT. [Qui](https://open.spotify.com/episode/45BQqDbMOprkDgcfjSdkHU?si=ERqbUPB_Qh2Y_tg-hK-RAA&context=spotify%3Ashow%3A3tgPnVUjtC8W5tw81HiORZ&nd=1&dlsi=03b34c72581f42dc) la puntata intera con le interviste a tutti i vincitori.
