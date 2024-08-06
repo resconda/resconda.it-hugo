@@ -5,6 +5,8 @@ summary: |
   Il Progetto EmCoin sarà appoggiato da SEFIT – Fondazione Brodolini, che hanno condiviso la necessità di quantificare l’impatto ambientale dei comportamenti d’acquisto individuali (si, un post senza numeri ed unità di misura…)
 tags:
 - emcoin
+cover_image:
+  src: assets/post-img/SEFIT_Vertical_white_xdan1w
 ---
 
 Siamo orgogliosi di informare che la necessità di realizzare e rendere disponibile uno strumento che permetta alle persone di conoscere 
