@@ -74,7 +74,7 @@ jobs:
             --baseURL "${{ env.PUBLIC_URL }}/" \
             -d dist
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: dist
           path: |
@@ -89,7 +89,7 @@ jobs:
       - name: Download server code and deploy to PUBLIC_HTML
         env:
           PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/public' || '/home/resconda/resconda.it/staging' }}
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: dist
           path: ${{ env.PUBLIC_HTML }}
@@ -97,12 +97,12 @@ jobs:
       # - name: Download sqlite DB file and deploy to PUBLIC_HTML/cgi/
       #   env:
       #     PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
-      #   uses: actions/download-artifact@v3
+      #   uses: actions/download-artifact@v4.1.7
       #   with:
       #     name: searchdb
       #     path: ${{ env.PUBLIC_HTML }}/cgi/res
       # - name: Download searchdb_server code to the CWD
-      #   uses: actions/download-artifact@v3
+      #   uses: actions/download-artifact@v4.1.7
       #   with:
       #     name: searchdb_server_src
       # - name: build and run searchdb server
