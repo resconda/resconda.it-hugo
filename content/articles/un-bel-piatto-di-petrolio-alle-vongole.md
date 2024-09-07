@@ -22,7 +22,6 @@ Ricorda la famosa canzone di Sergio Endrigo "ci vuole un fiore", ma con un sogge
 
 L'agricoltura ci viene rappresentata come una dimensione bucolica di rispetto e cura dell'ambiente, il che probabilmente -- in una certa misura o nella percezione di chi vi opera -- è vero, ma dai campi coltivati, dai frutteti e dalle vigne, sulla nostra tavola arrivano in media sempre 98 parti di petrolio e 2 di sole.
 
-Spunto energia nel cibo (basato su carne, ma con confronti con vegetali): [*https://www.youtube.com/watch?v=F1Hq8eVOMHs*](https://www.youtube.com/watch?v=F1Hq8eVOMHs)
 
 <!--
   created 2024-06-07 19:09:51.25583 +0200 CEST m=+0.036637168
