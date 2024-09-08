@@ -38,7 +38,7 @@ Peraltro, nessuna delle COP precedenti (la prima è di quasi 30 anni fa),
 sembra aver ottenuto risultati eclatanti, per lo meno per quanto
 riguarda le emissioni di carbonio in atmosfera (principale causa del
 cambiamento climatico), come dimostra il grafico sotto, che riporta le
-26 precedenti COP e la parallela crescita di emissioni di CO2 in
+26 precedenti COP e la parallela crescita di emissioni di {{< CO2 >}} in
 atmosfera.
 
 {{< cloudinary_img src="assets/post-img/image016_zurxeb" caption="CO<sub>2</sub> vs COPs. Come sarebbe andata se non le avessimo fatte?">}}
@@ -47,7 +47,7 @@ atmosfera.
 Alla COP hanno partecipato 30.000 delegati provenienti da tutto il
 mondo. Ipotizzando una distanza media percorsa in aeroplano da ognuno di
 loro (A/R) pari a 5.000 km, hanno contribuito tutti insieme ad emettere
-circa 11.000 tonnellate di CO2 in atmosfera, circa le emissioni medie di
+circa 11.000 tonnellate di {{< CO2 >}} in atmosfera, circa le emissioni medie di
 2.500 persone in un anno. Solo per raggiungere la COP.  
 Il costo
 energetico del Tonino Lamborghini International Convention Center dove

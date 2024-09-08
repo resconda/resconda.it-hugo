@@ -18,7 +18,7 @@ Gli eventi turistici hanno rilevanti ed importanti **ricadute sociali ed economi
 
 [Uno studio](https://www.researchgate.net/publication/348608314_How_to_assess_events'_environmental_impacts_a_uniform_life_cycle_approach) analizza questo aspetto con riferimento a quattro differenti tipologie di eventi analizzati in un Comune italiano: un concerto (3.320 partecipanti), un ciclo di venticinque allenamenti collettivi di corsa (1.000 partecipanti per allenamento), il carnevale cittadino (40.000 partecipanti), un ciclo di undici conferenze (1.230 partecipanti in totale).
 
-Secondo questo studio le emissioni di tali eventi sono state (in tonnellate equivalenti di CO2):
+Secondo questo studio le emissioni di tali eventi sono state (in tonnellate equivalenti di {{< CO2 >}}):
 
 - Concerto: 	42  (12,8 kg per partecipante) 
 - Allenamenti: 	44,37 (1,77 kg per partecipante) 

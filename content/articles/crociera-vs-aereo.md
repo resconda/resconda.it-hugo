@@ -16,7 +16,7 @@ Benché negli anni le navi da crociera abbiano aumentato in modo significativo l
 
 Il sentire comune che il trasporto marittimo sia molto più efficiente di quello aereo è senz'altro valido se si prende in considerazione il trasporto merci, in particolare le navi container che devono, per ovvie ragioni di business, ottimizzare il carico trasportato rispetto ai volumi dislocati in acqua. Anche su queste, però, si osserva in generale un [aumento delle velocità e quindi dei consumi](https://theicct.org/wp-content/uploads/2021/06/Global-shipping-GHG-emissions-2013-2015_ICCT-Report_17102017_vF.pdf) (in particolare a pag. 19 del report).
 
-Come spesso accade, tutti i report e articoli che abbiamo trovato concentrano l'attenzione sulle emissioni di CO2. Proviamo a tradurre i dati trovati in una stima energetica di consumo di un viaggio medio, 2000 km, per passeggero:
+Come spesso accade, tutti i report e articoli che abbiamo trovato concentrano l'attenzione sulle emissioni di {{< CO2 >}}. Proviamo a tradurre i dati trovati in una stima energetica di consumo di un viaggio medio, 2000 km, per passeggero:
 
 - **Volo: 600 kWh/passeggero** (da [pillola precedente](https://resconda.it/articles/energia-dei-voli-aerei/))
 - **Crociera**: da [dati in dettaglio](https://theicct.org/wp-content/uploads/2022/01/Supplemental_material_final_vflocked.xlsx) dell'articolo del International Council on Clean Transportation (ICCT), ricaviamo un valore medio su tutte le navi da crociera (nel 2015) di 3600 kWh/km. Una nave come la *Icon of the Seas* citata in apertura [può portare](https://www.royalcaribbeanpresscenter.com/fact-sheet/35/icon-of-the-seas/) fino a 5610 passeggeri.  

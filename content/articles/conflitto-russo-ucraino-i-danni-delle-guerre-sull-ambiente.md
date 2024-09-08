@@ -14,7 +14,7 @@ tags:
   - aerei
 ---
 
-La guerra, distruggendo manufatti e organismi, può essere considerata come un'accelerazione temporanea dell'entropia. Essa dissipa grandi quantità di energia e produce CO2.
+La guerra, distruggendo manufatti e organismi, può essere considerata come un'accelerazione temporanea dell'entropia. Essa dissipa grandi quantità di energia e produce {{< CO2 >}}.
 
 Nel marzo del 2022 la Russia avviava la sua "operazione speciale" per "l'eradicazione del nazismo" ucraino: ad essa dedicammo [il nostro primo post](https://resconda.it/articles/in-viaggio-verso-kiev/).
 

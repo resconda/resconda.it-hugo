@@ -26,7 +26,7 @@ fintech svedese.
 [Mastercard](https://developer.mastercard.com/product/doconomy-aland-index/)
 in particolare ha già implementato il sistema, a sua volta [adottato da
 alcune
-banche](https://www.nicolaporro.it/atlanticoquotidiano/quotidiano/economia/una-carta-di-credito-per-monitorare-le-nostre-emissioni-personali-di-co2/)
+banche](https://www.nicolaporro.it/atlanticoquotidiano/quotidiano/economia/una-carta-di-credito-per-monitorare-le-nostre-emissioni-personali-di-{{< CO2 >}}/)
 a livello globale. Concettualmente l'idea è simile al progetto Emcoin
 tuttavia gli acquisti effettuati con carta di credito permettono di
 individuare cosa il cliente ha acquistato in maniera certa solo in
