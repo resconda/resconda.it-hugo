@@ -3,8 +3,8 @@ title: Emcoin in Puglia
 date: 2024-09-07
 summary: |
   Il progetto Emcoin sarà presentato nell'ambito del 32° Congresso Nazionale di Scienze Merceologiche che si terrà a Lecce il 19-20 Settembre prossimo.
-# cover_image:
-#   src: 
+cover_image:
+  src: assets/post-img/aisme-logo-001
 tags:
   - EmCoin
   - ResConDA
