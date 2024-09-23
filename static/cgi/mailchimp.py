@@ -44,6 +44,8 @@ def add_subscription(list_id: str, input: dict):
         raw_response = mailchimp.lists.add_list_member(list_id, member_info)
         response = jlds(raw_response)
         if response.get("id") is None:
-            raise MailchimpException(f"Mailchimp API: POST /lists/members returned error: {response.get("error")}")
+            error = response.get("error", "unknown error")
+            raise MailchimpException(f"Mailchimp API: POST /lists/members returned error: {error}")
     except ApiClientError as error:
-        raise MailchimpException(f"Mailchimp API: POST /lists/members FAIL: {error.text}")
+        errtext = error.text
+        raise MailchimpException(f"Mailchimp API: POST /lists/members FAIL: {errtext}")
