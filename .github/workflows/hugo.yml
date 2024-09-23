@@ -81,7 +81,7 @@ jobs:
             dist
 
   deploy:
-    environment: ${{ github.branch_name == 'main' && production || staging }}
+    environment: ${{ github.branch_name == 'main' && 'production' || 'staging' }}
     needs:
       - build_hugo
       # - build_searchdb 
