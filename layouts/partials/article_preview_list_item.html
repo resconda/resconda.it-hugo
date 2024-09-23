@@ -11,7 +11,18 @@
         <!-- <a href="{{.Permalink}}" class="btn btn-secondary align-self-baseline">Leggi tutto</a> -->
     </div>
     {{ with .Params.cover_image }}
-    {{$alt := (path.Split .src)}}
-    {{ partial "cloudinary_image.html" (dict "image_name" .src "alt" $alt.File "class" "card-img-top cover cover-30")}}
+        {{ if strings.HasPrefix .src "http" }}
+            <figure>
+                <picture><img src="{{.src}}" width="100%" class="card-img-top cover cover-30"/></picture>
+            </figure>
+        {{ else }}
+            {{$alt := (path.Split .src)}}
+            {{ partial "cloudinary_image.html" (dict "image_name" .src "alt" $alt.File "class" "card-img-top cover cover-30")}}
+        {{ end }}
     {{end}}
+    {{ if collections.In .Params.tags "spuntini" }}
+    <div class="position-absolute" style="top: 1rem; right: 1rem">
+        <i class="fa-solid fa-cookie-bite fa-xl" title="spuntini"></i>
+    </div>
+    {{ end }}
 </div>

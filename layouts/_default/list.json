@@ -1,6 +1,6 @@
 {{- $articles := slice -}}
 
-{{- range where site.RegularPages.ByPublishDate.Reverse "Section" "==" "articles" -}}  
+{{- range where site.RegularPages.ByPublishDate.Reverse "Section" "in" (slice "articles" "spuntini" ) -}}  
   {{- $item := dict
     "Title" .Title
     "PublishDateFormatted" (.PublishDate.Format "2006-01-02")

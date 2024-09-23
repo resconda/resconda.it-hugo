@@ -16,7 +16,11 @@
           {{ end }}
         {{ end }}
           {{ with .Params.cover_image}}
-          {{ partial "cloudinary_image.html" (dict "image_name" .src "caption" .caption )}}
+            {{ if strings.HasPrefix .src "http" }}
+              <img src="{{.src}}" width="100%" />
+            {{ else }}
+              {{ partial "cloudinary_image.html" (dict "image_name" .src "caption" .caption )}}
+            {{ end }}
           {{end}}
         </div>
         <h4 id="date"> {{ dateFormat "2 January 2006" .Date.Local }} 
