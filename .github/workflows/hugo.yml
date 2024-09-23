@@ -82,14 +82,14 @@ jobs:
 
   deploy:
     env:
-      PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/public' || '/home/resconda/resconda.it/staging' }}
+      PUBLIC_HTML: ${{ STAGING == '0' && '/home/resconda/resconda.it/public' || '/home/resconda/resconda.it/staging' }}
     needs:
       - build_hugo
       # - build_searchdb 
     runs-on: self-hosted
     steps:
       - name: Cleanup deploy folder PUBLIC_HTML
-        run: rm -rf ${{ env.PUBLIC_HTML }} && mkdir -p ${{ env.PUBLIC_HTML }}
+        run: rm -rf $PUBLIC_HTML && mkdir -p $PUBLIC_HTML
       - name: Download server code
         uses: actions/download-artifact@v4.1.7
         with:
