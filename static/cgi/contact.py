@@ -5,7 +5,7 @@ from urllib.parse import parse_qs
 import sanitizers
 import friendlycaptcha
 from smtplib import SMTP
-import mailtrain
+import mailchimp
 
 SITEADMIN = {
     "name": "Marcello Corongiu",
@@ -61,14 +61,18 @@ def captcha_verify(req, solution: str):
     sitekey = opts.get("FRIENDLY_CAPTCHA_SITEKEY")
     friendlycaptcha.captcha_verify(solution, secret, sitekey)
 
+# def add_mailtrain_subscription(req, input: dict):
+#     req.log_error("%s" % "add_mailtrain_subscription", apache.APLOG_DEBUG)
+#     opts = req.get_options()
+#     listid = opts.get("MAILTRAIN_LISTID")
+#     access_token = opts.get("MAILTRAIN_ACCESSTOKEN")
+#     mailtrain.add_subscription(listid, access_token, input)
 
-def add_mailtrain_subscription(req, input: dict):
-    req.log_error("%s" % "add_mailtrain_subscription", apache.APLOG_DEBUG)
+def add_mailchimp_subscription(req, input: dict):
+    req.log_error("%s" % "add_mailchimp_subscription", apache.APLOG_DEBUG)
     opts = req.get_options()
-    listid = opts.get("MAILTRAIN_LISTID")
-    access_token = opts.get("MAILTRAIN_ACCESSTOKEN")
-    mailtrain.add_subscription(listid, access_token, input)
-
+    listid = opts.get("MAILCHIMP_AUDIENCE_ID")
+    mailchimp.add_subscription(listid, input)
 
 def send_contact_notification(input: dict):
     name = input.get("name")
@@ -151,7 +155,7 @@ def form_contact(req):
             errstr = "Server error. Please write to <a href=\"mailto:info@resconda.it\">info@resconda.it</a>"
             output["errors"].append(errstr)
             req.log_error(str(ce))
-        except mailtrain.MailtrainException as mex:
+        except mailchimp.MailchimpException as mex:
             errstr = "Subscription failed"
             output["errors"].append(errstr)
             req.log_error("%s: %s" % (errstr, str(mex)))
