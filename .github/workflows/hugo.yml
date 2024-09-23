@@ -81,8 +81,7 @@ jobs:
             dist
 
   deploy:
-    env:
-      PUBLIC_HTML: ${{ STAGING == '0' && '/home/resconda/resconda.it/public' || '/home/resconda/resconda.it/staging' }}
+    environment: ${{ github.branch_name == 'main' && production || staging }}
     needs:
       - build_hugo
       # - build_searchdb 
