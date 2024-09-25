@@ -1,51 +1,52 @@
-from os import environ
-from urllib import response
 from mailchimp_marketing import Client
 from mailchimp_marketing.api_client import ApiClientError
-from json import loads as jlds
 
 class MailchimpException(Exception):
-    def __init__(self, message, url="URL not defined"):
+    def __init__(self, message: str, url: str="URL not defined", apiresponse: dict=None):
       super().__init__()
       self.message = message
       self.url = url
+      self.api_response = apiresponse
     
     def __str__(self):
         return "[Mailtrain] {url} - {msg}".format(url=self.url, msg=self.message)
 
-def add_subscription(list_id: str, input: dict):
-    mailchimp_api_key = environ.get('MAILCHIMP_API_KEY') # to be defined eg. at Apache level
-    mailchimp = Client()
-    mailchimp.set_config({
-        "api_key": mailchimp_api_key,
-        "server": "us17"
-    })
+class MailChimpHelper(object):
+    def __init__(self, api_key: str) -> None:
+        super().__init__()
+        self.api_key = api_key
 
-    email: str = input.get("email", None)
+    def add_subscription(self, list_id: str, input: dict):
+        mailchimp_api_key = self.api_key
+        mailchimp = Client()
+        mailchimp.set_config({
+            "api_key": mailchimp_api_key,
+            "server": "us17"
+        })
 
-    if email is None:
-        raise MailchimpException(f"{__name__} invalid input: 'email' field is missing")
+        email: str = input.get("email", None)
 
-    
-    member_info = {
-        "email_address": email,
-        "status": "subscribed",
-        "merge_fields": {}
-    }
-    for (i,f) in [
-        ("name","FNAME"),
-        ("surname","LNAME"),
-        ("phone","PHONE"),
-    ]:
-        if i in input:
-            member_info["merge_fields"][f] = input[i]
+        if email is None:
+            raise MailchimpException(f"{__name__} invalid input: 'email' field is missing")
 
-    try:
-        raw_response = mailchimp.lists.add_list_member(list_id, member_info)
-        response = jlds(raw_response)
-        if response.get("id") is None:
-            error = response.get("error", "unknown error")
-            raise MailchimpException(f"Mailchimp API: POST /lists/members returned error: {error}")
-    except ApiClientError as error:
-        errtext = error.text
-        raise MailchimpException(f"Mailchimp API: POST /lists/members FAIL: {errtext}")
+        
+        member_info = {
+            "email_address": email,
+            "status": "subscribed",
+            "merge_fields": {}
+        }
+        for (i,f) in [
+            ("name","FNAME"),
+            ("surname","LNAME"),
+            ("phone","PHONE"),
+        ]:
+            if i in input:
+                member_info["merge_fields"][f] = input[i]
+
+        try:
+            response: dict = mailchimp.lists.add_list_member(list_id, member_info)
+            if response.get("id") is None:
+                raise MailchimpException(message=f"Mailchimp API returned error", apiresponse=response, url="POST /lists/members")
+        except ApiClientError as error:
+            errtext = error.text
+            raise MailchimpException(message=f"Mailchimp API FAIL: {errtext}", url="POST /lists/members")

@@ -6,6 +6,7 @@ import sanitizers
 import friendlycaptcha
 from smtplib import SMTP
 import mailchimp
+from os import environ
 
 SITEADMIN = {
     "name": "Marcello Corongiu",
@@ -56,7 +57,7 @@ def sanitise_input(params: dict) -> dict:
 def captcha_verify(req, solution: str):
     req.log_error("%s" % "captcha_verify", apache.APLOG_DEBUG)
     opts = req.get_options()
-    req.log_error("Request options: %s" % str(opts), apache.APLOG_DEBUG)
+    # req.log_error("Request options: %s" % str(opts), apache.APLOG_DEBUG)
     secret = opts.get("FRIENDLY_CAPTCHA_SECRET")
     sitekey = opts.get("FRIENDLY_CAPTCHA_SITEKEY")
     friendlycaptcha.captcha_verify(solution, secret, sitekey)
@@ -72,7 +73,10 @@ def add_mailchimp_subscription(req, input: dict):
     req.log_error("%s" % "add_mailchimp_subscription", apache.APLOG_DEBUG)
     opts = req.get_options()
     listid = opts.get("MAILCHIMP_AUDIENCE_ID")
-    mailchimp.add_subscription(listid, input)
+    apikey = opts.get("MAILCHIMP_API_KEY")
+    mc = mailchimp.MailChimpHelper(api_key=apikey)
+    req.log_error(f"calling MailChimpHelper.add_subscription", apache.APLOG_DEBUG)
+    mc.add_subscription(listid, input)
 
 def send_contact_notification(input: dict):
     name = input.get("name")
@@ -115,7 +119,7 @@ def process_form_input(req, input: dict):
     if input.get('privacy', False) is False:
         raise PrivacyGrantException("Privacy policy has not been accepted by the user")
     send_contact_notification(input)
-    add_mailtrain_subscription(req, input)
+    add_mailchimp_subscription(req, input)
 
 
 def form_contact(req):
@@ -138,6 +142,15 @@ def form_contact(req):
             # flatten the input before consuming it
             mangledinput = {x:sanitised[x][0] for x in sanitised}
 
+            # DEBUG: print request options
+            opts = req.get_options()
+            censored_opts = {}
+            for k,v in opts.items():
+                if k.upper().endswith(("KEY", "SECRET")):
+                    v = v[0] + "***" + v[-1]
+                censored_opts[k] = v
+            req.log_error("Request options: %s" % str(censored_opts), apache.APLOG_DEBUG)
+            
             process_form_input(req, mangledinput)
         except sanitizers.SanitiserException as sex:
             errstr = "Invalid input"
@@ -156,9 +169,16 @@ def form_contact(req):
             output["errors"].append(errstr)
             req.log_error(str(ce))
         except mailchimp.MailchimpException as mex:
-            errstr = "Subscription failed"
+            err_comps = ["Subscription failed"]
+            if mex.api_response:
+                mar = mex.api_response
+                if "title" in mar:
+                    err_comps.append(mar["title"])
+                if "detail" in mar:
+                    err_comps.append(mar["detail"])
+            errstr = ": ".join(err_comps)    
             output["errors"].append(errstr)
-            req.log_error("%s: %s" % (errstr, str(mex)))
+            req.log_error("%s - %s" % (errstr, str(mex)))
 
     req.content_type = "application/json"
     req.write(jds(output))
