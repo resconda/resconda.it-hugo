@@ -1,5 +1,6 @@
 from mailchimp_marketing import Client
 from mailchimp_marketing.api_client import ApiClientError
+from json import loads as jlds
 
 class MailchimpException(Exception):
     def __init__(self, message: str, url: str="URL not defined", apiresponse: dict=None):
@@ -9,7 +10,7 @@ class MailchimpException(Exception):
       self.api_response = apiresponse
     
     def __str__(self):
-        return "[Mailtrain] {url} - {msg}".format(url=self.url, msg=self.message)
+        return "[Mailchimp] {url} - {msg}".format(url=self.url, msg=self.message)
 
 class MailChimpHelper(object):
     def __init__(self, api_key: str) -> None:
@@ -44,9 +45,10 @@ class MailChimpHelper(object):
                 member_info["merge_fields"][f] = input[i]
 
         try:
-            response: dict = mailchimp.lists.add_list_member(list_id, member_info)
+            raw_response: str = mailchimp.lists.add_list_member(list_id, member_info)
+            response = jlds(raw_response)
             if response.get("id") is None:
-                raise MailchimpException(message=f"Mailchimp API returned error", apiresponse=response, url="POST /lists/members")
+                raise MailchimpException(message=f"Mailchimp API returned unexpected response", apiresponse=response, url="POST /lists/members")
         except ApiClientError as error:
-            errtext = error.text
-            raise MailchimpException(message=f"Mailchimp API FAIL: {errtext}", url="POST /lists/members")
+            errdict = jlds(error.text)
+            raise MailchimpException(message=f"Mailchimp API request failed", apiresponse=errdict, url="POST /lists/members")

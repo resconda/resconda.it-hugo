@@ -176,7 +176,7 @@ def form_contact(req):
                     err_comps.append(mar["title"])
                 if "detail" in mar:
                     err_comps.append(mar["detail"])
-            errstr = ": ".join(err_comps)    
+            errstr = ". ".join(err_comps)    
             output["errors"].append(errstr)
             req.log_error("%s - %s" % (errstr, str(mex)))
 
