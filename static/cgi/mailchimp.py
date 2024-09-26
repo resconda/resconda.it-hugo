@@ -45,8 +45,7 @@ class MailChimpHelper(object):
                 member_info["merge_fields"][f] = input[i]
 
         try:
-            raw_response: str = mailchimp.lists.add_list_member(list_id, member_info)
-            response = jlds(raw_response)
+            response: dict = mailchimp.lists.add_list_member(list_id, member_info)
             if response.get("id") is None:
                 raise MailchimpException(message=f"Mailchimp API returned unexpected response", apiresponse=response, url="POST /lists/members")
         except ApiClientError as error:
