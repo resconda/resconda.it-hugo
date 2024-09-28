@@ -81,7 +81,7 @@ jobs:
             dist
 
   deploy:
-    environment: ${{ github.branch_name == 'main' && 'production' || 'staging' }}
+    environment: ${{ github.ref_name == 'main' && 'production' || 'staging' }}
     env:
       PUBLIC_HTML: ${{ vars.PUBLIC_HTML }}
     needs:
