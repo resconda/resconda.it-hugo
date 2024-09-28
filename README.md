@@ -33,3 +33,14 @@ classes:
 
 Si e' scelto di non versionare le immagini del sito qui sul repository Git, ma di utilizzare invece [Cloudinary](https://cloudinary.com/).  
 Per inserire immagini negli articoli o nelle pagine del sito, occorre quindi prima caricarle su cloudinary, copiare il percorso relativo e usarlo come riferimento nel codice dell'articolo.
+
+## Backend
+
+Un piccolo backend CGI permette di ricevere le richieste di iscrizione alla newsletter tramite i form presenti nelle pagine del sito.
+
+Gli script CGI fanno da proxy per chiamare le API del servizio di mail campaigning, ad oggi Mailchimp.  
+Queste API hanno bisogno di chiavi di accesso che vanno definite nel environment dove lavora il server (Apache/Nginx o altro).  
+Le variabili necessarie sono:
+- MAILCHIMP_API_KEY
+- MAILCHIMP_AUDIENCE_ID
+Si veda la [documentazione MailChimp](https://mailchimp.com/developer/marketing/guides/quick-start/) per la definizione dei valori di queste chiavi.
