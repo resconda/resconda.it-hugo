@@ -21,8 +21,10 @@ spuntini_tags_regex = pillola_tags_regex
 spuntini_summary_regex = pillola_summary_regex
 spuntini_body_regex = pillola_body_regex
 
-# GDocs thinks '!' is a dangerous character and escapes it when exporting to markdown. Hugo does not like escaped '\!' in YAML headers, so we need to remove them
-escaped_esclamation_regex = re.compile(r'\\!')
+# GDocs thinks '[!-]' are dangerous characters and escapes them when exporting to markdown. Hugo does not like escaped '\!' or similar in YAML headers, so we need to remove them
+escaped_esclamation_regex = re.compile(r'\\!', re.MULTILINE)
+escaped_dash_regex = re.compile(r'\\-', re.MULTILINE)
+co2e_regex = re.compile(r'(\W)(CO2e?)(\W)')
 
 def slugify(s):
   s = s.lower().strip()
@@ -31,34 +33,54 @@ def slugify(s):
   s = re.sub(r'^-+|-+$', '', s)
   return s
 
+
+def unescape_safe_characters(text: str) -> str:
+    text = escaped_esclamation_regex.sub("!", text)
+    text = escaped_dash_regex.sub("-", text)
+
 class Article:
-    title: str
+    _title: str
     publish_date: datetime
-    summary: str
+    _summary: str
     tags: list[str]
     classes: list[str]
-    body: str
+    _body: str
     raw_content: str
 
     def __init__(self, title: str, raw_content: str, publish_date: datetime):
-        self.title = title
+        self._title = title
         self.raw_content = raw_content
         self.publish_date = publish_date
         self.classes = None
         self.tags = None
-        self.body = None
-        self.summary = None
+        self._body = None
+        self._summary = None
 
+    @property
+    def title(self):
+        return self._title
+    @title.setter
+    def title(self, value):
+        self._title = unescape_safe_characters(value)
+
+    @property
+    def summary(self):
+        return self._summary
+    @summary.setter
+    def summary(self, value):
+        self._summary = unescape_safe_characters(value)
+    
     def __str__(self) -> str:
         return self.render()
 
-    def body_mangle(self):
-        if not self.body:
-            return
-        # replace CO2 and CO2e
-        co2e_regex = re.compile(r'(\W)(CO2e?)(\W)')
-        self.body = co2e_regex.sub("\\1{{< \\2 >}}\\3", self.body)
+    @property
+    def body(self):
+        return self._body
+    @body.setter
+    def body(self, value):
+        self._body = co2e_regex.sub("\\1{{< \\2 >}}\\3", value)
 
+    
     def header_lines(self) -> list[str]:
         outlines = []
         outlines.append(f'title: "{self.title}"')
@@ -75,7 +97,6 @@ class Article:
 
     def render(self) -> str:
         header = "\n".join(self.header_lines())
-        self.body_mangle()
         return f"""---
 {header}
 ---
