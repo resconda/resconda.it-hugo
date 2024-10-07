@@ -37,6 +37,7 @@ def slugify(s):
 def unescape_safe_characters(text: str) -> str:
     text = escaped_esclamation_regex.sub("!", text)
     text = escaped_dash_regex.sub("-", text)
+    return text
 
 class Article:
     _title: str
@@ -83,6 +84,8 @@ class Article:
     
     def header_lines(self) -> list[str]:
         outlines = []
+        if len(self.body) == 0:
+            outlines.append('draft: true')
         outlines.append(f'title: "{self.title}"')
         outlines.append(f"date: {self.publish_date.strftime("%Y-%m-%d")}")
         outlines.append(f'tags:\n{"\n".join(self.tags)}')
