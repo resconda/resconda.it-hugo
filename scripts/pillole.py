@@ -5,7 +5,9 @@ from sys import stdout
 from datetime import datetime
 from time import strftime
 import logging
+from os.path import dirname, join as pjoin
 
+SCRIPT_PATH = dirname(__file__)
 
 infonews_regex = re.compile(r'^ *# +(?:\*\*|__)?Info-news(?:\*\*|__)?', re.IGNORECASE|re.MULTILINE)
 spuntini_regex = re.compile(r'^ *# +(?:\*\*|__)?SPUNTINI(?:\*\*|__)?', re.IGNORECASE|re.MULTILINE)
@@ -18,7 +20,9 @@ spuntini_title_regex = re.compile(r'^\s*## +(?P<title>.*)', re.IGNORECASE|re.MUL
 spuntini_tags_regex = pillola_tags_regex
 spuntini_summary_regex = pillola_summary_regex
 spuntini_body_regex = pillola_body_regex
-publish_date: datetime
+
+# GDocs thinks '!' is a dangerous character and escapes it when exporting to markdown. Hugo does not like escaped '\!' in YAML headers, so we need to remove them
+escaped_esclamation_regex = re.compile(r'\\!')
 
 def slugify(s):
   s = s.lower().strip()
@@ -48,6 +52,13 @@ class Article:
     def __str__(self) -> str:
         return self.render()
 
+    def body_magle(self):
+        if not self.body:
+            return
+        # replace CO2 and CO2e
+        co2e_regex = re.compile(r'(\W)(CO2e?)(\W)')
+        self.body = co2e_regex.sub("\\1{{< \2 >}}\\3", self.body)
+
     def header_lines(self) -> list[str]:
         outlines = []
         outlines.append(f'title: "{self.title}"')
@@ -64,8 +75,7 @@ class Article:
 
     def render(self) -> str:
         header = "\n".join(self.header_lines())
-        return f"""
----
+        return f"""---
 {header}
 ---
 
@@ -123,20 +133,20 @@ class Pillola(Article):
         self.classes = [f"- {line}" for line in raw_content[class_match.end():tags_match.start()].split("\n") if len(line.strip())>0]
         self.tags = ["- " + re.sub(r'^\s*-\s*', '', line) for line in raw_content[tags_match.end():summary_match.start()].split("\n") if len(line.strip())>0]
         self.summary = "\n".join([line for line in raw_content[summary_match.end():body_match.start()].split("\n") if len(line.strip())>0])
-        self.body = "\n".join(raw_content[body_match.end():])
+        self.body = raw_content[body_match.end():].strip()
         return super().render()
 
 
-def parse_spuntini_block(spuntini_block: str, publish_date: datetime):
+def parse_spuntini_block(spuntini_block: str, publish_date: datetime) -> Spuntini:
     title_match = spuntini_title_regex.search(spuntini_block)
     
     if not title_match:
         raise Exception("Could not find title heading in spuntini_block")
     title = title_match.group("title")
     spuntino = Spuntini(title=title, raw_content=spuntini_block, publish_date=publish_date)
-    with io.open(f"{spuntino.slugified_title}.md", "wt") as ofile:
-        ofile.write(spuntino.render())
-    
+    return spuntino
+
+
 def parse_pillole_block(pillole_block: str, publish_date: datetime) -> list[Pillola]:
     n_pills = 0
     matches = []
@@ -164,7 +174,7 @@ def parse_pillole_block(pillole_block: str, publish_date: datetime) -> list[Pill
     return pillole
 
 
-def parse_mdfile_content(mdcontent:str, publish_date: datetime):
+def parse_mdfile_content(mdcontent:str, publish_date: datetime, outdir: str):
     # cut her head!
     infonews_match = infonews_regex.search(mdcontent)
     if not infonews_match:
@@ -181,7 +191,9 @@ def parse_mdfile_content(mdcontent:str, publish_date: datetime):
     start = spuntini_match.start()
     logging.debug(f"Spuntini block slice: [{start},]")
     spuntini_block = mdcontent[start:]
-    parse_spuntini_block(spuntini_block=spuntini_block, publish_date=publish_date)
+    spuntino = parse_spuntini_block(spuntini_block=spuntini_block, publish_date=publish_date)
+    with io.open(pjoin(outdir, "spuntini", f"{spuntino.slugified_title}.md"), "wt") as ofile:
+        ofile.write(spuntino.render())
 
     # pillole
     pillole = parse_pillole_block(pillole_block=pillole_block, publish_date=publish_date)
@@ -190,7 +202,7 @@ def parse_mdfile_content(mdcontent:str, publish_date: datetime):
     # for pill in pillole:
     #     print(str(pill))
     for pill in pillole:
-        with io.open(f"{pill.slugified_title}.md", "wt") as ofile:
+        with io.open(pjoin(outdir, f"{pill.slugified_title}.md"), "wt") as ofile:
             ofile.write(pill.render())
     
 
@@ -199,6 +211,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("DOCX_EXPORTED_MD")
     parser.add_argument("--publish-date", help="Date to be set in pillole articles, in YYYY-MM-DD format", default=datetime.now().strftime("%Y-%m-%d"))
+    parser.add_argument("--outdir", default=SCRIPT_PATH)
 
     arguments = parser.parse_args()
 
@@ -211,7 +224,7 @@ if __name__ == "__main__":
 
     logging.basicConfig(level=logging.DEBUG)
     # try:
-    parse_mdfile_content(mdcontent=mdcontent, publish_date=publish_date)
+    parse_mdfile_content(mdcontent=mdcontent, publish_date=publish_date, outdir=arguments.outdir)
     # except Exception as ex:
     #     stdout.write(f"{str(ex)}\n")
 
