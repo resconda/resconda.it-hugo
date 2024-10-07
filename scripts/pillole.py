@@ -52,12 +52,12 @@ class Article:
     def __str__(self) -> str:
         return self.render()
 
-    def body_magle(self):
+    def body_mangle(self):
         if not self.body:
             return
         # replace CO2 and CO2e
         co2e_regex = re.compile(r'(\W)(CO2e?)(\W)')
-        self.body = co2e_regex.sub("\\1{{< \2 >}}\\3", self.body)
+        self.body = co2e_regex.sub("\\1{{< \\2 >}}\\3", self.body)
 
     def header_lines(self) -> list[str]:
         outlines = []
@@ -75,6 +75,7 @@ class Article:
 
     def render(self) -> str:
         header = "\n".join(self.header_lines())
+        self.body_mangle()
         return f"""---
 {header}
 ---
