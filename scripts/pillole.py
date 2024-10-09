@@ -92,8 +92,8 @@ class Article:
         if self.summary:
             outlines.append(f'summary: "{self.summary}"') 
         outlines.append("# cover_image:")
-        outlines.append("#  src: asset/post-img/")
-        outlines.append("#  caption: asset/post-img/")
+        outlines.append("#  src: assets/post-img/")
+        outlines.append("#  caption: ")
         if self.classes:
             outlines.append(f'classes:\n{"\n".join(self.classes)}')
         return outlines
