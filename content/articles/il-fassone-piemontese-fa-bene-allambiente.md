@@ -1,8 +1,8 @@
 ---
 title: "Il fassone piemontese fa bene all’ambiente?"
 date: 2024-10-07
-# cover_img:
-#   src: assets/post-img/
+cover_image:
+  src: assets/post-img/coalvi_kobjjf
 #   caption:
 summary: "Ci han sempre detto che il consumo di carne ha un impatto ambientale significativo e invece scopriamo che è vero il contrario! Ma com’è che non se ne parla sui giornali di tutto il mondo?"
 tags:
