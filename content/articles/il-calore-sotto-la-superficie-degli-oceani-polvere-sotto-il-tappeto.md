@@ -1,0 +1,34 @@
+---
+title: "Il calore sotto la superficie degli oceani: polvere sotto il tappeto?"
+date: 2024-11-05
+tags:
+  - oceani
+  - calore
+  - riscaldamento globale
+summary: "Quando si parla di riscaldamento globale si tende a soffermarsi sulla temperatura atmosferica: il famoso +1.5/2.0 °C. Approfondendo si scopre che la gran parte del calore in eccesso sul pianeta è in realtà assorbito dagli oceani. Vediamo i numeri in gioco e quanto sono preoccupanti."
+cover_image:
+ src: assets/post-img/Figure-1_Bent_Sea_Rod_Bleaching_15011207807_o3tjvi
+#  caption: 
+classes:
+- TWh
+---
+
+Calore e temperatura sono due concetti fisici molto usati, anche nella vita di tutti i giorni. Spesso però sono citati impropriamente o addirittura come sinonimi, e sovente non è chiara la relazione tra queste due entità. Può sembrare un dettaglio tecnico, ma è importante capire bene il ruolo di queste e altre grandezze termodinamiche per comprendere meglio il riscaldamento del nostro pianeta.
+
+Il calore è una forma di energia, detta *energia termica*. Come tutte le forme di energia, si può trasformare (ad esempio in energia cinetica) e si può trasferire da un sistema a un altro in vari modi: per irraggiamento (il modo in cui il sole scalda la Terra), per convezione (il modo in cui un termosifone scalda un ambiente attraverso i moti dell’aria) o per conduzione (la pentola che scalda il cibo o l’acqua).  
+La temperatura invece è un indicatore macroscopico (quindi facilmente misurabile) dell’agitazione termica delle molecole di un corpo.  
+Se del calore viene introdotto in un corpo, la sua temperatura aumenta. Viceversa un corpo si raffredda quando “perde” calore. La relazione tra l’energia trasferita a/da un corpo e la variazione della sua temperatura dipende dal/i materiale/i di cui è fatto il corpo (dal suo *calore specifico*) e dalla sua massa: il prodotto di questi due fattori si chiama *capacità termica*. Questo implica che una stessa quantità di calore trasferita a due diverse sostanze causerà diverse variazioni di temperatura. Un esempio esplicativo è la pentola d’acqua sul fuoco: il gas trasferisce calore alla pentola e questa all’acqua. È intuitivo pensare che, mentre la pentola si scalda velocemente e dopo poco tempo sarà impossibile toccarla, ci vogliono invece tipicamente alcuni minuti prima che l’acqua diventi molto calda.
+
+L’energia portata dalla radiazione solare sulla Terra viene in parte assorbita direttamente da suolo e oceani, in parte riflessa. Di quella riflessa, una certa frazione esce dall’atmosfera e ritorna nello spazio, un’altra viene assorbita dall’atmosfera. L’entità di quest’ultima parte dipende dalla composizione dell’atmosfera e in particolare dalla quantità di “gas serra” che si trovano al suo interno.  
+L’aumento della temperatura globale \- quello che dovremmo cercare di rallentare e contenere entro i 2 gradi centigradi rispetto all’era pre-industriale \- è dato dal calore assorbito dall’atmosfera tramite questo meccanismo. Ma di tutto il calore in arrivo dal sole e non rispedito nello spazio, quanto contribuisce a riscaldare l’atmosfera e quanto invece viene assorbito dagli oceani? Secondo il National Oceanic and Atmospheric Administration (NOAA), [il 91% del calore in eccesso](https://www.climate.gov/news-features/understanding-climate/climate-change-ocean-heat-content) trattenuto nel sistema Terra viene assorbito dagli oceani.  
+Questa è nel breve periodo una buona notizia (al netto dell’impatto che il fenomeno ha sulla biosfera marina): se tutto il calore fosse rimasto in atmosfera, staremmo già misurando aumenti di temperatura molto più elevati; sul lungo periodo però, questa capacità degli oceani di assorbire calore aumentando in modo ridotto (ma non trascurabile, vedi sotto) la loro temperatura, ci deve allarmare: quel calore, come tutte le forme di energia, non scomparirà magicamente ma è destinato a continuare a spostarsi e trasformarsi. Già lo fa, andando ad esempio a sciogliere i ghiacci dei poli, e continuerà a farlo, in parte ritornando lentamente in atmosfera. Questo è uno dei motivi per cui spesso si legge, negli articoli che trattano di cambiamento climatico, che se anche smettessimo immediatamente di immettere gas climalteranti in atmosfera, la temperatura globale continuerebbe per un certo lasso di tempo ad aumentare.  
+La temperatura degli oceani sta aumentando, anche se di poco in quanto l’acqua è proprio una delle sostanze con il calore specifico più alto, ovvero richiede un’elevata quantità di calore per aumentare la propria temperatura: ha infatti un calore specifico pari a circa [otto volte quello dell’acciaio inox](https://it.wikipedia.org/wiki/Calore_specifico#Calore_specifico_isobaro_di_alcune_sostanze). Ci aspettiamo che l’energia necessaria ad aumentare di otto gradi la temperatura di una pentola di un chilo sarà in grado di aumentare di un solo grado la stessa massa di acqua.  
+Anche se ridotto, l’aumento della temperatura dell’acqua degli oceani non è una buona notizia (salvo per chi ama fare il bagno in mare): gli ecosistemi marini hanno equilibri delicati che possono venire pesantemente alterati anche da piccole variazioni. Ne è l’esempio più tristemente famoso lo [sbiancamento dei coralli](https://it.wikipedia.org/wiki/Sbiancamento_dei_coralli), effetto indiretto dell’aumento della temperatura dell’acqua.
+
+Ma quanto calore stanno in effetti assorbendo gli oceani e come è variato il tasso di assorbimento negli ultimi anni? Come possiamo immaginare, anche qui le notizie non sono buone: sempre il NOAA, riportato nel grafico sotto da Our World in Data, ci dice che nel decennio 2013-2023 il calore contenuto nei primi 2000 metri di profondità degli oceani è aumentato del 56%. Di quanto calore stiamo parlando, in termini assoluti? L’aumento nel decennio è pari a \(10.46 \; 10^{22} \textrm{J}\), o se preferite 105 zettajoule. In termini dei nostri amati wattora, diventa \(2.9\; 10^{19} \textrm{Wh}\). 
+
+{{< cloudinary_img src="assets/post-img/ocean-heat-top-2000m_yrbv58" >}}
+
+Di cosa stiamo parlando? Che sono sti numeri e lettere e simboli che scriviamo qui? Beh, il fatto è che non abbiamo per i nostri post una classe energetica per un simile ordine di grandezza, ma usando quello più grande disponibile (TWh) si tratta di **29 milioni di TWh,** quasi **200 volte la quantità di energia usata globalmente ogni anno dall’umanitàomo.**  
+Certo, nel grafico si intravede una leggera flessione, che ci può far sperare in un trend di riduzione del calore assorbito. Ma prima o poi dovremo fare i conti con tutto il calore che finora abbiamo “nascosto sotto il tappeto” della superficie dei nostri mari.
+    
