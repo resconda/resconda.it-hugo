@@ -156,7 +156,7 @@ class Pillola(Article):
             raise Exception(f"No body heading found in pillola block titled {title}")
 
         self.classes = [f"- {line}" for line in raw_content[class_match.end():tags_match.start()].split("\n") if len(line.strip())>0]
-        self.tags = ["- " + re.sub(r'^\s*-\s*', '', line) for line in raw_content[tags_match.end():summary_match.start()].split("\n") if len(line.strip())>0]
+        self.tags = ["- " + re.sub(r'^\s*[\*\-]\s*', '', line) for line in raw_content[tags_match.end():summary_match.start()].split("\n") if len(line.strip())>0]
         self.summary = "\n".join([line for line in raw_content[summary_match.end():body_match.start()].split("\n") if len(line.strip())>0])
         self.body = raw_content[body_match.end():].strip()
         return super().render()
