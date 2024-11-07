@@ -1,6 +1,6 @@
 ---
 title: "Il calore sotto la superficie degli oceani: polvere sotto il tappeto?"
-date: 2024-11-05
+date: 2024-11-07
 tags:
   - oceani
   - calore
@@ -29,6 +29,6 @@ Ma quanto calore stanno in effetti assorbendo gli oceani e come è variato il ta
 
 {{< cloudinary_img src="assets/post-img/ocean-heat-top-2000m_yrbv58" >}}
 
-Di cosa stiamo parlando? Che sono sti numeri e lettere e simboli che scriviamo qui? Beh, il fatto è che non abbiamo per i nostri post una classe energetica per un simile ordine di grandezza, ma usando quello più grande disponibile (TWh) si tratta di **29 milioni di TWh,** quasi **200 volte la quantità di energia usata globalmente ogni anno dall’umanitàomo.**  
+Di cosa stiamo parlando? Che sono sti numeri e lettere e simboli che scriviamo qui? Beh, il fatto è che non abbiamo per i nostri post una classe energetica per un simile ordine di grandezza, ma usando quello più grande disponibile (TWh) si tratta di **29 milioni di TWh,** quasi **200 volte la quantità di energia usata globalmente ogni anno dall’umanità.**  
 Certo, nel grafico si intravede una leggera flessione, che ci può far sperare in un trend di riduzione del calore assorbito. Ma prima o poi dovremo fare i conti con tutto il calore che finora abbiamo “nascosto sotto il tappeto” della superficie dei nostri mari.
     

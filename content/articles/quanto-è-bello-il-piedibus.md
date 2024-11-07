@@ -1,6 +1,6 @@
 ---
 title: "“Quanto” è bello il Piedibus?"
-date: 2024-11-05
+date: 2024-11-07
 tags:
 - PIEDIBUS   
 - MOBILITA’ SOSTENIBILE 
@@ -19,14 +19,13 @@ Il Comune di Avigliana (TO) ha realizzato tale sistema e anche una chiara “ren
 
 * Ogni anno circa 200 alunni su 400 (il 50%) ha aderito all’iniziativa;   
 * La distanza totale percorsa da essi è di circa 20.000 km/anno, con un risparmio medio di ca. 3 tonnellate di {{< CO2 >}} (ogni alunno percorre in media 100km)  
-* Ogni alunno coinvolto riduce quindi le proprie emissioni di ca. 15 kg di {{< CO2 >}}. In termini energetici ciò equivale approssimando a circa 70 kWh[^1])
+* Ogni alunno coinvolto riduce quindi le proprie emissioni di ca. 15 kg di {{< CO2 >}}. In termini energetici ciò equivale approssimando a circa 70 kWh[^1]
 
 Certo 70 kWh sembrano poca cosa rispetto al costo energetico pro capite di ca. 9.500 kWh/anno relativo alla mobilità individuale (dato calcolato nell’ambito del progetto EmCoin), ma se il modello fosse adottato da più persone e su scala più larga da parte delle istituzioni locali o nazionali, queste iniziative potrebbero avere un impatto superiore.
-
- 
 
 Non è chiaro inoltre dai dati a disposizione se il servizio riguardi la sola andata a scuola o anche il ritorno: 100 km annui sembrano pochi se si considerano 205 giorni di scuola / anno per un tragitto fatto 2 volte al giorno (risulterebbe meno di 250 m di distanza media percorsa a piedi). Ipotizzando distanze superiori, anche realizzando zone pedonali intorno alle scuole (le cd. “car free zones” già abbastanza diffuse), queste distanze potrebbero essere notevolmente aumentate. Inoltre teniamo conto che non sono i bambini che guidano, e che quindi potenzialmente questo “ultimo chilometro” viene guidato da genitori e nonni autisti per 4 volte al giorno.
 
 In un passato non lontano in Italia era normale per gli studenti percorrere un chilometro o più a piedi per raggiungere la scuola, negli ultimi anni molto meno, ma iniziative come queste fanno ragionare su un certo “effetto boomerang” che in questo caso ci auguriamo. Volendo contribuire alla lotta al cambiamento climatico sia genitori che figli possono quantificare con questi semplici calcoli, come ha fatto il comune di Avigliana, l’impatto di queste semplici azioni.   
 Confidiamo che queste considerazioni e calcoli vengano fatte più spesso, e che soluzioni intelligenti e sostenibili siano incoraggiate e magari adottate non solo dalle istituzioni ma anche da tutti noi, nell’ambito della nostra azione. Per poterlo fare noi di Resconda crediamo che una dimestichezza di base con i numeri dell’energia sia fondamentale.
-    
+
+[^1]:  Utilizziamo come riferimento la [“Fiat Punto”](https://www.terraup.it/auto/fiat/grande-punto), abbiamo un consumo per di 7 litri x 100 km in traffico urbano, con [10 kWh](https://www.motus-e.org/faq-items/la-ricarica-dellauto-elettrica-conviene-perche-non-si-pagano-le-accise/#:~:text=Un%20litro%20di%20benzina%20contiene,arriva%20a%2010%2C7%20kWh.) di energia per litro di combustibile.
