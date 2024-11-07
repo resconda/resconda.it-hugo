@@ -5,8 +5,8 @@ tags:
 - spuntini
 summary: "L’ ”Orco a colori” è un negazionista climatico, un fan della trivellazione del petrolio e odia gli ambientalisti. Per chi ha a cuore le sorti dell’ambiente la notizia della sua elezione a Presidente degli Stati Uniti non potrebbe essere più funesta. O no?"
 cover_image:
- src: assets/post-img/1200px-Logo_for_the_Donald_Trump_2024_presidential_campaign.svg_svomtc
- caption: "Fonte: [Wikipedia](https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign)"
+ src: assets/post-img/trump-2023751_1280_xy9h8c
+ caption: "Credits: [The digital Artist](https://pixabay.com/it/users/thedigitalartist-202249/)"
 ---
 
 Tra Harris e Trump pare ovvio quale fosse il candidato “migliore” dal punto di vista di chi ha a cuore la crisi climatica: Trump ha fatto uscire gli USA dall’accordo di Parigi (e probabilmente lo rifarà), vuole ritirare la firma anche dagli accordi di Rio del 1992, ha tra i suoi sostenitori \- e sua volta apertamente sostiene \- le grandi compagnie petrolifere americane, è un fan dell’espansione dell’attività estrattiva (d*rill, baby drill\!)*, vuole eliminare le restrizioni alle emissioni industriali di {{< CO2 >}} introdotte dai democratici ed è un negazionista climatico totale...  
