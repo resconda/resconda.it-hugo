@@ -1,3 +1,13 @@
-{{- $button_class := or (.Get "button_class") ("btn-info text-white") -}}
-<a href="https://forms.gle/5sWfVNZagDLtaF928"><button type="button"
-        class="btn {{$button_class}}">Modulo di adesione</button></a>
+{{$button_class := or (.Get "button_class") ("btn-info text-white w-100") }}
+{{$pf_link := site.Params.ext_links.subscription_form_person}}
+{{$pg_link := site.Params.ext_links.subscription_form_organization}}
+
+<div class="dropdown">
+        <button class="btn {{$button_class}} dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Modulo di adesione
+        </button>
+        <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{{$pf_link}}">Persone fisiche</a></li>
+                <li><a class="dropdown-item" href="{{$pg_link}}">Persone giuridiche</a></li>
+        </ul>
+</div>

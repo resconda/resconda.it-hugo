@@ -29,6 +29,9 @@ params:
   search: true
   search_minify: false
   math: true
+  ext_links:
+    subscription_form_person: https://form.jotform.com/242896877203368
+    subscription_form_organization: https://form.jotform.com/243102285113342
 
 markup:
   goldmark:
