@@ -2,7 +2,7 @@
     <a href="{{.Permalink}}" class="link"></a>
     <div class="card-body d-flex flex-column">
         <p>{{.Date| time.Format ":date_long"}}</p>
-        <h3 class="card-title flex-grow-1">{{.Title| htmlUnescape}}</h3>
+        <h3 class="card-title flex-grow-1">{{.Title| htmlUnescape | markdownify}}</h3>
         {{ if isset .Params.classes 0 }}
         <div>{{ partial "tag_svg.html" (dict "label" (index .Params.classes 0) "width" "50px" "extra_class" "fill")}}
         </div>
