@@ -8,7 +8,7 @@ tags:
 - CO2
 summary: "Anche quest’anno parliamo della COP, tenutasi a novembre a Baku ed in cui decine di migliaia di delegati (tra cui 1.773 lobbisti del *oil&gas*), hanno discusso di cambiamento climatico. Solo qualche annotazione a margine di questo *bla bla* ad alto livello..."
 cover_image:
- src: assets/post-img/COP_29_mrq1se
+ src: assets/post-img/cop29_jeefsd
 #  caption: 
 ---
 
