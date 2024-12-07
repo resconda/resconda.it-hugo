@@ -1,5 +1,5 @@
 ---
-title: "COP 29, nulla si muove."
+title: "COP 29 e nulla si muove"
 date: 2024-12-05
 tags:
 - COP  
