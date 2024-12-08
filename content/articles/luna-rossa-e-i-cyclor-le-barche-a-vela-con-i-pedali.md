@@ -21,16 +21,16 @@ A bordo delle imbarcazioni di America’s Cup ci sono 4 *cyclors* per ogni equip
 
 I *cyclor* hanno il compito di produrre sufficiente potenza, sufficiente “wattaggio”, per alimentare le manovre necessarie nelle varie fasi di gara. Wattaggio in questo caso è il termine ufficiale normalmente in uso, il mondo del ciclismo infatti ci è amico ed è ormai  frequente leggere nelle grafiche i Watt sprigionati dai vari Pogacar, Van der Poel o Filippo Ganna. 
 
-Con l’avvento dei *cyclor* il discorso è il medesimo, ma la domanda è: quanta potenza e quanta energia viene prodotta dai *cyclor* durante una regata?   
+Con l’avvento dei *cyclor* il discorso è il medesimo, ma la domanda è: quanta potenza e quanta energia vengono prodotte dai *cyclor* durante una regata?   
 In questa [intervista](https://www.youtube.com/watch?v=aeRaN_4okcs&t=2s) Paolo Simion, ciclista con diversi Giri d'Italia alle spalle e ora cyclor per il team Italiano di Luna Rossa, fornisce dei dati su cui lavorare. 
 
-Ciclisticamente il momento più duro (e tatticamente cruciale) è la preparazione alla partenza: la barca deve oltrepassare la linea nel momento giusto, con la giusta direzione e velocità. Per poter fare ciò vengono fatte numerose manovre nei minuti prima della partenza, rese possibili dai sistemi idraulici che devono essere pronti, carichi e reattivi. Questo per il *cyclor* si traduce in una sola cosa: pedalare\! 
+Ciclisticamente il momento più duro (e tatticamente cruciale) è la preparazione alla partenza: la barca deve oltrepassare la linea nel momento giusto, con la giusta direzione e velocità. Per poter fare ciò occorrono numerose manovre nei minuti prima della partenza, rese possibili dai sistemi idraulici che devono essere pronti, carichi e reattivi. Questo per il *cyclor* si traduce in una sola cosa: pedalare\! 
 
 Simion nell’intervista parla di 550W medi mantenuti per 3 minuti durante il pre start, del mantenimento di circa 400W per l’intera regata (che dura mediamente 30 minuti) e di **potenze di picco per alcune manovre di 1500W\!**
 
 Possiamo quindi sovrastimare una media di 500W per 30 minuti (probabilmente qualcosa meno). Moltiplicato per i 4 *cyclor* arriviamo a 2000W medi in circa 30 minuti di competizione, ovvero ad **una produzione/consumo di energia** per imbarcazione **di un solo kWh.** Nemmeno sufficiente nella nostra vita quotidiana per fare una [doccia calda](https://resconda.it/articles/rescoprire-lacqua-calda/) (ma abbastanza per cucinare un [piatto di pasta](https://resconda.it/articles/la-pasta-alla-parisi-1/)). 
 
-Anche questa volta, le impressionanti prestazioni fisiche degli atleti diventano trascurabili (e lo sono…) quando vengono rapportate al mondo dell’energia e dei suoi ordini di grandezza. Un tema questo che abbiamo già trattato nella [pillola](https://resconda.it/articles/autoprodurre-l-elettricita/) di Robert, ciclista di pista professionista che arriva a 600W in lotta contro un tostapane, o in [quest’altra](https://resconda.it/articles/teatro-a-pedali/) dove si cercava di alimentare eventi culturali con una platea di ciclisti amatoriali. 
+Anche questa volta, le impressionanti prestazioni fisiche degli atleti diventano trascurabili (e lo sono…) quando vengono rapportate al mondo dell’energia e dei suoi ordini di grandezza. Un tema, questo, che abbiamo già trattato nella [pillola](https://resconda.it/articles/autoprodurre-l-elettricita/) di Robert, ciclista di pista professionista che arriva a 600W in lotta contro un tostapane, o in [quest’altra](https://resconda.it/articles/teatro-a-pedali/) dove si cercava di alimentare eventi culturali con una platea di ciclisti amatoriali. 
 
 #
     
