@@ -24,7 +24,7 @@ Grazie anche a tecnologie satellitari è possibile ormai da qualche anno monitor
 
 {{< cloudinary_img src="assets/post-img/Satellite-detected-methane-leaks-from-human-activities_2021_lllsxn" >}}
 
-L'incidente in Kazakistan è il secondo come gravità da quando ci sono i mezzi per effettuare queste misurazioni, secondo appunto dietro a quello accaduto nel Mar Baltico
+L'incidente in Kazakistan è il secondo come gravità da quando ci sono i mezzi per effettuare queste misurazioni, secondo appunto dietro a quello accaduto nel Mar Baltico.
 
 <!--
   created 2024-03-05 23:54:52.464738 +0100 CET m=+0.069115043

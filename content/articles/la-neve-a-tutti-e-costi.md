@@ -19,7 +19,7 @@ Feste di Natale, periodo che per tanti coincide con la classica "settimana bianc
 
 Sempre più frequente è quindi l'utilizzo di cannoni sparaneve, con le solite mille variabili del caso, [LEGAMBIENTE](https://www.legambiente.it/wp-content/uploads/2021/11/Report-Nevediversa_2023.pdf) ci offre un dato energetico indicativo sulla quantità di di **ENERGIA necessaria ad innevare un metro lineare di pista (di larghezza 20m) cioè 250 kWh**.
 
-Specifichiamo che questo dato si riferisce al totale innevamento di uno strato di 30 ,cm a partire da zero, e al suo mantenimento per tutta la stagione, che incide per circa un terzo del totale.
+Specifichiamo che questo dato si riferisce al totale innevamento di uno strato di 30 cm, a partire da zero, e al suo mantenimento per tutta la stagione, che incide per circa un terzo del totale.
 
 Ciò significa che sciando lungo una pista di 4km, stiamo scivolando su circa un 1 GWh di energia.
 

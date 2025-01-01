@@ -33,9 +33,9 @@ Perché i sacchetti in amido di mais hanno un costo energetico, anche per andarl
 
 Non abbiamo dei dati certi, abbiamo trovato un [paper](https://www.researchgate.net/publication/347840296_Energy_return_on_investment_EROI_of_biomass_conversion_systems_in_China_Meta-analysis_focused_on_system_boundary_unification) che parla di EROI compreso tra 1,2 e 11, [un altro](https://www.semanticscholar.org/paper/Application-of-Energy-Return-on-Investment-(EROI)-Gonzaga-Bienvenido/460a6e72fbc2a046227fb4ce5a0b93d55f587b9c) che indica un EROI di 0,3, ovvero negativo (cioè ci perdi solo), così come per la generazione di energia da microalghe, pari a 0,6 secondo un [paper](https://www.sciencedirect.com/science/article/pii/S0306261915001221#b0030) dell'autorevolissimo Prof. Mario Tredici, recentemente scomparso.
 
-Secondo [questo studio](https://www.mdpi.com/1996-1073/14/16/5112) l'EROI dei gas cd. "fossili" varia tra 12 e 82.
+Secondo [questo studio](https://www.mdpi.com/1996-1073/14/16/5112) l'EROI dei gas cosiddetti "fossili" varia tra 12 e 82.
 
-Impietosamente, quello che occorre considerare è che l'EROI non è altro che un indicatore dell'utilità di una fonte energetica: per valori (medi) alti (superiori a...? 30? 50?), la fonte riesce a sostenere il modello socioeconomico a cui siamo (purtroppo) abituati: quello dell'educazione e della sanità universale, del tempo libero, dei viaggi...).
+Impietosamente, quello che occorre considerare è che l'EROI non è altro che un indicatore dell'utilità di una fonte energetica: per valori (medi) alti (superiori a...? 30? 50?), la fonte riesce a sostenere il modello socioeconomico a cui siamo (purtroppo) abituati: quello dell'educazione e della sanità universale, del tempo libero, dei viaggi....
 
 Il biogas è una bella cosa ma potrebbe non essere in grado di poterci garantire tutto ciò.
 

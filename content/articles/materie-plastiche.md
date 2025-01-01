@@ -19,10 +19,10 @@ Sul tema del packaging di prodotti di consumo, sempre più spesso si trovano ind
 Varie marche infatti propongono un’alternativa di REFILL BAG (busta di ricarica), al posto del classico contenitore plastico. Vediamo la differenza energetica tra le due. 
 
 Generalmente le confezioni classiche in plastica di detersivo sono in polietilene: HDPE (quello resistente, opaco) o PET (quello trasparente), che come ogni materia plastica richiedono energia per l'estrazione, la lavorazione e il trasporto. 
-Ad esempio, la produzione di 1 kg di HDPE vergine [richiede circa 100MJ](https://www.wgtn.ac.nz/architecture/centres/cbpr/resources/pdfs/ee-coefficients.pdf), equivalente a circa 28 kWh di energia . Un contenitore di vuoto da 2 litri pesa circa 100 g, in questo esempio avremo circa 2,8 kWh di energia incorporata nella sola materia prima. 
+Ad esempio, la produzione di 1 kg di HDPE vergine [richiede circa 100MJ](https://www.wgtn.ac.nz/architecture/centres/cbpr/resources/pdfs/ee-coefficients.pdf), equivalente a circa 28 kWh di energia. Un contenitore di vuoto da 2 litri pesa circa 100 g, in questo esempio avremo circa 2,8 kWh di energia incorporata nella sola materia prima. 
 
-A questo andrebbe aggiunto anche il processo di trasformazione
-Per la produzione, in questo casi si tratterà di BlowMolding, cioè di soffiaggio a caldo della plastica all’interno di uno stampo, in una successiva pillola parleremo dei processi di trasformazione del compound plastico, anche se l’ordine di grandezza principale dell’impatto energetico è dominato dalla materia prima.
+A questo andrebbe aggiunto anche il processo di trasformazione.  
+Per la produzione, in questo casi si tratterà di *BlowMolding*, cioè di soffiaggio a caldo della plastica all’interno di uno stampo, in una successiva pillola parleremo dei processi di trasformazione del compound plastico, anche se l’ordine di grandezza principale dell’impatto energetico è dominato dalla materia prima.
 
 
 Dall’altra parte, una refill bag per lo stesso volume di detersivo può pesare circa 20-30 g, quindi circa il 60-70% di peso in meno rispetto al flacone precedente, e quindi di energia incorporata (circa 1kWh). 
