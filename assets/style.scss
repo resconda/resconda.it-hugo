@@ -55,6 +55,7 @@ $input-placeholder-color: $gray-500;
 @import "./bootstrap/scss/helpers";
 @import "./bootstrap/scss/spinners";
 @import "./bootstrap/scss/dropdown";
+@import "./bootstrap/scss/pagination";
 
 // 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "./bootstrap/scss/utilities/api";
@@ -870,6 +871,10 @@ a.greenlink {
 }
 .event-description {
   font-size: smaller;
+}
+
+ul.pagination {
+  justify-content: center;
 }
 
 // Energy tags
