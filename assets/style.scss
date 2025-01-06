@@ -314,11 +314,21 @@ table, .highlight>pre, pre.example {
         margin-right: 0.5em;
     }
 }
-.taglist a:hover {
-  text-decoration: none;
+.taglist {
+  align-items: center;
+  a:hover {
+    text-decoration: none;
+  }
 }
 .badge {
   padding: 5px;
+}
+.tag-pill {
+  background-color: $logo-color-lightblue;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  line-height: 1em;
 }
 #our-numbers{
   color: $logo-color-orange;
@@ -344,9 +354,9 @@ table, .highlight>pre, pre.example {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-#announcement {
-  // background-color: $background2;
-}
+// #announcement {
+//   // background-color: $background2;
+// }
 #prologue{
   background-color: $background1;
 }
@@ -510,9 +520,9 @@ div.footnotes {
 .col-center {
     text-align: center;
 }
-.light {
-    //color: $grey;
-}
+// .light {
+//     //color: $grey;
+// }
 .wordcount {
   font-size: smaller;
   color: #AAAAAA;
@@ -626,11 +636,6 @@ span.unit {
 }
 .bg-lightblue {
   background-color: $background2;
-}
-.tag-pill {
-  background-color: $logo-color-lightblue;
-  color: white;
-  padding: 5px 15px;
 }
 form.pink {
   & .form-control {
@@ -822,8 +827,8 @@ a.greenlink {
   text-decoration: unset;
   color: unset;
 }
-.search-result-title {
-}
+// .search-result-title {
+// }
 .search-result-summary {
   color: $logo-color-blue;
 }

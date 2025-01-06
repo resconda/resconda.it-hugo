@@ -2,8 +2,8 @@
 title: "“Quanto” è bello il Piedibus?"
 date: 2024-11-07
 tags:
-- PIEDIBUS   
-- MOBILITA’ SOSTENIBILE 
+- piedibus   
+- mobilità sostenibile
 summary: "Quanto possono incidere iniziative di mobilità sostenibile come il “*Piedibus”* sul nostro impatto energetico e ambientale? Abbiamo studiato i dati di un Comune che adotta questo sistema.. "
 cover_image:
  src: assets/post-img/DALL_E_2024-10-30_10.34.24_-_A_lively_scene_of_a_walking_bus_initiative_for_school_children_showing_a_group_of_students_walking_in_line_along_a_suburban_sidewalk_led_by_an_adu_ou9mhc
