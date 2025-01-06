@@ -1,0 +1,28 @@
+---
+title: "2025: Fin qui tutto bene "
+date: 2025-01-06
+tags:
+- spuntini
+summary: "Anno nuovo tempo di bilanci, speranze e proiezioni."
+cover_image:
+ src: assets/post-img/Spuntini_j5joyu
+#  caption: 
+---
+
+Anno nuovo tempo di bilanci, speranze e proiezioni. 
+
+Anche il 2024 si avvia ad essere [l’anno più caldo mai registrato](https://wmo.int/media/news/climate-change-impacts-grip-globe-2024). L’anno scorso era stato il 2023, ci avevamo anche scritto [un post](https://resconda.it/articles/spuntini/conferma-proiezioni-wmo-2023-anno-piu-caldo/) . Ora non è che possiamo ogni anno scrivere le stesse cose, quindi diamolo per scontato: ogni anno è più caldo del precedente, il 2025 sarà il più caldo di sempre ed il più fresco degli anni successivi, stessa cosa per il 2026, etc. etc.
+
+Il 2024 ha visto inoltre schizzare in alto il costo dei [danni da cambiamento climatico](https://it.euronews.com/green/2024/12/31/germania-e-spagna-hanno-subito-alcuni-dei-disastri-climatici-piu-costosi-al-mondo-nel-2024#:~:text=Secondo%20un%20nuovo%20rapporto%2C%20le,3%2C8%20miliardi%20di%20euro.), ormai nell’ordine delle centinaia di miliardi di dollari. Ma questo non preoccupa, anzi, come [abbiamo già avuto modo di sottolineare](https://resconda.it/articles/spuntini/il-business-del-disastro/), secondo una logica perversa e ormai largamente condivisa, il problema diventa opportunità e le ricostruzioni \- che siano a seguito di guerre o disastri ambientali \- diventano fantastiche opportunità di business (credit: indebitamento delle future generazioni). 
+
+Le ragioni di un’economia malata, perché basata non su elementi reali (quali l’energia) ma su elementi immateriali e convenzionali (come il project financing ed il debito, sempre più grande, contratto in vista di un ipotetico quanto chimerico futuro rilancio della **Crescita**), continuano a prevalere su quelle del bene comune, strettamente connesso al contenimento della crisi climatica ed alla riduzione dei consumi, che tuttavia non è in linea con il mantra della crescita.  
+Il 2024 ha avuto anche aspetti positivi: innanzitutto ha in una certa misura contribuito a disvelare la finzione del concetto di sviluppo sostenibile, che per anni ha sostenuto lo story-telling di una politica ambientale fatta di meravigliose opportunità di crescita e sviluppo economico. Gli agricoltori hanno fatto le prime esperienze su cosa significa \- passando dalle chiacchiere ai fatti \- la sostenibilità ambientale, e sono scesi in strada a protestare (costringendo l’Europa delle nazioni ad abbandonare i fatti per tornare alle chiacchiere…). Lo stesso è successo per quanto riguarda l'automotive e le altre aree di intervento della transizione ecologica. Nel 2024 ci si è quindi rapidamente rassegnati a posticipare a momenti più favorevoli (che difficilmente ci saranno) l’implementazione di misure concrete di riduzione del danno ambientale (per molti sempre e comunque “*ideologiche*”), a vantaggio del Business as Usual e degli interessi specifici del sistema produttivo e finanziario. 
+
+Y. Harari in “Sapiens” sottolinea come per l’umanità il passaggio da una società di cacciatori-raccoglitori alla società agricola sia stata una scelta non reversibile, un percorso di sviluppo dal quale era impossibile tornare indietro. Questa unidirezionalità vale per ogni passaggio ad un livello superiore di complessità sociale (e di consumo energetico). La nostra società è il risultato di un salto \- forse altrettanto importante di quello all’agricoltura \-  avvenuto negli ultimi 150 anni e reso possibile dallo sfruttamento di nuove risorse energetiche a basso costo (i combustibili fossili), la cui progressiva (inevitabile) riduzione rappresenta una sfida forse ancora più grande di quella ambientale (come non smette di ripeterci da un decennio [Charles Hall](https://open.spotify.com/episode/267wnJywVWCDOrEE7ipUWx?si=e951456860434857)), proprio perché ad una riduzione dell’energia disponibile segue una rapida riduzione della complessità sociale, che assume di norma le forme di un collasso.
+
+Un tentativo di affrontare al contempo il problema della povertà energetica globale e quello della crisi ambientale non può che basarsi (anche?) sulla riduzione dei consumi energetici: un obiettivo il cui perseguimento può portare a una riduzione delle emissioni climalteranti, servire a porre le premesse per una riorganizzazione (dimagrimento) strutturale dei consumi energetici e permettere una transizione alle fonti rinnovabili meno “impattante” dal punto di vista sociale ed economico.
+
+L’App SuaSì, sviluppata da Resconda con la collaborazione del Politecnico di Torino-DISEG ed il contributo dei fondi della Chiesa Valdese e dell’[Iniziativa comunitaria SEFIT](https://openincet.it/sefit/), intende essere uno strumento utile a permettere alle singole persone di agire verso la riduzione dei consumi energetici, ognuna nei limiti delle proprie possibilità, ma nella giusta direzione.
+
+Per concludere, il nostro augurio per il 2025, in un contesto in cui rinascono idee belliciste e nazionalismi che, come le signorie, il feudalesimo e la lotta tra Papato e Impero, avremmo voluto archiviati dalla storia, è che si possa invece discutere collettivamente di priorità nell’azione pubblica e individuale, con consapevolezza ed al di là della contingenza, dell’interesse politico individuale e di quello economico. Per il bene delle future generazioni.
+    

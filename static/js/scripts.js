@@ -128,14 +128,27 @@ var renderTableCaptions = function() {
     const elements = document.getElementsByTagName("tablecaption");
     for (let elidx = 0; elidx < elements.length; elidx++) {
         const element = elements[elidx];
+        const tClass =  element.getAttribute("class");
+        const tStyle =  element.getAttribute("style");
+        const cClass =  element.getAttribute("caption-class");
+
         const table = element.getElementsByTagName("table").item(0);
         if(!table) return;
+        if(tClass){
+            table.setAttribute("class", tClass);
+        }
+        if(tStyle){
+            table.style = tStyle;
+        }
         const data = element.getElementsByTagName("data").item(0);
         if(data){
             const captionString = data.getAttribute("value") || "";
             if(captionString.length>0){
                 var captionEl = document.createElement("caption");
                 captionEl.innerHTML = captionString;
+                if(cClass){
+                    captionEl.setAttribute("class", cClass);
+                }
                 table.prepend(captionEl);
             }
         }
