@@ -61,6 +61,7 @@ $input-placeholder-color: $gray-500;
 
 // 6. Add additional custom code here
 //  @import "scss/color.scss";
+@import "typography.scss";
 
 // GLOBALS
 :root {
@@ -442,7 +443,6 @@ caption {
   margin-right: 1.0rem;
 }
 tablecaption table {
-  caption-side: top;
   & caption {
     text-align: center;
   }

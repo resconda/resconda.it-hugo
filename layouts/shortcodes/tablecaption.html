@@ -1,6 +1,4 @@
-<tablecaption {{ with .Get "class" }}class="{{.}}"{{end}}>
-    {{ with .Get "caption"}}
-    <data value="{{ . |markdownify }}" />
-    {{ end}}
+<tablecaption {{ with .Get "class" }}class="{{.}}"{{end}} {{ with .Get "caption-class" }}caption-class="{{.}}"{{end}}>
+    {{ with .Get "caption" }}<data value="{{ . | markdownify }}" />{{ end }}
     {{ .Inner | markdownify }}
 </tablecaption>
