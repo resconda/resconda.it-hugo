@@ -1,9 +1,9 @@
 ---
-title: "Frutta Italiana vs. frutta tropicale, impatto scontato?"
+title: "Frutta italiana vs. frutta tropicale, impatto scontato?"
 date: 2025-01-06
 tags:
-- Trasporti 
-- Cibo 
+- trasporti 
+- cibo 
 summary: "Quanto impattiamo energeticamente quando indulgiamo in prodotti che hanno viaggiato mezzo mondo per arrivare sulle nostre tavole? Sia per uno sfizio natalizio o sia nella quotidianità, come si fa ormai normalmente con banane o ananas?"
 cover_image:
  src: assets/post-img/DALL_E_2025-01-03_17.39.58_-_A_festive_Christmas_dinner_table_with_tropical_fruits_like_pineapples_mangoes_papayas_bananas_and_coconuts_along_with_traditional_holiday_dishes_pcjh7r
