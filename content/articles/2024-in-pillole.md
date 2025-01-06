@@ -6,8 +6,8 @@ tags:
 - pillole
 - riassunto
 summary: "Un altro anno di pillole se n'è andato. Speriamo che ti abbiano fatto bene. Facciamo il punto dei temi trattati con un pratico riepilogo."
-# cover_image:
-#  src: assets/post-img/
+cover_image:
+ src: assets/post-img/Pillole_2024_pf5waf
 #  caption: 
 
 ---
