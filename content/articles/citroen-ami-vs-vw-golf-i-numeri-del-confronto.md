@@ -21,7 +21,11 @@ Il che significa, per tornare al nostro confronto tra Citroen AMI e VW Golf (mod
 Certo è che l’energia incorporata in un veicolo elettrico è più grande di quella di un veicolo a motore a scoppio (vedi il post menzionato sopra). Teniamo quindi conto di questo aspetto e consideriamo l’intero ciclo di vita dei due veicoli, diciamo di 200.000 km: considerando l’energia incorporata (CED) nei due veicoli e la manutenzione annua **il costo energetico complessivo della AMI risulta nell’arco della sua “esistenza” pari a 61 MWh (di cui 40 MWh da combustibili fossili), contro  167 MWh della Golf (di cui  144 da combustibili fossili). Circa 3 volte tanto.**
 
 Queste le ipotesi considerate:  
-\[immagini\]
+
+{{< cloudinary_img src="assets/post-img/dettaglio-golf_uqsrpz" >}}
+{{< cloudinary_img src="assets/post-img/dettaglio-ami_x4agvf" >}}
+{{< cloudinary_img src="assets/post-img/ced-golf_fm0frg" >}}
+{{< cloudinary_img src="assets/post-img/ced-ami_k5d8o2" >}}
 
 E queste le fonti dati:
 

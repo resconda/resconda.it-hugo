@@ -22,7 +22,7 @@ Un’altra importante differenza tra i due elettrodomestici sta nei tempi di ris
 Proviamo quindi a ipotizzare una tipica cottura che può essere fatta in entrambi gli elettrodomestici: le patate al forno. Nella tabella seguente i dettagli di tempi e consumo di energia di questa preparazione. 
 
 {{< tablecaption caption="Scenario: cottura patate al forno, porzione per due persone" class="caption-top" >}}
-|  | potenza media \[W\] | T risc \[min\] | T cottura \[min\] | consumo \[kWh\] |
+|  | potenza media [W] | T risc [min] | T cottura [min] | consumo [kWh] |
 | :---- | ----- | ----- | ----- | ----- |
 | forno tradizionale | 1000 | 15 | 40 | 0,917 |
 | friggitrice ad aria | 1500 | 0 | 20 | 0,500 |
@@ -33,7 +33,7 @@ Non trovando analisi sullo specifico prodotto, proviamo a fare una stima, parten
 Una friggitrice ad aria pesa intorno a 5 kg ed è costituita principalmente da acciaio, plastica e componentistica elettronica. Proviamo a ipotizzare la composizione così come mostrato in tabella.
 
 {{< tablecaption caption="materiali componenti e relativi CED per una friggitrice ad aria di 5kg. (1) [Fonte](https://www.wgtn.ac.nz/architecture/centres/cbpr/resources/pdfs/ee-coefficients.pdf) " class="caption-top" >}}
-| materiale | Densità energetica \[MJ/kg\] (1) | % massa totale | CED \[kWh\] |
+| materiale | Densità energetica [MJ/kg] (1) | % massa totale | CED [kWh] |
 | :---- | ----- | ----- | ----- |
 | acciaio | 30 | 80% | 33,33 |
 | plastica | 100 | 10% | 13,89 |
@@ -45,7 +45,7 @@ Con questo valore, possiamo quindi valutare dopo quanto tempo dall’acquisto la
 Continuando con l’esempio di cottura sopra, ipotizziamo diversi scenari di utilizzo, considerando quante volte al mese viene utilizzata.
 
 {{< tablecaption caption="scenari annui di utilizzo e tempo di pareggio energetico per una friggitrice ad aria “costata” 64 kWh" class="caption-top" >}}
-| cotture/mese | consumo annuo forno tradizionale \[kWh\] | consumo annuo friggitrice ad aria \[kWh\] | diff/anno \[kWh\] | energy payback time \[anni\] |
+| cotture/mese | consumo annuo forno tradizionale [kWh] | consumo annuo friggitrice ad aria [kWh] | diff/anno [kWh] | energy payback time [anni] |
 | ----- | ----- | ----- | ----- | ----- |
 | 4 | 44 | 24 | \-20 | 3 |
 | 8 | 88 | 48 | \-40 | 2 |
