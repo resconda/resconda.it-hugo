@@ -56,6 +56,7 @@ $input-placeholder-color: $gray-500;
 @import "./bootstrap/scss/spinners";
 @import "./bootstrap/scss/dropdown";
 @import "./bootstrap/scss/pagination";
+@import "./bootstrap/scss/tables";
 
 // 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "./bootstrap/scss/utilities/api";
