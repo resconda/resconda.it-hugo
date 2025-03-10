@@ -6,8 +6,8 @@ tags:
 - EV
 - Inquinamento
 summary: "Nel dibattito tra mobilità elettrica e auto scoppiettanti “della tradizione” l’impatto ambientale gioca un ruolo fondamentale. Facciamo un confronto tra due veicoli non proprio analoghi per prestazioni ma entrambi in giro per le nostre città."
-# cover_image:
-#  src: assets/post-img/
+cover_image:
+ src: assets/post-img/amigolg_lyncq2
 #  caption: 
 classes:
 - MWh
@@ -25,10 +25,6 @@ Queste le ipotesi considerate:
 
 E queste le fonti dati:
 
-|  |
-| :---- |
-|  |
-| [https://ris.utwente.nl/ws/portalfiles/portal/189571307/10.1016\_j.procir.2019.01.099.pdf](https://ris.utwente.nl/ws/portalfiles/portal/189571307/10.1016_j.procir.2019.01.099.pdf) |
-| [https://www.wgtn.ac.nz/architecture/centres/cbpr/resources/pdfs/ee-coefficients.pdf](https://www.wgtn.ac.nz/architecture/centres/cbpr/resources/pdfs/ee-coefficients.pdf) |
-| [https://www.citroen.it/content/dam/citroen/italy/b2c/pricelist/november/LEAFLET\_CARATTERISTICHE\_TECNICHE\_con\_TONIC\_e\_NEW\_BATTERY.pdf](https://www.citroen.it/content/dam/citroen/italy/b2c/pricelist/november/LEAFLET_CARATTERISTICHE_TECNICHE_con_TONIC_e_NEW_BATTERY.pdf) |
-    
+- <https://ris.utwente.nl/ws/portalfiles/portal/189571307/10.1016_j.procir.2019.01.099.pdf>
+- <https://www.wgtn.ac.nz/architecture/centres/cbpr/resources/pdfs/ee-coefficients.pdf>
+- <https://www.citroen.it/content/dam/citroen/italy/b2c/pricelist/november/LEAFLET_CARATTERISTICHE_TECNICHE_con_TONIC_e_NEW_BATTERY.pdf>
