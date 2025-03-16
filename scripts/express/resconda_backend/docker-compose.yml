@@ -1,0 +1,8 @@
+services:
+  mailer:
+    image: node:23
+    volumes:
+    - ./:/app
+    entrypoint: ["/app/docker-entrypoint.sh"]
+    ports:
+    - 127.0.0.1:8081:3000
