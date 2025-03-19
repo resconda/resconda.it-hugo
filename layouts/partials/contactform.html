@@ -23,7 +23,7 @@
     <div class="col-12" style="text-align: center;">
         <button type="button" class="btn showtransition invisible" id="friendlyCaptchaFormSubmit" form="contactForm" disabled>Invia</button>
     </div>
-    <div class="frc-captcha" data-sitekey="FCMNSLE4OV2OBU04" data-callback="friendlyCaptchaSolved" data-lang="it"></div>
+    <div class="frc-captcha" data-sitekey={{site.Params.friendly_captcha.site_key}} data-callback="friendlyCaptchaSolved" data-lang="it"></div>
 </form>
 <div id="form-response" class="mt-3">
 </div>
