@@ -1,0 +1,28 @@
+{
+    "name": "friendlycaptcha_backend",
+    "version": "1.0.0",
+    "description": "Minimal backend to handle requests to/from the FriendlyCaptcha API",
+    "keywords": [
+        "express",
+        "friendlycaptcha",
+        "backend",
+        "API"
+    ],
+    "license": "ISC",
+    "author": "Paolo Marchetti",
+    "type": "module",
+    "main": "app.js",
+    "scripts": {
+        "dev": "node_modules/.bin/nodemon --env-file .env app.js",
+        "test": "test"
+    },
+    "dependencies": {
+        "@friendlycaptcha/server-sdk": "^0.1.2",
+        "body-parser": "^1.20.3",
+        "express": "^4.21.2",
+        "nodemailer": "^6.10.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.9"
+    }
+}
