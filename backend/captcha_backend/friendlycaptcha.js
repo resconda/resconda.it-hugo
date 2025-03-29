@@ -21,6 +21,7 @@ export const FriendlyCaptchaHelper = {
                 return ResultCodes.verifyFail;
             }
         }else{
+            console.log(result.getResponseError());
             return ResultCodes.couldNotVerify;
         }
     },
