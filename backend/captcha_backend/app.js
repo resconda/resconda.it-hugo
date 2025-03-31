@@ -3,7 +3,6 @@ import bodyParser from 'body-parser'
 import {FriendlyCaptchaHelper, ResultCodes } from './friendlycaptcha.js'
 
 const app = express()
-const CAPTCHAURL = "https://api.friendlycaptcha.com/api/v1/siteverify"
 
 const port = 3000
 
