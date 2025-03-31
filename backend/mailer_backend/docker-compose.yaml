@@ -1,8 +1,8 @@
 services:
-  captcha:
+  mailer:
     image: node:23
     volumes:
     - ./:/app
     entrypoint: ["/app/docker-entrypoint.sh"]
     ports:
-    - 0.0.0.0:8082:3000
+    - 127.0.0.1:8081:3000
