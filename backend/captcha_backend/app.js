@@ -1,5 +1,4 @@
 import express from 'express'
-import bodyParser from 'body-parser'
 import {FriendlyCaptchaHelper, ResultCodes } from './friendlycaptcha.js'
 
 const app = express()

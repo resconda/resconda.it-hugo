@@ -21,14 +21,33 @@ app.route("/",)
 })
 .post(async (req, res) => {
   let mailchimpResponse;
-  console.log(req.body);
+  console.log(`new member add request received. body[${JSON.stringify(req.body)}]`);
+
   res.set("Content-Type", "application/json")
-  try {
-    mailchimpResponse = await MailchimpHandler.addMember(req.body);
-  } catch (error) {
-    res.send({ error: `Failed to register user: ${error.message}` });
+  
+  // verify captcha response
+  let solution = req.body["frc-captcha-solution"];
+  if(!solution){
+    res.status(400).send({errors: ["Invalid 'frc-captcha-solution' input"]});
     return;
   }
+  let verifyResult = await (await fetch(`http://captcha:3000/?frc-captcha-solution=${solution}`)).json();
+  console.log(`[captcha] verifyResult[${JSON.stringify(verifyResult)}]`);
+  if(verifyResult.error){
+    res.status(200).send({errors: [verifyResult.error]}); // verification failed is expected to yield a 200 status
+    return;
+  }
+  // 200 and no errors means that the captcha was verified
+  
+  // add user to mailchimp list
+  try {
+    mailchimpResponse = await MailchimpHandler.addMember(req.body);
+    console.log(`mailchimpResponse[${JSON.stringify(mailchimpResponse)}]`);
+  } catch (error) {
+    res.send({ errors: [`Failed to register user: ${error.message}`] });
+    return;
+  }
+  
   // prepare and send feedback email
   const contactName = req.body.name ?? "nuov@ iscritt@";
   try {
@@ -41,7 +60,7 @@ app.route("/",)
       let sendResponse;
       if(err){
         console.log(err);
-        sendResponse = err;
+        sendResponse = {errors: [err]};
       }else{
         console.log(info)
         sendResponse = info;
@@ -49,7 +68,7 @@ app.route("/",)
       res.send(JSON.stringify(sendResponse));
     });
   } catch (error) {
-    res.send({ error: `Failed to send welcome mesasge to user: ${error.message}`});
+    res.send({ errors: [`Failed to send welcome mesasge to user: ${error.message}`]});
   }
   
 })

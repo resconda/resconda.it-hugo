@@ -1,5 +1,7 @@
 #!/bin/bash
 
 cd /app
-npm install --production
+echo "Running npm install..."
+npm install --omit-dev
+echo "Starting the application..."
 node --env-file .env app.js
