@@ -5,4 +5,4 @@ services:
     - ./:/app
     entrypoint: ["/app/docker-entrypoint.sh"]
     ports:
-    - 127.0.0.1:8081:3000
+    - 0.0.0.0:8081:3000
