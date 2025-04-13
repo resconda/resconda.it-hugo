@@ -11,8 +11,17 @@ export const ResultCodes = {
     couldNotVerify: 2,
 };
 
+const centerEllipsis = function(str, trailingcharacters=5) {
+    if(str.length > 2*trailingcharacters){
+        return str.slice(0, trailingcharacters) + "..." + str.slice(-trailingcharacters);
+    }else{
+        return str;
+    }
+}
+
 export const FriendlyCaptchaHelper = {
     verify: async (solution) => {
+        console.log(`[FriendlyCaptchaHelper.verify] verifying site[${centerEllipsis(frcClient.sitekey, 3)}] key[${centerEllipsis(frcClient.apiKey)}] solution[${centerEllipsis(solution)}]`)
         const result = await frcClient.verifyCaptchaResponse(solution);
         if(result.wasAbleToVerify()){
             if(result.shouldAccept()){
