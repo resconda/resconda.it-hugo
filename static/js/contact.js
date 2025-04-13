@@ -17,6 +17,7 @@ var validateForm = function() {
     var email = document.getElementsByName('email')[0];
     var message = document.getElementsByName('message')[0];
     var privacy = document.getElementsByName('privacy')[0];
+    var captcha = document.getElementsByName('frc-captcha-solution')[0];
 
     email.setCustomValidity("");
     message.setCustomValidity("");
@@ -39,7 +40,8 @@ var validateForm = function() {
             phone: phone.value,
             email: email.value,
             message: message.value,
-            privacy : privacy.checked
+            privacy : privacy.checked,
+            "frc-captcha-solution": captcha.value,
         }
     }
     return ret;
@@ -52,43 +54,42 @@ window.addEventListener("load", () => {
         document.getElementById("form-response").innerHTML = "";
         var validatedData = validateForm();
         if(validatedData !== false){
-            var XHR = new XMLHttpRequest();
-            frcsolution = document.getElementsByName('frc-captcha-solution')[0].value;
-            var aData = [
-                `frc-captcha-solution=${encodeURIComponent(frcsolution)}`
-            ];
-            for(const [name, value] of Object.entries(validatedData)) {
-                // encValue = encodeURIComponent(value);
-                aData.push(`${name}=${encodeURIComponent(value)}`);
-            };
-            // Define what happens on successful data submission
-            XHR.addEventListener('load', (event) => {
-                var data = JSON.parse(XHR.responseText);
-                if (data.errors != undefined && data.errors.length > 0) {
-                    data.errors.forEach(element => {
-                        errrow = document.createElement('div'); 
-                        errrow.classList.add('alert', 'alert-warning');
-                        errrow.innerHTML = element;
-                        document.getElementById("form-response").append(errrow);
-                    });
-                } else {
-                    let name = data.name;
-                    successmsg = document.createElement('div'); 
-                    successmsg.classList.add("alert", "alert-info", "text-center");
-                    successmsg.innerText = `Grazie ${name}! Ti contatteremo presto.`;
-                    document.getElementById('form-response').append(successmsg);
-                    document.getElementById('contactForm').querySelectorAll('input,textarea').forEach(el => { el.value = ""; });
-                    defaultWidget.reset();
+            fetch('/mailer', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(validatedData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    var errrow = document.createElement('div'); 
+                    errrow.classList.add('alert', 'alert-warning');
+                    errrow.innerHTML = "Errore del server. Riprova più tardi.";
+                    document.getElementById("form-response").append(errrow);
+                    console.log("Error: " + response.status);
+                    return;
                 }
+                response.json().then((data) => {
+                    if (data.errors != undefined && data.errors.length > 0) {
+                        data.errors.forEach(element => {
+                            var errrow = document.createElement('div'); 
+                            errrow.classList.add('alert', 'alert-warning');
+                            errrow.innerHTML = element;
+                            document.getElementById("form-response").append(errrow);
+                        }
+                        );
+                    } else {
+                        let name = data.name;
+                        var successmsg = document.createElement('div');
+                        successmsg.classList.add("alert", "alert-info", "text-center");
+                        successmsg.innerText = `Grazie ${name}! Ti contatteremo presto.`;
+                        document.getElementById('form-response').append(successmsg);
+                        document.getElementById('contactForm').querySelectorAll('input,textarea').forEach(el => { el.value = ""; });
+                        defaultWidget.reset();
+                    }
+                });
             });
-            // Define what happens in case of an error
-            XHR.addEventListener('error', (event) => {
-                alert('Oops! Something went wrong.');
-            });
-            // Set up our request
-            XHR.open('POST', '/cgi/form_contact');
-            // Send our FormData object; HTTP headers are set automatically
-            XHR.send(aData.join("&"));
         }else{ // invalid form
             successmsg = document.createElement('div');
             successmsg.classList.add("alert", "alert-warning", "text-center");

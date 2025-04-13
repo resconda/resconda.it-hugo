@@ -31,13 +31,16 @@ const MailchimpHandler = {
             {input_key: "phone", output_key: "PHONE"},
         ]
         for (const element of handler_map) {
-            member_info.merge_fields[element.output_key] = userRequest[element.input_key] ?? "";
+            if(userRequest[element.input_key]){
+                member_info.merge_fields[element.output_key] = userRequest[element.input_key];
+            }
         }
         console.log(`member_info[${JSON.stringify(member_info)}]`);
         let mailchimpResponse = await mailchimp.lists.addListMember(listId, member_info);
         if(!mailchimpResponse.id){
             throw new Error(`Failed to add member to list ${listId}: ${response}`);
         }
+        console_log(`mailchimpResponse[${JSON.stringify(mailchimpResponse)}]`);
         return mailchimpResponse;
     },
     ping: async function() {

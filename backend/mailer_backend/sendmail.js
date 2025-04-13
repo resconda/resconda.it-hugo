@@ -1,15 +1,14 @@
 const nodemailer = require("nodemailer");
 
 const SendmailHelper = {
-  sendMail: (recipient, subject, plaintext, html = "", sender = "no-reply@suasi.it") => {
+  sendMail: (recipient, subject, plaintext, html = "", sender = process.env.MAILER_SENDER_ADDRESS) => {
     let transporter = nodemailer.createTransport({
-      service: "register.it",
+      host: process.env.REGISTER_SMTP_HOST,
+      port: process.env.REGISTER_SMTP_PORT,
       auth: {
         user: process.env.REGISTER_SMTP_USER,
         pass: process.env.REGISTER_SMTP_PASSWORD,
       },
-      host: process.env.REGISTER_SMTP_HOST,
-      port: process.env.REGISTER_SMTP_PORT,
       secure: true,
     });
     let mailOptions = {

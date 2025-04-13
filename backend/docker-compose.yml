@@ -5,7 +5,7 @@ include:
 services:
   hugo:
     image: hugomods/hugo
-    command: -D
+    command: -D $HUGO_EXTRAS
     volumes:
       - ../:/src
       - ../public/:/public
