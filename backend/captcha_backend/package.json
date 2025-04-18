@@ -17,7 +17,6 @@
         "test": "test"
     },
     "dependencies": {
-        "@friendlycaptcha/server-sdk": "^0.1.2",
         "body-parser": "^1.20.3",
         "express": "^4.21.2",
         "nodemailer": "^6.10.0"

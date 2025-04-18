@@ -5,7 +5,6 @@ const MailchimpHandler = require("./mailchimp")
 const SendmailHelper = require('./sendmail')
 const WelcomeEmail = require('./welcome_email')
 app.use(bodyParser.json()) // for parsing application/json
-// app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
 const port = 3000
 
