@@ -24,11 +24,14 @@ export const FriendlyCaptchaHelper = {
         console.log(`[FriendlyCaptchaHelper.verify] verifying site[${centerEllipsis(frcClient.sitekey, 3)}] key[${centerEllipsis(frcClient.apiKey)}] solution[${centerEllipsis(solution)}]`)
         const result = await frcClient.verifyCaptchaResponse(solution);
         if(result.wasAbleToVerify()){
+            var retcode;
             if(result.shouldAccept()){
-                return ResultCodes.verifySuccess;
+                retcode = ResultCodes.verifySuccess;
             }else{
-                return ResultCodes.verifyFail;
+                retcode = ResultCodes.verifyFail;
             }
+            console.log(`${JSON.stringify(result.getResponse())}`);
+            return retcode;
         }else{
             console.log(result.getResponseError());
             return ResultCodes.couldNotVerify;
