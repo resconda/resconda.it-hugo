@@ -36,7 +36,7 @@ Gli scenari limite sono quindi, per la fase di riscaldamento:
 
 **La differenza relativa** tra i due è data dal **fattore 3.47** (3 \+ 5% \+ 10%).
 
-Per avere un’idea di quantità assoluta, riprendiamo la stima fatta per le *linguine alla Parisi* di 5 minuti per bollire 2 litri d’acqua con un fuoco da 6 kW. Qui abbiamo la metà di potenza, quindi il tempo per bollire un litro è lo stesso, mentre ci vanno 10 minuti se i litri da far bollire sono tre. **Otteniamo quindi, rispettivamente, 11.4 e 39.6 Wh**. 
+Per avere un’idea di quantità assoluta, riprendiamo la stima fatta per le *linguine alla Parisi* di 5 minuti per bollire 2 litri d’acqua con un fuoco da 6 kW. Qui abbiamo la metà di potenza, quindi il tempo per bollire un litro è lo stesso, mentre ci vanno 15 minuti (!!!) se i litri da far bollire sono tre. **Otteniamo quindi, rispettivamente, 11.4 e 39.6 Wh**. 
 
 Veniamo ora alla cottura della pasta. Assumiamo un tempo di cottura di 10 minuti. Riprendendo le suddette variabili, è chiaro che gli scenari possibili sono molteplici, a seconda delle combinazioni di fuoco piccolo/grande, coperchio sì/no, apertura gas al minimo/massimo (o valori intermedi). Delineiamo per semplicità gli **scenari limite:** 
 

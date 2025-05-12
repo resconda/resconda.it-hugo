@@ -8,7 +8,7 @@ tags:
 - cibo
 summary: "Consuma più energia una bici elettrica o una bici normale? Una domanda la cui risposta sembrerebbe talmente evidente da essere banale. Ma potrebbe essere completamente sbagliata. "
 cover_image:
- src: assets/post-img/bike-158294_1280_skcgsp
+ src: assets/post-img/bici2_x0xwna
 #  caption: 
 classes:
 - kWh
@@ -37,5 +37,5 @@ Per quanto quest'ultima assunzione sia sicuramente approssimativa \- non conside
 
 Nella simulazione si trascura il fatto che il ciclista della e-bike consumi energia da cibo anche senza muovere un muscolo, per il solo fatto di vivere (il metabolismo basale di un individuo adulto è di ca. 100 W), poiché tale consumo si aggira intorno a 10 Wh/km (senza pedalare).
 
-Il cibo che alimenta la macchina umana costituisce infatti una delle principali cause di emissioni di gas a effetto serra, a cui spesso non si pensa, e che è invece al centro del lavoro svolto per realizzare l’App Suasì. \[link al post n. 2\]
+Il cibo che alimenta la macchina umana costituisce infatti una delle principali cause di emissioni di gas a effetto serra, a cui spesso non si pensa, e che è invece al centro del [lavoro svolto](/articles/21-maggio-partecipa-al-lancio-di-suasi/) per realizzare l’App Suasì.
     
