@@ -2,8 +2,8 @@
 title: "21 Maggio: partecipa al lancio di Suasì"
 date: 2025-05-12
 tags:
-- tag1
-- tag2
+- eventi
+- suasì
 summary: "Mercoledì 21 Maggio alle 18.30 presso Toolbox Coworking a Torino offriamo un bicchiere e presentiamo al pubblico l’app “**SuaSì**”, nel corso di un incontro dal titolo: “**Alla scoperta dell’energia nascosta nei prodotti che consumiamo**”"
 cover_image:
  src: assets/post-img/suasi_swdikz
