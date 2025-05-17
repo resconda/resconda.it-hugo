@@ -44,7 +44,7 @@ Si potrebbe pensare che nella società "occidentale" moderna questo sia lo stato
 Il caso forse più emblematico, ben raccontato nel libro di Daniel Knowles, *Carmageddon: How Cars Make Life Worse and What to Do About It*, ci porta un po' lontano dall'Italia e dall'Europa: [Tokyo](https://brandondonnelly.com/2023/04/21/why-so-few-people-drive-in-tokyo/) è una delle città più grandi e popolose al mondo. La capitale del Giappone riesce ad essere un esempio di come ci si possa spostare in un territorio urbano così vasto senza possedere un'autovettura.  
 Con le sue 0.32 auto per nucleo familiare, famiglie in media di 1.95 persone, una popolazione di circa 40 milioni di abitanti, potrebbe avere all'incirca 6.4 milioni di automobili. Che per i conti fatti prima si traduce in quasi 40.000 GWh.  
 Certo, un valore enorme in termini assoluti. Ma se vogliamo confrontare i due casi esaminati dobbiamo scalare per la superficie del territorio urbano. Mentre la nostra "piccola" Torino ha un'estensione di 130 \(\textrm{km}^2\), Tokyo si estende per un'impressionante area di più 13 mila \(\textrm{km}^2\) , praticamente cento volte tanto.  
-Ma il fattore 100 in realtà è praticamente invertito, in favore di Tokyo, se dividiamo le "energie parcheggiate" per le rispettive superfici: **per Torino abbiamo 25 GWh/km<sup>2</sup>, per Tokyo solo 0,3.**
+Ma il fattore 100 in realtà è praticamente invertito, in favore di Tokyo, se dividiamo le "energie parcheggiate" per le rispettive superfici: **per Torino abbiamo \(25\ \mathbf{GWh/km}^2\), per Tokyo solo \(\mathbf{0.3}\).**
 
 {{< small >}}
 [1] considerato quasi tutto acciaio vergine, arrotondando per difetto da 32 a 30  

@@ -2,7 +2,7 @@
 title: "SuaSì: siamo qui!"
 date: 2025-03-10
 tags:
-- suasi
+- suasì
 - consumo consapevole
 summary: "“Al dunque” l’App SuaSì: dopo quasi 3 anni di lavoro di molti, quasi tutti se non a titolo gratuito comunque mettendoci molto del proprio, è di prossima pubblicazione l’app SuaSì"
 cover_image:

@@ -4,7 +4,7 @@ date: 2025-04-09
 tags:
 - cibo  
 - elettrodomestici  
-- Suasi
+- Suasì
 - challenge
 summary: "Si sa che un lavaggio in lavatrice consuma parecchia energia. Meno noto è che anche 3 etti di prosciutto crudo consumino parecchia energia. Possiamo confrontare prosciutto e lavatrice? "
 cover_image:
