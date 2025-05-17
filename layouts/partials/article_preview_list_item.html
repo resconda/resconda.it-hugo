@@ -3,8 +3,8 @@
     <div class="card-body d-flex flex-column">
         <p>{{.Date| time.Format ":date_long"}}</p>
         <h3 class="card-title flex-grow-1">{{.Title| htmlUnescape | markdownify}}</h3>
-        {{ if isset .Params.classes 0 }}
-        <div>{{ partial "tag_svg.html" (dict "label" (index .Params.classes 0) "width" "50px" "extra_class" "fill")}}
+        {{ with index .Params.classes 0 }}
+        <div>{{ partial "tag_svg.html" (dict "label" (.) "width" "50px" "extra_class" "fill")}}
         </div>
         {{ end }}
         <div class="card-text my-2">{{.Summary}}</div>

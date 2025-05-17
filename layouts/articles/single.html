@@ -9,12 +9,11 @@
         <h1 id="title">
           {{ .Title| htmlUnescape | markdownify }}
        </h1>
+       
        <div style="position:relative;">
-        {{ if isset .Params.classes 0 }}
           {{ with index .Params.classes 0 }}
             {{ partial "tag_svg.html" (dict "label" . "width" "4rem" "extra_class" "fill")}}
           {{ end }}
-        {{ end }}
           {{ with .Params.cover_image}}
             {{ if strings.HasPrefix .src "http" }}
               <img src="{{.src}}" width="100%" />
