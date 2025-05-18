@@ -51,11 +51,12 @@ const centerEllipsis = function(str, trailingcharacters=5) {
 
 export const FriendlyCaptchaHelper = {
     verify: async (solution) => {
+        const use_api_version = 2;
         console.log(`[FriendlyCaptchaHelper.verify] verifying site[${centerEllipsis(myFCclient.site, 3)}] key[${centerEllipsis(myFCclient.key)}] solution[${centerEllipsis(solution)}]`)
-        const fc_response = await fetch(myFCclient.url(1), {
+        const fc_response = await fetch(myFCclient.url(use_api_version), {
             method: 'POST',
-            headers: myFCclient.header(1),
-            body: JSON.stringify(myFCclient.body(solution, 1)),
+            headers: myFCclient.header(use_api_version),
+            body: JSON.stringify(myFCclient.body(solution, use_api_version)),
         });
         if(!fc_response.ok){
             console.log(`FriendlyCaptcha verification failed: ${fc_response.statusText}`);
