@@ -40,7 +40,6 @@ const MailchimpHandler = {
         if(!mailchimpResponse.id){
             throw new Error(`Failed to add member to list ${listId}: ${response}`);
         }
-        console_log(`mailchimpResponse[${JSON.stringify(mailchimpResponse)}]`);
         return mailchimpResponse;
     },
     ping: async function() {

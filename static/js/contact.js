@@ -101,8 +101,8 @@ window.addEventListener("load", () => {
                             document.getElementById("form-response").append(errrow);
                         }
                         );
-                    } else {
-                        let name = data.name;
+                    } else { // success implies empty response
+                        let name = validatedData.name;
                         var successmsg = document.createElement('div');
                         successmsg.classList.add("alert", "alert-info", "text-center");
                         successmsg.innerText = `Grazie ${name}! Ti contatteremo presto.`;

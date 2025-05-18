@@ -27,13 +27,13 @@ app.route("/",)
   // verify captcha response
   let solution = req.body["frc-captcha-solution"];
   if(!solution){
-    res.status(400).send({errors: ["Invalid 'frc-captcha-solution' input"]});
+    res.status(400).send({errors: ["Verifica captcha non valida"]});
     return;
   }
   let verifyResult = await (await fetch(`http://captcha:3000/?frc-captcha-solution=${solution}`)).json();
   console.log(`[captcha] verifyResult[${JSON.stringify(verifyResult)}]`);
   if(verifyResult.error){
-    res.status(200).send({errors: [verifyResult.error]}); // verification failed is expected to yield a 200 status
+    res.status(200).send({errors: ["Verifica captcha fallita."]}); // verification failed is expected to yield a 200 status
     return;
   }
   // 200 and no errors means that the captcha was verified
@@ -41,9 +41,9 @@ app.route("/",)
   // add user to mailchimp list
   try {
     mailchimpResponse = await MailchimpHandler.addMember(req.body);
-    console.log(`mailchimpResponse[${JSON.stringify(mailchimpResponse)}]`);
+    console.log(`mailchimpResponse: id[${mailchimpResponse.id}] email[${mailchimpResponse.email_address}] status[${mailchimpResponse.status}]`);
   } catch (error) {
-    res.send({ errors: [`Failed to register user: ${error.message}`] });
+    res.send({ errors: [`Non è stato possibile registrare il contatto. Riprova più tardi o scrivici a info@resconda.it`] });
     return;
   }
   
@@ -55,22 +55,17 @@ app.route("/",)
       "Ti sei iscritto alla newsletter di ResConDA",
       WelcomeEmail.plain(contactName),
       WelcomeEmail.html(contactName),
-    ).then((err, info) => {
-      let sendResponse;
-      if(err){
-        console.log(err);
-        sendResponse = {errors: [err]};
-      }else{
-        console.log(info)
-        sendResponse = info;
-      }
-      res.send(JSON.stringify(sendResponse));
+    ).then((info) => {
+      console.log(`Welcome email sent to ${mailchimpResponse.email_address}. Mailchimp result: ${JSON.stringify(info)}`)
+      res.status(201).send({});
+    }).catch((error) => {
+      console.log(error);
+      res.send({ errors: ["Registrazione avvenuta con successo, ma non siamo riusciti a inviarti la mail di benvenuto."] });
     });
   } catch (error) {
-    res.send({ errors: [`Failed to send welcome mesasge to user: ${error.message}`]});
+    res.send({ errors: ["Registrazione avvenuta con successo, ma non siamo riusciti a inviarti la mail di benvenuto."]});
   }
-  
-})
+});
 // DEBUG
 app.get("/list/:listId", async (req, res) => {
   let listid = req.params.listId;
@@ -79,5 +74,5 @@ app.get("/list/:listId", async (req, res) => {
   res.send(JSON.stringify(response));
 })
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Mailer app listening on port ${port}`)
 })
