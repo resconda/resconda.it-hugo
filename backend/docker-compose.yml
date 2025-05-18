@@ -10,8 +10,8 @@ services:
       - ../:/src
       - ../public/:/public
       - ~/hugo_cache:/tmp/hugo_cache
-    # ports:
-    #   - 0.0.0.0:1313:1313
+    profiles:
+      - local
   nginx:
     image: nginx:alpine3.21
     volumes:
@@ -19,3 +19,5 @@ services:
       - ../public:/usr/share/nginx/html:ro
     ports:
       - 0.0.0.0:8080:80
+    profiles:
+      - local
