@@ -32,6 +32,8 @@ params:
   ext_links:
     subscription_form_person: https://form.jotform.com/242896877203368
     subscription_form_organization: https://form.jotform.com/243102285113342
+  friendly_captcha:
+    site_key: FCMNSLE4OV2OBU04
 
 markup:
   goldmark:

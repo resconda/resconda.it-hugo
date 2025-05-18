@@ -1,0 +1,23 @@
+include:
+- captcha_backend/docker-compose.yaml
+- mailer_backend/docker-compose.yaml
+
+services:
+  hugo:
+    image: hugomods/hugo
+    command: -D $HUGO_EXTRAS
+    volumes:
+      - ../:/src
+      - ../public/:/public
+      - ~/hugo_cache:/tmp/hugo_cache
+    profiles:
+      - local
+  nginx:
+    image: nginx:alpine3.21
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ../public:/usr/share/nginx/html:ro
+    ports:
+      - 0.0.0.0:8080:80
+    profiles:
+      - local
