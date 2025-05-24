@@ -43,6 +43,7 @@ app.route("/",)
     mailchimpResponse = await MailchimpHandler.addMember(req.body);
     console.log(`mailchimpResponse: id[${mailchimpResponse.id}] email[${mailchimpResponse.email_address}] status[${mailchimpResponse.status}]`);
   } catch (error) {
+    console.log(error);
     res.send({ errors: [`Non è stato possibile registrare il contatto. Riprova più tardi o scrivici a info@resconda.it`] });
     return;
   }
