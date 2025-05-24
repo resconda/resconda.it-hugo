@@ -1,8 +1,8 @@
 services:
   mailer:
-    image: node:23
+    image: node:23-alpine
     volumes:
     - ./:/app
-    entrypoint: ["/app/docker-entrypoint.sh"]
+    entrypoint: ["/bin/sh", "/app/docker-entrypoint.sh"]
     ports:
     - 0.0.0.0:8081:3000
