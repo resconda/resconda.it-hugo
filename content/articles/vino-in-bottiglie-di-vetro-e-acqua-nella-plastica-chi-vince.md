@@ -12,6 +12,8 @@ cover_image:
 #  caption: 
 classes:
 - Wh
+summary: |
+  Le bottiglie di plastica negli anni si sono fatte sempre più leggere, mentre i vini più pregiati vengono spesso venduti in bottiglie in vetro molto pesanti. Il vetro da un punto di vista ambientale è sempre meglio della plastica?
 ---
 
 Abbiamo già sottolineato in [questo post](/articles/un-bicchier-dacqua-1000-volte-piu-costoso/) la malsana disposizione degli italiani verso l’acqua in bottiglia, causa dell’immissione ogni anno nell’ambiente di tonnellate di plastica.  
