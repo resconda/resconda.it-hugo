@@ -72,10 +72,10 @@ menus:
     identifier: "contatti"
     url: "/#contactus"
     weight: 15
-  - name: Emcoin 
+  - name: Suasì 
     post: "<i class=\"fa-solid fa-arrow-up-right-from-square fa-xs\"></i>"
     identifier: "emcoin"
-    url: "https://emcoin.resconda.it"
+    url: "https://suasi.it"
     params:
       is_ext: true
 
