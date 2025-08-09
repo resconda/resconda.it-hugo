@@ -1,6 +1,6 @@
 ---
 title: "Energia sprecata in un BANG"
-date: 2025-08-08
+date: 2025-08-09
 tags:
 - Armi 
 - Militare 
@@ -18,8 +18,8 @@ Ma in testa alla hit parade quotidiana delle notizie c’è sempre lei, la guerr
 
 L’argomento è immenso, noi ci concentriamo qui sui proiettili da arma da fuoco di piccola taglia in dotazione a soldati,civili, ribelli, combattenti della libertà, persino a bambini. 
 
-Si [stima](https://www.marketreportanalytics.com/reports/ammunition-165446?utm_source=chatgpt.com#summary) che ogni anno vengono prodotte nel mondo circa 10 miliardi di pallottole di piccolo taglio: i classici 9x19mm.   
-Non si trovano facilmente numeri sulle munizioni da “guerra” come le 5.56×45 mm o 7.62×51 mm NATO, ma questo [rapporto delle Nazioni Unite](https://press.un.org/en/2022/gadis3695.doc.htm) conferma che ogni anno ne produciamo abbastanza per colpire (almeno 2 volte) ogni essere umano sul pianeta. 
+Si [stima](https://www.marketreportanalytics.com/reports/ammunition-165446?utm_source=chatgpt.com#summary) che **ogni anno vengono prodotte nel mondo circa 10 miliardi di pallottole di piccolo taglio**: i classici 9x19mm.   
+Non si trovano facilmente numeri sulle munizioni da “guerra” come le 5.56×45 mm o 7.62×51 mm NATO, ma questo [rapporto delle Nazioni Unite](https://press.un.org/en/2022/gadis3695.doc.htm) conferma che **ogni anno ne produciamo abbastanza per colpire (almeno 2 volte) ogni essere umano sul pianeta.** 
 
 Come è fatto un proiettile? E quanta energia serve per produrlo? 
 
@@ -45,9 +45,9 @@ Il contenuto energetico di queste materie prime si aggira quindi intorno ai 150W
 
 Mentre per quanto riguarda i processi, quelli descritti nel video, si devono aggiungere almeno altri 100 Wh di processo tra elettricità e gas utilizzato nelle varie fasi [come riportato qui](https://www.mta.ro/gsebs-2015-v2/ConferenceProceedings/papers/BARANDA_RIBEIRO_Jose_Life_Cycle_Assessment_methodology.pdf?utm_source=chatgpt.com).  
 
-Il totale per la sola produzione – ci sarebbe poi la logistica da stimare– ci porta ad un valore di 0,25 kWh per un solo proiettile (a titolo puramente informativo, l’energia cinetica di un proiettile è di ca. 1,2 Wh). 
+Il totale per la sola produzione – ci sarebbe poi la logistica da stimare– ci porta ad un valore di **0,25 kWh per un solo proiettile** (a titolo puramente informativo, l’energia cinetica di un proiettile è di ca. 1,2 Wh). 
 
-Moltiplicato per i circa 10 Miliardi di proiettili prodotti ogni anno ci porta a 2,5 TWh 
+Moltiplicato per i circa 10 Miliardi di proiettili prodotti ogni anno ci porta a **2,5 TWh** 
 
 Per fornire un confronto, l'Italia consuma circa 300 TWh di elettricità in un anno. 
 
