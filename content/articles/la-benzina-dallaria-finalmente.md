@@ -24,6 +24,8 @@ Vediamo però come questa tecnologia si pone rispetto ad altre forme, con partic
 
 In questa analisi consideriamo un uso immediato della fonte di energia, trascurando i costi energetici connessi allo stoccaggio, che impattano in particolare nel caso dell’elettricità e (soprattutto) dell’idrogeno, meno nel caso delle benzine.    
 
+In questa analisi consideriamo un uso immediato della fonte di energia, trascurando i costi energetici connessi allo stoccaggio, che impattano in particolare nel caso dell’elettricità e (soprattutto) dell’idrogeno, meno nel caso delle benzine.
+
 Partiamo dal dato di base: qual è l’efficienza energetica nella produzione di 1 gallone di benzina da fonte fossile tradizionale (petrolio)? Prendendo ad esempio [questa fonte](https://rmi.org/the-incredible-inefficiency-of-the-fossil-energy-system/), il dato del 2019 ci dà un valore di 68% (411/606). Un po’ meglio del sistema aria+acqua, ma si tratta di eliminare le fonti fossili, qualche sacrificio lo dovremo pur fare, no?  
 Per confrontare varie tipologie di fonte energetica per locomozione, prendiamo l’efficienza complessiva “well-to-wheel” (W2W), considerando quindi anche l’efficienza del motore utilizzatore del “carburante” (in senso lato).  
 Per un motore endotermico, possiamo considerare [ottimisticamente](https://en.wikipedia.org/wiki/Engine_efficiency#Gasoline_\(petrol\)_engines) un 30%. Avremo quindi **un’efficienza W2W del 15% per il nostro sistema aria-acqua, contro un 20.4% per la benzina fossile.**
