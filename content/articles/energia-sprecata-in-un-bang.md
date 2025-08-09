@@ -6,7 +6,7 @@ tags:
 - Militare 
 summary: "Quanta energia in un singolo proiettile da 9mm? se ne producono circa 10 miliardi ogni anno!"
 cover_image:
- src: assets/post-img/Rifle_cartridge_comparison_ioxmpx
+ src: assets/post-img/bullets-4564768_1280_ssf2il
 #  caption: 
 classes:
 - TWh
