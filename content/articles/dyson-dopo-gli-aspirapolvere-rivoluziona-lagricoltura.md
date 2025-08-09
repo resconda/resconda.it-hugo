@@ -8,7 +8,7 @@ tags:
 summary: "Tra le tante notizie “bomba” in tema di ambiente ci soffermiamo sulla “rivoluzione agricola” del nuovo sistema Dyson di coltivazione delle fragole. Chissà che l’azienda che riesce nel miracolo di far pagare più di 500 euro per un phon, non riesca a farne un altro in campo agricolo-ambientale?"
 cover_image:
  src: assets/post-img/dyson_fdkrsa
-#  caption: 
+ caption: "Credits: [dyson.co.uk](https://dyson.co.uk)"
 classes:
 - Wh
 ---
