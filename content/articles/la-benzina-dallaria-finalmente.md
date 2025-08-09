@@ -22,8 +22,6 @@ Partendo dalle [FAQ](https://www.aircela.com/frequently-asked-questions) sul sit
 Peccato, non sono state scoperte nuove leggi della fisica e non abbiamo la nuova fonte infinita e gratuita di energia.   
 Vediamo però come questa tecnologia si pone rispetto ad altre forme, con particolare focus sull’applicazione alla mobilità (visto che la benzina di fatto viene perlopiù usata per i motori dei veicoli).
 
-In questa analisi consideriamo un uso immediato della fonte di energia, trascurando i costi energetici connessi allo stoccaggio, che impattano in particolare nel caso dell’elettricità e (soprattutto) dell’idrogeno, meno nel caso delle benzine.    
-
 In questa analisi consideriamo un uso immediato della fonte di energia, trascurando i costi energetici connessi allo stoccaggio, che impattano in particolare nel caso dell’elettricità e (soprattutto) dell’idrogeno, meno nel caso delle benzine.
 
 Partiamo dal dato di base: qual è l’efficienza energetica nella produzione di 1 gallone di benzina da fonte fossile tradizionale (petrolio)? Prendendo ad esempio [questa fonte](https://rmi.org/the-incredible-inefficiency-of-the-fossil-energy-system/), il dato del 2019 ci dà un valore di 68% (411/606). Un po’ meglio del sistema aria+acqua, ma si tratta di eliminare le fonti fossili, qualche sacrificio lo dovremo pur fare, no?  
