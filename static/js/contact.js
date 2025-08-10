@@ -76,6 +76,11 @@ window.addEventListener("load", () => {
         document.getElementById("form-response").innerHTML = "";
         var validatedData = validateForm();
         if(validatedData !== false){
+            // show loader and disable submit button
+            document.getElementById("contactFormLoader").classList.remove("d-none");
+            // document.getElementById("friendlyCaptchaFormSubmit").classList.add("invisible");
+            document.getElementById("friendlyCaptchaFormSubmit").disabled = true;
+        
             fetch('/mailer', {
                 method: 'POST',
                 headers: {
@@ -84,6 +89,7 @@ window.addEventListener("load", () => {
                 body: JSON.stringify(validatedData)
             })
             .then(response => {
+                document.getElementById("contactFormLoader").classList.add("d-none");
                 if (!response.ok) {
                     var errrow = document.createElement('div'); 
                     errrow.classList.add('alert', 'alert-warning');
