@@ -42,7 +42,7 @@ export const ResultCodes = {
 };
 
 const centerEllipsis = function(str, trailingcharacters=5) {
-    if(str.length > 2*trailingcharacters){
+    if(str && str.length > 2*trailingcharacters){
         return str.slice(0, trailingcharacters) + "..." + str.slice(-trailingcharacters);
     }else{
         return str;
