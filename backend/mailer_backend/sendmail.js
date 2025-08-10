@@ -10,6 +10,8 @@ const SendmailHelper = {
         pass: process.env.REGISTER_SMTP_PASSWORD,
       },
       secure: true,
+      connectionTimeout: 10 * 1000, // 10 seconds
+      greetingTimeout: 10 * 1000, // 10 seconds
     });
     let mailOptions = {
       from: sender,
