@@ -67,12 +67,30 @@ app.route("/",)
   }
 });
 // DEBUG
-app.get("/list/:listId", async (req, res) => {
-  let listid = req.params.listId;
-  let response = await MailchimpHandler.listInfo(listid);
-  res.set("Content-Type", "application/json")
-  res.send(JSON.stringify(response));
-})
+if (process.env.NODE_ENV === "test") {
+  app.get("/list/:listId", async (req, res) => {
+    let listid = req.params.listId;
+    let response = await MailchimpHandler.listInfo(listid);
+    res.set("Content-Type", "application/json")
+    res.send(JSON.stringify(response));
+  });
+  app.get("/testsend", async (req, res) => {
+    try {
+      let response = await SendmailHelper.sendMail(
+        "test@example.com",
+        "Test Email",
+        "This is a test email sent from the mailer backend.",
+        "<p>This is a test email sent from the mailer backend.</p>",
+      ).then((info) => {
+        console.log(`Test email sent: ${JSON.stringify(info)}`);
+        res.send({status: "success", info: info});
+      });
+    } catch (error) {
+      console.error(`Error sending test email: ${error}`);
+      res.status(500).send({status: "error", message: error.message});
+    }
+  });
+}
 app.listen(port, () => {
   console.log(`Mailer app listening on port ${port}`)
 })

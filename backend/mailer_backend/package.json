@@ -14,7 +14,10 @@
   "main": "app.js",
   "scripts": {
     "dev": "node_modules/.bin/nodemon --env-file .env app.js",
-    "test": "test"
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
+    "pretest": "cross-env NODE_ENV=test npm run migrate:reset",
+    "migrate:reset": "npx sequelize-cli db:migrate:undo:all && npm run migrate",
+    "migrate": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.80",
@@ -23,6 +26,15 @@
     "nodemailer": "^6.10.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "cross-env": "^7.0.3",
+    "jest": "^30.0.5",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.1.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }
