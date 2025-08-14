@@ -1,6 +1,6 @@
 services:
   mailer:
-    image: node:23
+    image: node:24.5.0-alpine3.22
     volumes:
     - ./:/app
     entrypoint: ["/app/docker-entrypoint.sh"]
