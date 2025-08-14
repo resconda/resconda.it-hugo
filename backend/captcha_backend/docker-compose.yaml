@@ -1,8 +1,9 @@
 services:
   captcha:
-    image: node:23
+    image: node:24.5.0-alpine3.22
     volumes:
     - ./:/app
     entrypoint: ["/app/docker-entrypoint.sh"]
     ports:
     - 0.0.0.0:8082:3000
+    restart: on-failure:5
