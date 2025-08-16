@@ -14,10 +14,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "node_modules/.bin/nodemon --env-file .env app.js",
-    "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
-    "pretest": "cross-env NODE_ENV=test npm run migrate:reset",
-    "migrate:reset": "npx sequelize-cli db:migrate:undo:all && npm run migrate",
-    "migrate": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000"
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.80",
