@@ -6,8 +6,8 @@ tags:
 - aria
 - CO2
 summary: "Non solo benzina ma anche acqua potabile estratta dall'aria. Sembrerebbe che dall'aria si possano ottenere un sacco di cose! Vediamo di cosa si tratta."
-# cover_image:
-#  src: assets/post-img/
+cover_image:
+ src: assets/post-img/Atmospheric_Water_Generator_diagram_jzjtzw
 #  caption: 
 classes:
 - Wh

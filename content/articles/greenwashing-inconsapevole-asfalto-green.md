@@ -7,8 +7,8 @@ tags:
 - greenwashing
 - bitume
 summary: "In Gran Bretagna un nuovo tipo di asfalto garantisce il 40% in meno emissioni di CO2, il che rende tutti felici anche se le cose ancora una volta, a pensarci bene, non sono così “*verdi*” come sembrano."
-# cover_image:
-#  src: assets/post-img/
+cover_image:
+ src: assets/post-img/asfalto_wbkthh
 #  caption: 
 classes:
 - MWh
