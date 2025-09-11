@@ -1,5 +1,5 @@
 ---
-title: Anno associativo 2025-26: sostienici anche quest’anno! 
+title: "Anno associativo 2025-26: sostienici anche quest’anno!"
 date: 2025-09-11
 summary: | 
   Invitiamo i soci a rinnovare l’iscrizione per l’anno 2024-2025 ed i non soci ad aderire e sostenere l’associazione! 
