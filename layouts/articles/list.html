@@ -54,7 +54,7 @@
       <div class="list-group" id="search_results"></div>
     </div>
   </div>
-  <h2 class="site-title">{{.Title| htmlUnescape}}</h2>
+  <h2 class="site-title">{{ .Title| htmlUnescape | markdownify }}</h2>
   <!-- list template -->
   {{ template "_internal/pagination.html" . }}
   <div class="row row-cols-1 row-cols-md-2 g-4 pb-2">

@@ -1,5 +1,5 @@
 ---
-title: "“Difficile” come sostituire una lampada LED"
+title: "_Difficile_ come sostituire una lampada LED"
 date: 2025-09-10
 tags:
 - Illuminazione 
