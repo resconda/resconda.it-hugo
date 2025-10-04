@@ -3,18 +3,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="{{ .Site.Params.logo | absLangURL }}">
     {{ if .IsHome }}
-    <title>{{ .Title | htmlUnescape }}</title>
+    <title>{{ .Title | markdownify | plainify }}</title>
     {{ else }}
-        {{ if .Params.seoTitle | htmlUnescape }}
-    <title>{{ .Params.seoTitle | htmlUnescape }}</title>
+        {{ if .Params.seoTitle }}
+    <title>{{ .Params.seoTitle }}</title>
         {{ else }}
-    <title>{{ .Title | htmlUnescape }}</title>
+    <title>{{ .Title | markdownify | plainify }}</title>
         {{ end }}
     {{ end}}
-    <meta property="og:title" content={{ .Title | htmlUnescape }} />
+    <meta property="og:title" content={{ .Title | markdownify | plainify }} />
     <meta property="og:url" content={{ .Permalink }} />
     {{ with .Summary}}
-    <meta property="og:description" content={{ . | htmlUnescape }} />
+    <meta property="og:description" content={{ . | markdownify | plainify }} />
     {{ end }}
     {{ with .Params.cover_image.src }}
     <meta property="og:image" content={{ partial "GetCloudinaryURL.html" (dict "name" .)}} />
