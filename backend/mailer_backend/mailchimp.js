@@ -36,8 +36,15 @@ const MailchimpHandler = {
             }
         }
         console.log(`member_info[${JSON.stringify(member_info)}]`);
-        let mailchimpResponse = await mailchimp.lists.addListMember(listId, member_info);
+        let mailchimpResponse;
+        try {
+            mailchimpResponse = await mailchimp.lists.addListMember(listId, member_info);
+        } catch (error) {
+            console.error(`Error adding member to Mailchimp list: ${error}`);
+            throw error;
+        }
         if(!mailchimpResponse.id){
+            console.error(`Failed to add member to list ${listId}: ${JSON.stringify(mailchimpResponse)}`);
             throw new Error(`Failed to add member to list ${listId}: ${response}`);
         }
         return mailchimpResponse;
@@ -50,6 +57,12 @@ const MailchimpHandler = {
     listInfo: async function(listid) {
         this.setup();
         const response = await mailchimp.lists.getList(listid);
+        return response;
+    },
+    archiveMember: async function(email) {
+        this.setup();
+        const response = await mailchimp.lists.deleteListMember(listId, email);
+        console.log(`Archived member with email ${email}. Response: ${response}`);
         return response;
     }
 }

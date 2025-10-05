@@ -8,6 +8,13 @@ app.use(bodyParser.json()) // for parsing application/json
 
 const port = 3000
 
+const verifyCaptcha = async (solution) => {
+  if (process.env.NODE_ENV === "test") {
+    console.log(`[verifyCaptcha] Running in test mode, returning success for solution[${solution}]`);
+    return { }; // In test mode, always return success
+  }
+  return await (await fetch(`http://captcha:3000/?frc-captcha-solution=${solution}`)).json();
+}
 app.route("/",)
 .get(async (req, res) => {
   res.set("Content-Type", "application/json")
@@ -30,7 +37,7 @@ app.route("/",)
     res.status(400).send({errors: ["Verifica captcha non valida"]});
     return;
   }
-  let verifyResult = await (await fetch(`http://captcha:3000/?frc-captcha-solution=${solution}`)).json();
+  let verifyResult = verifyCaptcha(solution);
   console.log(`[captcha] verifyResult[${JSON.stringify(verifyResult)}]`);
   if(verifyResult.error){
     res.status(200).send({errors: ["Verifica captcha fallita."]}); // verification failed is expected to yield a 200 status
@@ -67,12 +74,32 @@ app.route("/",)
   }
 });
 // DEBUG
-app.get("/list/:listId", async (req, res) => {
-  let listid = req.params.listId;
-  let response = await MailchimpHandler.listInfo(listid);
-  res.set("Content-Type", "application/json")
-  res.send(JSON.stringify(response));
-})
-app.listen(port, () => {
+if (process.env.NODE_ENV === "test") {
+  app.get("/list/:listId", async (req, res) => {
+    let listid = req.params.listId;
+    let response = await MailchimpHandler.listInfo(listid);
+    res.set("Content-Type", "application/json")
+    res.send(JSON.stringify(response));
+  });
+  app.get("/testsend", async (req, res) => {
+    try {
+      let response = await SendmailHelper.sendMail(
+        "test@example.com",
+        "Test Email",
+        "This is a test email sent from the mailer backend.",
+        "<p>This is a test email sent from the mailer backend.</p>",
+      ).then((info) => {
+        console.log(`Test email sent: ${JSON.stringify(info)}`);
+        res.send({status: "success", info: info});
+      });
+    } catch (error) {
+      console.error(`Error sending test email: ${error}`);
+      res.status(500).send({status: "error", message: error.message});
+    }
+  });
+}
+const server = app.listen(port, () => {
   console.log(`Mailer app listening on port ${port}`)
-})
+});
+
+module.exports = server;

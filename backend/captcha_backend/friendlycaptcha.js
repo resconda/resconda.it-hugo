@@ -51,6 +51,10 @@ const centerEllipsis = function(str, trailingcharacters=5) {
 
 export const FriendlyCaptchaHelper = {
     verify: async (solution) => {
+        if(process.env.NODE_ENV === "test"){
+            console.log(`[FriendlyCaptchaHelper.verify] Running in test mode, returning success for solution[${centerEllipsis(solution)}]`);
+            return ResultCodes.verifySuccess; // In test mode, always return success
+        }
         const use_api_version = 2;
         console.log(`[FriendlyCaptchaHelper.verify] verifying site[${centerEllipsis(myFCclient.site, 3)}] key[${centerEllipsis(myFCclient.key)}] solution[${centerEllipsis(solution)}]`)
         const fc_response = await fetch(myFCclient.url(use_api_version), {
