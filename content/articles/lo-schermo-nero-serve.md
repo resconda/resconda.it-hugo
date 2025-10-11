@@ -32,6 +32,7 @@ C’è poi l’effetto psicologico: un’interfaccia scura sembra più “seria�
 In termini assoluti inoltre va detto che l’impatto ambientale della modalità scura (anche sui dispositivi OLED), resta comunque minimo, nell’ordine di pochi wattora al giorno, una frazione infinitesimale dei consumi legati all’elettronica domestica.
 
 Molto più significativo è abbassare la luminosità dello schermo. Ridurre la luminosità del 20% può tagliare i consumi di circa il 20–25%, mentre portarla da 100% a 50% può significare quasi dimezzare l’assorbimento elettrico del display, sia su OLED che su LCD.  
+Stiamo parlando quindi di circa 10 - 30 W di riduzione a seconda del modello e della grandezza del monitor. Il consumo di un monitor al 100% di luminosità infatti varia dai 20 ai 70 Watt. Prendendo 20 W come dato di riduzione medio abbiamo 0,16 KWh in una giornata lavorativa.  
 Un gesto semplice, invisibile, ma di gran lunga più efficace del cambio di tema. E ancora meglio: evitare display troppo grandi e, soprattutto, usare i dispositivi più a lungo prima di sostituirli. In fondo, l’azione più “verde” resta quella che non si vede sullo schermo: sostituire i dispositivi solo quando risultano irrimediabilmente inutilizzabili.
 
 Il dark mode è piacevole, moderno e in certi casi davvero utile – ma non salverà il pianeta. Più che una rivoluzione è un ritocco estetico alla coscienza.

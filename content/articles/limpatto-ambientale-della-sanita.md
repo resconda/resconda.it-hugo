@@ -6,8 +6,8 @@ tags:
 - sanità
 - monouso
 summary: "Quando si parla di impatto ambientale si pensa solitamente alla mobilità e alla climatizzazione degli edifici. Tuttavia sono molti i settori legati alla produzione di beni e servizi che impattano sull’ambiente. Uno in particolare sfugge tradizionalmente al radar dell’attenzione ambientalista: la sanità."
-# cover_image:
-#  src: assets/post-img/
+cover_image:
+ src: assets/post-img/hospital-1802679_1920_pqgfkc
 #  caption: 
 classes:
 - GWh
