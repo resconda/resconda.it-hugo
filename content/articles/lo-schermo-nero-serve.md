@@ -1,5 +1,5 @@
 ---
-title: "lo schermo nero serve?"
+title: "Lo schermo nero serve?"
 date: 2025-10-10
 tags:
 - LED 
