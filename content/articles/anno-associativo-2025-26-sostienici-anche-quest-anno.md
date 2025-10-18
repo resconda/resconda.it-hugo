@@ -18,7 +18,7 @@ In quest’anno abbiamo fatto molte cose, realizzato l’app Suasì e prodotto m
 
 Pensiamo di andare avanti in questa direzione, con il tuo aiuto, anche se circoscritto al versamento della sola quota associativa annuale (ma sempre sperando in una partecipazione attiva in termini di produzione e promozione di contenuti!).
 
-Ti invitiamo quindi ad iscriverti (oppure a rinnovare l’iscrizione) a Resconda, effettuando il versamento della quota associativa: 10 euro min per le persone fisiche e 20 euro min per le persone giuridiche (ma meglio se qualcosa in più!), mettendo nome e cognome nell’oggetto del pagamento effettuato a mezzo:
+Ti invitiamo quindi ad [iscriverti](/docs/RICHIESTA%20ADESIONE%20RESCONDA.pdf) (oppure a rinnovare l’iscrizione) a Resconda, effettuando il versamento della quota associativa: 10 euro min per le persone fisiche e 20 euro min per le persone giuridiche (ma meglio se qualcosa in più!), mettendo nome e cognome nell’oggetto del pagamento effettuato a mezzo:
 
 
 {{< donate_table >}}
