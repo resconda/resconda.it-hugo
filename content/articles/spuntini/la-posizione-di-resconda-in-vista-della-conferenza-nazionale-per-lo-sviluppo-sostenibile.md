@@ -10,11 +10,11 @@ summary: |
     Il 2-3-4 dicembre 2025 a Roma si terrà la Conferenza Nazionale per lo Sviluppo Sostenibile 2025. Resconda fa parte del Gruppo di Lavoro Cultura del Forum Sviluppo Sostenibile - Ministero dell’Ambiente e della Sicurezza Energetica - MASE, incaricato di redigere un *Position paper* sui tre “vettori di sviluppo” individuati dal MASE: “Cultura”, “Partecipazione”, “Coerenza”.
 ---
 
-Il 2-3-4 dicembre 2025 a Roma si terrà la Conferenza Nazionale per lo Sviluppo Sostenibile 2025. Resconda fa parte del Gruppo di Lavoro Cultura del Forum Sviluppo Sostenibile - Ministero dell’Ambiente e della Sicurezza Energetica - MASE, incaricato di redigere un *Position paper* sui tre “vettori di sviluppo” individuati dal MASE: “Cultura”, “Partecipazione”, “Coerenza”.
+Il 2-3-4 dicembre 2025 a Roma si terrà la Conferenza Nazionale per lo Sviluppo Sostenibile 2025. Resconda fa parte del Gruppo di Lavoro Cultura del Forum Sviluppo Sostenibile – Ministero dell’Ambiente e della Sicurezza Energetica – MASE, incaricato di redigere un *Position paper* sui tre “vettori di sviluppo” individuati dal MASE: “Cultura”, “Partecipazione”, “Coerenza”.
 
-L’evento in questione sconta nella sua impostazione  - a nostro avviso - un problema annoso connesso alla definizione di “Sostenibilità” e di “Sviluppo Sostenibile”, piegati negli anni in modo progressivo più alle esigenze della crescita dell’economia che a quelle dell’ambiente, oltre ad una certa tendenza (generica di questo tipo di eventi) di indulgere eccessivamente nella supercazzola.
+L’evento in questione sconta nella sua impostazione – a nostro avviso – un problema annoso connesso alla definizione di “Sostenibilità” e di “Sviluppo Sostenibile”, piegati negli anni in modo progressivo più alle esigenze della crescita dell’economia che a quelle dell’ambiente, oltre ad una certa tendenza (generica di questo tipo di eventi) di indulgere eccessivamente nella supercazzola.
 
-Ciò nonostante -essendo chiamati a farlo - abbiamo voluto fornire al riguardo il nostro punto di vista. Di seguito il contributo trasmesso da Resconda in relazione al vettore “Cultura”.
+Ciò nonostante – essendo chiamati a farlo – abbiamo voluto fornire al riguardo il nostro punto di vista. Di seguito il contributo trasmesso da Resconda in relazione al vettore “Cultura”.
 
 *L’associazione Resconda ritiene che la cittadinanza tutta debba impegnarsi in prima persona, individualmente, agendo consapevolmente per la sostenibilità ambientale.*
 
