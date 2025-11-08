@@ -6,6 +6,8 @@ tags:
 cover_image:
  src: assets/post-img/spuntini_sira1a
 #  caption: 
+summary: |
+    Il 2-3-4 dicembre 2025 a Roma si terrà la Conferenza Nazionale per lo Sviluppo Sostenibile 2025. Resconda fa parte del Gruppo di Lavoro Cultura del Forum Sviluppo Sostenibile - Ministero dell’Ambiente e della Sicurezza Energetica - MASE, incaricato di redigere un *Position paper* sui tre “vettori di sviluppo” individuati dal MASE: “Cultura”, “Partecipazione”, “Coerenza”.
 ---
 
 Il 2-3-4 dicembre 2025 a Roma si terrà la Conferenza Nazionale per lo Sviluppo Sostenibile 2025. Resconda fa parte del Gruppo di Lavoro Cultura del Forum Sviluppo Sostenibile - Ministero dell’Ambiente e della Sicurezza Energetica - MASE, incaricato di redigere un *Position paper* sui tre “vettori di sviluppo” individuati dal MASE: “Cultura”, “Partecipazione”, “Coerenza”.
