@@ -6,8 +6,8 @@ tags:
 - elettricità
 - utenze domestiche
 summary: "Non solo la rete idrica perde: anche quella elettrica. Ogni anno vengono dispersi dalla (e nella) rete elettrica nazionale circa 30 TWh, più di 500 kWh pro capite. Come se ogni italiano facesse un lavaggio in lavatrice ogni giorno (oltre a quelle che già fa). "
-# cover_image:
-#  src: assets/post-img/
+cover_image:
+ src: assets/post-img/tralicci_ppanew
 #  caption: 
 classes:
 - TWh
