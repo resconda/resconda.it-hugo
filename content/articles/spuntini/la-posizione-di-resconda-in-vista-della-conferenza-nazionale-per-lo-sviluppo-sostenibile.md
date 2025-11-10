@@ -18,7 +18,7 @@ Ciò nonostante – essendo chiamati a farlo – abbiamo voluto fornire al rigua
 
 *L’associazione Resconda ritiene che la cittadinanza tutta debba impegnarsi in prima persona, individualmente, agendo consapevolmente per la sostenibilità ambientale.*
 
-*L’azione pubblica internazionale a ciò delegata ha mostrato ormai in modo incontrovertibile la propria inadeguatezza: si apre a breve la 32° COP annuale per la riduzione delle emissioni di gas a effetto serra. Dalla prima COP ad oggi solo 2 anni hanno visto una riduzione delle emissioni di {{< CO2 >}}: nel 2009 e nel 2020, causate rispettivamente dalla crisi dei mutui subprime e dall’epidemia di Covid 19.*
+*L’azione pubblica internazionale a ciò delegata ha mostrato ormai in modo incontrovertibile la propria inadeguatezza: si apre a breve la 30° COP annuale per la riduzione delle emissioni di gas a effetto serra. Dalla prima COP ad oggi solo 2 anni hanno visto una riduzione delle emissioni di {{< CO2 >}}: nel 2009 e nel 2020, causate rispettivamente dalla crisi dei mutui subprime e dall’epidemia di Covid 19.*
 
 *Ma l’impegno individuale è reso impossibile da un gap culturale causato dalla mancanza di elementi quantitativi nella rappresentazione degli elementi chiave del comportamento sostenibile, affrontati sempre e solo in termini qualitativi (bene/male, bici/auto, meglio/peggio, carne/frutta, etc.). Attualmente quasi nessuno ha strumenti cognitivi idonei a valutare in termini quantitativi l’impatto ambientale di una propria scelta di acquisto o di comportamento, se non, nella migliore delle ipotesi, in termini relativi: “meglio le mele locali rispetto al mango via aerea”.*
 
