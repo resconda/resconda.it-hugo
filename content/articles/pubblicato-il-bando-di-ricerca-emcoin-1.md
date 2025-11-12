@@ -6,8 +6,6 @@ summary: | # leave blank if no summary is provided
   Il progetto EMCOIN1 &egrave; finalizzato a realizzare una solida metodologia di calcolo dell'energia incorporata nei principali oggetti e servizi di consumo
 cover_image:
   src: assets/post-img/image007_jxce7f
-# cover_image:
-  src: assets/img/8x1000_chiesavaldese_a8knhc
 tags:
   - EmCoin
 ---
