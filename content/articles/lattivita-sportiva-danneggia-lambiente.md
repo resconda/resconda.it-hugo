@@ -27,13 +27,15 @@ Innanzitutto, come si misura l’energia spesa nel fare attività sportiva? C’
 Per avere un’idea, una [pubblicazione](https://www.health.harvard.edu/diet-and-weight-loss/calories-burned-in-30-minutes-for-people-of-three-different-weights#:~:text=The%20table%20below,and%20many%20more) di Harvard fa una panoramica delle calorie bruciate in 30 minuti per attività diverse svolte da una persona del peso di circa 70 kg (155 libbre nella tabella originale).   
 Nella tabella seguente, alcuni esempi di **energia spesa in un’ora di attività** da una persona di 70 kg di peso:
 
-| Attività | Energia consumata in 1 ora |  | MET |
-| :---- | ----- | ----: | ----- |
-|  | **kcal** | **Wh** |  |
+{{< tablecaption table-class="col-1-50 col-4-10" caption="Energia consumata in 1 ora da una persona di 70kg di peso" >}}
+| Attività | kcal | Wh  | MET |
+| :---- | -----: | ----: | -----: |
+| Seduta, in silenzio | 70 | 81,4 | 1 |
 | Camminata a 6.4 km/h | 260 | 302 | 3,7 |
 | Nuoto generico | 430 | 500 | 6,1 |
 | Mountain biking | 600 | 697 | 8,6 |
 | Corsa a 9.6 km/h | 700 | 814 | 10,0 |
+{{</tablecaption>}}
 
 **Un’ora di corsa a velocità moderata richiede quindi 10 volte l’energia spesa a stare seduti** a riposo (1 MET).
 

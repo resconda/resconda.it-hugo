@@ -1,4 +1,7 @@
-<figure {{ with .Get "class" }}class="{{.}}"{{end}} {{ with .Get "caption-class" }}caption-class="{{.}}"{{end}}>
+<figure class='table-caption {{ with .Get "class"}}{{.}}{{ end }}'
+    {{ with .Get "caption-class" }}caption-class="{{.}}"{{- end -}}
+    {{ with .Get "table-class" }}table-class="{{.}}"{{- end -}}
+    >
     {{ with .Get "caption" }}<figcaption>{{ . | markdownify}}</figcaption>{{ end }}
     {{ .Inner | markdownify }}
 </figure>

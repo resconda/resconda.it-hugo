@@ -125,12 +125,12 @@ var fetchAndSearchPage = function(searchTerm) {
     XHR.send();
 }
 var renderTableCaptions = function() {
-    const elements = document.getElementsByTagName("tablecaption");
+    const elements = document.getElementsByClassName("table-caption");
     for (let elidx = 0; elidx < elements.length; elidx++) {
         const element = elements[elidx];
-        const tClass =  element.getAttribute("class");
         const tStyle =  element.getAttribute("style");
         const cClass =  element.getAttribute("caption-class");
+        const tClass =  element.getAttribute("table-class");
 
         const table = element.getElementsByTagName("table").item(0);
         if(!table) return;
