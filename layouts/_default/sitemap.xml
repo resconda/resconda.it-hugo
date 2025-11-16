@@ -5,17 +5,20 @@
     <url>{{ with .Permalink }}
         <loc>{{ . }}</loc>
         {{- end -}}
-        {{ if not .Lastmod.IsZero }}
-        <lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>
+        {{ with .Date }}
+        <date>{{ time.Format "2006-01-02" . }}</date>
         {{ end }}
         {{- with .Title -}}
-        <title>{{ . }}</title>
+        <title>{{ htmlUnescape . }}</title>
         {{- end -}}
         {{ with .Summary }}
-        <description>{{ . | markdownify }}</description>
+        <description>{{ . | transform.Plainify | transform.XMLEscape }}</description>
         {{- end -}}
         {{ with .Params.tags }}
         <tags>{{ delimit . "," }}</tags>
+        {{- end -}}
+        {{ with .Params.classes }}
+        <class>{{ delimit . "," }}</class>
         {{- end -}}
         {{ with .Sitemap.ChangeFreq }}
         <changefreq>{{ . }}</changefreq>
