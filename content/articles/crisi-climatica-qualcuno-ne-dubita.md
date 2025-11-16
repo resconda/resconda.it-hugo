@@ -12,10 +12,7 @@ tags:
 ---
 
 
-Molte persone continuano a pensare che: 1. il clima non sta cambiando e
-se lo fa (in subordine) 2. è sempre cambiato e/o 3. l\'attività umana
-non c\'entra, si tratta di cicli geologici, non ci possiamo fare
-niente...
+Molte persone continuano a pensare che: 1. il clima non sta cambiando e se lo fa (in subordine) 2. è sempre cambiato e/o 3. l\'attività umana non c\'entra, si tratta di cicli geologici, non ci possiamo fare niente...
 
 <!--more-->
 
