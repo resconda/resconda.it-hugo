@@ -17,7 +17,7 @@ classes:
 
 In questa pillola cerchiamo di fare ulteriore chiarezza sui consumi e sul miglior uso dei fornelli da cucina (quelli a gas). Il primo passo è comprenderne la “potenza nominale”. Se ci seguite non ci dovrebbero essere problemi con i kW “elettrici”, quelli relativi ad apparecchi elettrici come forni, phon, ferri da stiro etc. Quando invece leggiamo che potenze di stufe a pellet, camini o fornelli a gas non è immediato comprendere cosa si intenda. 
 
-Partiamo da un dato: **un metro cubo, cioè 1000 litri di gas metano, contiene circa 10 kWh di energia** (10,69 per l’esattezza). 
+Partiamo da un dato: **un metro cubo, cioè 1000 litri di gas metano, contiene circa 11 kWh di energia** (10,69 per l’esattezza). 
 
 Dalla scheda tecnica di un normale piano cottura casalingo 
 
