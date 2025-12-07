@@ -8,7 +8,7 @@ tags:
 - casa
 - fornelli
 summary: "Un approfondimento con qualche numero e diversi scenari sui consumi e sull’utilizzo dei fornelli da cucina. Come esempio useremo uno dei temi più popolari delle nostre pillole: la cottura della pasta!"
-cover_image: assets/img/logo/logo_scritta_stacked
+cover_image: assets/post-img/pressure-cooker-7360057_1280_yuon54
 #  src: assets/post-img/
 #  caption: 
 classes:
