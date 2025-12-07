@@ -41,4 +41,4 @@ Altre variabili che contribuiscono al tempo di riscaldamento sono **il coperchio
 
 Fatte queste premesse vediamo ora insieme il risultato, confrontando questo scenario con la cottura a induzione (spoiler: più efficiente):
 
-    {{< cloudinary_img src="assets/post-img/Gasinduzione">}}
+{{< cloudinary_img src="assets/post-img/Gasinduzione">}}
