@@ -41,3 +41,5 @@ Altre variabili che contribuiscono al tempo di riscaldamento sono **il coperchio
 
 Fatte queste premesse vediamo ora insieme il risultato, confrontando questo scenario con la cottura a induzione (spoiler: più efficiente):
 {{< cloudinary_img src="assets/post-img/Gasinduzione">}}
+
+E se siete intenzionati a ridurre ancora di più il consumo di energia ai fornelli, guardate quanto si risparmia realmente con la [pentola a pressione](https://www.resconda.it/articles/consumare-un-decimo-con-la-pentola-a-pressione/)!
