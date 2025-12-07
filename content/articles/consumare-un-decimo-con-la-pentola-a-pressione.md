@@ -21,7 +21,7 @@ L’articolo ipotizza tuttavia che, raggiunto il bollore, si regola il fornello 
 
 Inoltre si lascia spesso inavvertitamente bollire l’acqua per qualche minuto, senza buttare subito la pasta, con un extra e-costo di 0,1 kWh al minuto. Ipotizzando una distrazione media di 3 minuti arriviamo a 1,8 kWh.
 
-Vediamo la pentola a pressione. L’acqua necessaria per cuocere la pasta in pentola a pressione è il doppio della pasta in peso (quindi 400 grammi d’acqua in questo caso). Per raggiungere la bollitura stimiamo quindi un quinto dell’energia calcolata nel primo caso: 0,12 kWh. Il tempo di cottura della pasta è la metà di quello normale, a partire dal raggiungimento della bollitura (fischio della valvola). Nella pentola a pressione il punto di ebollizione corrisponde a circa 120° e richiede più energia, tuttavia ipotizziamo che sia compensata dalla minor dissipazione di energia per evaporazione dell’acqua durante il riscaldamento (presente nella cottura “normale”). Al fischio della valvola si riduce al minimo l’erogazione del gas e si prosegue nella cottura: 5 minuti. Si ottiene un e-costo totale di 0,17 kWh
+Vediamo la pentola a pressione. L’acqua necessaria per cuocere la pasta in pentola a pressione è il doppio della pasta in peso (quindi 400 grammi d’acqua in questo caso). Per raggiungere la bollitura stimiamo quindi un quinto dell’energia calcolata nel primo caso: 0,12 kWh. Il tempo di cottura della pasta è la metà di quello normale, a partire dal raggiungimento della bollitura (fischio della valvola). Nella pentola a pressione il punto di ebollizione corrisponde a circa 120 °C e richiede più energia, tuttavia ipotizziamo che sia compensata dalla minor dissipazione di energia per evaporazione dell’acqua durante il riscaldamento (presente nella cottura “normale”). Al fischio della valvola si riduce al minimo l’erogazione del gas e si prosegue nella cottura: 5 minuti. Si ottiene un e-costo totale di 0,17 kWh
 
 170 Wh contro 1800 Wh: 10 volte meno\!
 
@@ -37,5 +37,5 @@ In conclusione: la cottura in pentola a pressione è 10 volte più e-conomica ri
 
 Resta da vedere il risultato al palato e per quello non resta che provare: la ricetta l’abbiamo fornita sopra\! Buon appetito.
 
-*Nelle tabelle sopra abbiamo ipotizzato nella cottura normale un maggiore uso di energia dei fornelli per la cottura (a parte) del sugo e un maggior uso di sale e acqua. I dati relativi all’energia incorporata delle materie prime sono tratte dalla nostra [App Suasì](https://suasi.it/), che ti invitiamo a scaricare e utilizzare\!*
+*Nelle tabelle sopra abbiamo ipotizzato nella cottura normale un maggiore uso di energia dei fornelli per la cottura (a parte) del sugo e un maggior uso di sale e acqua. I dati relativi all’energia incorporata delle materie prime sono tratti dalla nostra [App Suasì](https://suasi.it/), che ti invitiamo a scaricare e utilizzare\!*
     
