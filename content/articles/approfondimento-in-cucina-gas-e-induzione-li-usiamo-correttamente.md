@@ -40,4 +40,4 @@ Capita inoltre spesso di non accorgersi subito che l’acqua abbia raggiunto il 
 Altre variabili che contribuiscono al tempo di riscaldamento sono **il coperchio** sulla pentola, che come già detto **riduce il tempo di ebollizione di circa il 10%**. 
 
 Fatte queste premesse vediamo ora insieme il risultato, confrontando questo scenario con la cottura a induzione (spoiler: più efficiente):
-    
+    {{< cloudinary_img src="assets/post-img/Gasinduzione">}}
