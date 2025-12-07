@@ -1,5 +1,5 @@
 ---
-title: "Fragole a Natale: bene ma non troppo"
+title: "Fragole a Natale: bene ma non benissimo"
 date: 2025-12-04
 tags:
 - alimentazione
