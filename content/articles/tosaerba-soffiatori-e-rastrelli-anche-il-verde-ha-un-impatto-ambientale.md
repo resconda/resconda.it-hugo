@@ -9,7 +9,7 @@ tags:
 summary: "Un focus sul consumo delle macchine da giardinaggio ed un ragionamento su come possiamo ottimizzare l’energia spesa per mantenere i nostri parchi e giardini "
 cover_image:
  src: assets/post-img/Verde_Urbano_aen8ru
-#  caption: 
+ caption: Immagine creata con IA, consumo energetico circa 0,1 Wh
 classes:
 - MWh
 ---
