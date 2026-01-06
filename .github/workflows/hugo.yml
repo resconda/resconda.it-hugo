@@ -44,10 +44,6 @@ jobs:
           name: searchdb
           path: |
             contents.sqlite
-
-      # Not needed right now
-      # - name: Test
-      #   run: go test -v ./...
   
   build_hugo:
     environment: ${{ github.ref_name == 'main' && 'production' || 'staging' }}
@@ -85,49 +81,5 @@ jobs:
             REMOTE_USER: ${{ vars.REMOTE_USER }}
             REMOTE_PORT: ${{ vars.REMOTE_PORT }}
             TARGET: ${{ env.PUBLIC_HTML }}
-      # - name: Archive production artifacts
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: dist
-      #     path: |
-      #       dist
 
-  deploy:
-    if: false
-    environment: ${{ github.ref_name == 'main' && 'production' || 'staging' }}
-    env:
-      PUBLIC_HTML: ${{ vars.PUBLIC_HTML }}
-    needs:
-      - build_hugo
-      # - build_searchdb 
-    runs-on: self-hosted
-    steps:
-      - name: Cleanup deploy folder PUBLIC_HTML
-        run: |
-          [[ -z $PUBLIC_HTML ]] && exit 1
-          rm -rf $PUBLIC_HTML && mkdir -p $PUBLIC_HTML
-      - name: Download server code
-        uses: actions/download-artifact@v4.1.7
-        with:
-          name: dist
-          path: ${{ env.PUBLIC_HTML }}
-      ## Unstable search stuff
-      # - name: Download sqlite DB file and deploy to PUBLIC_HTML/cgi/
-      #   env:
-      #     PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
-      #   uses: actions/download-artifact@v4.1.7
-      #   with:
-      #     name: searchdb
-      #     path: ${{ env.PUBLIC_HTML }}/cgi/res
-      # - name: Download searchdb_server code to the CWD
-      #   uses: actions/download-artifact@v4.1.7
-      #   with:
-      #     name: searchdb_server_src
-      # - name: build and run searchdb server
-      #   env:
-      #     PUBLIC_HTML: ${{ env.STAGING == '0' && '/home/resconda/resconda.it/resconda.it-hugo' || '/home/resconda/resconda.it/staging' }}
-      #     GIN_MODE: ${{ env.STAGING == '0' && 'release' || 'debug' }}
-      #   run: |
-      #     GO=/usr/local/go/bin/go
-      #     $GO mod tidy && $GO build -o ${{ env.PUBLIC_HTML }}/cgi/searchdb_server && \
-      #     ${{ env.PUBLIC_HTML }}/cgi/searchdb_server &
+
