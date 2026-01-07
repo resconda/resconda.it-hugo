@@ -34,8 +34,8 @@ Riportiamo di seguito gli e-costi raggruppati relativi al menù auto-indulgente,
 {{< cloudinary_img src="assets/post-img/tavola_3_cclkir" caption="CENA: bruschetta con alici, tartare di manzo, involtini di bresaola e formaggio, risotto ai 4 formaggi, polpettone delle feste con patate al forno, tiramisù, caffè, spumante, vino rosso, amaro e acqua in bottiglia." >}}
 
 
-Infine, ecco i valori per i due menù dietetici (quasi modello Prof. Birkenmeyer…) 
+Infine, ecco i valori per i due menù dietetici (quasi [modello Prof. Birkenmeyer](https://www.youtube.com/watch?v=vqeW4Y55qFA)..) 
 
 {{< cloudinary_img src="assets/post-img/tavola_4_zna95c" >}}
 
-Occorre inoltre tenere presente che non abbiamo considerato i costi energetici necessari per la preparazione (cottura) dei cibi: senza dubbio aggiungendo questi ultimi il peso ambientale del terzo menù andrebbe a crescere ancora di molto.
+Occorre inoltre tenere presente che non abbiamo considerato i costi energetici necessari per la preparazione (cottura) dei cibi: senza dubbio aggiungendo questi ultimi il peso ambientale del menù "indulgente" andrebbe a crescere ancora di molto.
