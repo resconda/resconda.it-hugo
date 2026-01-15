@@ -237,6 +237,20 @@ img {
     margin: 0 auto;
     // padding: 0.5em;
 }
+.capped-width-30, .capped-width-75, .capped-width-50 {
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .capped-width-30 {
+    max-width: 30%;
+  }
+  .capped-width-50 {
+    max-width: 50%;
+  }
+  .capped-width-75 {
+    max-width: 75%;
+  }
+}
 .img-label {
   position: absolute;
   &.top {
@@ -451,6 +465,7 @@ figure {
         font-size: 0.75em;
         text-align: center;
         color: grey;
+        margin-top: 1em;
     }
 }
 caption {
