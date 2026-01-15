@@ -52,3 +52,4 @@ public/
 exampleSite/
 resources/
 .env
+.aider*
