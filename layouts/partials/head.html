@@ -7,11 +7,12 @@
     {{ else }}
         {{ if .Params.seoTitle }}
     <title>{{ .Params.seoTitle }}</title>
+    <meta property="og:title" content={{ .Params.seoTitle | markdownify | plainify }} />
         {{ else }}
     <title>{{ .Title | markdownify | plainify }}</title>
+    <meta property="og:title" content={{ .Title | markdownify | plainify }} />
         {{ end }}
     {{ end}}
-    <meta property="og:title" content={{ .Title | markdownify | plainify }} />
     <meta property="og:url" content={{ .Permalink }} />
     {{ with .Summary}}
     <meta property="og:description" content={{ . | markdownify | plainify }} />
