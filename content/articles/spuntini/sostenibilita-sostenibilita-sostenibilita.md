@@ -1,0 +1,19 @@
+---
+title: "Sostenibilità! Sostenibilità! Sostenibilità!"
+date: 2026-02-07
+tags:
+- spuntini
+summary: "Le Olimpiadi hanno un impatto ambientale enorme, tuttavia nei Dossier di candidatura il termine “sostenibilità” compare centinaia di volte. Si tratta di un esempio eclatante su come un termine con dei contenuti precisi sia stato piegato alle esigenze della crescita economica, diventando una parola della *Neolingua* dei nostri tempi."
+cover_image:
+ src: assets/post-img/spuntini_zjkxp4
+#  caption: 
+---
+
+Ci siamo focalizzati sulle Olimpiadi invernali (come potevamo evitarlo), sottolineando come un evento simile comporta un impatto energetico ed ambientale importante, declinato su diversi ambiti. Ricordiamo preliminarmente (per l’ennesima volta) che tutte le attività umane hanno un impatto ambientale e il solo fatto di respirare, nutrirsi e defecare ha un impatto. Per questo è importante fornire dei numeri: confrontare gli impatti permette di fare delle valutazioni di opportunità, a fronte dei limiti dell'ecosistema di assorbire i rifiuti che produciamo e di fornire la materia prima e l’energia necessaria alle attività che intendiamo realizzare. 
+
+E’ il tema dei limiti dello sviluppo, introdotto dal [Club di Roma](https://www.clubofrome.org/) nel secolo scorso e che con sempre maggiore evidenza rimane – come un macigno sempre più ingombrante ed inaggirabile – sul tappeto delle discussioni economiche e politiche. I principali attori della politica e dell’economia ne hanno prima ignorato l’esistenza, poi deriso e infine combattuto i contenuti. Oggi il combattimento è diremmo sempre più aspro, arrivando al parossismo della negazione totale del concetto e dei suoi corollari. Ma già da tempo è invalsa una tecnica di lotta assai più insidiosa portata avanti (diremmo purtroppo con successo) dai sostenitori del Business as Usual: la diversione intellettuale ed adulterazione dei concetti. Così è successo al termine "sostenibilità" che da elemento chiave di riflessione del [Rapporto Bruntland](https://it.wikipedia.org/wiki/Rapporto_Brundtland) del 1987, che invitava a limitare lo sviluppo (la crescita economica) in considerazione delle esigenze e dei diritti delle generazioni future. Oltre ad essere stato sostanzialmente [snaturato](https://www.lindau.it/Libri/L-imbroglio-dello-sviluppo-sostenibile#:~:text=Pu%C3%B2%20metabolizzare%20quantit%C3%A0%20crescenti%20di,conversione%20economica%20dell'ecologia%C2%BB.) dal concetto di “sviluppo sostenibile”, esso è diventato un’etichetta, un utensile universale da utilizzare ogni volta che si vuol dare una patina di sostenibilità alle decisioni della politica e dell’economia. Si trasforma, come usa dire, un problema in opportunità ma nella realtà si persegue un solo disegno: rifiutare il concetto di limite alla crescita economica e della distruzione di risorse naturali che da essa deriva. The show must go on.
+
+Le Olimpiadi “Milano–Cortina”, come tutte le Olimpiadi (a parte forse quelle degli antichi Greci), comportano la distruzione massiva di risorse naturali ed ambientali, come illustrato da numerose associazioni e ONG (tra i tanti si rimanda a questo articolo di [A Fuoco](https://www.a-fuoco.it/p/i-giochi-di-milano-cortina-avranno?utm_source=post-email-title&publication_id=1825743&post_id=186745366&utm_campaign=email-post-title&isFreemail=true&r=39jeg3&triedRedirect=true&utm_medium=email)). Ciò nonostante nel [dossier di candidatura](https://gstatic.olympics.com/s3/mc2026/documents/Documents/Section%203/Dossier%20di%20Candidatura.pdf) il termine “sostenibilità” compare ben 65 volte e il termine sostenibile / sostenibili altre 63 volte.
+
+Ci sentiamo a questo punto di dare un’indicazione di metodo, parafrasando una frase nata in tempi bui: quando trovate il termine “sostenibilità” in un documento di programmazione economica, mettete mano alla pistola.
+    
