@@ -15,7 +15,7 @@ classes:
 - GWh
 ---
 
-“*Intorno alle rovine di quel rudere colossale, spoglie e sterminate, le piatte sabbie solitarie si estendono oltre confine*”. Così si conclude la poesia “Ozymandias” di P. Shelley: per quanto diretta a rappresentare l'inevitabile declino degli uomini di potere e dei loro imperi (per quanto grandi e potenti possano essere), può ben essere utilizzata anche per rappresentare l’edilizia olimpica\!
+“*Intorno alle rovine di quel rudere colossale, spoglie e sterminate, le piatte sabbie solitarie si estendono oltre confine*”. Così si conclude la poesia “Ozymandias” di P. Shelley: diretta a rappresentare l'inevitabile declino degli uomini di potere e dei loro imperi (per quanto grandi e potenti possano essere), può ben essere utilizzata anche per rappresentare l’edilizia olimpica\!
 
 A breve forse avrai l’occasione di vedere in video una gara di bob, tra quelle che avranno luogo nelle olimpiadi invernali la prossima settimana. Considera che quelle bianche e scintillanti piste **si trasformeranno a breve in rovine,** come quelle delle piste da bob olimpiche nella foto sopra (in alto a sx: Breuil Cervinia 1962, in alto a dx: Cortina 1956, in basso: Cesana torinese 2006). Tutte abbandonate. 
 
