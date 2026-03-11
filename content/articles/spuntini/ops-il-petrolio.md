@@ -6,6 +6,8 @@ tags:
 cover_image:
  src: assets/post-img/sekau67-sunset-654867_640_qy7z2i
 #  caption: 
+summary: |
+    Purtroppo la domanda globale di combustibili fossili è tipicamente anelastica: si tratta di beni insostituibili nel breve termine. Quindi a fronte di quelli (pochi) che gioiscono, molti altri si preoccupano, perchè il petrolio (il gas, il carbone…) costituiscono, volenti o nolenti, la base della nostra società ed economia.
 ---
 
 Nei giorni scorsi il Ministro degli Esteri iraniano ha preconizzato una crescita del prezzo del petrolio fino a 300 USD al barile quale possibile conseguenza del blocco del traffico nello stretto di Hormuz. Un aumento del prezzo dei combustibili fossili è visto con favore dai molti che prosperano sul consumo di energia fossile e che vedono così aumentare i margini di guadagno. Se ne avvantaggiano sia coloro che normalmente hanno difficoltà a vendere il proprio petrolio (ad esempio il petrolio Venezuelano, che è tanto ma di scarsa qualità, oppure quello da fracking con processi di estrazione costosi), sia quelli dotati di tanto petrolio e a basso prezzo (medio oriente), che vedono i margini aumentare. Ne beneficiano anche autocrati come Putin, che vede aprirsi maggiori opportunità di vendita dei propri combustibili. 
