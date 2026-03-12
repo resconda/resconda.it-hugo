@@ -33,4 +33,4 @@ Se non hai richiesto tu l'iscrizione, scrivici a info@resconda.it, provvederemo 
     }
 }
 
-module.exports = WelcomeEmail;
+export {WelcomeEmail};

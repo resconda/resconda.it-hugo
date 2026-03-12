@@ -1,4 +1,4 @@
-const nodemailer = require("nodemailer");
+import nodemailer  from "nodemailer";
 
 function createTransport() {
   if (process.env.NODE_ENV === "production") {
@@ -28,7 +28,6 @@ function createTransport() {
   });
 }
 
-module.exports = createTransport;
 const SendmailHelper = {
   sendMail: (recipient, subject, plaintext, html = "", sender = process.env.MAILER_SENDER_ADDRESS) => {
     let transporter = createTransport();
@@ -45,4 +44,4 @@ const SendmailHelper = {
   },
 };
 
-module.exports = SendmailHelper;
+export { SendmailHelper };
