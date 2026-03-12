@@ -1,6 +1,7 @@
-'use strict'
+import setConfig from '@mailchimp/mailchimp_marketing';
+import ping from '@mailchimp/mailchimp_marketing';
 
-const mailchimp = require('@mailchimp/mailchimp_marketing');
+
 const listId = process.env.MAILCHIMP_LIST_ID;
 
 const MailchimpHandler = {
@@ -8,7 +9,7 @@ const MailchimpHandler = {
         const apiKey = process.env.MAILCHIMP_API_KEY;
         const server = process.env.MAILCHIMP_SERVER; 
         console.log(`listId[${listId}] apiKey[${apiKey.slice(0,2)}...] server[${server}]`);
-        mailchimp.setConfig({
+        setConfig({
             apiKey: apiKey,
             server: server,
         });
@@ -51,7 +52,7 @@ const MailchimpHandler = {
     },
     ping: async function() {
         this.setup();
-        const response = await mailchimp.ping.get();
+        const response = await ping.get();
         return response;
     },
     listInfo: async function(listid) {
@@ -67,4 +68,4 @@ const MailchimpHandler = {
     }
 }
 
-module.exports = MailchimpHandler;
+export  { MailchimpHandler };

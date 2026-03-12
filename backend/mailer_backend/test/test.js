@@ -1,10 +1,10 @@
 //test.js
 
-const server = require("../app.js");
-const supertest = require("supertest");
-const requestWithSupertest = supertest(server);
-const MailchimpHandler = require("../mailchimp.js");
+import {server} from "../app.js";
+import {supertest} from "supertest";
+import {MailchimpHandler} from "../mailchimp.js";
 
+const requestWithSupertest = supertest(server);
 const testuser_payload = {
         email: "test_user@resconda.it",
         "frc-captcha-solution": "valid-solution",

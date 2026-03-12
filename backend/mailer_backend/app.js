@@ -1,12 +1,13 @@
-const express = require('express')
-const app = express()
-const bodyParser = require('body-parser')
-const MailchimpHandler = require("./mailchimp")
-const SendmailHelper = require('./sendmail')
-const WelcomeEmail = require('./welcome_email')
-app.use(bodyParser.json()) // for parsing application/json
+import express from "express";
+import bodyParser from "body-parser";
+import { MailchimpHandler } from "./mailchimp.js";
+import { BrevoHandler } from "./brevo.js";
+import { SendmailHelper } from "./sendmail.js";
+import { WelcomeEmail } from "./welcome_email.js";
 
 const port = 3000
+const app = express()
+app.use(bodyParser.json()) // for parsing application/json
 
 const verifyCaptcha = async (solution) => {
   if (process.env.NODE_ENV === "test") {
@@ -26,7 +27,7 @@ app.route("/",)
   }
 })
 .post(async (req, res) => {
-  let mailchimpResponse;
+  let brevoResponse;
   console.log(`new member add request received. body[${JSON.stringify(req.body)}]`);
 
   res.set("Content-Type", "application/json")
@@ -45,10 +46,10 @@ app.route("/",)
   }
   // 200 and no errors means that the captcha was verified
   
-  // add user to mailchimp list
+  // add user to brevo list
   try {
-    mailchimpResponse = await MailchimpHandler.addMember(req.body);
-    console.log(`mailchimpResponse: id[${mailchimpResponse.id}] email[${mailchimpResponse.email_address}] status[${mailchimpResponse.status}]`);
+    brevoResponse = await BrevoHandler.addMember(req.body);
+    console.log(`brevoResponse: id[${brevoResponse.id}] email[${brevoResponse.email_address}] status[${brevoResponse.status}]`);
   } catch (error) {
     res.send({ errors: [`Non è stato possibile registrare il contatto. Riprova più tardi o scrivici a info@resconda.it`] });
     return;
@@ -58,12 +59,12 @@ app.route("/",)
   const contactName = req.body.name ?? "nuov@ iscritt@";
   try {
     SendmailHelper.sendMail(
-      mailchimpResponse.email_address,
+      brevoResponse.email_address,
       "Ti sei iscritto alla newsletter di ResConDA",
       WelcomeEmail.plain(contactName),
       WelcomeEmail.html(contactName),
     ).then((info) => {
-      console.log(`Welcome email sent to ${mailchimpResponse.email_address}. Mailchimp result: ${JSON.stringify(info)}`)
+      console.log(`Welcome email sent to ${brevoResponse.email_address}. Mailchimp result: ${JSON.stringify(info)}`)
       res.status(201).send({});
     }).catch((error) => {
       console.log(error);
@@ -102,4 +103,4 @@ const server = app.listen(port, () => {
   console.log(`Mailer app listening on port ${port}`)
 });
 
-module.exports = server;
+export default server;
