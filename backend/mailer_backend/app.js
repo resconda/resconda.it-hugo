@@ -51,6 +51,7 @@ app.route("/",)
     brevoResponse = await BrevoHandler.addMember(req.body);
     console.log(`brevoResponse: id[${brevoResponse.id}] email[${brevoResponse.email_address}] status[${brevoResponse.status}]`);
   } catch (error) {
+    console.log(`Error adding member to Brevo list: ${error}`);
     res.send({ errors: [`Non è stato possibile registrare il contatto. Riprova più tardi o scrivici a info@resconda.it`] });
     return;
   }

@@ -19,8 +19,8 @@ const BrevoHandler = {
             attributes.SMS = userRequest.phone;
         }
         const brevoresponse = await brevo.contacts.createContact({
-            listIds: [process.env.BREVO_LIST_ID],    
-            emails: [userRequest.email],
+            listIds: [ parseInt(process.env.BREVO_LIST_ID),],    
+            email: email,
             attributes: attributes,
         });
         return brevoresponse;
