@@ -52,7 +52,7 @@ app.route("/",)
   // add user to brevo list
   brevoResponse = await BrevoHandler.addMemberDOI(req.body);
   logger.info(brevoResponse, "brevoResponse");
-  if (brevoResponse.error) {
+  if (brevoResponse !== undefined && brevoResponse.error) { // brevoResponse is undefined in case of success
     logger.error(brevoResponse.error, "Error adding member to Brevo list");
     if(brevoResponse.error.code === BrevoDuplicatedContactErrorCode){
       res.status(400).send({ errors: [`L'indirizzo email ${req.body.email} risulta già registrato`] });
