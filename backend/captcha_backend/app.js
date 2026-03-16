@@ -29,7 +29,7 @@ app.route("/",)
         res.status(500);
         break;
   }
-  res.append("Content-Type", "application/json")
+  res.set("Content-Type", "application/json")
     .send(resBody);
 })
 
