@@ -111,7 +111,7 @@ window.addEventListener("load", () => {
                         let name = validatedData.name;
                         var successmsg = document.createElement('div');
                         successmsg.classList.add("alert", "alert-info", "text-center");
-                        successmsg.innerText = `Grazie ${name}! Ti contatteremo presto.`;
+                        successmsg.innerText = `Grazie ${name}! Riceverai una mail per confermare l'iscrizione (controlla la cartella spam).`;
                         document.getElementById('form-response').append(successmsg);
                         document.getElementById('contactForm').querySelectorAll('input,textarea').forEach(el => { el.value = ""; });
                         // defaultWidget.reset();
