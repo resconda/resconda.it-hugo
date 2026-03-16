@@ -31,7 +31,7 @@ app.route("/",)
 })
 .post(async (req, res) => {
   let brevoResponse;
-  logger.info(`new member add request received. body[${JSON.stringify(req.body)}]`);
+  logger.info(req.body, "new member add request received");
 
   res.set("Content-Type", "application/json")
   
@@ -41,9 +41,9 @@ app.route("/",)
     res.status(400).send({errors: ["Verifica captcha non valida"]});
     return;
   }
-  let verifyResult = verifyCaptcha(solution);
-  logger.info(verifyResult, "[captcha] verifyResult");
-  if(verifyResult.error){
+  let captchaVerifyResult = verifyCaptcha(solution);
+  logger.info(captchaVerifyResult, "[captcha] verifyResult");
+  if(captchaVerifyResult.error){
     res.status(200).send({errors: ["Verifica captcha fallita."]}); // verification failed is expected to yield a 200 status
     return;
   }

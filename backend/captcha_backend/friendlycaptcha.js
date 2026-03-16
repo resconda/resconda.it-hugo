@@ -57,7 +57,7 @@ export const FriendlyCaptchaHelper = {
             return ResultCodes.verifySuccess; // In test mode, always return success
         }
         const use_api_version = 2;
-        logger.info(`[FriendlyCaptchaHelper.verify] verifying site[${centerEllipsis(myFCclient.site, 3)}] key[${centerEllipsis(myFCclient.key)}] solution[${centerEllipsis(solution)}]`)
+        logger.debug(`[FriendlyCaptchaHelper.verify] verifying site[${centerEllipsis(myFCclient.site, 3)}] key[${centerEllipsis(myFCclient.key)}] solution[${centerEllipsis(solution)}]`)
         const fc_response = await fetch(myFCclient.url(use_api_version), {
             method: 'POST',
             headers: myFCclient.header(use_api_version),
