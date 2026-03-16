@@ -2,6 +2,7 @@ const friendlyCaptchaURL_v2 = "https://global.frcapi.com/api/v2/captcha/siteveri
 const friendlyCaptchaURL_v1 = "https://api.friendlycaptcha.com/api/v1/siteverify"; // v1 API endpoint
 const friendlyCaptchaApiKey = process.env.FRIENDLY_CAPTCHA_SECRET;
 const friendlyCaptchaSitekey = process.env.FRIENDLY_CAPTCHA_SITEKEY;
+import logger from './logger.js';
 
 var myFCclient = {
     url: (version) => {
@@ -52,22 +53,22 @@ const centerEllipsis = function(str, trailingcharacters=5) {
 export const FriendlyCaptchaHelper = {
     verify: async (solution) => {
         if(process.env.NODE_ENV === "test"){
-            console.log(`[FriendlyCaptchaHelper.verify] Running in test mode, returning success for solution[${centerEllipsis(solution)}]`);
+            logger.info(`[FriendlyCaptchaHelper.verify] Running in test mode, returning success for solution[${centerEllipsis(solution)}]`);
             return ResultCodes.verifySuccess; // In test mode, always return success
         }
         const use_api_version = 2;
-        console.log(`[FriendlyCaptchaHelper.verify] verifying site[${centerEllipsis(myFCclient.site, 3)}] key[${centerEllipsis(myFCclient.key)}] solution[${centerEllipsis(solution)}]`)
+        logger.info(`[FriendlyCaptchaHelper.verify] verifying site[${centerEllipsis(myFCclient.site, 3)}] key[${centerEllipsis(myFCclient.key)}] solution[${centerEllipsis(solution)}]`)
         const fc_response = await fetch(myFCclient.url(use_api_version), {
             method: 'POST',
             headers: myFCclient.header(use_api_version),
             body: JSON.stringify(myFCclient.body(solution, use_api_version)),
         });
         if(!fc_response.ok){
-            console.log(`FriendlyCaptcha verification failed: ${fc_response.statusText}`);
+            logger.info(fc_response, "FriendlyCaptcha verification failed");
             return ResultCodes.couldNotVerify;
         }
         const result = await fc_response.json();
-        console.log(`FriendlyCaptcha verification result: ${JSON.stringify(result)}`);
+        logger.info(result, "FriendlyCaptcha verification result");
         if(result.success == true){
             return ResultCodes.verifySuccess;
         }else{

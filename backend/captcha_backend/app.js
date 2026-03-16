@@ -1,5 +1,6 @@
 import express from 'express'
 import {FriendlyCaptchaHelper, ResultCodes } from './friendlycaptcha.js'
+import logger from './logger.js';
 
 const app = express()
 
@@ -25,7 +26,7 @@ app.route("/",)
         break;
     default:
         resBody = {error: "Unexpected error"};
-        console.log(`Verify call returned error code ${verifyResult}`);
+        logger.error(`Verify call returned error code ${verifyResult}`);
         res.status(500);
         break;
   }
@@ -34,6 +35,6 @@ app.route("/",)
 })
 
 app.listen(port, () => {
-    console.log(`Captcha app listening on port ${port}`)
+    logger.info(`Captcha app listening on port ${port}`)
   })
   
