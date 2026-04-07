@@ -27,5 +27,4 @@ In totale 950 MWh, quasi un GWh ad aereo. Un'automobile elettrica con quell’en
 
 A margine: un F35 (solo velivolo) viene via a 6.900 dollari al chilo (peraltro assai meno del software e delle armi…), comunque molto meno dello zafferano (35.000 $/kg) o del rossetto di Luis Vuitton (forse il prodotto di largo consumo più caro al mondo), venduto intorno a 55.000 $/kg.
 
-![][image2]![][image3]
-    
+{{< cloudinary_img src="assets/post-img/Immagine2_sgvdt1" >}}

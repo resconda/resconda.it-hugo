@@ -24,7 +24,7 @@ Una petroliera di classe VLCC (*Very Large Crude Container*) può trasportare ci
 
 Se moltiplichiamo questo valore per il traffico BAU (*business as usual*) attraverso lo stretto otteniamo numeri energetici al di fuori della normale comprensione, che tuttavia hjanno rappresentato la regola. Almeno fino a ieri, ora invece, il traffico è quasi bloccato, come vedete dal [grafico](https://www.statista.com/chart/35984/ship-traffic-in-the-strait-of-hormuz/), 
 
-![][image1]
+{{< cloudinary_img src="assets/post-img/Immagine1_q3onj4" >}}
 
 Questa concentrazione estrema nel transito di energia, questa arteria femorale del petrolio, rende il sistema tanto efficiente quanto fragile. Gran parte del petrolio mondiale passa attraverso colli di bottiglia strategici come lo Stretto di Hormuz. Quando le tensioni geopolitiche aumentano e il traffico rallenta, l’effetto è immediato: non si fermano solo delle navi, si fermano terawattora di energia in movimento. Ogni petroliera bloccata rappresenta una quantità enorme di energia che non raggiunge il mercato, con conseguenze dirette su sistemi produttivi, prezzi e inflazione.
 
