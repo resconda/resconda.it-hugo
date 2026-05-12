@@ -4,7 +4,7 @@ date: 2026-05-11
 tags:
 - spuntini
 cover_image:
- src: assets/post-img/spuntino_jsd1ft
+ src: assets/post-img/spuntino_pru4jx
 #  caption: 
 summary: |
     In un periodo di crisi energetica, produttiva ed economica la mitigazione del cambiamento climatico e la salvaguardia degli ecosistemi sono temi usciti quasi completamente dall’agenda politica e mediatica, ma ne parliamo ugualmente: sono gli elefanti nella stanza. 
