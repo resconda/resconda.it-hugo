@@ -1,5 +1,5 @@
 ---
-title: "Lavastoviglie vs. lavello"
+title: "A mano o in lavastoviglie?"
 date: 2026-05-11
 tags:
 - piatti
