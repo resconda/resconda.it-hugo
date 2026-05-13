@@ -10,7 +10,7 @@ tags:
 summary: |
     La resistenza aerodinamica impatta enormemente sui consumi, a seconda della forma del nostro veicolo, la differenza di consumo di carburante tra 100 e 130 km/h può arrivare a quasi il 30%. Siamo disposti a prenderci il lusso di “rallentare”?
 cover_image:
- src: assets/post-img/Pillola_Aerodinamica_COPERTINA_-_Formula_Drag_veicolo_ocxxmp
+ src: assets/post-img/Pillola_Aerodinamica_COPERTINA_-_Formula_Drag_veicolo_1_zj0ztz
 #  caption: 
 classes:
 - MWh
