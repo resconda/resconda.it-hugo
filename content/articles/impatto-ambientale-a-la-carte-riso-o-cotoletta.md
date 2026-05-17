@@ -11,6 +11,7 @@ cover_image:
 #  caption: 
 classes:
 - kWh
+speak: assets/audio/post-readings/RISO_O_COTOLETTA_txafdb
 ---
 
 Il 29 marzo scorso abbiamo avviato un lavoro di **analisi energetica del menù del Bistrot** dell[’Associazione Rubens](https://www.associazionerubens.it/), nell’ambito di un progetto cofinanziato dalla [Fondazione Compagnia di San Paolo](https://www.compagniadisanpaolo.it/it/). Il [Bistrot](https://www.associazionerubens.it/il-bistrot/) ha così potuto offrire ai propri clienti i dati di energia incorporata in alcuni dei piatti proposti, con alcune indicazioni aggiuntive al fine di allineare i valori in questione con l'esperienza quotidiana delle persone. 
