@@ -12,6 +12,7 @@ cover_image:
 #  caption: 
 classes:
 - kWh
+speak: assets/audio/post-readings/lavare_i_piatti_vkywno
 ---
 
 Molte persone sostengono che lavare i piatti a mano sia più ecologico ed economico perché "si usa meno acqua e si vede cosa si fa". Altre invece sono assolutamente convinte che l’efficienza della lavastoviglie sia insuperabile, sia dal punto di vista dei consumi elettrici sia per quanto riguarda lo “spreco” di acqua (per non parlare del prezioso tempo risparmiato lontano dal lavello). Quando lasciamo scorrere l’acqua dal rubinetto mentre insaponiamo, o quando riempiamo una vasca per il risciacquo, stiamo muovendo volumi e temperature che il nostro cervello non registra in kilowattora, ma solo come gesto quotidiano.  

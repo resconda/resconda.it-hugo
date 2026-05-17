@@ -22,20 +22,25 @@
             {{ end }}
           {{end}}
         </div>
-        <h4 id="date"> {{ dateFormat "2 January 2006" .Date.Local }} 
+        <h4 id="date"> {{ dateFormat "2 January 2006" .Date.Local }}
           <span class="wordcount">{{ .WordCount }} parole</span> 
         </h4>
         <div class="d-flex flex-row flex-wrap taglist small">
           {{ with .Params.tags }}
-            {{ range . }}
-            <div class="p-1 align-middle">
-              <a href="/tags/{{ . | urlize }}">
-                <div class="badge rounded-pill tag-pill">{{ replace . " " "</br>" | safeHTML }}</div>
-              </a>
-            </div>
-            {{ end }}
+          {{ range . }}
+          <div class="p-1 align-middle">
+            <a href="/tags/{{ . | urlize }}">
+              <div class="badge rounded-pill tag-pill">{{ replace . " " "</br>" | safeHTML }}</div>
+            </a>
+          </div>
+          {{ end }}
           {{ end }}
         </div>
+        {{ with .Params.speak }}
+          <audio controls preload="none" class="article-audio w-100 mt-2" src="https://res.cloudinary.com/resconda-it/video/upload/{{ . }}.mp3">
+            Il tuo browser non supporta l'elemento audio.
+          </audio>
+        {{ end }}
         <div>
           <article id="content">
              {{ .Content }}

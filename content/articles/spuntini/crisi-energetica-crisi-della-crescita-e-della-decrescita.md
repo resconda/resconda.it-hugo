@@ -8,6 +8,7 @@ cover_image:
 #  caption: 
 summary: |
     In un periodo di crisi energetica, produttiva ed economica la mitigazione del cambiamento climatico e la salvaguardia degli ecosistemi sono temi usciti quasi completamente dall’agenda politica e mediatica, ma ne parliamo ugualmente: sono gli elefanti nella stanza. 
+speak: assets/audio/post-readings/spuntini_l_elefante_mrx8lj
 
 ---
 

@@ -11,6 +11,7 @@ cover_image:
 #  caption: 
 classes:
 - GWh
+speak: assets/audio/post-readings/obsoloescenza_htzzha
 ---
 
 Dal 20 maggio circa **2 milioni di dispositivi ebook Kindle non potranno più essere utilizzati** per scaricare testi da Amazon kindle store. Lo ha deciso l’amico Jeff, non pago di essere **tra i maggiori contributori al disastro ambientale** in corso, grazie a diverse iniziative di successo come l’acquisto indotto e compulsivo su Amazon o il “reso gratuito facilitato” (che causa ogni anno la distruzione / immissione in discarica di prodotti resi per circa 22 miliardi di euro, ne abbiamo parlato [qui](https://resconda.it/articles/22-miliardi-di-euro/)) o ancora Amazon Web Services, il più grande provider cloud mondiale al servizio dell’AI, che nel 2025 pare abbia **consumato circa 50 TWh di energia** (oltre il 70% dell’intero consumo elettrico domestico italiano), o infine il delirante fenomeno del **turismo spaziale** lanciato da Bezos con Blue Origin che, con i suoi razzi porta a spasso per una manciata di minuti 6 fessi super ricchi in cerca di distrazioni a 100 km di quota, al costo di [parecchie tonnellate](https://resconda.it/articles/turismo-spaziale-ne-abbiamo-davvero-bisogno/) di carburante (e diversi milioni di dollari). 

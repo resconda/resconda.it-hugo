@@ -14,6 +14,7 @@ cover_image:
 #  caption: 
 classes:
 - MWh
+speak: assets/audio/post-readings/spostare_aria_r3e0ko
 ---
 
 Quando pensiamo al consumo di carburante della nostra automobile, ci viene in mente il motore, la cilindrata, la potenza, forse il peso del veicolo, ma non l’aria che dobbiamo spostare. Eppure, a velocità sostenute, è proprio l’aria a diventare il principale ostacolo al suo movimento: ogni veicolo deve utilizzare l’energia del carburante per “spostare” l’aria che incontra, e più và veloce, più questo sforzo cresce. E non in proporzione lineare.  
