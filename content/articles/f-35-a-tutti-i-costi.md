@@ -11,6 +11,7 @@ cover_image:
 #  caption: 
 classes:
 - GWh
+speak: assets/audio/post-readings/f35-a-tutti-i-costi---l-aereo-_cnnqmb
 ---
 
 L’aereo Lockheed Martin's F-35 Lightning II, più noto come “F35”, è uno degli aerei da guerra di maggior successo degli ultimi 40 anni. Si tratta di un caccia-bombardiere, cioè un aereo che può sia ingaggiare combattimenti con altri velivoli sia bombardare bersagli a terra.
