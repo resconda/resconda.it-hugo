@@ -15,7 +15,7 @@ tags:
 ---
 
 La quantità di energia incorporata negli autoveicoli è enorme.  
-Abbiamo già accennato alla questione in [questo post](/articles/veicoli-elettrici-quale-impatto-ambientale/) in cui parlavamo dei veicoli elettrici, prendendo a riferimento un valore di CED (Cumulated Energy Demand: l'energia incorporata nel bene) per una Wolksvagen Golf pari a 24 MWh, dato fornito dalla casa costruttrice.  
+Abbiamo già accennato alla questione in {{< locallink href="articles/veicoli-elettrici-quale-impatto-ambientale/">}}questo post{{< /locallink>}} in cui parlavamo dei veicoli elettrici, prendendo a riferimento un valore di CED (Cumulated Energy Demand: l'energia incorporata nel bene) per una Wolksvagen Golf pari a 24 MWh, dato fornito dalla casa costruttrice.  
 Proviamo qui invece a fare un calcolo considerando in prima approssimazione i principali materiali che compongono la massa di un veicolo: acciaio (\~70%), plastica e polimeri (10%), alluminio (\~5%), gomma (\~2%) e vetro (\~2%) e moltiplicandoli per la loro specifica densità energetica -- come da [questa tabella](https://www.wgtn.ac.nz/architecture/centres/cbpr/resources/pdfs/ee-coefficients.pdf) prodotta dalla Victoria University di Wellington.  
 Possiamo cos&igrave; fare una stima non troppo approssimata della CED media di una autovettura a motore endotermico di 1500 kg.
 

@@ -15,7 +15,7 @@ classes:
   - MWh
 ---
 
-In una delle pillole dei mesi scorsi abbiamo riportato l'impatto energetico di [*un viaggio aereo*](/articles/energia-dei-voli-aerei/). In quel post abbiamo considerato una tratta "media" di 1000 km su un volo commerciale "standard" il cui consumo di energia è risultato pari a circa 300 kWh per passeggero.
+In una delle pillole dei mesi scorsi abbiamo riportato l'impatto energetico di {{< locallink href="articles/energia-dei-voli-aerei/">}}*un viaggio aereo*{{< /locallink>}}. In quel post abbiamo considerato una tratta "media" di 1000 km su un volo commerciale "standard" il cui consumo di energia è risultato pari a circa 300 kWh per passeggero.
 
 Secondo uno [*studio*](https://www.transportenvironment.org/wp-content/uploads/2021/05/202209_private_jets_FINAL_with_addendum.pdf) della 1 European Federation for Transport and Environment AISBL i jet privati causano in media emissioni per passeggero fra le 5 e le 14 volte superiori a quelle dei voli commerciali.
 

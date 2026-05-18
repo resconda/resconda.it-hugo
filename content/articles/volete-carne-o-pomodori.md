@@ -23,7 +23,7 @@ Anche 1 kg di pomodori ha un’energia media incorporata di [circa 10 kWh](http:
 
 Insomma, la questione prima di tutto è conoscere l’impatto ambientale delle proprie scelte di consumo, in modo da poter magari decidere ogni tanto di mangiare carne (lasciamo a margine le altre ragioni per cui evitare il consumo di carne), oppure - se proprio se ne sente la necessità - i pomodori cileni: riducendo però al contempo il proprio impatto in altri ambiti dei consumi quotidiani. E magari contribuendo anche a spostare il dibattito dal piano delle facezie giornalistiche a quello della razionalità, di cui peraltro si lamenta l’assenza…
 
-&Egrave; a questo scopo che Resconda è impegnata, insieme ad altri partner tra cui il Politecnico di Torino, nella realizzazione del [progetto Emcoin](/articles/pubblicato-il-bando-di-ricerca-emcoin-1/).
+&Egrave; a questo scopo che Resconda è impegnata, insieme ad altri partner tra cui il Politecnico di Torino, nella realizzazione del {{< locallink href="articles/pubblicato-il-bando-di-ricerca-emcoin-1/">}}progetto Emcoin{{< /locallink>}}.
 
 
 <!--

@@ -30,7 +30,7 @@ A [questo link](https://www.swisshelicopter.ch/it/su-di-noi/flotta/ecureuil-h125
 Da [questa pagina](https://it.wikipedia.org/wiki/Cherosene) di wikipedia troviamo la densità del carburante (circa \( 0.8\, \textrm{kg/dm}^3 \), che vuol dire 1,25 L ogni kg di combustibile, quindi nel nostro caso 144 kg di cherosene). Il potere calorifico è simile a quello del gasolio (circa 45MJ/kg = 12,5kWh/kg), mentre per ogni kg di cherosene si emettono 3,15kg di {{< CO2 >}}.
 
 Quindi: per ogni viaggio A/R (40 minuti di volo) si useranno 2/3 del carburante, circa 100 kg di kerosene, cioè 1,25 MWh. Diviso per il numero di passeggeri **farebbero 250 kWh a testa**.  
-Per mettere questo numero a confronto con qualcosa di simile: in una [pillola precedente](/articles/energia-dei-voli-aerei/), parlammo dell'energia pro capite su di una tratta di aereo da 1000 km. Il risultato fu sorprendentemente dello stesso ordine di grandezza, ovvero 250/300 kWh per passeggero!
+Per mettere questo numero a confronto con qualcosa di simile: in una {{< locallink href="articles/energia-dei-voli-aerei/">}}pillola precedente{{< /locallink>}}, parlammo dell'energia pro capite su di una tratta di aereo da 1000 km. Il risultato fu sorprendentemente dello stesso ordine di grandezza, ovvero 250/300 kWh per passeggero!
 
 In termini energetici e di emissioni quindi **trasportare piccoli gruppi di turisti in elicottero** per raggiungere Cogne questa estate, **è equiparabile** (indipendentemente dei valori di spesa economica), **ad una tratta di aereo di circa 1000 km**, come se l'alluvione avesse "isolato", nel vero senso della parola, Cogne dal mondo.
 

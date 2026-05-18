@@ -14,7 +14,7 @@ cover_image:
   src: assets/post-img/32331909_10216685968410690_1570744379952332800_n_b2e9kg
 ---
 
-Dopo aver stimato l'e-costo di una [giornata sugli sci](/articles/si-va-a-sciare-fa-150-kwh/) qualche mese fa, continuiamo la e-rassegna delle attività ricreative stagionali prendendo in considerazione la subacquea.
+Dopo aver stimato l'e-costo di una {{< locallink href="articles/si-va-a-sciare-fa-150-kwh/">}}giornata sugli sci{{< /locallink>}} qualche mese fa, continuiamo la e-rassegna delle attività ricreative stagionali prendendo in considerazione la subacquea.
 
 Dobbiamo innanzitutto recarci al centro di diving con un veicolo che ci permetta di portare l'attrezzatura (a meno di non noleggiare il tutto direttamente al diving, nel qual caso possiamo arrivarci anche a piedi). Supponendo di essere in vacanza e già ragionevolmente vicini al centro immersioni, consideriamo un tragitto di riferimento di 100 km (a/r). Con i dati già usati per i conti fatti sulla giornata in montagna, tralasciando i costi autostradali per rimanere più generici, abbiamo per il transfer 92.5 kWh.
 

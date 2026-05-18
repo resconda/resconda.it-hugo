@@ -37,7 +37,7 @@ Considerata l’efficienza di cui sopra, l’energia spesa sarebbe
 
 **E** \= 7/60 h \* 800 W / 71% \= **131 Wh**
 
-Dall’altro lato del confronto abbiamo la solita pentola della [pasta sui fornelli](/articles/la-pasta-alla-parisi-1/): 610 Wh. Ad essere onesti, la ricetta al microonde utilizza una tecnica che ricorda un po’ il metodo di cottura “alla Parisi”, quindi il valore da utilizzare come confronto è **500 Wh**. Neanche la [piastra induzione](/articles/gas-elettrico-tradizionale-o-induzione/), con i suoi 310 Wh, regge il confronto.
+Dall’altro lato del confronto abbiamo la solita pentola della {{< locallink href="articles/la-pasta-alla-parisi-1/">}}pasta sui fornelli{{< /locallink>}}: 610 Wh. Ad essere onesti, la ricetta al microonde utilizza una tecnica che ricorda un po’ il metodo di cottura “alla Parisi”, quindi il valore da utilizzare come confronto è **500 Wh**. Neanche la {{< locallink href="articles/gas-elettrico-tradizionale-o-induzione/">}}piastra induzione{{< /locallink>}}, con i suoi 310 Wh, regge il confronto.
 
 Certo l’obiezione in questo caso è che il risultato finale potrebbe non essere  lo stesso: molti piatti richiedono una temperatura molto più alta di quella raggiungibile dal forno a microonde. Ma forse potremmo dare una chance a qualche ricetta, e scoprire di poter ottenere ottimi risultati accorciando i tempi di cottura e riducendo il nostro consumo di energia.
     

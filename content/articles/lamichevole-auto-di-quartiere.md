@@ -15,7 +15,7 @@ classes:
 ---
 
 L’auto è ancora oggi per molte persone uno *status symbol*, un oggetto personale che piace sfoggiare e “indossare” come un abito. E, alla stregua di un abito, è molto difficile pensare di farla “indossare” – se non per un breve giro davanti allo specchio – ad altre persone.  
-Questo modo diffuso di vedere l’oggetto auto ha portato quindi ad una serie di **aberrazioni** di cui [abbiamo parlato](/articles/lenergia-parcheggiata-in-strada/), come ad esempio **l’altissimo tasso di veicoli per numero di abitanti** o l’imbarazzante **rapporto tra ore di utilizzo effettivo e ore di sosta**.
+Questo modo diffuso di vedere l’oggetto auto ha portato quindi ad una serie di **aberrazioni** di cui {{< locallink href="articles/lenergia-parcheggiata-in-strada/">}}abbiamo parlato{{< /locallink>}}, come ad esempio **l’altissimo tasso di veicoli per numero di abitanti** o l’imbarazzante **rapporto tra ore di utilizzo effettivo e ore di sosta**.
 
 Sarebbe interessante pensare all’auto come a un servizio *della* comunità. I servizi di car sharing e pooling – nelle varie declinazioni come Enjoy/ShareNow, BlaBlaCar, Uber – potrebbero in teoria andare nella direzione di ottimizzare la CED delle auto e ridurre al minimo il tempo di sosta. Ma si sono più o meno tutti rivelati l’ennesima occasione di business, dove poche compagnie si mangiano tutto il mercato e, puntando a massimizzare i profitti, trascuranoi potenziali benefici in termini di efficienza.
 
