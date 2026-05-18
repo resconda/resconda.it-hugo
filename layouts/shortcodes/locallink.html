@@ -1,0 +1,6 @@
+{{/* REQUIRED */}}
+{{$href:= strings.TrimLeft "/" (.Get "href")}}
+{{/* OPTIONAL */}}
+{{$target := default "_blank" (.Get "target") }}
+{{/* END */}}
+<a href={{ relURL $href }} target={{ $target }}>{{ .Inner | markdownify }}</a>

@@ -25,5 +25,5 @@ Concludiamo con un dato: una rivista stampata su carta patinata lucida stampata 
 
 {{< cloudinary_img src="assets/post-img/Immagine3_pwpaia" >}}
  
-Avevamo già parlato di energia incorporata nei prodotti stampati, in particolare relativamente ai [libri in generale](/articles/e-i-libri-il-costo-energetico-della-lettura/) e all’[editoria scolastica](https://www.resconda.it/articles/libri-scolastici-e-ambiente-predicare-bene-e-razzolare/). 
+Avevamo già parlato di energia incorporata nei prodotti stampati, in particolare relativamente ai {{< locallink href="articles/e-i-libri-il-costo-energetico-della-lettura/">}}libri in generale{{< /locallink>}} e all’[editoria scolastica](https://www.resconda.it/articles/libri-scolastici-e-ambiente-predicare-bene-e-razzolare/). 
     

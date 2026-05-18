@@ -13,7 +13,7 @@ tags:
   - energia
 ---
 
-In [una](/articles/vado-a-farmi-una-doccia-calda.md) delle precedenti Pillole abbiamo trattato il tema del costo energetico di una doccia, concludendo che “*fa 2-3 kWh consumati, per farla breve, anzi no…*”
+In {{< locallink href="articles/vado-a-farmi-una-doccia-calda.md">}}una{{< /locallink>}} delle precedenti Pillole abbiamo trattato il tema del costo energetico di una doccia, concludendo che “*fa 2-3 kWh consumati, per farla breve, anzi no…*”
 
 Oggi integriamo quel post con una serie di dati da noi raccolti, un ventaglio di scenari e un ragionamento su quanto il nostro comportamento può essere determinante. Il tutto al fine di accrescere la consapevolezza sull’impatto di una azione quotidiana.
 
@@ -52,7 +52,7 @@ Nei pochi numeri e tabelle qui sotto **non è stato considerato il tipo di tecno
 1. Doccia Amphiro[^1] capace di misurare flusso d’acqua (l/min) e temperatura, e da questi derivano il calcolo dell’energia consumata (kWh) e massa d’acqua transitata durante la doccia (lt). [Per saperne di pi&ugrave;](https://amphiro.com/en/how-it-works/studies)
 {{< cloudinary_img width="200px" src="assets/post-img/Screenshot_2023-03-06_at_22.18.10_aoe4qi" >}}
 
-La rilevazione è durata per un mese esatto, per un consumo totale di 135 kWh. Il risultato letto dal misuratore conferma il dato menzionato nella [prima puntata](/articles/vado-a-farmi-una-doccia-calda.md) su questo argomento.
+La rilevazione è durata per un mese esatto, per un consumo totale di 135 kWh. Il risultato letto dal misuratore conferma il dato menzionato nella {{< locallink href="articles/vado-a-farmi-una-doccia-calda.md">}}prima puntata{{< /locallink>}} su questo argomento.
 
 Dai dati raccolti tramite App dalla doccia Amphiro, il valore medio è stato invece di 2 kWh per ogni doccia, con un consumo medio di 36 litri d’acqua per sessione.
 

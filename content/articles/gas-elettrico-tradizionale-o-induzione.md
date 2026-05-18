@@ -15,7 +15,7 @@ cover_image:
   src: assets/post-img/piqsels.com-id-zbqtj_psfhiy
 ---
 
-Come [anticipato](/articles/la-pasta-alla-parisi-1/) riprendiamo il tema "energia in cucina", per vedere se la tecnologia può darci una mano a ridurre il budget energetico.
+Come {{< locallink href="articles/la-pasta-alla-parisi-1/">}}anticipato{{< /locallink>}} riprendiamo il tema "energia in cucina", per vedere se la tecnologia può darci una mano a ridurre il budget energetico.
 
 Sul funzionamento del fornello a gas non c'è molto da spiegare, le piastre elettriche tradizionali funzionano per il noto principio di resistività elettrica dei materiali mentre meno noto è il sistema di funzionamento della piastra induzione[^1].
 

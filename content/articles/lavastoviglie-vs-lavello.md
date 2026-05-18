@@ -31,7 +31,7 @@ Per calcolare l’energia necessaria a portarli alla temperatura considerata sop
     E = m \; c_{sp} \; (T_c - T_f)
 \]
 
-dove \(m\) è la massa d’acqua scaldata, \(c_{sp}\) il calore specifico dell’acqua \(4186 J/(kg \; ^\circ C)\), \(T_c\) è la temperatura dell’acqua calda e \(T_f\) quella fredda. Facendo i conticini si ottengono 2,87 MJ, ovvero 1,57 kWh. Supponendo di scaldare l’acqua tramite caldaia a metano, dobbiamo considerare la sua efficienza. Prendiamo il valore di 65% [già usato](/articles/vado-a-farmi-una-doccia-calda) in un’altra pillola e **otteniamo infine** 2,42 kWh, più un 100 Wh forfettario di costo energetico del lavoro umano, arriviamo a **2,52 kWh.**
+dove \(m\) è la massa d’acqua scaldata, \(c_{sp}\) il calore specifico dell’acqua \(4186 J/(kg \; ^\circ C)\), \(T_c\) è la temperatura dell’acqua calda e \(T_f\) quella fredda. Facendo i conticini si ottengono 2,87 MJ, ovvero 1,57 kWh. Supponendo di scaldare l’acqua tramite caldaia a metano, dobbiamo considerare la sua efficienza. Prendiamo il valore di 65% {{< locallink href="articles/vado-a-farmi-una-doccia-calda">}}già usato{{< /locallink>}} in un’altra pillola e **otteniamo infine** 2,42 kWh, più un 100 Wh forfettario di costo energetico del lavoro umano, arriviamo a **2,52 kWh.**
 
 Tornando sul consumo idrico, non dobbiamo dimenticare di risciacquare i nostri piatti, finora immersi in un mix di acqua insaponata e residui di cibo. Aggiungiamo conservativamente un’altra decina di litri, totalizzando 40 litri tra acqua calda e fredda.
 

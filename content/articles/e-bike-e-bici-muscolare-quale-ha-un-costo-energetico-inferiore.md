@@ -37,5 +37,5 @@ Per quanto quest'ultima assunzione sia sicuramente approssimativa \- non conside
 
 Nella simulazione si trascura il fatto che il ciclista della e-bike consumi energia da cibo anche senza muovere un muscolo, per il solo fatto di vivere (il metabolismo basale di un individuo adulto è di ca. 100 W), poiché tale consumo si aggira intorno a 10 Wh/km (senza pedalare).
 
-Il cibo che alimenta la macchina umana costituisce infatti una delle principali cause di emissioni di gas a effetto serra, a cui spesso non si pensa, e che è invece al centro del [lavoro svolto](/articles/21-maggio-partecipa-al-lancio-di-suasi/) per realizzare l’App Suasì.
+Il cibo che alimenta la macchina umana costituisce infatti una delle principali cause di emissioni di gas a effetto serra, a cui spesso non si pensa, e che è invece al centro del {{< locallink href="articles/21-maggio-partecipa-al-lancio-di-suasi/">}}lavoro svolto{{< /locallink>}} per realizzare l’App Suasì.
     

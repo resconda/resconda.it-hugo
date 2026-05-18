@@ -20,8 +20,8 @@ Uno dei due liquidi, l'"olio" del nostro paragone, a temperatura ambiente è in 
 L'effetto è indubbiamente rilassante e le combinazioni di colori dei liquidi innumerevoli. Ma cosa significa da un punto di vista energetico tenere costantemente acceso un oggetto simile?  
 In una società che sta facendo estinguere le lampadine a incandescenza perch&eacute; imbarazzantemente inefficienti, è ancora ammissibile che si possa acquistare (dicembre 2022) questo soprammobile? Quanto dovremmo sentirci in colpa in termini di energia spesa per il nostro relax domestico?  
 I conti sono presto fatti: 30W accesa 24/7 significa **720Wh ogni giorno, 259kWh all'anno**. Tanto? Come sempre, dipende.  
-Se lo volessimo compensare [cuocendo la pasta con il medodo Parisi](/articles/la-pasta-alla-parisi-1/), saremmo molto lontane dal pareggio, o dovremmo cucinare moltissimi piatti di pasta: con una pasta al giorno cotta in 2 litri si arrivano a risparmiare circa 40kWh in un anno.  
-Dovremmo salire di una classe energetica, andando al [kWh](/classes/kwh), e prendendo ad esempio i ragionamenti fatti sulle [docce](/articles/rescoprire-lacqua-calda/). In media una doccia al giorno ci fa consumare 720kWh anno, esattamente il doppio della nostra ipnotica amica lampada.  
+Se lo volessimo compensare {{< locallink href="articles/la-pasta-alla-parisi-1/">}}cuocendo la pasta con il medodo Parisi{{< /locallink>}}, saremmo molto lontane dal pareggio, o dovremmo cucinare moltissimi piatti di pasta: con una pasta al giorno cotta in 2 litri si arrivano a risparmiare circa 40kWh in un anno.  
+Dovremmo salire di una classe energetica, andando al [kWh](/classes/kwh), e prendendo ad esempio i ragionamenti fatti sulle {{< locallink href="articles/rescoprire-lacqua-calda/">}}docce{{< /locallink>}}. In media una doccia al giorno ci fa consumare 720kWh anno, esattamente il doppio della nostra ipnotica amica lampada.  
 Per non alterare il nostro budget energetico potremmo valutare di dimezzare le nostre docce, in durata o in numero.
 
 <!--

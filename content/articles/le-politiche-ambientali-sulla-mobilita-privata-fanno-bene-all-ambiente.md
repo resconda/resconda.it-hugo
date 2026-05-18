@@ -38,7 +38,7 @@ Ci sono diversi sistemi per fronteggiare e contenere questo tipo di emissioni. U
 
 Un altro sistema consiste nel promuovere l\'adozione di stili di guida volti a mantenere velocità relativamente basse ed a modificare il meno possibile il moto del veicolo (ridurre il più possibile frenate, accelerazioni e cambiamenti di direzione). Tale stile di guida è improbabile che venga spontaneamente adottato da automobilisti che tendono a considerare l'automobile come mezzo di soddisfazione personale più che di trasporto, ma può essere indotto tramite opportuni provvedimenti (che non sono ovviamente i dossi, le rotonde e i semafori...).
 
-La cosa certa è che prevedere una norma di ulteriore promozione della sostituzione del parco auto con modelli più recenti a minori emissioni non può che avere un effetto modesto sull'inquinamento atmosferico (anzi la sostituzione di una vecchia automobile può costituire un danno ambientale netto, come abbiamo spiegato [in un precedente articolo](/articles/veicoli-elettrici-quale-impatto-ambientale/)).
+La cosa certa è che prevedere una norma di ulteriore promozione della sostituzione del parco auto con modelli più recenti a minori emissioni non può che avere un effetto modesto sull'inquinamento atmosferico (anzi la sostituzione di una vecchia automobile può costituire un danno ambientale netto, come abbiamo spiegato {{< locallink href="articles/veicoli-elettrici-quale-impatto-ambientale/">}}in un precedente articolo{{< /locallink>}}).
 
 Un veicolo Euro 0 può, a certe condizioni, inquinare meno di un veicolo Euro 6. Si tratta, come sempre, di fare bene i conti.
 

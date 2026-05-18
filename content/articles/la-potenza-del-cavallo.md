@@ -37,7 +37,7 @@ Nonostante il Sistema Internazionale abbia standardizzato il watt, il cavallo va
 
 Per avere un confronto con grandezze non strettamente legate al mondo delle automobili, vediamo alcuni esempi di potenze su sistemi meccanici a noi familiari:
 
-- bicicletta: da [pillola precedente](/articles/autoprodurre-l-elettricita/), sappiamo che un ciclista professionista può sviluppare una potenza di circa 1 CV (700W) durante uno sforzo molto intenso ma per pochissimi minuti.  
+- bicicletta: da {{< locallink href="articles/autoprodurre-l-elettricita/">}}pillola precedente{{< /locallink>}}, sappiamo che un ciclista professionista può sviluppare una potenza di circa 1 CV (700W) durante uno sforzo molto intenso ma per pochissimi minuti.  
 - trattore agricolo: [range molto variabile](https://en.wikipedia.org/wiki/Tractor#Diesel), da poche decine a diverse centinaia di cavalli  
 - navi cargo transoceaniche: possono avere motori da decine, [anche centinaia](https://engineerine.com/mega-marine-engines/), di migliaia di cavalli vapore.
 
