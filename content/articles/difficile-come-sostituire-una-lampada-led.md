@@ -50,7 +50,7 @@ Consideriamo solo l’energia incorporata nella produzione (estrazione dei mater
 
 [Fonte sulla CED di una lampadina LED](https://ledvance.com/en-int/company/sustainability/product-sustainability/lca-pep/lca-of-a-led-lamp) 
 
-Nell’esempio abbiamo considerato una lampadina LED da 8W / 345 Lumen corrispondente ad una lampadina ad incandescenza da 40W. In termini di consumo significa che dopo 500 ore di uso (1,5 ore al giorno) la plafoniera LED diventa energeticamente più conveniente rispetto ad una lampadina ad incandescenza (preesistente). Sostituire una lampadina “tradizionale” con un sistema LED può quindi non essere vantaggioso in termini ambientali, a seconda delle circostanze (del modello d’uso), come abbiamo già sottolineato in altri ambiti come quelli dell’[auto](https://resconda.it/articles/veicoli-elettrici-quale-impatto-ambientale/) e degli [involucri edilizi](https://resconda.it/articles/efficientamento-energetico-quel-che-non-si-dice/).
+Nell’esempio abbiamo considerato una lampadina LED da 8W / 345 Lumen corrispondente ad una lampadina ad incandescenza da 40W. In termini di consumo significa che dopo 500 ore di uso (1,5 ore al giorno) la plafoniera LED diventa energeticamente più conveniente rispetto ad una lampadina ad incandescenza (preesistente). Sostituire una lampadina “tradizionale” con un sistema LED può quindi non essere vantaggioso in termini ambientali, a seconda delle circostanze (del modello d’uso), come abbiamo già sottolineato in altri ambiti come quelli dell’[auto](/articles/veicoli-elettrici-quale-impatto-ambientale/) e degli [involucri edilizi](/articles/efficientamento-energetico-quel-che-non-si-dice/).
 
  
 

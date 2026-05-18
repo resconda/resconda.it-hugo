@@ -1,0 +1,17 @@
+{{- $data := site.Data.robots -}}
+  {{- range $data.groups }}
+    {{- if .comment }}
+# {{ .comment }}
+    {{- end }}
+
+    {{- range .user_agents }}
+User-agent: {{ . }}
+    {{- end }}
+    {{- range .disallow }}
+Disallow: {{ . }}
+    {{- end }}
+    {{- range .allow }}
+Allow: {{ . }}
+  {{- end }}
+
+{{ end }}

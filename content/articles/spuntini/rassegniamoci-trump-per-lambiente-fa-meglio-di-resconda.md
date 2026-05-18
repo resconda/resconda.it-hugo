@@ -3,13 +3,13 @@ title: "Rassegniamoci: Trump per l’ambiente fa meglio di Resconda"
 date: 2025-04-09
 tags:
 - spuntini
-summary: "Alla vigilia delle elezioni americane avevamo ipotizzato in questo [post](https://resconda.it/articles/spuntini/trump-presidente-un-danno-per-lambiente/) che l’elezione di Trump avrebbe anche potuto avere un modesto effetto positivo sull’ambiente. Ci sbagliavamo: forse avrà un effetto enorme!"
+summary: "Alla vigilia delle elezioni americane avevamo ipotizzato in questo [post](/articles/spuntini/trump-presidente-un-danno-per-lambiente/) che l’elezione di Trump avrebbe anche potuto avere un modesto effetto positivo sull’ambiente. Ci sbagliavamo: forse avrà un effetto enorme!"
 cover_image:
  src: assets/post-img/spuntini_ydyjgc
 #  caption: 
 ---
 
-Alla vigilia delle elezioni americane avevamo ipotizzato in un [post precedente](https://resconda.it/articles/spuntini/trump-presidente-un-danno-per-lambiente/) che l’elezione di Trump avrebbe potuto avere anche qualche effetto positivo sull’ambiente, a dispetto della nota e dichiarata antipatia del Presidente verso i temi della lotta al cambiamento climatico. Ebbene ci sbagliavamo, ma solo nella dimensione di tali effetti\! 
+Alla vigilia delle elezioni americane avevamo ipotizzato in un [post precedente](/articles/spuntini/trump-presidente-un-danno-per-lambiente/) che l’elezione di Trump avrebbe potuto avere anche qualche effetto positivo sull’ambiente, a dispetto della nota e dichiarata antipatia del Presidente verso i temi della lotta al cambiamento climatico. Ebbene ci sbagliavamo, ma solo nella dimensione di tali effetti\! 
 
 Siamo lieti (ma un po’ sconfortati) nel constatare che il Presidente Trump potrebbe fare per la tutela dell’ambiente e per la lotta al cambiamento climatico più di quanto la nostra Associazione Resconda sia riuscita a fare fino ad oggi e possa fare in futuro…
 

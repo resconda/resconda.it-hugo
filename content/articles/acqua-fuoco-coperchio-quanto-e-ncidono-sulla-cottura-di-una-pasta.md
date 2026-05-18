@@ -14,7 +14,7 @@ classes:
 - kWh
 ---
 
-Abbiamo già confrontato i [diversi sistemi di generazione](https://resconda.it/articles/gas-elettrico-tradizionale-o-induzione/) del calore necessario a mantenere l’ebollizione, e trattato [tecniche “eccentriche” di cottura](https://resconda.it/articles/la-pasta-alla-parisi-1/) promosse niente meno che da premi Nobel per la fisica.
+Abbiamo già confrontato i [diversi sistemi di generazione](/articles/gas-elettrico-tradizionale-o-induzione/) del calore necessario a mantenere l’ebollizione, e trattato [tecniche “eccentriche” di cottura](/articles/la-pasta-alla-parisi-1/) promosse niente meno che da premi Nobel per la fisica.
 
 Vogliamo oggi porre l’attenzione sulla modalità con cui lasciamo la pentola sul fuoco, sia nella fase di riscaldamento fino all’ebollizione dell’acqua, sia nel lasso di tempo necessario ad avere la pasta cotta al punto giusto (al dente, su questo non si discute).
 

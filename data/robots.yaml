@@ -1,0 +1,28 @@
+groups:
+  - comment: "Block Meta AI Training Crawlers"
+    user_agents:
+      - meta-externalagent
+      - Meta-ExternalAgent
+      - FacebookBot
+      - Meta-ExternalFetcher
+    disallow:
+      - /
+
+  - comment: "Allow link preview crawler"
+    user_agents:
+      - facebookexternalhit
+    disallow:
+      - /cgi
+      - /staging
+    allow:
+      - /
+
+    # Final item in the the list
+  - comment: "Default rules"
+    user_agents:
+      - "*"
+    disallow:
+      - /cgi
+      - /staging
+    allow:
+      - /

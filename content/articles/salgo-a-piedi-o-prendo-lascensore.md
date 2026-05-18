@@ -13,7 +13,7 @@ classes:
 - kWh
 ---
 
-Abbiamo trattato il tema ascensori [in passato](https://resconda.it/articles/impatto-ambientale-dell-ascensore/), analizzando i vari fattori che contribuiscono al consumo totale di energia (elettrica) di un ascensore all’interno di un edificio.
+Abbiamo trattato il tema ascensori [in passato](/articles/impatto-ambientale-dell-ascensore/), analizzando i vari fattori che contribuiscono al consumo totale di energia (elettrica) di un ascensore all’interno di un edificio.
 
 Questa volta vogliamo concentrarci su uno degli aspetti che allora non avevamo approfondito, ma che è di fatto l’essenza dell’ascensore: l’energia necessaria a portare i “carichi” (persone, animali, buste della spesa, casse dell’acqua…) su e giù per i piani del palazzo.
 

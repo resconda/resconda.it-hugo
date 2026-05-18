@@ -16,7 +16,7 @@ classes:
 
 Tra i tanti lussi che l’abbondanza relativa di combustibili fossili ha garantito fino ad oggi ad un numero elevatissimo di persone c’è l’acqua calda corrente: poco più di 100 anni fa neanche i più ricchi potevano permettersi questo lusso (l’acqua andava scaldata sul fuoco…). Una bella doccia calda quando si vuole, on demand. 
 
-Abbiamo già trattato il tema dei costi energetici di una doccia calda in [questo post](https://resconda.it/articles/vado-a-farmi-una-doccia-calda/). Qui vogliamo quantificare un lusso ancora più “estremo” che la tecnologia (e l’energia a basso costo relativo) negli ultimi 50 anni fino ad oggi ha potuto offrire: l’acqua corrente calda “istantanea”.
+Abbiamo già trattato il tema dei costi energetici di una doccia calda in [questo post](/articles/vado-a-farmi-una-doccia-calda/). Qui vogliamo quantificare un lusso ancora più “estremo” che la tecnologia (e l’energia a basso costo relativo) negli ultimi 50 anni fino ad oggi ha potuto offrire: l’acqua corrente calda “istantanea”.
 
 Forse non tutti sanno che nei sistemi di distribuzione domestica dell’ACS (Acqua Calda Sanitaria) si trova oggi spesso un elemento il cui scopo è, appunto, garantire a chi si vuole lavare dell’acqua calda immediatamente disponibile, appena si apre il rubinetto: la “pompa di ricircolo”. Infatti, in una abitazione il rubinetto può essere lontano dall’elemento che scalda l’acqua (caldaia, boiler o altro) e in questo caso, di norma, serve tempo affinché l’acqua arrivi calda.   
 Tutti abbiamo fatto questa esperienza, tenendo la mano sotto il getto d’acqua prima di mettervi le altre parti del corpo. E chi ha voglia oggi di aspettare 2-3 minuti che l’acqua arrivi calda, che poi magari tocca pensare a qualcosa nel frattempo\! 
