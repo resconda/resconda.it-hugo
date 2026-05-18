@@ -16,7 +16,7 @@ tags:
 
 La guerra, distruggendo manufatti e organismi, può essere considerata come un'accelerazione temporanea dell'entropia. Essa dissipa grandi quantità di energia e produce {{< CO2 >}}.
 
-Nel marzo del 2022 la Russia avviava la sua "operazione speciale" per "l'eradicazione del nazismo" ucraino: ad essa dedicammo [il nostro primo post](https://resconda.it/articles/in-viaggio-verso-kiev/).
+Nel marzo del 2022 la Russia avviava la sua "operazione speciale" per "l'eradicazione del nazismo" ucraino: ad essa dedicammo [il nostro primo post](/articles/in-viaggio-verso-kiev/).
 
 Un [rapporto finanziato dall'European Climate Foundation](https://climatefocus.com/wp-content/uploads/2023/12/20231201_ClimateDamageWarUkraine18monthsEN.pdf) e realizzato con la collaborazione del governo Ucraino riportava il dato di 150 milioni di tonnellate di CO2e emesse a causa della guerra nei primi 18 mesi di guerra: di poco inferiori a quelle emesse dai Paesi Bassi in un anno.
 

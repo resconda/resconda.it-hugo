@@ -14,7 +14,7 @@ classes:
 - MWh
 ---
 
-La stagione invernale in montagna ha di nuovo stentato ad iniziare, nonostante in questo periodo le Alpi siano abbondantemente innevate. Così, a inizio dicembre, il Comune di Trento [si è trovato](https://corrieredeltrentino.corriere.it/notizie/cronaca/25_dicembre_09/monte-bondone-temperature-troppo-alte-sulle-piste-la-neve-arriva-in-elicottero-cd2a06e9-dfcb-48c8-a80b-872c5c380xlk.shtml) con molte piste non adeguatamente coperte. Le condizioni climatiche non permettevano nemmeno di produrre la neve con i classici “cannoni” – di cui abbiamo già parlato [tempo fa](https://resconda.it/articles/la-neve-a-tutti-e-costi/).  
+La stagione invernale in montagna ha di nuovo stentato ad iniziare, nonostante in questo periodo le Alpi siano abbondantemente innevate. Così, a inizio dicembre, il Comune di Trento [si è trovato](https://corrieredeltrentino.corriere.it/notizie/cronaca/25_dicembre_09/monte-bondone-temperature-troppo-alte-sulle-piste-la-neve-arriva-in-elicottero-cd2a06e9-dfcb-48c8-a80b-872c5c380xlk.shtml) con molte piste non adeguatamente coperte. Le condizioni climatiche non permettevano nemmeno di produrre la neve con i classici “cannoni” – di cui abbiamo già parlato [tempo fa](/articles/la-neve-a-tutti-e-costi/).  
 A fronte della possibile perdita di centinaia di migliaia di euro, la società che gestisce gli impianti della zona ha deciso di portare in vetta la neve – prodotta a valle con i cannoni – con l’elicottero.
 
 Il costo economico dichiarato è di 6000 euro. Ma noi come al solito siamo curiosi di sapere quanta energia sia servita a compiere l’operazione.

@@ -16,7 +16,7 @@ tags:
   - PET
 ---
 
-Come abbiamo già scritto in [*questo post*](https://resconda.it/articles/il-packaging-delle-bevande-cosa-e-meglio-scegliere/), **l'Italia è** il primo paese **consumatore di acque minerali** in bottiglia in Europa e il **secondo al mondo** (dopo il Messico). Nel nostro paese sono presenti oltre 260 differenti marchi di acque che imbottigliano ogni anno oltre 13 miliardi di litri di acqua. L'Italia (diversamente dal Messico) è però anche uno dei Paesi al mondo con la più elevata qualità organolettica delle acque distribuite dalla rete idrica.
+Come abbiamo già scritto in [*questo post*](/articles/il-packaging-delle-bevande-cosa-e-meglio-scegliere/), **l'Italia è** il primo paese **consumatore di acque minerali** in bottiglia in Europa e il **secondo al mondo** (dopo il Messico). Nel nostro paese sono presenti oltre 260 differenti marchi di acque che imbottigliano ogni anno oltre 13 miliardi di litri di acqua. L'Italia (diversamente dal Messico) è però anche uno dei Paesi al mondo con la più elevata qualità organolettica delle acque distribuite dalla rete idrica.
 
 Da un punto di vista del costo energetico (quindi, continuiamo a ripetere, anche di quello ambientale), la scelta più sostenibile alle acque in bottiglia è certamente l'acqua della rete idrica. Certo anche questa non è comunque "egratuita": il sistema di depurazione e di pompaggio, unitamente alla stessa rete idrica hanno un loro costo energetico sia d\'investimento che di operazione e manutenzione, che tuttavia è relativamente basso: secondo i dati [*Ecoinvent*](https://ecoinvent.org/) un metro cubo d'acqua in Europa ha un ecosto di 2,02 kWh ovvero, 2 Wh al litro (0,002 kWh).
 

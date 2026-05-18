@@ -9,7 +9,7 @@ cover_image:
 #  caption: 
 ---
 
-Quasi due anni fa ne avevamo parlato in [questo post](https://resconda.it/articles/spuntini/sostenibilita-dello-sviluppo-e-della-spesa-pubblica/): il Governo italiano ha speso circa 4 milioni di euro del PNRR per sensibilizzare e formare le persone sui temi dell’ambiente attraverso [un sito web](https://culturaeconsapevolezza.mase.gov.it/).
+Quasi due anni fa ne avevamo parlato in [questo post](/articles/spuntini/sostenibilita-dello-sviluppo-e-della-spesa-pubblica/): il Governo italiano ha speso circa 4 milioni di euro del PNRR per sensibilizzare e formare le persone sui temi dell’ambiente attraverso [un sito web](https://culturaeconsapevolezza.mase.gov.it/).
 
 Insomma, un po’ quello che cerchiamo di fare noi al costo di circa 100 euro l’anno.
 

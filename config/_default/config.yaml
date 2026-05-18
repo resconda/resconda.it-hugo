@@ -96,3 +96,4 @@ taxonomies:
   class: classes
 
 DefaultContentLanguage: it
+enableRobotsTXT: true
