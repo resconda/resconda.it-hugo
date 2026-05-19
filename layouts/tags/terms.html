@@ -9,7 +9,7 @@
         <!-- {{ range $idx, $tag := .Site.Taxonomies.tags.ByCount }}
         <div class="h{{math.Min 6 (math.Add $idx 1)}}">
             {{ with site.GetPage (path.Join "tags" .Name )}}
-            <a href="{{.Permalink}}">{{.LinkTitle}}</a> <span class="badge rounded-pill bg-secondary" style="font-size:smaller;"> &nbsp;{{- $tag.Count -}}&nbsp; </span>
+            <a href="{{.RelPermalink}}">{{.LinkTitle}}</a> <span class="badge rounded-pill bg-secondary" style="font-size:smaller;"> &nbsp;{{- $tag.Count -}}&nbsp; </span>
             {{ end }}
         </div>
         {{ end }} -->

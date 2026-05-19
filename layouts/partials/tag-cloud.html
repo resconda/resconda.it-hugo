@@ -14,7 +14,7 @@
 	{{ $steep := math.Div (math.Sub $maxSize $minSize) (math.Sub $maxCount $minCount)}}
 	{{ range (site.Taxonomies.tags) }}
 	{{ $size := math.Ceil (math.Mul $steep .Count )}}
-	<li><a href="{{ .Page.Permalink }}" style="--size: {{$size}}" data-count="{{.Count}}">{{ .Page.Title }}</a></li>
+	<li><a href="{{ .Page.RelPermalink }}" style="--size: {{$size}}" data-count="{{.Count}}">{{ .Page.Title }}</a></li>
 	{{ end }}
 </ul>
 <style>

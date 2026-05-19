@@ -5,7 +5,7 @@
 
 {{ $socials := slice $twitter_template $facebook_template $linkedin_template $mailto_template }}
 {{ $title := (htmlEscape .Title) }}
-{{ $link := .Permalink }}
+{{ $link := .RelPermalink }}
 <div>
     {{ range $socials }}
     {{ $url := replace (replace .url "__TITLE__" $title) "__LINK__" $link }}

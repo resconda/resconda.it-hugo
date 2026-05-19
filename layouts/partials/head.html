@@ -13,7 +13,7 @@
     <meta property="og:title" content={{ .Title | markdownify | plainify }} />
         {{ end }}
     {{ end}}
-    <meta property="og:url" content={{ .Permalink }} />
+    <meta property="og:url" content={{ .RelPermalink }} />
     {{ with .Summary}}
     <meta property="og:description" content={{ . | markdownify | plainify }} />
     {{ end }}
@@ -34,7 +34,7 @@
 
     <!-- <link rel="stylesheet" href="/css/bootstrap.min.css" /> -->
     {{ $styles := resources.Get "style.scss" | toCSS  }}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" type="text/css" />
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" type="text/css" />
     {{ if .Params.math }}{{ partial "helpers/katex.html"}}{{ end }}
 
     <!-- Friendly Captcha -->

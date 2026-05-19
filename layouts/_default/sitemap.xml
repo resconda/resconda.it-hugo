@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml">
     {{ range .Data.Pages }}
-    <url>{{ with .Permalink }}
+    <url>{{ with .RelPermalink }}
         <loc>{{ . }}</loc>
         {{- end -}}
         {{ with .Date }}
@@ -31,13 +31,13 @@
         <xhtml:link
             rel="alternate"
             hreflang="{{ .Language.Lang }}"
-            href="{{ .Permalink }}"
+            href="{{ .RelPermalink }}"
         />
             {{- end -}}
         <xhtml:link
             rel="alternate"
             hreflang="{{ .Language.Lang }}"
-            href="{{ .Permalink }}"
+            href="{{ .RelPermalink }}"
         />
         {{- end -}}
     </url>

@@ -11,7 +11,7 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
             {{ $currentPage := . }}
-            {{ $pageUrl := .Permalink }}
+            {{ $pageUrl := .RelPermalink }}
             {{ range site.Menus.main }}
             <li class="nav-item {{ .Params.class }} {{ if .HasChildren }}dropdown{{ end }} {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
                 <a class="nav-link {{if .HasChildren}}dropdown-toggle{{end}}" 
