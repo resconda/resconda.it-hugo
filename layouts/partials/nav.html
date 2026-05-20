@@ -11,17 +11,20 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
             {{ $currentPage := . }}
-            {{ $pageUrl := .RelPermalink }}
             {{ range site.Menus.main }}
             <li class="nav-item {{ .Params.class }} {{ if .HasChildren }}dropdown{{ end }} {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
                 <a class="nav-link {{if .HasChildren}}dropdown-toggle{{end}}" 
                 {{ if .HasChildren }}data-bs-toggle="dropdown"{{end}}
-                aria-current="page" href="{{.URL}}" role="button">{{.Name}}{{- if .Post -}}&nbsp;{{.Post}}{{end}}</a>
+                {{ with .Page }}
+                aria-current="page" href={{ .Page.RelPermalink }} role="button">{{.Name}}{{- if .Post -}}&nbsp;{{.Post}}{{end}}</a>
+                {{ else }}
+                aria-current="page" href={{ .URL }} role="button">{{.Name}}{{- if .Post -}}&nbsp;{{.Post}}{{end}}</a>
+                {{ end }}
                 {{ if .HasChildren }}
                 <ul class="dropdown-menu">
                     {{ range .Children }}
                     <li {{with .Class}}class="{{ .Params.class }}"{{end}}>
-                        <a class="dropdown-item" href="{{.URL}}">{{.Name}}</a>
+                        <a class="dropdown-item" href="{{.RelPermalink}}">{{.Name}}</a>
                     </li>
                     {{ end }}
                 </ul>
