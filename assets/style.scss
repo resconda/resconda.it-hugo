@@ -560,8 +560,10 @@ ul.cloud {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  line-height: 2.5rem;
-  
+  line-height: 1.1rem;
+  li {
+    margin-bottom: 0px;
+  }
   /* this shows the counter next to the tag label */
   // &[data-show-value] a::after {
   //   content: " (" attr(data-weight) ")";
