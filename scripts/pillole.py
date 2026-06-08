@@ -27,6 +27,7 @@ escaped_dash_regex = re.compile(r'\\-', re.MULTILINE)
 co2e_regex = re.compile(r'(\W)(CO2e?)(\W)')
 meter_powers_regex = re.compile(r'm(\d+)')
 b64_image_regex = re.compile(r'<data:image/.+;base64,.+>$')
+internal_links_regex = re.compile(r'(https://)?(www\.)?resconda\.it/articles/')
 
 def slugify(s):
   s = s.lower().strip()
@@ -83,6 +84,7 @@ class Article:
     def body(self, value):
         self._body = co2e_regex.sub("\\1{{< \\2 >}}\\3", value)
         self._body = meter_powers_regex.sub("{{< sup>}}\\1{{</sup>}}", self._body)
+        self._body = internal_links_regex.sub("/articles/", self._body)
 
     
     def header_lines(self) -> list[str]:
