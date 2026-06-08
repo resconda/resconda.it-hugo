@@ -2,7 +2,9 @@
 title: "Mezzo chilo di maccheroni: quanta energia ci vuole davvero?"
 date: 2026-06-08
 tags:
-- cietti
+- cibo
+- lavoro
+- combustibili fossili
 summary: "Il punto di partenza è semplice: un'impastatrice + estrusore manuale, 90 minuti di lavoro fisico sodo, mezzo chilo di maccheroni. Quanta energia abbiamo usato? E quanto sarebbero costati i maccheroni senza i “famigerati” combustibili fossili?"
 cover_image:
  src: assets/post-img/pasta3_p6rvb9

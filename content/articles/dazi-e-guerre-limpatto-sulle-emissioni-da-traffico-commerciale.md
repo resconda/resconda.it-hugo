@@ -2,7 +2,9 @@
 title: "Dazi e guerre: l'impatto sulle emissioni da traffico commerciale"
 date: 2026-06-08
 tags:
-- ama
+- commercio
+- traffico marittimo
+- combustibili fossili
 summary: "Lo scenario che si è materializzato tra il 2025 e il maggio 2026 è senza precedenti: per la prima volta, uno shock tariffario globale di prima grandezza si è sovrapposto a una crisi di transito energetico-marittimo, interrompendo simultaneamente i flussi di merci manifatturiere e quelli di energia."
 cover_image:
  src: assets/post-img/crisi_h6obk7
