@@ -97,3 +97,6 @@ taxonomies:
 
 DefaultContentLanguage: it
 enableRobotsTXT: true
+
+security:
+  allowContent: ["^text/markdown$", "^text/html$"]
