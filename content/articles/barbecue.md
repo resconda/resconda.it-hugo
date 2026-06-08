@@ -73,16 +73,8 @@ veg quali possono essere il tofu e/o i burger vegetali (abbiamo rimosso
 il "ham-" per non incorrere in problemi legali).  
 Del contenuto energetico del manzo abbiamo già parlato in una
 [precedente pillola](/articles/volete-carne-o-pomodori/): 35
-kWh/kg. Il maiale è un po' meno impattante: possiamo ragionevolmente
-stimare l'energia necessaria a produrre un chilo di carne di maiale
-facendo la proporzione con le emissioni di gas climalteranti rispetto al
-manzo, dato ben noto e riportato nella figura sotto: il rapporto
-emissioni manzo/maiale è di circa 8, pertanto possiamo aspettarci che
-l'energia necessaria a produrre un chilo di carne di maiale sia
-dell'ordine di 4,5 kWh/kg.  
-Poniamo per semplicità che **il mix manzo-maiale** della grigliata sia
-50-50. **Per i 500g totali consumati da una persona otteniamo**: 0,250
-kg \* (35 + 4,5) kWh/kg = **9,88 kWh.**
+kWh/kg. Il maiale è un po’ meno impattante: secondo i dati dell’app Suasì sviluppata da Resconda, l’energia necessaria a produrre un chilo di carne di maiale è di 14 kWh/kg. 
+Poniamo per semplicità che **il mix manzo-maiale** della grigliata sia 50-50. **Per i 500g totali consumati da una persona otteniamo**: 0,250 kg * (35 + 14) kWh/kg = **12,25 kWh**.
 
 {{< cloudinary_img src="assets/post-img/greenhouse-gas-emissions-per-kilogram-of-food-product_1_jzngmd" >}}
 
@@ -98,7 +90,7 @@ kg \* 0,35 kWh/kg = **0,43 kWh**.
 **Il confronto tra impatti energetici per le due soluzioni relative alla
 parte proteica della grigliata, carne di manzo e maiale da un lato e
 tofu e legumi da un altro, vede la soluzione veg consumare molta meno
-energia, più di venti volte meno rispetto alla controparte carnivora.**
+energia, quasi trenta volte meno rispetto alla controparte carnivora.**
 
 Il fedele lettore rescondiano non si sarà sorpreso nell'osservare
 ([ancora una volta](/impatto-ambientale-a-la-carte-riso-o-cotoletta/))
