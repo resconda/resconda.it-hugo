@@ -14,6 +14,7 @@ cover_image:
 #  caption: 
 classes:
 - MWh
+speak: assets/audio/post-readings/barbecue_ytzcez
 ---
 
 [Con l'arrivo dei primi (notevoli) caldi, il rito della grigliata

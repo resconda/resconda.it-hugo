@@ -11,6 +11,7 @@ cover_image:
 #  caption: 
 classes:
 - kWh
+speak: assets/audio/post-readings/mezzo_kg_di_pasta_gcueiu
 ---
 
 Quando impastiamo a mano, consumiamo un sacco di energia. Quando

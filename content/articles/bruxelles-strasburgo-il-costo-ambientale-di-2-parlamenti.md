@@ -11,6 +11,7 @@ cover_image:
 #  caption: 
 classes:
 - GWh
+speak: assets/audio/post-readings/pe_p94z9t
 ---
 
 Le sedi dei massimi organismi dell'Unione Europea si trovano in due

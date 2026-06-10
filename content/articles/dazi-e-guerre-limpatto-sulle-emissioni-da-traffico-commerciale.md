@@ -11,6 +11,7 @@ cover_image:
 #  caption: 
 classes:
 - GWh
+speak: assets/audio/post-readings/dazi_e_guerre_adjvvx
 ---
 
 Lo scenario che si è materializzato tra il 2025 e il maggio 2026 è senza

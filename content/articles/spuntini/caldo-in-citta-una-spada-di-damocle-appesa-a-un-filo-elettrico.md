@@ -7,6 +7,7 @@ summary: "A maggio caldo record in tutto il mondo, comprese le città italiane. 
 cover_image:
  src: assets/post-img/spuntini_2_lfxx7r
 #  caption: 
+speak: assets/audio/post-readings/caldo_in_citta_gdeyus
 ---
 
 La fine del mese di maggio ha visto diversi nuovi record di temperature
