@@ -9,6 +9,9 @@ summary: |
 cover_image:
   src: assets/post-img/cropped-Wildfires-and-Climate-Change_ge7prp
 tags:
+- Cambiamento Climatico
+- CO2
+- Combustibili Fossili
   - clima
   - sovrappopolazione
   - CO2

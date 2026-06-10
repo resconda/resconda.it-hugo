@@ -2,9 +2,9 @@
 title: "Per un pugno di coriandoli. Energia che “investiamo” nel Carnevale"
 date: 2026-03-07
 tags:
+- Carnevale
 - Coriandoli
-- Carnevale 
-- Carta
+- Rifiuti
 summary: "Leggeri come l’aria quando li lanciamo, ma assai meno dal punto di vista energetico: i coriandoli del Carnevale italiano richiedono circa 4,5 GWh di energia per essere prodotti!"
 cover_image:
  src: assets/post-img/wig-3128515_1280_ccqi5i

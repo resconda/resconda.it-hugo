@@ -2,8 +2,8 @@
 title: "Convocazione Assemblea dei Soci dell'Associazione Resconda"
 date: 2026-04-11
 tags:
-- eventi
-- suasì
+- Eventi
+- Suasì
 summary: "I soci di Resconda sono tutti invitati a partecipare alla Assemblea annuale che avrà luogo mercoledì 22 Aprile alle ore 21.00. "
 cover_image:
  src: assets/img/logo/logo_scritta_stacked

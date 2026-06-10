@@ -7,6 +7,10 @@ date: 2022-03-12
 cover_image:
   src: assets/post-img/ua_russian_convoy_satellite # optional
 tags:
+- Trasporti
+- Treni
+- Combustibili Fossili
+- CO2
   - ordini di grandezza
   - energia
   - fossile

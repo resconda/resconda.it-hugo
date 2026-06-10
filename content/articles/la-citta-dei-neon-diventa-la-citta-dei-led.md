@@ -9,9 +9,11 @@ cover_image: # optional
 classes:
 - MWh
 tags:
-- Energia
-- Tecnologia
-- Spettacolo
+- Illuminazione
+- LED
+- Efficienza Energetica
+- Costo Economico
+
 ---
 
 A fine settembre 2023 è stata inaugurata a Las Vegas *The Sphere*, una struttura sferica alta più di 100 metri sorretta da un telaio in acciaio da 3 mila tonnellate. Lo scopo di questa attrazione, oltre a stupire il mondo e riempire i social di video e di post, è quello di ospitare eventi di vario tipo, vendendo a cifre folli il biglietto per uno dei quasi 19 mila posti disponibili.

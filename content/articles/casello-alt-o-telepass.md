@@ -9,6 +9,9 @@ cover_image:
 classes: 
   - Wh
 tags:
+- Trasporti
+- Automobili
+- Costo Economico
   - energia
 ---
 

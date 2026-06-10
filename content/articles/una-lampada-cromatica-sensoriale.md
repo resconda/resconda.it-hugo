@@ -9,6 +9,9 @@ cover_image:
 classes:
   - Wh
 tags:
+- Illuminazione
+- Elettricità
+- LED
   - ordini di grandezza
   - lampadine
 ---

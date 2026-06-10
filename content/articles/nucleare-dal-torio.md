@@ -2,10 +2,8 @@
 title: "Nucleare dal torio"
 date: 2025-09-10
 tags:
-- nucleare
-- torio
-- uranio
-- cina
+- Nucleare
+- Fonti Rinnovabili
 summary: "Quando si parla di centrali nucleari il pensiero va immediatamente all’uranio. Ma non tutti sanno che esistono altri elementi che permettono di creare energia da fissione. Uno di questi è il torio. Vediamo perché se ne sta parlando recentemente."
 cover_image:
   src: assets/post-img/ai-generated-8649793_1920_aolfgv

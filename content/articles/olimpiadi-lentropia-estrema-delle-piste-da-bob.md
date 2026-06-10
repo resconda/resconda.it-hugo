@@ -2,11 +2,11 @@
 title: "Olimpiadi: l’entropia “estrema” delle piste da bob"
 date: 2026-02-07
 tags:
+- Istituzioni
 - Olimpiadi
-- Sport
 - Edilizia
-- inverno
-- ghiaccio
+- Embodied Energy
+- Rifiuti
 summary: "A Cortina è stata realizzata l’ennesima pista da bob, inevitabilmente destinata a trasformarsi in un rudere invaso dalla vegetazione. Qual’è il costo ambientale di qualche ora di trasmissione televisiva, per quanto entusiasmante?"
 cover_image:
  src: assets/post-img/bob_erlpol

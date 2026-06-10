@@ -10,6 +10,10 @@ cover_image: # optional
 classes:
   - kWh
 tags:
+- Casa
+- Elettrodomestici
+- Efficienza Energetica
+- Costo Economico
   - estate
   - casa
   - energia

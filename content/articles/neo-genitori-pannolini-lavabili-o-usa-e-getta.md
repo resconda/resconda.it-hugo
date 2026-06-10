@@ -9,6 +9,11 @@ cover_image: # optional
 classes:
   - MWh
 tags:
+- Acqua
+- Rifiuti
+- Monouso
+- Embodied Energy
+- Costo Economico
   - Energia
   - Casa
   - Famiglia

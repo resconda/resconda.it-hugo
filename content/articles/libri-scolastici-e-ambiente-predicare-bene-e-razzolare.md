@@ -11,6 +11,9 @@ cover_image: # optional
 classes:
   - GWh
 tags:
+- Carta
+- Edilizia
+- Embodied Energy
   - Energia
   - Consumi
   - Libri

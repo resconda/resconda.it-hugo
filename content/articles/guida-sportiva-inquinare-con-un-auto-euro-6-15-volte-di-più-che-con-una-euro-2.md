@@ -2,10 +2,11 @@
 title: "Guida “sportiva”: inquinare con un auto “Euro 6” 15 volte di più che con una “Euro 2”"
 date: 2025-02-05
 tags:
+- Trasporti
 - Automobili
-- Polveri sottili
-- mobilità
-- Inquinamento
+- Emissioni
+- CO2
+- Efficienza Energetica
 summary: "Il comportamento alla guida di un auto può impattare sull’ambiente molto più dell’omologazione del veicolo rispetto alle famose direttive europee sulle emissioni. Abbiamo fatto delle ipotesi. "
 cover_image:
   src: assets/post-img/co2-4767388_1280_v2eu56

@@ -2,10 +2,11 @@
 title: "Acqua, fuoco, coperchio: quanto e-ncidono sulla cottura di una pasta?"
 date: 2025-05-12
 tags:
-- cibo
-- cucina
-- pasta
-- gas
+- Cottura
+- Pasta
+- Alimentazione
+- Gas
+- Efficienza Energetica
 summary: "La preparazione dei cibi è spesso motivo di diatribe familiari. Una di queste riguarda una preparazione quotidiana nelle cucine italiane: la pasta. Non trovate qui la ricetta perfetta della carbonara, ma un confronto di consumi energetici tra le varie modalità di cottura della pasta su un fornello a gas."
 cover_image:
  src: assets/post-img/32865710525_0ee4bf437f_o_kv3sgz

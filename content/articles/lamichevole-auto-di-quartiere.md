@@ -2,10 +2,11 @@
 title: "L’amichevole auto di quartiere"
 date: 2025-10-10
 tags:
-- auto  
-- sharing  
-- risparmio  
-- efficienza
+- Trasporti
+- Automobili
+- Sharing
+- Mobilità Sostenibile
+- Efficienza Energetica
 summary: "Un socio ha sperimentato una forma di utilizzo dell’auto a metà strada tra uso privato tradizionale e car sharing. L’intento è quello di minimizzare le ore in cui il mezzo rimane parcheggiato, migliorando quindi l’efficienza di tutti i MWh di CED usati per costruirlo. Vediamo com'è andata."
 cover_image:
  src: assets/post-img/shake-hand-3677534_jbkhhd

@@ -2,7 +2,9 @@
 title: "Crisi energetica, crescita, decrescita e l’elefante nella stanza"
 date: 2026-05-11
 tags:
-- spuntini
+- Combustibili Fossili
+- Economia
+- Politica
 cover_image:
  src: assets/post-img/spuntino_pru4jx
 #  caption: 

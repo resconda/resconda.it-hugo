@@ -10,6 +10,9 @@ cover_image:
 classes:
   - MWh
 tags:
+- Efficienza Energetica
+- Edilizia
+- Tecnologia
   - efficienza
   - sostenibilità
   - tecnologia

@@ -2,10 +2,11 @@
 title: "Edilizia è deliziosa ma quanto ci e-costa!"
 date: 2025-10-10
 tags:
-- edilizia
-- ristrutturazione
-- embodied energy
-- efficientamento energetico
+- Edilizia
+- Riscaldamento
+- Isolamento
+- Embodied Energy
+- Efficienza Energetica
 summary: "Torniamo su un argomento già affrontato a suo tempo: una casa ben coibentata permette di ridurre i consumi di energia per la climatizzazione invernale ed estiva, con un conseguente grande vantaggio ambientale. Ma è proprio sempre così?"
 cover_image:
  src: assets/post-img/brick-17165_1920_itvlze

@@ -8,6 +8,10 @@ cover_image: # optional
   src: assets/post-img/bibita_dm6kjk
 #   caption: "caption string"
 tags:
+- Alimentazione
+- Imballaggi
+- Plastica
+- CO2
   - cibo
   - emergy
   - bevande

@@ -2,9 +2,9 @@
 title: "Si chiama rete elettrica e, come tutte le reti, è bucata."
 date: 2025-11-07
 tags:
-- rete elettrica
-- elettricità
-- utenze domestiche
+- Casa
+- Rete Elettrica
+- Elettricità
 summary: "Non solo la rete idrica perde: anche quella elettrica. Ogni anno vengono dispersi dalla (e nella) rete elettrica nazionale circa 30 TWh, più di 500 kWh pro capite. Come se ogni italiano facesse un lavaggio in lavatrice ogni giorno (oltre a quelle che già fa). "
 cover_image:
  src: assets/post-img/tralicci_ppanew

@@ -10,6 +10,9 @@ cover_image: # optional
 classes:
   - kWh
 tags:
+- Acqua
+- Costo Economico
+- Embodied Energy
   - Energia
   - Acqua
   - Consumi

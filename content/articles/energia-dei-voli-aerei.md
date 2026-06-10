@@ -9,6 +9,10 @@ cover_image:
 classes:
   - MWh
 tags:
+- Trasporti
+- Aviazione
+- Combustibili Fossili
+- CO2
   - energia
   - fossile
 summary: |

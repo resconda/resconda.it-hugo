@@ -9,6 +9,9 @@ summary: |
 cover_image:
   src: assets/post-img/mastercard_2Bcarbon_2Bcalculator_saebsh
 tags:
+- CO2
+- EmCoin
+- Costo Economico
   - CO2
   - EmCoin
 ---

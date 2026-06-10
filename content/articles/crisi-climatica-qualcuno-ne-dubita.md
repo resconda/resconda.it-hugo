@@ -8,6 +8,9 @@ summary: # leave blank if no summary is provided
 cover_image:
   src: assets/post-img/500_scienziati_oeooj3
 tags:
+- Cambiamento Climatico
+- CO2
+- Combustibili Fossili
   - clima
 ---
 

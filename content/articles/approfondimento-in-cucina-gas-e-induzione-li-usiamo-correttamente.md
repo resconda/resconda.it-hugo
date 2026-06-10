@@ -2,11 +2,12 @@
 title: "Approfondimento in cucina. Gas e Induzione: li usiamo correttamente?"
 date: 2025-12-04
 tags:
-- energia
-- gas
-- cucina
-- casa
-- fornelli
+- Cottura
+- Pasta
+- Alimentazione
+- Gas
+- Elettricità
+- Efficienza Energetica
 summary: "Un approfondimento con qualche numero e diversi scenari sui consumi e sull’utilizzo dei fornelli da cucina. Come esempio useremo uno dei temi più popolari delle nostre pillole: la cottura della pasta!"
 cover_image:
   src: assets/post-img/flame

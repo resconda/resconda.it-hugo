@@ -2,10 +2,10 @@
 title: "Fragole a Natale: bene ma non troppo"
 date: 2025-12-04
 tags:
-- alimentazione
-- agricoltura
-- ortofrutta
-- stagionalità
+- Alimentazione
+- Ortofrutta
+- Stagionalità
+- Embodied Energy
 summary: "Si sa che l’impatto ambientale della frutta e verdura dipende molto dalla stagione. Tuttavia ormai nei supermercati dei Paesi ricchi troviamo di tutto tutto l’anno. Come comportarsi? Diamo un po’ di numeri, partendo dalle fragole."
 cover_image:
  src: assets/post-img/greenhouse-354301_1920_f9bx9l

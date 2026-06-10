@@ -10,6 +10,9 @@ cover_image: # optional
 classes:
   - Wh
 tags:
+- Greenwashing
+- Aviazione
+- Moda
   - aerei
   - green washing
   - imprese

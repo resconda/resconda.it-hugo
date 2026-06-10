@@ -2,10 +2,12 @@
 title: "Poca neve in montagna? La portiamo con l’elicottero!"
 date: 2026-02-07
 tags:
-- neve
-- montagna
-- elicottero
-- sci
+- Sport
+- Neve
+- Montagna
+- Elicottero
+- Cambiamento Climatico
+- Sci
 summary: "È successo a Trento a inizio dicembre 2025, ma ci sono dei precedenti. Dato il continuo innalzarsi dello zero termico nella stagione invernale, c’è forse il rischio che questo diventi una prassi? E a quale e-costo?"
 cover_image:
  src: assets/post-img/dirkek-mountains-7661634_640_bk025c

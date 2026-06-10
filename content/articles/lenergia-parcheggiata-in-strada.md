@@ -9,6 +9,10 @@ cover_image: # optional
 classes:
   - TWh
 tags:
+- Trasporti
+- Automobili
+- EV
+- Elettricità
   - città
   - energia
   - auto

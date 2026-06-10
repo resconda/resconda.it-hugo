@@ -2,10 +2,10 @@
 title: "Challenge: prosciutto crudo contro lavatrici!"
 date: 2025-04-09
 tags:
-- cibo  
-- elettrodomestici  
-- Suasì
-- challenge
+- Alimentazione
+- Carne
+- Embodied Energy
+- Challenge
 summary: "Si sa che un lavaggio in lavatrice consuma parecchia energia. Meno noto è che anche 3 etti di prosciutto crudo consumino parecchia energia. Possiamo confrontare prosciutto e lavatrice? "
 cover_image:
  src: assets/post-img/HAM_CHALLANGE_vl9zc0

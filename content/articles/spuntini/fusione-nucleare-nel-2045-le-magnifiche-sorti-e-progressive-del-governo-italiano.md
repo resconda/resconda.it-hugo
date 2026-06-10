@@ -2,7 +2,9 @@
 title: "Fusione nucleare nel 2045: le magnifiche sorti e progressive del Governo italiano "
 date: 2025-03-10
 tags:
-- spuntini
+- Istituzioni
+- Nucleare
+- Politica
 summary: "Il Ministro dell'Ambiente e della Sicurezza energetica Gilberto Pichetto Fratin vuole partecipare all’inaugurazione della prima centrale a fusione nucleare, quindi fissa nel PNIEC la data al 2045 (perché poi magari è morto)."
 cover_image:
  src: assets/post-img/Centrale_a_fusione_nucleare_di_Avezzano_AQ_Anno_2045_1_ik71q6

@@ -2,10 +2,12 @@
 title: "Tosaerba, soffiatori e rastrelli. Anche il verde ha un impatto ambientale!"
 date: 2026-01-06
 tags:
+- Casa
 - Giardinaggio
-- Decespugliatori
 - Tosaerba
-- Soffiatori 
+- Soffiatori
+- Decespugliatori
+- Elettrodomestici
 summary: "Un focus sul consumo delle macchine da giardinaggio ed un ragionamento su come possiamo ottimizzare l’energia spesa per mantenere i nostri parchi e giardini "
 cover_image:
  src: assets/post-img/Verde_Urbano_aen8ru

@@ -2,9 +2,9 @@
 title: "Anche l’acqua potabile? Ma quante cose si possono ottenere dall’aria?"
 date: 2025-09-10
 tags:
-- acqua
-- aria
-- CO2
+- Acqua
+- Aria
+- Elettricità
 summary: "Non solo benzina ma anche acqua potabile estratta dall'aria. Sembrerebbe che dall'aria si possano ottenere un sacco di cose! Vediamo di cosa si tratta."
 cover_image:
  src: assets/post-img/Atmospheric_Water_Generator_diagram_jzjtzw

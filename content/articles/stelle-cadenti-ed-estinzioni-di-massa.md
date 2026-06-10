@@ -2,8 +2,10 @@
 title: "Stelle cadenti ed estinzioni di massa"
 date: 2024-12-05
 tags:
-- automobili  
-- mobilità
+- Trasporti
+- Automobili
+- Industria
+- Embodied Energy
 summary: "Automobili come i dinosauri? Nei giorni in cui si assiste allo psicodramma collettivo delle dimissioni del CEO di Stellantis ed al dibattito sul futuro dell’automotive, forse occorre guardare al passato per capire perché l’industria automobilistica non sarà più la stessa."
 cover_image:
  src: assets/post-img/Immagine_2024-12-03_173140_yntdq0

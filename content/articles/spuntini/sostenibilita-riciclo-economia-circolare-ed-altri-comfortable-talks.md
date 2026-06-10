@@ -2,7 +2,9 @@
 title: "Sostenibilità, riciclo, economia circolare ed altri “*comfortable talks*”"
 date: 2025-10-10
 tags:
-- spuntini
+- Riciclo
+- Greenwashing
+- Politica
 cover_image:
  src: assets/post-img/plastics-4675036_1920_dhkw0e
 #  caption: 

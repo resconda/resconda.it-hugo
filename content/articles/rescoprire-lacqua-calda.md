@@ -10,6 +10,10 @@ cover_image:
 classes:
   - kWh
 tags:
+- Casa
+- Acqua
+- Riscaldamento
+- Efficienza Energetica
   - energia
 ---
 

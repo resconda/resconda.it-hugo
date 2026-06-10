@@ -2,11 +2,12 @@
 title: "Consumiamo carburante per spostare aria!"
 date: 2026-05-12
 tags:
-- auto 
-- carburante 
-- consumi 
-- aerodinamica 
-- velocità
+- Trasporti
+- Automobili
+- Carburante
+- Aerodinamica
+- Velocità
+- Efficienza Energetica
 summary: |
     La resistenza aerodinamica impatta enormemente sui consumi, a seconda della forma del nostro veicolo, la differenza di consumo di carburante tra 100 e 130 km/h può arrivare a quasi il 30%. Siamo disposti a prenderci il lusso di “rallentare”?
 cover_image:

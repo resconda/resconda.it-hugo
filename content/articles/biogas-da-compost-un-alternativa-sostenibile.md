@@ -10,6 +10,10 @@ cover_image: # optional
   src: assets/post-img/environment-7864984_1280_utlopv
 #   caption: "caption string"
 tags:
+- Agricoltura
+- Fonti Rinnovabili
+- Rifiuti
+- Gas
   - sostenibilità
   - biogas
 classes: # this is a list but one energy class should be set

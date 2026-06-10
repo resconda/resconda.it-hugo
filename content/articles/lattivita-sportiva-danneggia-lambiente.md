@@ -2,10 +2,11 @@
 title: "L’attività sportiva danneggia l’ambiente?"
 date: 2025-11-07
 tags:
-- sport
-- alimentazione
-- calorie
-- corpo umano
+- Sport
+- Corpo Umano
+- Metabolismo
+- Alimentazione
+- Costo Economico
 summary: "L’attività sportiva, si sa, fa stare bene, sia da un punto di vista fisico che mentale. Ma il fatto di bruciare calorie più velocemente rende uno sportivo più energivoro e quindi meno efficiente di una persona sedentaria ?"
 cover_image:
  src: assets/post-img/man-5668774_1920_rlgg3h

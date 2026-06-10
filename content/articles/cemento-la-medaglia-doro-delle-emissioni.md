@@ -2,9 +2,12 @@
 title: "Cemento: la medaglia d’oro delle emissioni?"
 date: 2026-02-07
 tags:
-- cemento
-- edilizia 
-- olimpiadi 
+- Materiali
+- Cemento
+- Edilizia
+- Emissioni
+- CO2
+- Embodied Energy
 summary: "L’industria del cemento è responsabile di circa il 7% delle emissioni globali. Quanta energia è racchiusa nella polvere grigia che costituisce l’elemento base della nostra “tecnostruttura”?"
 cover_image:
  src: assets/post-img/Cemento2_xkkbcu

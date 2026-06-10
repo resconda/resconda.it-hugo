@@ -2,12 +2,11 @@
 title: "Barbecue!!!"
 date: 2026-06-08
 tags:
-- grigliate
-- carne
-- proteine vegetali
-- carbonella
-- gas
-- barbecue
+- Alimentazione
+- Carne
+- Cottura
+- Barbecue
+- Embodied Energy
 summary: "È giugno, si accendono i barbecue. Ma quanto pesa realmente una grigliata? Confrontiamo l'energia incorporata in 500g di costine, tofu e hamburger vegetali e il vero impatto di carbonella e gas. I numeri potrebbero cambiare le vostre prossime domeniche all'aperto."
 cover_image:
  src: assets/post-img/bbq_tbkpbk

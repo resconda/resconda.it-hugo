@@ -8,6 +8,10 @@ cover_image: # optional
   src: assets/post-img/ponte_xjgj2b
 #   caption: "caption string"
 tags:
+- Istituzioni
+- Edilizia
+- CO2
+- Costo Economico
   - cemento
   - grandi opere
   - CO2

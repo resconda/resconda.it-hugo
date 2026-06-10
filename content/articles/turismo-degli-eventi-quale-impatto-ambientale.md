@@ -10,6 +10,10 @@ cover_image:
 classes:
   - MWh
 tags:
+- Turismo
+- Trasporti
+- CO2
+- Emissioni
   - turismo
   - sostenibilità
 ---

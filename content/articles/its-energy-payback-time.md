@@ -9,6 +9,9 @@ cover_image: # optional
 classes:
   - GWh
 tags:
+- Fonti Rinnovabili
+- Embodied Energy
+- EROEI
   - Rinnovabili
   - Eolico
   - Turbine

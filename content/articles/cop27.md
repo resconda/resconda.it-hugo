@@ -10,6 +10,9 @@ summary: |
 cover_image:
   src: assets/post-img/52499223179_2d872ce78a_k_vgvvsp
 tags:
+- Istituzioni
+- COP
+- Cambiamento Climatico
   - COP
 classes:
   - GWh

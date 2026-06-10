@@ -2,9 +2,9 @@
 title: "La rivincita del geotermico?"
 date: 2025-07-06
 tags:
-- energia
-- geotermia
-- rinnovabili
+- Fonti Rinnovabili
+- Geotermia
+- Elettricità
 summary: "Forse non tutto il *Oil&Gas* viene per nuocere: gli sviluppi degli ultimi anni nel settore del fracking per massimizzare l’efficienza (leggi *i profitti*), possono migliorare le performance di una fonte energetica più sostenibile: l’energia geotermica."
 cover_image:
  src: assets/post-img/5989834340_2e6584ed29_o_kxysiq

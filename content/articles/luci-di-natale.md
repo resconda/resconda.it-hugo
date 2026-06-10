@@ -8,9 +8,10 @@ cover_image: # optional
   src: assets/post-img/tree_lights_ratsbr
   caption: "Credits: [christmasstockimages.com](http://christmasstockimages.com/free/xmas-lights/slides/tree_lights.htm)"
 tags:
-- Natale
-- elettricità
-- feste
+- Casa
+- Illuminazione
+- LED
+- Costo Economico
 classes:
 - GWh
 

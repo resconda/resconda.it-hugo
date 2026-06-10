@@ -9,6 +9,10 @@ cover_image: # optional
 classes:
   - kWh
 tags:
+- Corpo Umano
+- Potenza
+- Metabolismo
+- Costo Economico
   - elettricità
   - energia
 ---

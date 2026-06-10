@@ -10,6 +10,11 @@ cover_image: # optional
   src: assets/post-img/Soft_drink_shelf_2_xuguc9
 #   caption: "caption string"
 tags:
+- Materiali
+- Imballaggi
+- Plastica
+- Vetro
+- Embodied Energy
   - packaging
   - bevande
 classes:

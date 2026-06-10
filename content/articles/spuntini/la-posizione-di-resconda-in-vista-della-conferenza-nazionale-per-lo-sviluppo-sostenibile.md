@@ -2,7 +2,9 @@
 title: "La posizione di Resconda in vista della Conferenza Nazionale per lo Sviluppo Sostenibile"
 date: 2025-11-08
 tags:
-- spuntini
+- Istituzioni
+- Politica
+- Cambiamento Climatico
 cover_image:
  src: assets/post-img/spuntini_sira1a
 #  caption: 

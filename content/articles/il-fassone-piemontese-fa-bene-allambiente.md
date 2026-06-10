@@ -6,9 +6,10 @@ cover_image:
 #   caption:
 summary: "Ci han sempre detto che il consumo di carne ha un impatto ambientale significativo e invece scopriamo che è vero il contrario! Ma com’è che non se ne parla sui giornali di tutto il mondo?"
 tags:
-- allevamento  
-- carne  
-- emissioni
+- Alimentazione
+- Carne
+- Allevamento
+- Embodied Energy
 classes:
 - kWh
 ---

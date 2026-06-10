@@ -10,10 +10,10 @@ cover_image: # optional
 classes:
 - kWh
 tags:
-- energia
-- casa
-- consumi
-- elettrodomestici
+- Casa
+- Elettrodomestici
+- Elettricità
+- Costo Economico
 
 ---
 

@@ -2,7 +2,9 @@
 title: "Gli obiettivi non sono tutti uguali"
 date: 2025-02-05
 tags:
-- spuntini
+- Istituzioni
+- Politica
+- Cambiamento Climatico
 cover_image:
  src: assets/post-img/Agenda-2030-scaled_lgc9q2
 summary: |

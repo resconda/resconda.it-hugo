@@ -2,10 +2,10 @@
 title: "COP 29 e nulla si muove"
 date: 2024-12-05
 tags:
-- COP  
-- transizione  
-- cambiamento climatico  
-- CO2
+- Istituzioni
+- COP
+- Cambiamento Climatico
+- Geopolitica
 summary: "Anche quest’anno parliamo della COP, tenutasi a novembre a Baku ed in cui decine di migliaia di delegati (tra cui 1.773 lobbisti del *oil&gas*), hanno discusso di cambiamento climatico. Solo qualche annotazione a margine di questo *bla bla* ad alto livello..."
 cover_image:
  src: assets/post-img/cop29_jeefsd

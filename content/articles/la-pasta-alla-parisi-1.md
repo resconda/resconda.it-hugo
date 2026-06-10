@@ -10,6 +10,10 @@ cover_image:
 classes:
   - Wh
 tags:
+- Cottura
+- Pasta
+- Alimentazione
+- Efficienza Energetica
   - cucina
   - food
   - sostenibilità

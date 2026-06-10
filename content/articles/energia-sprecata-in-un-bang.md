@@ -2,8 +2,10 @@
 title: "Energia sprecata in un BANG"
 date: 2025-08-09
 tags:
-- Armi 
-- Militare 
+- Militare
+- Armi
+- Embodied Energy
+- Geopolitica
 summary: "Quanta energia in un singolo proiettile da 9mm? se ne producono circa 10 miliardi ogni anno!"
 cover_image:
  src: assets/post-img/bullets-4564768_1280_ssf2il

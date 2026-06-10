@@ -2,9 +2,12 @@
 title: "Turismo spaziale: ne abbiamo davvero bisogno?"
 date: 2025-05-12
 tags:
-- aerospazio
-- turismo
-- ricchezza
+- Amazon
+- Tecnologia
+- Aerospazio
+- Geopolitica
+- Combustibili Fossili
+- Costo Economico
 summary: "Qualche settimana fa è stato effettuato il “primo volo spaziale interamente al femminile”. A parte la specificità di genere, il volo non aveva nessun obiettivo scientifico-tecnologico, essendo peraltro rimasto nello “spazio” pochi minuti. Ma quanta energia serve per compiere una tale missione? "
 cover_image:
  src: assets/post-img/Blue_Origin_M7_t1iojb

@@ -2,11 +2,11 @@
 title: "Le linguine al microonde?"
 date: 2026-01-06
 tags:
-- cucina
-- forno
-- cibo
-- cottura
-- microonde
+- Cottura
+- Microonde
+- Alimentazione
+- Elettrodomestici
+- Efficienza Energetica
 summary: "Un elettrodomestico presente quasi in ogni cucina ma allo stesso tempo uno dei più sottovalutati rispetto alle sue potenzialità e alla sua efficienza. Vediamo come si confronta con altri strumenti di cottura e riscaldamento di cibi e bevande."
 cover_image:
  src: assets/post-img/quan-jing-VeU-4x4I7Xs-unsplash_dbz4br

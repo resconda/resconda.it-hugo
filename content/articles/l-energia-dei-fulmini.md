@@ -10,6 +10,8 @@ cover_image: # optional
   src: assets/post-img/Lightning__283762193048_29_oegskz
 #   caption: "caption string"
 tags:
+- Elettricità
+- Fonti Rinnovabili
   - fulmini
   - vento
   - energia

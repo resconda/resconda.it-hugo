@@ -8,6 +8,9 @@ images:
 ## below are user-defined parameters (lower case keys recommended)
 subtitle:
 tags:
+- Trasporti
+- Automobili
+- Combustibili Fossili
   - energia
 
 ---

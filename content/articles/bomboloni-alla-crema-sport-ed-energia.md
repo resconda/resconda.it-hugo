@@ -2,12 +2,10 @@
 title: "Bomboloni alla crema, sport ed energia"
 date: 2026-03-07
 tags:
-- bicicletta
-- cibo
-- dieta
-- Calorie
-- sport
-- metabolismo
+- Alimentazione
+- Sport
+- Corpo Umano
+- Metabolismo
 summary: "Molti, nei Paesi ricchi e ciccioni come il nostro, fanno sport per eliminare i grassi in eccesso derivanti da un'alimentazione smodata. Ma quanta energia del cibo si riesce effettivamente a “smaltire” con l’attività sportiva?"
 cover_image:
  src: assets/post-img/donut-7806792_1280_dontwi

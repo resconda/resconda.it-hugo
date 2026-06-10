@@ -1,4 +1,3 @@
-
 ---
 title: "L’orto nel supermercato"
 date: 2024-10-07
@@ -7,8 +6,10 @@ cover_image:
 #    caption:
 summary: "Una recente notizia di una sperimentazione di coltivazioni nei punti vendita fatta da un’azienda svedese in Germania ci ha fatto incuriosire sui bilanci energetici di questo tipo di soluzione."
 tags:
-- agricoltura  
-- supermercati
+- Alimentazione
+- Agricoltura
+- Ortofrutta
+- Stagionalità
 classes:
 - MWh
 ---

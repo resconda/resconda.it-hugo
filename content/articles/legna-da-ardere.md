@@ -7,6 +7,10 @@ summary: |
 cover_image: # optional
   src: assets/post-img/Diapositiva1_ok6lha
 tags:
+- Casa
+- Riscaldamento
+- Combustibili Fossili
+- CO2
   - riscaldamento
   - legna
   - casa

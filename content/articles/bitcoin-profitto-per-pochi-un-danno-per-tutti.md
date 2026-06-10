@@ -2,9 +2,10 @@
 title: "BitCoin: profitto per pochi, un danno per tutti."
 date: 2025-08-09
 tags:
-- cryptocurrencies
+- Tecnologia
 - BitCoin
-- Virtuale
+- Elettricità
+- Embodied Energy
 summary: "L’amministrazione Trump punta sempre di più sulle monete virtuali ed un singolo BitCoin arriva a valere 100.000 USD. Ma dietro alle crypto currencies c’è la distruzione sistematica di risorse naturali. "
 cover_image:
  src: assets/post-img/currency-3804023_1280_qutitu

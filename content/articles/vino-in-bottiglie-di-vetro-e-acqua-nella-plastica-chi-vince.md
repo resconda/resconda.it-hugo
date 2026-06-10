@@ -2,11 +2,12 @@
 title: "Vino in bottiglie di vetro e acqua nella plastica, chi vince?"
 date: 2025-07-06
 tags:
-- acqua
-- vino
-- bottiglie
-- vetro
-- plastica
+- Materiali
+- Vetro
+- Plastica
+- Imballaggi
+- Embodied Energy
+- Riciclo
 cover_image:
  src: assets/post-img/gratisography-booze-life-free-stock-photo-1170x780_vgutgj
 #  caption: 

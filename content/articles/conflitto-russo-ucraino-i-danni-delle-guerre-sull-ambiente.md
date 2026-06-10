@@ -9,6 +9,10 @@ cover_image: # optional
 classes:
   - TWh
 tags:
+- Guerra
+- Geopolitica
+- Emissioni
+- Combustibili Fossili
   - guerra
   - ricostruzione
   - aerei

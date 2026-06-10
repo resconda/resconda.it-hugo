@@ -2,9 +2,11 @@
 title: "Magliette a basso prezzo ma ad alta energia: quanta dietro una T-shirt?"
 date: 2025-07-06
 tags:
-- T-shirt
-- Energia 
-- Embedded Energy
+- Abbigliamento
+- T-Shirt
+- Moda
+- Embodied Energy
+- Costo Economico
 summary: "Una T-shirt bianca, semplice, costa circa cinque euro. prodotta in un contesto industriale standard ha una CED intorno a 10 kWh. Ma a quanto corrispondono 10 kWh?"
 cover_image:
  src: assets/post-img/girl-2581913_960_720_mwd8iw

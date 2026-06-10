@@ -2,9 +2,10 @@
 title: "L’impatto ambientale del nostro migliore amico"
 date: 2026-01-06
 tags:
-- animali domestici
-- cibo
-- pet food
+- Alimentazione
+- Animali Domestici
+- Pet Food
+- Embodied Energy
 summary: "Ebbene si, anche il nostro amato cane o gatto ha un impatto ambientale significativo, soprattutto in relazione al cibo industriale che gli diamo quotidianamente. Occorre esserne consapevoli e magari scegliere delle alternative meno impattanti."
 cover_image:
  src: assets/post-img/dog-3277416_1280_kvdyx5

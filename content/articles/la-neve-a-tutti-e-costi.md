@@ -9,10 +9,10 @@ cover_image: # optional
 classes:
 - GWh
 tags:
-- energia
-- sci
-- neve
-- inverno
+- Sci
+- Neve
+- Inverno
+
 ---
 
 Feste di Natale, periodo che per tanti coincide con la classica "settimana bianca", tradizione che però con l'avanzamento dei cambiamenti climatici sta portando sempre più "montagne verdi" e poco bianco.

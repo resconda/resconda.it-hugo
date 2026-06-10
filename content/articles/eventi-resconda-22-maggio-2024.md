@@ -8,9 +8,9 @@ cover_image: # optional
   src: assets/post-img/evento_yktgd2
 #   caption: "caption string"
 tags:
-- Resconda
-- eventi
-- Emcoin
+- Eventi
+- EmCoin
+
 ---
 
 Prosegue la serie di eventi di informazione e formazione di Resconda: il 22 maggio alle 18.30, presso [Toolbox Coworking](https://toolboxcoworking.com/) a Torino cercheremo di fare informazione e formazione sui temi dell'energia e dell'ambiente e su come possiamo, in qualità di singoli individui, agire in modo efficace per la preservazione dell'ambiente.

@@ -9,9 +9,11 @@ cover_image: # optional
 classes:
 - MWh
 tags:
-- Energia
 - Casa
-- Consumi
+- Ascensori
+- Corpo Umano
+- Elettricità
+
 ---
 
 La concentrazione della popolazione in grandi centri abitati porta allo sviluppo verticale della città. Per chi vive in grandi palazzi la voce "spese condominiali" spesso racchiude un e-costo che si tende a sottovalutare: l'energia consumata dagli ascensori.

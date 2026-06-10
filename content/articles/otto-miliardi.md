@@ -7,6 +7,8 @@ summary: Una storia di successo senza dubbio, dal punto di vista biologico.
 cover_image:
   src: assets/post-img/image003_mzf6js
 tags:
+- Cambiamento Climatico
+- Geopolitica
   - sovrappopolazione
 ---
 Intorno al 15 novembre abbiamo fatto cifra tonda! **8 miliardi di uom-abitanti del pianeta terra**.  

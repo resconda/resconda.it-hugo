@@ -10,6 +10,10 @@ cover_image:
 classes:
   - kWh
 tags:
+- Tecnologia
+- Internet
+- Automobili
+- EV
   - tecnologia
   - EV
 ---

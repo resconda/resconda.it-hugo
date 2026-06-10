@@ -2,9 +2,11 @@
 title: "Piatti di carta monouso o lavaggio in lavastoviglie, quale la scelta più sostenibile?"
 date: 2025-01-06
 tags:
-- Usa e getta
+- Cottura
 - Lavastoviglie
-- Compost
+- Monouso
+- Rifiuti
+- Usa e getta
 summary: "In occasione delle festività natalizie molti hanno optato per le stoviglie usa e getta, più “comode” rispetto a quelle riutilizzabili, che devono essere lavate. Quale il loro impatto energetico?"
 cover_image:
  src: assets/post-img/dishwasher-1772579_640_byvtal

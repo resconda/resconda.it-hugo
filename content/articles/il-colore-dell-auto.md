@@ -8,7 +8,6 @@ cover_image:
 tags:
 - Automobili
 - Consumo di carburante
-- colori
 classes:
 - TWh
 ---

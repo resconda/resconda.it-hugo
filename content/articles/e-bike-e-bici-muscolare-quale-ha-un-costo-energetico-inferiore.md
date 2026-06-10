@@ -2,10 +2,11 @@
 title: "E-bike e bici “muscolare”: quale ha un costo energetico inferiore?"
 date: 2025-05-12
 tags:
-- mobilità
-- bici
-- e-bike
-- cibo
+- Trasporti
+- Bicicletta
+- EV
+- Mobilità Sostenibile
+- Corpo Umano
 summary: "Consuma più energia una bici elettrica o una bici normale? Una domanda la cui risposta sembrerebbe talmente evidente da essere banale. Ma potrebbe essere completamente sbagliata. "
 cover_image:
  src: assets/post-img/bici2_x0xwna

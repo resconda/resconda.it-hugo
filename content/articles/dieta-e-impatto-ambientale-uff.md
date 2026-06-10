@@ -10,6 +10,10 @@ cover_image: # optional
   src: assets/post-img/dieta_tbsxfz
 #   caption: "caption string"
 tags:
+- Alimentazione
+- Dieta
+- Carne
+- Cambiamento Climatico
   - alimentazione
 ---
 

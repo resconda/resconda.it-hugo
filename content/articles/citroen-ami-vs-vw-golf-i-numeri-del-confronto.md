@@ -2,9 +2,11 @@
 title: "Citroen AMI vs. VW Golf: i numeri del confronto"
 date: 2025-03-10
 tags:
+- Trasporti
 - Automobili
 - EV
-- Inquinamento
+- Embodied Energy
+- Efficienza Energetica
 summary: "Nel dibattito tra mobilità elettrica e auto scoppiettanti “della tradizione” l’impatto ambientale gioca un ruolo fondamentale. Facciamo un confronto tra due veicoli non proprio analoghi per prestazioni ma entrambi in giro per le nostre città."
 cover_image:
  src: assets/post-img/amigolg_lyncq2
