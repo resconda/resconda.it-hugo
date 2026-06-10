@@ -8,7 +8,7 @@ cover_image: # optional
   src: assets/img/podcast_logo3_hpcoht
 #   caption: "caption string"
 tags:
-  - podcast
+
   - resconda
 ---
 

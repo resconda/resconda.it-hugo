@@ -9,7 +9,8 @@ summary: |
 cover_image:
   src: assets/post-img/pay-937884_640_dka171
 tags:
-  - numeri
+
+
 ---
 
 Sono noiosi è vero. Richiedono attenzione e normalmente una certa

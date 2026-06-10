@@ -5,11 +5,6 @@ tags:
 - Elettricità
 - Efficienza Energetica
 - Casa
-  - cucina
-  - food
-  - sostenibilità
-  - efficienza energetica
-  - casa
 date: 2023-06-04
 title: 'Gas, elettrico tradizionale o induzione?'
 classes: 

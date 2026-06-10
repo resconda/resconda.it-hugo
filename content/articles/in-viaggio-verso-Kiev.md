@@ -11,9 +11,6 @@ tags:
 - Treni
 - Combustibili Fossili
 - CO2
-  - ordini di grandezza
-  - energia
-  - fossile
 classes:
   - GWh
 math: true

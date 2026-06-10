@@ -11,7 +11,6 @@ tags:
 - Trasporti
 - Automobili
 - Combustibili Fossili
-  - energia
 
 ---
 

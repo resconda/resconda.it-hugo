@@ -6,7 +6,7 @@ summary: |
 cover_image:
   src: assets/img/logo/logo_scritta_stacked
 tags:
-  - ResConDA
+
   - associati
 ---
 

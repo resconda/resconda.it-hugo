@@ -14,10 +14,7 @@ tags:
 - Combustibili Fossili
 - Agricoltura
 - Embodied Energy
-  - cibo
-  - energia
-  - petrolio
-  - agricoltura
+
 ---
 
 Secondo [*questo studio*](https://www.researchgate.net/figure/Energy-use-during-the-life-cycle-of-one-portion-of-spaghetti-In-MJ-per-portion-according_fig1_242408078/download?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ) una porzione di 70 grammi di spaghetti (cotti) ha un costo energetico di circa 1,1 kWh.  

@@ -14,7 +14,7 @@ tags:
 - EV
 - Embodied Energy
 - CO2
-  - EV
+
 ---
 
 Preliminarmente occorre sottolineare, ancorché ovvio, che un’auto elettrica non ha (né ragionevolmente avrà mai) le stesse caratteristiche e prestazioni di un’auto a motore endotermico (per brevità di seguito “vecchio tipo”), allo stesso modo in cui tra le auto vecchio tipo una spider non ha le stesse prestazioni di un SUV.

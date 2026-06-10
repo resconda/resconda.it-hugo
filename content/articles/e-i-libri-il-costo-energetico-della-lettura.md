@@ -14,8 +14,7 @@ tags:
 - Ebook
 - Embodied Energy
 - Tecnologia
-  - energia
-  - libri
+
 ---
 
 In diversi post abbiamo trattato il costo energetico dell'Information Technology, dimostrando che per quanto "intangibile", è del tutto tangibile ed importante il suo consumo di energia e conseguente impatto ambientale...

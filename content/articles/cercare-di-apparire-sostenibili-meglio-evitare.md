@@ -13,9 +13,7 @@ tags:
 - Greenwashing
 - Aviazione
 - Moda
-  - aerei
-  - green washing
-  - imprese
+
 ---
 
 Secondo [questo studio](https://digitalcommons.mtu.edu/cgi/viewcontent.cgi?article=2178&context=etdr) (ed altri), la produzione di una cannuccia in carta ha un e-costo di 26 Wh (più o meno l'energia che contiene la batteria del tuo cellulare quando è carico, per capirsi), contro gli 11 richiesti da una cannuccia in polietilene...meno della metà! Quindi dove sta il vantaggio? Da un punto di vista energetico semplicemente non c'è: una cannuccia in carta inquina più di una cannuccia in plastica in termini di emissioni climalteranti. Ma questo non dice tutto: la plastica si degrada nell'ambiente in tempi molto lunghi e fa danni rilevanti alla zoosfera (gli animali). Quindi se dal punto di vista delle emissioni gli oggetti monouso in plastica sono meglio di quelli in carta, non lo sono dal punto di vista dell'impatto sui biomi. Il tema è complesso e certamente quello che andrebbe evitato e combattuto è il concetto di monouso, che sia originato da materia prima o riciclata. Purtroppo le logiche sempre più stringenti di sicurezza alimentare e sanitaria non spingono certo in questa direzione: agli esercenti è attualmente vietato proporre zucchero ed altri articoli che non siano in confezioni monouso...un danno ambientale certo.

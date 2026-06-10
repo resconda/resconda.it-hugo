@@ -10,9 +10,6 @@ tags:
 - Carta
 - Tecnologia
 - Costo Economico
-  - soldi
-  - pagamenti
-  - sostenibilità
 classes:
   - Wh
 ---

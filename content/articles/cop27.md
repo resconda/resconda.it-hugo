@@ -13,7 +13,6 @@ tags:
 - Istituzioni
 - COP
 - Cambiamento Climatico
-  - COP
 classes:
   - GWh
 ---

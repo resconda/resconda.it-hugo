@@ -13,8 +13,6 @@ tags:
 - Aviazione
 - Combustibili Fossili
 - CO2
-  - energia
-  - fossile
 summary: |
   300 kWh è l'energia media dissipata in carburante da un passeggero in volo da Milano a Londra...
 ---

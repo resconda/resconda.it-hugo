@@ -12,8 +12,7 @@ tags:
 - Birra
 - Agricoltura
 - Embodied Energy
-  - picco del petrolio
-  - birra
+
 ---
 **Colin Campbell (24.07.1931 - 13.11.2022)**
 

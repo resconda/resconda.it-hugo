@@ -9,8 +9,7 @@ images:
 subtitle:
 tags:
 - Animali Domestici
-  - ecologia
-  - eden
+
 ---
 
 Siamo nei guai

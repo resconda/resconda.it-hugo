@@ -11,9 +11,7 @@ tags:
 - Geopolitica
 - Combustibili Fossili
 - Economia
-  - Energia
-  - Prodotto Interno Lordo
-  - Economia
+
 ---
 
 C'è una stretta correlazione tra ricchezza e consumo di energia. I Paesi a basso reddito pro capite hanno bassi consumi di energia, e viceversa. Non si sfugge.  Il grafico qui sotto è stato realizzato dall'European Environment Angency e mette in relazione queste due grandezze. La riga blu rappresenta una correlazione lineare: per ogni unità di energia aggiuntiva corrisponde una unità aggiuntiva di ricchezza.

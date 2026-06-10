@@ -11,7 +11,6 @@ tags:
 - Tecnologia
 - Internet
 - Elettricità
-  - tecnologia
 classes: 
   - TWh
 ---

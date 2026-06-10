@@ -12,8 +12,6 @@ tags:
 - Cibo
 - Embodied Energy
 - Agricoltura
-  - cioccolato
-  - cibo
 classes:
   - kWh
 ---

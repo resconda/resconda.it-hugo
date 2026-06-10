@@ -11,8 +11,7 @@ tags:
 - Plastica
 - Riciclo
 - Rifiuti
-  - energia
-  - consumi
+
 ---
 
 Se ne parla sempre di più ma la consequenzialità logica nelle azioni e nei provvedimenti continua a mancare.

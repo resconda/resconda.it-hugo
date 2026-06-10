@@ -16,8 +16,7 @@ tags:
 - Fonti Rinnovabili
 - Elettricità
 - Costo Economico
-  - energia
-  - elettricità
+
 ---
 
 Qui sopra una cyclette che produce corrente elettrica. La potenza indicata nel display è di 375 Watt. E' una potenza significativa per un ciclista "normale", che è in grado normalmente di erogare (per un tempo non trascurabile...) una potenza massima intorno a 80-100 Watt...

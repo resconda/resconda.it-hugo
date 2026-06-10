@@ -9,7 +9,7 @@ cover_image: # optional
 classes:
   - kWh
 tags:
-  - energia
+
   - carta
 ---
 

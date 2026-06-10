@@ -12,7 +12,7 @@ tags:
 - Trasporti
 - Automobili
 - Costo Economico
-  - energia
+
 ---
 
 Quanta energia si risparmia in un anno passando a un casello autostradale nella corsia telepass, invece di fermarsi al "ALT" del pedaggio? 

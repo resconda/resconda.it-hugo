@@ -15,10 +15,7 @@ tags:
 - Imballaggi
 - Costo Economico
 - Embodied Energy
-  - Energia
-  - Acqua
-  - Consumi
-  - PET
+
 ---
 
 Come abbiamo già scritto in {{< locallink href="articles/il-packaging-delle-bevande-cosa-e-meglio-scegliere/">}}*questo post*{{< /locallink>}}, **l'Italia è** il primo paese **consumatore di acque minerali** in bottiglia in Europa e il **secondo al mondo** (dopo il Messico). Nel nostro paese sono presenti oltre 260 differenti marchi di acque che imbottigliano ogni anno oltre 13 miliardi di litri di acqua. L'Italia (diversamente dal Messico) è però anche uno dei Paesi al mondo con la più elevata qualità organolettica delle acque distribuite dalla rete idrica.

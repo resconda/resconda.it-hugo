@@ -11,7 +11,6 @@ tags:
 - Sci
 - Neve
 - Costo Economico
-  - energia
 classes:
   - kWh
 ---

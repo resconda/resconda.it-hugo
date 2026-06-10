@@ -12,9 +12,7 @@ tags:
 - Automobili
 - Politica
 - Emissioni
-  - mobilità
-  - aria
-  - ambiente
+
 ---
 
 Il particolato "sottile", il cd. "PM10", il "PM2,5" (composto da particelle più piccole...) e le altre emissioni sono dannose per l'ambiente (ci sono studi che ne mostrano gli effetti negativi su molte specie vegetali e animali), ma lo sono soprattutto [per la salute umana](https://www.eea.europa.eu/publications/air-quality-in-europe-2022/health-impacts-of-air-pollution): in Europa lo scorso anno ci sono stati 311 mila decessi "anticipati", di cui 238 mila attribuiti ad inquinamento da PM 2,5, 49 mila al biossido d'azoto (NO2 o NOX) e 24 mila all'ozono (O3). A margine segnaliamo che le autorità sanitarie europee sembrano prendere in considerazione quasi esclusivamente il PM2,5, mentre non abbiamo trovato dati sulla mortalità causata da PM10. L'Italia in questo contesto ha fatto la sua parte: circa 60 mila decessi, di cui 52 mila da PM2,5, 11 mila da NOX e 5 mila da O3. A titolo informativo, le morti attribuite al Covid nel 2021 in Italia sono state circa 60 mila.

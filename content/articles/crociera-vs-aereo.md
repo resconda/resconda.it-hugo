@@ -12,9 +12,7 @@ tags:
 - Navi
 - CO2
 - Costo Economico
-  - navi
-  - crociere
-  - energia
+
 ---
 
 Benché negli anni le navi da crociera abbiano aumentato in modo significativo l'efficienza dei loro consumi, passando ad esempio a carburanti a minore densità di emissioni (tipo LNG), hanno in egual misura aumentato i consumi in valore assoluto, aumentando le velocità, la stazza, i servizi a bordo e il numero di passeggeri.

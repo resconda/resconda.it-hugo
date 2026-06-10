@@ -13,8 +13,7 @@ tags:
 - Aviazione
 - Militare
 - Emissioni
-  - aeronautica
-  - energia
+
 ---
 
 La discussione sull’opportunità di avere un corpo militare dedicato esclusivamente a esibire un’eccellenza (l’addestramento dei piloti) e un vanto dell’ingegneria e dell’industria aeronautica nazionale (lo storico velivolo Aermacchi MB-339A) si riaccende periodicamente nel dibattito mediatico, specie in seguito a incidenti più o meno catastrofici.  

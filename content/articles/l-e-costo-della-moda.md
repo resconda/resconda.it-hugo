@@ -15,10 +15,7 @@ tags:
 - Logistica
 - Embodied Energy
 - CO2
-  - Energia
-  - Abbigliamento
-  - Consumi
-  - Moda
+
 ---
 
 In un [*recente video*](https://www.corriere.it/dataroom-milena-gabanelli/shein-lato-oscuro-re-fast-fashion-lavoratori-schiavi-tessuti-tossici-inquinamento/55bd7870-56f4-11ee-a17f-69493a54d671-va.shtml?utm_source=pocket-newtab-it-it&fbclid=IwAR0UCG6W8D_LUQaZFxNzG2_1nZk6gAZM-uaMmRgwAZlPUfCHxeVeifC05P8) della "Dataroom" del Corsera, Milena Gabanelli illustra con efficacia l'impatto ambientale del settore moda, con particolare riferimento al "fast fashion" di Shein, la piattaforma online destinata alla Gen-Z che riesce a sfornare fino a 6.000 nuovi articoli al giorno.  

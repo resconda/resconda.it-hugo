@@ -14,7 +14,7 @@ tags:
 - Dieta
 - Carne
 - Cambiamento Climatico
-  - alimentazione
+
 ---
 
 Anche nel settore alimentare, esiste una generale conoscenza “qualitativa” sull’impatto ambientale di diversi cibi e comportamenti: probabilmente sai che la carne in generale inquina più di frutta e verdura, ma se si entra nello specifico? C’è differenza tra carni rosse e bianche? Se si quant’è?

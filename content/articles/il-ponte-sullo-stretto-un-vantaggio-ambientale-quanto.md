@@ -12,9 +12,6 @@ tags:
 - Edilizia
 - CO2
 - Costo Economico
-  - cemento
-  - grandi opere
-  - CO2
 classes:
   - GWh
 ---

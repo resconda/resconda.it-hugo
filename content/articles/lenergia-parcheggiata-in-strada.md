@@ -13,9 +13,7 @@ tags:
 - Automobili
 - EV
 - Elettricità
-  - città
-  - energia
-  - auto
+
 ---
 
 La quantità di energia incorporata negli autoveicoli è enorme.  

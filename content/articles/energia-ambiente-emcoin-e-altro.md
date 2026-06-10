@@ -10,9 +10,7 @@ cover_image: # optional
 tags:
 - EmCoin
 - Cambiamento Climatico
-  - Emcoin
-  - Eventi 
-  - Resconda
+
 ---
 
 Il [progetto EmCoin 1](https://emcoin.resconda.it/), realizzato con il contributo dell’8x1000 della Chiesa Valdese ed i Fondi di ricerca della Prof.ssa Caterina Mele del Politecnico di Torino - DISEG si avvia alla conclusione ed è giunto il momento di presentare il progetto e l’App prototipale EmCoin per la contabilizzazione in tempo reale del proprio impatto ambientale, qualcosa di del tutto nuovo in tema di tutela ambientale! 

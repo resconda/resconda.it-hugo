@@ -14,10 +14,6 @@ tags:
 - Carta
 - Edilizia
 - Embodied Energy
-  - Energia
-  - Consumi
-  - Libri
-  - Scuola
 
 ---
 

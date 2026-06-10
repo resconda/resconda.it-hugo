@@ -8,7 +8,7 @@ summary: # leave blank if no summary is provided
 cover_image:
   src: assets/post-img/cbfdb4d503937bbcaf81cae38f49b0b258ecdccf_jfhvhr
 tags:
-  - resconda
+
   - eventi
 ---
 

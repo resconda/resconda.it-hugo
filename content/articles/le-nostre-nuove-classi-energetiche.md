@@ -10,7 +10,6 @@ tags:
 - Efficienza Energetica
 - Elettrodomestici
 - Costo Economico
-  - energia
 layout: classes_article
 energy_classes:
   - alt: "Wh pill"

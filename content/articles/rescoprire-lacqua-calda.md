@@ -14,7 +14,7 @@ tags:
 - Acqua
 - Riscaldamento
 - Efficienza Energetica
-  - energia
+
 ---
 
 In {{< locallink href="articles/vado-a-farmi-una-doccia-calda.md">}}una{{< /locallink>}} delle precedenti Pillole abbiamo trattato il tema del costo energetico di una doccia, concludendo che “*fa 2-3 kWh consumati, per farla breve, anzi no…*”

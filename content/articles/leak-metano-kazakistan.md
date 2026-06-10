@@ -11,8 +11,7 @@ tags:
 - Combustibili Fossili
 - Geopolitica
 - Emissioni
-  - metano
-  - emissioni
+
 ---
 
 In molti si ricorderanno "l'incidente" scoppiato il 26 Settembre del 2022, quando venne danneggiato il "Nord Stream", il metanodotto che unisce la Russia all'Europa attraverso il mar Baltico. In quell'occasione vennero sprigionate 0,4 milioni di tonnellate di metano, equivalenti a circa 10 milioni di tonnellate di {{< CO2 >}}. Ne abbiamo {{< locallink href="articles/north-stream-1-un-disatrino-ambientale/">}}parlato{{< /locallink>}} anche noi.

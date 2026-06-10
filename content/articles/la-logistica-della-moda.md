@@ -15,9 +15,7 @@ tags:
 - Trasporti
 - Logistica
 - CO2
-  - moda
-  - vestiti
-  - trasporti
+
 ---
 
 Nella puntata di Report [*del 11 febbraio*](https://www.raiplay.it/video/2024/02/Giralamoda---Report-11022024-0a95dd5f-319c-4610-a273-64d629515d0b.html) viene presentata l'inchiesta fatta con Greenpeace sui percorsi fatti da 24 capi di diversi colossi mondiali di fast fashion, dal momento dell'uscita dal centro di produzione fino all'ultimo acquirente, passando per una serie più o meno lunga di resi. La puntata prosegue andando a visitare la destinazione finale (Congo) dei vestiti "dismessi" dal Mondo Occidentale.

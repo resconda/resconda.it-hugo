@@ -11,7 +11,7 @@ tags:
 - Tecnologia
 - Rifiuti
 - Costo Economico
-  - sostenibilità
+
 ---
 
 Si tratta per la quasi totalità di prodotti a basso costo (specialmente nei settori elettronica e tessile) acquistati su Internet e restituiti dagli acquirenti al venditore per il quale, per ragioni amministrative, organizzative etc. è più conveniente distruggerli che rimetterli in vendita...

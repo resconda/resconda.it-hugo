@@ -13,8 +13,7 @@ tags:
 - Rifiuti
 - CO2
 - Emissioni
-  - energia
-  - consumi
+
 ---
 
 Le pratiche funerarie fanno da sempre parte del bagaglio culturale più profondo e radicato di ogni società. Esse variano da Paese a Paese, nel tempo e nello spazio: inumazione, tumulazione, cremazione, mummificazione e altro, ognuna declinata in modi diversi.  

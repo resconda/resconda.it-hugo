@@ -12,10 +12,7 @@ tags:
 - Imballaggi
 - Plastica
 - CO2
-  - cibo
-  - emergy
-  - bevande
-  - energia
+
 ---
 
 Nell’ambito del progetto [Emcoin](https://emcoin.resconda.it/) sono stati analizzati i prodotti di alcune aziende che hanno voluto collaborare con Resconda nella determinazione dell’energia accumulata nei loro prodotti: l’energia richiesta per la realizzazione del prodotto e la sua messa a disposizione del consumatore. Tra i prodotti analizzati ci sono state delle bibite gassate, vendute in lattina ed in bottiglia di PET. L’analisi ha portato dei risultati interessanti:

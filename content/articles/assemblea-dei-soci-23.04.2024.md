@@ -10,7 +10,8 @@ cover_image: # optional
 classes:
   - kWh
 tags:
-  - resconda
+
+
 ---
 
 L'Assemblea dei soci di Resconda avrà luogo martedì 23 Aprile 2023 alle h.18.00 in prima convocazione o - nel caso (non improbabile) in cui a quell'ora non risultassero presenti o rappresentati in prima convocazione almeno la metà più uno degli associati - avrà luogo in seconda convocazione alle h. 18.30.

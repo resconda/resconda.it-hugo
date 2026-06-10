@@ -12,9 +12,6 @@ cover_image: # optional
 tags:
 - Elettricità
 - Fonti Rinnovabili
-  - fulmini
-  - vento
-  - energia
 classes: # this is a list but one energy class should be set
   # - kWh
   - MWh

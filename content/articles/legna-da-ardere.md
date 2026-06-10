@@ -11,9 +11,7 @@ tags:
 - Riscaldamento
 - Combustibili Fossili
 - CO2
-  - riscaldamento
-  - legna
-  - casa
+
 ---
 
 Inverno, periodo di massimo consumo energetico dovuto al riscaldamento delle nostre abitazioni, ad oggi con una buona varietà di sistemi a seconda della disponibilità tecnologica e geografica. Tralasciando per il momento i più moderni sistemi di riscaldamento, il più classico è sicuramente la combustione della legna.

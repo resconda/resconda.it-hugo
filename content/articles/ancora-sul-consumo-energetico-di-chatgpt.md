@@ -13,8 +13,7 @@ tags:
 - Tecnologia
 - Internet
 - Elettricità
-  - tecnologia
-  - sostenibilità
+
 ---
 
 
