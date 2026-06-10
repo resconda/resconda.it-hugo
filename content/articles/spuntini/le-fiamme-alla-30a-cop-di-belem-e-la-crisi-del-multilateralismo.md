@@ -2,7 +2,10 @@
 title: "Le fiamme alla 30a COP di Belém e la crisi del multilateralismo"
 date: 2025-12-04
 tags:
-- spuntini
+- Istituzioni
+- COP
+- Cambiamento Climatico
+- Geopolitica
 summary: "Si chiude con un incendio la 30a COP (Conference of Parties), tenutasi  a Belém (Brasile) a novembre. Oltre ai rifiuti prodotti dallo smaltimento dei padiglioni non ne resta praticamente niente, tranne forse l’ennesima dimostrazione dell’inadeguatezza di un certo multilateralismo   e la Dichiarazione di alcuni Paesi che implicitamente lo dimostra."
 cover_image:
  src: assets/post-img/COP_ensknr

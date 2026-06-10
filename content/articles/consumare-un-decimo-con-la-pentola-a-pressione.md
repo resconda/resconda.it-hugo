@@ -2,9 +2,11 @@
 title: "Consumare un decimo con la pentola a pressione"
 date: 2025-12-04
 tags:
-- Cucina
-- Embodied energy
-- Cibo
+- Cottura
+- Pasta
+- Alimentazione
+- Efficienza Energetica
+- Costo Economico
 summary: "Quanta energia risparmi cuocendo in pentola a pressione? Prendiamo il caso di una pasta al pomodoro. Inoltre, qual è l’e-costo e l’impatto ambientale degli ingredienti? "
 cover_image:
  src: assets/post-img/pressure-cooker-7360057_1280_yuon54

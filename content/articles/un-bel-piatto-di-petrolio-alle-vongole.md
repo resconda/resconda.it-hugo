@@ -10,6 +10,10 @@ cover_image: # optional
 classes:
   - kWh
 tags:
+- Alimentazione
+- Combustibili Fossili
+- Agricoltura
+- Embodied Energy
   - cibo
   - energia
   - petrolio

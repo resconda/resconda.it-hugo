@@ -2,9 +2,10 @@
 title: "Le pale eoliche inquinano"
 date: 2024-10-09
 tags:
-- fonti rinnovabili  
-- energia eolica  
-- impatto ambientale
+- Fonti Rinnovabili
+- Energia Eolica
+- Embodied Energy
+- Greenwashing
 summary: "Il Blog di Nicola Porro rappresenta un faro per quanti vedono nell’”*ideologia green*” una pericolosa minaccia per la società occidentale ed il nostro comfort. Qualche giorno fa ha lanciato un’accusa vibrante: le pale eoliche inquinano! "
 cover_image:
  src: assets/post-img/pale_eoliche_uj5cid

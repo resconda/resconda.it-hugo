@@ -2,9 +2,11 @@
 title: "Pattinare sul ghiaccio con il clima che cambia"
 date: 2026-02-07
 tags:
-- Inverno
 - Sport
-- ghiaccio
+- Ghiaccio
+- Climatizzazione
+- Cambiamento Climatico
+- Efficienza Energetica
 summary: "Le piste di pattinaggio natalizie sono belle e fascinose, ma alle nostre latitudini stanno diventando un lusso – e un costo ambientale – che forse non possiamo continuare a permetterci. "
 cover_image:
  src: assets/post-img/pattinaggio_holwkm

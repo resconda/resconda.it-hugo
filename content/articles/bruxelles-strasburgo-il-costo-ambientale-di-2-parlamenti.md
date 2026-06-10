@@ -2,9 +2,11 @@
 title: "Bruxelles-Strasburgo: il costo ambientale di 2 Parlamenti"
 date: 2026-06-08
 tags:
-- politica
-- logistica
+- Istituzioni
 - Unione Europea
+- Trasporti
+- Emissioni
+- Costo Economico
 summary: "Il Parlamento Europeo ha due sedi, una a Bruxelles e una a 450 km di distanza, a Strasburgo. Questo obbliga ogni mese migliaia di persone a spostarsi. E con loro circa 75 tonnellate di documenti!"
 cover_image:
  src: assets/post-img/eu_parl_exd6ox

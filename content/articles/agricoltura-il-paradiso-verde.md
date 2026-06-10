@@ -8,6 +8,10 @@ cover_image: # optional
   src: assets/post-img/Agricoltura_jmxkfm
 #   caption: "caption string"
 tags:
+- Agricoltura
+- Alimentazione
+- Fonti Rinnovabili
+- Embodied Energy
   - agricoltura
   - fertilizzanti
   - fonti rinnovabili

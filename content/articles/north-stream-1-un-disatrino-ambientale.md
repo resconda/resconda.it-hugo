@@ -9,6 +9,10 @@ cover_image:
 classes:
   - GWh
 tags:
+- Combustibili Fossili
+- Geopolitica
+- Emissioni
+- Guerra
   - energia
   - fossile
 math: true

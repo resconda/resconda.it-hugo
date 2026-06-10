@@ -8,6 +8,9 @@ cover_image: # optional
   src: assets/post-img/soldi_eqegmh
   # caption: "caption string"
 tags:
+- Geopolitica
+- Combustibili Fossili
+- Economia
   - Energia
   - Prodotto Interno Lordo
   - Economia

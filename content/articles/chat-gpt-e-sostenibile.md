@@ -8,6 +8,9 @@ summary: | # leave blank if no summary is provided
 cover_image:
   src: assets/img/PILLOLE/2023/FEB/chat-gpt_dubidt
 tags:
+- Tecnologia
+- Internet
+- Elettricità
   - tecnologia
 classes: 
   - TWh

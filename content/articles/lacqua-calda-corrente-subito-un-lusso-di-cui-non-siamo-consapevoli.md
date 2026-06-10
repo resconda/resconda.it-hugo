@@ -2,10 +2,11 @@
 title: "L’acqua calda corrente subito: un lusso di cui non siamo consapevoli"
 date: 2026-03-07
 tags:
-- acqua calda sanitaria
-- climatizzazione
-- edilizia
-- impianti
+- Casa
+- Acqua
+- Riscaldamento
+- Combustibili Fossili
+- Costo Economico
 summary: "Tra i tanti lussi che l’abbondanza relativa di combustibili fossili ha garantito fino ad oggi ad un numero elevatissimo di persone c’è l’acqua calda corrente: poco più di 100 anni fa neanche i più ricchi potevano permettersi questo lusso (l’acqua andava scaldata sul fuoco…). Una bella doccia calda quando si vuole, on demand. "
 cover_image:
  src: assets/post-img/faucet-1529179_1280_icfado

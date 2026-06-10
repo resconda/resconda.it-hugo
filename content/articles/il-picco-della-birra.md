@@ -8,6 +8,10 @@ summary: |
 cover_image:
   src: assets/post-img/unnamed_j9lxod
 tags:
+- Alimentazione
+- Birra
+- Agricoltura
+- Embodied Energy
   - picco del petrolio
   - birra
 ---

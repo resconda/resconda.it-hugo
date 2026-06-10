@@ -2,8 +2,9 @@
 title: "Con 10 euro, quanta energia mi porto a casa?"
 date: 2025-07-06
 tags:
-- Energia 
-- Costi Energia 
+- Costo Economico
+- Combustibili Fossili
+- Elettricità
 summary: "Sappiamo quanto paghiamo l’elettricità. Più o meno. Forse. Ma sappiamo davvero quanto ci costa l’energia, indipendentemente da come la consumiamo?
 C’è un modo per confrontarle tutte: convertirle in kWh, quanti possiamo acquistarne con 10 euro?."
 cover_image:

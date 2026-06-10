@@ -2,7 +2,8 @@
 title: "2025: Fin qui tutto bene "
 date: 2025-01-06
 tags:
-- spuntini
+- Cambiamento Climatico
+- CO2
 summary: "Anno nuovo tempo di bilanci, speranze e proiezioni."
 cover_image:
  src: assets/post-img/Spuntini_j5joyu

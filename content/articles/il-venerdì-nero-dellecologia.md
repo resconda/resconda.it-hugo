@@ -2,6 +2,10 @@
 title: "Il venerdì nero (dell’ecologia)"
 date: 2024-12-05
 tags:
+- Abbigliamento
+- Moda
+- Rifiuti
+- Embodied Energy
   - consumismo
   - emissioni
   - rifiuti

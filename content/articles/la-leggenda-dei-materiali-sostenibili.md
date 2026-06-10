@@ -2,10 +2,9 @@
 title: "La leggenda dei materiali sostenibili"
 date: 2024-11-07
 tags:
-- edilizia  
-- sostenibilità  
-- materiali  
-- LCA
+- Materiali
+- Embodied Energy
+- Greenwashing
 summary: "Si sente spesso parlare in edilizia di materiali “sostenibili” ma la sostenibilità è diventata da tempo uno strumento di marketing, piegata alle esigenze di vendita dell'economia. Come riconoscere quindi i materiali veramente “sostenibili”, ma soprattutto, esistono?"
 cover_image:
  src: assets/post-img/2674778713_8fc9a93f77_o_scsfcn

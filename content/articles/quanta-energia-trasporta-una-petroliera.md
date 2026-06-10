@@ -2,10 +2,10 @@
 title: "Quanta energia trasporta una petroliera?"
 date: 2026-04-07
 tags:
+- Trasporti
+- Navi
 - Petrolio
-- Guerra
-- Iran 
-- Petroliere
+- Geopolitica
 summary: "Ogni petroliera che passa lo stretto di Hormuz vale interi terawattora di energia, e decine di migliaia erano le navi che lo attraversavano fino a ieri. Nell’immagine le petroliere nei pressi dello stretto il 7 Aprile 2026 (da [Vessel Finder](https://www.vesselfinder.com/))."
 cover_image:
  src: assets/post-img/HORMUZ_lup2dr

@@ -8,9 +8,10 @@ cover_image:
 classes:
 - GWh
 tags:
-- videogame
-- app
-- energy manager
+- Tecnologia
+- Videogioco
+- Elettricità
+
 ---
 
 \"Energy Manager\" è un gioco di simulazione che invita i giocatori a vestire i panni di un gestore energetico.  

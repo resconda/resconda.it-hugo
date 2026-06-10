@@ -10,6 +10,10 @@ cover_image: # optional
 classes:
   - kWh
 tags:
+- Carta
+- Ebook
+- Embodied Energy
+- Tecnologia
   - energia
   - libri
 ---

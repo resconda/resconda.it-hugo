@@ -2,7 +2,9 @@
 title: "Petrolio e maccheroni"
 date: 2026-03-07
 tags:
-- spuntini
+- Combustibili Fossili
+- Geopolitica
+- Economia
 cover_image:
  src: assets/post-img/sekau67-sunset-654867_640_qy7z2i
 #  caption: 

@@ -2,7 +2,10 @@
 title: "A tavola: l’impatto energetico di tre menù a confronto"
 date: 2026-01-06
 tags:
-- tag1
+- Alimentazione
+- Carne
+- Embodied Energy
+- Dieta
 summary: "Quanto impatta in termini di costo energetico un pasto rispetto a un altro? Iniziamo una serie di confronti che riguardano il cibo con due diete di sostentamento – certamente non auspicabili da parte di un amante della buona tavola – ed un menù più che auto-indulgente!"
 cover_image:
  src: assets/post-img/chicken-breast-279848_640_udwhof

@@ -8,6 +8,10 @@ summary: | # leave blank if no summary is provided
 cover_image:
   src: assets/img/PILLOLE/2023/FEB/green_house_2_ipsigu
 tags:
+- Istituzioni
+- Unione Europea
+- Edilizia
+- Efficienza Energetica
   - green
   - UE
   - efficienza energetica

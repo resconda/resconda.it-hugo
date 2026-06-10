@@ -7,6 +7,11 @@ cover_image: # optional
   src: assets/post-img/31628073613_741fcaef21_b_f5j33a
 #   caption: "caption string"
 tags:
+- Trasporti
+- Aviazione
+- Navi
+- CO2
+- Costo Economico
   - navi
   - crociere
   - energia

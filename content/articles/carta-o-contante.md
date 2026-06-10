@@ -7,6 +7,9 @@ cover_image: # optional
   src: assets/post-img/euro-money-cash-finances-6f8ffd7ff722e54a634c33f593b87521_lwrwdy
 #   caption: "caption string"
 tags:
+- Carta
+- Tecnologia
+- Costo Economico
   - soldi
   - pagamenti
   - sostenibilità

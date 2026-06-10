@@ -2,7 +2,10 @@
 title: "La Bibbia, il destino dell’uomo, il cambiamento climatico e la produzione di kiwi"
 date: 2026-01-06
 tags:
-- spuntini
+- Alimentazione
+- Agricoltura
+- Cambiamento Climatico
+- Ortofrutta
 cover_image:
  src: assets/post-img/spuntino_y6v7h9
 #  caption: 

@@ -2,9 +2,9 @@
 title: "Ambiente e guerra in edicola"
 date: 2026-04-07
 tags:
-- carta
-- riviste
-- guerra
+- Militare
+- Guerra
+- Cambiamento Climatico
 summary: "Chi cerca in edicola riviste su problematiche ambientali, possibili soluzioni e comportamenti individuali sostenibili non trova quasi nulla. Tuttavia può sicuramente acquistare numerose riviste su armi e “warfare”. "
 cover_image:
  src: assets/post-img/EDICOLA_gdvbx3

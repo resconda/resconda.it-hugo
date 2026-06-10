@@ -7,6 +7,10 @@ summary: | # leave blank if no summary is provided
 cover_image:
   src: assets/img/PILLOLE/2023/FEB/prime_sbgmvg
 tags:
+- Amazon
+- Tecnologia
+- Rifiuti
+- Costo Economico
   - sostenibilità
 ---
 

@@ -10,6 +10,10 @@ cover_image: # optional
 classes:
   - kWh
 tags:
+- Materiali
+- Plastica
+- Riciclo
+- Embodied Energy
   - plastica
   - packaging
   - casa

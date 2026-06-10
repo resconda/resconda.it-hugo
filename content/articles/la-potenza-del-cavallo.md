@@ -2,10 +2,9 @@
 title: "La potenza del cavallo"
 date: 2026-03-07
 tags:
-- potenza
-- unità di misura
-- cavalli
-- Watt
+- Corpo Umano
+- Potenza
+- Trasporti
 summary: |
     Quando sentiamo parlare di "cavalli" di un motore, spesso pensiamo a una caratteristica misteriosa e affascinante. Dietro questa espressione si cela una storia che unisce la fisica, l'ingegneria e l'evoluzione del nostro rapporto con l'energia. Il cavallo vapore rappresenta un ponte tra il mondo animale e quello delle macchine.
 cover_image:

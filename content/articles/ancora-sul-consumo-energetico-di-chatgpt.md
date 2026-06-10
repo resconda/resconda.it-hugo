@@ -10,6 +10,9 @@ cover_image:
 classes:
   - GWh
 tags:
+- Tecnologia
+- Internet
+- Elettricità
   - tecnologia
   - sostenibilità
 ---

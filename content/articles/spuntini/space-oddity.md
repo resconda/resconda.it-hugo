@@ -2,7 +2,9 @@
 title: "Space oddity"
 date: 2025-08-10
 tags:
-- spuntini
+- Aerospazio
+- Tecnologia
+- Geopolitica
 cover_image:
  src: assets/post-img/bowie_pzdcma
 #  caption: 

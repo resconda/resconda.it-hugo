@@ -10,6 +10,10 @@ cover_image: # optional
   src: assets/post-img/Helicopter_to_Cogne_vvtw3x
 #   caption: "caption string"
 tags:
+- Trasporti
+- Elicottero
+- Turismo
+- Costo Economico
   - turismo
   - trasporti
   - cherosene

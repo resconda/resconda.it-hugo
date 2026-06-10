@@ -8,6 +8,8 @@ cover_image: # optional
   src: assets/img/logo/logo_emcoin2_k8dgyc
 #   caption: "caption string"
 tags:
+- EmCoin
+- Cambiamento Climatico
   - Emcoin
   - Eventi 
   - Resconda

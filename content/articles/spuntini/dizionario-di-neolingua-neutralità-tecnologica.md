@@ -2,7 +2,9 @@
 title: "Dizionario di Neolingua: “Neutralità tecnologica”"
 date: 2024-10-09
 tags:
-- spuntini
+- Greenwashing
+- Politica
+- Tecnologia
 summary: "Negli ultimi tempi la politica nostrana ha iniziato in tema di energia a fare largo uso del termine “*neutralità tecnologica*”, una formula evocativa ed efficace quanto furbetta."
 cover_image:
  src: assets/post-img/photo_2024-10-09_23.17.40_w8uxdh

@@ -7,6 +7,9 @@ summary: | # leave blank if no summary is provided
 cover_image:
   src: assets/img/PILLOLE/2023/FEB/all_horizontal_inrzyw
 tags:
+- Efficienza Energetica
+- Elettrodomestici
+- Costo Economico
   - energia
 layout: classes_article
 energy_classes:

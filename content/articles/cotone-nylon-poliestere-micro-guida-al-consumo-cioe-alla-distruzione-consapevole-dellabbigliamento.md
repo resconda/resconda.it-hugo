@@ -2,10 +2,11 @@
 title: "Cotone, nylon, poliestere: micro guida al consumo (cioè alla distruzione) consapevole dell’abbigliamento"
 date: 2025-11-07
 tags:
-- abbigliamento
-- fibre tessili
-- microplastiche
-- moda
+- Abbigliamento
+- T-Shirt
+- Fibre Tessili
+- Moda
+- Embodied Energy
 summary: "Cotone, poliestere, nylon: quale il costo ambientale di una t-shirt? E’ possibile rendere le proprie scelte di acquisto di nuovi capi di abbigliamento meno impattanti?"
 cover_image:
  src: assets/post-img/tessili_gr32uw

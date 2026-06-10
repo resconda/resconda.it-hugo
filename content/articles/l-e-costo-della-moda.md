@@ -10,6 +10,11 @@ cover_image: # optional
 classes:
   - MWh
 tags:
+- Abbigliamento
+- Moda
+- Logistica
+- Embodied Energy
+- CO2
   - Energia
   - Abbigliamento
   - Consumi

@@ -8,6 +8,7 @@ images:
 ## below are user-defined parameters (lower case keys recommended)
 subtitle:
 tags:
+- Animali Domestici
   - ecologia
   - eden
 ---

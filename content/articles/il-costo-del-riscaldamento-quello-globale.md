@@ -2,9 +2,10 @@
 title: "Il costo del riscaldamento, quello globale."
 date: 2024-11-07
 tags:
-- riscaldamento globale  
-- lavoro  
-- costo economico
+- Cambiamento Climatico
+- CO2
+- Combustibili Fossili
+- Costo Economico
 summary: "“Così risparmiamo sul riscaldamento” è uno dei commenti faceti al cambiamento climatico che talvolta sentiamo alle nostre latitudini. Ma il riscaldamento ha anche dei costi: quelli conseguenti al calo della produttività del lavoro sono stati calcolati per l’Italia in alcuni miliardi di euro…"
 cover_image:
  src: assets/post-img/8583287676_f3c6c76ebc_b_nvfenp

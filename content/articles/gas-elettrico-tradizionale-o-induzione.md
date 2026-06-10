@@ -1,5 +1,10 @@
 ---
 tags:
+- Cottura
+- Gas
+- Elettricità
+- Efficienza Energetica
+- Casa
   - cucina
   - food
   - sostenibilità

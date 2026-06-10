@@ -8,6 +8,10 @@ cover_image: # optional
   src: assets/post-img/glass-window-1845534_640_swe6ib
 #   caption: "caption string"
 tags:
+- Trasporti
+- Automobili
+- Politica
+- Emissioni
   - mobilità
   - aria
   - ambiente

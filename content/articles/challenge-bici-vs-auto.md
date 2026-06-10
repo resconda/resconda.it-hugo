@@ -2,10 +2,12 @@
 title: "Challenge: bici vs. auto"
 date: 2025-04-09
 tags:
-- bici  
-- auto  
-- efficienza
-- challenge
+- Trasporti
+- Bicicletta
+- Automobili
+- Challenge
+- Corpo Umano
+- Mobilità Sostenibile
 summary: "Chi va in bici lo sa: pedalare è faticoso! Ma *quanto* lo è, ovvero quanta energia serve per spostare una bici e come si confronta con quella che serve a muovere un’auto?"
 cover_image:
  src: assets/post-img/bike-158294_1280_skcgsp

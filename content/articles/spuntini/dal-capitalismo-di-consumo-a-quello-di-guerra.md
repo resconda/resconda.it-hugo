@@ -2,7 +2,11 @@
 title: "Dal capitalismo di consumo a quello di guerra"
 date: 2025-09-10
 tags:
-- spuntini
+- Militare
+- Geopolitica
+- Guerra
+- Combustibili Fossili
+- Economia
 summary: "In questo spuntino riportiamo, tradotto in italiano, un estratto del testo del socio Ugo Bardi, pubblicato il 18 Agosto scorso sul suo Blog “*The Seneca Effect*”, scritto a seguito dell'incontro tra D. Trump e V. Putin ad Anchorage avvenuto due giorni prima."
 cover_image:
  src: assets/post-img/capitalismo_kbn9y0

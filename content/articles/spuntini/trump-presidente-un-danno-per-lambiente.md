@@ -2,7 +2,10 @@
 title: "Trump presidente: un danno per l’ambiente? "
 date: 2024-11-07
 tags:
-- spuntini
+- Istituzioni
+- Geopolitica
+- Cambiamento Climatico
+- Politica
 summary: "L’ ”Orco a colori” è un negazionista climatico, un fan della trivellazione del petrolio e odia gli ambientalisti. Per chi ha a cuore le sorti dell’ambiente la notizia della sua elezione a Presidente degli Stati Uniti non potrebbe essere più funesta. O no?"
 cover_image:
  src: assets/post-img/trump-2023751_1280_xy9h8c

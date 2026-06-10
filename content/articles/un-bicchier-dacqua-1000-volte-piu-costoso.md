@@ -2,9 +2,9 @@
 title: "Un bicchier d’acqua 1000 volte più costoso…"
 date: 2025-04-09
 tags:
-- acqua
-- plastica
-- vetro
+- Acqua
+- Costo Economico
+- Plastica
 summary: "La differenza tra il costo energetico di un bicchier d’acqua del rubinetto e quello della bottiglia è enorme. Tuttavia rimaniamo, dopo il Messico, il Paese i cui cittadini comprano più acqua in bottiglia. Un impatto ambientale enorme, ma anche economico.  "
 cover_image:
  src: assets/post-img/ACQUA_CHALLENGE_bfeldq

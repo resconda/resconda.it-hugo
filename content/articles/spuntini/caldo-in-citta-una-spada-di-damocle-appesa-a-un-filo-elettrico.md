@@ -2,7 +2,9 @@
 title: "Caldo in città: “una spada di Damocle appesa a un filo elettrico”"
 date: 2026-06-08
 tags:
-- spuntini
+- Cambiamento Climatico
+- Casa
+- Elettricità
 summary: "A maggio caldo record in tutto il mondo, comprese le città italiane. Ma quali sono gli scenari possibili connessi al cambiamento climatico? Difficile dirlo e soprattutto comprenderlo, ma qualche piccolo assaggio qua e là si intravede."
 cover_image:
  src: assets/post-img/spuntini_2_lfxx7r

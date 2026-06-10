@@ -2,7 +2,8 @@
 title: "Fantasia al potere"
 date: 2025-07-06
 tags:
-- spuntini
+- Politica
+- Cambiamento Climatico
 summary: "Dopo l’energia da fusione nucleare nel 2040 il Governo intende realizzare in Italia il polo più avanzato in Europa dell'acciaio “green”. Ma che è?"
 cover_image:
  src: assets/post-img/bloom-1578783_640_m6xdgy

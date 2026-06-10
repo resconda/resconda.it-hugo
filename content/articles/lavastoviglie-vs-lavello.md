@@ -2,10 +2,11 @@
 title: "A mano o in lavastoviglie?"
 date: 2026-05-11
 tags:
-- piatti
-- cucina
-- lavastoviglie
-- acqua calda
+- Cottura
+- Lavastoviglie
+- Acqua
+- Elettrodomestici
+- Efficienza Energetica
 summary: "È una discussione ricorrente nelle “chiacchiere da bar”: si consuma meno elettricità e/o acqua a lavare i piatti a mano o in lavastoviglie? Proviamo a fare due conti."
 cover_image:
  src: assets/post-img/pavol-tancibok-CQVfXtNwCNM-unsplash_1_scsheu

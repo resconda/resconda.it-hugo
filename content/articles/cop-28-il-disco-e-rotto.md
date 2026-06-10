@@ -8,10 +8,9 @@ cover_image: # optional
   src: assets/post-img/cop28_y9auuv
 #   caption: "caption string"
 tags:
+- Istituzioni
 - COP
-- transizione
-- cambiamento climatico
-- CO2
+- Cambiamento Climatico
 classes:
 - GWh
 ---

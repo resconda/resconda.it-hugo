@@ -9,6 +9,11 @@ cover_image:
 classes: 
   - GWh
 tags:
+- Trasporti
+- Automobili
+- EV
+- Embodied Energy
+- CO2
   - EV
 ---
 

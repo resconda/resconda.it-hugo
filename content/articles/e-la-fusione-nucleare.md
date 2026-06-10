@@ -7,9 +7,9 @@ cover_image:
   src: assets/post-img/JET_vessel_internal_view_ico7mn
   caption: "L'interno del tokamak del progetto europeo JET"
 tags:
-- energia
-- fusione
-- fisica
+- Nucleare
+- Fonti Rinnovabili
+- Politica
 classes:
 - GWh
 ---

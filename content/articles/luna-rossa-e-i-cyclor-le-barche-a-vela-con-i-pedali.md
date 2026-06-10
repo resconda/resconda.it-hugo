@@ -2,10 +2,11 @@
 title: "Luna Rossa e i *cyclor*, le barche a vela con i pedali"
 date: 2024-12-05
 tags:
-- Vela   
-- Ciclismo  
-- Energia  
 - Sport
+- Vela
+- Ciclismo
+- Corpo Umano
+- Potenza
 summary: "In barca a vela oggi si pedala. Nell’ultima generazione di imbarcazioni dell'America's Cup i “vecchi” *grinder* sono stati rimpiazzati da veri e propri ciclisti. Quanta energia viene prodotta durante una regata? "
 cover_image:
  src: "assets/post-img/DALL_E_2024-12-04_12.47.52_-_A_whimsical_and_cartoonish_scene_featuring_an_America_s_Cup_sailboat_Luna_Rossa_being_humorously_tugged_by_a_cyclist._The_cyclist_is_on_a_road_bike_xyzjh4"

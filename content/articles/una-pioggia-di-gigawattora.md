@@ -2,10 +2,12 @@
 title: "Una pioggia di gigawattora"
 date: 2026-04-07
 tags:
-- missili
-- guerra
-- droni
-- golfo
+- Militare
+- Armi
+- Missili
+- Guerra
+- Geopolitica
+- Embodied Energy
 summary: "In quasi quaranta giorni di guerra nel Golfo, sono volati (e andati più o meno a segno) un numero impressionante di missili. Quanta energia è andata letteralmente in fumo in così poco tempo?"
 cover_image:
  src: assets/post-img/Tomahawk_Block_IV_cruise_missile_-crop_lub3ph

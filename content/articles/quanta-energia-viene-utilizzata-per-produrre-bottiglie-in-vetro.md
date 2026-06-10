@@ -2,10 +2,11 @@
 title: "Quanta energia viene utilizzata per produrre bottiglie in vetro?"
 date: 2025-03-10
 tags:
-- Energia 
-- Vetro 
-- Bottiglie
-- Birra
+- Materiali
+- Vetro
+- Imballaggi
+- Embodied Energy
+- Riciclo
 summary: "Il vetro monouso è una vera e propria tomba dell'energia. Essenzialmente sabbia a cui, grazie ad altissime temperature viene data la forma dei contenitori delle nostre vivande.  
 Quanta energia abbiamo in mano ad ogni sorso, quanto si riesce a risparmiare (ambientalmente) con il riciclo, e con il riuso?"
 cover_image:

@@ -8,6 +8,8 @@ cover_image: # optional
   src: assets/post-img/anxiety-768x512_zpsbujr6kri_xodbab
 #   caption: "caption string"
 tags:
+- Cambiamento Climatico
+- Politica
   - ecoansia
   - clima
 ---

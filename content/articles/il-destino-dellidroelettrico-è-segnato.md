@@ -2,10 +2,9 @@
 title: "Il destino dell’idroelettrico è segnato?"
 date: 2025-02-05
 tags:
-- energia
-- idroelettrico
-- diga
-- cambiamento climatico
+- Fonti Rinnovabili
+- Idroelettrico
+- Cambiamento Climatico
 summary: "La crisi idrica del bacino artificiale più grande al mondo, passata pressoché inosservata sui nostri media, induce a ragionare sull’importanza della produzione idroelettrica e sulla minaccia che il cambiamento climatico rappresenta per questo tipo di elettricità. "
 cover_image:
  src: assets/post-img/kariba_dam_zdnfnq

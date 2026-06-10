@@ -2,7 +2,10 @@
 title: "Sostenibilità! Sostenibilità! Sostenibilità!"
 date: 2026-02-07
 tags:
-- spuntini
+- Istituzioni
+- Olimpiadi
+- Greenwashing
+- Cambiamento Climatico
 summary: "Le Olimpiadi hanno un impatto ambientale enorme, tuttavia nei Dossier di candidatura il termine “sostenibilità” compare centinaia di volte. Si tratta di un esempio eclatante su come un termine con dei contenuti precisi sia stato piegato alle esigenze della crescita economica, diventando una parola della *Neolingua* dei nostri tempi."
 cover_image:
  src: assets/post-img/spuntini_zjkxp4

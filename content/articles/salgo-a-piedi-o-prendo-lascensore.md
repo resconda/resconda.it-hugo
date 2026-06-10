@@ -2,9 +2,11 @@
 title: "Salgo a piedi, o prendo l’ascensore?"
 date: 2025-12-04
 tags:
-- ascensori
-- casa
-- scale
+- Casa
+- Ascensori
+- Corpo Umano
+- Elettricità
+- Efficienza Energetica
 summary: "Quanta energia consuma un ascensore nel trasportarci su o giù di un certo numero di piani?"
 cover_image:
  src: assets/post-img/glass-3256974_1920_stcuy0

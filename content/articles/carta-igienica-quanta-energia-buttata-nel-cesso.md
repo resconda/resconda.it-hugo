@@ -2,10 +2,10 @@
 title: "Carta igienica: quanta energia buttata nel cesso?"
 date: 2025-04-09
 tags:
-- carta  
-- riciclo  
-- legno  
-- bambù
+- Carta
+- Materiali
+- Embodied Energy
+- Riciclo
 summary: "Quanta energia serve per produrre un rotolo di carta igienica? C’è differenza tra la carta prodotta con legno “vergine”, riciclata o fatta con il bamboo? Spoiler alert: quella riciclata (questa volta) vince il confronto energetico. "
 cover_image:
  src: assets/post-img/Toilet_Rolls_fl67sy

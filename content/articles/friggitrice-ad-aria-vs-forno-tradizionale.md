@@ -2,9 +2,10 @@
 title: "Friggitrice ad aria vs. forno tradizionale"
 date: 2025-03-10
 tags:
-- cucina
-- forno
-- bolletta 
+- Cottura
+- Forno
+- Elettrodomestici
+- Efficienza Energetica
 summary: "Un trend di consumo ormai molto diffuso nel settore degli elettrodomestici casalinghi, con un nome assolutamente fuorviante per quello che e’ di fatto un fornetto iper-ventilato. Ma dal punto di vista dei costi energetici, può essere un valido rivale del forno tradizionale?"
 cover_image:
  src: assets/post-img/image_ch11ve

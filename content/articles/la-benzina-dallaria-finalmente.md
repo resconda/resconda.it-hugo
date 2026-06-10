@@ -2,11 +2,9 @@
 title: "La benzina dall’aria, finalmente"
 date: 2025-08-09
 tags:
-- benzina
-- aria
+- Combustibili Fossili
+- Tecnologia
 - CO2
-- idrossido di potassio
-- idrogeno
 summary: "Una startup dichiara di produrre benzina a partire da acqua e aria. Un claim veramente impressionante! Vediamo quanto sia “fritta” questa aria (e quest’acqua), o se possiamo continuare a usare i motori endotermici a emissioni (ed e-costo) zero."
 cover_image:
  src: assets/post-img/aircela_gasoline_from_air_dljhhh

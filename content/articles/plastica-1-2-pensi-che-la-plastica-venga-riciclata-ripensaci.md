@@ -7,6 +7,10 @@ cover_image: # optional
   src: assets/post-img/plastic-bottles-115077_1280_wxuduj
 #   caption: "caption string"
 tags:
+- Materiali
+- Plastica
+- Riciclo
+- Rifiuti
   - energia
   - consumi
 ---

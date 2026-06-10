@@ -7,6 +7,10 @@ summary: Quant'è il consumo di energia di una giornata tipo sugli sci?
 cover_image:
   src: assets/post-img/8537138810_0c924a8691_b_wxy2sm
 tags:
+- Sport
+- Sci
+- Neve
+- Costo Economico
   - energia
 classes:
   - kWh

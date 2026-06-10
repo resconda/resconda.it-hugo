@@ -2,10 +2,9 @@
 title: "Si fa presto a dire nucleare"
 date: 2024-12-06
 tags:
-- spuntini  
-- energia  
-- nucleare  
-- EROEI
+- Nucleare
+- Politica
+- Fonti Rinnovabili
 summary: "Si parla sempre più spesso e con entusiasmo della produzione di elettricità tramite reazioni nucleari (e purtroppo anche di armi nucleare, forse con un filo di entusiasmo anche lì…). Il tema è complesso e non va agitato prima dell’uso. Ci limitiamo a proporre qualche riflessione sulla disponibilità del combustibile (non rinnovabile) impiegato dalle centrali nucleari: l’uranio."
 cover_image:
  src: assets/post-img/cooling-towers-4172369_1280_xzsemg

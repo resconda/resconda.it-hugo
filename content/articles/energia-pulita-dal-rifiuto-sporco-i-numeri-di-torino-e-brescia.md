@@ -2,9 +2,9 @@
 title: "Energia “pulita” dal rifiuto sporco? I numeri di Torino e Brescia"
 date: 2025-11-07
 tags:
-- Termovalorizzatore
-- Rifiuti 
-- Plastica
+- Rifiuti
+- Elettricità
+- Fonti Rinnovabili
 summary: "Dai rifiuti all’energia: gli impianti di Torino e Brescia mostrano come gli scarti urbani possano riscaldare intere città. Ogni anno producono centinaia di migliaia di MWh, trasformando ciò che buttiamo in risorsa. Un modello efficiente, ma non privo di interrogativi su salute e impatto ambientale."
 cover_image:
  src: assets/post-img/Pillola_Termovalorizzatori_v4rzo7

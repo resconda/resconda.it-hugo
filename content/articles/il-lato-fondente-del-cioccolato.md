@@ -8,6 +8,10 @@ cover_image: # optional
   src: assets/post-img/melted_easteregg_zwv1eb
   caption: "Generata con Microsoft Copilot Designer"
 tags:
+- Alimentazione
+- Cibo
+- Embodied Energy
+- Agricoltura
   - cioccolato
   - cibo
 classes:

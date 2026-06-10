@@ -8,6 +8,9 @@ cover_image: # optional
 classes:
   - TWh
 tags:
+- Combustibili Fossili
+- Geopolitica
+- Emissioni
   - metano
   - emissioni
 ---

@@ -8,6 +8,10 @@ cover_image: # optional
   src: assets/post-img/iet_privato_nsbyz8
 #   caption: "caption string"
 tags:
+- Trasporti
+- Aviazione
+- Costo Economico
+- Emissioni
   - giustizia climatica
   - energia
   - società

@@ -10,6 +10,10 @@ cover_image: # optional
 classes:
   - kWh
 tags:
+- Casa
+- Turismo
+- Costo Economico
+- CO2
   - turismo
   - energia
 ---

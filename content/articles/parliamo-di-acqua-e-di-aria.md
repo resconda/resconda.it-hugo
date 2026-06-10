@@ -8,6 +8,9 @@ summary: |
 cover_image:
   src: assets/post-img/EarthWater-3spheres-1_286095_blljcz
 tags:
+- Acqua
+- Aria
+- Cambiamento Climatico
   - siccità
   - ordini di grandezza
   - clima

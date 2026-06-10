@@ -2,9 +2,10 @@
 title: "Impatto ambientale “à la carte”: riso o cotoletta?"
 date: 2026-05-11
 tags:
-- cibo
-- alimentazione
-- progetti
+- Alimentazione
+- Carne
+- Embodied Energy
+- Cambiamento Climatico
 summary: "Il settore alimentare è causa del 35% delle emissioni di gas climalteranti in atmosfera ed in generale uno dei settori dell’attività umana a maggior impatto ambientale, eppure pochi se ne curano. Con L’associazione Rubens stiamo curando un menù che permetta alle persone di scegliere il cibo anche in ragione del suo impatto energetico ed ambientale."
 cover_image:
  src: assets/post-img/copertina_menu_nvnuyv

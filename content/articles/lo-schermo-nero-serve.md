@@ -2,9 +2,11 @@
 title: "Lo schermo nero serve?"
 date: 2025-10-10
 tags:
-- LED 
-- DARK MODE
-- SCHERMI
+- Casa
+- Schermi
+- Illuminazione
+- Tecnologia
+- Efficienza Energetica
 summary: "E’ vero che la modalità scura dei display è una scelta “green”? Tra miti digitali e realtà luminose: lo sfondo nero fa davvero risparmiare energia? O solo sensi di colpa?"
 cover_image:
  src: assets/post-img/Dark_Mode_Pillola_jotyhv

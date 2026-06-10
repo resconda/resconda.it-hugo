@@ -2,6 +2,8 @@
 title: "Il calore sotto la superficie degli oceani: polvere sotto il tappeto?"
 date: 2024-11-07
 tags:
+- Cambiamento Climatico
+- CO2
   - oceani
   - calore
   - riscaldamento globale

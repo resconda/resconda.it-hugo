@@ -10,6 +10,9 @@ cover_image:
 classes:
 - kWh
 tags:
+- Rifiuti
+- CO2
+- Emissioni
   - energia
   - consumi
 ---

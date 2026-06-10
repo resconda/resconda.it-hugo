@@ -6,9 +6,9 @@ cover_image:
 #    caption:
 summary: "Molte aziende cercano di ridurre il proprio consumo di energia, non solo per ragioni di costi ma anche in ottica di sostenibilità. Melinda intende farlo tramite una funivia che – dicono - permetterà di risparmiare “un’enorme quantità” di CO2. Vediamo."
 tags:
-- trasporti  
-- agricoltura  
-- sostenibilità
+- Trasporti
+- Agricoltura
+- Efficienza Energetica
 classes:
 - MWh
 ---

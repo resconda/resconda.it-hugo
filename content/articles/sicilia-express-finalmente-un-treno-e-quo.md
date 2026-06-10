@@ -2,9 +2,11 @@
 title: "Sicilia Express: finalmente un treno e-quo?"
 date: 2025-01-06
 tags:
-- treni
-- trasporti
-- energia
+- Trasporti
+- Treni
+- Automobili
+- Aviazione
+- Costo Economico
 summary: |
   *Sul binario delle emozioni, destinazione Sicilia. Un treno speciale per i siciliani fuori sede. [...] Un rientro a casa semplice, economico e divertente.*
   Qualche considerazione sul costo economico ed energetico di diversi mezzi di trasporto.

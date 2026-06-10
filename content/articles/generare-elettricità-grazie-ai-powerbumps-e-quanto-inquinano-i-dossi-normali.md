@@ -2,9 +2,9 @@
 title: "Generare elettricità grazie ai “*powerbumps*” (e quanto inquinano i dossi “normali”)"
 date: 2025-02-05
 tags:
-- Automobili
-- Generazione di elettricità
-- Inquinamento
+- Elettricità
+- Trasporti
+- Strade
 summary: "Se ne parla da 20 anni ma ancora non sembrano trovare applicazione reale: i dossi che recuperano l’energia cinetica della auto. In compenso una quantità enorme di energia viene “sprecata” ogni anno a causa dei dossi posti sulle strade dalle Pubbliche Amministrazioni. Vediamo i numeri."
 cover_image:
  src: assets/post-img/screen-shot-2011-10-31-at-93605-pm_dl4yki

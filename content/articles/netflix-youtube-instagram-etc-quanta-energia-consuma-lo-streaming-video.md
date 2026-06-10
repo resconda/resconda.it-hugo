@@ -2,11 +2,11 @@
 title: "Netflix, Youtube, Instagram etc.: quanta energia consuma lo streaming video?"
 date: 2025-02-05
 tags:
-- Energia 
-- TV
-- Video 
+- Tecnologia
 - Streaming
-- Internet 
+- Internet
+- Elettricità
+- Embodied Energy
 summary: "I data center ci permettono di visualizzare video sui nostri dispositivi. Ma quanta energia consumano? Globalmente parecchia, ma pro capite meno di quello che pensavamo.  "
 cover_image:
  src: assets/post-img/STREAMING_Data_Center_Energy_Cover_ba4s4r

@@ -2,9 +2,12 @@
 title: "Obsolescenza non programmata"
 date: 2026-05-11
 tags:
-- amazon
-- ebook
-- obsolescenza
+- Amazon
+- Tecnologia
+- Ebook
+- Obsolescenza
+- Rifiuti
+- Embodied Energy
 summary: "A partire dal 20 Maggio circa 2 milioni di “vecchi” Kindle vengono resi obsoleti da Amazon, anche se perfettamente funzionanti. Le “Big Tech” confermano il loro orientamento alla distruzione dell’ambiente, laddove funzionale al profitto."
 cover_image:
  src: assets/post-img/kindle_zgrzod

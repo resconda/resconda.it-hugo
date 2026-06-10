@@ -10,6 +10,10 @@ cover_image:
 classes:
   - kWh
 tags:
+- Alimentazione
+- Carne
+- Agricoltura
+- Embodied Energy
   - food
   - sostenibilità
 ---

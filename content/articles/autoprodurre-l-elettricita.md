@@ -12,6 +12,10 @@ cover_image:
 classes:
   - Wh
 tags:
+- Casa
+- Fonti Rinnovabili
+- Elettricità
+- Costo Economico
   - energia
   - elettricità
 ---

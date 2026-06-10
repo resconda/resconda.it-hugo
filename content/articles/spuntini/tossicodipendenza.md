@@ -2,7 +2,10 @@
 title: "Tossicodipendenza"
 date: 2026-04-07
 tags:
-- spuntini
+- Combustibili Fossili
+- Geopolitica
+- Economia
+- Politica
 summary: |
     I Governi avrebbero dovuto da anni impegnarsi nello studio e definizione di possibili percorsi di uscita da questa condizione di disperata tossicodipendenza, nella **predisposizione di scenari di disintossicazione**. Purtroppo ciò non accade.
 cover_image:

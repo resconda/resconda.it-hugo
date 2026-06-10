@@ -2,9 +2,12 @@
 title: "F-35 a tutti i costi"
 date: 2026-04-07
 tags:
+- Militare
+- Armi
 - Aviazione
-- Aerei
+- Geopolitica
 - Guerra
+- Costo Economico
 summary: "L’F-35 è uno dei cacciabombardieri di maggior successo degli ultimi 40 anni. Nelle ultime settimane in Medio oriente ne sono stati abbattuti quattro. Quale il costo energetico (e monetario)?"
 cover_image:
  src: assets/post-img/F35_yohfn8

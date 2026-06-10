@@ -9,6 +9,10 @@ cover_image: # optional
   src: assets/post-img/Teatro_A_pedali_kllxbd
 #   caption: "caption string"
 tags:
+- Sport
+- Corpo Umano
+- Potenza
+- Elettricità
   - bici
   - ordini di grandezza
 classes:

@@ -10,6 +10,11 @@ cover_image: # optional
 classes:
   - kWh
 tags:
+- Abbigliamento
+- Moda
+- Trasporti
+- Logistica
+- CO2
   - moda
   - vestiti
   - trasporti

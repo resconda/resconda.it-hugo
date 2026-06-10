@@ -2,7 +2,8 @@
 title: "Che il futuro (in parte) dipenda anche da loro è molto preoccupante"
 date: 2025-05-12
 tags:
-- spuntini
+- Cambiamento Climatico
+- Politica
 summary: "Un update su un tema di cui abbiamo parlato un paio di anni fa: il Governo italiano ha speso circa 4 milioni di euro del PNRR per un sito web sui temi ambientali. Un costo enorme per un sito web, quale il risultato?"
 cover_image:
  src: assets/post-img/spuntini_vaoh0y

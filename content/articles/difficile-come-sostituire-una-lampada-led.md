@@ -2,10 +2,11 @@
 title: "_Difficile_ come sostituire una lampada LED"
 date: 2025-09-10
 tags:
-- Illuminazione 
-- Casa 
+- Casa
 - LED
-- Lampadine
+- Illuminazione
+- Elettrodomestici
+- Obsolescenza
 summary: "L’ultimo grido nel mondo dell’illuminazione o rivoluzione LED andata oltre? 
  Lampade LED integrate. Ma se qualcosa non va? Cambiamo tutto. "
 cover_image:

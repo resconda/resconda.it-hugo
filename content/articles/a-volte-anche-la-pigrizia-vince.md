@@ -9,9 +9,9 @@ cover_image: # optional
 classes:
 - kWh
 tags:
-- elettrodomestici 
-- energia
-- casa
+- Elettrodomestici
+- Casa
+
 ---
 
 Tendenzialmente, la pigrizia non gioca a favore del risparmio energetico. Nella stragrande maggioranza dei casi genera infatti comportamenti più costosi in termini energetici o economici o dannosi per l'ambiente. Ci sono però, come per tutto, delle eccezioni. Una di queste riguarda un'attività che sta ormai cadendo in disuso, secondo le nonne a causa della pigrizia delle nuove generazioni di donne, più probabilmente, invece, a causa di un cambiamento nell'ordine delle priorità e di mix di cambiamento sociale, professionale e di priorità ed esigenze. Stiamo parlando delle sessioni di ferro da stiro, che per decenni hanno occupato le serate della quasi totalità delle donne italiane (e forse, forse anche qualche uomo, sì) e che nelle famiglie under 50 sono invece quasi estinte.
