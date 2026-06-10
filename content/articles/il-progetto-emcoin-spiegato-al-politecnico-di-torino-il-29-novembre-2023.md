@@ -6,8 +6,7 @@ summary: |
 cover_image: # optional
   src: assets/post-img/emcoin_jlctzs
 tags:
-  - emcoin
-  - resconda
+
   - PoliTO
 ---
 

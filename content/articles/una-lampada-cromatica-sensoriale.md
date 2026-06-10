@@ -12,8 +12,7 @@ tags:
 - Illuminazione
 - Elettricità
 - LED
-  - ordini di grandezza
-  - lampadine
+
 ---
 
 Sulla scatola l'azienda produttrice scrive: _“Rilassatevi e godete dell'effetto cromatico sensoriale della lampada [nome omesso]“_.

@@ -14,8 +14,7 @@ tags:
 - Trasporti
 - CO2
 - Emissioni
-  - turismo
-  - sostenibilità
+
 ---
 
 Gli eventi turistici hanno rilevanti ed importanti **ricadute sociali ed economiche sui territori** che li ospitano. Tuttavia, come ogni attività umana, hanno un impatto ambientale… e dei costi energetici. 

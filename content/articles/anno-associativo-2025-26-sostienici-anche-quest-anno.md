@@ -4,8 +4,7 @@ date: 2025-09-11
 cover_image:
   src: assets/img/logo/logo_scritta_stacked
 tags:
-  - ResConDA
-  - associati
+
 summary: |
     Anche quest’anno con il mese di Settembre comincia il nuovo anno associativo (2025-26). In quest’anno abbiamo fatto molte cose, realizzato l’app Suasì e prodotto molti contenuti...
 ---

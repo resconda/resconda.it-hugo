@@ -13,8 +13,6 @@ tags:
 - Geopolitica
 - Emissioni
 - Guerra
-  - energia
-  - fossile
 math: true
 summary: |
     Qual'è il danno ambientale della perdita di gas dal gasdotto sabotato?

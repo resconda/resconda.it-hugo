@@ -13,8 +13,7 @@ tags:
 - Potenza
 - Metabolismo
 - Costo Economico
-  - elettricità
-  - energia
+
 ---
 
 Uno dei grandi problemi dell'energia è che... non si vede. Ne usiamo tutti e tutti ne usiamo molta, ogni giorno, senza rendercene conto. Siamo immersi in un mare di energia e ne disponiamo come più ci aggrada.  

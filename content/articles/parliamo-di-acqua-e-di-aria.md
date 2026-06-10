@@ -11,9 +11,7 @@ tags:
 - Acqua
 - Aria
 - Cambiamento Climatico
-  - siccità
-  - ordini di grandezza
-  - clima
+
 ---
 
 Mettiamo da parte l’energia e parliamo un poco di acqua.  

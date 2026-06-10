@@ -13,9 +13,7 @@ tags:
 - Acqua
 - Costo Economico
 - Embodied Energy
-  - Energia
-  - Acqua
-  - Consumi
+
 ---
 
 L'importanza vitale che risiede in una risorsa come l'acqua determina la necessità di un consumo consapevole, sia che venga utilizzata per usi agricoli, industriali o fatta scorrere dal rubinetto di casa. Ciò è ancor più necessario in un paese come l'Italia, che da più di un ventennio si posiziona nelle prime posizioni tra i paesi UE per la quantità di acqua dolce prelevata dalla rete. Secondo l'ISTAT, in Italia nel 2020 sono stati immessi in rete 9,19 miliardi di metri cubi, per un prelievo pro capite annuo medio pari a 155 m3 d'acqua a persona (155 mila litri, il contenuto di 20 autobotti!!!), seconda solo alla Grecia (con 158 m3). Ovviamente il consumo domestico non è che una minima parte di tale quantità... ma una gran parte è ad esempio incorporata nel cibo che mangiamo.

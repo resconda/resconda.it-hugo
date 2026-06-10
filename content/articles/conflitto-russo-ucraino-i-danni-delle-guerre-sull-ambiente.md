@@ -13,9 +13,7 @@ tags:
 - Geopolitica
 - Emissioni
 - Combustibili Fossili
-  - guerra
-  - ricostruzione
-  - aerei
+
 ---
 
 La guerra, distruggendo manufatti e organismi, può essere considerata come un'accelerazione temporanea dell'entropia. Essa dissipa grandi quantità di energia e produce {{< CO2 >}}.

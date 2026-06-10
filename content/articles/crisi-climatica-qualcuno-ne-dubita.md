@@ -11,7 +11,7 @@ tags:
 - Cambiamento Climatico
 - CO2
 - Combustibili Fossili
-  - clima
+
 ---
 
 

@@ -12,9 +12,6 @@ tags:
 - Aviazione
 - Costo Economico
 - Emissioni
-  - giustizia climatica
-  - energia
-  - società
 classes:
   - MWh
 ---

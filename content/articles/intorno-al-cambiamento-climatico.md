@@ -12,9 +12,7 @@ tags:
 - Cambiamento Climatico
 - CO2
 - Combustibili Fossili
-  - clima
-  - sovrappopolazione
-  - CO2
+
 ---
 
 Continuiamo a fornire qualche spunto di riflessione intorno al dibattito

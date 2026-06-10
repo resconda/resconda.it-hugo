@@ -14,8 +14,7 @@ tags:
 - Turismo
 - Costo Economico
 - CO2
-  - turismo
-  - energia
+
 ---
 
 Le strutture ricettive italiane sono diminuite in numero ma hanno aumentato la loro capacità ricettiva, allineandosi ad una offerta di qualità medio-alta. Di pari passo sono però aumentati i consumi energetici di queste strutture (quasi inevitabilmente qualità va a braccetto con consumo di energia...), rappresentando una quota considerevole nel bilancio totale dei consumi elettrici e delle emissioni di gas ad effetto serra del settore turistico.

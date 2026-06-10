@@ -12,11 +12,7 @@ tags:
 - Alimentazione
 - Fonti Rinnovabili
 - Embodied Energy
-  - agricoltura
-  - fertilizzanti
-  - fonti rinnovabili
-  - energia
-  - cibo
+
 ---
 
 La cronaca di questi giorni ci spinge a far giustizia di due radicati stereotipi: il primo è che l’agricoltura (rispetto all’industria) sia un luogo di maggiore equilibrio tra uomo e ambiente, il secondo è che la “green transition” possa essere considerata un luogo di grandi opportunità e di  “magnifiche e progressive sorti”.

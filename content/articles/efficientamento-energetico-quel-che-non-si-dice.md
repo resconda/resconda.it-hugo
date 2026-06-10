@@ -13,9 +13,7 @@ tags:
 - Efficienza Energetica
 - Edilizia
 - Tecnologia
-  - efficienza
-  - sostenibilità
-  - tecnologia
+
 ---
 
 Qualsiasi intervento di efficientamento energetico della propria casa comporta dei vantaggi in termini ambientali: la coibentazione dell'edificio (il cd. cappotto) o il montaggio di serramenti nuovi a bassa trasmittività, comportano un migliore isolamento termico della casa, quindi un minor fabbisogno di energia per la climatizzazione. Fin qui tutto chiaro. Cos’è dunque che non torna? 

@@ -8,8 +8,7 @@ cover_image: # optional
   src: assets/post-img/photo_2023-12-07_10.12.53_qwtotg
 #   caption: "caption string"
 tags:
-  - emcoin
-  - resconda
+
   - PoliTO
 ---
 

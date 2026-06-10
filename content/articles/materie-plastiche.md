@@ -14,9 +14,7 @@ tags:
 - Plastica
 - Riciclo
 - Embodied Energy
-  - plastica
-  - packaging
-  - casa
+
 ---
 
 Sul tema del packaging di prodotti di consumo, sempre più spesso si trovano indicazioni di tipo “ambientale” o alternative per il risparmio. Uno dei casi più eclatanti è quello delle confezioni di sapone liquido per lavatrice, ammorbidenti o altri prodotti liquidi per la casa solitamente in flaconi liquidi. 

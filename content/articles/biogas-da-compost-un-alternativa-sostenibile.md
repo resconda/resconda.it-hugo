@@ -14,8 +14,6 @@ tags:
 - Fonti Rinnovabili
 - Rifiuti
 - Gas
-  - sostenibilità
-  - biogas
 classes: # this is a list but one energy class should be set
   - kWh
   # - MWh

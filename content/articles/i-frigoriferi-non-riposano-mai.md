@@ -14,9 +14,7 @@ tags:
 - Elettrodomestici
 - Efficienza Energetica
 - Costo Economico
-  - estate
-  - casa
-  - energia
+
 ---
 
 Siamo giunti verso la fine di un'altra estate da record. Le conseguenze dell'innalzamento delle temperature sono ormai evidenti anche ai più scettici e sono molteplici gli ambiti in cui se ne manifestano gli effetti. 

@@ -12,10 +12,7 @@ tags:
 - Fonti Rinnovabili
 - Embodied Energy
 - EROEI
-  - Rinnovabili
-  - Eolico
-  - Turbine
-  - Capacity Factor
+
 ---
 
 Costruire una turbina eolica, come qualsiasi costruzione o oggetto - richiede energia: per estrarre e lavorare i materiali di cui è fatta, realizzare le componenti utilizzate, trasportare il tutto, nonché per il suo assemblaggio e manutenzione.

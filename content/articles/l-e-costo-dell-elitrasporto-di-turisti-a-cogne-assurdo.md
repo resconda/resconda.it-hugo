@@ -14,9 +14,6 @@ tags:
 - Elicottero
 - Turismo
 - Costo Economico
-  - turismo
-  - trasporti
-  - cherosene
 classes: # this is a list but one energy class should be set
   # - kWh
   - MWh

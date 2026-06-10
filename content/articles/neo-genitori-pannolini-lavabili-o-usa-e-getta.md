@@ -14,10 +14,7 @@ tags:
 - Monouso
 - Embodied Energy
 - Costo Economico
-  - Energia
-  - Casa
-  - Famiglia
-  - Acqua
+
 ---
 
 Auguri ad uno dei soci fondatori di Resconda che è diventato padre! Abbiamo quindi voluto dedicare una pillola ad un tema ricorrente tra i neo genitori con qualche scrupolo ambientale: pannolini lavabili o *Usa&Getta*? Il risultato può sembrare ovvio. Ma in realtà come spesso succede la risposta è: dipende...

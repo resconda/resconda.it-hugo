@@ -6,9 +6,6 @@ tags:
 - Moda
 - Rifiuti
 - Embodied Energy
-  - consumismo
-  - emissioni
-  - rifiuti
 summary: "Siamo agli sgoccioli, c’è ancora qualche negozio che applica gli ultimi sconti, ma anche quest’anno se n’è andata la settimana del Black Friday. Cosa ci avrà lasciato, a parte il solito carico di cianfrusaglie che probabilmente butteremo prima di Natale?"
 cover_image:
   src: assets/post-img/6410804509_4450ac2e82_k_itb4f7

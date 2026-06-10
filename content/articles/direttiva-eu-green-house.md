@@ -12,9 +12,7 @@ tags:
 - Unione Europea
 - Edilizia
 - Efficienza Energetica
-  - green
-  - UE
-  - efficienza energetica
+
 ---
 
 Ha fatto discutere la proposta di Direttiva comunitaria cosiddetta “green house”, volta a promuovere il miglioramento dell’efficienza energetica del patrimonio abitativo europeo.  

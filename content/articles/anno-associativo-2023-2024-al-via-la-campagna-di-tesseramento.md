@@ -8,7 +8,8 @@ cover_image: # optional
   src: assets/img/logo/favicon
 #   caption: "caption string"
 tags:
-  - resconda
+
+
 ---
 
 Con il mese di Settembre comincia l'anno associativo 2023-2024. In quest'anno spendendo sì e no 800 euro abbiamo fatto molte cose e prodotto molti contenuti per aumentare la consapevolezza ambientale - tramite la newsletter, sul sito web e tramite podcast - cercando, elaborando e fornendo dati il più possibile attendibili sull’impatto ambientale di beni e servizi che utilizziamo più o meno quotidianamente. 

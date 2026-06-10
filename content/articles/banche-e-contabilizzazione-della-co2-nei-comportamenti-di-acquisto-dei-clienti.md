@@ -12,8 +12,7 @@ tags:
 - CO2
 - EmCoin
 - Costo Economico
-  - CO2
-  - EmCoin
+
 ---
 
 Tra le varie iniziative volte a quantificare l'impatto ambientale dei

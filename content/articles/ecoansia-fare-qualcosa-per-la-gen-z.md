@@ -10,8 +10,7 @@ cover_image: # optional
 tags:
 - Cambiamento Climatico
 - Politica
-  - ecoansia
-  - clima
+
 ---
 
 Secondo diversi studi la Gen-Z (nati tra il 97 ed il 2012, quindi giovani tra gli 11 e i 26 anni) sarebbe particolarmente colpita da “Ecoansia”, un’ansia cronica che deriva dalle preoccupazioni inerenti il cambiamento climatico, al punto che molti di loro hanno difficoltà a guardare al futuro con fiducia.   

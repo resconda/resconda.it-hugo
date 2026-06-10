@@ -4,9 +4,6 @@ date: 2024-11-07
 tags:
 - Cambiamento Climatico
 - CO2
-  - oceani
-  - calore
-  - riscaldamento globale
 summary: "Quando si parla di riscaldamento globale si tende a soffermarsi sulla temperatura atmosferica: il famoso +1.5/2.0 °C. Approfondendo si scopre che la gran parte del calore in eccesso sul pianeta è in realtà assorbito dagli oceani. Vediamo i numeri in gioco e quanto sono preoccupanti."
 cover_image:
  src: assets/post-img/Figure-1_Bent_Sea_Rod_Bleaching_15011207807_o3tjvi

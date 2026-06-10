@@ -14,8 +14,7 @@ tags:
 - Acqua
 - Gas
 - Costo Economico
-  - energia
-  - fisica
+
 ---
 
 Quanta energia si usa per farsi una doccia calda? Diciamo che fa 3 kWh consumati, per farla breve, anzi no, di più, perché nel calcolo è stata considerata solo l'energia spesa per scaldare l'acqua con il gas e non quella spesa per estrarlo, trasportarlo, portarlo fino a casa...e neppure quella per raccogliere e depurare l'acqua e portarla fino in bagno, per produrre e installare la rubinetteria, le piastrelle ed il box doccia...Insomma probabilmente anche parecchio di più! (quando avremo un dato più raffinato non mancheremo di postarlo...)

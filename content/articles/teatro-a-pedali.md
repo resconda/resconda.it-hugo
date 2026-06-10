@@ -13,8 +13,6 @@ tags:
 - Corpo Umano
 - Potenza
 - Elettricità
-  - bici
-  - ordini di grandezza
 classes:
   - Wh
 ---

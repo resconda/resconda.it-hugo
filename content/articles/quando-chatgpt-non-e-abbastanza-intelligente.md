@@ -14,8 +14,7 @@ tags:
 - Internet
 - Automobili
 - EV
-  - tecnologia
-  - EV
+
 ---
 
 Abbiamo chiesto a Chat GPT (prima del bando ducale di esilio) di confrontare il consumo energetico di un'auto elettrica con un'auto a benzina, sul percorso Torino Roma.  

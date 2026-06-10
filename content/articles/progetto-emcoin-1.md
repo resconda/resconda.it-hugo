@@ -9,7 +9,7 @@ date: 2022-11-03
 cover_image:
   src: assets/post-img/Immagine13_mnw014
 tags:
-  - resconda
+
   - emcoin
 ---
 

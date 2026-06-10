@@ -6,7 +6,7 @@ summary: |
 cover_image:
   src: assets/post-img/aisme-logo-001
 tags:
-  - EmCoin
+
   - ResConDA
 ---
 

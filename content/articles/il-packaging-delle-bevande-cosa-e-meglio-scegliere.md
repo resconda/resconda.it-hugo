@@ -15,8 +15,6 @@ tags:
 - Plastica
 - Vetro
 - Embodied Energy
-  - packaging
-  - bevande
 classes:
   - Wh
 ---

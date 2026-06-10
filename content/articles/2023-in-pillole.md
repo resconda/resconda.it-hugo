@@ -10,8 +10,7 @@ cover_image: # optional
   src: assets/post-img/2023_jy8slz
 #   caption: "caption string"
 tags:
-  - "2023"
-  - pillole
+
   - riassunto
 ---
 

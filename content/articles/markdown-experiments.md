@@ -6,8 +6,7 @@ date: 2019-05-29
 ## below are user-defined parameters (lower case keys recommended)
 subtitle:
 tags:
-  - markdown
-  - tag2
+
   - testTestTest
 ---
 
