@@ -1,21 +1,17 @@
 ---
-tags: 
-- subacquea
-- estate
-- energia
-classes:
-- kWh
 date: 2023-09-05
 
 title: "Andati a fare un immersione? Fa 98 kWh!"
-tags:
-- Sport
-- Corpo Umano
-- Costo Economico
 summary: |
   Fare immersioni è un hobby estivo che nell'immaginario collettivo sembra essere molto eco friendly e sostenibile. Vediamo se è vero... 
 cover_image:
   src: assets/post-img/32331909_10216685968410690_1570744379952332800_n_b2e9kg
+tags:
+- Sport
+- Corpo Umano
+- Costo Economico
+classes:
+- kWh
 ---
 
 Dopo aver stimato l'e-costo di una {{< locallink href="articles/si-va-a-sciare-fa-150-kwh/">}}giornata sugli sci{{< /locallink>}} qualche mese fa, continuiamo la e-rassegna delle attività ricreative stagionali prendendo in considerazione la subacquea.
