@@ -87,6 +87,8 @@ languages:
   it:
     languageName: Italian
     weight: 1
+    params:
+      reading_speed: 188
   # en:
   #   languageName: English
   #   weight: 2

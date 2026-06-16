@@ -23,7 +23,7 @@
           {{end}}
         </div>
         <h4 id="date"> {{ dateFormat "2 January 2006" .Date.Local }}
-          <span class="wordcount">{{ .WordCount }} parole</span> 
+          <span class="wordcount">{{ .ReadingTime }} minuti di lettura</span> 
         </h4>
         <div class="d-flex flex-row flex-wrap taglist small">
           {{ with .Params.tags }}
