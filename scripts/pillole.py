@@ -130,9 +130,7 @@ class Spuntini(Article):
         if not body_match:
             raise Exception(f"No body heading found in pillola block titled {title}")
 
-        if not tags_match:
-            self.tags = ["- spuntini"]
-        else:
+        if tags_match:
             start = tags_match.end()
             if summary_match:
                 end = summary_match.start()
