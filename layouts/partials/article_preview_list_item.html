@@ -20,7 +20,7 @@
             {{ partial "cloudinary_image.html" (dict "image_name" .src "alt" $alt.File "class" "card-img-top cover cover-30")}}
         {{ end }}
     {{end}}
-    {{ if collections.In .Params.tags "spuntini" }}
+    {{ if strings.HasPrefix .Path "/articles/spuntini/" }}
     <div class="position-absolute" style="top: 1rem; right: 1rem">
         <i class="fa-solid fa-cookie-bite fa-xl" title="spuntini"></i>
     </div>
