@@ -6,8 +6,8 @@ tags:
 - servizio pubblico  
 - acqua  
 summary: "Sempre più persone **combattono il caldo estivo nelle piscine comunali**. Come ogni cosa anche l’uso di una piscina ha un costo energetico. Vediamo quale."
-# cover_image:
-#  src: assets/post-img/
+cover_image:
+ src: assets/post-img/piscina_pfepus
 #  caption: 
 classes:
 - kWh  
