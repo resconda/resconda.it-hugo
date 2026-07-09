@@ -80,7 +80,10 @@ menus:
       is_ext: true
 
 outputs:
-  home: 
+  home:
+    - HTML
+    - JSON
+  taxonomy:
     - HTML
     - JSON
 languages:
