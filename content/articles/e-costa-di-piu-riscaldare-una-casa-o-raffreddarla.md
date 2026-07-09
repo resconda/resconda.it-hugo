@@ -7,8 +7,8 @@ tags:
 - Casa  
 - Rete elettrica  
 summary: "Riscaldare o raffrescare: cosa consuma davvero di più? Il climatizzatore viene spesso indicato come uno dei principali responsabili dell'aumento della domanda elettrica estiva, ma mantenere una casa fresca richiede davvero più energia che riscaldarla durante una giornata molto fredda?  "
-# cover_image:
-#  src: assets/post-img/
+cover_image:
+ src: assets/post-img/climA_prfajo
 #  caption: 
 classes:
 - MWh  

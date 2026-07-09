@@ -7,8 +7,8 @@ tags:
 - Embodied energy  
 - Refrigerazione  
 summary: "Con il caldo il consumo di gelati aumenta moltissimo. Oltre a a rinfrescare e ad essere indubitabilmente buono, un gelato ha anche un grande apporto nutrizionale energetico. Ma per fare il gelato quanta energia serve?  "
-# cover_image:
-#  src: assets/post-img/
+cover_image:
+ src: assets/post-img/gelato_r3ngfe
 #  caption: 
 classes:
 - kWh  
