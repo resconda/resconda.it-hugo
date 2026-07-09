@@ -1,0 +1,8 @@
+{{- $tags := dict -}}
+{{- range $term, $pages := .Site.Taxonomies.tags -}}
+  {{- with site.GetPage (path.Join "tags" $term) -}}
+    {{- $entry := dict "count" (len $pages) "permalink" .Permalink -}}
+    {{- $tags = merge $tags (dict $term $entry) -}}
+  {{- end -}}
+{{- end -}}
+{{- $tags | jsonify -}}
