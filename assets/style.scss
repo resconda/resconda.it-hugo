@@ -563,6 +563,9 @@ ul.cloud {
   line-height: 1.1rem;
   li {
     margin-bottom: 0px;
+    a.tag-highlight {
+        background-color: $primary;
+    }
   }
   /* this shows the counter next to the tag label */
   // &[data-show-value] a::after {
