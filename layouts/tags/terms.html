@@ -4,15 +4,13 @@
 {{ define "main" }}
 <div class="container-fluid">
     <h2 class="site-title">Tutti i tag</h2>
+    <div class="text-center my-4">
+        <input class="form-control" type="text" id="searchTags" placeholder="Cerca tags" />
+    </div>
     <!-- list template -->
-        {{ partial "tag-cloud.html" }}
-        <!-- {{ range $idx, $tag := .Site.Taxonomies.tags.ByCount }}
-        <div class="h{{math.Min 6 (math.Add $idx 1)}}">
-            {{ with site.GetPage (path.Join "tags" .Name )}}
-            <a href="{{.RelPermalink}}">{{.LinkTitle}}</a> <span class="badge rounded-pill bg-secondary" style="font-size:smaller;"> &nbsp;{{- $tag.Count -}}&nbsp; </span>
-            {{ end }}
-        </div>
-        {{ end }} -->
-
+    {{ partial "tag-cloud.html" }}
 </div>
+{{ end }}
+{{ define "footer_scripts" }}
+<script src="/js/tags.js"></script>
 {{ end }}
