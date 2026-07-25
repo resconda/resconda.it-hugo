@@ -1,5 +1,5 @@
 ---
-title: "Per un pugno di coriandoli. Energia che "investiamo" nel Carnevale"
+title: 'Per un pugno di coriandoli. Energia che \"investiamo\" nel Carnevale'
 date: 2026-03-01
 tags:
 - Coriandoli
