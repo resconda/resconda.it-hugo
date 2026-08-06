@@ -5,8 +5,8 @@ tags:
 - EV  
 - automobili
 summary: "Spesso si sente dire che viaggiare in elettrico richiede rigide tabelle di marcia, zero imprevisti e rinunce. Abbiamo voluto analizzare i dati reali di uno spostamento da Torino a Treviso, con tanto di passeggeri Blablacar da accogliere e lasciare lungo la strada..."
-# cover_image:
-#  src: assets/post-img/
+cover_image:
+ src: assets/post-img/bixusas-ev-6049719_jumu3a
 #  caption: 
 classes:
 - kWh
@@ -41,7 +41,7 @@ Grazie alla diagnostica avanzata dell'auto, possiamo vedere esattamente dove è 
 * Tutto il resto: 2,9% (luci, display e intrattenimento).  
 * Recupero dovuto all'altitudine: \-2,0% 📉. Grazie al dislivello favorevole tra partenza e arrivo, l'auto ha "recuperato" un po' di energia , risparmiando un prelievo da batteria.
 
-\[Image.png\]
+{{< cloudinary_img src="assets/post-img/Image_ofsh5p" >}}
 
 Ridurre l'impatto ambientale dei nostri comportamenti quotidiani non sempre significa complicarsi la vita. 18 minuti di sosta su quasi 5 ore di viaggio non sono molti per un una tappa con giro al bagno e pausa caffè.
 

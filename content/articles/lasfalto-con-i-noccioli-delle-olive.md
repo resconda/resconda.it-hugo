@@ -6,8 +6,8 @@ tags:
 - strade
 - asfalto
 summary: "Un progetto pilota a Barcellona ha pavimentato un piccolo tratto di strada con un materiale “biochar” che promette di abbattere le emissioni – fino a più del 70% – rispetto al tradizionale *conglomerato bituminoso*. Ma come si pone dal punto di vista energetico?"
-# cover_image:
-#  src: assets/post-img/
+cover_image:
+ src: assets/post-img/biochartoday-asphalt_jenryb
 #  caption: 
 classes:
 - kWh
@@ -23,7 +23,7 @@ Da uno [studio](https://re.public.polimi.it/bitstream/11311/984787/4/Comparative
 Dalla tabella 3 del documento, sommiamo i valori di *Electricity* e *Natural gas* (convertendo i metri cubi in energia), per la colonna *Virgin HMA*. Prendendo il valore di 10,69 kWh per 1 smc di gas naturale abbiamo che, **per produrre un chilo di asfalto tradizionale, servono 94 Wh/kg**.
 
 Da questi risultati sembrerebbe che il costo energetico del biochar sia decisamente più grande dell’asfalto tradizionale, di circa quaranta volte.  
-è una tecnologia sperimentale, se ne potrebbe forse migliorare l’efficienza ma difficilmente si riuscirà a ridurre sensibilmente l’impatto energetico, per via delle necessità intrinseche del processo di pirolisi.
+&Egrave; una tecnologia sperimentale, se ne potrebbe forse migliorare l’efficienza ma difficilmente si riuscirà a ridurre sensibilmente l’impatto energetico, per via delle necessità intrinseche del processo di pirolisi.
 
 Un’ultima considerazione: di questi tempi di ondate di calore estremo, l’argomento isole urbane di calore è un tema *caldo*, letteralmente. Su questo l’innovazione portata dall’asfalto biochar ha poco da vantare rispetto alla tradizionale controparte fossile, dato che la copertura stradale che produce è similmente scura e quindi propensa ad accumulare calore da irraggiamento.
     
