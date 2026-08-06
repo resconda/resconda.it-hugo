@@ -6,8 +6,8 @@ tags:
 - Estate
 - Fuoco
 summary: "Un solo ettaro di bosco può immagazzinare tra 400 e 750 MWh di energia, in Francia a fine luglio 2026 ne sono andati persi 42.000!"
-# cover_image:
-#  src: assets/post-img/
+cover_image:
+ src: assets/post-img/Pillola_Incendi_mgwahw
 #  caption: 
 classes:
 - GWh

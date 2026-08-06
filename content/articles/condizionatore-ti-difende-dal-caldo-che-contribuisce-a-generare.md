@@ -7,8 +7,8 @@ tags:
 - elettrodomestici
 - rete elettrica
 summary: "Il condizionatore serve per difendersi dal caldo ma contribuisce ad aumentare il caldo in città. Si potenziano le reti elettriche urbane per poter usare ancora di più i condizionatori; che scaldano sempre di più l’aria delle città. Per cui si comprano nuovi condizionatori. Come se ne esce?"
-# cover_image:
-#  src: assets/post-img/
+cover_image:
+ src: assets/post-img/u_ssfofehsaj-air-conditioner-8843842_640_geaiux
 #  caption: 
 classes:
 - kWh
@@ -24,7 +24,7 @@ Da un punto di vista imprenditoriale sicuramente il condizionatore è un articol
 
 Ma chiariamo un punto: perché il condizionatore contribuisce a generare calore? Come tutte le macchine, esso obbedisce a delle leggi fisiche, nello specifico quelle termodinamiche (che tra tutte le leggi fisiche, [come disse Arthur Eddington](https://www.newscientist.com/article/2206453-second-law-thermodynamics/), sono quelle più inconfutabili): **non elimina il calore, semplicemente lo sposta altrove** (cioè all’esterno dell’abitazione o dell’abitacolo dell’automobile). Ma non è finita lì: **per farlo consuma energia ed il consumo di energia genera calore** (sempre per le incombenti leggi della termodinamica).
 
-Facciamo un esempio: hai una abitazione di 80 mq (200 {{< sup>}}3{{</sup>}}) in classe C e vuoi abbassarne la temperatura da 35 °C (temperatura esterna) a 24 °C e vuoi tenerla così per 8 ore con un condizionatore con EER (efficienza di raffreddamento) pari a 3,5.
+Facciamo un esempio: hai una abitazione di 80 mq (200 m{{< sup>}}3{{</sup>}}) in classe C e vuoi abbassarne la temperatura da 35 °C (temperatura esterna) a 24 °C e vuoi tenerla così per 8 ore con un condizionatore con EER (efficienza di raffreddamento) pari a 3,5.
 
 Nell’esempio il condizionatore deve “spostare” all’esterno della casa circa 31 kWh termici e per farlo consuma circa 9 kWh, per un totale di 40 kWh. In sostanza, **oltre al calore di casa, all’esterno arriva anche quello generato dalla macchina nel suo funzionamento**, che equivale a quello di una stufa elettrica accesa per 4,5 ore (9,00 kWh).
 
