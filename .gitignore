@@ -53,3 +53,5 @@ exampleSite/
 resources/
 .env
 .aider*
+token.json
+credentials.json
