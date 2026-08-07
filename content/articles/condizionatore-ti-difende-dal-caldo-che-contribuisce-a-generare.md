@@ -6,7 +6,7 @@ tags:
 - climatizzazione
 - elettrodomestici
 - rete elettrica
-summary: "Il condizionatore serve per difendersi dal caldo ma contribuisce ad aumentare il caldo in città. Si potenziano le reti elettriche urbane per poter usare ancora di più i condizionatori; che scaldano sempre di più l’aria delle città. Per cui si comprano nuovi condizionatori. Come se ne esce?"
+summary: "Il condizionatore serve per difendersi dal caldo ma contribuisce ad aumentare il caldo in città. Si potenziano le reti elettriche urbane per poter usare ancora di più i condizionatori, che scaldano sempre di più l’aria delle città. Per cui si comprano nuovi condizionatori. Come se ne esce?"
 cover_image:
  src: assets/post-img/u_ssfofehsaj-air-conditioner-8843842_640_geaiux
 #  caption: 

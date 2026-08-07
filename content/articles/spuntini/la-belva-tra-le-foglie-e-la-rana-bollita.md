@@ -3,7 +3,7 @@ title: "La belva tra le foglie e la rana bollita"
 date: 2026-08-06
 tags:
 - spuntini
-summary: "Sempre più persone - nonostante l’ottimo e pervasivo lavoro di negazionisti, troll e lobbies del sistema “*fossil based*” - quest’estate hanno infine la percezione che forse un problema di riscaldamento del pianeta c’è. Magari qualche fenomeno è arrivato ad insidiare anche la loro routine quotidiana. Basterà a far riconsiderare la scala delle loro priorità?"
+summary: "Sempre più persone &mdash; nonostante l’ottimo e pervasivo lavoro di negazionisti, troll e lobbies del sistema “*fossil based*” &mdash; quest’estate hanno infine la percezione che forse un problema di riscaldamento del pianeta c’è. Magari qualche fenomeno è arrivato ad insidiare anche la loro routine quotidiana. Basterà a far riconsiderare la scala delle loro priorità?"
 cover_image:
  src: assets/post-img/belvatralefoglie_slusg0
 #  caption: 
