@@ -8,7 +8,7 @@ tags:
 summary: "Un progetto pilota a Barcellona ha pavimentato un piccolo tratto di strada con un materiale “biochar” che promette di abbattere le emissioni &mdash; fino a più del 70% &mdash; rispetto al tradizionale *conglomerato bituminoso*. Ma come si pone dal punto di vista energetico?"
 cover_image:
  src: assets/post-img/biochartoday-asphalt_jenryb
-#  caption: 
+ caption: "Credits: biochartoday.com" 
 classes:
 - kWh
 ---
