@@ -13,6 +13,9 @@ from shutil import rmtree, move, copytree
 from os import makedirs
 import argparse
 
+from cldnry import uploadImage
+from json import dump as jdump
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 # If modifying these scopes, delete the file token.json.
 SCOPES = ["https://www.googleapis.com/auth/drive.readonly"]
@@ -80,9 +83,10 @@ def fetchPilloleDocxMdx(pillole_gdocx, creds):
     status, done = downloader.next_chunk()
   print(f"Done")
   
+  dest = 
   return tmpfile.name
 
-def fetchImmagini(pillole_gdocx, creds):
+def fetchImages(pillole_gdocx, creds):
   '''
   Scarica le immagini dalla cartella IMMAGINI sorella del file pillole_gdocx. I file vengono scaricati in una cartella temporanea, che viene ritornata.
   '''
@@ -100,9 +104,12 @@ def fetchImmagini(pillole_gdocx, creds):
   if len(items) > 1:
     raise MultipleResultsException("Found more than one folder IMMAGINI")
   the_folder = items[0]
+
+  # Get IMMAGINI folder contents
   results = service.files().list(driveId=driveid, corpora="drive", includeItemsFromAllDrives=True, supportsAllDrives=True, q=f"'{the_folder['id']}' in parents", fields="files(id,name)").execute()
   items = results.get("files", [])
-  tmpdir = TemporaryDirectory(delete=False)
+  tmpdir = TemporaryDirectory(delete=True)
+  drive_to_cloudinary = {}
   for item in items:
     print(f"Downloading image {item['name']}...")
     request = service.files().get_media(fileId=item["id"])
@@ -112,8 +119,9 @@ def fetchImmagini(pillole_gdocx, creds):
       done = False
       while done is False:
         status, done = downloader.next_chunk()
-    print(f"Done")
-  return tmpdir
+      result = uploadImage(tmpfile)
+      drive_to_cloudinary[item['name']] = result["public_id"]
+  return drive_to_cloudinary
   
 def main(args):
   creds = authenticate(args.creds, args.token)
@@ -121,13 +129,17 @@ def main(args):
   rmtree(builddir, ignore_errors=True)
   makedirs(builddir, exist_ok=False)
   pillole_docx_md = fetchPilloleDocxMdx(args.PILLOLE_GDOC, creds)
-  print(f"pillole_docx_md downloaded to: {pillole_docx_md}")
-  move(pillole_docx_md, os.path.join(builddir, args.PILLOLE_GDOC + ".md"))
-  immagini_dir = fetchImmagini(args.PILLOLE_GDOC, creds)
-  print(f"immagini_dir: {immagini_dir.name}")
-  copytree(immagini_dir.name, os.path.join(builddir, "IMMAGINI"))
-  immagini_dir.cleanup()
-  
+  dest = os.path.join(builddir, args.PILLOLE_GDOC + ".md")
+  move(pillole_docx_md, dest)
+  print(f"pillole_docx_md downloaded to: {dest}")
+  d2c_map = fetchImages(args.PILLOLE_GDOC, creds)
+  print(f"Images uploaded to cloudinary.")
+  # write the map to a file
+  dest = os.path.join(builddir, "d2c_map.json")
+  with open(dest, "w") as f:
+    jdump(d2c_map, f)
+  print(f"Drive-to-cloudinary map written to: {dest}")
+
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser()
