@@ -125,7 +125,7 @@ def fetchImages(pillole_gdocx, creds):
   
 def main(args):
   creds = authenticate(args.creds, args.token)
-  builddir = os.path.join(ROOT, "build")
+  builddir = args.outdir
   rmtree(builddir, ignore_errors=True)
   makedirs(builddir, exist_ok=False)
   pillole_docx_md = fetchPilloleDocxMdx(args.PILLOLE_GDOC, creds)
@@ -146,6 +146,7 @@ if __name__ == "__main__":
   parser.add_argument("PILLOLE_GDOC", help="The name of the 'pillole' Google Docx file to fetch")
   parser.add_argument("-c","--creds", help="The path to the credentials file to use", default=os.path.join(ROOT, "credentials.json"))
   parser.add_argument("-t","--token", help="The path to the token JSON file to use", default=os.path.join(ROOT, "token.json"))
+  parser.add_argument("-o", "--outdir", default=os.path.join(ROOT, "build"))
 
   args = parser.parse_args()
   main(args)
