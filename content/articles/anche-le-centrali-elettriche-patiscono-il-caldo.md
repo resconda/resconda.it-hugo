@@ -1,5 +1,5 @@
 ---
-title: "Anche le centrali elettriche patiscono il caldo\!"
+title: "Anche le centrali elettriche patiscono il caldo!"
 date: 2026-09-08
 tags:
 - cambiamento climatico  

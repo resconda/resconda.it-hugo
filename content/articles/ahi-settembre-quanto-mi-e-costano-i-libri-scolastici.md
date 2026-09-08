@@ -1,5 +1,5 @@
 ---
-title: "Ahi Settembre\! Quanto mi (e-)costano i libri scolastici\!"
+title: "Ahi Settembre! Quanto mi (e-)costano i libri scolastici!"
 date: 2026-09-08
 tags:
 - Carta
