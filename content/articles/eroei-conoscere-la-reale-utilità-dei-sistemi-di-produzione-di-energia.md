@@ -15,7 +15,7 @@ tags:
 summary: |
   Un pannello fotovoltaico, una pala eolica, una centrale a carbone: quanto realmente “servono” alla società? Come valutare la loro “utilità” reale? Quanta energia restituiscono, nell'arco della loro vita, rispetto a quella spesa per costruirli, installarli e smaltirli? Esiste un indicatore per questo: l’EROEI, che gli economisti per lo più ignorano!
 cover_image:
- src: assets/post-img/EROEI_hnmklp
+ src: assets/post-img/eroei_2_stnp9z
 # caption: 
 classes:
 - kWh
