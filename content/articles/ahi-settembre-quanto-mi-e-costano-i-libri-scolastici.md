@@ -51,4 +51,6 @@ Per quanto l’ipotesi che il peso dei libri sia uguale per tutti gli studenti s
 E magari la nuova edizione del libro viene giustificata dall’inserimento di qualche banalità sulla sostenibilità ambientale.
 
 A margine, un dato interessante per le colonne vertebrali dei nostri studenti: il peso dei libri in Italia è almeno doppio rispetto al resto d'Europa (Fonte: Indagine conoscitiva AGCM, gen. 2026).
-    
+
+[^1]:  I dati sopra riportati sono nostre elaborazioni da Ecoinvent: Offset printing, per kg printed paper RoW, Transport; Transport, freight, lorry 16-32 metric ton, EURO3 - RER; Passenger car - RER)
+[^2]:  Per i libri ad utilizzo pluriennale il peso relativo è stato normalizzato in funzione dell’uso.
