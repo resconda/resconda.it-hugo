@@ -2,7 +2,7 @@
 title: "Anno associativo 2026-2027"
 date: 2026-09-09
 img:
-    src: assets/img/logo_scritta_stacked
+    src: assets/img/logo/logo_scritta_stacked
 ---
 
 Con il mese di Settembre comincia il nuovo anno associativo (2026-27). 
