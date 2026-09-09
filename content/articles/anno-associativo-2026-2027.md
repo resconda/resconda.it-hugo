@@ -1,5 +1,5 @@
 ---
-title: "Anno associativo 2026-2027
+title: "Anno associativo 2026-2027"
 date: 2026-09-09
 img:
     src: assets/img/logo_scritta_stacked
