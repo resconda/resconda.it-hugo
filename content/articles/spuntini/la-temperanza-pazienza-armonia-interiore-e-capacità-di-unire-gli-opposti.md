@@ -34,38 +34,3 @@ Si può credere che la maggior parte degli abitanti del pianeta possano essere c
 
 MC
 
-[^1]:  I dati sopra riportati sono nostre elaborazioni da Ecoinvent: Offset printing, per kg printed paper RoW, Transport; Transport, freight, lorry 16-32 metric ton, EURO3 - RER; Passenger car - RER)
-
-[^2]:  Per i libri ad utilizzo pluriennale il peso relativo è stato normalizzato in funzione dell’uso.
-
-[^3]:  Fonti utilizzate: DELANNOY, L. et al., Energies, “Assessing Global Long-Term EROI of Gas: A Net-Energy Perspective on the Energy Transition”, MDPI (Multidisciplinary Digital Publishing Institute), 2021  
-    .  
-    MURPHY, D. J. et al., Sustainability, “Order from Chaos: A Preliminary Protocol for Determining the EROI of Fuels”, MDPI (Multidisciplinary Digital Publishing Institute), 2011  
-    .  
-    HALL, C. A. et al., Energy Policy, “EROI of different fuels and the implications for society”, Elsevier, 2014  
-    .  
-    COURT, V. & FIZAINE, F., Ecological Economics, “Long-Term Estimates of the Energy-Return-on-Investment (EROI) of Coal, Oil, and Gas Global Productions”, Elsevier, 2017  
-    .  
-    GATELY, M., Ecological Economics, “The EROI of U.S. offshore energy extraction: A net energy analysis of the Gulf of Mexico”, Elsevier, 2007  
-    .  
-    MOERSCHBAECHER, M. & DAY, J. W. Jr., Sustainability, “Ultra-Deepwater Gulf of Mexico Oil and Gas: Energy Return on Financial Investment and a Preliminary Assessment of Energy Return on Energy Investment”, MDPI (Multidisciplinary Digital Publishing Institute), 2011  
-    .  
-    FREISE, J., Sustainability, “The EROI of Conventional Canadian Natural Gas Production”, MDPI (Multidisciplinary Digital Publishing Institute), 2011  
-    .  
-    SELL, B. et al., Sustainability, “Energy Return on Energy Invested for Tight Gas Wells in the Appalachian Basin, United States of America”, MDPI (Multidisciplinary Digital Publishing Institute), 2011  
-    .  
-    AUCOTT, M. L. & MELILLO, J. M., Journal of Industrial Ecology, “A Preliminary Energy Return on Investment Analysis of Natural Gas from the Marcellus Shale”, Wiley-Blackwell, 2013  
-    .  
-    MOELLER, D. & MURPHY, D., BioPhysical Economics and Resource Quality, “Net Energy Analysis of Gas Production from the Marcellus Shale”, Springer, 2016  
-    .  
-    HU, Y. et al., Energy, “Energy Return on Investment (EROI) of China’s conventional fossil fuels: Historical and future trends”, Elsevier, 2013  
-    .  
-    LIOR, N., Journal of Energy Resources Technology, “Exergy, Energy, and Gas Flow Analysis of Hydrofractured Shale Gas Extraction”, ASME (American Society of Mechanical Engineers), 2016  
-    .  
-    WANG, J. et al., Resources, Conservation and Recycling, “Environmental impacts of shale gas development in China: A hybrid life cycle analysis”, Elsevier, 2017  
-    .  
-    KONG, Z. Y. et al., Petroleum Science, “Energy return on investment, energy payback time, and greenhouse gas emissions of coal seam gas (CSG) production in China: A case of the Fanzhuang CSG project”, Springer, 2017  
-    .  
-    CHEN, Y. et al., Journal of Cleaner Production, “Extended-exergy based energy return on investment method and its application to shale gas extraction in China”, Elsevier, 2020  
-    .
-    
