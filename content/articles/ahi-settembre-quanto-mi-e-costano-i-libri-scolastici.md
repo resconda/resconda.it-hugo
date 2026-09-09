@@ -9,7 +9,7 @@ tags:
 summary: |
   Sei milioni di studenti tornano a scuola e le famiglie devono affrontare l’acquisto dei libri. L’editoria è una delle filiere industriali a più alto impatto: quale costo energetico ed ambientale oltre a quello economico? Come contrastare la prassi di produrre nuove edizioni dei testi per limitare il riuso degli stessi?
 cover_image:
- src: sweetlouise-books-5991410.jpg
+ src: assets/post-img/libri_zf3lbm
 # caption: 
 classes:
 - GWh
