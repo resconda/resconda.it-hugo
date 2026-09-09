@@ -1,7 +1,7 @@
 ---
 title: "Anno associativo 2026-2027"
 date: 2026-09-09
-img:
+cover_image:
     src: assets/img/logo/logo_scritta_stacked
 summary: "Con il mese di Settembre comincia il nuovo anno associativo (2026-27). Rinnova l’iscrizione a Resconda!"
 ---
