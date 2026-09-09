@@ -35,21 +35,88 @@ Ma quali sono gli EROEI dei sistemi attuali di produzione di energia? La rispost
 
 Qui sotto un elenco dei valori di EROEI (minimo, massimo e medio) riportati in letteratura[^1] relativamente ad alcune tecnologie/vettori energetici. Da tenere presente che il limite minimo è da considerarsi indicativo di una “*best practice*”, infatti può in ipotesi essere ridotto (anche fino a 0\) ad esempio installando una turbina eolica  in pianura padana o un pannello fotovoltaico all’interno di una grotta! Difficilmente invece un sistema può discostarsi dal valore massimo (che tende a rappresentare un limite fisico al rendimento della tecnologia). 
 
-| Tecnologia / Vettore Energetico | EROEI |  |  | NOTE |
-| ----- | :---: | :---: | :---: | ----- |
-|  | MIN Utile/Storico | MAX Riscontrato | MED Globale/Tipico |  |
-| **Petrolio e Gas** | **4.2** *POU*   **10** *Produzione USA 2007* | **100** *Texas anni '30*   **60** *Messico 2000* | **18 – 20** *POE*   **4.2** *POU armonizzato* | Storicamente altissimo all'estrazione (POE), ma si abbassa drasticamente al POU, soprattutto se trasformati in elettricità. Il downstream di raffinazione e trasporto pone un limite fisico massimo invalicabile di 8.7 per la benzina, indipendentemente dall'efficienza estrattiva. |
-| **Gas Naturale Convenzionale** | **14** *Canada 2006*   **5.6** *POU* | **120** *Pennsylvania 1986* | **20 \- 67** *POE*   **5.6** *POU armonizzato* | Il gas ha l'EROEI termico più alto, ma il POU è fortemente penalizzato dai costi energetici di compressione e trasporto nelle reti di distribuzione (che assorbono circa il 18% dell'energia trasportata). |
-| **Shale Gas (Fracking)** | **5.2** *POU* | **82** *POE* | **5.2** *POU* | Può mostrare un elevatissimo EROEI al pozzo, ma la conversione in elettricità e la distribuzione comportano ingenti perdite termodinamiche, riducendolo drasticamente al POU. Inoltre i giacimenti hanno una vita relativamente breve. |
-| **Carbone** | **30** *USA anni '80*   **8.8** *POU* | **80** *USA anni '50 e 1990* | **46** *POE globale*   **8.8** *POU armonizzato* | Il carbone mantiene un EROI di estrazione piuttosto alto, ma la preparazione del carbone duro impone investimenti energetici significativi. Al POU armonizzato scende sotto la soglia critica di 10\. |
-| **Sabbie e Scisti Bituminosi** | **2** \- *Sabbie* | **10** \- *Scisti* | **4** \- *Sabbie*   **7-** *Scisti*   **\<5** *POU* | Fonti fossili non convenzionali a bassissimo rendimento energetico fin dall'estrazione, ampiamente penalizzate dai trattamenti termici preliminari necessari. |
-| **Energia Nucleare** | **5** *Stime conservative* | **15** | **14-15** *POE* | L'EREOI nucleare è oggetto di forti dibattiti per via dell'inclusione o esclusione dei costi energetici di arricchimento dell'uranio, dello smantellamento e della gestione delle scorie. |
-| **Idroelettrico** | **50** | **100-200** | **84** *POE*   **\>100** (potenza elettrica equivalente) | È in assoluto la tecnologia di produzione di elettricità con il rendimento più elevato. Non richiede combustibili in fase operativa e, una volta ammortizzato l'investimento energetico iniziale, restituisce energia quasi "gratuita" per decenni. È limitata dalla disponibilità geologica. |
-| **Eolico** | **10** | **30-40** | **18-20** *POE* | Un'ottima risorsa rinnovabile. Se armonizzata pesando l'alta qualità dell'elettricità prodotta rispetto al calore fossile, si attesta stabilmente sopra la soglia critica di 10 (POU). |
-| **Solare Fotovoltaico** | **7.5** | **12-15** | **8-15** *POU* | Presenta un'ampia variabilità geografica. L'armonizzazione metodologica standard conferma valori reali di utilizzo superiori a 10 in condizioni di rete adeguate. |
-| **Etanolo da Canna da Zucchero** | **8** | **21** *POU* | **8-10** | È il biocarburante di gran lunga più efficiente. Richiede poca energia di raffinazione (solo il 2% dell'energia contenuta nel combustibile finale viene spesa nel processo). |
-| **Etanolo da Mais** | **0.64** *(deficit energetico)* | **1.6** POU | **1.1-1.3** | Estremamente inefficiente. Al POU l'EREOI massimo è di 1.6 a causa del costo energetico di raffinazione (distillazione) che supera il 60% dell'energia del combustibile stesso. |
-| **Biomassa Solida (Cippato locale vs Pellet)** | **1.6** \- *Pellet* | **32** \- *Cippato locale* | **Variabile** | Il cippato di legno locale a filiera corta ha un ottimo EROI grazie alla semplicità di trasporto. Al contrario, se la biomassa viene pellettizzata industrialmente, l'essiccazione e la compressione consumano il 51% dell'energia utile ed anche il trasporto può incidere significativamente, facendo crollare l'EROEI a livelli non sostenibili. |
+**1\.**        **Petrolio e Gas**  
+minimo (Utile/Storico):                     	**4.2** (POU), **10** (Produzione USA 2007\)  
+Massimo Riscontrato:                      	**100** (Texas anni '30), **60** (Messico 2000\)  
+Medio (Globale/Tipico):                   	**18–20 (***POE),* **4.2 (***POU armonizzato)*  
+   
+Storicamente altissimo all'estrazione (POE), ma si abbassa drasticamente al POU, soprattutto se trasformati in elettricità. Il downstream di raffinazione e trasporto pone un limite fisico massimo invalicabile di 8.7 per la benzina, indipendentemente dall'efficienza estrattiva.  
+   
+   
+**2\.**        **Gas Naturale Convenzionale**  
+minimo (Utile/Storico):                     	**14** *Canada 2006;* **5.6** *POU*  
+Massimo Riscontrato:                      	**120** *Pennsylvania 1986*  
+Medio (Globale/Tipico):                   	**20-67** *POE;* **5.6** *POU armonizzato*  
+   
+Il gas ha l'EROEI termico più alto, ma il POU è fortemente penalizzato dai costi energetici di compressione e trasporto nelle reti di distribuzione (che assorbono circa il 18% dell'energia trasportata).  
+   
+**3\.**        **Shale Gas (Fracking)**  
+minimo (Utile/Storico):                     	**5.2** *POU*  
+Massimo Riscontrato:                      	**82** *POE*  
+Medio (Globale/Tipico):                   	**5.2** *POU*  
+   
+Può mostrare un elevatissimo EROEI al pozzo, ma la conversione in elettricità e la distribuzione comportano ingenti perdite termodinamiche, riducendolo drasticamente al POU. Inoltre i giacimenti hanno una vita relativamente breve.  
+   
+**4\.**        **Carbone**  
+minimo (Utile/Storico):                     	**30** *USA anni '80,* **8.8** *POU*  
+Massimo Riscontrato:                      	**80** *USA anni '50 e 1990*  
+Medio (Globale/Tipico):                   	**46** *POE globale,* **8.8** *POU armonizzato*  
+   
+Il carbone mantiene un EROI di estrazione piuttosto alto, ma la preparazione del carbone duro impone investimenti energetici significativi. Al POU armonizzato scende sotto la soglia critica di 10\.  
+   
+**5\.**        **Sabbie e Scisti Bituminosi**  
+minimo (Utile/Storico):                     	**2** *Sabbie*  
+Massimo Riscontrato:                      	**10** S*cisti*  
+Medio (Globale/Tipico):                   	**4** *Sabbie /*  **7** *Scisti*  **\<5** *POU*  
+   
+Fonti fossili non convenzionali a bassissimo rendimento energetico fin dall'estrazione, ampiamente penalizzate dai trattamenti termici preliminari necessari.  
+   
+**6\.**        **Energia Nucleare**  
+minimo (Utile/Storico):                     	**5** *Stime conservative*  
+Massimo Riscontrato:                      	**15**  
+Medio (Globale/Tipico):                   	**14-15** *POE*  
+                                                                     	  
+Il dato è oggetto di forti dibattiti per via dell'inclusione o esclusione dei costi energetici di arricchimento dell'uranio, dello smantellamento e della gestione delle scorie.  
+   
+**7\.**        **Idroelettrico**  
+minimo (Utile/Storico):                     	**50**  
+Massimo Riscontrato:                      	**100-200**  
+Medio (Globale/Tipico):                   	**84** *POE /* **\>100** (potenza elettrica equivalente)  
+   
+È in assoluto la tecnologia di produzione di elettricità con il rendimento più elevato. Non richiede combustibili in fase operativa e, una volta ammortizzato l'investimento energetico iniziale, restituisce energia quasi "gratuita" per decenni. È tuttavia limitata dalla conformazione geologico-orografica del territorio.  
+   
+**8\.**        **Eolico**  
+minimo (Utile/Storico):                     	**10**  
+Massimo Riscontrato:                      	**30-40**  
+Medio (Globale/Tipico):                   	**18-20** *POE*  
+   
+Un'ottima risorsa ma presenta un'ampia variabilità geografica. Se armonizzata pesando l'alta qualità dell'elettricità prodotta rispetto al calore fossile, in condizioni idonee si attesta stabilmente sopra la soglia critica di 10 (POU).  
+   
+**9\.**        **Solare Fotovoltaico**  
+minimo (Utile/Storico):                     	**7.5**  
+Massimo Riscontrato:                      	**12-15**  
+Medio (Globale/Tipico):                   	**8-15** *POU*  
+   
+Presenta un'ampia variabilità geografica. L'armonizzazione metodologica standard conferma valori reali di utilizzo superiori a 10 in condizioni di rete adeguate.  
+   
+**10\.**    **Etanolo da Canna da Zucchero**  
+minimo (Utile/Storico):                     	**8**  
+Massimo Riscontrato:                      	**21** *POU*  
+Medio (Globale/Tipico):                   	**8-10**  
+                                                                     	  
+È il biocarburante di gran lunga più efficiente. Richiede poca energia di raffinazione (solo il 2% dell'energia contenuta nel combustibile finale viene spesa nel processo).  
+   
+**11\. Etanolo da Mais**  
+minimo (Utile/Storico):                     	**0.64** *(deficit energetico)*  
+Massimo Riscontrato:                      	**1.6** POU  
+Medio (Globale/Tipico):                   	**1.1-1.3**  
+   
+Estremamente inefficiente. Al POU il valore massimo è di 1.6 a causa del costo energetico di raffinazione stillazione, che supera il 60% dell'energia del combustibile stesso.
+
+**12\.**    **Biomassa Solida (Cippato locale / Pellet)**  
+minimo (Utile/Storico):                     	**1.6** \- *Pellet*  
+Massimo Riscontrato:                      	**32** \- *Cippato locale*	  
+Medio (Globale/Tipico):                   	**Variabile**    	
 
 Questi numeri dovrebbero essere incorniciati e appesi sopra la scrivania di tutte le persone che prendono decisioni in ordine alla politica energetica di un Paese.
 
