@@ -51,7 +51,7 @@ Qui sotto un elenco dei valori di EROEI (minimo, massimo e medio) riportati in l
 | **Etanolo da Mais** | **0.64** *(deficit energetico)* | **1.6** POU | **1.1-1.3** | Estremamente inefficiente. Al POU l'EREOI massimo è di 1.6 a causa del costo energetico di raffinazione (distillazione) che supera il 60% dell'energia del combustibile stesso. |
 | **Biomassa Solida (Cippato locale vs Pellet)** | **1.6** \- *Pellet* | **32** \- *Cippato locale* | **Variabile** | Il cippato di legno locale a filiera corta ha un ottimo EROI grazie alla semplicità di trasporto. Al contrario, se la biomassa viene pellettizzata industrialmente, l'essiccazione e la compressione consumano il 51% dell'energia utile ed anche il trasporto può incidere significativamente, facendo crollare l'EROEI a livelli non sostenibili. |
 
-I numeri sopra (per quanto variabili) dovrebbero essere incorniciati e appesi sopra la scrivania di tutte le persone che prendono decisioni in ordine alla politica energetica di un Paese. 
+Questi numeri dovrebbero essere incorniciati e appesi sopra la scrivania di tutte le persone che prendono decisioni in ordine alla politica energetica di un Paese.
 
 Alcune considerazioni al riguardo:  
 
