@@ -2,7 +2,7 @@
 
 ROOT=$(cd `dirname "$0"`; pwd)
 
-pos_idx = 0
+pos_idx=0
 function parse_positional() {
     case $pos_idx in
         0) GDOC_NAME=$1;;
