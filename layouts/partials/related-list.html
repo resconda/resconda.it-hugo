@@ -1,0 +1,12 @@
+<!-- related-list.html -->
+{{ $related := where (site.RegularPages.Related .) "Section" "articles" | first 5 }}
+<ul class="posts">
+    {{ range $related }}
+    <li class="post">
+      <a href="{{ .RelPermalink }}">
+        <span {{ if .Draft }}style="color: darkgray;"{{ end }}>{{ .Title }}</span>
+        <br/><date>{{ .Date.Format "02.01.2006" }}</date>
+      </a>
+    </li>
+    {{ end }}
+</ul>
