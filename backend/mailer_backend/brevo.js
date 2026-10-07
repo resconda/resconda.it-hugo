@@ -66,7 +66,7 @@ const BrevoHandler = {
         try {
             const listid = parseInt(process.env.BREVO_LIST_ID);
             logger.info(`Fetching Brevo list info for list ${listid}`);
-            brevoResponse = await brevo.contacts.getList(listid, {});
+            brevoResponse = await brevo.contacts.getList({ listId: listid, });
         } catch (error) {
             brevoResponse = {error: error};
         }

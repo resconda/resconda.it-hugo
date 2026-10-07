@@ -8,6 +8,7 @@ const port = 3000
 
 app.route("/",)
 .get(async (req, res) => {
+  res.set("Content-Type", "application/json")
   let solution = req.query["frc-captcha-solution"];
   if(!solution){
     res.status(400).send({error: "Invalid 'frc-captcha-solution' input"});
@@ -30,8 +31,7 @@ app.route("/",)
         res.status(500);
         break;
   }
-  res.set("Content-Type", "application/json")
-    .send(resBody);
+  res.send(resBody);
 })
 
 app.listen(port, () => {
