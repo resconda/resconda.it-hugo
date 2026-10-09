@@ -2,24 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml">
     {{ range .Data.Pages }}
-    <url>{{ with .RelPermalink }}
+    <url>{{ with .Permalink }}
         <loc>{{ . }}</loc>
         {{- end -}}
-        {{ with .Date }}
-        <date>{{ time.Format "2006-01-02" . }}</date>
+        {{ with .Lastmod }}
+        <lastmod>{{ time.Format "2006-01-02" . }}</lastmod>
         {{ end }}
-        {{- with .Title -}}
-        <title>{{ htmlUnescape . }}</title>
-        {{- end -}}
-        {{ with .Summary }}
-        <description>{{ . | transform.Plainify | transform.XMLEscape }}</description>
-        {{- end -}}
-        {{ with .Params.tags }}
-        <tags>{{ delimit . "," }}</tags>
-        {{- end -}}
-        {{ with .Params.classes }}
-        <class>{{ delimit . "," }}</class>
-        {{- end -}}
         {{ with .Sitemap.ChangeFreq }}
         <changefreq>{{ . }}</changefreq>
         {{- end -}}
@@ -31,13 +19,13 @@
         <xhtml:link
             rel="alternate"
             hreflang="{{ .Language.Lang }}"
-            href="{{ .RelPermalink }}"
+            href="{{ .Permalink }}"
         />
             {{- end -}}
         <xhtml:link
             rel="alternate"
             hreflang="{{ .Language.Lang }}"
-            href="{{ .RelPermalink }}"
+            href="{{ .Permalink }}"
         />
         {{- end -}}
     </url>
