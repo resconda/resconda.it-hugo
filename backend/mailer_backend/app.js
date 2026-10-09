@@ -19,16 +19,17 @@ const verifyCaptcha = async (solution) => {
   return await (await fetch(`http://captcha:3000/?frc-captcha-solution=${solution}`)).json();
 }
 app.route("/",)
-.get(async (req, res) => {
-  res.set("Content-Type", "application/json")
-  let response = await BrevoHandler.listInfo();
-  if (response.error) {
-    logger.error(response.error, "Error getting Brevo list info");
-    res.send({error: `brevo request failed: ${response.error.message}`}); 
-  }else{
-    res.send(JSON.stringify(response));
-  }
-})
+//// No need to expose this as public route
+// .get(async (req, res) => {
+//   res.set("Content-Type", "application/json")
+//   let response = await BrevoHandler.listInfo();
+//   if (response.error) {
+//     logger.error(response.error, "Error getting Brevo list info");
+//     res.send({error: `brevo request failed: ${response.error.message}`}); 
+//   }else{
+//     res.send(JSON.stringify(response));
+//   }
+// })
 .post(async (req, res) => {
   let brevoResponse;
   logger.info(req.body, "new member add request received");
@@ -65,7 +66,7 @@ app.route("/",)
     return;
   }
   
-  // prepare and send feedback email
+  // prepare and send feedback email -> DEPRECATED: the Brevo flow now features an email sent by Brevo itself with confirmation link
   const contactName = req.body.name ?? "nuov@ iscritt@";
   try {
     SendmailHelper.sendMail(
