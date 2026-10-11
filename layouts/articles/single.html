@@ -68,9 +68,8 @@
           {{ partial "tag-cloud.html" }}
         </div>
         <div>
-          <h5 class="fw-bold">Articoli recenti</h5>
-          {{ .Scratch.Set "limit" 5 }}
-          {{ partial "post-list.html" . }}
+          <h5 class="fw-bold">Consigliati</h5>
+          {{ partial "related-list.html" . }}
         </div>
       </aside>
     </div>

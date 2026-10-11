@@ -100,6 +100,14 @@ taxonomies:
   tag: tags
   class: classes
 
+related:
+  includeNewer: true
+  threshold: 1
+  toLower: true
+  indices:
+  - name: tags
+    weight: 100
+
 DefaultContentLanguage: it
 enableRobotsTXT: true
 

@@ -5,21 +5,9 @@
     <url>{{ with .Permalink }}
         <loc>{{ . }}</loc>
         {{- end -}}
-        {{ with .Date }}
-        <date>{{ time.Format "2006-01-02" . }}</date>
+        {{ with .Lastmod }}
+        <lastmod>{{ time.Format "2006-01-02" . }}</lastmod>
         {{ end }}
-        {{- with .Title -}}
-        <title>{{ htmlUnescape . }}</title>
-        {{- end -}}
-        {{ with .Summary }}
-        <description>{{ . | transform.Plainify | transform.XMLEscape }}</description>
-        {{- end -}}
-        {{ with .Params.tags }}
-        <tags>{{ delimit . "," }}</tags>
-        {{- end -}}
-        {{ with .Params.classes }}
-        <class>{{ delimit . "," }}</class>
-        {{- end -}}
         {{ with .Sitemap.ChangeFreq }}
         <changefreq>{{ . }}</changefreq>
         {{- end -}}
