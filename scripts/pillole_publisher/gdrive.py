@@ -83,7 +83,6 @@ def fetchPilloleDocxMdx(pillole_gdocx, creds):
     status, done = downloader.next_chunk()
   print(f"Done")
   
-  dest = 
   return tmpfile.name
 
 def fetchImages(pillole_gdocx, creds):
