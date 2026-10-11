@@ -6,7 +6,7 @@ tags:
 summary: |
   Il cibo pesa per il 34% delle emissioni globali, ma le politiche per la sostenibilità guardano quasi solo a mobilità ed edifici. Resconda lo rende misurabile in kWh: al supermercato con l’app Suasì, al ristorante con il menu del Bistrot Rubens. Per rendere le persone più consapevoli dell’impatto delle proprie scelte quotidiane.
 cover_image:
- src: assets/post-img/SPUNTINO_fwvlh7
+ src: assets/post-img/SPUNTINO_omejkj
 # caption: 
 ---
 
