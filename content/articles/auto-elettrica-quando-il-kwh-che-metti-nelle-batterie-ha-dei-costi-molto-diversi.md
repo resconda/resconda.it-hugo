@@ -1,5 +1,5 @@
 ---
-title: "Auto elettrica:  quando il kWh che metti nelle batterie ha dei costi molto diversi."
+title: "Auto elettrica: quando il kWh ha costi molto diversi"
 date: 2026-10-11
 tags:
 - Mobilità
