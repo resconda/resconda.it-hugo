@@ -1,5 +1,5 @@
 <nav id="siteNavbar" class="navbar navbar-light navbar-fixed-top navbar-custom navbar-expand-lg fixed-top sps--abv justify-content-end">
-    <a class="navbar-nav flex-grow-1" href={{ relURL "" }}>
+    <a class="navbar-nav flex-grow-1" href={{ relLangURL "" }}>
         <div class="logo-navbar float-end">
             {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/logo/logo_scritta_orizzontale" "id" "navBrandLogo") }}
         </div>
@@ -31,6 +31,18 @@
                 {{ end }}
             </li>
             {{ end}}
+            {{- /* Language switcher: translation of the current page if it exists, otherwise the other language's home */ -}}
+            {{ $page := . }}
+            {{ range site.Home.AllTranslations }}
+            {{ if ne .Language.Lang $page.Language.Lang }}
+            {{ $lang := .Language.Lang }}
+            {{ $target := .RelPermalink }}
+            {{ range $page.Translations }}{{ if eq .Language.Lang $lang }}{{ $target = .RelPermalink }}{{ end }}{{ end }}
+            <li class="nav-item lang-switch">
+                <a class="nav-link" href="{{ $target }}" hreflang="{{ $lang }}" lang="{{ $lang }}" title="{{ .Language.LanguageName }}" aria-label="{{ i18n "language_switch_label" }}: {{ .Language.LanguageName }}"><i class="fa-solid fa-globe fa-xs"></i>&nbsp;{{ upper $lang }}</a>
+            </li>
+            {{ end }}
+            {{ end }}
         </ul>
     </div>
 </nav>

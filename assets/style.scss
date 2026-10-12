@@ -752,6 +752,17 @@ form.pink {
   }
   // color: #666666;
 }
+// English site: translation of the Italian acronym under the slogan (italic in params.slogan)
+.site-subtitle em{
+  display: inline-block;
+  margin-top: 0.4em;
+  font-size: 0.6em;
+  font-style: italic;
+}
+// Language switcher in the navbar
+.nav-item.lang-switch .nav-link{
+  white-space: nowrap;
+}
 .site-heading {
     position: relative;
     

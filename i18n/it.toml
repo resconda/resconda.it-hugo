@@ -1,0 +1,52 @@
+# Stringhe di interfaccia - italiano (lingua principale)
+[membership_form]
+other = "Modulo di adesione"
+[membership_individuals]
+other = "Persone fisiche"
+[membership_organizations]
+other = "Persone giuridiche"
+[statute_button]
+other = "Lo statuto"
+[donations_button]
+other = "Versamenti &amp; donazioni"
+
+[form_name]
+other = "Nome"
+[form_phone]
+other = "Telefono (opzionale)"
+[form_message]
+other = "Messaggio (opzionale)"
+[form_privacy_accept]
+other = "Accetto i"
+[form_privacy_terms]
+other = "termini della privacy"
+[form_submit]
+other = "Invia"
+
+[newsletter_banner_title]
+other = "Ricevi gi&agrave; la newsletter?"
+[newsletter_banner_text]
+other = "Ti invieremo le notizie e le nostre pillole, solo una volta al mese"
+
+[pics_disclaimer]
+other = "Resconda, prima di pubblicare foto, video o testi da internet, compie tutte le opportune verifiche al fine di accertarne il libero regime di circolazione e non violare i diritti di autore o altri diritti esclusivi di terzi. Per segnalarci eventuali errori nell'uso del materiale riservato, <a href=\"mailto:info@resconda.it\">scriveteci</a>. Provvederemo prontamente alla rimozione del materiale lesivo di diritti di terzi."
+
+[footer_name]
+other = "ResConDA - Associazione per la REStituzione CONsapevole del Debito Ambientale"
+[footer_taxcode]
+other = "C.F."
+
+[notfound_title]
+other = "La pagina che cerchi non esiste"
+[notfound_back]
+other = "Torna alla pagina principale"
+
+[basics_title]
+other = "assunti di base"
+[basics_further_reading]
+other = "Per un approfondimento puoi scaricare il breve saggio"
+[join_us]
+other = "unisciti a noi"
+
+[language_switch_label]
+other = "Cambia lingua"

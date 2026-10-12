@@ -1,4 +1,25 @@
 var contactForm;
+
+// UI messages, picked from the page language (<html lang="..">); Italian is the default
+var CONTACT_MESSAGES = {
+    it: {
+        invalidEmail: "Indirizzo email non valido (richiesto)",
+        privacyRequired: "Devi accettare i termini per iscriverti alla newsletter",
+        serverError: "Errore del server. Riprova più tardi o scrivici a info@resconda.it",
+        success: function (name) { return `Grazie ${name}! Riceverai una mail per confermare l'iscrizione (controlla la cartella spam).`; },
+        networkError: "Connessione non riuscita. Controlla la rete e riprova, oppure scrivici a info@resconda.it",
+        checkData: "Ricontrolla i dati"
+    },
+    en: {
+        invalidEmail: "Invalid email address (required)",
+        privacyRequired: "You must accept the terms to subscribe to the newsletter",
+        serverError: "Server error. Please try again later or write to us at info@resconda.it",
+        success: function (name) { return `Thank you ${name}! You will receive an email to confirm your subscription (check your spam folder).`; },
+        networkError: "Connection failed. Check your network and try again, or write to us at info@resconda.it",
+        checkData: "Please check the details you entered"
+    }
+};
+var contactMsg = CONTACT_MESSAGES[(document.documentElement.lang || "it").slice(0, 2)] || CONTACT_MESSAGES.it;
 var defaultWidget;
 
 var friendlyCaptchaSolved = function (solution) {
@@ -25,13 +46,13 @@ var validateForm = function() {
     privacy.setCustomValidity("");
     
     if(!email.checkValidity()){
-        email.setCustomValidity("Indirizzo email non valido (richiesto)");
+        email.setCustomValidity(contactMsg.invalidEmail);
         email.reportValidity();
         ret = false;
     }
     // a message or privacy subscription request are required (or both)
     if( !privacy.checked){
-        privacy.setCustomValidity("Devi accettare i termini per iscriverti alla newsletter")
+        privacy.setCustomValidity(contactMsg.privacyRequired)
         privacy.reportValidity();
         ret = false;
     }
@@ -99,7 +120,7 @@ window.addEventListener("load", () => {
                 }
                 let errors = (data && Array.isArray(data.errors)) ? data.errors : [];
                 if (!response.ok && errors.length === 0) {
-                    errors = ["Errore del server. Riprova più tardi o scrivici a info@resconda.it"];
+                    errors = [contactMsg.serverError];
                     console.log("Error: " + response.status);
                 }
                 if (errors.length > 0) {
@@ -115,7 +136,7 @@ window.addEventListener("load", () => {
                 let name = validatedData.name;
                 var successmsg = document.createElement('div');
                 successmsg.classList.add("alert", "alert-info", "text-center");
-                successmsg.innerText = `Grazie ${name}! Riceverai una mail per confermare l'iscrizione (controlla la cartella spam).`;
+                successmsg.innerText = contactMsg.success(name);
                 document.getElementById('form-response').append(successmsg);
                 document.getElementById('contactForm').querySelectorAll('input,textarea').forEach(el => { el.value = ""; });
                 // defaultWidget.reset();
@@ -126,13 +147,13 @@ window.addEventListener("load", () => {
                 document.getElementById("contactFormLoader").classList.add("d-none");
                 var errrow = document.createElement('div');
                 errrow.classList.add('alert', 'alert-warning');
-                errrow.textContent = "Connessione non riuscita. Controlla la rete e riprova, oppure scrivici a info@resconda.it";
+                errrow.textContent = contactMsg.networkError;
                 document.getElementById("form-response").append(errrow);
             });
         }else{ // invalid form
             successmsg = document.createElement('div');
             successmsg.classList.add("alert", "alert-warning", "text-center");
-            successmsg.innerText = `Ricontrolla i dati`;
+            successmsg.innerText = contactMsg.checkData;
             document.getElementById('form-response').append(successmsg);
         }
         submitEvent.preventDefault();

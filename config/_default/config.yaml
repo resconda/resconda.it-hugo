@@ -50,35 +50,6 @@ markup:
             - \)
         enable: true
 
-menus:
-  main:
-  # - title: Home
-  #   identifier: "home"
-  #   url: "/"
-  #   weight: 1
-  - name: News
-    identifier: "articles"
-    url: "/articles"
-    weight: 20
-  - name: Chi siamo
-    identifier: "about"
-    url: "/about"
-    weight: 10
-  - name: Le basi
-    identifier: "assunti_di_base"
-    url: "/assunti-di-base"
-    weight: 11
-  - name: Contatti
-    identifier: "contatti"
-    url: "/#contactus"
-    weight: 15
-  - name: Suasì 
-    post: "<i class=\"fa-solid fa-arrow-up-right-from-square fa-xs\"></i>"
-    identifier: "emcoin"
-    url: "https://suasi.it"
-    params:
-      is_ext: true
-
 outputs:
   home:
     - HTML
@@ -88,13 +59,81 @@ outputs:
     - JSON
 languages:
   it:
-    languageName: Italian
+    languageName: Italiano
     weight: 1
     params:
       reading_speed: 188
-  # en:
-  #   languageName: English
-  #   weight: 2
+    menus:
+      main:
+      # - title: Home
+      #   identifier: "home"
+      #   url: "/"
+      #   weight: 1
+      - name: News
+        identifier: "articles"
+        url: "/articles"
+        weight: 20
+      - name: Chi siamo
+        identifier: "about"
+        url: "/about"
+        weight: 10
+      - name: Le basi
+        identifier: "assunti_di_base"
+        url: "/assunti-di-base"
+        weight: 11
+      - name: Contatti
+        identifier: "contatti"
+        url: "/#contactus"
+        weight: 15
+      - name: Suasì 
+        post: "<i class=\"fa-solid fa-arrow-up-right-from-square fa-xs\"></i>"
+        identifier: "emcoin"
+        url: "https://suasi.it"
+        params:
+          is_ext: true
+  en:
+    languageName: English
+    languageCode: en-gb
+    weight: 2
+    title: ResConDA
+    # The English site has no articles/tags/classes yet: disable taxonomies so no empty
+    # /en/tags/ or /en/classes/ pages are generated. News links to the Italian archive.
+    taxonomies: {}
+    params:
+      reading_speed: 230
+      home_title: |
+        Conscious  
+        action
+      slogan: |
+        Association for the  
+        **RES**tituzione **CON**sapevole   
+        del **D**ebito **A**mbientale  
+        *Conscious Repayment of Environmental Debt*
+      description: "Understanding the numbers at stake when we talk about sustainability and energy saving"
+    menus:
+      main:
+      - name: About us
+        identifier: "about"
+        url: "/en/about/"
+        weight: 10
+      - name: The basics
+        identifier: "assunti_di_base"
+        url: "/en/basics/"
+        weight: 11
+      - name: Contact
+        identifier: "contatti"
+        url: "/en/#contactus"
+        weight: 15
+      - name: News (IT)
+        identifier: "articles"
+        url: "/articles"
+        weight: 20
+      - name: Suasì 
+        post: "<i class=\"fa-solid fa-arrow-up-right-from-square fa-xs\"></i>"
+        identifier: "emcoin"
+        url: "https://suasi.it"
+        params:
+          is_ext: true
 
 taxonomies:
   tag: tags
@@ -109,6 +148,8 @@ related:
     weight: 100
 
 DefaultContentLanguage: it
+# Italian stays at the site root (/about, /statuto...), English lives under /en/
+defaultContentLanguageInSubdir: false
 enableRobotsTXT: true
 
 security:
