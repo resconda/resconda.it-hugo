@@ -6,4 +6,4 @@ services:
     entrypoint: ["/app/docker-entrypoint.sh"]
     ports:
     - 0.0.0.0:8082:3000
-    restart: on-failure:5
+    restart: unless-stopped
