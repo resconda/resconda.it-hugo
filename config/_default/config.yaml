@@ -114,11 +114,11 @@ languages:
       main:
       - name: About us
         identifier: "about"
-        url: "/en/about/"
+        pageRef: "/about"
         weight: 10
       - name: The basics
         identifier: "assunti_di_base"
-        url: "/en/basics/"
+        pageRef: "/assunti-di-base"
         weight: 11
       - name: Contact
         identifier: "contatti"

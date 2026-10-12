@@ -15,11 +15,8 @@
             <li class="nav-item {{ .Params.class }} {{ if .HasChildren }}dropdown{{ end }} {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
                 <a class="nav-link {{if .HasChildren}}dropdown-toggle{{end}}" 
                 {{ if .HasChildren }}data-bs-toggle="dropdown"{{end}}
-                {{ with .Page }}
-                aria-current="page" href={{ .Page.RelPermalink }} role="button">{{.Name}}{{- if .Post -}}&nbsp;{{.Post}}{{end}}</a>
-                {{ else }}
+                {{- /* .URL is the linked page's permalink when the entry uses pageRef, the raw url otherwise */}}
                 aria-current="page" href={{ .URL }} role="button">{{.Name}}{{- if .Post -}}&nbsp;{{.Post}}{{end}}</a>
-                {{ end }}
                 {{ if .HasChildren }}
                 <ul class="dropdown-menu">
                     {{ range .Children }}
@@ -45,4 +42,4 @@
             {{ end }}
         </ul>
     </div>
-</nav>
+</nav>
