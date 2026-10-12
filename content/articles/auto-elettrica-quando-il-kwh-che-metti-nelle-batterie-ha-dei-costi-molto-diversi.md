@@ -15,14 +15,11 @@ classes:
 - kWh
 ---
 
-Quando facciamo benzina, abbiamo un modo piuttosto intuitivo per capire quanto ci costerà viaggiare.
+Quando facciamo benzina, abbiamo un modo piuttosto intuitivo per capire quanto ci costerà viaggiare. Sappiamo che un litro costa circa 2 euro e che &emdash; se la nostra automobile percorre, ad esempio, 15 km con un litro &emdash; con 10 euro compriamo 5 litri e possiamo fare circa 75 km. Siamo quindi abituati a frasi del tipo “la mia auto fa 10 kilometri con un litro”. 
 
-Sappiamo che un litro costa circa 2 euro e che - se la nostra automobile percorre, ad esempio, 15 km con un litro - Con 10 euro compriamo 5 litri e possiamo fare circa 75 km. Siamo quindi abituati a frasi del tipo “ la mia auto fa 10 kilometri con un litro”. 
+Con un'auto elettrica dobbiamo imparare a ragionare in un altro modo, perch&eacute; il serbatoio non lo riempiamo con litri di carburante ma con kilowattora di elettricità.
 
-Con un'auto elettrica dobbiamo imparare a ragionare in un altro modo, perchè il serbatoio non lo riempiamo con litri di carburante ma con kilowattora di elettricità.
-
-Il dato di partenza è semplice: quanti chilometri percorre l'auto con un kWh? Prendiamo come riferimento un'auto elettrica che consumi circa 17 kWh ogni 100 km (Nissan Leaf / Opel Corsa-e), che si può anche dire “fa 6 km con 1 kilowattora”.
-
+Il dato di partenza è semplice: quanti chilometri percorre l'auto con un kWh? Prendiamo come riferimento un'auto elettrica che consumi circa 17 kWh ogni 100 km (Nissan Leaf / Opel Corsa-e), che si può anche dire “fa 6 km con 1 kilowattora”.  
 A questo punto possiamo fare lo stesso esperimento dei 10 euro.
 
 | Alimentazione | Prezzo dell'energia | Consumo considerato | Costo per 100 km | km con 10 € |
@@ -37,9 +34,10 @@ A questo punto possiamo fare lo stesso esperimento dei 10 euro.
 
 La tabella racconta qualcosa di interessante: **non esiste un unico costo del chilometro elettrico**.
 
-Con la benzina, il prezzo dell'energia è relativamente facile da associare al carburante che mettiamo nel serbatoio. Per l'elettricità, invece, **lo stesso kWh può avere un valore economico molto diverso a seconda di dove lo acquistiamo**.Un kWh prodotto in casa dal nostro impianto fotovoltaico e utilizzato per caricare l'auto può costare pochissimo. Lo stesso kWh acquistato durante un viaggio da una colonnina HPC può costare molte volte tanto.
+Con la benzina, il prezzo dell'energia è relativamente facile da associare al carburante che mettiamo nel serbatoio. Per l'elettricità, invece, **lo stesso kWh può avere un valore economico molto diverso a seconda di dove lo acquistiamo**.  
+Un kWh prodotto in casa dal nostro impianto fotovoltaico e utilizzato per caricare l'auto può costare pochissimo. Lo stesso kWh acquistato durante un viaggio da una colonnina HPC può costare molte volte tanto.
 
-Ecco perché, per capire davvero l'economia della mobilità elettrica, non basta dire che un'auto consuma 17 kWh/100 km. Bisogna chiedersi anche: «Quanto pago quel kWh?»
+Ecco perché, per capire davvero l'economia della mobilità elettrica, non basta dire che un'auto consuma 17 kWh/100 km. Bisogna chiedersi anche: «Quanto pago quel kWh?».
 
-E forse questa è la nuova unità di misura a cui dovremo abituarci: non solo euro al litro, ma anche euro al kWh e, soprattutto, chilometri per kWh. Perché alla fine, sia che nel serbatoio finisca un litro di benzina, sia che nella batteria finisca un kWh, la domanda che interessa davvero all'automobilista è sempre la stessa: con 10 euro, quanto lontano posso andare?
+Forse questa è la nuova unità di misura a cui dovremo abituarci: non solo euro al litro, ma anche euro al kWh e, soprattutto, chilometri per kWh. Perché alla fine, sia che nel serbatoio finisca un litro di benzina, sia che nella batteria finisca un kWh, la domanda che interessa davvero all'automobilista è sempre la stessa: con 10 euro, quanto lontano posso andare?
     
