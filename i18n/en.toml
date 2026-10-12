@@ -1,0 +1,52 @@
+# Interface strings - English
+[membership_form]
+other = "Membership form"
+[membership_individuals]
+other = "Individuals (form in Italian)"
+[membership_organizations]
+other = "Organisations (form in Italian)"
+[statute_button]
+other = "Our statute"
+[donations_button]
+other = "Payments &amp; donations"
+
+[form_name]
+other = "Name"
+[form_phone]
+other = "Phone (optional)"
+[form_message]
+other = "Message (optional)"
+[form_privacy_accept]
+other = "I accept the"
+[form_privacy_terms]
+other = "privacy terms"
+[form_submit]
+other = "Send"
+
+[newsletter_banner_title]
+other = "Already getting our newsletter?"
+[newsletter_banner_text]
+other = "News and our energy “pills”, once a month (in Italian)"
+
+[pics_disclaimer]
+other = "Before publishing photos, videos or texts found online, Resconda carries out every reasonable check to make sure they can be freely used and do not infringe copyright or other exclusive rights of third parties. If you spot a mistake in our use of protected material, <a href=\"mailto:info@resconda.it\">write to us</a> and we will promptly remove it."
+
+[footer_name]
+other = "ResConDA - Associazione per la REStituzione CONsapevole del Debito Ambientale (Association for the Conscious Repayment of Environmental Debt)"
+[footer_taxcode]
+other = "Tax code"
+
+[notfound_title]
+other = "The page you are looking for does not exist"
+[notfound_back]
+other = "Back to the home page"
+
+[basics_title]
+other = "basic assumptions"
+[basics_further_reading]
+other = "To go deeper, you can download the short essay (in Italian)"
+[join_us]
+other = "join us"
+
+[language_switch_label]
+other = "Change language"

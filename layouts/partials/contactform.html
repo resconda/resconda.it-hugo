@@ -1,22 +1,22 @@
 <!-- contact form -->
 <form class="row gy-2 pink justify-content-center" id="contactForm" novalidate>
     <div class="col-12">
-        <input name="name" type="text" class="form-control" placeholder="Nome" aria-label="Nome">
+        <input name="name" type="text" class="form-control" placeholder="{{ i18n "form_name" }}" aria-label="{{ i18n "form_name" }}">
     </div>
     <div class="col-12 col-md-6">
         <input name="email" type="email" class="form-control" placeholder="Email" aria-label="email" required>
     </div>
     <div class="col-12 col-md-6">
-        <input name="phone" type="text" class="form-control" placeholder="Telefono (opzionale)" aria-label="telefono">
+        <input name="phone" type="text" class="form-control" placeholder="{{ i18n "form_phone" }}" aria-label="{{ i18n "form_phone" }}">
     </div>
     <div class="col-12">
-        <textarea name="message" class="form-control" rows="10" placeholder="Messaggio (opzionale)" aria-label="messaggio"></textarea>
+        <textarea name="message" class="form-control" rows="10" placeholder="{{ i18n "form_message" }}" aria-label="{{ i18n "form_message" }}"></textarea>
     </div>
     <div class="col-12">
         <div class="form-check">
             <input class="form-check-input" type="checkbox" value="1" name="privacy" id="flexCheckDefault">
             <label class="form-check-label" for="flexCheckDefault">
-                Accetto i <a href="/privacy" class="greenlink">termini della privacy</a>
+                {{ i18n "form_privacy_accept" }} <a href="{{ (site.GetPage "/privacy").RelPermalink }}" class="greenlink">{{ i18n "form_privacy_terms" }}</a>
             </label>
         </div>
     </div>
@@ -24,7 +24,7 @@
         <i class="fa-solid fa-spinner fa-spin-pulse fa-2xl"></i>
     </div>
     <div class="col-12" style="text-align: center;">
-        <button type="button" class="btn showtransition invisible" id="friendlyCaptchaFormSubmit" form="contactForm" disabled>Invia</button>
+        <button type="button" class="btn showtransition invisible" id="friendlyCaptchaFormSubmit" form="contactForm" disabled>{{ i18n "form_submit" }}</button>
     </div>
     <!-- <div class="frc-captcha" data-sitekey={{site.Params.friendly_captcha.site_key}} data-callback="friendlyCaptchaSolved" data-lang="it"></div> -->
     <div class="frc-captcha" data-sitekey={{site.Params.friendly_captcha.site_key}}></div>

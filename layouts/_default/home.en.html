@@ -1,0 +1,225 @@
+{{/* English home page. Mirrors layouts/_default/home.html (Italian): keep the two in sync when changing the structure. */}}
+{{ define "main" }}
+
+<div class="container-fluid">
+    <section id="our-numbers">
+        <!--numbers-->
+        <div class="row g-2">
+            <div class="col col-12 col-md-6 col-xl-3 col-center">
+                <p class="promo fadein-scroll">30,000<span class="unit"> kWh</span></p>
+                <p class="promo-description orange invert">Average annual energy use per person in Italy</p>
+            </div>
+            <div class="col col-12 col-md-6 col-xl-3 col-center">
+                <p class="promo fadein-scroll">80<span class="unit"> kg</span></p>
+                <p class="promo-description orange invert">Average annual plastic use per person in Italy</p>
+            </div>
+            <div class="col col-12 col-md-6 col-xl-3 col-center">
+                <p class="promo fadein-scroll">76,000<span class="unit"> kWh</span></p>
+                <p class="promo-description orange invert">Energy needed to build a car</p>
+            </div>
+            <div class="col col-12 col-md-6 col-xl-3 col-center">
+                <p class="promo fadein-scroll">13<span class="unit"> kWh</span></p>
+                <p class="promo-description orange invert">Energy used by an LCD TV on standby for a year</p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="fullwidth-container">
+    <section class="fullwidth-section" id="prologue">
+        <p class="site-title white fadein-scroll">
+            How much do individual choices weigh on sustainability goals?
+        </p>
+        <p class="site-title orange fadein-scroll top" style="text-align: right;">What does 1 kg of CO2 mean in our
+            everyday lives?
+            <br>
+            What does it correspond to?
+        </p>
+        <p class="site-title white">Almost everyone knows we need to cut energy consumption, but few know that</p>
+        <div class="narrow right">
+            <p class="white fadein-scroll top">most of the energy consumed in the world <br>
+                is not the electricity we use at home to run our appliances<br>
+                 or the fuel burnt in our car engines, but the energy embodied in the goods <br>
+                 and services we consume every day …</p>
+        </div>
+    </section>
+    <section class="fullwidth-section" id="perche">
+        <p class="site-title white fadein-scroll top">why ResConDA</p>
+        <div class="narrow right">
+            <p class="darkblue fadein-scroll top">
+                Resconda was founded to answer these and other questions about our lifestyle, so that everyone
+                can choose, knowingly, how and how much to change it.
+            </p>
+            <p class="white importanttext fadein-scroll">To limit humanity's impact on the ecosystem we have to
+                reduce our energy consumption. To do that, we need to know the energy cost of each of our choices,
+                just as we weigh what we can afford when we buy something.</p>
+        </div>
+    </section>
+    <section class="fullwidth-section" id="contare">
+        <p class="site-title white fadein-scroll top">we started counting</p>
+        <div class="mildgrey narrow right fadein-scroll">
+
+            <p>
+                We are a group of people who know that solutions are unlikely to come from above.
+                People who, like many of us, have asked themselves what needs to be done, and what is worth doing,
+                about the environmental emergency;
+            </p>
+            <p>
+                and who have had the chance to take a closer look at the tangle of issues called
+                <b><i>sustainability</i></b>, coming away convinced that quantifying things is the only way to
+                bring order to it and to make everyday choices that are truly informed.
+            </p>
+            <p>
+                That is why our work focuses on the <i><b>numbers of sustainability</b></i>, promoting
+                education and training on the quantitative side of the environmental impact of our most common
+                consumption habits.
+            </p>
+            <div class="row justify-content-center">
+                <div class="col col-md-6">
+                    <a href="{{ (site.GetPage "/about").RelPermalink }}">
+                        <button type="button" class="btn btn-info text-white">read our manifesto</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="site-title white fadein-scroll top">who we are</p>
+        <div class="darkblue narrow right fadein-scroll top">
+            <p>Resconda came out of the meeting of different people with two things in common: awareness and love.
+            </p>
+            <p>Awareness that protecting the environment is today as necessary as it is enormous a task.</p>
+            <p>
+                Love for reality. The reality of numbers and of cause and effect. The reality of the physical laws of
+                nature that govern and determine every phenomenon, human ones included,
+                and that economics, politics, morality and other superstructures all too often tend to ignore.
+            </p>
+            <p>
+                Resconda is the product of an awareness of the environmental challenge: we believe that the knowledge
+                needed to face it must be made available to everyone.
+            </p>
+            <p>
+                Resconda's Board of Directors currently consists of Marcello Corongiu (President), Paolo
+                Marchetti (Secretary) and Stefano Serra (Director).
+            </p>
+        </div>
+    </section>
+    <section id="team">
+        <div class="row" style="margin-left: auto; margin-right: auto;">
+            <div class="col col-12 col-md-6 col-xl-4">
+                <div style="position: relative;">
+                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/marcello_corongiu_ceox1d" "class" "cover cover-50") }}
+                    <div class="img-label bottom">Marcello</div>
+                </div>
+            </div>
+            <div class="col col-12 col-md-6 col-xl-4 ">
+                <div style="position: relative;">
+
+                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/paolo_marchetti_jokqkx" "class" "cover cover-50") }}
+                    <div class="img-label bottom">Paolo</div>
+                </div>
+            </div>
+            <div class="col col-12 col-md-6 col-xl-3 ">
+                <div style="position: relative;">
+                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/stefano_serra_p55e8b" "class" "cover cover-50") }}
+                    <div class="img-label bottom">Stefano</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="animated">
+        <div style="position: relative;">
+            {{ partial "cloudinary_video.html" (dict "video_name" "assets/video/people_walking_hcfxq9" "video_type" "video/mp4" "class" "cover cover-70" "id" "peopleWalkingVideo" )}}
+            <p class="site-title white overlay fadein-scroll" style="line-height: 1.35em;">Every day, <span class="bg-green">each of us decides</span> our
+                grandchildren's future</p>
+        </div>
+    </section>
+    <section class="fullwidth-section" id="shorttermgoal">
+        <p class="site-title fadein-scroll">
+            It's time to get down to the reality of things: workable solutions, the numbers at stake,
+            priorities, informed choices.
+        </p>
+        <div class="narrow right">
+            <p class="importanttext white">
+                <span id="shortermgoalinvert">
+                    Our short-term goal:</span><br>
+                to share clear information and build practical tools that make it possible, in real time,
+                to make purchasing and lifestyle choices that are truly sustainable.
+            </p>
+        </div>
+    </section>
+    <section id="samples">
+        <div class="row gy-3 justify-content-center">
+            <div class="col col-12 col-md-6 col-xl-3">
+                <p class="promo fadein-scroll delay2x">10<span class="unit"> million kWh</span></p>
+                <div style="position: relative;">
+                    <img class="cover cover-40"
+                        src="https://res.cloudinary.com/resconda-it/image/upload/c_fill,h_667,w_500/v1662098870/assets/img/russian_convoy_utqvuj" />
+                    <div class="img-label top">
+                        The energy spent in March 2022 to move a 65-kilometre Russian military convoy
+                        into Ukraine
+                    </div>
+                </div>
+            </div>
+            <div class="col col-12 col-md-6 col-xl-3">
+                <p class="promo fadein-scroll delay2x">300<span class="unit"> kWh</span></p>
+                <div style="position: relative;">
+                    <img class="cover cover-40"
+                        src="https://res.cloudinary.com/resconda-it/image/upload/c_fill,h_667,w_500/v1662098870/assets/img/PA030373_mini_n1yir9" />
+                    <div class="img-label bottom">
+                        The average fuel energy used to fly one passenger from Turin to Rome
+                    </div>
+                </div>
+            </div>
+            <div class="col col-12 col-md-6 col-xl-3">
+                <p class="promo fadein-scroll delay3x">2<span class="unit"> kWh</span></p>
+                <div style="position: relative;">
+                    <img class="cover cover-40"
+                        src="https://res.cloudinary.com/resconda-it/image/upload/c_fill,h_667,w_500/v1662098870/assets/img/glass_thumb_lhsf64" />
+                    <div class="img-label top dark">
+                        The average energy embodied in a drinking glass
+                    </div>
+                </div>
+            </div>
+            <div class="col col-12 col-md-6 col-xl-3">
+                <p class="promo fadein-scroll delay4x">0.8<span class="unit"> kWh</span></p>
+                <div style="position: relative;">
+                    <img class="cover cover-40"
+                        src="https://res.cloudinary.com/resconda-it/image/upload/c_fill,h_667,w_500/v1662098870/assets/img/cola_can_treonh" />
+                    <div class="img-label bottom dark contrast">
+                        The average energy embodied in a
+                        33 cl can
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="joinus" class="fullwidth-section">
+        <div class="row align-items-end">
+            <div class="col-12 col-md-8">
+                <p class="site-title">Join us!</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="d-grid gap-2 col-12 mx-auto">
+                    {{ partial "button_adesione.html" }}
+                    {{ partial "button_versamenti_donazioni.html" }}
+                    {{ partial "button_statuto.html" }}
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactus" class="fullwidth-section">
+        <p class="site-title fadein-scroll">or at least sign up for our newsletter...</p>
+        <p class="text-center"><em>The newsletter is written in Italian.</em></p>
+        <div class="row justify-content-center" style="margin-top: 2em;">
+            <div class="col-12 col-md-8">
+                {{ partial "contactform.html" }}
+            </div>
+        </div>
+    </section>
+    <section id="podcast-links" class="py-4">
+        <div class="h4 text-center">Listen to the ResConDA podcast (in Italian)</div>
+        {{ partial "podcast_links.html" . }}
+    </section>
+</div>
+{{ end }}
+{{ define "footer_scripts" }}
+<script src="/js/contact.js"></script>
+{{ end }}

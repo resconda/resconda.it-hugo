@@ -4,10 +4,10 @@
 
 <div class="dropdown">
         <button class="btn {{$button_class}} dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Modulo di adesione
+                {{ i18n "membership_form" }}
         </button>
         <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{{$pf_link}}">Persone fisiche</a></li>
-                <li><a class="dropdown-item" href="{{$pg_link}}">Persone giuridiche</a></li>
+                <li><a class="dropdown-item" href="{{$pf_link}}">{{ i18n "membership_individuals" }}</a></li>
+                <li><a class="dropdown-item" href="{{$pg_link}}">{{ i18n "membership_organizations" }}</a></li>
         </ul>
 </div>

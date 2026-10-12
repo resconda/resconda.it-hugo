@@ -4,10 +4,13 @@
 {{ define "main" }}
 <section class="fullwidth-section" id="assunti">
     <p class="site-title lightblue">
-        assunti di base
+        {{ i18n "basics_title" }}
     </p>
+    {{/* Italian list in data/assunti_di_base.yaml; other languages in data/assunti_di_base_<lang>.yaml */}}
+    {{ $basics := $.Site.Data.assunti_di_base }}
+    {{ with index $.Site.Data (printf "assunti_di_base_%s" $.Language.Lang) }}{{ $basics = . }}{{ end }}
     <div class="fancy-list" style="margin-top: 2em;">
-        {{ range $itemIndex, $item := $.Site.Data.assunti_di_base.assunti }}
+        {{ range $itemIndex, $item := $basics.assunti }}
         <div class="row align-items-center my-2">
             {{ if eq $item.numberGravity "left" }}
             <div class="col-2 colindex fadein-scroll top" 
@@ -32,12 +35,12 @@
         {{ end}}
     </div>
     <p class="white">
-        Per un approfondimento puoi scaricare il breve saggio "<a href="https://www.amazon.it/Crisi-Solo-radicale-cambiamento-prospettiva-ebook/dp/B086SDJG52/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1GF502PZN5JWG&keywords=la+crisi+marcello+corongiu&qid=1660294268&sprefix=la+crisi+marcello+corongiu%2Caps%2C247&sr=8-1">
+        {{ i18n "basics_further_reading" }} "<a href="https://www.amazon.it/Crisi-Solo-radicale-cambiamento-prospettiva-ebook/dp/B086SDJG52/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1GF502PZN5JWG&keywords=la+crisi+marcello+corongiu&qid=1660294268&sprefix=la+crisi+marcello+corongiu%2Caps%2C247&sr=8-1">
             La Crisi: Solo un radicale cambiamento di prospettiva
         </a>"
     </p>
     <p class="site-title orange">
-        unisciti a noi
+        {{ i18n "join_us" }}
     </p>
     <div class="row my-2 justify-content-center">
         <div class="col col-md-4">
@@ -46,8 +49,7 @@
     </div>
     <div class="row my-2 justify-content-center">
         <div class="col col-md-4">
-            <a href="/statuto" target="_blank"><button type="button" class="btn btn-info text-white">Lo
-                    statuto</button></a>
+            <a href="{{ (site.GetPage "/statuto").RelPermalink }}" target="_blank"><button type="button" class="btn btn-info text-white">{{ i18n "statute_button" }}</button></a>
         </div>
     </div>
 </section>

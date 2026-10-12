@@ -1,0 +1,62 @@
+# English version of data/assunti_di_base.yaml - keep the same order, numberGravity and tilt
+assunti:
+  - numberGravity: "left"
+    tilt: 0
+    body: |
+      Humanity is an integral part of a wider ecosystem, made up of many other living beings, animals and plants,
+      as well as inorganic elements (such as CO2) that "coexist" in a complex and, in some respects, precarious balance.
+  - numberGravity: "left"
+    tilt: 0
+    body: |
+      Every man, woman and child (like every living being) has an impact on this ecosystem.
+  - numberGravity: "right"
+    tilt: 0
+    body: |
+      When that impact exceeds the environment's capacity to absorb it, it must be reduced.
+  - numberGravity: "left"
+    tilt: 0
+    body: |
+      In nature there are feedback mechanisms that tend to bring living beings and their ecosystem into balance:
+      thanks to its ingenuity and abilities, humanity has managed to escape these mechanisms, growing in number
+      and in its impact on the environment to the point of substantially altering the ecosystem, and ultimately
+      endangering its own survival and that of other living species.
+  - numberGravity: "right"
+    tilt: 0
+    body: |
+      This may lead to scenarios that must be averted.
+  - numberGravity: "left"
+    tilt: -25
+    body: |
+      This problem outweighs every other that society faces today or has ever faced in the past,
+      whether social, economic or of any other kind: every other consideration must give way to solving
+      the environmental problem (within the limits of a society's ability to absorb and manage the consequences that
+      necessarily follow from this approach), not least because in many cases the environmental problem is itself the
+      root cause of problems of a different kind (migration, for example).
+  - numberGravity: "left"
+    tilt: 25
+    body: |
+      Environmental sustainability can only come from reducing resource consumption,
+      as the Club of Rome showed 50 years ago in its report "The Limits to Growth".
+  - numberGravity: "left"
+    tilt: 0
+    body: |
+      Bringing human activities back into balance with the ecosystem is not compatible with endless
+      growth in the production and consumption of goods and services, and therefore inevitably requires a radical change
+      in today's economic system and social organisation, which are inextricably based on the assumption of growth.
+  - numberGravity: "left"
+    tilt: 0
+    body: |
+      It is not reasonable to rely, as an act of faith, on innovation and science as a deus ex machina able,
+      at some undefined point in the future, to solve every problem in this respect.
+  - numberGravity: "left"
+    tilt: 0
+    body: |
+      If this change is not properly prepared for and managed, it may cause imbalances and social disorder
+      potentially capable of bringing about the collapse of the State and of the other organisations
+      traditionally responsible for maintaining social order.
+  - numberGravity: "left"
+    tilt: 0
+    body: |
+      Since such a collapse is probably inevitable, even regardless of the environmental crisis, because of the
+      progressive depletion of available energy wealth (the falling average EROEI, Energy Return on Energy Invested,
+      of the energy sources currently available), it is better to prepare for it and manage it than to suffer it.
