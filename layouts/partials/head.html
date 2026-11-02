@@ -3,7 +3,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="{{ .Site.Params.logo | absLangURL }}">
     {{ if .IsHome }}
-    <title>{{ .Title | markdownify | plainify }}</title>
+    {{- $homeTitle := site.Params.seo_home_title | default .Title }}
+    <title>{{ $homeTitle | markdownify | plainify }}</title>
+    <meta property="og:title" content="{{ $homeTitle | markdownify | plainify }}" />
+    {{- with site.Params.header_image }}
+    <meta property="og:image" content="{{ . | absURL }}" />
+    {{- end }}
     {{ else }}
         {{ if .Params.seoTitle }}
     <title>{{ .Params.seoTitle }}</title>
@@ -14,6 +19,10 @@
         {{ end }}
     {{ end}}
     <link rel="canonical" href="{{ .Permalink }}" />
+    {{- /* Tag con pochi articoli: consultabili ma non indicizzati (vedi site.Params.min_articles_index_tag) */}}
+    {{- if and (eq .Kind "term") (eq .Data.Plural "tags") (lt (len .Pages) (site.Params.min_articles_index_tag | default 5)) }}
+    <meta name="robots" content="noindex, follow" />
+    {{- end }}
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:site_name" content="{{ site.Title }}" />
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
