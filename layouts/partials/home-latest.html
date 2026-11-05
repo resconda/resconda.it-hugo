@@ -3,24 +3,24 @@
 {{ $latest = $latest.ByDate.Reverse | first 6 }}
 <section id="latest-articles">
     <h2 class="latest-title">Ultimi articoli</h2>
-    <div class="row g-4">
+    <ul class="latest-list">
         {{ range $latest }}
-        <div class="col-12 col-md-6 col-xl-4">
-            <a class="latest-card" href="{{ .RelPermalink }}">
+        <li>
+            <a class="latest-item" href="{{ .RelPermalink }}">
                 {{- with .Params.cover_image.src }}
-                <img class="latest-thumb" src="https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_auto,c_fill,w_640,h_360/{{ strings.TrimLeft "/" . }}" width="640" height="360" alt="" loading="lazy" />
+                <img class="latest-thumb" src="https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_auto,c_fill,w_144,h_144/{{ strings.TrimLeft "/" . }}" width="72" height="72" alt="" loading="lazy" />
                 {{- else }}
                 <span class="latest-thumb latest-thumb-empty" aria-hidden="true"></span>
                 {{- end }}
                 <span class="latest-text">
-                    <span class="latest-card-title">{{ .Title }}</span>
+                    <span class="latest-item-title">{{ .Title }}</span>
                     <date>{{ .Date.Format "02.01.2006" }}</date>
                 </span>
             </a>
-        </div>
+        </li>
         {{ end }}
-    </div>
-    <p class="text-center mt-4">
+    </ul>
+    <p class="text-center mt-3">
         <a class="btn btn-outline-primary" href="{{ "articles/" | relLangURL }}">Tutti gli articoli &rarr;</a>
     </p>
 </section>
