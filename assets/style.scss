@@ -525,83 +525,67 @@ div.footnotes {
         }
     }
 }
-// Home: ultimi articoli
+// Home: ultimi articoli, lista compatta con miniatura a sinistra
 #latest-articles {
-    padding: 2rem 0 3rem;
+    padding: 1.5rem 0 2rem;
     .latest-title {
         text-align: center;
         font-weight: bold;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
-    .latest-card {
-        display: block;
-        height: 100%;
+    .latest-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr;          // telefono: una colonna
+        gap: 0.25rem 1.5rem;
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);   // tablet: due colonne
+        }
+        @media (min-width: 1200px) {
+            grid-template-columns: repeat(3, 1fr);   // desktop: tre colonne
+        }
+    }
+    .latest-item {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.4em 0.5em;
         color: unset;
         text-decoration: none;
-        border-radius: 8px;
-        overflow: hidden;
-        background: #fff;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
-        transition: box-shadow 0.2s;
+        border-radius: 6px;
         &:hover, &:focus {
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+            background: $logo-color-lightgrey;
         }
     }
     .latest-thumb {
-        display: block;
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 9;
+        flex: 0 0 72px;
+        width: 72px;
+        height: 72px;
         max-width: none;
         margin: 0;           // annulla il "margin: 0 auto" globale delle img
         object-fit: cover;
+        border-radius: 6px;
     }
     .latest-thumb-empty {
+        display: block;
         background: $logo-color-lightgrey;
     }
     .latest-text {
-        display: block;
-        padding: 0.75rem 1rem 1rem;
+        flex: 1 1 auto;
+        min-width: 0;
+        line-height: 1.3;
     }
-    .latest-card-title {
+    .latest-item-title {
         display: block;
         font-weight: bold;
-        line-height: 1.3;
-        margin-bottom: 0.35rem;
+        margin-bottom: 0.2rem;
     }
     date {
         font-size: small;
         opacity: 0.7;
-    }
-}
-// Home: ultimi articoli su telefono, righe compatte con miniatura a sinistra
-@media (max-width: 767.98px) {
-    #latest-articles {
-        padding: 1.5rem 0 2rem;
-        .row.g-4 {
-            --bs-gutter-y: 0.75rem;
-        }
-        .latest-card {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.5rem;
-        }
-        .latest-thumb {
-            flex: 0 0 88px;
-            width: 88px;
-            height: 88px;
-            aspect-ratio: auto;
-            border-radius: 6px;
-        }
-        .latest-text {
-            flex: 1 1 auto;
-            min-width: 0;
-            padding: 0;
-        }
-        .latest-card-title {
-            font-size: 0.95rem;
-        }
     }
 }
 // Articoli consigliati con miniatura
