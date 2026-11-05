@@ -1,11 +1,18 @@
 <!-- related-list.html -->
 {{ $related := where (site.RegularPages.Related .) "Section" "articles" | first 5 }}
-<ul class="posts">
+<ul class="posts related">
     {{ range $related }}
     <li class="post">
       <a href="{{ .RelPermalink }}">
-        <span {{ if .Draft }}style="color: darkgray;"{{ end }}>{{ .Title }}</span>
-        <br/><date>{{ .Date.Format "02.01.2006" }}</date>
+        {{- with .Params.cover_image.src }}
+        <img class="related-thumb" src="https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_auto,c_fill,w_144,h_144/{{ strings.TrimLeft "/" . }}" width="72" height="72" alt="" loading="lazy" />
+        {{- else }}
+        <span class="related-thumb related-thumb-empty" aria-hidden="true"></span>
+        {{- end }}
+        <span class="related-text">
+          <span {{ if .Draft }}style="color: darkgray;"{{ end }}>{{ .Title }}</span>
+          <br/><date>{{ .Date.Format "02.01.2006" }}</date>
+        </span>
       </a>
     </li>
     {{ end }}
