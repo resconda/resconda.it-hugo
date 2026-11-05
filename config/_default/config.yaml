@@ -12,7 +12,10 @@ params:
     Associazione per la  
     **RES**tituzione **CON**sapevole   
     del **D**ebito **A**mbientale
-  description: "Acquisire consapevolezza sui numeri in gioco quando si parla di sostenibilità e di risparmio energetico"
+  seo_home_title: "ResConDA – Quanta energia costano le scelte di ogni giorno"
+  # I tag con meno articoli di questa soglia non vengono indicizzati da Google e non vanno in sitemap
+  min_articles_index_tag: 5
+  description: "Quanta energia c’è in una lattina, in un volo, in un piatto di pasta? ResConDA misura in kWh l’impatto delle scelte quotidiane, con numeri e fonti."
   socials:
   - link: "https://facebook.com"
     name: facebook
@@ -109,7 +112,8 @@ languages:
         **RES**tituzione **CON**sapevole   
         del **D**ebito **A**mbientale  
         *Conscious Repayment of Environmental Debt*
-      description: "Understanding the numbers at stake when we talk about sustainability and energy saving"
+      seo_home_title: "ResConDA – The energy cost of everyday choices"
+      description: "How much energy is in a can, a flight, a plate of pasta? ResConDA measures the impact of everyday choices in kWh, with numbers and sources."
     menus:
       main:
       - name: About us
