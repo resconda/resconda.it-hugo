@@ -64,12 +64,11 @@
     <div class="col-12 col-lg-4">
       <aside id="meta">
         <div>
-          <h5 class="fw-bold">Tags</h5>
-          {{ partial "tag-cloud.html" }}
-        </div>
-        <div>
           <h5 class="fw-bold">Consigliati</h5>
           {{ partial "related-list.html" . }}
+        </div>
+        <div class="mt-3">
+          <p><a href="{{ "tags/" | relLangURL }}">Tutti gli argomenti &rarr;</a></p>
         </div>
       </aside>
     </div>
