@@ -1,17 +1,13 @@
-<!-- home-latest.html: gli ultimi articoli pubblicati, aggiornati in automatico -->
+<!-- home-latest.html: le ultime pillole (articoli) pubblicate, aggiornate in automatico -->
 {{ $latest := where (where site.RegularPages "Section" "articles") "Draft" false }}
 {{ $latest = $latest.ByDate.Reverse | first 6 }}
 <section id="latest-articles">
-    <h2 class="band-title">Ultimi articoli</h2>
+    <h2 class="band-title">Ultime pillole</h2>
     <ul class="latest-list">
         {{ range $latest }}
         <li>
             <a class="latest-item" href="{{ .RelPermalink }}">
-                {{- with .Params.cover_image.src }}
-                <img class="latest-thumb" src="https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_auto,c_fill,w_160,h_160/{{ strings.TrimLeft "/" . }}" width="80" height="80" alt="" loading="lazy" />
-                {{- else }}
-                <span class="latest-thumb latest-thumb-empty" aria-hidden="true"></span>
-                {{- end }}
+                <span class="latest-pill" aria-hidden="true"></span>
                 <span class="latest-text">
                     <span class="latest-item-title" title="{{ .Title }}">{{ .Title }}</span>
                     <date>{{ .Date.Format "02.01.2006" }}</date>
@@ -21,6 +17,6 @@
         {{ end }}
     </ul>
     <p class="band-more">
-        <a href="{{ "articles/" | relLangURL }}">Tutti gli articoli &rarr;</a>
+        <a href="{{ "articles/" | relLangURL }}">Tutte le pillole &rarr;</a>
     </p>
 </section>
