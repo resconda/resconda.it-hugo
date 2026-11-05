@@ -525,22 +525,60 @@ div.footnotes {
         }
     }
 }
-// Home: ultimi articoli, lista compatta con miniatura a sinistra
-#latest-articles {
-    padding: 1.5rem 0 2rem;
-    .latest-title {
-        text-align: center;
+// Home: fascia verde con ultimi articoli e podcast
+// $band-green è il verde salvia del tratto nell'immagine di testata
+$band-green: #AEBFB1;
+$band-text: #1d2330;
+.home-band {
+    background: $band-green;
+    color: $band-text;
+    width: 100%;
+    .home-band-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        @media (min-width: 992px) {
+            padding: 2.5rem 1.5rem;
+        }
+    }
+    p { margin: 0; }
+    a { color: $band-text; }
+    .band-title {
         font-weight: bold;
+        font-size: 1.5rem;
         margin-bottom: 1rem;
+    }
+    .band-more {
+        margin-top: 0.75rem;
+        text-align: right;
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            &:hover, &:focus { text-decoration: underline; }
+        }
+    }
+}
+
+// Ultimi articoli: righe tutte alte uguali, miniature allineate, titoli tagliati a 2 righe
+// (80px su tablet/desktop, 64px e solo 4 articoli sul telefono)
+#latest-articles {
+    --thumb: 64px;
+    @media (min-width: 768px) {
+        --thumb: 80px;
+    }
+    .latest-list > li:nth-child(n+5) {
+        display: none;                               // telefono: solo i primi 4
+        @media (min-width: 768px) {
+            display: list-item;
+        }
     }
     .latest-list {
         list-style: none;
         padding: 0;
-        margin: 0 auto;
-        max-width: 1200px;
+        margin: 0;
         display: grid;
-        grid-template-columns: 1fr;          // telefono: una colonna
-        gap: 0.25rem 1.5rem;
+        grid-template-columns: 1fr;                  // telefono: una colonna
+        gap: 0.5rem 2rem;
         @media (min-width: 768px) {
             grid-template-columns: repeat(2, 1fr);   // tablet: due colonne
         }
@@ -550,121 +588,106 @@ div.footnotes {
     }
     .latest-item {
         display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        padding: 0.4em 0.5em;
-        color: unset;
+        align-items: flex-start;
+        gap: 0.85rem;
+        height: var(--thumb);
         text-decoration: none;
-        border-radius: 6px;
-        &:hover, &:focus {
-            background: $logo-color-lightgrey;
+        &:hover .latest-item-title, &:focus .latest-item-title {
+            text-decoration: underline;
         }
     }
     .latest-thumb {
-        flex: 0 0 72px;
-        width: 72px;
-        height: 72px;
+        flex: 0 0 var(--thumb);
+        width: var(--thumb);
+        height: var(--thumb);
         max-width: none;
         margin: 0;           // annulla il "margin: 0 auto" globale delle img
         object-fit: cover;
-        border-radius: 6px;
+        border-radius: 0;
     }
     .latest-thumb-empty {
         display: block;
-        background: $logo-color-lightgrey;
+        background: rgba(255, 255, 255, 0.4);
     }
     .latest-text {
         flex: 1 1 auto;
         min-width: 0;
-        line-height: 1.3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: var(--thumb);
+        padding: 0.1rem 0;
     }
     .latest-item-title {
-        display: block;
         font-weight: bold;
-        margin-bottom: 0.2rem;
+        font-size: 0.95rem;
+        line-height: 1.25;
+        @media (min-width: 768px) {
+            font-size: 1rem;
+            line-height: 1.3;
+        }
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
     date {
         font-size: small;
-        opacity: 0.7;
+        opacity: 0.75;
     }
 }
-// Home: podcast in evidenza
-// lo sfondo #B5BCCE è lo stesso del logo "Resconda Pod", così l'immagine si fonde col riquadro
+
+// Podcast: riga integrata nella fascia, separata da una linea sottile
 #home-podcast {
-    padding: 0 0 2.5rem;
-    .podcast-box {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 1.25rem;
-        border-radius: 10px;
-        background: #B5BCCE;
-        color: #1d2330;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1.25rem;
-        align-items: center;
-        @media (min-width: 992px) {
-            grid-template-columns: 1fr 2fr 1fr;
-            padding: 1.5rem 2rem;
-        }
+    margin-top: 1.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(29, 35, 48, 0.2);
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 1rem;
+    align-items: center;
+    @media (min-width: 992px) {
+        grid-template-columns: 80px 1fr auto;
+        gap: 1.5rem;
     }
-    p { margin: 0; }
-    .podcast-intro {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        @media (min-width: 992px) {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.5rem;
-        }
-    }
-    .podcast-cover {
-        flex: 0 0 96px;
-        width: 96px;
-        height: 96px;
+    .podcast-logo {
+        width: 64px;
+        height: 64px;
         max-width: none;
         margin: 0;           // annulla il "margin: 0 auto" globale delle img
         @media (min-width: 992px) {
-            width: 160px;
-            height: 160px;
+            width: 80px;
+            height: 80px;
         }
-    }
-    .podcast-kicker {
-        font-weight: bold;
-        font-size: 1.15rem;
-    }
-    .podcast-claim {
-        opacity: 0.85;
-        margin-top: 0.25rem;
     }
     .podcast-label {
         text-transform: uppercase;
-        font-size: small;
+        font-size: 0.75rem;
         letter-spacing: 0.05em;
         opacity: 0.75;
-        margin-bottom: 0.35rem;
+        margin-bottom: 0.15rem;
     }
     .podcast-ep-title {
         font-weight: bold;
-        font-size: 1.1rem;
         line-height: 1.3;
-    }
-    .podcast-ep-desc {
-        font-size: 0.95rem;
-        opacity: 0.9;
-        margin-top: 0.35rem;
     }
     audio {
         width: 100%;
-        margin-top: 0.75rem;
+        max-width: 480px;
+        height: 36px;
+        margin-top: 0.4rem;
     }
     .podcast-platforms {
+        grid-column: 1 / -1;                 // telefono: sotto, a tutta larghezza
+        @media (min-width: 992px) {
+            grid-column: auto;
+        }
         .row { justify-content: flex-start !important; }
-        a, .icon-link { color: #1d2330; }
-        svg { fill: #1d2330; }
+        a, .icon-link { color: $band-text; }
+        svg { fill: $band-text; }
     }
 }
+
 // Articoli consigliati con miniatura
 .posts.related {
     padding-left: 0;
