@@ -538,6 +538,8 @@ div.footnotes {
         flex: 0 0 72px;
         width: 72px;
         height: 72px;
+        max-width: none;
+        margin: 0;           // annulla il "margin: 0 auto" globale delle img
         object-fit: cover;
         border-radius: 6px;
     }
@@ -546,6 +548,8 @@ div.footnotes {
         background: $logo-color-lightgrey;
     }
     .related-text {
+        flex: 1 1 auto;
+        min-width: 0;
         line-height: 1.3;
     }
 }
