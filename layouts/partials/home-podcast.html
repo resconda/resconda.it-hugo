@@ -1,0 +1,41 @@
+<!-- home-podcast.html: il podcast in evidenza in home, con l'ultimo episodio letto dal feed RSS -->
+{{- $ep := "" }}
+{{- with site.Params.podcast_rss }}
+  {{- with resources.GetRemote . }}
+    {{- with .Err }}
+      {{- warnf "Feed del podcast non raggiungibile: %s" . }}
+    {{- else }}
+      {{- $feed := . | transform.Unmarshal }}
+      {{- $items := $feed.channel.item }}
+      {{- if reflect.IsSlice $items }}{{ $items = index $items 0 }}{{ end }}
+      {{- $ep = $items }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+<section id="home-podcast">
+    <div class="podcast-box">
+        <div class="podcast-intro">
+            <img class="podcast-cover" src="{{ "images/resconda-pod.webp" | relURL }}" width="160" height="160" alt="Resconda Pod, il podcast di ResConDA" loading="lazy" />
+            <div>
+                <p class="podcast-kicker">Il podcast di ResConDA</p>
+                <p class="podcast-claim">I numeri della sostenibilità, da ascoltare.</p>
+            </div>
+        </div>
+        {{- with $ep }}
+        <div class="podcast-episode">
+            <p class="podcast-label">Ultimo episodio{{ with .pubDate }} &middot; {{ time.Format "2 January 2006" (time.AsTime .) }}{{ end }}</p>
+            <p class="podcast-ep-title">{{ .title }}</p>
+            {{- with .description }}
+            <p class="podcast-ep-desc">{{ . | plainify | htmlUnescape | truncate 180 }}</p>
+            {{- end }}
+            {{- with .enclosure }}{{ with index . "-url" }}
+            <audio controls preload="none" src="{{ . }}"></audio>
+            {{- end }}{{ end }}
+        </div>
+        {{- end }}
+        <div class="podcast-platforms">
+            <p class="podcast-label">Ascoltalo su</p>
+            {{ partial "podcast_links.html" . }}
+        </div>
+    </div>
+</section>
