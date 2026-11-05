@@ -60,7 +60,7 @@
     <script src="https://kit.fontawesome.com/4106bab399.js" crossorigin="anonymous"></script>
 
     <!-- <link rel="stylesheet" href="/css/bootstrap.min.css" /> -->
-    {{ $styles := resources.Get "style.scss" | toCSS  }}
+        {{ $styles := resources.Get "style.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" type="text/css" />
     {{ if .Params.math }}{{ partial "helpers/katex.html"}}{{ end }}
 
