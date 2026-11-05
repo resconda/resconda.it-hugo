@@ -1,7 +1,7 @@
 // 0. Site's logo colors
 $logo-color-lightgrey: #B6BDCD; // rgb(182, 189, 205);
-$logo-color-lightblue: #40C0F2; // rgb(33, 159, 198);
-$logo-color-orange: #F77E04; // rgb(244, 147, 47);
+$logo-color-lightblue: #219FC6; // rgb(33, 159, 198) - azzurro del logo (prima era #40C0F2, non corrispondeva)
+$logo-color-orange: #F4932F; // rgb(244, 147, 47) - arancione del logo (prima era #F77E04, non corrispondeva)
 $logo-color-blue: #66768D; // rgb(102, 118, 141);
 
 $highlight: rgb(250, 100, 50);
@@ -528,7 +528,7 @@ div.footnotes {
 // Home: fascia verde con ultimi articoli e podcast
 // $band-green è il verde salvia del tratto nell'immagine di testata
 $band-green: #AEBFB1;
-$band-text: #1d2330;
+$band-text: #3f4650;   // grigio scuro, leggibile sul verde
 .home-band {
     background: $band-green;
     color: $band-text;
@@ -559,26 +559,17 @@ $band-text: #1d2330;
     }
 }
 
-// Ultimi articoli: righe tutte alte uguali, miniature allineate, titoli tagliati a 2 righe
-// (80px su tablet/desktop, 64px e solo 4 articoli sul telefono)
+// Ultime pillole: al posto delle miniature una pillola bianca, ispirata a quella del logo Resconda Pod;
+// titoli sempre su 2 righe (tagliati se più lunghi) così le date restano allineate
+$pill-color: #FFFFFF;
 #latest-articles {
-    --thumb: 64px;
-    @media (min-width: 768px) {
-        --thumb: 80px;
-    }
-    .latest-list > li:nth-child(n+5) {
-        display: none;                               // telefono: solo i primi 4
-        @media (min-width: 768px) {
-            display: list-item;
-        }
-    }
     .latest-list {
         list-style: none;
         padding: 0;
         margin: 0;
         display: grid;
         grid-template-columns: 1fr;                  // telefono: una colonna
-        gap: 0.5rem 2rem;
+        gap: 1rem 2rem;
         @media (min-width: 768px) {
             grid-template-columns: repeat(2, 1fr);   // tablet: due colonne
         }
@@ -590,41 +581,33 @@ $band-text: #1d2330;
         display: flex;
         align-items: flex-start;
         gap: 0.85rem;
-        height: var(--thumb);
         text-decoration: none;
         &:hover .latest-item-title, &:focus .latest-item-title {
             text-decoration: underline;
         }
+        &:hover .latest-pill, &:focus .latest-pill {
+            transform: rotate(23deg) scale(1.15);
+        }
     }
-    .latest-thumb {
-        flex: 0 0 var(--thumb);
-        width: var(--thumb);
-        height: var(--thumb);
-        max-width: none;
-        margin: 0;           // annulla il "margin: 0 auto" globale delle img
-        object-fit: cover;
-        border-radius: 0;
-    }
-    .latest-thumb-empty {
-        display: block;
-        background: rgba(255, 255, 255, 0.4);
+    .latest-pill {
+        flex: 0 0 28px;
+        width: 28px;
+        height: 15px;
+        margin-top: 0.3rem;
+        border-radius: 999px;
+        background: $pill-color;
+        transform: rotate(23deg);
+        transition: transform 0.15s;
     }
     .latest-text {
         flex: 1 1 auto;
         min-width: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: var(--thumb);
-        padding: 0.1rem 0;
     }
     .latest-item-title {
         font-weight: bold;
-        font-size: 0.95rem;
-        line-height: 1.25;
+        line-height: 1.3;
         @media (min-width: 768px) {
-            font-size: 1rem;
-            line-height: 1.3;
+            min-height: 2.6em;                       // su più colonne: sempre 2 righe, date allineate
         }
         display: -webkit-box;
         -webkit-line-clamp: 2;
@@ -632,8 +615,10 @@ $band-text: #1d2330;
         overflow: hidden;
     }
     date {
+        display: block;
         font-size: small;
-        opacity: 0.75;
+        opacity: 0.85;
+        margin-top: 0.15rem;
     }
 }
 
