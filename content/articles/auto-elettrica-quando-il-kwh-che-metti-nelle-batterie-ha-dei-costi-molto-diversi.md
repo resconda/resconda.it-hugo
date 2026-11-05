@@ -15,7 +15,7 @@ classes:
 - kWh
 ---
 
-Quando facciamo benzina, abbiamo un modo piuttosto intuitivo per capire quanto ci costerà viaggiare. Sappiamo che un litro costa circa 2 euro e che &emdash; se la nostra automobile percorre, ad esempio, 15 km con un litro &emdash; con 10 euro compriamo 5 litri e possiamo fare circa 75 km. Siamo quindi abituati a frasi del tipo “la mia auto fa 10 kilometri con un litro”. 
+Quando facciamo benzina, abbiamo un modo piuttosto intuitivo per capire quanto ci costerà viaggiare. Sappiamo che un litro costa circa 2 euro e che — se la nostra automobile percorre, ad esempio, 15 km con un litro — con 10 euro compriamo 5 litri e possiamo fare circa 75 km. Siamo quindi abituati a frasi del tipo “la mia auto fa 10 kilometri con un litro”. 
 
 Con un'auto elettrica dobbiamo imparare a ragionare in un altro modo, perch&eacute; il serbatoio non lo riempiamo con litri di carburante ma con kilowattora di elettricità.
 
