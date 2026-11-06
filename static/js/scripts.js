@@ -233,6 +233,16 @@ const fetchSearchData = () => {
     const XHR = new XMLHttpRequest();
     XHR.addEventListener('load', (event) => {
         searchData = JSON.parse(XHR.responseText);
+        // ricerca arrivata dalla casella nel menu: /articles/?q=termine
+        const query = new URLSearchParams(window.location.search).get('q');
+        const searchInput = document.getElementById('searchTerm');
+        if (query && searchInput) {
+            searchInput.value = query;
+            if (query.length >= 3) {
+                clearSearchResults();
+                searchSearchData(query);
+            }
+        }
     });
     XHR.addEventListener('error', (event) => {
         console.log("fetchSearchData error: " + XHR.responseText);

@@ -5,7 +5,7 @@
     {{ block "nav" . }}
     {{ partial "nav.html" . }}
     {{ end }}
-    {{ if or .Params.showNewsletterBanner .IsHome }}
+    {{ if or .Params.showNewsletterBanner (and .IsHome (ne .Language.Lang "it")) }}
     {{ partial "newsletter_banner.html" . }}
     {{ end }}
     {{ if or .Params.showPicDisclaimerBanner }}

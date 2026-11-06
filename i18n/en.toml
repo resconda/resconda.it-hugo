@@ -50,3 +50,8 @@ other = "join us"
 
 [language_switch_label]
 other = "Change language"
+
+[nav_search_placeholder]
+other = "Search..."
+[nav_search_label]
+other = "Search the articles (in Italian)"

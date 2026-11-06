@@ -1,0 +1,29 @@
+<!-- home-hero.html: prima sezione della home (titolo, slogan e numeri sopra l'immagine delle curve) -->
+<section id="home-hero" style="--hero-bg: url('{{ site.Params.header_image | relURL }}');">
+    <div class="hero-inner">
+        <h1 class="hero-title">{{ site.Params.home_title | markdownify }}</h1>
+        <p class="hero-slogan">{{ site.Params.hero_slogan | default site.Params.slogan | markdownify }}</p>
+        <div class="hero-numbers">
+            <div class="hero-number">
+                <p class="hero-value">30.000</p>
+                <p class="hero-unit">kWh</p>
+                <p class="hero-label">Consumo medio annuo pro capite di energia in Italia</p>
+            </div>
+            <div class="hero-number">
+                <p class="hero-value">80</p>
+                <p class="hero-unit">kg</p>
+                <p class="hero-label">Consumo medio annuo pro capite di plastica in Italia</p>
+            </div>
+            <div class="hero-number">
+                <p class="hero-value">76.000</p>
+                <p class="hero-unit">kWh</p>
+                <p class="hero-label">Energia richiesta per realizzare un’automobile</p>
+            </div>
+            <div class="hero-number">
+                <p class="hero-value">13</p>
+                <p class="hero-unit">kWh</p>
+                <p class="hero-label">Consumo di una TV LCD in stand-by per un anno</p>
+            </div>
+        </div>
+    </div>
+</section>
