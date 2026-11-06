@@ -1,45 +1,51 @@
-<nav id="siteNavbar" class="navbar navbar-light navbar-fixed-top navbar-custom navbar-expand-lg fixed-top sps--abv justify-content-end">
-    <a class="navbar-nav flex-grow-1" href={{ relLangURL "" }}>
-        <div class="logo-navbar float-end">
+<nav id="siteNavbar" class="navbar navbar-light navbar-expand-lg fixed-top site-nav">
+    <div class="site-nav-inner">
+        <a class="site-nav-brand" href="{{ relLangURL "" }}" aria-label="ResConDA, pagina iniziale">
             {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/logo/logo_scritta_orizzontale" "id" "navBrandLogo") }}
-        </div>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-            {{ $currentPage := . }}
-            {{ range site.Menus.main }}
-            <li class="nav-item {{ .Params.class }} {{ if .HasChildren }}dropdown{{ end }} {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                <a class="nav-link {{if .HasChildren}}dropdown-toggle{{end}}" 
-                {{ if .HasChildren }}data-bs-toggle="dropdown"{{end}}
-                {{- /* .URL is the linked page's permalink when the entry uses pageRef, the raw url otherwise */}}
-                aria-current="page" href={{ .URL }} role="button">{{.Name}}{{- if .Post -}}&nbsp;{{.Post}}{{end}}</a>
-                {{ if .HasChildren }}
-                <ul class="dropdown-menu">
-                    {{ range .Children }}
-                    <li {{with .Class}}class="{{ .Params.class }}"{{end}}>
-                        <a class="dropdown-item" href="{{.RelPermalink}}">{{.Name}}</a>
-                    </li>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Apri il menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            {{- /* Ricerca: porta alla pagina degli articoli, che esegue la ricerca leggendo ?q= */}}
+            <form class="site-search" action="{{ "articles/" | relURL }}" method="get" role="search">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                <input type="search" name="q" minlength="3" placeholder="{{ i18n "nav_search_placeholder" | default "Cerca..." }}" aria-label="{{ i18n "nav_search_label" | default "Cerca negli articoli" }}">
+            </form>
+            <ul class="navbar-nav">
+                {{ $currentPage := . }}
+                {{ range site.Menus.main }}
+                {{- $active := or ($currentPage.IsMenuCurrent "main" .) (and (ne .Identifier "home") ($currentPage.HasMenuCurrent "main" .)) }}
+                <li class="nav-item {{ .Params.class }} {{ if .HasChildren }}dropdown{{ end }} {{ if $active }}active{{ end }}">
+                    <a class="nav-link {{ if $active }}active{{ end }} {{if .HasChildren}}dropdown-toggle{{end}}"
+                    {{ if .HasChildren }}data-bs-toggle="dropdown"{{end}}
+                    {{- /* .URL is the linked page's permalink when the entry uses pageRef, the raw url otherwise */}}
+                    {{ if $active }}aria-current="page"{{ end }} href="{{ .URL }}">{{ .Name }}{{- if .Post -}}&nbsp;{{ .Post }}{{ end }}</a>
+                    {{ if .HasChildren }}
+                    <ul class="dropdown-menu">
+                        {{ range .Children }}
+                        <li {{with .Class}}class="{{ .Params.class }}"{{end}}>
+                            <a class="dropdown-item" href="{{ .RelPermalink }}">{{ .Name }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
                     {{ end }}
-                </ul>
+                </li>
                 {{ end }}
-            </li>
-            {{ end}}
-            {{- /* Language switcher: translation of the current page if it exists, otherwise the other language's home */ -}}
-            {{ $page := . }}
-            {{ range site.Home.AllTranslations }}
-            {{ if ne .Language.Lang $page.Language.Lang }}
-            {{ $lang := .Language.Lang }}
-            {{ $target := .RelPermalink }}
-            {{ range $page.Translations }}{{ if eq .Language.Lang $lang }}{{ $target = .RelPermalink }}{{ end }}{{ end }}
-            <li class="nav-item lang-switch">
-                <a class="nav-link" href="{{ $target }}" hreflang="{{ $lang }}" lang="{{ $lang }}" title="{{ .Language.LanguageName }}" aria-label="{{ i18n "language_switch_label" }}: {{ .Language.LanguageName }}"><i class="fa-solid fa-globe fa-xs"></i>&nbsp;{{ upper $lang }}</a>
-            </li>
-            {{ end }}
-            {{ end }}
-        </ul>
+                {{- /* Language switcher: translation of the current page if it exists, otherwise the other language's home */ -}}
+                {{ $page := . }}
+                {{ range site.Home.AllTranslations }}
+                {{ if ne .Language.Lang $page.Language.Lang }}
+                {{ $lang := .Language.Lang }}
+                {{ $target := .RelPermalink }}
+                {{ range $page.Translations }}{{ if eq .Language.Lang $lang }}{{ $target = .RelPermalink }}{{ end }}{{ end }}
+                <li class="nav-item lang-switch">
+                    <a class="nav-link" href="{{ $target }}" hreflang="{{ $lang }}" lang="{{ $lang }}" title="{{ .Language.LanguageName }}" aria-label="{{ i18n "language_switch_label" }}: {{ .Language.LanguageName }}"><i class="fa-solid fa-globe fa-xs"></i>&nbsp;{{ upper $lang }}</a>
+                </li>
+                {{ end }}
+                {{ end }}
+            </ul>
+        </div>
     </div>
 </nav>

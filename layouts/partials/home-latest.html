@@ -2,7 +2,7 @@
 {{ $latest := where (where site.RegularPages "Section" "articles") "Draft" false }}
 {{ $latest = $latest.ByDate.Reverse | first 6 }}
 <section id="latest-articles">
-    <h2 class="band-title">Ultime pillole</h2>
+    <h2 class="band-title">le ultime pillole</h2>
     <ul class="latest-list">
         {{ range $latest }}
         <li>

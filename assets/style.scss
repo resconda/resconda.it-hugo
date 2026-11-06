@@ -525,6 +525,175 @@ div.footnotes {
         }
     }
 }
+// Menu in testa: fascia chiara, logo a sinistra, voci maiuscole arancioni, ricerca in alto a destra
+$nav-bg: #F4F4F4;
+#siteNavbar.site-nav {
+    background: $nav-bg;
+    padding: 0.5rem 1rem;
+    &.background { background: $nav-bg; }          // il JS la aggiunge scorrendo: stesso colore
+    .site-nav-inner {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .site-nav-brand img {
+        max-width: 220px;
+        margin: 0;
+        &.reduced { max-width: 180px; }
+        @media (max-width: 576px) {
+            max-width: 170px;
+            &.reduced { max-width: 150px; }
+        }
+    }
+    .navbar-collapse {
+        @media (min-width: 992px) {
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.35rem;
+        }
+    }
+    .navbar-nav {
+        gap: 0.25rem 1.5rem;
+        @media (max-width: 991.98px) {
+            align-items: flex-start;
+            padding: 0.75rem 0 0.5rem;
+        }
+    }
+    .navbar-nav .nav-link {                          // .navbar-nav: vince sulla vecchia regola per il telefono
+        font-size: 0.9rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: $logo-color-orange;
+        border-radius: 0;
+        padding: 0.25rem 0;
+        background: none;
+        &:hover, &:focus { color: $logo-color-lightblue; background: none; }
+        &.active { color: $logo-color-lightblue; background: none; }
+    }
+    .navbar-nav .nav-item.lang-switch .nav-link { color: $logo-color-blue; }
+    .site-search {
+        position: relative;
+        width: 100%;
+        max-width: 240px;
+        margin-top: 0.75rem;
+        @media (min-width: 992px) { margin-top: 0; }
+        i {
+            position: absolute;
+            left: 0.6rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.8rem;
+            color: $logo-color-blue;
+        }
+        input {
+            width: 100%;
+            font-size: 0.85rem;
+            padding: 0.3rem 0.6rem 0.3rem 1.9rem;
+            border: 1px solid $logo-color-lightgrey;
+            border-radius: 2px;
+            background: #fff;
+            color: #1d2330;
+            &:focus { outline: 2px solid $logo-color-lightblue; outline-offset: 0; border-color: transparent; }
+        }
+    }
+}
+
+// Home: prima sezione (hero) con titolo, slogan e numeri sopra l'immagine delle curve
+#home-hero {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    padding: 2.5rem 1.25rem 3rem;            // lo spazio per il menu fisso lo aggiunge scripts.js al body
+    @media (min-width: 992px) {
+        padding: 3.5rem 1.5rem 4rem;
+    }
+    &::before {                              // immagine delle curve, schiarita
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: var(--hero-bg) center / cover no-repeat;
+        opacity: 0.45;
+        pointer-events: none;
+    }
+    .hero-inner {
+        position: relative;
+        max-width: 780px;
+        margin: 0 auto;
+    }
+    p { margin: 0; }
+    .hero-title {
+        color: $logo-color-orange;
+        font-weight: 700;
+        font-size: clamp(3rem, 9vw, 5.5rem);
+        line-height: 0.95;
+        letter-spacing: -0.02em;
+        margin: 0 0 1rem;
+        p { margin: 0; }
+    }
+    .hero-slogan {
+        color: #7a7f87;
+        text-transform: uppercase;
+        font-size: clamp(0.95rem, 2.2vw, 1.25rem);
+        line-height: 1.25;
+        strong { color: #4b5058; }
+    }
+    .hero-numbers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);          // telefono: 2 x 2
+        gap: 2rem 1.5rem;
+        margin-top: 3.5rem;
+        color: $logo-color-orange;
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(4, 1fr);      // tablet e desktop: su una riga
+            gap: 2rem;
+            margin-top: 5rem;
+        }
+    }
+    .hero-value {
+        font-weight: 700;
+        font-size: clamp(2rem, 3.6vw, 2.5rem);
+        line-height: 1;
+    }
+    .hero-unit {
+        font-size: clamp(1.3rem, 2.8vw, 1.6rem);
+        line-height: 1.2;
+        margin-bottom: 0.9rem !important;
+    }
+    .hero-label {
+        text-transform: uppercase;
+        font-size: 0.72rem;
+        line-height: 1.35;
+        max-width: 13em;
+    }
+}
+
+// Banner newsletter: fascia arancione con testo bianco
+#newsletter-banner {
+    background: $logo-color-orange;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0.9rem 3rem 0.9rem 1.25rem;
+    .row {
+        max-width: 780px;
+        margin: 0 auto;
+        flex-direction: column;
+        > div { width: 100%; padding: 0; }
+    }
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+    svg { display: none; }                   // icona tolta, come nel modello
+    .btn-close { filter: invert(1) grayscale(1) brightness(2); }
+}
+
 // Home: fascia verde con ultimi articoli e podcast
 // $band-green è il verde salvia del tratto nell'immagine di testata
 $band-green: #AEBFB1;
@@ -544,9 +713,12 @@ $band-text: #3f4650;   // grigio scuro, leggibile sul verde
     p { margin: 0; }
     a { color: $band-text; }
     .band-title {
-        font-weight: bold;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
+        color: #fff;
+        font-weight: 700;
+        font-size: clamp(2.25rem, 6vw, 3.5rem);
+        line-height: 1.05;
+        max-width: 6em;                      // va a capo: "le ultime / pillole"
+        margin-bottom: 2rem;
     }
     .band-more {
         margin-top: 0.75rem;

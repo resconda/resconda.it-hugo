@@ -50,3 +50,8 @@ other = "unisciti a noi"
 
 [language_switch_label]
 other = "Cambia lingua"
+
+[nav_search_placeholder]
+other = "Cerca..."
+[nav_search_label]
+other = "Cerca negli articoli"

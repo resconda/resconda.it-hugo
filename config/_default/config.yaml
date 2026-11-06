@@ -12,6 +12,10 @@ params:
     Associazione per la  
     **RES**tituzione **CON**sapevole   
     del **D**ebito **A**mbientale
+  hero_slogan: |
+    Associazione **RES**conda  
+    per la restituzione **CON**sapevole  
+    del **D**ebito **A**mbientale
   seo_home_title: "ResConDA – Quanta energia costano le scelte di ogni giorno"
   # I tag con meno articoli di questa soglia non vengono indicizzati da Google e non vanno in sitemap
   min_articles_index_tag: 5
@@ -70,21 +74,21 @@ languages:
       reading_speed: 188
     menus:
       main:
-      # - title: Home
-      #   identifier: "home"
-      #   url: "/"
-      #   weight: 1
+      - name: Home
+        identifier: "home"
+        pageRef: "/"
+        weight: 1
       - name: News
         identifier: "articles"
-        url: "/articles"
+        pageRef: "/articles"
         weight: 20
       - name: Chi siamo
         identifier: "about"
-        url: "/about"
+        pageRef: "/about"
         weight: 10
       - name: Le basi
         identifier: "assunti_di_base"
-        url: "/assunti-di-base"
+        pageRef: "/assunti-di-base"
         weight: 11
       - name: Contatti
         identifier: "contatti"
@@ -118,6 +122,10 @@ languages:
       description: "How much energy is in a can, a flight, a plate of pasta? ResConDA measures the impact of everyday choices in kWh, with numbers and sources."
     menus:
       main:
+      - name: Home
+        identifier: "home"
+        pageRef: "/"
+        weight: 1
       - name: About us
         identifier: "about"
         pageRef: "/about"
