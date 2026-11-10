@@ -1,7 +1,7 @@
 <!-- home-hero.html: prima sezione della home (titolo, slogan e numeri sopra l'immagine delle curve).
      I numeri sono in data/home_numbers.yaml, in italiano e in inglese. -->
 {{- $lang := .Language.Lang }}
-<section id="home-hero" style="--hero-bg: url('{{ site.Params.header_image | relURL }}');">
+<section id="home-hero" style="--hero-bg: url('{{ site.Params.header_image_web | default site.Params.header_image | relURL }}');">
     <div class="hero-inner">
         <h1 class="hero-title">{{ site.Params.home_title | markdownify }}</h1>
         <p class="hero-slogan">{{ site.Params.hero_slogan | default site.Params.slogan | markdownify }}</p>

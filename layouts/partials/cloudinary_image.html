@@ -11,9 +11,10 @@
         {{ with .class }} class="{{ . }}"{{ end }}
         {{ with .style }} style="{{ . }}"{{ end }}
         alt="{{ .alt | default "" }}"
+        loading="{{ .loading | default "lazy" }}" decoding="async"
         {{ if $image_name := .image_name }}
         srcset="{{ range $i, $size := slice "256" "512" "768" "1024" "1280" }}{{ if $i }}, {{ end }}{{ $base }}/f_auto/q_auto/w_{{ $size }}/{{ $image_name }} {{ $size }}w{{ end }}"
-        sizes="(max-width: 768px) 100vw, 768px"
+        sizes="{{ .sizes | default "(max-width: 768px) 100vw, 768px" }}"
         src="{{ $base }}/f_auto/q_{{ $quality }}/w_512/{{ .image_name }}"
         {{ else }}
         {{ errorf "cloudinary_image partial needs the 'src' named attribute" }}

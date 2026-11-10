@@ -9,11 +9,11 @@
 {{$start_offset := or (.start_offset) ("so_auto") }}
 
 {{$style := .Scratch.Get "style" or "" }}
-<video muted
+<video muted preload="none" playsinline
     {{with .id}}id="{{ . }}"{{end}}
     {{with $class}}class="{{.}}"{{end}} 
     alt="{{ $alt | default "" }}" 
-    poster="https://res.cloudinary.com/resconda-it/video/upload/{{ $start_offset }}/{{ $video_name }}.jpg"
+    poster="https://res.cloudinary.com/resconda-it/video/upload/{{ $start_offset }}/f_auto/q_auto/w_1280/{{ $video_name }}.jpg"
     style="{{ $style }}">
     <source 
 src="https://res.cloudinary.com/resconda-it/video/upload/{{ $video_name }}" type="{{ $video_type }}" />
