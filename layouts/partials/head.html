@@ -51,7 +51,7 @@
     <!-- Google fonts https://fonts.google.com/ -->
     {{- if .IsHome }}
     <!-- immagine della prima sezione: è l'elemento più grande della home, la scarichiamo subito -->
-    <link rel="preload" as="image" href="{{ site.Params.header_image | relURL }}" fetchpriority="high">
+    <link rel="preload" as="image" href="{{ site.Params.header_image_web | default site.Params.header_image | relURL }}" fetchpriority="high">
     {{- end }}
     <link rel="preconnect" href="https://res.cloudinary.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">

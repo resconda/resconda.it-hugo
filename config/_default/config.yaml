@@ -5,6 +5,8 @@ title: ResConDA
 params:
   logo: "https://res.cloudinary.com/resconda-it/image/upload/v1646949774/assets/img/logo/favicon.png"
   header_image: "/images/limits.jpg"
+  # versione leggera (WebP, 16 KB invece di 50) usata nella pagina; il JPG resta per le anteprime social
+  header_image_web: "/images/limits.webp"
   home_title: |
     Azione  
     consapevole
