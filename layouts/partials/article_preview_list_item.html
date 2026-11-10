@@ -13,11 +13,10 @@
     {{ with .Params.cover_image }}
         {{ if strings.HasPrefix .src "http" }}
             <figure>
-                <picture><img src="{{.src}}" width="100%" class="card-img-top cover cover-30"/></picture>
+                <picture><img src="{{.src}}" width="100%" class="card-img-top cover cover-30" alt="{{ .alt | default $.Title }}"/></picture>
             </figure>
         {{ else }}
-            {{$alt := (path.Split .src)}}
-            {{ partial "cloudinary_image.html" (dict "image_name" .src "alt" $alt.File "class" "card-img-top cover cover-30")}}
+            {{ partial "cloudinary_image.html" (dict "image_name" .src "alt" (.alt | default $.Title) "class" "card-img-top cover cover-30")}}
         {{ end }}
     {{end}}
     {{ if strings.HasPrefix .Path "/articles/spuntini/" }}

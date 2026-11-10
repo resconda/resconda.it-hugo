@@ -1,0 +1,21 @@
+# Numeri della prima sezione della home (IT e EN). Per cambiarli basta modificare questo file.
+- value: { it: "30.000", en: "30,000" }
+  unit: kWh
+  label:
+    it: Consumo medio annuo pro capite di energia in Italia
+    en: Average annual energy use per person in Italy
+- value: { it: "80", en: "80" }
+  unit: kg
+  label:
+    it: Consumo medio annuo pro capite di plastica in Italia
+    en: Average annual plastic use per person in Italy
+- value: { it: "76.000", en: "76,000" }
+  unit: kWh
+  label:
+    it: Energia richiesta per realizzare un’automobile
+    en: Energy needed to build a car
+- value: { it: "13", en: "13" }
+  unit: kWh
+  label:
+    it: Consumo di una TV LCD in stand-by per un anno
+    en: Energy used by an LCD TV on standby for a year

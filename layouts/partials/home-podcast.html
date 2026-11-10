@@ -13,10 +13,10 @@
   {{- end }}
 {{- end }}
 <section id="home-podcast">
-    <img class="podcast-logo" src="{{ "images/resconda-pod-logo.webp" | relURL }}" width="80" height="80" alt="Resconda Pod, il podcast di ResConDA" loading="lazy" />
+    <img class="podcast-logo" src="{{ "images/resconda-pod-logo.webp" | relURL }}" width="80" height="80" alt="{{ i18n "home_podcast_logo_alt" }}" loading="lazy" />
     {{- with $ep }}
     <div class="podcast-episode">
-        <p class="podcast-label">Podcast &middot; ultimo episodio{{ with .pubDate }} &middot; {{ time.Format "2 January 2006" (time.AsTime .) }}{{ end }}</p>
+        <p class="podcast-label">{{ i18n "home_podcast_latest" }}{{ with .pubDate }} &middot; {{ time.Format "2 January 2006" (time.AsTime .) }}{{ end }}</p>
         <p class="podcast-ep-title">{{ .title }}</p>
         {{- with .enclosure }}{{ with index . "-url" }}
         <audio controls preload="none" src="{{ . }}"></audio>
@@ -24,11 +24,11 @@
     </div>
     {{- else }}
     <div class="podcast-episode">
-        <p class="podcast-ep-title">Il podcast di ResConDA</p>
+        <p class="podcast-ep-title">{{ i18n "home_podcast_title" }}</p>
     </div>
     {{- end }}
     <div class="podcast-platforms">
-        <p class="podcast-label">Ascoltalo su</p>
+        <p class="podcast-label">{{ i18n "home_podcast_listen" }}</p>
         {{ partial "podcast_links.html" . }}
     </div>
 </section>

@@ -49,15 +49,19 @@
     <meta name="twitter:image" content={{ partial "GetCloudinaryURL.html" (dict "name" .)}} />
     {{ end }}
     <!-- Google fonts https://fonts.google.com/ -->
+    {{- if .IsHome }}
+    <!-- immagine della prima sezione: è l'elemento più grande della home, la scarichiamo subito -->
+    <link rel="preload" as="image" href="{{ site.Params.header_image | relURL }}" fetchpriority="high">
+    {{- end }}
+    <link rel="preconnect" href="https://res.cloudinary.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
-
-    <!-- Fontawesome Kit -->
-    <script src="https://kit.fontawesome.com/4106bab399.js" crossorigin="anonymous"></script>
+    <!-- caricati senza bloccare la pagina: il testo compare subito con un font di sistema e poi passa a Inter -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Open+Sans:wght@700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Open+Sans:wght@700&display=swap"></noscript>
+    <!-- Fontawesome Kit: le icone arrivano dal kit, caricato senza bloccare la pagina
+         (il vecchio CSS v6.0.0 era un doppione che bloccava il rendering) -->
+    <script src="https://kit.fontawesome.com/4106bab399.js" crossorigin="anonymous" defer></script>
 
     <!-- <link rel="stylesheet" href="/css/bootstrap.min.css" /> -->
         {{ $styles := resources.Get "style.scss" | toCSS | minify | fingerprint }}
@@ -68,22 +72,24 @@
      <!-- API v1 -->
     <!-- <script type="module" src="https://unpkg.com/friendly-challenge@0.9.6/widget.module.min.js" async defer></script>
     <script nomodule src="https://unpkg.com/friendly-challenge@0.9.6/widget.min.js" async defer></script> -->
-    <!-- API v2 -->
+    <!-- API v2: serve solo dove c'è il modulo di iscrizione (le home) -->
+    {{ if .IsHome }}
     <script type="module" src="https://cdn.jsdelivr.net/npm/@friendlycaptcha/sdk@0.1.20/site.min.js" async defer></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@friendlycaptcha/sdk@0.1.20/site.compat.min.js" async defer></script>
+    {{ end }}
 
     <!-- Mathjax -->
-    {{ if .Param "math" }}
+    {{- /* solo nelle pagine che contengono formule (\( \) \[ \] $$) o che lo chiedono con math: true */}}
+    {{ if or .Params.math (and .IsPage (findRE `\\{1,2}\(|\\{1,2}\[|\$\$` .RawContent 1)) }}
         {{ partialCached "math.html" . }}
     {{ end }}
-    <!-- FuseJS -->
+    <!-- FuseJS: serve solo alla ricerca nella pagina News -->
+    {{ if and (eq .Section "articles") (eq .Kind "section") }}
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-    <!-- sharethis -->
-    <script type="text/javascript"
-        src="https://platform-api.sharethis.com/js/sharethis.js#property=65c60e0a3625b4001a8bcf63&product=inline-share-buttons&source=platform"
-        async="async"></script>
+    {{ end }}
     
     <!-- AddEvent script -->
     <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 
+    {{ partial "jsonld.html" . }}
 </head>

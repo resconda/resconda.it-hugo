@@ -12,7 +12,7 @@
 <video muted
     {{with .id}}id="{{ . }}"{{end}}
     {{with $class}}class="{{.}}"{{end}} 
-    {{with $alt}}alt="{{.}}"{{else}}alt="post-image"{{end}} 
+    alt="{{ $alt | default "" }}" 
     poster="https://res.cloudinary.com/resconda-it/video/upload/{{ $start_offset }}/{{ $video_name }}.jpg"
     style="{{ $style }}">
     <source 

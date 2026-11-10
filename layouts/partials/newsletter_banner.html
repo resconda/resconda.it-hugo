@@ -1,5 +1,6 @@
-<!-- we set this d-none by default as user may have dismissed the banner. JS script will check for dismissal cookie and, if not found, will remove the d-none class -->
-<div id="newsletter-banner" class="d-none alert alert-warning alert-dismissible fade show" role="alert">
+<!-- Il banner è visibile da subito: lo script qui sotto lo nasconde, prima che la pagina venga disegnata, se è già stato chiuso.
+     Prima era nascosto e veniva mostrato dopo il caricamento, spostando il resto della pagina (CLS). -->
+<div id="newsletter-banner" class="alert alert-warning alert-dismissible fade show" role="alert">
     <div class="row justify-content-center">
         <div class="col-12 col-sm-auto">
             <a href="{{ site.Home.RelPermalink }}#joinus">
@@ -17,3 +18,4 @@
     </div>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
+<script>if(document.cookie.split(";").some(function(c){return c.trim().indexOf("newsletterBannerDismissed=")===0}))document.getElementById("newsletter-banner").classList.add("d-none");</script>

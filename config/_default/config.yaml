@@ -37,7 +37,8 @@ params:
     icon_tag: "<i class=\"fa-brands fa-instagram fa-2x\"></i>"
   search: true
   search_minify: false
-  math: true
+  # MathJax si carica solo nelle pagine con formule (vedi layouts/partials/head.html)
+  math: false
   ext_links:
     subscription_form_person: https://form.jotform.com/242896877203368
     subscription_form_organization: https://form.jotform.com/243102285113342
@@ -118,6 +119,10 @@ languages:
         **RES**tituzione **CON**sapevole   
         del **D**ebito **A**mbientale  
         *Conscious Repayment of Environmental Debt*
+      hero_slogan: |
+        The **RES**conda association  
+        for the **CON**scious repayment  
+        of the environmental **D**ebt
       seo_home_title: "ResConDA – The energy cost of everyday choices"
       description: "How much energy is in a can, a flight, a plate of pasta? ResConDA measures the impact of everyday choices in kWh, with numbers and sources."
     menus:

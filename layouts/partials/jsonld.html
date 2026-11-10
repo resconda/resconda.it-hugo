@@ -1,0 +1,44 @@
+{{- /* Dati strutturati (schema.org) per i motori di ricerca:
+       - Organization su tutte le pagine (descrive ResConDA)
+       - BlogPosting sugli articoli
+       Costruiti come dict + jsonify, così testi con virgolette o accenti restano JSON valido. */ -}}
+{{- $logo := "https://res.cloudinary.com/resconda-it/image/upload/f_auto/q_auto/w_512/assets/img/logo/logo_scritta_orizzontale" -}}
+{{- $sameAs := slice -}}
+{{- range site.Data.podcasts }}{{ $sameAs = $sameAs | append .link }}{{ end -}}
+{{- $org := dict
+    "@type" "NGO"
+    "@id" (printf "%s#organization" ("" | absURL))
+    "name" "ResConDA"
+    "alternateName" "Associazione per la REStituzione CONsapevole del Debito Ambientale"
+    "url" ("" | absURL)
+    "logo" $logo
+    "email" "info@resconda.it"
+    "taxID" "97878370010"
+    "description" site.Params.description
+    "address" (dict "@type" "PostalAddress" "streetAddress" "Strada dei Tetti Bertoglio 79" "postalCode" "10132" "addressLocality" "Torino" "addressCountry" "IT")
+    "sameAs" $sameAs
+-}}
+{{- $graph := slice $org -}}
+{{- if and .IsPage (eq .Section "articles") }}
+  {{- $desc := .Description | default (.Summary | plainify | htmlUnescape | truncate 300) -}}
+  {{- $post := dict
+      "@type" "BlogPosting"
+      "headline" (.Title | plainify | htmlUnescape)
+      "description" $desc
+      "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+      "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+      "inLanguage" .Language.LanguageCode
+      "url" .Permalink
+      "mainEntityOfPage" .Permalink
+      "author" (dict "@id" (printf "%s#organization" ("" | absURL)))
+      "publisher" (dict "@id" (printf "%s#organization" ("" | absURL)))
+  -}}
+  {{- with .Params.cover_image }}{{ with .src }}
+    {{- $img := . -}}
+    {{- if not (strings.HasPrefix . "http") }}{{ $img = printf "https://res.cloudinary.com/resconda-it/image/upload/f_auto/q_auto/w_1280/%s" (strings.TrimLeft "/" .) }}{{ end -}}
+    {{- $post = merge $post (dict "image" $img) -}}
+  {{- end }}{{ end -}}
+  {{- with .Params.tags }}{{ $post = merge $post (dict "keywords" (delimit . ", ")) }}{{ end -}}
+  {{- $graph = $graph | append $post -}}
+{{- end }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>
