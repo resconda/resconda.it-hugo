@@ -1,5 +1,5 @@
 ---
-title: "EROEI ed ESOEI: conoscere la reale utilità dei sistemi di produzione di energia (3 di 3?)"
+title: "EROEI ed ESOEI: conoscere la reale utilità dei sistemi di produzione di energia (3 di 3)"
 date: 2026-11-10
 tags:
 - EROEI
