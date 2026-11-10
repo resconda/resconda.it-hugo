@@ -1,7 +1,50 @@
-<!-- home-hero.html: prima sezione della home (titolo, slogan e numeri sopra l'immagine delle curve).
+<!-- home-hero.html: prima sezione della home (titolo, slogan e numeri sopra il video, o l'immagine delle curve se hero_video non è impostato).
      I numeri sono in data/home_numbers.yaml, in italiano e in inglese. -->
 {{- $lang := .Language.Lang }}
+{{- $video := site.Params.hero_video }}
+{{- $cdn := "https://res.cloudinary.com/resconda-it/video/upload" }}
+{{- if $video }}
+{{- /* Con il video: subito un fotogramma fisso (leggero, è quello che conta per la velocità);
+       il video parte solo dopo il caricamento della pagina, solo su schermi grandi,
+       non se l'utente ha chiesto meno movimento o il risparmio dati. */}}
+{{- $secs := site.Params.hero_video_seconds | default 12 }}
+{{- $crop := site.Params.hero_video_crop | default "c_crop,g_north,h_0.6" }}
+<section id="home-hero" class="has-video">
+    <div class="hero-media" aria-hidden="true">
+        <picture>
+            {{- /* telefono: l'immagine delle curve (il filmato in verticale sarebbe solo un primo piano di piedi) */}}
+            <source media="(max-width: 767.98px)" srcset="{{ site.Params.header_image_web | default site.Params.header_image | relURL }}">
+            {{- /* schermi larghi: fotogramma ritagliato in basso come il video */}}
+            <img class="hero-poster" alt="" fetchpriority="high" decoding="async"
+                src="{{ $cdn }}/{{ $crop }}/so_0/f_auto/q_auto/w_960/{{ $video }}.jpg"
+                srcset="{{ $cdn }}/{{ $crop }}/so_0/f_auto/q_auto/w_640/{{ $video }}.jpg 640w, {{ $cdn }}/{{ $crop }}/so_0/f_auto/q_auto/w_960/{{ $video }}.jpg 960w, {{ $cdn }}/{{ $crop }}/so_0/f_auto/q_auto/w_1280/{{ $video }}.jpg 1280w"
+                sizes="100vw">
+        </picture>
+    </div>
+    <script>
+    window.addEventListener("load", function () {
+        if (!window.matchMedia("(min-width: 992px)").matches) return;
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        if (navigator.connection && navigator.connection.saveData) return;
+        var media = document.querySelector("#home-hero .hero-media");
+        var v = document.createElement("video");
+        v.muted = true; v.loop = true; v.playsInline = true; v.autoplay = true;
+        v.setAttribute("muted", ""); v.setAttribute("playsinline", "");
+        v.className = "hero-video";
+        [["webm", "video/webm"], ["mp4", "video/mp4"]].forEach(function (f) {
+            var s = document.createElement("source");
+            s.src = "{{ $cdn }}/{{ $crop }}/ac_none/du_{{ $secs }}/q_auto/w_1280/{{ $video }}." + f[0];
+            s.type = f[1];
+            v.appendChild(s);
+        });
+        v.addEventListener("playing", function () { v.classList.add("is-playing"); });
+        media.appendChild(v);
+        var p = v.play(); if (p && p.catch) p.catch(function () {});
+    });
+    </script>
+{{- else }}
 <section id="home-hero" style="--hero-bg: url('{{ site.Params.header_image_web | default site.Params.header_image | relURL }}');">
+{{- end }}
     <div class="hero-inner">
         <h1 class="hero-title">{{ site.Params.home_title | markdownify }}</h1>
         <p class="hero-slogan">{{ site.Params.hero_slogan | default site.Params.slogan | markdownify }}</p>

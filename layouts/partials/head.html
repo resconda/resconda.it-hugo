@@ -51,7 +51,15 @@
     <!-- Google fonts https://fonts.google.com/ -->
     {{- if .IsHome }}
     <!-- immagine della prima sezione: è l'elemento più grande della home, la scarichiamo subito -->
+    {{- with site.Params.hero_video }}
+    {{- $cdn := "https://res.cloudinary.com/resconda-it/video/upload" }}
+    {{- $crop := site.Params.hero_video_crop | default "c_crop,g_north,h_0.6" }}
+    <link rel="preload" as="image" fetchpriority="high" media="(max-width: 767.98px)" href="{{ site.Params.header_image_web | default site.Params.header_image | relURL }}">
+    <link rel="preload" as="image" fetchpriority="high" media="(min-width: 768px)" href="{{ $cdn }}/{{ $crop }}/so_0/f_auto/q_auto/w_1280/{{ . }}.jpg"
+        imagesrcset="{{ $cdn }}/{{ $crop }}/so_0/f_auto/q_auto/w_640/{{ . }}.jpg 640w, {{ $cdn }}/{{ $crop }}/so_0/f_auto/q_auto/w_960/{{ . }}.jpg 960w, {{ $cdn }}/{{ $crop }}/so_0/f_auto/q_auto/w_1280/{{ . }}.jpg 1280w" imagesizes="100vw">
+    {{- else }}
     <link rel="preload" as="image" href="{{ site.Params.header_image_web | default site.Params.header_image | relURL }}" fetchpriority="high">
+    {{- end }}
     {{- end }}
     <link rel="preconnect" href="https://res.cloudinary.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">

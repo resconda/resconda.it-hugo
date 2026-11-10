@@ -7,6 +7,16 @@ params:
   header_image: "/images/limits.jpg"
   # versione leggera (WebP, 16 KB invece di 50) usata nella pagina; il JPG resta per le anteprime social
   header_image_web: "/images/limits.webp"
+  # Video di sfondo della prima sezione in home (nome pubblico su Cloudinary).
+  # Togliendo questa riga si torna all'immagine delle curve.
+  hero_video: "3627-172488393_medium_refxkv"
+  hero_video_seconds: 12                     # durata del loop
+  # Ritaglio del video (sintassi Cloudinary): tiene il 60% alto dell'inquadratura e toglie il pavimento in basso,
+  # su computer e sul telefono.
+  # Aumentare h (es. 0.7) per tagliare meno, diminuirlo per tagliare di più.
+  hero_video_crop: "c_crop,g_north,h_0.6"
+  # Sul telefono il video non c'è: resta l'immagine delle curve (header_image_web).
+  # L'inquadratura del filmato, ripreso da terra, in verticale diventava un primo piano di piedi.
   home_title: |
     Azione  
     consapevole
