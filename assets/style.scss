@@ -392,6 +392,16 @@ table, .highlight>pre, pre.example {
 #animated p.overlay {
     position: absolute;
     bottom: 0px;
+    z-index: 2;                               // il testo sta sopra la velatura
+}
+#animated > div::after {                      // velatura sul video: più morbido, e la scritta si legge meglio
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(to bottom, rgba(29, 35, 48, 0) 35%, rgba(29, 35, 48, 0.45) 100%),  // più scura in basso, sotto la scritta
+        rgba(102, 118, 141, 0.35);                                                    // leggera su tutto il video (grigio-blu del logo)
 }
 #shorttermgoal {
   background-color: $background6;
