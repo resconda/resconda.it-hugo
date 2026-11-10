@@ -1,28 +1,17 @@
 {{/* English home page. Mirrors layouts/_default/home.html (Italian): keep the two in sync when changing the structure. */}}
+{{/* the standard header is replaced by the first section (hero) and the newsletter banner */}}
+{{ define "header" }}
+{{ partial "home-hero.html" . }}
+{{ partial "newsletter_banner.html" . }}
+{{ end }}
+
 {{ define "main" }}
 
-<div class="container-fluid">
-    <section id="our-numbers">
-        <!--numbers-->
-        <div class="row g-2">
-            <div class="col col-12 col-md-6 col-xl-3 col-center">
-                <p class="promo fadein-scroll">30,000<span class="unit"> kWh</span></p>
-                <p class="promo-description orange invert">Average annual energy use per person in Italy</p>
-            </div>
-            <div class="col col-12 col-md-6 col-xl-3 col-center">
-                <p class="promo fadein-scroll">80<span class="unit"> kg</span></p>
-                <p class="promo-description orange invert">Average annual plastic use per person in Italy</p>
-            </div>
-            <div class="col col-12 col-md-6 col-xl-3 col-center">
-                <p class="promo fadein-scroll">76,000<span class="unit"> kWh</span></p>
-                <p class="promo-description orange invert">Energy needed to build a car</p>
-            </div>
-            <div class="col col-12 col-md-6 col-xl-3 col-center">
-                <p class="promo fadein-scroll">13<span class="unit"> kWh</span></p>
-                <p class="promo-description orange invert">Energy used by an LCD TV on standby for a year</p>
-            </div>
-        </div>
-    </section>
+<div class="home-band">
+    <div class="home-band-inner">
+        {{ partial "home-latest.html" . }}
+        {{ partial "home-podcast.html" . }}
+    </div>
 </div>
 <div class="fullwidth-container">
     <section class="fullwidth-section" id="prologue">
@@ -105,20 +94,20 @@
         <div class="row" style="margin-left: auto; margin-right: auto;">
             <div class="col col-12 col-md-6 col-xl-4">
                 <div style="position: relative;">
-                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/marcello_corongiu_ceox1d" "class" "cover cover-50") }}
+                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/marcello_corongiu_ceox1d" "class" "cover cover-50" "alt" "Marcello Corongiu") }}
                     <div class="img-label bottom">Marcello</div>
                 </div>
             </div>
             <div class="col col-12 col-md-6 col-xl-4 ">
                 <div style="position: relative;">
 
-                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/paolo_marchetti_jokqkx" "class" "cover cover-50") }}
+                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/paolo_marchetti_jokqkx" "class" "cover cover-50" "alt" "Paolo Marchetti") }}
                     <div class="img-label bottom">Paolo</div>
                 </div>
             </div>
             <div class="col col-12 col-md-6 col-xl-3 ">
                 <div style="position: relative;">
-                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/stefano_serra_p55e8b" "class" "cover cover-50") }}
+                    {{ partial "cloudinary_image.html" (dict "image_name" "assets/img/people/stefano_serra_p55e8b" "class" "cover cover-50" "alt" "Stefano Serra") }}
                     <div class="img-label bottom">Stefano</div>
                 </div>
             </div>
@@ -213,10 +202,6 @@
                 {{ partial "contactform.html" }}
             </div>
         </div>
-    </section>
-    <section id="podcast-links" class="py-4">
-        <div class="h4 text-center">Listen to the ResConDA podcast (in Italian)</div>
-        {{ partial "podcast_links.html" . }}
     </section>
 </div>
 {{ end }}

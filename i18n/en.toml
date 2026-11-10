@@ -55,3 +55,18 @@ other = "Change language"
 other = "Search..."
 [nav_search_label]
 other = "Search the articles (in Italian)"
+
+[home_latest_title]
+other = "the latest pills"
+[home_latest_note]
+other = "Our articles are in Italian."
+[home_latest_more]
+other = "All pills (in Italian)"
+[home_podcast_title]
+other = "The ResConDA podcast"
+[home_podcast_latest]
+other = "Podcast (in Italian) · latest episode"
+[home_podcast_listen]
+other = "Listen on"
+[home_podcast_logo_alt]
+other = "Resconda Pod, the ResConDA podcast"

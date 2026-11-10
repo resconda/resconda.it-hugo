@@ -1,12 +1,15 @@
-<!-- home-latest.html: le ultime pillole (articoli) pubblicate, aggiornate in automatico -->
-{{ $latest := where (where site.RegularPages "Section" "articles") "Draft" false }}
+<!-- home-latest.html: le ultime pillole (articoli) pubblicate, aggiornate in automatico.
+     Gli articoli esistono solo in italiano: anche la home inglese mostra quelli del sito italiano. -->
+{{ $itSite := index .Sites 0 }}
+{{ $latest := where (where $itSite.RegularPages "Section" "articles") "Draft" false }}
 {{ $latest = $latest.ByDate.Reverse | first 6 }}
 <section id="latest-articles">
-    <h2 class="band-title">le ultime pillole</h2>
+    <h2 class="band-title">{{ i18n "home_latest_title" }}</h2>
+    {{ with i18n "home_latest_note" }}<p class="band-note">{{ . }}</p>{{ end }}
     <ul class="latest-list">
         {{ range $latest }}
         <li>
-            <a class="latest-item" href="{{ .RelPermalink }}">
+            <a class="latest-item" href="{{ .RelPermalink }}" hreflang="it">
                 <span class="latest-pill" aria-hidden="true"></span>
                 <span class="latest-text">
                     <span class="latest-item-title" title="{{ .Title }}">{{ .Title }}</span>
@@ -17,6 +20,6 @@
         {{ end }}
     </ul>
     <p class="band-more">
-        <a href="{{ "articles/" | relLangURL }}">Tutte le pillole &rarr;</a>
+        <a href="{{ "articles/" | relURL }}">{{ i18n "home_latest_more" }} &rarr;</a>
     </p>
 </section>

@@ -55,3 +55,16 @@ other = "Cambia lingua"
 other = "Cerca..."
 [nav_search_label]
 other = "Cerca negli articoli"
+
+[home_latest_title]
+other = "le ultime pillole"
+[home_latest_more]
+other = "Tutte le pillole"
+[home_podcast_title]
+other = "Il podcast di ResConDA"
+[home_podcast_latest]
+other = "Podcast · ultimo episodio"
+[home_podcast_listen]
+other = "Ascoltalo su"
+[home_podcast_logo_alt]
+other = "Resconda Pod, il podcast di ResConDA"

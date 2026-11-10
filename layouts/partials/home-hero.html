@@ -1,29 +1,18 @@
-<!-- home-hero.html: prima sezione della home (titolo, slogan e numeri sopra l'immagine delle curve) -->
+<!-- home-hero.html: prima sezione della home (titolo, slogan e numeri sopra l'immagine delle curve).
+     I numeri sono in data/home_numbers.yaml, in italiano e in inglese. -->
+{{- $lang := .Language.Lang }}
 <section id="home-hero" style="--hero-bg: url('{{ site.Params.header_image | relURL }}');">
     <div class="hero-inner">
         <h1 class="hero-title">{{ site.Params.home_title | markdownify }}</h1>
         <p class="hero-slogan">{{ site.Params.hero_slogan | default site.Params.slogan | markdownify }}</p>
         <div class="hero-numbers">
+            {{- range site.Data.home_numbers }}
             <div class="hero-number">
-                <p class="hero-value">30.000</p>
-                <p class="hero-unit">kWh</p>
-                <p class="hero-label">Consumo medio annuo pro capite di energia in Italia</p>
+                <p class="hero-value">{{ index .value $lang | default .value.it }}</p>
+                <p class="hero-unit">{{ .unit }}</p>
+                <p class="hero-label">{{ index .label $lang | default .label.it }}</p>
             </div>
-            <div class="hero-number">
-                <p class="hero-value">80</p>
-                <p class="hero-unit">kg</p>
-                <p class="hero-label">Consumo medio annuo pro capite di plastica in Italia</p>
-            </div>
-            <div class="hero-number">
-                <p class="hero-value">76.000</p>
-                <p class="hero-unit">kWh</p>
-                <p class="hero-label">Energia richiesta per realizzare un’automobile</p>
-            </div>
-            <div class="hero-number">
-                <p class="hero-value">13</p>
-                <p class="hero-unit">kWh</p>
-                <p class="hero-label">Consumo di una TV LCD in stand-by per un anno</p>
-            </div>
+            {{- end }}
         </div>
     </div>
 </section>

@@ -16,9 +16,9 @@
           {{ end }}
           {{ with .Params.cover_image}}
             {{ if strings.HasPrefix .src "http" }}
-              <img src="{{.src}}" width="100%" />
+              <img src="{{.src}}" width="100%" alt="{{ .alt | default $.Title }}" />
             {{ else }}
-              {{ partial "cloudinary_image.html" (dict "image_name" .src "caption" .caption )}}
+              {{ partial "cloudinary_image.html" (dict "image_name" .src "caption" .caption "alt" (.alt | default $.Title))}}
             {{ end }}
           {{end}}
         </div>

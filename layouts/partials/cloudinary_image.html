@@ -1,21 +1,20 @@
 {{/* OPTIONAL */}}
-{{$quality := or (.quality) ("auto") }}
+{{- $quality := or (.quality) ("auto") }}
+{{- /* Le trasformazioni Cloudinary sono separate da "/" invece che da ",": le virgole dentro gli URL
+       rompevano lo srcset (il minify le scambiava per separatori e lasciava pezzi di URL come testo nella pagina) */}}
+{{- $base := "https://res.cloudinary.com/resconda-it/image/upload" }}
 <figure>
     <picture>
-        <source src={{ printf "%s.avif" .image_name }} />
-        <source src={{ printf "%s.webp" .image_name }} />
-        <source src={{ printf "%s.jpeg" .image_name }} />
         <img
         {{ with .width }} width="{{ . }}"{{ end }}
         {{ with .id }} id="{{ . }}"{{ end }}
         {{ with .class }} class="{{ . }}"{{ end }}
         {{ with .style }} style="{{ . }}"{{ end }}
-        {{ with .alt }} alt="{{ . }}"{{ else }}alt="post-image"{{ end }}
+        alt="{{ .alt | default "" }}"
         {{ if $image_name := .image_name }}
-        srcset="{{ range $size := slice "256" "512" "768" "1024" "1280" }}
-        https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_auto,w_{{ $size }}/{{ $image_name }} {{ $size }}w,
-        {{end}}"
-        src="https://res.cloudinary.com/resconda-it/image/upload/f_auto,q_{{ $quality }},w_512/{{ .image_name }}"
+        srcset="{{ range $i, $size := slice "256" "512" "768" "1024" "1280" }}{{ if $i }}, {{ end }}{{ $base }}/f_auto/q_auto/w_{{ $size }}/{{ $image_name }} {{ $size }}w{{ end }}"
+        sizes="(max-width: 768px) 100vw, 768px"
+        src="{{ $base }}/f_auto/q_{{ $quality }}/w_512/{{ .image_name }}"
         {{ else }}
         {{ errorf "cloudinary_image partial needs the 'src' named attribute" }}
         {{ end }}

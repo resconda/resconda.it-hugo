@@ -12,7 +12,8 @@
   </h1>
   {{end}}
   {{ with .Params.cover_image}}
-  {{ partial "cloudinary_image.html" (dict "image_name" . )}}
+  {{ $src := . }}{{ if reflect.IsMap . }}{{ $src = .src }}{{ end }}
+  {{ partial "cloudinary_image.html" (dict "image_name" $src "alt" $.Title )}}
   {{end}}
   {{ .Content }}
 </div>
