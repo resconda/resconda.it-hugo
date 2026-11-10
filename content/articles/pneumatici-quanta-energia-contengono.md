@@ -28,6 +28,8 @@ La composizione del pneumatico analizzato è altrettanto interessante: circa il 
 Nel frattempo, le automobili sono cambiate: cerchi più grandi, pneumatici più larghi e veicoli mediamente più pesanti, soprattutto a causa della diffusione di SUV e crossover.   
 Ma quanto è cambiato concretamente il peso dei pneumatici? Proviamo a fare un confronto indicativo:
 
+{{< tablecaption caption="I valori energetici sono stime ottenute applicando ai pesi indicativi il rapporto di circa 120 kWh/kg ricavato dalla LCA. Non sono misurazioni dirette dei singoli pneumatici: si assume che il fabbisogno energetico cresca proporzionalmente alla massa, un'approssimazione utile per confrontare gli ordini di grandezza." class="caption-bottom" >}}
+
 | Automobile d’epoca | Misura indicativa | Peso stimato per pneumatico | Energia incorporata stimata per 4 |
 | ----- | ----: | ----: | ----: |
 | Fiat Panda (anni '90) | 135/80 R13 | 5,5 kg | 2650 kWh |
@@ -35,7 +37,7 @@ Ma quanto è cambiato concretamente il peso dei pneumatici? Proviamo a fare un c
 | Fiat Pandina (2026) | 185/55 R15 | 7,6 kg | 3660 kWh |
 | SUV medio (2026) | 235/55 R18 | 12 kg | 5775 kWh |
 
-I valori energetici sono stime ottenute applicando ai pesi indicativi il rapporto di circa 120 kWh/kg ricavato dalla LCA. Non sono misurazioni dirette dei singoli pneumatici: si assume che il fabbisogno energetico cresca proporzionalmente alla massa, un'approssimazione utile per confrontare gli ordini di grandezza.
+{{</tablecaption>}}
 
 Il confronto mostra la tendenza alla “crescita” che il nostro parco macchine ha subìto, con un aumento in 50 anni del 340% della massa complessiva dei veicoli in circolazione (ne abbiamo già parlato [in questa pillola](/articles/stelle-cadenti-ed-estinzioni-di-massa/) e [in questa](/articles/le-politiche-ambientali-sulla-mobilita-privata-fanno-bene-all-ambiente/)). 
 

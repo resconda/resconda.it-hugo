@@ -30,9 +30,9 @@ Purtroppo l’ESOEI, essendo poco conosciuto, è anche poco studiato: ci sono po
 
 Sono valori nettamente più bassi di quelli che la divulgazione attribuisce spesso alle batterie ([su Wikipedia](https://en.wikipedia.org/wiki/Energy_return_on_investment) l’ESOEI delle batterie al litio-ione è indicato in 32). Lo studio, però, è del 2005 e in oltre vent’anni il settore ha certamente fatto progressi significativi, quindi i dati vanno aggiornati (qui i valori indicati nello studio).
 
-\[tabella pop up\]
+{{< tablecaption caption="Valori ESOEI per batterie prodotte con materiali vergini / materiali riciclati">}}
 
-| Valori ESOEI per batterie prodotte con materiali vergini / materiali riciclati |  |
+| Materiale  | ESOEI |
 | :---- | :---- |
 | Polisolfuro-bromo (PSB) | 9,3 / 12,7 |
 | Ioni di litio | 6,9 / 8,6 |
@@ -43,9 +43,19 @@ Sono valori nettamente più bassi di quelli che la divulgazione attribuisce spes
 | Nichel-idruri metallici | 0,6 / 0,8 |
 | Nichel-cadmio | 0,3 / 0,3 |
 
+{{</tablecaption>}}
+
 Per le batterie elettrochimiche il calcolo si ottiene, in teoria, con una formula semplice:
 
-ESOEI \= (cicli di vita × profondità di scarica × rendimento di andata e ritorno) / (energia incorporata per kWh di capacità)
+\[
+  ESOEI = \frac{N \, P \, \rho}{\epsilon}
+\]
+dove
+- \(N\) sono i cicli di vita
+- \(P\) è la profondità di scarica
+- \(\rho\) è il rendimenti di andata e ritorno
+- \(\epsilon\) è l'energia incorporata per kWh di capacità
+
 
 Per esempio, una batteria da 1 kWh che fa 4.000 cicli, scaricata al 90% con un rendimento del 90% sul ciclo, restituisce 3.240 kWh nella vita; se per produrla sono serviti 519 kWh di energia primaria, l’ESOEI è circa 6,2.
 
