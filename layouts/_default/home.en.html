@@ -115,7 +115,7 @@
     </section>
     <section id="animated">
         <div style="position: relative;">
-            {{ partial "cloudinary_video.html" (dict "video_name" "assets/video/people_walking_hcfxq9" "video_type" "video/mp4" "class" "cover cover-70" "id" "peopleWalkingVideo" )}}
+            {{ partial "cloudinary_video.html" (dict "video_name" site.Params.section_video "transform" "ac_none/q_auto/w_1280" "class" "cover cover-70" "id" "peopleWalkingVideo" "autoplay_visible" true )}}
             <p class="site-title white overlay fadein-scroll" style="line-height: 1.35em;">Every day, <span class="bg-green">each of us decides</span> our
                 grandchildren's future</p>
         </div>

@@ -7,6 +7,9 @@ params:
   header_image: "/images/limits.jpg"
   # versione leggera (WebP, 16 KB invece di 50) usata nella pagina; il JPG resta per le anteprime social
   header_image_web: "/images/limits.webp"
+  # Video della sezione "Ogni giorno, ognuno di noi decide..." in home (nome pubblico su Cloudinary).
+  # Servito senza audio e largo 1280 px; parte da solo quando la sezione è visibile.
+  section_video: "assets/video/people_walking_hcfxq9"
   home_title: |
     Azione  
     consapevole

@@ -1,20 +1,41 @@
-{{/* REQUIRED */}}
-{{$video_name := .video_name }}
-{{$video_type := .video_type }}
-{{$alt := .alt }}
-{{$class := .class }}
-
-{{/* OPTIONAL */}}
-{{$quality := or (.quality) ("auto") }}
-{{$start_offset := or (.start_offset) ("so_auto") }}
-
-{{$style := .Scratch.Get "style" or "" }}
-<video muted preload="none" playsinline
-    {{with .id}}id="{{ . }}"{{end}}
-    {{with $class}}class="{{.}}"{{end}} 
-    alt="{{ $alt | default "" }}" 
-    poster="https://res.cloudinary.com/resconda-it/video/upload/{{ $start_offset }}/f_auto/q_auto/w_1280/{{ $video_name }}.jpg"
-    style="{{ $style }}">
-    <source 
-src="https://res.cloudinary.com/resconda-it/video/upload/{{ $video_name }}" type="{{ $video_type }}" />
+{{/* Video da Cloudinary.
+     REQUIRED: video_name (nome pubblico su Cloudinary)
+     OPTIONAL: transform (trasformazioni Cloudinary separate da "/", es. "c_crop,g_north,h_0.6/ac_none/q_auto/w_1280"),
+               id, class, alt, start_offset (fotogramma usato come anteprima), autoplay_visible (true: parte da solo
+               quando entra nello schermo e si ferma quando esce; il file si scarica solo a quel punto). */}}
+{{- $cdn := "https://res.cloudinary.com/resconda-it/video/upload" }}
+{{- $name := .video_name }}
+{{- $t := .transform | default "" }}
+{{- $tp := cond (eq $t "") "" (printf "%s/" $t) }}
+{{- $start_offset := .start_offset | default "so_auto" }}
+{{- $posterT := .transform_poster | default "" }}
+{{- $pp := cond (eq $posterT "") "" (printf "%s/" $posterT) }}
+<video muted loop playsinline preload="none"
+    {{- with .id }} id="{{ . }}"{{ end }}
+    {{- with .class }} class="{{ . }}"{{ end }}
+    {{- if .autoplay_visible }} data-autoplay-visible{{ end }}
+    aria-hidden="true"
+    poster="{{ $cdn }}/{{ $pp }}{{ $start_offset }}/f_auto/q_auto/w_1280/{{ $name }}.jpg">
+    {{- if .transform }}
+    <source src="{{ $cdn }}/{{ $tp }}{{ $name }}.webm" type="video/webm" />
+    <source src="{{ $cdn }}/{{ $tp }}{{ $name }}.mp4" type="video/mp4" />
+    {{- else }}
+    <source src="{{ $cdn }}/{{ $name }}" type="{{ .video_type | default "video/mp4" }}" />
+    {{- end }}
 </video>
+{{- if .autoplay_visible }}
+<script>
+(function () {
+    var v = document.currentScript.previousElementSibling;
+    if (!v || !("IntersectionObserver" in window)) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (navigator.connection && navigator.connection.saveData) return;
+    new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+            if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+            else { v.pause(); }
+        });
+    }, { threshold: 0.25 }).observe(v);
+})();
+</script>
+{{- end }}
