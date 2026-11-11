@@ -7,8 +7,8 @@
         {{ i18n "basics_title" }}
     </p>
     {{/* Italian list in data/assunti_di_base.yaml; other languages in data/assunti_di_base_<lang>.yaml */}}
-    {{ $basics := $.Site.Data.assunti_di_base }}
-    {{ with index $.Site.Data (printf "assunti_di_base_%s" $.Language.Lang) }}{{ $basics = . }}{{ end }}
+    {{ $basics := hugo.Data.assunti_di_base }}
+    {{ with index hugo.Data (printf "assunti_di_base_%s" $.Language.Lang) }}{{ $basics = . }}{{ end }}
     <div class="fancy-list" style="margin-top: 2em;">
         {{ range $itemIndex, $item := $basics.assunti }}
         <div class="row align-items-center my-2">

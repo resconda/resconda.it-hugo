@@ -1,4 +1,4 @@
-{{- $data := site.Data.robots -}}
+{{- $data := hugo.Data.robots -}}
   {{- range $data.groups }}
     {{- if .comment }}
 # {{ .comment }}

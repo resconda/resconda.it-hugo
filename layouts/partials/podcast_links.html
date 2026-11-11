@@ -1,5 +1,5 @@
 <div class="row d-flex justify-content-center">
-    {{ range $podcast := $.Site.Data.podcasts }}
+    {{ range $podcast := hugo.Data.podcasts }}
     <div class="col-auto">
         <a class="icon-link" href="{{$podcast.link}}">
             {{ $podcast.icon_svg | safeHTML }}<span class="d-none d-xl-inline-flex">{{$podcast.label}}</span>
