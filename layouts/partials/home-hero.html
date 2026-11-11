@@ -6,7 +6,7 @@
         <h1 class="hero-title">{{ site.Params.home_title | markdownify }}</h1>
         <p class="hero-slogan">{{ site.Params.hero_slogan | default site.Params.slogan | markdownify }}</p>
         <div class="hero-numbers">
-            {{- range site.Data.home_numbers }}
+            {{- range hugo.Data.home_numbers }}
             <div class="hero-number">
                 <p class="hero-value">{{ index .value $lang | default .value.it }}</p>
                 <p class="hero-unit">{{ .unit }}</p>

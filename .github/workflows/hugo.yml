@@ -49,7 +49,7 @@ jobs:
     environment: ${{ github.ref_name == 'main' && 'production' || 'staging' }}
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.134.1
+      HUGO_VERSION: 0.169.0
       PUBLIC_HTML: ${{ vars.PUBLIC_HTML }}
     steps:
       - name: Install Hugo CLI

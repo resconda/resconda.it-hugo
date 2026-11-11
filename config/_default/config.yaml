@@ -1,5 +1,5 @@
 baseURL: /
-languageCode: it-it
+locale: it-it
 title: ResConDA
 
 params:
@@ -74,7 +74,7 @@ outputs:
     - JSON
 languages:
   it:
-    languageName: Italiano
+    label: Italiano
     weight: 1
     params:
       reading_speed: 188
@@ -107,8 +107,8 @@ languages:
         params:
           is_ext: true
   en:
-    languageName: English
-    languageCode: en-gb
+    label: English
+    locale: en-gb
     weight: 2
     title: ResConDA
     # The English site has no articles/tags/classes yet: disable taxonomies so no empty

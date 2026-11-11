@@ -41,7 +41,7 @@
                 {{ $target := .RelPermalink }}
                 {{ range $page.Translations }}{{ if eq .Language.Lang $lang }}{{ $target = .RelPermalink }}{{ end }}{{ end }}
                 <li class="nav-item lang-switch">
-                    <a class="nav-link" href="{{ $target }}" hreflang="{{ $lang }}" lang="{{ $lang }}" title="{{ .Language.LanguageName }}" aria-label="{{ i18n "language_switch_label" }}: {{ .Language.LanguageName }}"><i class="fa-solid fa-globe fa-xs"></i>&nbsp;{{ upper $lang }}</a>
+                    <a class="nav-link" href="{{ $target }}" hreflang="{{ $lang }}" lang="{{ $lang }}" title="{{ .Language.Label }}" aria-label="{{ i18n "language_switch_label" }}: {{ .Language.Label }}"><i class="fa-solid fa-globe fa-xs"></i>&nbsp;{{ upper $lang }}</a>
                 </li>
                 {{ end }}
                 {{ end }}

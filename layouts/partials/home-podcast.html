@@ -1,10 +1,10 @@
 <!-- home-podcast.html: il podcast in home, con l'ultimo episodio letto dal feed RSS -->
 {{- $ep := "" }}
 {{- with site.Params.podcast_rss }}
-  {{- with resources.GetRemote . }}
+  {{- with try (resources.GetRemote .) }}
     {{- with .Err }}
       {{- warnf "Feed del podcast non raggiungibile: %s" . }}
-    {{- else }}
+    {{- else with .Value }}
       {{- $feed := . | transform.Unmarshal }}
       {{- $items := $feed.channel.item }}
       {{- if reflect.IsSlice $items }}{{ $items = index $items 0 }}{{ end }}

@@ -1,6 +1,6 @@
 <!-- home-latest.html: le ultime pillole (articoli) pubblicate, aggiornate in automatico.
      Gli articoli esistono solo in italiano: anche la home inglese mostra quelli del sito italiano. -->
-{{ $itSite := index .Sites 0 }}
+{{ $itSite := index hugo.Sites 0 }}
 {{ $latest := where (where $itSite.RegularPages "Section" "articles") "Draft" false }}
 {{ $latest = $latest.ByDate.Reverse | first 6 }}
 <section id="latest-articles">
