@@ -969,6 +969,16 @@ ul.cloud {
       left: 0;
       z-index: 1;
     }
+    // il testo sta sopra il link che copre la scheda, così si può selezionare e copiare;
+    // il clic sul testo apre comunque l'articolo (script in baseof.html)
+    .card-body {
+      position: relative;
+      z-index: 2;
+    }
+    .card-title a {
+      color: inherit;
+      text-decoration: none;
+    }
 }
 /* Site header stuff*/
 
