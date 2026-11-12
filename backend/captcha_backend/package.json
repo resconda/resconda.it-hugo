@@ -17,7 +17,7 @@
         "test": "test"
     },
     "dependencies": {
-        "body-parser": "^1.20.3",
+        "body-parser": "^1.20.9",
         "express": "^4.21.2",
         "nodemailer": "^10.0.9",
         "pino": "^10.3.1"
