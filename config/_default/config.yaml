@@ -65,10 +65,19 @@ markup:
             - \)
         enable: true
 
+outputFormats:
+  # testo completo degli articoli per la ricerca nella pagina News: /search-text.json,
+  # scaricato solo alla prima ricerca
+  SearchText:
+    mediaType: application/json
+    baseName: search-text
+    isPlainText: true
+    notAlternative: true
 outputs:
   home:
     - HTML
     - JSON
+    - SearchText
   taxonomy:
     - HTML
     - JSON

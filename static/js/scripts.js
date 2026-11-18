@@ -204,10 +204,10 @@ const updateSearchResults2 = results => {
             const title = result.Title;
             const newElement = templateItem.cloneNode(true);
             const tagelementtemplate = newElement.querySelector(".pill-element-template");
-            for (const tag of result.Tags.split(", ")) {
+            for (const tag of (result.Tags ? result.Tags.split(", ") : [])) {
                 const newTagElement = tagelementtemplate.cloneNode(true);
                 newTagElement.classList.remove("d-none", "pill-element-template");
-                newTagElement.setAttribute("href", `/tags/${tag.toLowerCase()}`);
+                newTagElement.setAttribute("href", `/tags/${tag.toLowerCase().trim().replace(/\s+/g, "-")}/`);
                 newTagElement.querySelector("span").innerHTML = tag;
                 tagelementtemplate.parentElement.appendChild(newTagElement);
             }
@@ -215,7 +215,7 @@ const updateSearchResults2 = results => {
             newElement.removeAttribute("id");
             newElement.getElementsByClassName("search-result-link").item(0).setAttribute("href", relpermalink);
             newElement.getElementsByClassName("search-result-title").item(0).innerHTML = title;
-            newElement.getElementsByClassName("search-result-summary").item(0).innerHTML = summary;
+            newElement.getElementsByClassName("search-result-summary").item(0).innerHTML = result._snippet || summary;
             newElement.getElementsByClassName("search-result-date").item(0).innerText = date;
 
             for(cls of classTags){
@@ -250,22 +250,82 @@ const fetchSearchData = () => {
     XHR.open('GET', `/index.json`);
     XHR.send();
 }
-const searchSearchData = searchTerm => {
-    spinnerLoadingDiv().classList.add("d-none");
+// --- Ricerca nella pagina News -------------------------------------------------
+// Cerca in titolo, tag, riassunto e nel testo completo delle pillole.
+// Il testo completo (search-text.json, ~280 KB compressi) si scarica solo alla prima ricerca.
+// Più parole = devono esserci tutte; maiuscole e accenti non contano ("citta" trova "città").
+var searchTexts = undefined;
+var searchTextsPromise = undefined;
+const loadSearchTexts = () => {
+    if (!searchTextsPromise) {
+        searchTextsPromise = fetch('/search-text.json')
+            .then(r => r.ok ? r.json() : {})
+            .then(d => { searchTexts = d; })
+            .catch(() => { searchTexts = {}; });
+    }
+    return searchTextsPromise;
+};
+const normalizeForSearch = s => (s || '').normalize('NFC').normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[’‘]/g, "'");
+const stripHtml = s => { const d = document.createElement('div'); d.innerHTML = s || ''; return d.textContent || ''; };
+const escapeHtml = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+// estratto del testo intorno alla prima parola trovata, con le parole evidenziate
+// la parola cercata deve essere l'inizio di una parola del testo ("bari" trova "Bari", non "barili")
+const wordRegex = (w, flags) => new RegExp('(^|[^a-z0-9])' + w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), flags);
+const findWord = (n, w, from) => { const re = wordRegex(w, 'g'); re.lastIndex = from || 0; const m = re.exec(n); return m ? m.index + m[1].length : -1; };
+const countWord = (n, w) => (n.match(wordRegex(w, 'g')) || []).length;
+// estratto del testo intorno alla prima parola trovata, con le parole evidenziate
+const makeSnippet = (text, words) => {
+    const t = text.normalize('NFC');
+    const n = normalizeForSearch(t);
+    if (n.length !== t.length) return '';               // per sicurezza: posizioni non allineabili
+    let first = -1;
+    for (const w of words) { const i = findWord(n, w); if (i >= 0 && (first < 0 || i < first)) first = i; }
+    if (first < 0) return '';
+    let start = Math.max(0, first - 90), end = Math.min(t.length, first + 170);
+    if (start > 0) { const sp = t.indexOf(' ', start); if (sp > 0 && sp < first) start = sp + 1; }
+    if (end < t.length) { const sp = t.lastIndexOf(' ', end); if (sp > first) end = sp; }
+    const seg = t.slice(start, end), segN = n.slice(start, end);
+    const marks = [];
+    for (const w of words) { let i = findWord(segN, w); while (i >= 0) { marks.push([i, i + w.length]); i = findWord(segN, w, i + w.length); } }
+    marks.sort((a, b) => a[0] - b[0]);
+    let out = '', pos = 0;
+    for (const [a, b] of marks) { if (a < pos) continue; out += escapeHtml(seg.slice(pos, a)) + '<mark>' + escapeHtml(seg.slice(a, b)) + '</mark>'; pos = b; }
+    out += escapeHtml(seg.slice(pos));
+    return (start > 0 ? '… ' : '') + out + (end < t.length ? ' …' : '');
+};
+const searchSearchData = async searchTerm => {
     if(searchData === undefined){
+        spinnerLoadingDiv().classList.add("d-none");
         console.log("[ERROR] Search data unavailable");
         return;
     }
+    spinnerLoadingDiv().classList.remove("d-none");
+    await loadSearchTexts();
+    spinnerLoadingDiv().classList.add("d-none");
+    const words = normalizeForSearch(searchTerm).split(/\s+/).filter(w => w.length >= 2);
+    if (!words.length) { updateSearchResults2([]); return; }
     const matchingArticles = [];
-    for(const article of searchData.articles){
-        for(const key of ['Summary', 'Title', 'Tags']){
-            const value = article[key];
-            if(value !== undefined && value.toLowerCase().includes(searchTerm.toLowerCase())){
-                matchingArticles.push(article);
-                break;
-            }
-        };
-    };
+    for (const article of searchData.articles) {
+        const title = normalizeForSearch(article.Title);
+        const tags = normalizeForSearch(article.Tags);
+        const summary = normalizeForSearch(stripHtml(article.Summary));
+        const rawText = (searchTexts && searchTexts[article.RelPermalink]) || '';
+        const text = normalizeForSearch(rawText);
+        let score = 0, everyWord = true, onlyInText = true;
+        for (const w of words) {
+            const inTitle = findWord(title, w) >= 0, inTags = findWord(tags, w) >= 0, inSummary = findWord(summary, w) >= 0;
+            const count = countWord(text, w);
+            if (!inTitle && !inTags && !inSummary && count === 0) { everyWord = false; break; }
+            if (inTitle || inTags || inSummary) onlyInText = false;
+            score += (inTitle ? 10 : 0) + (inTags ? 5 : 0) + (inSummary ? 3 : 0) + Math.min(count, 5);
+        }
+        if (!everyWord) continue;
+        const result = Object.assign({}, article, { _score: score });
+        if (onlyInText) result._snippet = makeSnippet(rawText, words);
+        matchingArticles.push(result);
+    }
+    matchingArticles.sort((a, b) => (b._score - a._score) || (b.PublishDateFormatted > a.PublishDateFormatted ? 1 : -1));
     updateSearchResults2(matchingArticles);
 };
 const searchFailed = reason => {
