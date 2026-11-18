@@ -1,0 +1,10 @@
+{{- /* Testo completo degli articoli (solo italiano), per la ricerca nella pagina News.
+       Separato da index.json perché più pesante: scripts.js lo scarica solo alla prima ricerca. */ -}}
+{{- $texts := dict -}}
+{{- if eq .Language.Lang "it" -}}
+{{- range where site.RegularPages "Section" "in" (slice "articles" "spuntini") -}}
+  {{- $t := .Plain | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace -}}
+  {{- $texts = merge $texts (dict .RelPermalink $t) -}}
+{{- end -}}
+{{- end -}}
+{{- $texts | jsonify -}}

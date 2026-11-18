@@ -1311,3 +1311,11 @@ $colIndexes: 1, 2, 3, 4, 5, 6, 7;
 
 // Energy tags
 @import "./energy_tags.scss";
+
+// Ricerca nella pagina News: parole trovate evidenziate nell'estratto del testo
+.search-result-summary mark {
+    background: #FDE68A;
+    color: inherit;
+    padding: 0 0.1em;
+    border-radius: 2px;
+}
